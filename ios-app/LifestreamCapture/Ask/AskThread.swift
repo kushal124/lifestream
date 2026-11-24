@@ -101,7 +101,7 @@ struct AskThread: View {
         .task {
             let unread = conversation.read == .unread
             await conversation.open()
-            if unread, !conversation.turns.isEmpty {
+            if unread, !conversation.turns.isEmpty, !AppRuntime.asked("--ui-test-scroll") {
                 await Task.yield()
                 position.scrollTo(edge: .bottom)
             }

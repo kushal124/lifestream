@@ -1,6 +1,6 @@
 // @ts-check
 import { spawn } from 'node:child_process';
-import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { createInterface } from 'node:readline';
@@ -10,17 +10,18 @@ import { launchChrome } from './chrome.mjs';
 import { stacked } from './png.mjs';
 import { openDoor } from '../lib/door.mjs';
 import { actHome } from '../test/stand-ins/act-home.mjs';
-import { FULL_DAY, FULL_PERSON, FULL_PERSON_NAME, FULL_WORDS, fullLife } from '../test/stand-ins/full-life.mjs';
+import { FULL_DAY, FULL_PERSON, FULL_PERSON_NAME, FULL_WORDS, ZONE, fullLife } from '../test/stand-ins/full-life.mjs';
 import { placesHome } from '../test/stand-ins/places-home.mjs';
 import { allScreens, screenPrelude } from '../test/stand-ins/all-screens.mjs';
 import { hostScript, onboardingHome } from '../test/stand-ins/onboarding-home.mjs';
-import { demoDoor, demoScreens } from './demo.mjs';
+import { DEMO_NOW, DEMO_PICTURES, demoDoor, demoPeople, demoScreens, doorAnswers } from './demo.mjs';
 
 const REPO = resolve(fileURLToPath(new URL('../..', import.meta.url)));
 const demo = process.argv.includes('--demo');
 const all = process.argv.includes('--all') || demo;
 const OUT = demo ? join(REPO, 'docs', 'images') : join(REPO, 'dashboard', '.build', all ? 'shots-all' : 'shots');
 const mac = process.argv.includes('--mac');
+const phone = demo && process.argv.includes('--phone');
 const SIZES = mac ? [[1440, 900]] : [[2560, 1440], [1440, 900], [1024, 700]];
 const THEMES = ['dark', 'light'];
 const serve = process.argv.includes('--serve');
@@ -220,12 +221,12 @@ const home = await new Promise((done, fail) => {
 });
 const dir = await mkdtemp(join(tmpdir(), 'dashboard-shots-'));
 const front = acting ? await actHome({ door: { url: home.url, token: home.tokens.reader }, importing: await audioSource(home) })
-  : await placesHome({ door: { url: home.url }, now: Date.now() });
+  : await placesHome({ door: { url: home.url }, now: demo ? DEMO_NOW : Date.now() });
 const door = openDoor({ url: front?.url ?? home.url, token: () => home.tokens.reader });
 const viewer = await createViewer({ door });
 await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
 const url = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (viewer.address()).port}`;
-const fuller = front && !acting ? await fullLife({ door: { url: front.url } }) : null;
+const fuller = front && !acting ? await fullLife({ door: { url: front.url }, ...demo ? { people: demoPeople } : {} }) : null;
 const shown = fuller && demo ? await demoDoor({ door: fuller }) : null;
 const fullDoor = fuller ? openDoor({ url: (shown ?? fuller).url, token: () => home.tokens.reader }) : null;
 const fullViewer = fullDoor ? await createViewer({ door: fullDoor }) : null;
@@ -265,6 +266,14 @@ if (all) {
   await mkdir(OUT, { recursive: true });
   if (!demo) await writeFile(join(OUT, 'screens.json'), `${JSON.stringify(screens.map(({ section, name, title, width, optional, note }) => ({ section, name, title, width, optional, note })), null, 2)}\n`);
   const wanted = screens.filter(screen => !named.length || named.includes(screen.name) || named.includes(screen.section));
+  if (phone && fuller) {
+    const chat = screens.find(screen => screen.name === 'chat');
+    await shootPhone(fuller, home.tokens.reader, chat ? doorAnswers(chat) : new Map());
+    await new Promise(done => onboardingViewer.close(() => done(undefined)));
+    await onboarding.close();
+    await stop();
+    process.exit(0);
+  }
   const chrome = await openChrome(join(dir, 'chrome'));
   /** @type {Record<string, unknown>} */
   const ran = {};
@@ -449,6 +458,33 @@ if (serve) {
   }
   await chrome.close();
   await stop();
+}
+
+/**
+ * @param {{ url: string }} life
+ * @param {string} token
+ * @param {Map<string, unknown>} answers
+ */
+async function shootPhone(life, token, answers) {
+  const door = await demoDoor({ door: life, token, answers });
+  const pictures = DEMO_PICTURES.filter(picture => !named.length || named.includes(picture.name));
+  const shoot = spawn(join(REPO, 'ios-app', 'shoot.sh'), [...pictures.map(picture => picture.phone), '--',
+    '--ui-test-door', door.url, '--ui-test-now', String(DEMO_NOW), '--ui-test-scroll', '0'], { stdio: ['ignore', 'pipe', 'inherit'], env: { ...process.env, SIMCTL_CHILD_TZ: ZONE } });
+  /** @type {string[]} */
+  const shots = [];
+  createInterface({ input: /** @type {import('node:stream').Readable} */ (shoot.stdout) }).on('line', line => {
+    if (line.endsWith('.png')) shots.push(line);
+    else console.log(line);
+  });
+  const code = await new Promise(done => shoot.once('exit', done));
+  await door.close();
+  if (code !== 0) throw new Error(`ios-app/shoot.sh exited with ${code}`);
+  await mkdir(OUT, { recursive: true });
+  for (const [at, picture] of pictures.entries()) {
+    const file = join(OUT, `phone-${picture.name}-dark.png`);
+    await copyFile(shots[at], file);
+    console.log(file);
+  }
 }
 
 async function shootKit() {

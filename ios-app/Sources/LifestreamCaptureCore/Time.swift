@@ -204,8 +204,12 @@ public enum AppClock {
     static let pin = DateComponents(year: 2026, month: 11, day: 7, hour: 22, minute: 30)
 
     private static let offset: TimeInterval = {
-        guard ProcessInfo.processInfo.arguments.contains("--ui-testing"),
-              let start = Calendar(identifier: .gregorian).date(from: pin) else { return 0 }
+        let arguments = ProcessInfo.processInfo.arguments
+        guard arguments.contains("--ui-testing") else { return 0 }
+        if let flag = arguments.firstIndex(of: "--ui-test-now"), flag + 1 < arguments.count, let ms = Double(arguments[flag + 1]) {
+            return Date(timeIntervalSince1970: ms / 1000).timeIntervalSinceNow
+        }
+        guard let start = Calendar(identifier: .gregorian).date(from: pin) else { return 0 }
         return start.timeIntervalSinceNow
     }()
 

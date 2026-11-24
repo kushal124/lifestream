@@ -2,6 +2,7 @@
 import { createHash } from 'node:crypto';
 import { createServer } from 'node:http';
 import { Readable } from 'node:stream';
+import { tsImport } from 'tsx/esm/api';
 import { crc32, deflateSync } from 'node:zlib';
 import { scene } from '../../public/kit-gallery-scenes.js';
 import { answerPicture, PICTURE_ROUTE } from './pictures.mjs';
@@ -13,7 +14,7 @@ export const FULL_WORDS = 'river';
 export const FULL_PERSON = 'person:person-d';
 export const FULL_PERSON_NAME = 'Person D';
 
-const ZONE = 'Europe/Lisbon';
+export const ZONE = 'Europe/Lisbon';
 const CLOCK = clockFor(ZONE, 4, { first: '2026-01-01', last: '2026-12-31', id: 'full-life-lisbon' });
 const at = (/** @type {string} */ clock, days = 0) => {
   const [hour, minute] = clock.split(':').map(Number);
@@ -176,8 +177,12 @@ const hexOf = bytes => createHash('sha256').update(bytes).digest('hex');
 /** @param {number} seed */
 const photo = seed => png(scene(seed, 640, 640), 640, 640);
 
-/** @param {{ door: { url: string } }} options */
-export async function fullLife({ door }) {
+const { dayPage } = await tsImport('../../../packages/families/index.ts', import.meta.url);
+const { dayBody } = await tsImport('../../../packages/home/page-days.ts', import.meta.url);
+const { peopleBody } = await tsImport('../../../packages/home/page-people.ts', import.meta.url);
+
+/** @param {{ door: { url: string }, people?: (list: any) => any }} options */
+export async function fullLife({ door, people: shapePeople = list => list }) {
   /** @type {Map<string, Buffer>} */
   const pictures = new Map();
   /** @param {Buffer} bytes */
@@ -286,6 +291,23 @@ export async function fullLife({ door }) {
     first_ms: Date.parse(`${day}T18:00:00Z`) - (messages + 30) * 3 * 86_400_000,
     photo: index % 2 ? null : { card: `sha256:${keep(portrait(NAMES.length + index))}` } });
   const people = [...NAMES.map(listed), ...OTHERS.map(other)];
+  const sited = Object.values(SITES);
+  const where = pieces.map(piece => {
+    const site = piece.kind === 'stay' ? sited.find(each => each.point === piece.point) : undefined;
+    return { ...piece, place: site ? { slug: site.slug, name: site.name } : null, spot: null };
+  });
+  const page = dayBody(FULL_DAY, dayPage(file, { where, places: sited.map(site => ({ slug: site.slug })), people,
+    calls: [], groups: [`whatsapp:${GROUP.chat}`], sent: [] }, null));
+  /** @param {(address: string) => Promise<any>} doors */
+  const everyone = async doors => {
+    const held = await doors('/v1/people');
+    return { ...held, people: [...people, ...held.people], position: '0:0',
+      organise: { ...held.organise, organised: held.organise.organised + people.length },
+      chats: [...people.map(person => ({ chat: person.chats[0].key.slice('whatsapp:'.length), first_ms: person.first_ms, group: false,
+        key: person.chats[0].key, label: person.name, last_ms: person.last_ms, mine: person.sent, network: 'whatsapp', total: person.score })),
+      { chat: GROUP.chat, first_ms: Date.UTC(2025, 1, 2), group: true, key: `whatsapp:${GROUP.chat}`, label: GROUP.title, last_ms: at('11:40'),
+        mine: 12, network: 'whatsapp', quiet: null, total: 140, word: null }, ...held.chats] };
+  };
   /** @param {ReturnType<typeof listed>} person */
   const whole = person => {
     /** @type {Record<string, number>} */
@@ -357,6 +379,17 @@ export async function fullLife({ door }) {
       response.writeHead(200, { 'content-type': 'application/json', etag: fileTag });
       return void response.end(fileText);
     }
+    if (path === '/v1/page/day' && url.searchParams.get('day') === FULL_DAY) {
+      return json({ ...await doors(request.url ?? ''), ...page });
+    }
+    if (path === '/v1/page/days') {
+      const held = await doors(request.url ?? '');
+      const from = url.searchParams.get('from') ?? '0000';
+      const to = url.searchParams.get('to') ?? '9999';
+      if (from > FULL_DAY || to < FULL_DAY || url.searchParams.has('after') || held.days.some((/** @type {any} */ each) => each.day === FULL_DAY)) return json(held);
+      const counts = { total: atoms.length, families: Object.entries(families).map(([family, count]) => ({ family, count })) };
+      return json({ ...held, days: [...held.days, { day: FULL_DAY, counts }].sort((a, b) => a.day.localeCompare(b.day)) });
+    }
     if (path === '/v1/days' && !url.searchParams.has('limit')) {
       const from = url.searchParams.get('from') ?? '0000';
       const to = url.searchParams.get('to') ?? '9999';
@@ -370,7 +403,7 @@ export async function fullLife({ door }) {
     if (path === '/v1/connectors') {
       const held = await doors(request.url ?? '');
       const well = (/** @type {string} */ words) => ({ state: 'ok', words });
-      return json({ ...held, needs: [], connectors: held.connectors.map((/** @type {any} */ each) => each.set_up
+      return json({ ...held, needs: [], badge: { ...held.badge, needs: 0 }, connectors: held.connectors.map((/** @type {any} */ each) => each.set_up
         ? { ...each, line: each.line === 'Nothing yet' ? 'Last session 17 Oct' : each.line, health: { ...each.health, state: 'ok' } } : each),
       extension: { ...held.extension, health: well('In Chrome') }, devices: [
         { unit: 'macbook-pro-0001', name: 'MacBook Pro', kind: 'mac', retired: false, health: well('Recording'), streams: [] },
@@ -397,14 +430,11 @@ export async function fullLife({ door }) {
       const id = url.searchParams.get('id');
       const found = people.find(person => person.id === id);
       if (found) return json({ position, person: whole(found) });
-      if (!id) {
-        const held = await doors('/v1/people');
-        return json({ ...held, people: [...people, ...held.people], position,
-          chats: [...people.map(person => ({ chat: person.chats[0].key.slice('whatsapp:'.length), first_ms: person.first_ms, group: false,
-            key: person.chats[0].key, label: person.name, last_ms: person.last_ms, mine: person.sent, network: 'whatsapp', total: person.score })),
-          { chat: GROUP.chat, first_ms: Date.UTC(2025, 1, 2), group: true, key: `whatsapp:${GROUP.chat}`, label: GROUP.title, last_ms: at('11:40'),
-            mine: 12, network: 'whatsapp', quiet: null, total: 140, word: null }, ...held.chats] });
-      }
+      if (!id) return json(await everyone(doors));
+    }
+    if (path === '/v1/page/people') {
+      const held = await doors(request.url ?? '');
+      return json({ ...held, ...peopleBody(shapePeople(await everyone(doors)), new Map(), held.today, { zone: ZONE, day_start_hour: 4 }) });
     }
     if (path === '/v1/people/photos' && people.some(person => person.id === url.searchParams.get('id'))) {
       const shown = [...scenes.values()].slice(0, 6).map((hex, index) => ({ image: hex, face: `${hex}:104,30,168,104`, box: [104, 30, 168, 104],

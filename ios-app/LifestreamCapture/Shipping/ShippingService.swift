@@ -134,7 +134,7 @@ final class ShippingService {
     private func makeLink() -> HomeLink {
         let exports = runtime.exporter.exportsDirectory
         let transport = URLSessionTransport(metrics: Self.metering(.shared, power: power))
-        let link = AppRuntime.isUITesting ? CannedHome.link(folder: exports)
+        let link = AppRuntime.isUITesting ? CannedHome.link(folder: exports, reader: CannedHome.door.map { URLSessionTransport(origin: $0) })
             : HomeLink(device: PhoneLink.device(), folder: exports, transport: transport, network: SystemNetwork.shared)
         HomeClock.current.follow(link)
         return link

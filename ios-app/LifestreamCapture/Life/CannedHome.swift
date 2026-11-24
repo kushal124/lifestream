@@ -215,7 +215,7 @@ enum CannedHome {
 
     static let people = "people:local:home-canned"
 
-    @MainActor static func link(folder: URL) -> HomeLink {
+    @MainActor static func link(folder: URL, reader: (any HomeTransport)?) -> HomeLink {
         if !unpaired {
             let now = AppClock.now.timeIntervalSince1970
             let saved: [String: Any] = ["at": now - 180, "answer": answer]
@@ -235,7 +235,7 @@ enum CannedHome {
             credentials = Pass(paired: !unpaired)
         }
         encodeMoviesBeforeAnyRequest()
-        return HomeLink(device: PhoneLink.device(), credentials: credentials, folder: folder, transport: Transport(), finder: Finder(),
+        return HomeLink(device: PhoneLink.device(), credentials: credentials, folder: folder, transport: Transport(reader: reader), finder: Finder(),
                         network: Network(), grace: grace)
     }
 
@@ -972,6 +972,12 @@ enum CannedHome {
         return arguments[flag + 1]
     }()
 
+    static let door: URL? = {
+        let arguments = ProcessInfo.processInfo.arguments
+        guard let flag = arguments.firstIndex(of: "--ui-test-door"), flag + 1 < arguments.count else { return nil }
+        return URL(string: arguments[flag + 1])
+    }()
+
     private struct Network: NetworkWatch {
         var facts: NetworkFacts? {
             let trips = tunnel.trips
@@ -1224,6 +1230,8 @@ enum CannedHome {
 
 
     private struct Transport: HomeTransport {
+        let reader: (any HomeTransport)?
+
         func identify(_ address: URL, within: TimeInterval) async throws -> String {
             await Asks.shared.knocked()
             guard address == CannedHome.mac || address == CannedHome.wifi || (address == CannedHome.tailnet && tunnel.looked()) else {
@@ -1234,6 +1242,7 @@ enum CannedHome {
 
         func perform(_ request: HomeRequest) async throws -> HomeResponse {
             await Asks.shared.knocked()
+            if let reader, request.method == "GET" { return try await reader.perform(request) }
             if silence.holds(request) { throw URLError(.cannotConnectToHost) }
             if let said = notNow.answer(request) { return said }
             if request.url.path.hasPrefix("/v1/ask") || request.url.path.hasPrefix("/v1/privacy") { return await CannedAsk.shared.perform(request) }

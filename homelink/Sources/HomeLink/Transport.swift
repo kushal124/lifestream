@@ -156,10 +156,12 @@ public struct URLSessionTransport: HomeTransport {
     private let session: Session
     private let metrics: Metrics?
     private let protocols: [AnyClass]
+    private let origin: URL?
 
-    public init(protocolClasses: [AnyClass] = [], metrics: Metrics? = nil) {
+    public init(protocolClasses: [AnyClass] = [], metrics: Metrics? = nil, origin: URL? = nil) {
         protocols = protocolClasses
         self.metrics = metrics
+        self.origin = origin
         session = Session(URLSession(configuration: Self.configuration(protocolClasses)))
     }
 
@@ -175,7 +177,7 @@ public struct URLSessionTransport: HomeTransport {
     }
 
     public func perform(_ request: HomeRequest) async throws -> HomeResponse {
-        var made = Self.made(request)
+        var made = Self.made(request, at: origin)
         var judge = judge(request)
         let (data, response): (Data, URLResponse)
         do {
@@ -215,7 +217,7 @@ public struct URLSessionTransport: HomeTransport {
     }
 
     public func bytes(_ request: HomeRequest, taking: @escaping HomeBytes.Taking) async throws -> HomeBytes {
-        var made = Self.made(request)
+        var made = Self.made(request, at: origin)
         if case .json(let body) = request.body { made.httpBody = body }
         let judge = judge(request, Receiver.self)
         let task = session.value.dataTask(with: made)
@@ -257,8 +259,20 @@ public struct URLSessionTransport: HomeTransport {
         return Kind(pin: request.pin, progress: request.progress, metrics: { @Sendable in metrics(request, $0, $1) })
     }
 
+    static func url(_ url: URL, at origin: URL?) -> URL {
+        guard let origin, var parts = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }
+        parts.scheme = origin.scheme
+        parts.host = origin.host
+        parts.port = origin.port
+        return parts.url ?? url
+    }
+
     static func made(_ request: HomeRequest) -> URLRequest {
-        var made = URLRequest(url: request.url)
+        made(request, at: nil)
+    }
+
+    static func made(_ request: HomeRequest, at origin: URL?) -> URLRequest {
+        var made = URLRequest(url: Self.url(request.url, at: origin))
         made.httpMethod = request.method
         made.timeoutInterval = request.timeout
         made.allowsExpensiveNetworkAccess = request.mayUseMetered
