@@ -1,0 +1,8 @@
+Day 2026-09-21 (Monday) in America/New_York, 04:00 to 2026-09-22 04:00 (24 h)
+2 atoms: listening 2
+
+04:00–04:12 macbook-pro-0001: Synthetic Long Piece by Artist K in com.example.player, 22 min (continues from 20 Sep)
+05:30 synced device 0000BBBB: Synthetic Song 50 by Artist L in Music; no end stated for Synthetic Song 50
+
+Coverage
+listening: now-playing:person-a@example.com:macbook-pro-0001 read into the day

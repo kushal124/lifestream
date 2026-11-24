@@ -1,0 +1,33 @@
+{
+  "where": [],
+  "places": [],
+  "people": [
+    {
+      "id": "person-d",
+      "name": "Person D",
+      "photo": null,
+      "chats": [
+        {
+          "key": "imessage:+15550000007"
+        }
+      ],
+      "handles": [
+        {
+          "id": "phone:+15550000007",
+          "kind": "phone"
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0011"
+      },
+      "who": [],
+      "title": ""
+    }
+  ]
+}

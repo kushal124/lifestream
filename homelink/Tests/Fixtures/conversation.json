@@ -1,0 +1,136 @@
+{
+  "position": "1:1791968400000",
+  "chat": "whatsapp:15550000151@s.whatsapp.net",
+  "day": "2026-10-03",
+  "window": {
+    "start_ms": 1791968400000,
+    "end_ms": 1791968400000
+  },
+  "title": "Person Photo",
+  "atoms": [
+    {
+      "n": 1,
+      "family": "messages",
+      "unit": "2026-10-03:whatsapp:15550000151@s.whatsapp.net",
+      "units": [
+        "2026-10-03:whatsapp:15550000151@s.whatsapp.net"
+      ],
+      "start_ms": 1791968400000,
+      "end_ms": null,
+      "local_start": "14:30",
+      "local_end": null,
+      "flags": [],
+      "text": "Person Photo: [voice note]",
+      "names": [
+        {
+          "start": 0,
+          "end": 12,
+          "who": "phone:+15550000151"
+        }
+      ],
+      "record": {
+        "source": "whatsapp:919000000009:macbook-pro-0001",
+        "kind": "msg",
+        "key": "15550000151@s.whatsapp.net:V1"
+      },
+      "block": {
+        "key": "whatsapp:15550000151@s.whatsapp.net",
+        "title": "Person Photo",
+        "names": [
+          {
+            "start": 0,
+            "end": 12,
+            "who": "phone:+15550000151"
+          }
+        ]
+      },
+      "chat": "whatsapp:15550000151@s.whatsapp.net"
+    },
+    {
+      "n": 2,
+      "family": "messages",
+      "unit": "2026-10-03:whatsapp:15550000151@s.whatsapp.net",
+      "units": [
+        "2026-10-03:whatsapp:15550000151@s.whatsapp.net"
+      ],
+      "start_ms": 1791968400000,
+      "end_ms": null,
+      "local_start": "14:31",
+      "local_end": null,
+      "flags": [],
+      "text": "Person Photo: synthetic line V2",
+      "names": [
+        {
+          "start": 0,
+          "end": 12,
+          "who": "phone:+15550000151"
+        }
+      ],
+      "record": {
+        "source": "whatsapp:919000000009:macbook-pro-0001",
+        "kind": "msg",
+        "key": "15550000151@s.whatsapp.net:V2"
+      },
+      "block": {
+        "key": "whatsapp:15550000151@s.whatsapp.net",
+        "title": "Person Photo",
+        "names": [
+          {
+            "start": 0,
+            "end": 12,
+            "who": "phone:+15550000151"
+          }
+        ]
+      },
+      "chat": "whatsapp:15550000151@s.whatsapp.net"
+    }
+  ],
+  "messages": [
+    {
+      "at": 1791018000000,
+      "from": {
+        "id": "15550000151@s.whatsapp.net",
+        "kind": "jid"
+      },
+      "key": "15550000151@s.whatsapp.net:V1",
+      "parts": [
+        {
+          "ask": "transcript",
+          "blob": "sha256:b2dcbf1b0aee4ff9c594c5788ac0a3e754232d9c548f9ab0e3cd1130426e6ee4",
+          "format": "ogg",
+          "media_type": "audio/ogg",
+          "what": "voice note",
+          "transcribed": {
+            "by": null,
+            "at_ms": null,
+            "state": "off",
+            "line": "Older than this stream's range",
+            "ask": {
+              "family": "messages",
+              "item": "sha256:b2dcbf1b0aee4ff9c594c5788ac0a3e754232d9c548f9ab0e3cd1130426e6ee4",
+              "prompt": "voice-note-transcript"
+            },
+            "choose": [
+              {
+                "value": "fake:fake-model",
+                "words": "Fake model",
+                "note": "Stays on this computer"
+              }
+            ]
+          }
+        }
+      ],
+      "source": "whatsapp:919000000009:macbook-pro-0001"
+    },
+    {
+      "at": 1791018060000,
+      "from": {
+        "id": "15550000151@s.whatsapp.net",
+        "kind": "jid"
+      },
+      "key": "15550000151@s.whatsapp.net:V2",
+      "source": "whatsapp:919000000009:macbook-pro-0001",
+      "text": "synthetic line V2"
+    }
+  ]
+}

@@ -1,0 +1,2646 @@
+{
+  "about": "The clock's cases (docs/operating/door.md, GET /v1/clock): each clock as the door answers it, and instants with the day, bounds and zone a reader's lookup must file each under. Made by packages/core/time.test.ts from core's civilDay and dayBounds; `outside` marks an instant outside the table, filed by the lookup's own count of 24-hour days. The trip is hand-written.",
+  "clocks": [
+    {
+      "name": "london-4",
+      "clock": {
+        "id": "149e7dc8591bf2d4",
+        "zone": "Europe/London",
+        "start_hour": 4,
+        "runs": [
+          {
+            "day": "1970-01-01",
+            "start_ms": 10800000,
+            "days": 668,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1971-10-31",
+            "start_ms": 57729600000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1972-03-19",
+            "start_ms": 69822000000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1972-10-29",
+            "start_ms": 89179200000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1973-03-18",
+            "start_ms": 101271600000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1973-10-28",
+            "start_ms": 120628800000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1974-03-17",
+            "start_ms": 132721200000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1974-10-27",
+            "start_ms": 152078400000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1975-03-16",
+            "start_ms": 164170800000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1975-10-26",
+            "start_ms": 183528000000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1976-03-21",
+            "start_ms": 196225200000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1976-10-24",
+            "start_ms": 214977600000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1977-03-20",
+            "start_ms": 227674800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1977-10-23",
+            "start_ms": 246427200000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1978-03-19",
+            "start_ms": 259124400000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1978-10-29",
+            "start_ms": 278481600000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1979-03-18",
+            "start_ms": 290574000000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1979-10-28",
+            "start_ms": 309931200000,
+            "days": 140,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1980-03-16",
+            "start_ms": 322023600000,
+            "days": 224,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1980-10-26",
+            "start_ms": 341380800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1981-03-29",
+            "start_ms": 354682800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1981-10-25",
+            "start_ms": 372830400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1982-03-28",
+            "start_ms": 386132400000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1982-10-24",
+            "start_ms": 404280000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1983-03-27",
+            "start_ms": 417582000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1983-10-23",
+            "start_ms": 435729600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1984-03-25",
+            "start_ms": 449031600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1984-10-28",
+            "start_ms": 467784000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1985-03-31",
+            "start_ms": 481086000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1985-10-27",
+            "start_ms": 499233600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1986-03-30",
+            "start_ms": 512535600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1986-10-26",
+            "start_ms": 530683200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1987-03-29",
+            "start_ms": 543985200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1987-10-25",
+            "start_ms": 562132800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1988-03-27",
+            "start_ms": 575434800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1988-10-23",
+            "start_ms": 593582400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1989-03-26",
+            "start_ms": 606884400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1989-10-29",
+            "start_ms": 625636800000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1990-03-25",
+            "start_ms": 638334000000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1990-10-28",
+            "start_ms": 657086400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1991-03-31",
+            "start_ms": 670388400000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1991-10-27",
+            "start_ms": 688536000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1992-03-29",
+            "start_ms": 701838000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1992-10-25",
+            "start_ms": 719985600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1993-03-28",
+            "start_ms": 733287600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1993-10-24",
+            "start_ms": 751435200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1994-03-27",
+            "start_ms": 764737200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1994-10-23",
+            "start_ms": 782884800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1995-03-26",
+            "start_ms": 796186800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1995-10-22",
+            "start_ms": 814334400000,
+            "days": 161,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1996-03-31",
+            "start_ms": 828241200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1996-10-27",
+            "start_ms": 846388800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1997-03-30",
+            "start_ms": 859690800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1997-10-26",
+            "start_ms": 877838400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1998-03-29",
+            "start_ms": 891140400000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1998-10-25",
+            "start_ms": 909288000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1999-03-28",
+            "start_ms": 922590000000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "1999-10-31",
+            "start_ms": 941342400000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2000-03-26",
+            "start_ms": 954039600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2000-10-29",
+            "start_ms": 972792000000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2001-03-25",
+            "start_ms": 985489200000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2001-10-28",
+            "start_ms": 1004241600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2002-03-31",
+            "start_ms": 1017543600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2002-10-27",
+            "start_ms": 1035691200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2003-03-30",
+            "start_ms": 1048993200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2003-10-26",
+            "start_ms": 1067140800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2004-03-28",
+            "start_ms": 1080442800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2004-10-31",
+            "start_ms": 1099195200000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2005-03-27",
+            "start_ms": 1111892400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2005-10-30",
+            "start_ms": 1130644800000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2006-03-26",
+            "start_ms": 1143342000000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2006-10-29",
+            "start_ms": 1162094400000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2007-03-25",
+            "start_ms": 1174791600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2007-10-28",
+            "start_ms": 1193544000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2008-03-30",
+            "start_ms": 1206846000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2008-10-26",
+            "start_ms": 1224993600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2009-03-29",
+            "start_ms": 1238295600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2009-10-25",
+            "start_ms": 1256443200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2010-03-28",
+            "start_ms": 1269745200000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2010-10-31",
+            "start_ms": 1288497600000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2011-03-27",
+            "start_ms": 1301194800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2011-10-30",
+            "start_ms": 1319947200000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2012-03-25",
+            "start_ms": 1332644400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2012-10-28",
+            "start_ms": 1351396800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2013-03-31",
+            "start_ms": 1364698800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2013-10-27",
+            "start_ms": 1382846400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2014-03-30",
+            "start_ms": 1396148400000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2014-10-26",
+            "start_ms": 1414296000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2015-03-29",
+            "start_ms": 1427598000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2015-10-25",
+            "start_ms": 1445745600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2016-03-27",
+            "start_ms": 1459047600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2016-10-30",
+            "start_ms": 1477800000000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2017-03-26",
+            "start_ms": 1490497200000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2017-10-29",
+            "start_ms": 1509249600000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2018-03-25",
+            "start_ms": 1521946800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2018-10-28",
+            "start_ms": 1540699200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2019-03-31",
+            "start_ms": 1554001200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2019-10-27",
+            "start_ms": 1572148800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2020-03-29",
+            "start_ms": 1585450800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2020-10-25",
+            "start_ms": 1603598400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2021-03-28",
+            "start_ms": 1616900400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2021-10-31",
+            "start_ms": 1635652800000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2022-03-27",
+            "start_ms": 1648350000000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2022-10-30",
+            "start_ms": 1667102400000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2023-03-26",
+            "start_ms": 1679799600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2023-10-29",
+            "start_ms": 1698552000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2024-03-31",
+            "start_ms": 1711854000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2024-10-27",
+            "start_ms": 1730001600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2025-03-30",
+            "start_ms": 1743303600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2025-10-26",
+            "start_ms": 1761451200000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-03-29",
+            "start_ms": 1774753200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-10-25",
+            "start_ms": 1792900800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2027-03-28",
+            "start_ms": 1806202800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2027-10-31",
+            "start_ms": 1824955200000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2028-03-26",
+            "start_ms": 1837652400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2028-10-29",
+            "start_ms": 1856404800000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2029-03-25",
+            "start_ms": 1869102000000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2029-10-28",
+            "start_ms": 1887854400000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2030-03-31",
+            "start_ms": 1901156400000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2030-10-27",
+            "start_ms": 1919304000000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2031-03-30",
+            "start_ms": 1932606000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2031-10-26",
+            "start_ms": 1950753600000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2032-03-28",
+            "start_ms": 1964055600000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2032-10-31",
+            "start_ms": 1982808000000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2033-03-27",
+            "start_ms": 1995505200000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2033-10-30",
+            "start_ms": 2014257600000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2034-03-26",
+            "start_ms": 2026954800000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2034-10-29",
+            "start_ms": 2045707200000,
+            "days": 147,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2035-03-25",
+            "start_ms": 2058404400000,
+            "days": 217,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2035-10-28",
+            "start_ms": 2077156800000,
+            "days": 154,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2036-03-30",
+            "start_ms": 2090458800000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2036-10-26",
+            "start_ms": 2108606400000,
+            "days": 67,
+            "zone": "Europe/London"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": -14182980000,
+          "utc": "1969-07-20T20:17:00.000Z",
+          "why": "before 1970, counted back in 24-hour days",
+          "day": "1969-07-20",
+          "start_ms": -14245200000,
+          "end_ms": -14158800000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 10799999,
+          "utc": "1970-01-01T02:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "1969-12-31",
+          "start_ms": -75600000,
+          "end_ms": 10800000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 10800000,
+          "utc": "1970-01-01T03:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "1970-01-01",
+          "start_ms": 10800000,
+          "end_ms": 97200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 57722400000,
+          "utc": "1971-10-31T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "1971-10-30",
+          "start_ms": 57639600000,
+          "end_ms": 57729600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 57726000000,
+          "utc": "1971-10-31T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "1971-10-30",
+          "start_ms": 57639600000,
+          "end_ms": 57729600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 57729599999,
+          "utc": "1971-10-31T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "1971-10-30",
+          "start_ms": 57639600000,
+          "end_ms": 57729600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 57729600000,
+          "utc": "1971-10-31T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "1971-10-31",
+          "start_ms": 57729600000,
+          "end_ms": 57816000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 57735000000,
+          "utc": "1971-10-31T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "1971-10-31",
+          "start_ms": 57729600000,
+          "end_ms": 57816000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 69821999999,
+          "utc": "1972-03-19T02:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "1972-03-18",
+          "start_ms": 69739200000,
+          "end_ms": 69822000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 69822000000,
+          "utc": "1972-03-19T03:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "1972-03-19",
+          "start_ms": 69822000000,
+          "end_ms": 69908400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 69827400000,
+          "utc": "1972-03-19T04:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "1972-03-19",
+          "start_ms": 69822000000,
+          "end_ms": 69908400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 89172000000,
+          "utc": "1972-10-29T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "1972-10-28",
+          "start_ms": 89089200000,
+          "end_ms": 89179200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 89175600000,
+          "utc": "1972-10-29T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "1972-10-28",
+          "start_ms": 89089200000,
+          "end_ms": 89179200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 89179199999,
+          "utc": "1972-10-29T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "1972-10-28",
+          "start_ms": 89089200000,
+          "end_ms": 89179200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 89179200000,
+          "utc": "1972-10-29T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "1972-10-29",
+          "start_ms": 89179200000,
+          "end_ms": 89265600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 89184600000,
+          "utc": "1972-10-29T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "1972-10-29",
+          "start_ms": 89179200000,
+          "end_ms": 89265600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774753199999,
+          "utc": "2026-03-29T02:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-28",
+          "start_ms": 1774670400000,
+          "end_ms": 1774753200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774753200000,
+          "utc": "2026-03-29T03:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-29",
+          "start_ms": 1774753200000,
+          "end_ms": 1774839600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774755000000,
+          "utc": "2026-03-29T03:30:00.000Z",
+          "why": "04:30 on 29 March, the morning the clocks went forward",
+          "day": "2026-03-29",
+          "start_ms": 1774753200000,
+          "end_ms": 1774839600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774758600000,
+          "utc": "2026-03-29T04:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-29",
+          "start_ms": 1774753200000,
+          "end_ms": 1774839600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1791343800000,
+          "utc": "2026-10-07T03:30:00.000Z",
+          "why": "04:30 on 7 October",
+          "day": "2026-10-07",
+          "start_ms": 1791342000000,
+          "end_ms": 1791428400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792893600000,
+          "utc": "2026-10-25T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792810800000,
+          "end_ms": 1792900800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792897200000,
+          "utc": "2026-10-25T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792810800000,
+          "end_ms": 1792900800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792899000000,
+          "utc": "2026-10-25T03:30:00.000Z",
+          "why": "the 25th hour of 24 October, 03:30 after the clocks went back",
+          "day": "2026-10-24",
+          "start_ms": 1792810800000,
+          "end_ms": 1792900800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792900799999,
+          "utc": "2026-10-25T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-24",
+          "start_ms": 1792810800000,
+          "end_ms": 1792900800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792900800000,
+          "utc": "2026-10-25T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-10-25",
+          "start_ms": 1792900800000,
+          "end_ms": 1792987200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792906200000,
+          "utc": "2026-10-25T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-10-25",
+          "start_ms": 1792900800000,
+          "end_ms": 1792987200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1806202799999,
+          "utc": "2027-03-28T02:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2027-03-27",
+          "start_ms": 1806120000000,
+          "end_ms": 1806202800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1806202800000,
+          "utc": "2027-03-28T03:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2027-03-28",
+          "start_ms": 1806202800000,
+          "end_ms": 1806289200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1806208200000,
+          "utc": "2027-03-28T04:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2027-03-28",
+          "start_ms": 1806202800000,
+          "end_ms": 1806289200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1824948000000,
+          "utc": "2027-10-31T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2027-10-30",
+          "start_ms": 1824865200000,
+          "end_ms": 1824955200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1824951600000,
+          "utc": "2027-10-31T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2027-10-30",
+          "start_ms": 1824865200000,
+          "end_ms": 1824955200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1824955199999,
+          "utc": "2027-10-31T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2027-10-30",
+          "start_ms": 1824865200000,
+          "end_ms": 1824955200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1824955200000,
+          "utc": "2027-10-31T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2027-10-31",
+          "start_ms": 1824955200000,
+          "end_ms": 1825041600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1824960600000,
+          "utc": "2027-10-31T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2027-10-31",
+          "start_ms": 1824955200000,
+          "end_ms": 1825041600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2090458799999,
+          "utc": "2036-03-30T02:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2036-03-29",
+          "start_ms": 2090376000000,
+          "end_ms": 2090458800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2090458800000,
+          "utc": "2036-03-30T03:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2036-03-30",
+          "start_ms": 2090458800000,
+          "end_ms": 2090545200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2090464200000,
+          "utc": "2036-03-30T04:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2036-03-30",
+          "start_ms": 2090458800000,
+          "end_ms": 2090545200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2108599200000,
+          "utc": "2036-10-26T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2036-10-25",
+          "start_ms": 2108516400000,
+          "end_ms": 2108606400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2108602800000,
+          "utc": "2036-10-26T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2036-10-25",
+          "start_ms": 2108516400000,
+          "end_ms": 2108606400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2108606399999,
+          "utc": "2036-10-26T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2036-10-25",
+          "start_ms": 2108516400000,
+          "end_ms": 2108606400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2108606400000,
+          "utc": "2036-10-26T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2036-10-26",
+          "start_ms": 2108606400000,
+          "end_ms": 2108692800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2108611800000,
+          "utc": "2036-10-26T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2036-10-26",
+          "start_ms": 2108606400000,
+          "end_ms": 2108692800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2114308800000,
+          "utc": "2036-12-31T04:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2036-12-31",
+          "start_ms": 2114308800000,
+          "end_ms": 2114395200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2114395199999,
+          "utc": "2037-01-01T03:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2036-12-31",
+          "start_ms": 2114308800000,
+          "end_ms": 2114395200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 2114395200000,
+          "utc": "2037-01-01T04:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2037-01-01",
+          "start_ms": 2114395200000,
+          "end_ms": 2114481600000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 2121910200000,
+          "utc": "2037-03-29T03:30:00.000Z",
+          "why": "the first clock change past the table, counted on in 24-hour days",
+          "day": "2037-03-28",
+          "start_ms": 2121825600000,
+          "end_ms": 2121912000000,
+          "zone": "Europe/London",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "london-0",
+      "clock": {
+        "id": "3cae64d585db4104",
+        "zone": "Europe/London",
+        "start_hour": 0,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767225600000,
+            "days": 88,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-03-30",
+            "start_ms": 1774825200000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-10-26",
+            "start_ms": 1792972800000,
+            "days": 67,
+            "zone": "Europe/London"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767225599999,
+          "utc": "2025-12-31T23:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767139200000,
+          "end_ms": 1767225600000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 1767225600000,
+          "utc": "2026-01-01T00:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767225600000,
+          "end_ms": 1767312000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774825199999,
+          "utc": "2026-03-29T22:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-29",
+          "start_ms": 1774742400000,
+          "end_ms": 1774825200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774825200000,
+          "utc": "2026-03-29T23:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-30",
+          "start_ms": 1774825200000,
+          "end_ms": 1774911600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774830600000,
+          "utc": "2026-03-30T00:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-30",
+          "start_ms": 1774825200000,
+          "end_ms": 1774911600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792965600000,
+          "utc": "2026-10-25T22:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-25",
+          "start_ms": 1792882800000,
+          "end_ms": 1792972800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792969200000,
+          "utc": "2026-10-25T23:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-25",
+          "start_ms": 1792882800000,
+          "end_ms": 1792972800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792972799999,
+          "utc": "2026-10-25T23:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-25",
+          "start_ms": 1792882800000,
+          "end_ms": 1792972800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792972800000,
+          "utc": "2026-10-26T00:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-10-26",
+          "start_ms": 1792972800000,
+          "end_ms": 1793059200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792978200000,
+          "utc": "2026-10-26T01:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-10-26",
+          "start_ms": 1792972800000,
+          "end_ms": 1793059200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798675200000,
+          "utc": "2026-12-31T00:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798675200000,
+          "end_ms": 1798761600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798761599999,
+          "utc": "2026-12-31T23:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798675200000,
+          "end_ms": 1798761600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798761600000,
+          "utc": "2027-01-01T00:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798761600000,
+          "end_ms": 1798848000000,
+          "zone": "Europe/London",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "london-2",
+      "clock": {
+        "id": "9fd2f477034f7046",
+        "zone": "Europe/London",
+        "start_hour": 2,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767232800000,
+            "days": 87,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-03-29",
+            "start_ms": 1774746000000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-10-25",
+            "start_ms": 1792893600000,
+            "days": 68,
+            "zone": "Europe/London"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767232799999,
+          "utc": "2026-01-01T01:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767146400000,
+          "end_ms": 1767232800000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 1767232800000,
+          "utc": "2026-01-01T02:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767232800000,
+          "end_ms": 1767319200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774745999999,
+          "utc": "2026-03-29T00:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-28",
+          "start_ms": 1774663200000,
+          "end_ms": 1774746000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774746000000,
+          "utc": "2026-03-29T01:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-29",
+          "start_ms": 1774746000000,
+          "end_ms": 1774832400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774751400000,
+          "utc": "2026-03-29T02:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-29",
+          "start_ms": 1774746000000,
+          "end_ms": 1774832400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792886400000,
+          "utc": "2026-10-25T00:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792803600000,
+          "end_ms": 1792893600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792890000000,
+          "utc": "2026-10-25T01:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792803600000,
+          "end_ms": 1792893600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792893599999,
+          "utc": "2026-10-25T01:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-24",
+          "start_ms": 1792803600000,
+          "end_ms": 1792893600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792893600000,
+          "utc": "2026-10-25T02:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-10-25",
+          "start_ms": 1792893600000,
+          "end_ms": 1792980000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792899000000,
+          "utc": "2026-10-25T03:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-10-25",
+          "start_ms": 1792893600000,
+          "end_ms": 1792980000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798682400000,
+          "utc": "2026-12-31T02:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798682400000,
+          "end_ms": 1798768800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798768799999,
+          "utc": "2027-01-01T01:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798682400000,
+          "end_ms": 1798768800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798768800000,
+          "utc": "2027-01-01T02:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798768800000,
+          "end_ms": 1798855200000,
+          "zone": "Europe/London",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "london-23",
+      "clock": {
+        "id": "91b3925bd31f1e87",
+        "zone": "Europe/London",
+        "start_hour": 23,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767308400000,
+            "days": 87,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-03-29",
+            "start_ms": 1774821600000,
+            "days": 210,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-10-25",
+            "start_ms": 1792969200000,
+            "days": 68,
+            "zone": "Europe/London"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767308399999,
+          "utc": "2026-01-01T22:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767222000000,
+          "end_ms": 1767308400000,
+          "zone": "Europe/London",
+          "outside": true
+        },
+        {
+          "at": 1767308400000,
+          "utc": "2026-01-01T23:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767308400000,
+          "end_ms": 1767394800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774821599999,
+          "utc": "2026-03-29T21:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-28",
+          "start_ms": 1774738800000,
+          "end_ms": 1774821600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774821600000,
+          "utc": "2026-03-29T22:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-29",
+          "start_ms": 1774821600000,
+          "end_ms": 1774908000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1774827000000,
+          "utc": "2026-03-29T23:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-29",
+          "start_ms": 1774821600000,
+          "end_ms": 1774908000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792962000000,
+          "utc": "2026-10-25T21:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792879200000,
+          "end_ms": 1792969200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792965600000,
+          "utc": "2026-10-25T22:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-24",
+          "start_ms": 1792879200000,
+          "end_ms": 1792969200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792969199999,
+          "utc": "2026-10-25T22:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-24",
+          "start_ms": 1792879200000,
+          "end_ms": 1792969200000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792969200000,
+          "utc": "2026-10-25T23:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-10-25",
+          "start_ms": 1792969200000,
+          "end_ms": 1793055600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1792974600000,
+          "utc": "2026-10-26T00:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-10-25",
+          "start_ms": 1792969200000,
+          "end_ms": 1793055600000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798758000000,
+          "utc": "2026-12-31T23:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798758000000,
+          "end_ms": 1798844400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798844399999,
+          "utc": "2027-01-01T22:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798758000000,
+          "end_ms": 1798844400000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1798844400000,
+          "utc": "2027-01-01T23:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798844400000,
+          "end_ms": 1798930800000,
+          "zone": "Europe/London",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "new-york-0",
+      "clock": {
+        "id": "d7de7958fedb88f5",
+        "zone": "America/New_York",
+        "start_hour": 0,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767243600000,
+            "days": 67,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-03-09",
+            "start_ms": 1773028800000,
+            "days": 238,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-11-02",
+            "start_ms": 1793595600000,
+            "days": 60,
+            "zone": "America/New_York"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767243599999,
+          "utc": "2026-01-01T04:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767157200000,
+          "end_ms": 1767243600000,
+          "zone": "America/New_York",
+          "outside": true
+        },
+        {
+          "at": 1767243600000,
+          "utc": "2026-01-01T05:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767243600000,
+          "end_ms": 1767330000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773028799999,
+          "utc": "2026-03-09T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-08",
+          "start_ms": 1772946000000,
+          "end_ms": 1773028800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773028800000,
+          "utc": "2026-03-09T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-09",
+          "start_ms": 1773028800000,
+          "end_ms": 1773115200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773034200000,
+          "utc": "2026-03-09T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-09",
+          "start_ms": 1773028800000,
+          "end_ms": 1773115200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793588400000,
+          "utc": "2026-11-02T03:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-11-01",
+          "start_ms": 1793505600000,
+          "end_ms": 1793595600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793592000000,
+          "utc": "2026-11-02T04:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-11-01",
+          "start_ms": 1793505600000,
+          "end_ms": 1793595600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793595599999,
+          "utc": "2026-11-02T04:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-11-01",
+          "start_ms": 1793505600000,
+          "end_ms": 1793595600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793595600000,
+          "utc": "2026-11-02T05:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-11-02",
+          "start_ms": 1793595600000,
+          "end_ms": 1793682000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793601000000,
+          "utc": "2026-11-02T06:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-11-02",
+          "start_ms": 1793595600000,
+          "end_ms": 1793682000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798693200000,
+          "utc": "2026-12-31T05:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798693200000,
+          "end_ms": 1798779600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798779599999,
+          "utc": "2027-01-01T04:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798693200000,
+          "end_ms": 1798779600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798779600000,
+          "utc": "2027-01-01T05:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798779600000,
+          "end_ms": 1798866000000,
+          "zone": "America/New_York",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "new-york-2",
+      "clock": {
+        "id": "c972b3712f634225",
+        "zone": "America/New_York",
+        "start_hour": 2,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767250800000,
+            "days": 67,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-03-09",
+            "start_ms": 1773036000000,
+            "days": 237,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-11-01",
+            "start_ms": 1793516400000,
+            "days": 61,
+            "zone": "America/New_York"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767250799999,
+          "utc": "2026-01-01T06:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767164400000,
+          "end_ms": 1767250800000,
+          "zone": "America/New_York",
+          "outside": true
+        },
+        {
+          "at": 1767250800000,
+          "utc": "2026-01-01T07:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767250800000,
+          "end_ms": 1767337200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773035999999,
+          "utc": "2026-03-09T05:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-08",
+          "start_ms": 1772953200000,
+          "end_ms": 1773036000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773036000000,
+          "utc": "2026-03-09T06:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-09",
+          "start_ms": 1773036000000,
+          "end_ms": 1773122400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773041400000,
+          "utc": "2026-03-09T07:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-09",
+          "start_ms": 1773036000000,
+          "end_ms": 1773122400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793509200000,
+          "utc": "2026-11-01T05:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793426400000,
+          "end_ms": 1793516400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793512800000,
+          "utc": "2026-11-01T06:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793426400000,
+          "end_ms": 1793516400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793516399999,
+          "utc": "2026-11-01T06:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-31",
+          "start_ms": 1793426400000,
+          "end_ms": 1793516400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793516400000,
+          "utc": "2026-11-01T07:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-11-01",
+          "start_ms": 1793516400000,
+          "end_ms": 1793602800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793521800000,
+          "utc": "2026-11-01T08:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-11-01",
+          "start_ms": 1793516400000,
+          "end_ms": 1793602800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798700400000,
+          "utc": "2026-12-31T07:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798700400000,
+          "end_ms": 1798786800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798786799999,
+          "utc": "2027-01-01T06:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798700400000,
+          "end_ms": 1798786800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798786800000,
+          "utc": "2027-01-01T07:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798786800000,
+          "end_ms": 1798873200000,
+          "zone": "America/New_York",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "new-york-4",
+      "clock": {
+        "id": "72d5cebe7e651371",
+        "zone": "America/New_York",
+        "start_hour": 4,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767258000000,
+            "days": 66,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-03-08",
+            "start_ms": 1772956800000,
+            "days": 238,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-11-01",
+            "start_ms": 1793523600000,
+            "days": 61,
+            "zone": "America/New_York"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767257999999,
+          "utc": "2026-01-01T08:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767171600000,
+          "end_ms": 1767258000000,
+          "zone": "America/New_York",
+          "outside": true
+        },
+        {
+          "at": 1767258000000,
+          "utc": "2026-01-01T09:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767258000000,
+          "end_ms": 1767344400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1772956799999,
+          "utc": "2026-03-08T07:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-07",
+          "start_ms": 1772874000000,
+          "end_ms": 1772956800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1772956800000,
+          "utc": "2026-03-08T08:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-08",
+          "start_ms": 1772956800000,
+          "end_ms": 1773043200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1772962200000,
+          "utc": "2026-03-08T09:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-08",
+          "start_ms": 1772956800000,
+          "end_ms": 1773043200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793516400000,
+          "utc": "2026-11-01T07:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793433600000,
+          "end_ms": 1793523600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793520000000,
+          "utc": "2026-11-01T08:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793433600000,
+          "end_ms": 1793523600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793523599999,
+          "utc": "2026-11-01T08:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-31",
+          "start_ms": 1793433600000,
+          "end_ms": 1793523600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793523600000,
+          "utc": "2026-11-01T09:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-11-01",
+          "start_ms": 1793523600000,
+          "end_ms": 1793610000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793529000000,
+          "utc": "2026-11-01T10:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-11-01",
+          "start_ms": 1793523600000,
+          "end_ms": 1793610000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798707600000,
+          "utc": "2026-12-31T09:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798707600000,
+          "end_ms": 1798794000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798793999999,
+          "utc": "2027-01-01T08:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798707600000,
+          "end_ms": 1798794000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798794000000,
+          "utc": "2027-01-01T09:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798794000000,
+          "end_ms": 1798880400000,
+          "zone": "America/New_York",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "new-york-23",
+      "clock": {
+        "id": "a4617f76d832d6de",
+        "zone": "America/New_York",
+        "start_hour": 23,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767326400000,
+            "days": 66,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-03-08",
+            "start_ms": 1773025200000,
+            "days": 238,
+            "zone": "America/New_York"
+          },
+          {
+            "day": "2026-11-01",
+            "start_ms": 1793592000000,
+            "days": 61,
+            "zone": "America/New_York"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767326399999,
+          "utc": "2026-01-02T03:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767240000000,
+          "end_ms": 1767326400000,
+          "zone": "America/New_York",
+          "outside": true
+        },
+        {
+          "at": 1767326400000,
+          "utc": "2026-01-02T04:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767326400000,
+          "end_ms": 1767412800000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773025199999,
+          "utc": "2026-03-09T02:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-03-07",
+          "start_ms": 1772942400000,
+          "end_ms": 1773025200000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773025200000,
+          "utc": "2026-03-09T03:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-03-08",
+          "start_ms": 1773025200000,
+          "end_ms": 1773111600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1773030600000,
+          "utc": "2026-03-09T04:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-03-08",
+          "start_ms": 1773025200000,
+          "end_ms": 1773111600000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793584800000,
+          "utc": "2026-11-02T02:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793502000000,
+          "end_ms": 1793592000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793588400000,
+          "utc": "2026-11-02T03:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-10-31",
+          "start_ms": 1793502000000,
+          "end_ms": 1793592000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793591999999,
+          "utc": "2026-11-02T03:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-31",
+          "start_ms": 1793502000000,
+          "end_ms": 1793592000000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793592000000,
+          "utc": "2026-11-02T04:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-11-01",
+          "start_ms": 1793592000000,
+          "end_ms": 1793678400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1793597400000,
+          "utc": "2026-11-02T05:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-11-01",
+          "start_ms": 1793592000000,
+          "end_ms": 1793678400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798776000000,
+          "utc": "2027-01-01T04:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798776000000,
+          "end_ms": 1798862400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798862399999,
+          "utc": "2027-01-02T03:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798776000000,
+          "end_ms": 1798862400000,
+          "zone": "America/New_York"
+        },
+        {
+          "at": 1798862400000,
+          "utc": "2027-01-02T04:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798862400000,
+          "end_ms": 1798948800000,
+          "zone": "America/New_York",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "apia-4",
+      "clock": {
+        "id": "eb7999469571a738",
+        "zone": "Pacific/Apia",
+        "start_hour": 4,
+        "runs": [
+          {
+            "day": "2011-12-01",
+            "start_ms": 1322748000000,
+            "days": 30,
+            "zone": "Pacific/Apia"
+          },
+          {
+            "day": "2011-12-31",
+            "start_ms": 1325253600000,
+            "days": 32,
+            "zone": "Pacific/Apia"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1322747999999,
+          "utc": "2011-12-01T13:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2011-11-30",
+          "start_ms": 1322661600000,
+          "end_ms": 1322748000000,
+          "zone": "Pacific/Apia",
+          "outside": true
+        },
+        {
+          "at": 1322748000000,
+          "utc": "2011-12-01T14:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2011-12-01",
+          "start_ms": 1322748000000,
+          "end_ms": 1322834400000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1325246400000,
+          "utc": "2011-12-30T12:00:00.000Z",
+          "why": "02:00 on 31 December, before its day starts: under the 29th, the 30th being skipped",
+          "day": "2011-12-29",
+          "start_ms": 1325167200000,
+          "end_ms": 1325253600000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1325253599999,
+          "utc": "2011-12-30T13:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2011-12-29",
+          "start_ms": 1325167200000,
+          "end_ms": 1325253600000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1325253600000,
+          "utc": "2011-12-30T14:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2011-12-31",
+          "start_ms": 1325253600000,
+          "end_ms": 1325340000000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1325259000000,
+          "utc": "2011-12-30T15:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2011-12-31",
+          "start_ms": 1325253600000,
+          "end_ms": 1325340000000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1327932000000,
+          "utc": "2012-01-30T14:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2012-01-31",
+          "start_ms": 1327932000000,
+          "end_ms": 1328018400000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1328018399999,
+          "utc": "2012-01-31T13:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2012-01-31",
+          "start_ms": 1327932000000,
+          "end_ms": 1328018400000,
+          "zone": "Pacific/Apia"
+        },
+        {
+          "at": 1328018400000,
+          "utc": "2012-01-31T14:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2012-02-01",
+          "start_ms": 1328018400000,
+          "end_ms": 1328104800000,
+          "zone": "Pacific/Apia",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "lord-howe-2",
+      "clock": {
+        "id": "124002f5868ba8e6",
+        "zone": "Australia/Lord_Howe",
+        "start_hour": 2,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767193200000,
+            "days": 94,
+            "zone": "Australia/Lord_Howe"
+          },
+          {
+            "day": "2026-04-05",
+            "start_ms": 1775316600000,
+            "days": 183,
+            "zone": "Australia/Lord_Howe"
+          },
+          {
+            "day": "2026-10-05",
+            "start_ms": 1791126000000,
+            "days": 88,
+            "zone": "Australia/Lord_Howe"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767193199999,
+          "utc": "2025-12-31T14:59:59.999Z",
+          "why": "the last millisecond before the table",
+          "day": "2025-12-31",
+          "start_ms": 1767106800000,
+          "end_ms": 1767193200000,
+          "zone": "Australia/Lord_Howe",
+          "outside": true
+        },
+        {
+          "at": 1767193200000,
+          "utc": "2025-12-31T15:00:00.000Z",
+          "why": "the table's first day starts",
+          "day": "2026-01-01",
+          "start_ms": 1767193200000,
+          "end_ms": 1767279600000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1775311200000,
+          "utc": "2026-04-04T14:00:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-04-04",
+          "start_ms": 1775228400000,
+          "end_ms": 1775316600000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1775314800000,
+          "utc": "2026-04-04T15:00:00.000Z",
+          "why": "a run's last day, in its 25th hour",
+          "day": "2026-04-04",
+          "start_ms": 1775228400000,
+          "end_ms": 1775316600000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1775316599999,
+          "utc": "2026-04-04T15:29:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-04-04",
+          "start_ms": 1775228400000,
+          "end_ms": 1775316600000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1775316600000,
+          "utc": "2026-04-04T15:30:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-04-05",
+          "start_ms": 1775316600000,
+          "end_ms": 1775403000000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1775322000000,
+          "utc": "2026-04-04T17:00:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-04-05",
+          "start_ms": 1775316600000,
+          "end_ms": 1775403000000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1791124200000,
+          "utc": "2026-10-04T14:30:00.000Z",
+          "why": "a run's last day, in its 24th hour",
+          "day": "2026-10-04",
+          "start_ms": 1791041400000,
+          "end_ms": 1791126000000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1791125999999,
+          "utc": "2026-10-04T14:59:59.999Z",
+          "why": "the last millisecond of a run's last day",
+          "day": "2026-10-04",
+          "start_ms": 1791041400000,
+          "end_ms": 1791126000000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1791126000000,
+          "utc": "2026-10-04T15:00:00.000Z",
+          "why": "a run's first day starts",
+          "day": "2026-10-05",
+          "start_ms": 1791126000000,
+          "end_ms": 1791212400000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1791131400000,
+          "utc": "2026-10-04T16:30:00.000Z",
+          "why": "a run's first day, 90 minutes in",
+          "day": "2026-10-05",
+          "start_ms": 1791126000000,
+          "end_ms": 1791212400000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1798642800000,
+          "utc": "2026-12-30T15:00:00.000Z",
+          "why": "the table's final day starts",
+          "day": "2026-12-31",
+          "start_ms": 1798642800000,
+          "end_ms": 1798729200000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1798729199999,
+          "utc": "2026-12-31T14:59:59.999Z",
+          "why": "the table's final millisecond",
+          "day": "2026-12-31",
+          "start_ms": 1798642800000,
+          "end_ms": 1798729200000,
+          "zone": "Australia/Lord_Howe"
+        },
+        {
+          "at": 1798729200000,
+          "utc": "2026-12-31T15:00:00.000Z",
+          "why": "the first millisecond past the table",
+          "day": "2027-01-01",
+          "start_ms": 1798729200000,
+          "end_ms": 1798815600000,
+          "zone": "Australia/Lord_Howe",
+          "outside": true
+        }
+      ]
+    },
+    {
+      "name": "trip",
+      "clock": {
+        "id": "7ff46704982990a3",
+        "zone": "Asia/Kolkata",
+        "start_hour": 4,
+        "runs": [
+          {
+            "day": "2026-01-01",
+            "start_ms": 1767220200000,
+            "days": 9,
+            "zone": "Asia/Kolkata"
+          },
+          {
+            "day": "2026-01-10",
+            "start_ms": 1768017600000,
+            "days": 10,
+            "zone": "Europe/London"
+          },
+          {
+            "day": "2026-01-20",
+            "start_ms": 1768861800000,
+            "days": 12,
+            "zone": "Asia/Kolkata"
+          }
+        ]
+      },
+      "cases": [
+        {
+          "at": 1767571200000,
+          "utc": "2026-01-05T00:00:00.000Z",
+          "why": "a Kolkata day before the trip",
+          "day": "2026-01-05",
+          "start_ms": 1767565800000,
+          "end_ms": 1767652200000,
+          "zone": "Asia/Kolkata"
+        },
+        {
+          "at": 1767960000000,
+          "utc": "2026-01-09T12:00:00.000Z",
+          "why": "the day flown west, at its usual hours",
+          "day": "2026-01-09",
+          "start_ms": 1767911400000,
+          "end_ms": 1768017600000,
+          "zone": "Asia/Kolkata"
+        },
+        {
+          "at": 1768017599999,
+          "utc": "2026-01-10T03:59:59.999Z",
+          "why": "the last millisecond of the 29.5-hour day",
+          "day": "2026-01-09",
+          "start_ms": 1767911400000,
+          "end_ms": 1768017600000,
+          "zone": "Asia/Kolkata"
+        },
+        {
+          "at": 1768017600000,
+          "utc": "2026-01-10T04:00:00.000Z",
+          "why": "the first London day starts",
+          "day": "2026-01-10",
+          "start_ms": 1768017600000,
+          "end_ms": 1768104000000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1768824000000,
+          "utc": "2026-01-19T12:00:00.000Z",
+          "why": "the day flown back",
+          "day": "2026-01-19",
+          "start_ms": 1768795200000,
+          "end_ms": 1768861800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1768861799999,
+          "utc": "2026-01-19T22:29:59.999Z",
+          "why": "the last millisecond of the 18.5-hour day",
+          "day": "2026-01-19",
+          "start_ms": 1768795200000,
+          "end_ms": 1768861800000,
+          "zone": "Europe/London"
+        },
+        {
+          "at": 1768861800000,
+          "utc": "2026-01-19T22:30:00.000Z",
+          "why": "Kolkata again",
+          "day": "2026-01-20",
+          "start_ms": 1768861800000,
+          "end_ms": 1768948200000,
+          "zone": "Asia/Kolkata"
+        },
+        {
+          "at": 1769893200000,
+          "utc": "2026-01-31T21:00:00.000Z",
+          "why": "the table's final day",
+          "day": "2026-01-31",
+          "start_ms": 1769812200000,
+          "end_ms": 1769898600000,
+          "zone": "Asia/Kolkata"
+        }
+      ]
+    }
+  ]
+}

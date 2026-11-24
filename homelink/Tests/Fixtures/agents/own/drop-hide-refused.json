@@ -1,0 +1,12 @@
+{
+  "route": "POST /v1/access/drop",
+  "request": {
+    "drop": 3,
+    "version": 4
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Line 3 says what stays hidden: dropping it would widen your access. Drop a line that allows a read."
+  }
+}

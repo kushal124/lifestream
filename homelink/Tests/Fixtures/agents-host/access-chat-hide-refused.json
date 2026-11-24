@@ -1,0 +1,74 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "act" : "agent-access",
+    "expect" : 1,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-chat-hide-refused.json",
+  "reply" : {
+    "refused" : {
+      "code" : "BAD_REQUEST",
+      "message" : "Each conversation hides what you pick in it."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "expect" : 1
+  }
+}

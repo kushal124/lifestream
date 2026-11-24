@@ -1,0 +1,58 @@
+{
+  "person": [
+    {
+      "asked": "Person A",
+      "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDEiXQ",
+      "name": "Person A"
+    }
+  ],
+  "record": {
+    "as_of": "2026-11-14T22:10+00:00",
+    "total": 2,
+    "held": {
+      "first": "2019-02-01",
+      "last": "2026-11-13"
+    },
+    "pending": [
+      {
+        "day": "2026-11-14",
+        "why": "new"
+      }
+    ],
+    "hits": [
+      {
+        "ref": "record.WyJyZWNvcmQiLCJpbWVzc2FnZTpsb2NhbDptYWNib29rLXByby1hYTQyIiwibWVzc2FnZSIsImIyIl0",
+        "at": "2026-11-13T21:30+00:00",
+        "day": "2026-11-13",
+        "family": "messages",
+        "product": "imessage",
+        "title": "Person A",
+        "from": "Person A",
+        "snippet": "see you tomorrow",
+        "chat": "chat.WyJjaGF0IiwiaW1lc3NhZ2U6KzE1NTUwMDAwMDAyIl0",
+        "chat_title": "Person A"
+      },
+      {
+        "ref": "record.WyJyZWNvcmQiLCJjYWxsczpsb2NhbDppcGhvbmUtYWEwMSIsImNhbGwiLCJjOSJd",
+        "at": "2026-11-12T09:00+00:00",
+        "day": "2026-11-12",
+        "family": "calls",
+        "product": "phone",
+        "title": "Call with Person A"
+      }
+    ],
+    "spread": {
+      "families": {
+        "messages": 1,
+        "calls": 1
+      },
+      "months": {
+        "2026-11": 2
+      }
+    },
+    "next": null
+  },
+  "screen": {
+    "unread": "the screen records no person"
+  }
+}

@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Synthetic recorder lab — automatic sequence</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#edf1f4;color:#152333;font:20px/1.5 system-ui,sans-serif}header{padding:18px 32px;background:#172b40;color:white}header strong{font-size:19px;letter-spacing:1px}nav{display:flex;gap:9px;margin-top:12px;flex-wrap:wrap}button{font:600 16px system-ui;padding:10px 15px;border:2px solid #9ab2c8;border-radius:7px;background:white;color:#163049;cursor:pointer}button[aria-pressed=true]{background:#d6ecff;border-color:#62a7df}button:focus-visible{outline:4px solid #edbf32;outline-offset:2px}main{padding:20px 32px;max-width:1500px;margin:auto}.phase{font:700 20px ui-monospace,monospace;color:#425974;margin-bottom:10px}h1{font-size:28px;line-height:1.2;margin:0 0 15px}article{background:white;padding:22px 30px;border:1px solid #b9c9d5;border-radius:8px;max-width:1250px}p{margin:0 0 14px}.article p:first-child{font-size:25px;font-weight:700}.article p{max-width:1160px}.columns{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}pre{background:#172b40;color:#f6f8fc;padding:22px;border-radius:8px;font:19px/1.75 ui-monospace,monospace;white-space:pre-wrap;margin:0}table{border-collapse:collapse;width:100%;background:white;font-size:20px}th,td{padding:13px;border:1px solid #a7bdcb;text-align:left}th{background:#d6e6f0}.note{margin-top:16px;background:#fff5d7;padding:16px;border:1px solid #c3ac6c}canvas{display:block;width:100%;height:430px;background:white;border:1px solid #a7bdcb}.panel{background:white;border:1px solid #adc0cd;padding:22px;border-radius:8px;height:175px}.panel p:first-child{font-weight:700}.overlay{position:relative;margin:-15px auto 18px;width:760px;background:#fff5d7;border:2px solid #ac8f40;border-radius:8px;padding:17px;box-shadow:0 8px 15px #10203018;z-index:1}.mixed canvas{height:150px}.mixed .columns{gap:25px}.dense h2{font-size:22px;margin:0 0 12px}#phaseCanvas{height:430px}@media(max-width:1000px){body{font-size:17px}.columns{gap:10px}pre{font-size:15px}td,th{padding:8px;font-size:16px}.overlay{width:75%}header,main{padding-left:20px;padding-right:20px}}
+</style>
+<header><strong>SYNTHETIC RECORDER LAB</strong><nav aria-label="Scenario"><button data-phase="article">Readable article</button><button data-phase="dense">Dense code and table</button><button data-phase="canvas">Canvas pixels</button><button data-phase="mixed">Mixed panels and overlap</button><button id="next">Next scenario</button></nav></header><main><div id="marker" class="phase"></div><h1 id="title"></h1><div id="stage"></div></main>
+<script>
+const phases={"article": {"marker": "PHASEALPHA101", "title": "Readable article", "lines": ["ORBITAL101 A quiet observatory above the clouds", "Harbor instruments measure light from distant stars. Each reading carries a timestamp and a confidence estimate.", "CALIBRATE202 The amber sensor records forty seven samples while the violet sensor records sixty three samples.", "Engineers compare the measurements before adjusting the lens. A stable reference makes small changes easier to notice.", "ARCHIVE303 Store the original reading alongside every later interpretation. Keep uncertainty visible and preserve the source.", "At dawn the laboratory publishes a short report. The team reviews clarity, completeness, timing, and storage.", "CHECKPOINT404 The final checklist contains cedar quartz indigo maple velvet and cobalt."]}, "dense": {"marker": "PHASEBETA202", "title": "Dense code and table", "lines": ["CODEBLOCK505 Deterministic sample processing", "function summarize(samples) {", "  const valid = samples.filter(item => item.score >= 42);", "  return valid.map(item => ({ id: item.id, score: item.score * 2 }));", "}", "const result = summarize([{ id: \"sampleA\", score: 57 }]);", "assert(result[0].score === 114);", "TABLEBLOCK606 Region Count Delay Status", "Northfield 128 12ms Ready", "Southpoint 256 24ms Queued", "Eastvale 512 36ms Verified", "Westhaven 1024 48ms Complete", "Centralis 2048 60ms Archived", "REVIEW707 Compare exact values preserve repeated words repeated words and punctuation."]}, "canvas": {"marker": "PHASEGAMMA303", "title": "Canvas pixels", "lines": ["CANVAS808 This sentence exists only in painted pixels.", "RASTER909 Copper lanterns illuminate the synthetic studio.", "PIXEL1010 Record seventeen circles and twenty nine squares.", "GLYPH1111 The reading is 314159 and the label is violet.", "VISIBLE1212 Every line belongs to the image, not the accessibility tree.", "PROBE1313 Notice the tiny change from cedar to cedars."]}, "mixed": {"marker": "PHASEDELTA404", "title": "Mixed panels and overlap", "lines": ["PANEL1414 Mission journal", "An amber drone crosses a silent valley.", "Altitude 840 meters. Battery 76 percent.", "PANEL1515 Sensor notes", "Wind northeast. Temperature 18 degrees.", "Packet count 4096. Checksum verified.", "OVERLAY1616 Review complete", "Keep the original frame and label the observation.", "CANVAS1717 Raster annotation below the panels.", "FINAL1818 Quartz meadow saffron birch nickel."]}}; const keys=Object.keys(phases);let current='article';
+function element(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e}
+function paint(canvas,lines,font=24){const bounds=canvas.getBoundingClientRect();const ratio=window.devicePixelRatio||1;canvas.width=Math.round(bounds.width*ratio);canvas.height=Math.round(bounds.height*ratio);const ctx=canvas.getContext('2d');ctx.scale(ratio,ratio);ctx.fillStyle='#fff';ctx.fillRect(0,0,bounds.width,bounds.height);ctx.fillStyle='#152333';ctx.font=`${font}px system-ui`;lines.forEach((line,i)=>ctx.fillText(line,24,45+i*(font+28)))}
+function show(key){current=key;const p=phases[key],stage=document.getElementById('stage');stage.replaceChildren();stage.className=key;document.getElementById('marker').textContent=p.marker;document.getElementById('title').textContent=p.title;document.querySelectorAll('[data-phase]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.phase===key)));location.hash=key;
+if(key==='article'){const a=element('article');p.lines.forEach(line=>a.append(element('p',line)));stage.append(a)}
+if(key==='dense'){const columns=element('div',null,'columns');const left=element('section');left.append(element('h2',p.lines[0]));left.append(element('pre',p.lines.slice(1,7).join('\n')));const right=element('section');right.append(element('h2','TABLEBLOCK606'));const table=element('table');const header=element('tr');['Region','Count','Delay','Status'].forEach(t=>header.append(element('th',t)));table.append(header);p.lines.slice(8,13).forEach(line=>{const row=element('tr');line.split(' ').forEach(t=>row.append(element('td',t)));table.append(row)});right.append(table);columns.append(left,right);stage.append(columns,element('p',p.lines[13],'note'))}
+if(key==='canvas'){const c=element('canvas');c.id='phaseCanvas';c.setAttribute('aria-label','Raster test surface');stage.append(c);paint(c,p.lines,23)}
+if(key==='mixed'){const columns=element('div',null,'columns');for(const start of [0,3]){const panel=element('section',null,'panel');p.lines.slice(start,start+3).forEach(line=>panel.append(element('p',line)));columns.append(panel)}stage.append(columns);const overlay=element('aside',null,'overlay');p.lines.slice(6,8).forEach(line=>overlay.append(element('p',line)));stage.append(overlay);const c=element('canvas');c.setAttribute('aria-label','Raster annotation surface');stage.append(c);paint(c,p.lines.slice(8),23)}
+}
+document.querySelectorAll('[data-phase]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.phase)));document.getElementById('next').addEventListener('click',()=>show(keys[(keys.indexOf(current)+1)%keys.length]));window.addEventListener('resize',()=>show(current));show(keys.includes(location.hash.slice(1))?location.hash.slice(1):'article');
+</script><section id="automatic-controls" aria-label="Automatic sequence controls" style="position:fixed;bottom:0;left:0;right:0;z-index:3;background:#f7fafc;border-top:2px solid #8fa9bd;padding:8px 20px;display:flex;align-items:center;gap:14px;font:14px/1.3 system-ui">
+<button id="automatic-start">Start five-minute sequence</button><button id="automatic-cancel" disabled>Cancel sequence</button>
+<span id="automatic-status" role="status">Ready. Twenty-second lead-in, then four scenes of seventy-five seconds each.</span>
+<button id="automatic-results-toggle" aria-expanded="false" aria-controls="automatic-results">Show timing results</button>
+<div id="automatic-results" hidden style="position:absolute;bottom:100%;right:0;width:720px;max-height:360px;overflow:auto;background:white;border:2px solid #8fa9bd;padding:15px;color:#152333">
+<label for="automatic-window">Scheduled window JSON</label><textarea id="automatic-window" readonly rows="2" style="display:block;width:100%;font:14px monospace">null</textarea>
+<label for="automatic-events">Actual phase events JSON</label><textarea id="automatic-events" readonly rows="6" style="display:block;width:100%;font:14px monospace">[]</textarea>
+<label for="automatic-result">Sequence result JSON</label><textarea id="automatic-result" readonly rows="4" style="display:block;width:100%;font:14px monospace">null</textarea>
+<p>Hide this panel during recording. Actual phase times are written immediately after each scene renders its synchronous content.</p>
+</div></section><script>
+(() => {
+  const startButton=document.getElementById('automatic-start');
+  const cancelButton=document.getElementById('automatic-cancel');
+  const status=document.getElementById('automatic-status');
+  const windowOutput=document.getElementById('automatic-window');
+  const eventsOutput=document.getElementById('automatic-events');
+  const resultOutput=document.getElementById('automatic-result');
+  const results=document.getElementById('automatic-results');
+  const toggle=document.getElementById('automatic-results-toggle');
+  const manualButtons=[...document.querySelectorAll('[data-phase],#next')];
+  let generation=0, timers=[], running=false;
+  function clearTimers(){timers.forEach(clearTimeout);timers=[];}
+  function lockManual(value){manualButtons.forEach(button=>button.disabled=value);}
+  function cancel(reason){
+    if(!running)return;
+    generation++;clearTimers();running=false;lockManual(false);
+    startButton.disabled=false;cancelButton.disabled=true;
+    const result=JSON.parse(resultOutput.value);
+    result.status='cancelled';result.reason=reason;result.finishedAt=Date.now()/1000;
+    resultOutput.value=JSON.stringify(result,null,2);
+    status.textContent='Sequence cancelled. Timing results retained.';
+  }
+  cancelButton.addEventListener('click',()=>cancel('operator-cancelled'));
+  toggle.addEventListener('click',()=>{
+    results.hidden=!results.hidden;toggle.setAttribute('aria-expanded',String(!results.hidden));
+    toggle.textContent=results.hidden?'Show timing results':'Hide timing results';
+  });
+  document.addEventListener('visibilitychange',()=>{
+    if(running&&document.hidden)cancel('page-hidden');
+  });
+  startButton.addEventListener('click',()=>{
+    if(running)return;
+    clearTimers();const token=++generation;running=true;lockManual(true);
+    startButton.disabled=true;cancelButton.disabled=false;
+    results.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.textContent='Show timing results';
+    const clickedAt=Date.now()/1000;
+    const scheduledStart=clickedAt+20;
+    const window={start:scheduledStart,end:scheduledStart+300};
+    windowOutput.value=JSON.stringify(window);
+    eventsOutput.value='[]';
+    resultOutput.value=JSON.stringify({status:'running',clickedAt,leadInSeconds:20,phaseSeconds:75,plannedDurationSeconds:300},null,2);
+    status.textContent='Sequence armed. Recording window begins after the twenty-second lead-in.';
+    const order=['article','dense','canvas','mixed'];
+    order.forEach((phase,index)=>{
+      const planned=scheduledStart+75*index;
+      timers.push(setTimeout(()=>{
+        if(!running||token!==generation)return;
+        if(document.hidden){cancel('page-hidden');return;}
+        show(phase);
+        // show() updates DOM and paints canvas synchronously. This timestamp is a
+        // JS render-request witness; compositing/display presentation follows later.
+        const at=Date.now()/1000;
+        const events=JSON.parse(eventsOutput.value);
+        events.push({at,phase,scheduledAt:planned,callbackLatenessSeconds:at-planned});
+        eventsOutput.value=JSON.stringify(events,null,2);
+        status.textContent='Automatic scene '+(index+1)+' of four. Timing results are available.';
+      },Math.max(0,(planned-Date.now()/1000)*1000)));
+    });
+    timers.push(setTimeout(()=>{
+      if(!running||token!==generation)return;
+      running=false;clearTimers();lockManual(false);startButton.disabled=false;cancelButton.disabled=true;
+      const result=JSON.parse(resultOutput.value);result.status='completed';result.finishedAt=Date.now()/1000;
+      result.finishLatenessSeconds=result.finishedAt-window.end;result.actualPhaseEvents=JSON.parse(eventsOutput.value).length;
+      resultOutput.value=JSON.stringify(result,null,2);
+      status.textContent='Five-minute sequence complete. Show timing results to retrieve actual events.';
+    },Math.max(0,(window.end-Date.now()/1000)*1000)));
+  });
+})();
+</script></html>

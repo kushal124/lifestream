@@ -1,0 +1,317 @@
+{
+  "about": "What a place's circle takes in while it is dragged (packages/families/shared/places.ts, takesIn): the stays of every point whose winning circle, among `others` and `circle`, has the circle's slug. A circle holds a point when the haversine distance to its centre (earth radius 6371008.8 m) is at most its radius; of the circles holding a point the smallest wins, then the nearest centre, then the lowest slug. Written by packages/families/shared/labels.e2e.test.ts from takesIn itself; both apps' drag tests read it case by case.",
+  "cases": [
+    {
+      "about": "No points: nothing is taken in.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [],
+      "points": [],
+      "takes_in": 0
+    },
+    {
+      "about": "A point in no circle is taken in by none.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "park",
+          "latitude": 0,
+          "longitude": 0.008983,
+          "radius_m": 200
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.004492,
+          "count": 3
+        }
+      ],
+      "takes_in": 0
+    },
+    {
+      "about": "Every point the circle alone holds counts with its count of stays, a spot worth naming or not (the Mac today counts only the spots worth naming).",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.00009,
+          "count": 2
+        },
+        {
+          "latitude": 0.00018,
+          "longitude": -0.000449,
+          "count": 1
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.002695,
+          "count": 4
+        }
+      ],
+      "takes_in": 3
+    },
+    {
+      "about": "A point exactly on the edge is inside: inside is a haversine distance on a 6371008.8 m earth at most the radius, with no tolerance beside it.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 76.06930126500548
+      },
+      "others": [],
+      "points": [
+        {
+          "latitude": 0.000269,
+          "longitude": 0.000629,
+          "count": 5
+        }
+      ],
+      "takes_in": 5
+    },
+    {
+      "about": "The same point with the radius one floating-point step shorter is outside.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 76.06930126500546
+      },
+      "others": [],
+      "points": [
+        {
+          "latitude": 0.000269,
+          "longitude": 0.000629,
+          "count": 5
+        }
+      ],
+      "takes_in": 0
+    },
+    {
+      "about": "Nested circles: a point both hold goes to the smaller, so the larger takes in only what the smaller leaves (both apps today count every point inside the circle).",
+      "circle": {
+        "slug": "park",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 500
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0,
+          "radius_m": 100
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.00018,
+          "count": 5
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.002695,
+          "count": 2
+        }
+      ],
+      "takes_in": 2
+    },
+    {
+      "about": "Nested circles, the smaller edited: it takes in every point it holds, the larger's too.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "park",
+          "latitude": 0,
+          "longitude": 0,
+          "radius_m": 500
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.00018,
+          "count": 5
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.002695,
+          "count": 2
+        }
+      ],
+      "takes_in": 5
+    },
+    {
+      "about": "Equal radii: a point both hold goes to the nearer centre.",
+      "circle": {
+        "slug": "cafe",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0.001078,
+          "radius_m": 100
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.000449,
+          "count": 3
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.000629,
+          "count": 4
+        }
+      ],
+      "takes_in": 3
+    },
+    {
+      "about": "Equal radii and equal distance: the lower slug wins, here the edited circle.",
+      "circle": {
+        "slug": "cafe",
+        "latitude": 0,
+        "longitude": -0.000539,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0.000539,
+          "radius_m": 100
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0,
+          "count": 2
+        }
+      ],
+      "takes_in": 2
+    },
+    {
+      "about": "Equal radii and equal distance: the lower slug wins, here the other circle.",
+      "circle": {
+        "slug": "park",
+        "latitude": 0,
+        "longitude": -0.000539,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0.000539,
+          "radius_m": 100
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0,
+          "count": 2
+        }
+      ],
+      "takes_in": 0
+    },
+    {
+      "about": "A circle among others of the same slug stands for its place: a point the place's other circle wins counts for it.",
+      "circle": {
+        "slug": "harbour",
+        "latitude": 0,
+        "longitude": 0,
+        "radius_m": 100
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0.008983,
+          "radius_m": 60
+        },
+        {
+          "slug": "park",
+          "latitude": 0.000898,
+          "longitude": 0.008983,
+          "radius_m": 500
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.009073,
+          "count": 2
+        },
+        {
+          "latitude": 0.000898,
+          "longitude": 0.011678,
+          "count": 6
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.00018,
+          "count": 1
+        }
+      ],
+      "takes_in": 3
+    },
+    {
+      "about": "A new circle sits on the spot to name, as wide as a stay's reach, and takes in that spot.",
+      "circle": {
+        "slug": "new",
+        "latitude": 0,
+        "longitude": 0.003593,
+        "radius_m": 80
+      },
+      "others": [
+        {
+          "slug": "harbour",
+          "latitude": 0,
+          "longitude": 0,
+          "radius_m": 100
+        }
+      ],
+      "points": [
+        {
+          "latitude": 0,
+          "longitude": 0.003593,
+          "count": 7
+        },
+        {
+          "latitude": 0,
+          "longitude": 0.004357,
+          "count": 1
+        }
+      ],
+      "takes_in": 7
+    }
+  ]
+}

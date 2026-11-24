@@ -1,0 +1,115 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": 1930361400000,
+  "updated_ms": 1930411800000,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:phone-aa01/1930303800000@1930325400000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "4h 10m"
+      },
+      "start_ms": 1930325400000,
+      "end_ms": 1930340400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1930342200000@1930342200000",
+      "kind": "stay",
+      "episode": "e12",
+      "head": {
+        "title": "Synthetic Office",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "4h 18m"
+      },
+      "start_ms": 1930342200000,
+      "end_ms": 1930357680000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "gap:1930357680000",
+      "kind": "gap",
+      "episode": null,
+      "head": {
+        "title": "Nothing recorded",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "pause",
+        "quiet": true,
+        "words": [],
+        "length": null
+      },
+      "start_ms": 1930357680000,
+      "end_ms": 1930361400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1930368000000@1930368000000",
+      "kind": "stay",
+      "episode": "e56",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": null
+      },
+      "start_ms": 1930368000000,
+      "end_ms": 1930411800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1930411800000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": true,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

@@ -1,0 +1,13 @@
+Day 2026-09-20 (Sunday) in America/New_York, 04:00 to 2026-09-21 04:00 (24 h)
+7 atoms: listening 7
+
+08:10–09:11 synced device 0000BBBB and macbook-pro-0001: 11 tracks in Music — Artist A, Artist B, Artist C and 3 others (Synthetic Episode 12 by Synthetic Show in Podcasts, 23 min)
+13:00–13:14 macbook-pro-0001: 4 tracks in Spotify — Artist N, Artist O
+19:40–20:09 macbook-pro-0001: 7 tracks in Music — Artist G, Artist H, Artist I
+20:28–20:31 macbook-pro-0001: Synthetic Song 30 by Artist I in Music
+21:00 synced device 0000BBBB: Synthetic Song 40 by Artist J in Music; no end stated for Synthetic Song 40
+23:00–23:03 synced device 0000BBBB: Synthetic Song 41 by Artist J in Music
+2026-09-21 03:50–04:00 macbook-pro-0001: Synthetic Long Piece by Artist K in com.example.player, 22 min (continues into 21 Sep)
+
+Coverage
+listening: now-playing:person-a@example.com:macbook-pro-0001 read through the day

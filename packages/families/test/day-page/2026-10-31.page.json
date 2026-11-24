@@ -1,0 +1,161 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "day@1793433600000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1793433600000,
+      "end_ms": 1793523600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1793433600000#run",
+          "kind": "run",
+          "start_ms": 1793433600000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e2",
+              "kind": "other",
+              "at_ms": 1793445120000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Person A",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "21h 23m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg m157",
+              "divider": null
+            },
+            {
+              "key": "e4",
+              "kind": "other",
+              "at_ms": 1793470020000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 52",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s168",
+              "divider": null
+            },
+            {
+              "key": "e5",
+              "kind": "other",
+              "at_ms": 1793473320000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 56",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s169",
+              "divider": null
+            },
+            {
+              "key": "e6",
+              "kind": "other",
+              "at_ms": 1793473920000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "12h 28m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:mac-0001 msg m162",
+              "divider": null
+            },
+            {
+              "key": "e12",
+              "kind": "other",
+              "at_ms": 1793506200000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 74",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s166",
+              "divider": "2026-11-01"
+            },
+            {
+              "key": "e13",
+              "kind": "other",
+              "at_ms": 1793512620000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 61",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s167",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1793523600000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": false,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

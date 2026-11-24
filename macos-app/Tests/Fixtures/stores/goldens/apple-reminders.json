@@ -1,0 +1,56 @@
+{
+  "connector" : "apple-reminders",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-reminders:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-reminders:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "reminders-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "Data-AAAAAAAA-0000-4000-8000-000000000001.sqlite",
+            "Data-local.sqlite"
+          ],
+          "source_id" : "apple-reminders:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-reminders:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-reminders:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "reminders"
+}

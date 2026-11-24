@@ -1,0 +1,15 @@
+{
+  "route": "GET /v1/agents/address",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "state": "fix",
+    "url": null,
+    "words": "Allow Funnel in Tailscale to put your address on the internet.",
+    "act": {
+      "label": "Allow Funnel",
+      "to": "turn-on",
+      "url": null
+    }
+  }
+}

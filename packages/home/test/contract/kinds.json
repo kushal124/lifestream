@@ -1,0 +1,338 @@
+{
+  "as_of": "2026-11-14T22:10+00:00",
+  "held": {
+    "first": "2019-02-01",
+    "last": "2026-11-14"
+  },
+  "total": {
+    "n": 1747,
+    "partial": true
+  },
+  "capped": true,
+  "reached": {
+    "side": "newest",
+    "at": "2025-06-02T08:10+01:00",
+    "whole": "2025-06-03"
+  },
+  "top": [
+    {
+      "person": {
+        "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDciXQ",
+        "name": "Riverside Gym",
+        "messages": 214
+      }
+    },
+    {
+      "place": {
+        "ref": "place.WyJwbGFjZSIsInJpdmVyc2lkZS1neW0iXQ",
+        "name": "Riverside Gym",
+        "days": 41
+      }
+    },
+    {
+      "hit": {
+        "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJtNDQxMCJd",
+        "at": "2026-11-13T18:02+00:00",
+        "day": "2026-11-13",
+        "family": "messages",
+        "product": "whatsapp",
+        "title": "Asha",
+        "from": "Asha",
+        "snippet": "are we still on for «Riverside» at 7? I booked a court",
+        "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+        "chat_title": "Asha"
+      }
+    }
+  ],
+  "kinds": [
+    {
+      "family": "messages",
+      "n": {
+        "n": 1180,
+        "partial": true
+      },
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJtNDQwOCJd",
+          "at": "2026-11-13T17:55+00:00",
+          "day": "2026-11-13",
+          "family": "messages",
+          "product": "whatsapp",
+          "title": "Asha",
+          "from": "the user",
+          "snippet": "I'll be at «Riverside» by half six, see you at the front desk",
+          "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+          "chat_title": "Asha"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJpbWVzc2FnZTpsb2NhbDptYWNib29rLXByby1hYTQyIiwibWVzc2FnZSIsImIyMjEwIl0",
+          "at": "2026-11-09T10:21+00:00",
+          "day": "2026-11-09",
+          "family": "messages",
+          "product": "imessage",
+          "title": "Ben",
+          "from": "Ben",
+          "snippet": "the pool at «Riverside» is shut on Sundays now",
+          "chat": "chat.WyJjaGF0IiwiaW1lc3NhZ2U6KzE1NTUwMDAwMDAyIl0",
+          "chat_title": "Ben"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJtMzk3NyJd",
+          "at": "2026-11-01T09:00+00:00",
+          "day": "2026-11-01",
+          "family": "messages",
+          "product": "whatsapp",
+          "title": "Riverside Gym",
+          "from": "Riverside Gym",
+          "snippet": "Your membership at «Riverside» Gym renews on 1 December",
+          "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDdAcy53aGF0c2FwcC5uZXQiXQ",
+          "chat_title": "Riverside Gym"
+        }
+      ]
+    },
+    {
+      "family": "listening",
+      "n": 415,
+      "tracks": [
+        {
+          "ref": "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSIsIlRoZSBRdWlldCBIb3VycyJdLCJwIjpudWxsfSwxNDBd",
+          "track": "Riverside",
+          "artist": "The Quiet Hours",
+          "plays": 212
+        },
+        {
+          "ref": "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSBEcml2ZSIsIlRoZSBRdWlldCBIb3VycyJdLCJwIjpudWxsfSw1Ml0",
+          "track": "Riverside Drive",
+          "artist": "The Quiet Hours",
+          "plays": 61
+        },
+        {
+          "ref": "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSBOaWdodHMiLCJNb25vIENvYXN0Il0sInAiOm51bGx9LDQwXQ",
+          "track": "Riverside Nights",
+          "artist": "Mono Coast",
+          "plays": 47
+        }
+      ]
+    },
+    {
+      "family": "mail",
+      "n": 96,
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnbWFpbDpwZXJzb24tYUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtODgxMiJd",
+          "at": "2026-11-02T07:30+00:00",
+          "day": "2026-11-02",
+          "family": "mail",
+          "product": "gmail",
+          "title": "Your November class timetable",
+          "from": "members@riverside-gym.example",
+          "snippet": "classes at «Riverside» Gym this month: spin, yoga and the new early swim"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnbWFpbDpwZXJzb24tYUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtODcyMCJd",
+          "at": "2026-10-28T21:14+00:00",
+          "day": "2026-10-28",
+          "family": "mail",
+          "product": "gmail",
+          "title": "Re: Riverside 10k sign-up",
+          "from": "the user",
+          "snippet": "count me in for the «Riverside» 10k, I'll start the plan this week"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnbWFpbDpwZXJzb24tYUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtODcxNiJd",
+          "at": "2026-10-28T19:02+00:00",
+          "day": "2026-10-28",
+          "family": "mail",
+          "product": "gmail",
+          "title": "Riverside 10k sign-up",
+          "from": "Ben",
+          "snippet": "signed us both up for the «Riverside» 10k on 6 December",
+          "more": true
+        }
+      ]
+    },
+    {
+      "family": "calendar",
+      "n": 23,
+      "upcoming": 2,
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImU1MTAyIl0",
+          "at": "2026-11-18T07:00+00:00",
+          "day": "2026-11-18",
+          "family": "calendar",
+          "product": "google-calendar",
+          "title": "Spin class, Riverside Gym",
+          "snippet": "Spin class, «Riverside» Gym"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImU1MDc3Il0",
+          "at": "2026-11-11T07:00+00:00",
+          "day": "2026-11-11",
+          "family": "calendar",
+          "product": "google-calendar",
+          "title": "Swim, Riverside Gym",
+          "snippet": "Swim, «Riverside» Gym"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImU1MTQwIl0",
+          "at": "2026-12-06T09:00+00:00",
+          "day": "2026-12-06",
+          "family": "calendar",
+          "product": "google-calendar",
+          "title": "Riverside 10k",
+          "snippet": "«Riverside» 10k, start line by the boathouse"
+        }
+      ]
+    },
+    {
+      "family": "screen",
+      "n": {
+        "n": 14,
+        "partial": true
+      },
+      "sittings": [
+        {
+          "focus": "u:screen:local:macbook-pro-0001/1794472260000",
+          "at": "2026-11-12T08:31+00:00",
+          "day": "2026-11-12",
+          "summary": "Compared membership plans on the Riverside Gym site",
+          "snippet": "Compared membership plans on the «Riverside» Gym site",
+          "windows": 2,
+          "matched": [
+            {
+              "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xMiIsIkV4YW1wbGUgQnJvd3NlciIsInJpdmVyc2lkZS1neW0uZXhhbXBsZSIsIk1lbWJlcnNoaXBzIMK3IFJpdmVyc2lkZSBHeW0iLDE3OTQ0NzI0NDAwMDBd",
+              "at": "2026-11-12T08:34+00:00",
+              "app": "Example Browser",
+              "title": "Memberships · Riverside Gym",
+              "snippet": "«Riverside» Gym memberships from 30 a month",
+              "focus": "u:screen:local:macbook-pro-0001/1794472260000@1794472440000-1794472500000"
+            },
+            {
+              "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xMiIsIkV4YW1wbGUgQnJvd3NlciIsInJpdmVyc2lkZS1neW0uZXhhbXBsZSIsIkNsYXNzIHRpbWV0YWJsZSDCtyBSaXZlcnNpZGUgR3ltIiwxNzk0NDcyODYwMDAwXQ",
+              "at": "2026-11-12T08:41+00:00",
+              "app": "Example Browser",
+              "title": "Class timetable · Riverside Gym",
+              "snippet": "this week at «Riverside»: spin, yoga, swim",
+              "focus": "u:screen:local:macbook-pro-0001/1794472260000@1794472860000-1794472920000"
+            }
+          ]
+        },
+        {
+          "focus": "u:screen:local:macbook-pro-0001/1793714700000",
+          "at": "2026-11-03T14:05+00:00",
+          "day": "2026-11-03",
+          "summary": "Wrote the running club's November newsletter",
+          "windows": 1,
+          "matched": [
+            {
+              "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0wMyIsIkV4YW1wbGUgTm90ZXMiLCIiLCJDbHViIG5ld3NsZXR0ZXIsIE5vdmVtYmVyIiwxNzkzNzE1NzIwMDAwXQ",
+              "at": "2026-11-03T14:22+00:00",
+              "app": "Example Notes",
+              "title": "Club newsletter, November",
+              "snippet": "the relay at «Riverside» on the 22nd",
+              "focus": "u:screen:local:macbook-pro-0001/1793714700000@1793715720000-1793715780000"
+            }
+          ]
+        },
+        {
+          "at": "2026-11-14T21:40+00:00",
+          "day": "2026-11-14",
+          "windows": 1,
+          "matched": [
+            {
+              "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xNCIsIkV4YW1wbGUgTWFpbCIsIiIsIkJvb2tpbmcgY29uZmlybWVkIMK3IFJpdmVyc2lkZSBHeW0iLDE3OTQ2OTI0MDAwMDBd",
+              "at": "2026-11-14T21:40+00:00",
+              "app": "Example Mail",
+              "title": "Booking confirmed · Riverside Gym",
+              "snippet": "court 3 at «Riverside» Gym, Friday 18:30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "photos",
+      "n": 9,
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJwaG90b3M6bG9jYWw6aXBob25lLWFhMDEiLCJwaG90byIsInBoMjIwNCJd",
+          "at": "2026-10-19T11:02+01:00",
+          "day": "2026-10-19",
+          "family": "photos",
+          "product": "photos",
+          "title": "Photo at Riverside Gym",
+          "snippet": "at «Riverside» Gym",
+          "the_user_was_at": "Riverside Gym",
+          "image": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJwaG90b3M6bG9jYWw6aXBob25lLWFhMDEiLCJwaG90byIsInBoMTk4MCJd",
+          "at": "2026-09-06T08:47+01:00",
+          "day": "2026-09-06",
+          "family": "photos",
+          "product": "photos",
+          "title": "Photo at Riverside Gym",
+          "snippet": "at «Riverside» Gym",
+          "the_user_was_at": "Riverside Gym",
+          "image": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+        }
+      ]
+    },
+    {
+      "family": "ai",
+      "n": 6,
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJjaGF0Z3B0OnBlcnNvbi1hQGV4YW1wbGUuY29tOmNsb3VkIiwidHVybiIsImM3Nzp0NCJd",
+          "at": "2026-10-29T07:15+00:00",
+          "day": "2026-10-29",
+          "family": "ai",
+          "product": "chatgpt",
+          "title": "10k training plan",
+          "from": "the user",
+          "snippet": "the «Riverside» 10k is flat, two laps of the park, how should I pace it",
+          "chat": "chat.WyJjaGF0IiwiY2hhdGdwdDpjNzciXQ",
+          "chat_title": "10k training plan"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJjaGF0Z3B0OnBlcnNvbi1hQGV4YW1wbGUuY29tOmNsb3VkIiwidHVybiIsImM3Nzp0NSJd",
+          "at": "2026-10-29T07:15+00:00",
+          "day": "2026-10-29",
+          "family": "ai",
+          "product": "chatgpt",
+          "title": "10k training plan",
+          "from": "ChatGPT",
+          "snippet": "For a flat course like «Riverside», start a little slower than goal pace",
+          "chat": "chat.WyJjaGF0IiwiY2hhdGdwdDpjNzciXQ",
+          "chat_title": "10k training plan"
+        }
+      ]
+    },
+    {
+      "family": "web",
+      "n": 4,
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJjaHJvbWU6bG9jYWw6bWFjYm9vay1wcm8tYWE0MiIsInZpc2l0IiwidjkwMjExIl0",
+          "at": "2026-11-12T08:34+00:00",
+          "day": "2026-11-12",
+          "family": "web",
+          "product": "chrome",
+          "title": "Memberships · Riverside Gym",
+          "snippet": "«riverside»-gym.example/memberships"
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "day": "2026-11-13",
+      "why": "new"
+    },
+    {
+      "day": "2026-11-14",
+      "why": "new"
+    }
+  ]
+}

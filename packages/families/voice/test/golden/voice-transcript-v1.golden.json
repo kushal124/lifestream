@@ -1,0 +1,201 @@
+{
+  "made_by": "today's code: interpreters/voice/read.ts readVoiceNote, the question interpreters/voice/synthesis-feeder.ts builds, interpreters/model/ask.ts requestOf, interpreters/model/ledger.ts request",
+  "runtime": {
+    "family": "voice",
+    "feeder": "voice-synthesis",
+    "model": "google/gemini-3.8-flash",
+    "effort": "none",
+    "sampling": {
+      "temperature": 0
+    },
+    "transport": "openrouter"
+  },
+  "notes": [
+    {
+      "name": "n1",
+      "audio_text": "synthetic audio one",
+      "sha256": "e1b33769ad7d34216da3db8a3d45212097431b06268dd744bbc66ee379e90321",
+      "payload": {
+        "type": "voice.note",
+        "content": {
+          "captured": {
+            "elapsed_seconds": 100.5,
+            "wall_rfc3339": "2026-09-05T11:52:55.272684097Z",
+            "wall_unix_seconds": 1788609175.272684
+          },
+          "domain": "voice",
+          "kind": "voice_note",
+          "observed_at": "2026-09-05T11:52:48.955922127Z",
+          "payload": {
+            "blob": {
+              "bytes": 19,
+              "hash": "sha256:e1b33769ad7d34216da3db8a3d45212097431b06268dd744bbc66ee379e90321",
+              "role": "voice_note",
+              "type": "audio/mp4"
+            },
+            "capture_mode": "hands_free",
+            "duration_seconds": 6.317125,
+            "encoder": {
+              "bit_rate": 128000,
+              "channels": 1,
+              "container": "m4a",
+              "format": "aac_lc",
+              "sample_rate_hz": 48000
+            },
+            "end_reason": "tapped",
+            "ended_at": "2026-09-05T11:52:55.243302822Z",
+            "input": {
+              "port_name": "Synthetic Microphone",
+              "port_type": "MicrophoneBuiltIn"
+            },
+            "started_at": "2026-09-05T11:52:48.955922127Z"
+          },
+          "process_instance_id": "00000000-0000-4000-8000-0000000000aa",
+          "schema_version": 1,
+          "sequence": 1
+        }
+      },
+      "request": {
+        "model": "google/gemini-3.8-flash",
+        "effort": "none",
+        "sampling": {
+          "temperature": 0
+        },
+        "prompt_hash": "sha256:58548a0cf2b9312f1bcf65a4c8c8d500426d1c97abd31dddefe224a2aad436ed",
+        "input_hash": "sha256:c449bdec977d127429c8b83e5be703b31cde68d02a43067e2b0987460718289c",
+        "body": "Transcribe the attached voice note. Write the words exactly as spoken, in the language spoken, with normal punctuation. Do not translate, summarise, or add commentary. Leave out filler sounds. Mark words you cannot make out as [inaudible]. If the recording has no speech, reply with exactly: [no speech]\nnote e1b33769ad7d34216da3db8a3d45212097431b06268dd744bbc66ee379e90321, 6.317125 s, audio/mp4",
+        "attachments": [
+          {
+            "kind": "audio",
+            "sha256": "e1b33769ad7d34216da3db8a3d45212097431b06268dd744bbc66ee379e90321",
+            "extension": ".m4a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "n2",
+      "audio_text": "synthetic audio two",
+      "sha256": "f664f4db22d66359b232a5d0713c870c264680e164f5df7ef7f883a4f05930a5",
+      "payload": {
+        "type": "voice.note",
+        "content": {
+          "captured": {
+            "elapsed_seconds": 100.5,
+            "wall_rfc3339": "2026-09-05T11:52:55.272684097Z",
+            "wall_unix_seconds": 1788609175.272684
+          },
+          "domain": "voice",
+          "kind": "voice_note",
+          "observed_at": "2026-09-05T11:52:48.955922127Z",
+          "payload": {
+            "blob": {
+              "bytes": 19,
+              "hash": "sha256:f664f4db22d66359b232a5d0713c870c264680e164f5df7ef7f883a4f05930a5",
+              "role": "voice_note",
+              "type": "audio/mp4"
+            },
+            "capture_mode": "hands_free",
+            "duration_seconds": 1.0641666666666667,
+            "encoder": {
+              "bit_rate": 128000,
+              "channels": 1,
+              "container": "m4a",
+              "format": "aac_lc",
+              "sample_rate_hz": 48000
+            },
+            "end_reason": "tapped",
+            "ended_at": "2026-09-05T11:52:55.243302822Z",
+            "input": {
+              "port_name": "Synthetic Microphone",
+              "port_type": "MicrophoneBuiltIn"
+            },
+            "started_at": "2026-09-05T11:52:48.955922127Z"
+          },
+          "process_instance_id": "00000000-0000-4000-8000-0000000000aa",
+          "schema_version": 1,
+          "sequence": 2
+        }
+      },
+      "request": {
+        "model": "google/gemini-3.8-flash",
+        "effort": "none",
+        "sampling": {
+          "temperature": 0
+        },
+        "prompt_hash": "sha256:58548a0cf2b9312f1bcf65a4c8c8d500426d1c97abd31dddefe224a2aad436ed",
+        "input_hash": "sha256:9c27be92a185c730637628013ed917ca858dac8c8017eaa8bf15279cb62abb78",
+        "body": "Transcribe the attached voice note. Write the words exactly as spoken, in the language spoken, with normal punctuation. Do not translate, summarise, or add commentary. Leave out filler sounds. Mark words you cannot make out as [inaudible]. If the recording has no speech, reply with exactly: [no speech]\nnote f664f4db22d66359b232a5d0713c870c264680e164f5df7ef7f883a4f05930a5, 1.0641666666666667 s, audio/mp4",
+        "attachments": [
+          {
+            "kind": "audio",
+            "sha256": "f664f4db22d66359b232a5d0713c870c264680e164f5df7ef7f883a4f05930a5",
+            "extension": ".m4a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "n3",
+      "audio_text": "synthetic audio three",
+      "sha256": "f6b000e91eb3a7086735a44278a842834240cca74fd05774ebb5987318cf2bc0",
+      "payload": {
+        "type": "voice.note",
+        "content": {
+          "captured": {
+            "elapsed_seconds": 100.5,
+            "wall_rfc3339": "2026-09-05T11:52:55.272684097Z",
+            "wall_unix_seconds": 1788609175.272684
+          },
+          "domain": "voice",
+          "kind": "voice_note",
+          "observed_at": "2026-09-05T11:52:48.955922127Z",
+          "payload": {
+            "blob": {
+              "bytes": 21,
+              "hash": "sha256:f6b000e91eb3a7086735a44278a842834240cca74fd05774ebb5987318cf2bc0",
+              "role": "voice_note",
+              "type": "audio/mp4"
+            },
+            "capture_mode": "hands_free",
+            "duration_seconds": 12,
+            "encoder": {
+              "bit_rate": 128000,
+              "channels": 1,
+              "container": "m4a",
+              "format": "aac_lc",
+              "sample_rate_hz": 48000
+            },
+            "end_reason": "tapped",
+            "ended_at": "2026-09-05T11:52:55.243302822Z",
+            "input": {
+              "port_name": "Synthetic Microphone",
+              "port_type": "MicrophoneBuiltIn"
+            },
+            "started_at": "2026-09-05T11:52:48.955922127Z"
+          },
+          "process_instance_id": "00000000-0000-4000-8000-0000000000aa",
+          "schema_version": 1,
+          "sequence": 3
+        }
+      },
+      "request": {
+        "model": "google/gemini-3.8-flash",
+        "effort": "none",
+        "sampling": {
+          "temperature": 0
+        },
+        "prompt_hash": "sha256:58548a0cf2b9312f1bcf65a4c8c8d500426d1c97abd31dddefe224a2aad436ed",
+        "input_hash": "sha256:489ae5f48f02d7eec84c237666201f81623da779b074ede86a291a93fb6b620c",
+        "body": "Transcribe the attached voice note. Write the words exactly as spoken, in the language spoken, with normal punctuation. Do not translate, summarise, or add commentary. Leave out filler sounds. Mark words you cannot make out as [inaudible]. If the recording has no speech, reply with exactly: [no speech]\nnote f6b000e91eb3a7086735a44278a842834240cca74fd05774ebb5987318cf2bc0, 12 s, audio/mp4",
+        "attachments": [
+          {
+            "kind": "audio",
+            "sha256": "f6b000e91eb3a7086735a44278a842834240cca74fd05774ebb5987318cf2bc0",
+            "extension": ".m4a"
+          }
+        ]
+      }
+    }
+  ]
+}

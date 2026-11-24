@@ -1,0 +1,607 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-23",
+  "title": "Storage",
+  "counted": true,
+  "figure": "405 GB",
+  "after": "Lifestream",
+  "disk": "377 GB free of 1 TB on T9",
+  "growth": "Growth",
+  "sentence": [
+    {
+      "words": "T9 fills by about 2.1 GB a day. At this rate it is full around ",
+      "kind": "words"
+    },
+    {
+      "time": {
+        "day": "2027-05-20",
+        "kind": "day"
+      },
+      "kind": "time"
+    },
+    {
+      "words": ".",
+      "kind": "words"
+    }
+  ],
+  "bar": {
+    "label": "T9: Lifestream 405 GB, other files 218 GB, 377 GB free",
+    "parts": [
+      {
+        "id": "screen",
+        "name": "Screen",
+        "tone": "s1",
+        "share": 15,
+        "size": "150 GB"
+      },
+      {
+        "id": "apple-photos",
+        "name": "Photos",
+        "tone": "s2",
+        "share": 9,
+        "size": "90 GB"
+      },
+      {
+        "id": "granola",
+        "name": "Granola",
+        "tone": "s3",
+        "share": 4,
+        "size": "40 GB"
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "tone": "s4",
+        "share": 3,
+        "size": "30 GB"
+      },
+      {
+        "id": "whatsapp",
+        "name": "WhatsApp",
+        "tone": "s5",
+        "share": 2,
+        "size": "20 GB"
+      },
+      {
+        "id": "other",
+        "name": "Other connectors",
+        "tone": "other",
+        "share": 4.5,
+        "size": "45 GB"
+      },
+      {
+        "id": "own",
+        "name": "Index and AI",
+        "tone": "own",
+        "share": 3,
+        "size": "30 GB"
+      },
+      {
+        "id": "",
+        "name": "Other files on T9",
+        "tone": "disk",
+        "share": 21.8,
+        "size": "218 GB"
+      },
+      {
+        "id": "",
+        "name": "Free",
+        "tone": "free",
+        "share": 37.7,
+        "size": "377 GB"
+      }
+    ],
+    "key": [
+      {
+        "id": "screen",
+        "name": "Screen",
+        "tone": "s1"
+      },
+      {
+        "id": "apple-photos",
+        "name": "Photos",
+        "tone": "s2"
+      },
+      {
+        "id": "granola",
+        "name": "Granola",
+        "tone": "s3"
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "tone": "s4"
+      },
+      {
+        "id": "whatsapp",
+        "name": "WhatsApp",
+        "tone": "s5"
+      },
+      {
+        "id": "other",
+        "name": "Other connectors",
+        "tone": "other"
+      },
+      {
+        "id": "own",
+        "name": "Index and AI",
+        "tone": "own"
+      },
+      {
+        "id": "",
+        "name": "Other files",
+        "tone": "disk"
+      }
+    ],
+    "left": ""
+  },
+  "chart": {
+    "label": [
+      {
+        "words": "Lifestream’s size since ",
+        "kind": "words"
+      },
+      {
+        "time": {
+          "day": "2026-11-03",
+          "kind": "day"
+        },
+        "kind": "time"
+      }
+    ],
+    "first": "2026-11-03",
+    "parts": [
+      {
+        "id": "screen",
+        "name": "Screen",
+        "tone": "s1",
+        "bytes": [
+          7142857143,
+          14285714286,
+          21428571429,
+          28571428571,
+          35714285714,
+          42857142857,
+          50000000000,
+          57142857143,
+          64285714286,
+          71428571429,
+          78571428571,
+          85714285714,
+          92857142857,
+          100000000000,
+          107142857143,
+          114285714286,
+          121428571429,
+          128571428571,
+          135714285714,
+          142857142857,
+          150000000000
+        ]
+      },
+      {
+        "id": "apple-photos",
+        "name": "Photos",
+        "tone": "s2",
+        "bytes": [
+          4285714286,
+          8571428571,
+          12857142857,
+          17142857143,
+          21428571429,
+          25714285714,
+          30000000000,
+          34285714286,
+          38571428571,
+          42857142857,
+          47142857143,
+          51428571429,
+          55714285714,
+          60000000000,
+          64285714286,
+          68571428571,
+          72857142857,
+          77142857143,
+          81428571429,
+          85714285714,
+          90000000000
+        ]
+      },
+      {
+        "id": "granola",
+        "name": "Granola",
+        "tone": "s3",
+        "bytes": [
+          1904761905,
+          3809523810,
+          5714285714,
+          7619047619,
+          9523809524,
+          11428571429,
+          13333333333,
+          15238095238,
+          17142857143,
+          19047619048,
+          20952380952,
+          22857142857,
+          24761904762,
+          26666666667,
+          28571428571,
+          30476190476,
+          32380952381,
+          34285714286,
+          36190476190,
+          38095238095,
+          40000000000
+        ]
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "tone": "s4",
+        "bytes": [
+          1428571429,
+          2857142857,
+          4285714286,
+          5714285714,
+          7142857143,
+          8571428571,
+          10000000000,
+          11428571429,
+          12857142857,
+          14285714286,
+          15714285714,
+          17142857143,
+          18571428571,
+          20000000000,
+          21428571429,
+          22857142857,
+          24285714286,
+          25714285714,
+          27142857143,
+          28571428571,
+          30000000000
+        ]
+      },
+      {
+        "id": "whatsapp",
+        "name": "WhatsApp",
+        "tone": "s5",
+        "bytes": [
+          952380952,
+          1904761905,
+          2857142857,
+          3809523810,
+          4761904762,
+          5714285714,
+          6666666667,
+          7619047619,
+          8571428571,
+          9523809524,
+          10476190476,
+          11428571429,
+          12380952381,
+          13333333333,
+          14285714286,
+          15238095238,
+          16190476190,
+          17142857143,
+          18095238095,
+          19047619048,
+          20000000000
+        ]
+      },
+      {
+        "id": "other",
+        "name": "Other connectors",
+        "tone": "other",
+        "bytes": [
+          2142857143,
+          4285714286,
+          6428571429,
+          8571428571,
+          10714285714,
+          12857142857,
+          15000000000,
+          17142857143,
+          19285714286,
+          21428571429,
+          23571428571,
+          25714285714,
+          27857142857,
+          30000000000,
+          32142857143,
+          34285714286,
+          36428571429,
+          38571428571,
+          40714285714,
+          42857142857,
+          45000000000
+        ]
+      },
+      {
+        "id": "own",
+        "name": "Index and AI",
+        "tone": "own",
+        "bytes": [
+          1428571429,
+          2857142857,
+          4285714286,
+          5714285714,
+          7142857143,
+          8571428571,
+          10000000000,
+          11428571429,
+          12857142857,
+          14285714286,
+          15714285714,
+          17142857143,
+          18571428571,
+          20000000000,
+          21428571429,
+          22857142857,
+          24285714286,
+          25714285714,
+          27142857143,
+          28571428571,
+          30000000000
+        ]
+      }
+    ],
+    "rate": 2100000000,
+    "room": {
+      "bytes": 777000000000,
+      "name": "T9 full"
+    }
+  },
+  "used": "What uses the space",
+  "uses": [
+    {
+      "id": "screen",
+      "part": "screen",
+      "name": "Screen",
+      "tone": "s1",
+      "size": "150 GB",
+      "share": 37.03703703703704,
+      "line": [
+        {
+          "words": "+6.7 GB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "screen",
+      "folded": false
+    },
+    {
+      "id": "apple-photos",
+      "part": "apple-photos",
+      "name": "Photos",
+      "tone": "s2",
+      "size": "90 GB",
+      "share": 22.22222222222222,
+      "line": [
+        {
+          "words": "+2 GB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "apple-photos",
+      "folded": false
+    },
+    {
+      "id": "granola",
+      "part": "granola",
+      "name": "Granola",
+      "tone": "s3",
+      "size": "40 GB",
+      "share": 9.876543209876543,
+      "line": [
+        {
+          "words": "Not growing",
+          "kind": "words"
+        }
+      ],
+      "opens": "granola",
+      "folded": false
+    },
+    {
+      "id": "claude",
+      "part": "claude",
+      "name": "Claude",
+      "tone": "s4",
+      "size": "30 GB",
+      "share": 7.4074074074074066,
+      "line": [
+        {
+          "words": "Not growing",
+          "kind": "words"
+        }
+      ],
+      "opens": "claude",
+      "folded": false
+    },
+    {
+      "id": "whatsapp",
+      "part": "whatsapp",
+      "name": "WhatsApp",
+      "tone": "s5",
+      "size": "20 GB",
+      "share": 4.938271604938271,
+      "line": [
+        {
+          "words": "+1 GB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "whatsapp",
+      "folded": false
+    },
+    {
+      "id": "ask",
+      "part": "other",
+      "name": "Ask",
+      "tone": "other",
+      "size": "9 GB",
+      "share": 2.2222222222222223,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": null,
+      "folded": true
+    },
+    {
+      "id": "gmail",
+      "part": "other",
+      "name": "Gmail",
+      "tone": "other",
+      "size": "8 GB",
+      "share": 1.9753086419753085,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "gmail",
+      "folded": true
+    },
+    {
+      "id": "location",
+      "part": "other",
+      "name": "Location",
+      "tone": "other",
+      "size": "7 GB",
+      "share": 1.728395061728395,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "location",
+      "folded": true
+    },
+    {
+      "id": "chrome",
+      "part": "other",
+      "name": "Chrome",
+      "tone": "other",
+      "size": "6 GB",
+      "share": 1.4814814814814816,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "chrome",
+      "folded": true
+    },
+    {
+      "id": "imessage",
+      "part": "other",
+      "name": "iMessage",
+      "tone": "other",
+      "size": "5 GB",
+      "share": 1.2345679012345678,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "imessage",
+      "folded": true
+    },
+    {
+      "id": "notes",
+      "part": "other",
+      "name": "Lifestream notes",
+      "tone": "other",
+      "size": "4 GB",
+      "share": 0.9876543209876543,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "notes",
+      "folded": true
+    },
+    {
+      "id": "spotify",
+      "part": "other",
+      "name": "Spotify",
+      "tone": "other",
+      "size": "3 GB",
+      "share": 0.7407407407407408,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "spotify",
+      "folded": true
+    },
+    {
+      "id": "github",
+      "part": "other",
+      "name": "GitHub",
+      "tone": "other",
+      "size": "2 GB",
+      "share": 0.49382716049382713,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "github",
+      "folded": true
+    },
+    {
+      "id": "x",
+      "part": "other",
+      "name": "X",
+      "tone": "other",
+      "size": "1 GB",
+      "share": 0.24691358024691357,
+      "line": [
+        {
+          "words": "+100 MB this week",
+          "kind": "words"
+        }
+      ],
+      "opens": "x",
+      "folded": true
+    },
+    {
+      "id": "own",
+      "part": "own",
+      "name": "Index and AI",
+      "tone": "own",
+      "size": "30 GB",
+      "share": 7.4074074074074066,
+      "line": [
+        {
+          "words": "Search, summaries and model answers",
+          "kind": "words"
+        }
+      ],
+      "opens": null,
+      "folded": false
+    }
+  ],
+  "more": "Show 9 more connectors",
+  "fewer": "Show fewer",
+  "keep": {
+    "label": "Space kept free",
+    "line": "Under this, Lifestream keeps taking what is new; history and imports wait.",
+    "size": "5 GB"
+  }
+}

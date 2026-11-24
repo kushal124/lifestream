@@ -1,0 +1,25 @@
+{
+  "about": "What a device does with each answer to a question it sent (homelink/README.md, 'Ask's outcomes'). Each client's outbox decides through one function of these cases, and its tests read this file. Only an explicit erasure (410, or the `erased` error line) purges; absence (404, 503) never does.",
+  "cases": [
+    { "name": "named", "phase": "sending", "answer": { "events": ["chat"] }, "copies": "drop", "turn": "named", "again": "none" },
+    { "name": "missing", "phase": "sending", "answer": { "status": 409, "missing": ["photos", "seconds"] }, "copies": "keep", "turn": "sending", "again": "send what is missing, then the same body" },
+    { "name": "voice note gone", "phase": "sending", "answer": { "status": 409, "missing": ["audio"] }, "copies": "keep", "turn": "failed", "again": "none" },
+    { "name": "photo refused", "phase": "sending", "answer": { "status": 422, "photo": true }, "copies": "keep", "turn": "failed", "again": "same, once the photo is removed" },
+    { "name": "photo stage full", "phase": "sending", "answer": { "status": 507, "photo": true }, "copies": "keep", "turn": "failed", "again": "same" },
+    { "name": "shape refused", "phase": "sending", "answer": { "status": 422 }, "copies": "drop", "turn": "failed", "again": "none" },
+    { "name": "conversation erased", "phase": "sending", "answer": { "status": 410 }, "copies": "purge", "turn": "erased", "again": "none" },
+    { "name": "conversation unknown", "phase": "sending", "answer": { "status": 404 }, "copies": "keep", "turn": "failed", "again": "same" },
+    { "name": "still answering", "phase": "sending", "answer": { "status": 409, "busy": true }, "copies": "keep", "turn": "failed", "again": "same" },
+    { "name": "home away", "phase": "sending", "answer": { "status": 503 }, "copies": "keep", "turn": "sending", "again": "same, when the home answers" },
+    { "name": "refused before it began", "phase": "sending", "answer": { "events": ["error"] }, "copies": "keep", "turn": "failed", "again": "same" },
+    { "name": "erased before it began", "phase": "sending", "answer": { "events": ["error:erased"] }, "copies": "purge", "turn": "erased", "again": "none" },
+    { "name": "no answer", "phase": "sending", "answer": { "lost": true }, "copies": "keep", "turn": "sending", "again": "same, when the home answers" },
+    { "name": "ended before any event", "phase": "sending", "answer": { "events": [] }, "copies": "keep", "turn": "sending", "again": "same, when the home answers" },
+    { "name": "answered", "phase": "named", "answer": { "events": ["text", "done"] }, "copies": "none held", "turn": "done", "again": "new" },
+    { "name": "failed after it began", "phase": "named", "answer": { "events": ["error", "done"] }, "copies": "none held", "turn": "failed", "again": "new" },
+    { "name": "erased while answering", "phase": "named", "answer": { "events": ["error:erased"] }, "copies": "purge", "turn": "erased", "again": "none" },
+    { "name": "conversation erased while answering", "phase": "named", "answer": { "status": 410 }, "copies": "purge", "turn": "erased", "again": "none" },
+    { "name": "not readable yet", "phase": "named", "answer": { "status": 503 }, "copies": "none held", "turn": "follow", "again": "none" },
+    { "name": "lost while answering", "phase": "named", "answer": { "lost": true }, "copies": "none held", "turn": "follow", "again": "none" }
+  ]
+}

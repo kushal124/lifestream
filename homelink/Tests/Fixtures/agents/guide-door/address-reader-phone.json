@@ -1,0 +1,12 @@
+{
+  "route": "POST /v1/agents/address",
+  "request": {
+    "on": true,
+    "reader": "p-0000bbbb"
+  },
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Another agent runs on your Mac. Make its key in Lifestream there."
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "chapters": [
+    {
+      "kind": "stay",
+      "episode": "e1",
+      "start_ms": 1938969000000,
+      "end_ms": 1938981600000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e2",
+      "start_ms": 1938981600000,
+      "end_ms": 1938982800000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e3",
+      "start_ms": 1938982800000,
+      "end_ms": 1938985800000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e4",
+      "start_ms": 1938985800000,
+      "end_ms": 1938987000000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e5",
+      "start_ms": 1938987000000,
+      "end_ms": 1938990600000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e6",
+      "start_ms": 1938990600000,
+      "end_ms": 1938993000000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e7",
+      "start_ms": 1938993000000,
+      "end_ms": 1938997800000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e8",
+      "start_ms": 1938997800000,
+      "end_ms": 1939001400000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e9",
+      "start_ms": 1939001400000,
+      "end_ms": 1939006800000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e10",
+      "start_ms": 1939006800000,
+      "end_ms": 1939012200000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e11",
+      "start_ms": 1939012200000,
+      "end_ms": 1939015800000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e12",
+      "start_ms": 1939015800000,
+      "end_ms": 1939017600000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e13",
+      "start_ms": 1939017600000,
+      "end_ms": 1939021200000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "move",
+      "episode": "e14",
+      "start_ms": 1939021200000,
+      "end_ms": 1939023000000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e15",
+      "start_ms": 1939023000000,
+      "end_ms": 1939055400000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e1",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Home",
+      "row": {
+        "name": "Synthetic Home",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1938969000000,
+      "end_ms": 1938981600000,
+      "at_ms": 1938969000000,
+      "atoms": [
+        1
+      ]
+    },
+    {
+      "id": "e2",
+      "kind": "move",
+      "family": "physical",
+      "title": "Synthetic Home → an unnamed place 1.8 km from Synthetic Home",
+      "row": {
+        "name": "Walk 1.9 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1938981600000,
+      "end_ms": 1938982800000,
+      "at_ms": 1938981600000,
+      "atoms": [
+        2
+      ],
+      "mode": "walk"
+    },
+    {
+      "id": "e3",
+      "kind": "stay",
+      "family": "physical",
+      "title": "an unnamed place 1.8 km from Synthetic Home",
+      "row": {
+        "name": "Near Synthetic Home",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "1.8 km away",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1938982800000,
+      "end_ms": 1938985800000,
+      "at_ms": 1938982800000,
+      "atoms": [
+        3
+      ]
+    },
+    {
+      "id": "e4",
+      "kind": "move",
+      "family": "physical",
+      "title": "an unnamed place 1.8 km from Synthetic Home → Fresh from Synthetic Farm",
+      "row": {
+        "name": "Drive 6.1 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1938985800000,
+      "end_ms": 1938987000000,
+      "at_ms": 1938985800000,
+      "atoms": [
+        4
+      ],
+      "mode": "drive"
+    },
+    {
+      "id": "e5",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Fresh from Synthetic Farm",
+      "row": {
+        "name": "Fresh from Synthetic Farm",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1938987000000,
+      "end_ms": 1938990600000,
+      "at_ms": 1938987000000,
+      "atoms": [
+        5
+      ]
+    },
+    {
+      "id": "e6",
+      "kind": "move",
+      "family": "physical",
+      "title": "Fresh from Synthetic Farm → an unnamed place 12 km from Fresh from Synthetic Farm",
+      "row": {
+        "name": "Drive 13.4 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "40m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1938990600000,
+      "end_ms": 1938993000000,
+      "at_ms": 1938990600000,
+      "atoms": [
+        6
+      ],
+      "mode": "drive"
+    },
+    {
+      "id": "e7",
+      "kind": "stay",
+      "family": "physical",
+      "title": "an unnamed place 12 km from Fresh from Synthetic Farm",
+      "row": {
+        "name": "Near Fresh from Synthetic Farm",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "12 km away",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1938993000000,
+      "end_ms": 1938997800000,
+      "at_ms": 1938993000000,
+      "atoms": [
+        7
+      ]
+    },
+    {
+      "id": "e8",
+      "kind": "move",
+      "family": "physical",
+      "title": "an unnamed place 12 km from Fresh from Synthetic Farm → an unnamed place in Synthetic Port Town",
+      "row": {
+        "name": "Drive 41 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "1h"
+        },
+        "quiet": false
+      },
+      "start_ms": 1938997800000,
+      "end_ms": 1939001400000,
+      "at_ms": 1938997800000,
+      "atoms": [
+        8
+      ],
+      "mode": "drive"
+    },
+    {
+      "id": "e9",
+      "kind": "stay",
+      "family": "physical",
+      "title": "an unnamed place in Synthetic Port Town",
+      "row": {
+        "name": "Synthetic Port Town",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1939001400000,
+      "end_ms": 1939006800000,
+      "at_ms": 1939001400000,
+      "atoms": [
+        9
+      ]
+    },
+    {
+      "id": "e10",
+      "kind": "move",
+      "family": "physical",
+      "title": "an unnamed place in Synthetic Port Town → an unnamed place",
+      "row": {
+        "name": "Ferry 38 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "1h 30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1939006800000,
+      "end_ms": 1939012200000,
+      "at_ms": 1939006800000,
+      "atoms": [
+        10
+      ],
+      "mode": "transit"
+    },
+    {
+      "id": "e11",
+      "kind": "stay",
+      "family": "physical",
+      "title": "an unnamed place",
+      "row": {
+        "name": "Unnamed place",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1939012200000,
+      "end_ms": 1939015800000,
+      "at_ms": 1939012200000,
+      "atoms": [
+        11
+      ]
+    },
+    {
+      "id": "e12",
+      "kind": "move",
+      "family": "physical",
+      "title": "an unnamed place → a hidden place",
+      "row": {
+        "name": "Ferry 30.5 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1939015800000,
+      "end_ms": 1939017600000,
+      "at_ms": 1939015800000,
+      "atoms": [
+        12
+      ],
+      "mode": "transit"
+    },
+    {
+      "id": "e13",
+      "kind": "stay",
+      "family": "physical",
+      "title": "a hidden place",
+      "row": {
+        "name": "a hidden place",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1939017600000,
+      "end_ms": 1939021200000,
+      "at_ms": 1939017600000,
+      "atoms": [
+        13
+      ]
+    },
+    {
+      "id": "e14",
+      "kind": "move",
+      "family": "physical",
+      "title": "a hidden place → Synthetic Home",
+      "row": {
+        "name": "Drive 9.8 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1939021200000,
+      "end_ms": 1939023000000,
+      "at_ms": 1939021200000,
+      "atoms": [
+        14
+      ],
+      "mode": "drive"
+    },
+    {
+      "id": "e15",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Home",
+      "row": {
+        "name": "Synthetic Home",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1939023000000,
+      "end_ms": 1939055400000,
+      "at_ms": 1939023000000,
+      "atoms": [
+        15
+      ]
+    }
+  ],
+  "also": [],
+  "all_day": [],
+  "untimed": {
+    "rows": [],
+    "names": []
+  },
+  "plan": [],
+  "headings": [],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": 7,
+    "people": null,
+    "mac_ms": null,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": null,
+    "received": null
+  },
+  "people": {
+    "contacts": [],
+    "groups": []
+  },
+  "updated": 1939055400000
+}

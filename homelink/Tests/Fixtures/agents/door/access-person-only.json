@@ -1,0 +1,31 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 2
+  },
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Allow this in Lifestream on your Mac or iPhone."
+  }
+}

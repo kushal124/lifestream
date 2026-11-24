@@ -1,0 +1,11 @@
+{
+  "family": "money",
+  "key": {
+    "code": "1",
+    "adapters": {
+      "money/example-bank": "1"
+    }
+  },
+  "rows": 6,
+  "digest": "sha256:1cb7f5f2fe4fd458a97409af09735ada29d1f8d106738bdd9cf7d585937d5f6d"
+}

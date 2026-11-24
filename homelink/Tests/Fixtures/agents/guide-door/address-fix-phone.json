@@ -1,0 +1,11 @@
+{
+  "route": "GET /v1/agents/address",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "state": "fix",
+    "url": null,
+    "words": "Needs Tailscale on your Mac.",
+    "act": null
+  }
+}

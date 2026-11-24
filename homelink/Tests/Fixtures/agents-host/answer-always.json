@@ -1,0 +1,36 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : "always",
+    "expect" : 2,
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-always.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Allowed on Mac,"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794646800000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "allowed",
+      "version" : 3
+    }
+  },
+  "sent" : {
+    "answer" : "always",
+    "expect" : 2,
+    "id" : "rq-0000000000000001"
+  }
+}

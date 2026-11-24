@@ -1,0 +1,1125 @@
+{
+  "version": 2,
+  "scenarios": {
+    "scroll0": {
+      "marker": "VARIEDPHASE000",
+      "visibleLines": [
+        "VARIEDPHASE000",
+        "Synthetic batch 1 receipt 7100",
+        "Ledger balance 2300 units",
+        "Verification code ZETA8100"
+      ],
+      "scenarioContentTokens": [
+        "1",
+        "2300",
+        "7100",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase000",
+        "verification",
+        "zeta8100"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE000",
+        "Synthetic",
+        "batch",
+        "1",
+        "receipt",
+        "7100",
+        "Ledger",
+        "balance",
+        "2300",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8100"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE000",
+        "1",
+        "7100",
+        "2300",
+        "ZETA8100"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE000",
+        "Synthetic batch 1 receipt 7100",
+        "Ledger balance 2300 units",
+        "Verification code ZETA8100"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "transient0": {
+      "marker": "VARIEDPHASE001",
+      "visibleLines": [
+        "VARIEDPHASE001",
+        "Synthetic batch 1 receipt 7101",
+        "Ledger balance 2301 units",
+        "Verification code ZETA8101"
+      ],
+      "scenarioContentTokens": [
+        "1",
+        "2301",
+        "7101",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase001",
+        "verification",
+        "zeta8101"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE001",
+        "Synthetic",
+        "batch",
+        "1",
+        "receipt",
+        "7101",
+        "Ledger",
+        "balance",
+        "2301",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8101"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE001",
+        "1",
+        "7101",
+        "2301",
+        "ZETA8101"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE001",
+        "Synthetic batch 1 receipt 7101",
+        "Ledger balance 2301 units",
+        "Verification code ZETA8101"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "canvas0": {
+      "marker": "VARIEDPHASE002",
+      "visibleLines": [
+        "VARIEDPHASE002",
+        "Synthetic batch 1 receipt 7102",
+        "Ledger balance 2302 units",
+        "Verification code ZETA8102"
+      ],
+      "scenarioContentTokens": [
+        "1",
+        "2302",
+        "7102",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase002",
+        "verification",
+        "zeta8102"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE002",
+        "Synthetic",
+        "batch",
+        "1",
+        "receipt",
+        "7102",
+        "Ledger",
+        "balance",
+        "2302",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8102"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE002",
+        "1",
+        "7102",
+        "2302",
+        "ZETA8102"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE002",
+        "Synthetic batch 1 receipt 7102",
+        "Ledger balance 2302 units",
+        "Verification code ZETA8102"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "overlap0": {
+      "marker": "VARIEDPHASE003",
+      "visibleLines": [
+        "VARIEDPHASE003",
+        "Synthetic batch 1 receipt 7103",
+        "Ledger balance 2303 units",
+        "Verification code ZETA8103"
+      ],
+      "scenarioContentTokens": [
+        "1",
+        "2303",
+        "7103",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase003",
+        "verification",
+        "zeta8103"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE003",
+        "Synthetic",
+        "batch",
+        "1",
+        "receipt",
+        "7103",
+        "Ledger",
+        "balance",
+        "2303",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8103"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE003",
+        "1",
+        "7103",
+        "2303",
+        "ZETA8103"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE003",
+        "Synthetic batch 1 receipt 7103",
+        "Ledger balance 2303 units",
+        "Verification code ZETA8103"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "scroll1": {
+      "marker": "VARIEDPHASE004",
+      "visibleLines": [
+        "VARIEDPHASE004",
+        "Synthetic batch 2 receipt 7104",
+        "Ledger balance 2304 units",
+        "Verification code ZETA8104"
+      ],
+      "scenarioContentTokens": [
+        "2",
+        "2304",
+        "7104",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase004",
+        "verification",
+        "zeta8104"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE004",
+        "Synthetic",
+        "batch",
+        "2",
+        "receipt",
+        "7104",
+        "Ledger",
+        "balance",
+        "2304",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8104"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE004",
+        "2",
+        "7104",
+        "2304",
+        "ZETA8104"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE004",
+        "Synthetic batch 2 receipt 7104",
+        "Ledger balance 2304 units",
+        "Verification code ZETA8104"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "transient1": {
+      "marker": "VARIEDPHASE005",
+      "visibleLines": [
+        "VARIEDPHASE005",
+        "Synthetic batch 2 receipt 7105",
+        "Ledger balance 2305 units",
+        "Verification code ZETA8105"
+      ],
+      "scenarioContentTokens": [
+        "2",
+        "2305",
+        "7105",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase005",
+        "verification",
+        "zeta8105"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE005",
+        "Synthetic",
+        "batch",
+        "2",
+        "receipt",
+        "7105",
+        "Ledger",
+        "balance",
+        "2305",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8105"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE005",
+        "2",
+        "7105",
+        "2305",
+        "ZETA8105"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE005",
+        "Synthetic batch 2 receipt 7105",
+        "Ledger balance 2305 units",
+        "Verification code ZETA8105"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "canvas1": {
+      "marker": "VARIEDPHASE006",
+      "visibleLines": [
+        "VARIEDPHASE006",
+        "Synthetic batch 2 receipt 7106",
+        "Ledger balance 2306 units",
+        "Verification code ZETA8106"
+      ],
+      "scenarioContentTokens": [
+        "2",
+        "2306",
+        "7106",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase006",
+        "verification",
+        "zeta8106"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE006",
+        "Synthetic",
+        "batch",
+        "2",
+        "receipt",
+        "7106",
+        "Ledger",
+        "balance",
+        "2306",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8106"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE006",
+        "2",
+        "7106",
+        "2306",
+        "ZETA8106"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE006",
+        "Synthetic batch 2 receipt 7106",
+        "Ledger balance 2306 units",
+        "Verification code ZETA8106"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "overlap1": {
+      "marker": "VARIEDPHASE007",
+      "visibleLines": [
+        "VARIEDPHASE007",
+        "Synthetic batch 2 receipt 7107",
+        "Ledger balance 2307 units",
+        "Verification code ZETA8107"
+      ],
+      "scenarioContentTokens": [
+        "2",
+        "2307",
+        "7107",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase007",
+        "verification",
+        "zeta8107"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE007",
+        "Synthetic",
+        "batch",
+        "2",
+        "receipt",
+        "7107",
+        "Ledger",
+        "balance",
+        "2307",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8107"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE007",
+        "2",
+        "7107",
+        "2307",
+        "ZETA8107"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE007",
+        "Synthetic batch 2 receipt 7107",
+        "Ledger balance 2307 units",
+        "Verification code ZETA8107"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "scroll2": {
+      "marker": "VARIEDPHASE008",
+      "visibleLines": [
+        "VARIEDPHASE008",
+        "Synthetic batch 3 receipt 7108",
+        "Ledger balance 2308 units",
+        "Verification code ZETA8108"
+      ],
+      "scenarioContentTokens": [
+        "2308",
+        "3",
+        "7108",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase008",
+        "verification",
+        "zeta8108"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE008",
+        "Synthetic",
+        "batch",
+        "3",
+        "receipt",
+        "7108",
+        "Ledger",
+        "balance",
+        "2308",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8108"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE008",
+        "3",
+        "7108",
+        "2308",
+        "ZETA8108"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE008",
+        "Synthetic batch 3 receipt 7108",
+        "Ledger balance 2308 units",
+        "Verification code ZETA8108"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "transient2": {
+      "marker": "VARIEDPHASE009",
+      "visibleLines": [
+        "VARIEDPHASE009",
+        "Synthetic batch 3 receipt 7109",
+        "Ledger balance 2309 units",
+        "Verification code ZETA8109"
+      ],
+      "scenarioContentTokens": [
+        "2309",
+        "3",
+        "7109",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase009",
+        "verification",
+        "zeta8109"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE009",
+        "Synthetic",
+        "batch",
+        "3",
+        "receipt",
+        "7109",
+        "Ledger",
+        "balance",
+        "2309",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8109"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE009",
+        "3",
+        "7109",
+        "2309",
+        "ZETA8109"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE009",
+        "Synthetic batch 3 receipt 7109",
+        "Ledger balance 2309 units",
+        "Verification code ZETA8109"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "canvas2": {
+      "marker": "VARIEDPHASE010",
+      "visibleLines": [
+        "VARIEDPHASE010",
+        "Synthetic batch 3 receipt 7110",
+        "Ledger balance 2310 units",
+        "Verification code ZETA8110"
+      ],
+      "scenarioContentTokens": [
+        "2310",
+        "3",
+        "7110",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase010",
+        "verification",
+        "zeta8110"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE010",
+        "Synthetic",
+        "batch",
+        "3",
+        "receipt",
+        "7110",
+        "Ledger",
+        "balance",
+        "2310",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8110"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE010",
+        "3",
+        "7110",
+        "2310",
+        "ZETA8110"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE010",
+        "Synthetic batch 3 receipt 7110",
+        "Ledger balance 2310 units",
+        "Verification code ZETA8110"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "overlap2": {
+      "marker": "VARIEDPHASE011",
+      "visibleLines": [
+        "VARIEDPHASE011",
+        "Synthetic batch 3 receipt 7111",
+        "Ledger balance 2311 units",
+        "Verification code ZETA8111"
+      ],
+      "scenarioContentTokens": [
+        "2311",
+        "3",
+        "7111",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase011",
+        "verification",
+        "zeta8111"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE011",
+        "Synthetic",
+        "batch",
+        "3",
+        "receipt",
+        "7111",
+        "Ledger",
+        "balance",
+        "2311",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8111"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE011",
+        "3",
+        "7111",
+        "2311",
+        "ZETA8111"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE011",
+        "Synthetic batch 3 receipt 7111",
+        "Ledger balance 2311 units",
+        "Verification code ZETA8111"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "scroll3": {
+      "marker": "VARIEDPHASE012",
+      "visibleLines": [
+        "VARIEDPHASE012",
+        "Synthetic batch 4 receipt 7112",
+        "Ledger balance 2312 units",
+        "Verification code ZETA8112"
+      ],
+      "scenarioContentTokens": [
+        "2312",
+        "4",
+        "7112",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase012",
+        "verification",
+        "zeta8112"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE012",
+        "Synthetic",
+        "batch",
+        "4",
+        "receipt",
+        "7112",
+        "Ledger",
+        "balance",
+        "2312",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8112"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE012",
+        "4",
+        "7112",
+        "2312",
+        "ZETA8112"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE012",
+        "Synthetic batch 4 receipt 7112",
+        "Ledger balance 2312 units",
+        "Verification code ZETA8112"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "transient3": {
+      "marker": "VARIEDPHASE013",
+      "visibleLines": [
+        "VARIEDPHASE013",
+        "Synthetic batch 4 receipt 7113",
+        "Ledger balance 2313 units",
+        "Verification code ZETA8113"
+      ],
+      "scenarioContentTokens": [
+        "2313",
+        "4",
+        "7113",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase013",
+        "verification",
+        "zeta8113"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE013",
+        "Synthetic",
+        "batch",
+        "4",
+        "receipt",
+        "7113",
+        "Ledger",
+        "balance",
+        "2313",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8113"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE013",
+        "4",
+        "7113",
+        "2313",
+        "ZETA8113"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE013",
+        "Synthetic batch 4 receipt 7113",
+        "Ledger balance 2313 units",
+        "Verification code ZETA8113"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "canvas3": {
+      "marker": "VARIEDPHASE014",
+      "visibleLines": [
+        "VARIEDPHASE014",
+        "Synthetic batch 4 receipt 7114",
+        "Ledger balance 2314 units",
+        "Verification code ZETA8114"
+      ],
+      "scenarioContentTokens": [
+        "2314",
+        "4",
+        "7114",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase014",
+        "verification",
+        "zeta8114"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE014",
+        "Synthetic",
+        "batch",
+        "4",
+        "receipt",
+        "7114",
+        "Ledger",
+        "balance",
+        "2314",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8114"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE014",
+        "4",
+        "7114",
+        "2314",
+        "ZETA8114"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE014",
+        "Synthetic batch 4 receipt 7114",
+        "Ledger balance 2314 units",
+        "Verification code ZETA8114"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "overlap3": {
+      "marker": "VARIEDPHASE015",
+      "visibleLines": [
+        "VARIEDPHASE015",
+        "Synthetic batch 4 receipt 7115",
+        "Ledger balance 2315 units",
+        "Verification code ZETA8115"
+      ],
+      "scenarioContentTokens": [
+        "2315",
+        "4",
+        "7115",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase015",
+        "verification",
+        "zeta8115"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE015",
+        "Synthetic",
+        "batch",
+        "4",
+        "receipt",
+        "7115",
+        "Ledger",
+        "balance",
+        "2315",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8115"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE015",
+        "4",
+        "7115",
+        "2315",
+        "ZETA8115"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE015",
+        "Synthetic batch 4 receipt 7115",
+        "Ledger balance 2315 units",
+        "Verification code ZETA8115"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "scroll4": {
+      "marker": "VARIEDPHASE016",
+      "visibleLines": [
+        "VARIEDPHASE016",
+        "Synthetic batch 5 receipt 7116",
+        "Ledger balance 2316 units",
+        "Verification code ZETA8116"
+      ],
+      "scenarioContentTokens": [
+        "2316",
+        "5",
+        "7116",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase016",
+        "verification",
+        "zeta8116"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE016",
+        "Synthetic",
+        "batch",
+        "5",
+        "receipt",
+        "7116",
+        "Ledger",
+        "balance",
+        "2316",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8116"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE016",
+        "5",
+        "7116",
+        "2316",
+        "ZETA8116"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE016",
+        "Synthetic batch 5 receipt 7116",
+        "Ledger balance 2316 units",
+        "Verification code ZETA8116"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "transient4": {
+      "marker": "VARIEDPHASE017",
+      "visibleLines": [
+        "VARIEDPHASE017",
+        "Synthetic batch 5 receipt 7117",
+        "Ledger balance 2317 units",
+        "Verification code ZETA8117"
+      ],
+      "scenarioContentTokens": [
+        "2317",
+        "5",
+        "7117",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase017",
+        "verification",
+        "zeta8117"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE017",
+        "Synthetic",
+        "batch",
+        "5",
+        "receipt",
+        "7117",
+        "Ledger",
+        "balance",
+        "2317",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8117"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE017",
+        "5",
+        "7117",
+        "2317",
+        "ZETA8117"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE017",
+        "Synthetic batch 5 receipt 7117",
+        "Ledger balance 2317 units",
+        "Verification code ZETA8117"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "canvas4": {
+      "marker": "VARIEDPHASE018",
+      "visibleLines": [
+        "VARIEDPHASE018",
+        "Synthetic batch 5 receipt 7118",
+        "Ledger balance 2318 units",
+        "Verification code ZETA8118"
+      ],
+      "scenarioContentTokens": [
+        "2318",
+        "5",
+        "7118",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase018",
+        "verification",
+        "zeta8118"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE018",
+        "Synthetic",
+        "batch",
+        "5",
+        "receipt",
+        "7118",
+        "Ledger",
+        "balance",
+        "2318",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8118"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE018",
+        "5",
+        "7118",
+        "2318",
+        "ZETA8118"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE018",
+        "Synthetic batch 5 receipt 7118",
+        "Ledger balance 2318 units",
+        "Verification code ZETA8118"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    },
+    "overlap4": {
+      "marker": "VARIEDPHASE019",
+      "visibleLines": [
+        "VARIEDPHASE019",
+        "Synthetic batch 5 receipt 7119",
+        "Ledger balance 2319 units",
+        "Verification code ZETA8119"
+      ],
+      "scenarioContentTokens": [
+        "2319",
+        "5",
+        "7119",
+        "balance",
+        "batch",
+        "code",
+        "ledger",
+        "receipt",
+        "synthetic",
+        "units",
+        "variedphase019",
+        "verification",
+        "zeta8119"
+      ],
+      "expectedTokenOccurrences": [
+        "VARIEDPHASE019",
+        "Synthetic",
+        "batch",
+        "5",
+        "receipt",
+        "7119",
+        "Ledger",
+        "balance",
+        "2319",
+        "units",
+        "Verification",
+        "code",
+        "ZETA8119"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "VARIEDPHASE019",
+        "5",
+        "7119",
+        "2319",
+        "ZETA8119"
+      ],
+      "expectedPhrases": [
+        "VARIEDPHASE019",
+        "Synthetic batch 5 receipt 7119",
+        "Ledger balance 2319 units",
+        "Verification code ZETA8119"
+      ],
+      "forbiddenOCRTokens": [
+        "OMEGA999",
+        "THETA888"
+      ]
+    }
+  }
+}

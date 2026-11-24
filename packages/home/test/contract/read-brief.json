@@ -1,0 +1,36 @@
+{
+  "what": "brief",
+  "span": {
+    "from": "2026-10-01",
+    "to": "2026-10-03"
+  },
+  "days": [
+    {
+      "day": "2026-10-01",
+      "lines": [
+        {
+          "text": "all day: Example review",
+          "cites": [
+            "line.WyJsaW5lIiwiMjAyNi0xMC0wMSIsIjBhMGIwYzBkMGUwZjEwMTEiLDAsImNhbGVuZGFyL2UzIixudWxsXQ"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-10-02",
+      "lines": [
+        {
+          "text": "a receipt from an example shop",
+          "cites": [
+            "record.WyJyZWNvcmQiLCJnbWFpbDptZUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtNyJd"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2026-10-03",
+      "lines": []
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00"
+}

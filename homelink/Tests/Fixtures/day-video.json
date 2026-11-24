@@ -1,0 +1,92 @@
+{
+  "day": "2026-10-14",
+  "zone": "UTC",
+  "day_start_hour": 4,
+  "window": {
+    "start_ms": 1791950400000,
+    "end_ms": 1792036800000
+  },
+  "renderer": "pinned",
+  "inputs": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "counts": {
+    "total": 3,
+    "per_family": {
+      "photos": 3
+    }
+  },
+  "coverage": [
+    {
+      "family": "photos",
+      "sources": [
+        {
+          "source": "apple-photos:person-a@example.com:iphone-aa01",
+          "read": "none"
+        }
+      ]
+    }
+  ],
+  "atoms": [
+    {
+      "n": 1,
+      "family": "photos",
+      "unit": "burst/1791968400000",
+      "units": [
+        "burst/1791968400000"
+      ],
+      "accounts": [
+        "apple-photos:person-a@example.com"
+      ],
+      "start_ms": 1791968400000,
+      "end_ms": null,
+      "local_start": "09:00",
+      "local_end": null,
+      "flags": [],
+      "text": "Image",
+      "item": "photo:dcf659539eaab18e9ad211adf33acdc8a8bb53aa1336903ac8ab3f1c0291c489",
+      "pictures": 1
+    },
+    {
+      "n": 2,
+      "family": "photos",
+      "unit": "burst/1791969000000",
+      "units": [
+        "burst/1791969000000"
+      ],
+      "accounts": [
+        "apple-photos:person-a@example.com"
+      ],
+      "start_ms": 1791969000000,
+      "end_ms": null,
+      "local_start": "09:10",
+      "local_end": null,
+      "flags": [],
+      "text": "Image",
+      "item": "photo:f867f77fd6351ccf0fea557b299fad3aa1398327dadffed5cef72a56643ef09c",
+      "pictures": 1,
+      "live": true
+    },
+    {
+      "n": 3,
+      "family": "photos",
+      "unit": "burst/1791969600000",
+      "units": [
+        "burst/1791969600000"
+      ],
+      "accounts": [
+        "apple-photos:person-a@example.com"
+      ],
+      "start_ms": 1791969600000,
+      "end_ms": null,
+      "local_start": "09:20",
+      "local_end": null,
+      "flags": [],
+      "text": "Video: 42s",
+      "item": "photo:4ccd151d22fd0305f68d85738dc665fda482996882620dc6e33390a765e681b4",
+      "pictures": 1,
+      "video": {
+        "duration_ms": 42400
+      }
+    }
+  ],
+  "facts": []
+}

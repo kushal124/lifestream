@@ -1,0 +1,39 @@
+[
+  {
+    "family": "labels",
+    "unit": "places",
+    "reading": "sha256:9d3ecad6a824ae656a53c9b584eeb8b4d46e2aa601bb0bfe5bdd40917282fbfc",
+    "code": "1:sha256:eddd08d9d419d5ed222e640f97663664063e2d8f78016fc8399eaa1b96256520",
+    "content": {
+      "places": [
+        {
+          "latitude": 10,
+          "longitude": 20,
+          "name": "Synthetic Desk",
+          "radius_m": 100,
+          "slug": "desk"
+        },
+        {
+          "ids": [
+            "google:ChIJ-synthetic-home"
+          ],
+          "latitude": 0,
+          "longitude": 0,
+          "name": "Synthetic Home",
+          "radius_m": 120,
+          "slug": "home"
+        },
+        {
+          "latitude": 10.5,
+          "longitude": 20,
+          "name": "Synthetic Park",
+          "radius_m": 100,
+          "slug": "park"
+        }
+      ]
+    },
+    "start_ms": null,
+    "end_ms": null,
+    "days": []
+  }
+]

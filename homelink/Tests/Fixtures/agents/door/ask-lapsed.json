@@ -1,0 +1,133 @@
+{
+  "route": "GET /v1/agents/asks/<id>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "rq-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Claude",
+    "by": "agent",
+    "head": "Claude asks to see Calendar for 1 hour",
+    "line": "asks to see Calendar for 1 hour",
+    "asked_line": [
+      {
+        "kind": "words",
+        "words": "Asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794474000000
+        }
+      },
+      {
+        "kind": "words",
+        "words": "· the ask ends"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794560400000
+        }
+      }
+    ],
+    "under_line": [
+      {
+        "kind": "words",
+        "words": "“An old plan.” · asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794474000000
+        }
+      }
+    ],
+    "says_title": "Claude says",
+    "wants": "Calendar for 1 hour",
+    "today": [
+      {
+        "text": "Today Claude sees everything but "
+      },
+      {
+        "text": "Health",
+        "bold": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "Money",
+        "bold": true
+      },
+      {
+        "text": " from the past 24 hours."
+      }
+    ],
+    "under": null,
+    "reason": "An old plan.",
+    "screen": null,
+    "adds": [],
+    "keeps": null,
+    "choices": [
+      {
+        "answer": "once",
+        "words": "Allow for 1 hour"
+      },
+      {
+        "answer": "always",
+        "words": "Always allow"
+      },
+      {
+        "answer": "no",
+        "words": "Don’t allow"
+      }
+    ],
+    "editable": true,
+    "default": "once",
+    "version": 1,
+    "proposed": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        },
+        {
+          "reach": {
+            "type": "plans",
+            "but": []
+          },
+          "window": null,
+          "lasts_ms": 3600000
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    },
+    "at_ms": 1794474000000,
+    "until_ms": 1794560400000,
+    "state": "lapsed",
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "This request is over."
+      }
+    ]
+  }
+}

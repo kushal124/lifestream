@@ -1,0 +1,654 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-14",
+  "title": "Connect an agent",
+  "apps": [
+    {
+      "app": "claude",
+      "name": "Claude",
+      "mark": "claude",
+      "line": null,
+      "how": "sign-in",
+      "connected": null,
+      "head": "Connect Claude",
+      "need": "Needs Claude on the web. A free account can add one custom connector.",
+      "hosts": [
+        "claude.ai",
+        "claude.com"
+      ],
+      "address": {
+        "title": "Set up Tailscale on your Mac",
+        "line": "Claude reaches your Mac through Tailscale, a free app.",
+        "ready": "Tailscale is ready. Turn on Lifestream’s agent address.",
+        "on": "Turn on"
+      },
+      "steps": [
+        {
+          "title": "Add Lifestream to Claude",
+          "where": "On a computer",
+          "path": [
+            "Plugins",
+            "Connectors",
+            "Add",
+            "Add custom connector"
+          ],
+          "values": [
+            {
+              "label": "Name",
+              "text": "Lifestream",
+              "address": false
+            },
+            {
+              "label": "MCP server URL",
+              "text": "",
+              "address": true
+            }
+          ],
+          "then": "Click Continue, then Add, then Connect.",
+          "open": null,
+          "kind": "add"
+        },
+        {
+          "title": "Say yes here",
+          "line": "Claude opens Lifestream’s sign-in page. Its number comes here.",
+          "wait": "Waiting for Claude",
+          "hint": "Nothing yet? In Claude, click Install or Connect.",
+          "sees": "It will see",
+          "other": "A sign-in from {host} is waiting",
+          "wrong": "That wasn’t the number Claude showed. In Claude, click Connect to try again.",
+          "finishing": "Finishing in Claude…",
+          "unfinished": "Claude did not finish. In Claude, click Connect again.",
+          "out": "The request ended. In Claude, click Connect to ask again.",
+          "denied": "Not allowed. Claude can’t read your Lifestream.",
+          "reads": "Claude can read your Lifestream",
+          "kind": "yes"
+        }
+      ],
+      "done": {
+        "title": "Claude is connected",
+        "ask": {
+          "title": "Ask it first",
+          "line": "In a new Claude chat, send this:",
+          "question": "Use Lifestream to tell me what I did yesterday."
+        },
+        "open": {
+          "label": "Open Claude",
+          "url": "https://claude.ai/",
+          "to": "web"
+        }
+      }
+    },
+    {
+      "app": "chatgpt",
+      "name": "ChatGPT",
+      "mark": "chatgpt",
+      "line": null,
+      "how": "sign-in",
+      "connected": "p-00000002",
+      "head": "Connect ChatGPT",
+      "need": "Needs ChatGPT on the web, on a Pro, Business, Enterprise or Edu plan.",
+      "hosts": [
+        "chatgpt.com"
+      ],
+      "address": {
+        "title": "Set up Tailscale on your Mac",
+        "line": "ChatGPT reaches your Mac through Tailscale, a free app.",
+        "ready": "Tailscale is ready. Turn on Lifestream’s agent address.",
+        "on": "Turn on"
+      },
+      "steps": [
+        {
+          "title": "Add Lifestream to ChatGPT",
+          "where": "On a computer",
+          "path": [
+            "Plugins",
+            "Add",
+            "Add custom MCP server"
+          ],
+          "values": [
+            {
+              "label": "Name",
+              "text": "Lifestream",
+              "address": false
+            },
+            {
+              "label": "Server URL",
+              "text": "",
+              "address": true
+            }
+          ],
+          "then": "Leave the rest as it is. Tick I understand, then Create as a plugin, then Install.",
+          "open": null,
+          "kind": "add"
+        },
+        {
+          "title": "Say yes here",
+          "line": "ChatGPT opens Lifestream’s sign-in page. Its number comes here.",
+          "wait": "Waiting for ChatGPT",
+          "hint": "Nothing yet? In ChatGPT, click Install or Connect.",
+          "sees": "It will see",
+          "other": "A sign-in from {host} is waiting",
+          "wrong": "That wasn’t the number ChatGPT showed. In ChatGPT, click Connect to try again.",
+          "finishing": "Finishing in ChatGPT…",
+          "unfinished": "ChatGPT did not finish. In ChatGPT, click Connect again.",
+          "out": "The request ended. In ChatGPT, click Connect to ask again.",
+          "denied": "Not allowed. ChatGPT can’t read your Lifestream.",
+          "reads": "ChatGPT can read your Lifestream",
+          "kind": "yes"
+        }
+      ],
+      "done": {
+        "title": "ChatGPT is connected",
+        "ask": {
+          "title": "Ask it first",
+          "line": "In a new ChatGPT chat, send this:",
+          "question": "Use Lifestream to tell me what I did yesterday."
+        },
+        "open": {
+          "label": "Open ChatGPT",
+          "url": "https://chatgpt.com/",
+          "to": "web"
+        }
+      }
+    },
+    {
+      "app": "muse",
+      "name": "Muse",
+      "mark": "muse",
+      "line": null,
+      "how": "sign-in",
+      "connected": null,
+      "head": "Connect Muse",
+      "need": "Needs Muse on the web.",
+      "hosts": [
+        "agent.meta.ai"
+      ],
+      "address": {
+        "title": "Set up Tailscale on your Mac",
+        "line": "Muse reaches your Mac through Tailscale, a free app.",
+        "ready": "Tailscale is ready. Turn on Lifestream’s agent address.",
+        "on": "Turn on"
+      },
+      "steps": [
+        {
+          "title": "Ask Muse to connect",
+          "line": "In a new side chat, send this. Then tap Connect on the card Muse shows.",
+          "value": {
+            "label": "Message",
+            "text": "Connect Lifestream as a custom connector named Lifestream. Connect over HTTPS using Streamable HTTP and OAuth with dynamic client registration. Discover Lifestream’s OAuth settings. Use public-client token authentication, the read scope and the exact MCP URL as the resource. Open the secure sign-in card. After sign-in, list the tools and set up the connector for Lifestream reads. The MCP URL is: ",
+            "address": true
+          },
+          "open": {
+            "label": "Open Muse",
+            "url": "https://muse.ai/",
+            "to": "web"
+          },
+          "next": null,
+          "kind": "message"
+        },
+        {
+          "title": "Say yes here",
+          "line": "Muse opens Lifestream’s sign-in page. Its number comes here.",
+          "wait": "Waiting for Muse",
+          "hint": "Nothing yet? Ask Muse to finish setting up the connector.",
+          "sees": "It will see",
+          "other": "A sign-in from {host} is waiting",
+          "wrong": "That wasn’t the number Muse showed. In Muse, tap Connect to try again.",
+          "finishing": "Finishing in Muse…",
+          "unfinished": "Muse did not finish. In Muse, tap Connect again.",
+          "out": "The request ended. In Muse, tap Connect to ask again.",
+          "denied": "Not allowed. Muse can’t read your Lifestream.",
+          "reads": "Muse can read your Lifestream",
+          "kind": "yes"
+        }
+      ],
+      "done": {
+        "title": "Muse is connected",
+        "ask": {
+          "title": "Ask it first",
+          "line": "In a new Muse chat, send this:",
+          "question": "Use Lifestream to tell me what I did yesterday."
+        },
+        "open": {
+          "label": "Open Muse",
+          "url": "https://muse.ai/",
+          "to": "web"
+        }
+      }
+    },
+    {
+      "app": "grok-bot",
+      "name": "Grok Bot",
+      "mark": "grok-bot",
+      "line": null,
+      "how": "key",
+      "connected": null,
+      "head": "Connect Grok Bot",
+      "need": "Needs the Grok Bot desktop app.",
+      "hosts": [],
+      "address": null,
+      "steps": [
+        {
+          "title": "On your Mac",
+          "line": "Grok Bot runs on your Mac. Connect it in Lifestream there.",
+          "kind": "elsewhere"
+        }
+      ],
+      "done": {
+        "title": "Grok Bot is connected",
+        "ask": {
+          "title": "Ask it first",
+          "line": "In a Grok Bot chat, send this:",
+          "question": "Use Lifestream to tell me what I did yesterday."
+        },
+        "open": null
+      }
+    },
+    {
+      "app": "instinct",
+      "name": "Instinct",
+      "mark": "instinct",
+      "line": null,
+      "how": "key",
+      "connected": null,
+      "head": "Connect Instinct",
+      "need": "Needs Instinct in Messages.",
+      "hosts": [],
+      "address": {
+        "title": "Set up Tailscale on your Mac",
+        "line": "Instinct reaches your Mac through Tailscale, a free app.",
+        "ready": "Tailscale is ready. Turn on Lifestream’s agent address.",
+        "on": "Turn on"
+      },
+      "steps": [
+        {
+          "title": "Ask Instinct for a secure link",
+          "line": "Text Instinct this, then wait for its link.",
+          "value": {
+            "label": "Message",
+            "text": "I want to connect Lifestream as a remote MCP server with an Authorization header. Send me a secure link where I can enter its address and key.",
+            "address": false
+          },
+          "open": {
+            "label": "Open Messages",
+            "to": "messages"
+          },
+          "next": "I have the link",
+          "kind": "message"
+        },
+        {
+          "title": "Choose what Instinct sees",
+          "make": "Make the key",
+          "sees": "It will see",
+          "access": {
+            "allow": [
+              {
+                "reach": {
+                  "all": true,
+                  "but": [
+                    "health",
+                    "money"
+                  ]
+                },
+                "window": null,
+                "until_ms": null
+              }
+            ],
+            "items": [],
+            "not": [],
+            "only": [],
+            "window": null,
+            "hide": "names",
+            "shown": []
+          },
+          "view": {
+            "sentence": [
+              {
+                "text": "Instinct sees everything but "
+              },
+              {
+                "text": "Health",
+                "bold": true
+              },
+              {
+                "text": " and "
+              },
+              {
+                "text": "Money",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            "summary": "Everything but Health and Money · details hidden",
+            "reads": "Everything but Health and Money",
+            "mode": "but",
+            "modes": [
+              {
+                "mode": "but",
+                "words": "Everything but"
+              },
+              {
+                "mode": "only",
+                "words": "Only these"
+              }
+            ],
+            "mode_line": "Everything you leave checked, and new connectors as you add them.",
+            "window": {
+              "value": {
+                "window": null
+              },
+              "words": "All time"
+            },
+            "times": [
+              {
+                "choice": "all",
+                "window": null,
+                "words": "All time"
+              },
+              {
+                "choice": "past",
+                "window": {
+                  "past_ms": 1791968400000
+                },
+                "words": "Past year"
+              },
+              {
+                "choice": "past",
+                "window": {
+                  "past_ms": 1791968400000
+                },
+                "words": "Past 30 days"
+              },
+              {
+                "choice": "past",
+                "window": {
+                  "past_ms": 1791968400000
+                },
+                "words": "Past 7 days"
+              },
+              {
+                "choice": "past",
+                "window": {
+                  "past_ms": 1791968400000
+                },
+                "words": "Past 24 hours"
+              },
+              {
+                "choice": "past",
+                "window": {
+                  "past_ms": 1791968400000
+                },
+                "words": "Past hour"
+              },
+              {
+                "choice": "since",
+                "window": null,
+                "words": "Since a date…"
+              }
+            ],
+            "categories": [
+              {
+                "type": "messages",
+                "name": "Messages",
+                "icon": "message",
+                "state": "on",
+                "accounts": [
+                  {
+                    "account": "whatsapp:15550000001",
+                    "name": "WhatsApp",
+                    "line": null,
+                    "state": "on",
+                    "limit": {
+                      "value": {
+                        "window": null
+                      },
+                      "words": "All time"
+                    }
+                  }
+                ],
+                "line": null,
+                "limit": {
+                  "value": {
+                    "window": null
+                  },
+                  "words": "All time"
+                },
+                "reads": null,
+                "differs": null
+              },
+              {
+                "type": "mail",
+                "name": "Mail",
+                "icon": "mail",
+                "state": "on",
+                "accounts": [
+                  {
+                    "account": "gmail:person-a@example.com",
+                    "name": "Gmail",
+                    "line": null,
+                    "state": "on",
+                    "limit": {
+                      "value": {
+                        "window": null
+                      },
+                      "words": "All time"
+                    }
+                  }
+                ],
+                "line": null,
+                "limit": {
+                  "value": {
+                    "window": null
+                  },
+                  "words": "All time"
+                },
+                "reads": null,
+                "differs": null
+              },
+              {
+                "type": "health",
+                "name": "Health",
+                "icon": "health",
+                "state": "off",
+                "accounts": [
+                  {
+                    "account": "whoop:person-a@example.com",
+                    "name": "WHOOP",
+                    "line": null,
+                    "state": "off",
+                    "limit": null
+                  }
+                ],
+                "line": null,
+                "limit": null,
+                "reads": null,
+                "differs": null
+              }
+            ],
+            "hide": {
+              "choice": "names",
+              "words": "Details",
+              "choices": [
+                {
+                  "level": "none",
+                  "words": "Nothing",
+                  "line": "It sees names, numbers and addresses as they are",
+                  "selected": false
+                },
+                {
+                  "level": "names",
+                  "words": "Details",
+                  "line": "Phone numbers, addresses and account numbers are blanks",
+                  "selected": true
+                },
+                {
+                  "level": "all",
+                  "words": "Names and details",
+                  "line": "People are “a person”, and the details are blanks",
+                  "selected": false
+                },
+                {
+                  "level": "custom",
+                  "words": "Choose…",
+                  "line": null,
+                  "selected": false
+                }
+              ],
+              "types": [
+                {
+                  "type": "person",
+                  "name": "Names",
+                  "state": "shown",
+                  "subtypes": []
+                },
+                {
+                  "type": "account",
+                  "name": "Accounts",
+                  "state": "shown",
+                  "subtypes": []
+                },
+                {
+                  "type": "email",
+                  "name": "Email addresses",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "phone",
+                  "name": "Phone numbers",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "address",
+                  "name": "Addresses",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "place",
+                  "name": "Places",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "number",
+                  "name": "Numbers",
+                  "state": "hidden",
+                  "subtypes": [
+                    {
+                      "type": "number.bank",
+                      "name": "Bank numbers",
+                      "state": "fixed"
+                    },
+                    {
+                      "type": "number.card",
+                      "name": "Card numbers",
+                      "state": "fixed"
+                    },
+                    {
+                      "type": "number.government",
+                      "name": "ID numbers",
+                      "state": "fixed"
+                    },
+                    {
+                      "type": "number.tax",
+                      "name": "Tax IDs",
+                      "state": "fixed"
+                    },
+                    {
+                      "type": "number.payment",
+                      "name": "Payment addresses",
+                      "state": "fixed"
+                    },
+                    {
+                      "type": "number.order",
+                      "name": "Order numbers",
+                      "state": "fixed"
+                    }
+                  ]
+                },
+                {
+                  "type": "secret",
+                  "name": "Passwords and keys",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "link",
+                  "name": "Links",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "word",
+                  "name": "Words you listed",
+                  "state": "hidden",
+                  "subtypes": []
+                },
+                {
+                  "type": "face",
+                  "name": "Faces",
+                  "state": "shown",
+                  "subtypes": []
+                }
+              ]
+            },
+            "widens": true,
+            "widening": null,
+            "screen": null
+          },
+          "kind": "sees"
+        },
+        {
+          "title": "Paste them into the secure link",
+          "where": null,
+          "path": [],
+          "then": null,
+          "warn": "Paste the key only into the secure link, never into Messages.",
+          "once": "The key shows only now. Make a new one any time.",
+          "unknown": "Lifestream didn’t say whether the key was made. Make it again. If Agents then lists Instinct twice, disconnect the one that hasn’t read.",
+          "kind": "give"
+        }
+      ],
+      "done": {
+        "title": "Instinct is connected",
+        "ask": {
+          "title": "Ask it first",
+          "line": "Text Instinct this:",
+          "question": "Use Lifestream to tell me what I did yesterday."
+        },
+        "open": {
+          "label": "Open Messages",
+          "to": "messages"
+        }
+      }
+    },
+    {
+      "app": "another",
+      "name": "Another agent",
+      "mark": "add",
+      "line": "Claude Code, Cursor, a script",
+      "how": "key",
+      "connected": null,
+      "head": "Connect Another agent",
+      "need": "For an app that takes an address and a key.",
+      "hosts": [],
+      "address": null,
+      "steps": [
+        {
+          "title": "On your Mac",
+          "line": "Another agent runs on your Mac. Connect it in Lifestream there.",
+          "kind": "elsewhere"
+        }
+      ],
+      "done": {
+        "title": "{name} is connected",
+        "ask": null,
+        "open": null
+      }
+    }
+  ]
+}

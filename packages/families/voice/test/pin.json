@@ -1,0 +1,13 @@
+{
+  "family": "voice",
+  "key": {
+    "code": "2",
+    "adapters": {
+      "voice/aqua-voice": "1",
+      "voice/voice-notes": "1",
+      "voice/wispr-flow": "1"
+    }
+  },
+  "rows": 11,
+  "digest": "sha256:208b68a0c2b4c8d29fb4fec60e51ae03905c3f786839927e04966caf30bdb1db"
+}

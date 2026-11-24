@@ -1,0 +1,11 @@
+{
+  "family": "plain",
+  "key": {
+    "code": "2",
+    "adapters": {
+      "line/example-log": "1"
+    }
+  },
+  "rows": 2,
+  "digest": "sha256:1b911e61e1264805c2f5025da23c9d605c6c42f0d20e72fe0040de2a30b1eff9"
+}

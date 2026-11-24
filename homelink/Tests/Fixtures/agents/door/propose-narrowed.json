@@ -1,0 +1,71 @@
+{
+  "route": "POST /v1/agents/<id>/propose",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms": null,
+          "window": null
+        }
+      ],
+      "hide": "names",
+      "items": [],
+      "not": [],
+      "only": [],
+      "shown": [],
+      "window": {
+        "past_ms": 86400000
+      }
+    },
+    "expect": 1
+  },
+  "status": 200,
+  "answer": {
+    "id": "ch-14",
+    "kind": "narrowed",
+    "reader": "p-00000001",
+    "words": [
+      {
+        "text": "Saved. Instinct now sees the "
+      },
+      {
+        "text": "past 24 hours",
+        "bold": true
+      },
+      {
+        "text": "."
+      }
+    ],
+    "undo": {
+      "access": {
+        "allow": [
+          {
+            "reach": {
+              "all": true,
+              "but": [
+                "health",
+                "money"
+              ]
+            },
+            "window": null,
+            "until_ms": null
+          }
+        ],
+        "items": [],
+        "not": [],
+        "only": [],
+        "window": null,
+        "hide": "names",
+        "shown": []
+      },
+      "expect": 2
+    }
+  }
+}

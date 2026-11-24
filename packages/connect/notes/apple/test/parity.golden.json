@@ -1,0 +1,241 @@
+[
+  {
+    "kind": "note",
+    "key": "SYNTH-NOTE-0001",
+    "content": {
+      "type": "apple.note",
+      "note": {
+        "ZIDENTIFIER": "SYNTH-NOTE-0001",
+        "ZTITLE1": "Synthetic exercise",
+        "ZSNIPPET": "1.1kg * 15 reps",
+        "ZPASSWORDHINT": null,
+        "ZCREATIONDATE3": 811584000.25,
+        "ZMODIFICATIONDATE1": 811584600.5,
+        "ZISPINNED": 0,
+        "ZISPASSWORDPROTECTED": 0,
+        "ZMARKEDFORDELETION": 0,
+        "ZHASCHECKLIST": 0,
+        "ZHASCHECKLISTINPROGRESS": 0,
+        "ZHASEMPHASIS": 0,
+        "ZHASSYSTEMTEXTATTACHMENTS": 0,
+        "ZPAPERSTYLETYPE": 0,
+        "ZISSYSTEMPAPER": 0,
+        "ZCRYPTOITERATIONCOUNT": 0,
+        "ZCRYPTOSALT": null,
+        "ZCRYPTOWRAPPEDKEY": null,
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "body": {
+        "ZDATA": {
+          "$bytes64": "H4sIAFN5bnRoZXRpYyBleGVyY2lzZQoxLjFrZyAqIDE1IHJlcHM="
+        },
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "folder": {
+        "ZIDENTIFIER": "SYNTH-FOLDER-WORKOUTS",
+        "ZTITLE2": "Workouts",
+        "ZFOLDERTYPE": 0,
+        "parent": "SYNTH-FOLDER-NOTES"
+      },
+      "attachments": [
+        {
+          "ZIDENTIFIER": "SYNTH-ATTACHMENT-0001",
+          "ZTYPEUTI": "public.png",
+          "ZTITLE": null,
+          "ZURLSTRING": null,
+          "ZCREATIONDATE": 811584000.25,
+          "ZMODIFICATIONDATE": 811584600.5,
+          "ZFILESIZE": 0,
+          "ZMARKEDFORDELETION": 0,
+          "media": {
+            "ZIDENTIFIER": "SYNTH-MEDIA-0001",
+            "ZFILENAME": "Pasted Graphic.png",
+            "ZGENERATION1": "1_SYNTH-GENERATION-0001",
+            "hash": "da346f4c7861ec65846554c4cf27e98f6f5b46c5ead313d52dc5047146ec879f",
+            "bytes": 19
+          }
+        },
+        {
+          "ZIDENTIFIER": "SYNTH-ATTACHMENT-0002",
+          "ZTYPEUTI": "com.apple.drawing.2",
+          "ZTITLE": null,
+          "ZURLSTRING": null,
+          "ZCREATIONDATE": 811584000.25,
+          "ZMODIFICATIONDATE": 811584600.5,
+          "ZFILESIZE": 0,
+          "ZMARKEDFORDELETION": 0,
+          "media": null
+        },
+        {
+          "ZIDENTIFIER": "SYNTH-ATTACHMENT-0003",
+          "ZTYPEUTI": "public.jpeg",
+          "ZTITLE": null,
+          "ZURLSTRING": null,
+          "ZCREATIONDATE": 811584000.25,
+          "ZMODIFICATIONDATE": 811584600.5,
+          "ZFILESIZE": 0,
+          "ZMARKEDFORDELETION": 0,
+          "media": {
+            "ZIDENTIFIER": "SYNTH-MEDIA-0002",
+            "ZFILENAME": "Not Downloaded.jpeg",
+            "ZGENERATION1": "1_SYNTH-GENERATION-0002",
+            "hash": null,
+            "bytes": null
+          }
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1789891200250,
+      "end_ms": 1789891800500,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "note",
+    "key": "SYNTH-NOTE-0002",
+    "content": {
+      "type": "apple.note",
+      "note": {
+        "ZIDENTIFIER": "SYNTH-NOTE-0002",
+        "ZTITLE1": "List",
+        "ZSNIPPET": "fake item",
+        "ZPASSWORDHINT": null,
+        "ZCREATIONDATE3": 811587600,
+        "ZMODIFICATIONDATE1": 811587600,
+        "ZISPINNED": 1,
+        "ZISPASSWORDPROTECTED": 0,
+        "ZMARKEDFORDELETION": 0,
+        "ZHASCHECKLIST": 0,
+        "ZHASCHECKLISTINPROGRESS": 0,
+        "ZHASEMPHASIS": 0,
+        "ZHASSYSTEMTEXTATTACHMENTS": 0,
+        "ZPAPERSTYLETYPE": 0,
+        "ZISSYSTEMPAPER": 0,
+        "ZCRYPTOITERATIONCOUNT": 0,
+        "ZCRYPTOSALT": null,
+        "ZCRYPTOWRAPPEDKEY": null,
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "body": {
+        "ZDATA": {
+          "$bytes64": "H4sIAExpc3QKZmFrZSBpdGVt"
+        },
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "folder": {
+        "ZIDENTIFIER": "SYNTH-FOLDER-NOTES",
+        "ZTITLE2": "Notes",
+        "ZFOLDERTYPE": 0,
+        "parent": null
+      },
+      "attachments": []
+    },
+    "time": {
+      "start_ms": 1789894800000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "note",
+    "key": "SYNTH-NOTE-0003",
+    "content": {
+      "type": "apple.note",
+      "note": {
+        "ZIDENTIFIER": "SYNTH-NOTE-0003",
+        "ZTITLE1": "Old draft",
+        "ZSNIPPET": null,
+        "ZPASSWORDHINT": null,
+        "ZCREATIONDATE3": 811497600,
+        "ZMODIFICATIONDATE1": 811580400,
+        "ZISPINNED": 0,
+        "ZISPASSWORDPROTECTED": 0,
+        "ZMARKEDFORDELETION": 1,
+        "ZHASCHECKLIST": 0,
+        "ZHASCHECKLISTINPROGRESS": 0,
+        "ZHASEMPHASIS": 0,
+        "ZHASSYSTEMTEXTATTACHMENTS": 0,
+        "ZPAPERSTYLETYPE": 0,
+        "ZISSYSTEMPAPER": 0,
+        "ZCRYPTOITERATIONCOUNT": 0,
+        "ZCRYPTOSALT": null,
+        "ZCRYPTOWRAPPEDKEY": null,
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "body": {
+        "ZDATA": {
+          "$bytes64": "H4sIAE9sZCBkcmFmdA=="
+        },
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "folder": {
+        "ZIDENTIFIER": "SYNTH-FOLDER-TRASH",
+        "ZTITLE2": "Recently Deleted",
+        "ZFOLDERTYPE": 1,
+        "parent": null
+      },
+      "attachments": []
+    },
+    "time": {
+      "start_ms": 1789804800000,
+      "end_ms": 1789887600000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "note",
+    "key": "SYNTH-NOTE-0004",
+    "content": {
+      "type": "apple.note",
+      "note": {
+        "ZIDENTIFIER": "SYNTH-NOTE-0004",
+        "ZTITLE1": null,
+        "ZSNIPPET": null,
+        "ZPASSWORDHINT": "the usual",
+        "ZCREATIONDATE3": 811591200,
+        "ZMODIFICATIONDATE1": null,
+        "ZISPINNED": 0,
+        "ZISPASSWORDPROTECTED": 1,
+        "ZMARKEDFORDELETION": 0,
+        "ZHASCHECKLIST": 0,
+        "ZHASCHECKLISTINPROGRESS": 0,
+        "ZHASEMPHASIS": 0,
+        "ZHASSYSTEMTEXTATTACHMENTS": 0,
+        "ZPAPERSTYLETYPE": 0,
+        "ZISSYSTEMPAPER": 0,
+        "ZCRYPTOITERATIONCOUNT": 20000,
+        "ZCRYPTOSALT": {
+          "$bytes64": "c3ludGhldGljLXNhbHQ="
+        },
+        "ZCRYPTOWRAPPEDKEY": {
+          "$bytes64": "c3ludGhldGljLXdyYXBwZWQta2V5"
+        },
+        "ZCRYPTOINITIALIZATIONVECTOR": null,
+        "ZCRYPTOTAG": null
+      },
+      "body": {
+        "ZDATA": {
+          "$bytes64": "H4sIAGNpcGhlcnRleHQ="
+        },
+        "ZCRYPTOINITIALIZATIONVECTOR": {
+          "$bytes64": "c3ludGhldGljLWl2"
+        },
+        "ZCRYPTOTAG": {
+          "$bytes64": "c3ludGhldGljLXRhZw=="
+        }
+      },
+      "folder": null,
+      "attachments": []
+    },
+    "time": {
+      "start_ms": 1789898400000,
+      "precision": "s"
+    }
+  }
+]

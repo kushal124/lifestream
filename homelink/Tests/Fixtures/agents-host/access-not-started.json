@@ -1,0 +1,74 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "none",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "act" : "agent-access",
+    "expect" : 0,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-not-started.json",
+  "reply" : {
+    "refused" : {
+      "code" : "ACCESS_NOT_STARTED",
+      "message" : "Update Lifestream on your Mac to connect agents."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "none",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "expect" : 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@lifestreamprotocol/runner",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "The runner: runs model files on its own machine, for a home's door.",
+  "type": "module",
+  "packageManager": "npm@10.9.7",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "vitest run --root ../.. --project runner"
+  },
+  "dependencies": {
+    "@huggingface/tokenizers": "0.2.0",
+    "@lifestreamprotocol/core": "file:../core",
+    "@lifestreamprotocol/model": "file:../model",
+    "ogg-opus-decoder": "1.7.5",
+    "onnxruntime-node": "1.30.0",
+    "transcribe-cpp": "0.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "route": "POST /v1/agents/address",
+  "request": {
+    "on": true,
+    "reader": "p-0000aaaa"
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "A sign-in reads from the internet already: only a key is turned on for it."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "route": "POST /v1/agents/<id>/unlist",
+  "request": {},
+  "status": 409,
+  "answer": {
+    "code": "AGENT_CONNECTED",
+    "message": "Disconnect Pager first."
+  }
+}

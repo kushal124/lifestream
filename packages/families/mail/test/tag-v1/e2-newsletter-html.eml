@@ -1,0 +1,16 @@
+From: =?UTF-8?B?U3ludGhldGljIE5ld3Mg8J+TsA==?= <news@example.com>
+To: person-a@example.com
+Subject: =?UTF-8?Q?Weekly_digest_=E2=80=94_issue?= =?UTF-8?Q?_42?=
+List-Unsubscribe: <mailto:unsubscribe@example.com>
+List-ID: <digest.example.com>
+Content-Type: text/html; charset=utf-8
+
+<html><head><style>p { color: red; }</style><script>var x = 1;</script></head><body>
+<div><h1>Weekly&nbsp;digest</h1>
+<p>Item one &amp; item two</p><p></p><p></p>
+<p>Double &amp;amp; encoded &amp;lt;tag&amp;gt; and &#8212; dash &#x2014; hex</p>
+<table><tr><td>Cell A</td><td>Cell B</td></tr></table>
+<br><br><br>
+<blockquote>Quoted part</blockquote>
+<a href="https://example.com/x">Read more</a>   </div>
+</body></html>

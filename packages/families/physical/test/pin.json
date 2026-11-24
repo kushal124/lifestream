@@ -1,0 +1,17 @@
+{
+  "family": "physical",
+  "key": {
+    "code": "14:sha256:b72769e7aa6156cade5175f4ab2c53012d6ccfada4f7bfe1a79e8cc4d0840f3a",
+    "adapters": {
+      "photos/apple-photos": "1",
+      "photos/camera": "1",
+      "photos/google-photos": "1",
+      "physical/checkin": "1",
+      "physical/google-timeline": "1",
+      "physical/location": "1",
+      "physical/motion": "1"
+    }
+  },
+  "rows": 32,
+  "digest": "sha256:bdc127963eb90d6f8dc5b7812dcc817b5940422c0b6c7e1dc3cf4735c14ea8d4"
+}

@@ -1,0 +1,55 @@
+{
+  "connector" : "wispr-flow",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "wispr-flow-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "flow.sqlite"
+          ],
+          "source_id" : "wispr-flow:person-b@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "wispr-flow:person-b@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "wispr-flow:person-b@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "wispr_flow"
+}

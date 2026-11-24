@@ -1,0 +1,51 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-06",
+  "state": "found",
+  "moment": {
+    "key": "e3",
+    "row": "e3",
+    "kind": "stay",
+    "icon": "place",
+    "title": "Home",
+    "name": "Home",
+    "near": null,
+    "start_ms": 1793917800000,
+    "end_ms": 1793933880000,
+    "untimed": null,
+    "length_ms": 16080000,
+    "products": [],
+    "people": [],
+    "place": {
+      "name": "Home",
+      "unit": "stay/location:local:iphone-aa01/1793886840000",
+      "slug": "home-place"
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [],
+      "more": 0,
+      "units": [
+        {
+          "family": "physical",
+          "unit": "stay/location:local:iphone-aa01/1793886840000"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1793917800000,
+      "end_ms": 1793933880000
+    },
+    "view": {
+      "today_ms": 45600000,
+      "unit": "stay/location:local:iphone-aa01/1793886840000",
+      "note": null,
+      "inside": [],
+      "view": "stay"
+    }
+  }
+}

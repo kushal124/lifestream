@@ -1,0 +1,188 @@
+import Foundation
+import DeviceFiles
+import HomeLink
+import PhotoLibrary
+import Shipping
+import XCTest
+@testable import Lifestream
+
+final class MacLimitsTests: XCTestCase {
+    private static let gb: Int64 = 1_000_000_000
+    private var folder: URL!
+
+    override func setUpWithError() throws {
+        folder = FileManager.default.temporaryDirectory.appendingPathComponent("mac-limits-\(UUID().uuidString)")
+        try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+    }
+
+    override func tearDown() {
+        try? FileManager.default.removeItem(at: folder)
+    }
+
+    func testTheSpoolRecordsUntilItsDiskIsFullAndTheHomeHearsEachLevelAndNetworkOnce() async throws {
+        let disk = Disk(free: 6 * Self.gb)
+        let volume = Volume(folder, read: { _ in disk.free }, clock: { disk.now })
+        let network = ReportedNetwork()
+        let door = Door()
+        let mac = MacNetwork(network)
+        let limits = MacLimits(disk: volume, network: mac, link: try link(door))
+        XCTAssertEqual(mac.metered, .expensive, "a network with no path report yet is metered: what waits for it waits for its first")
+
+        limits.start()
+        try await until("the level at the start") { door.stated("room") == ["ok"] }
+        XCTAssertEqual(door.stated("network"), [], "nothing said of a network not yet known")
+
+        disk.free = 4 * Self.gb
+        disk.now.addTimeInterval(60)
+        XCTAssertTrue(volume.fits(.new), "a low disk keeps recording")
+        try await until("low told") { door.stated("room") == ["ok", "low"] }
+        disk.free = Self.gb / 2
+        disk.now.addTimeInterval(60)
+        XCTAssertFalse(volume.fits(.new), "a full disk saves no frame")
+        try await until("full told") { door.stated("room") == ["ok", "low", "full"] }
+        disk.free = nil
+        disk.now.addTimeInterval(60)
+        XCTAssertTrue(volume.fits(.new), "a disk that does not read is low: recording goes on")
+        try await until("low told again") { door.changes("room") == ["ok", "low", "full", "low"] }
+
+        network.report(.expensive)
+        try await until("metered told") { door.stated("network").last == "metered" }
+        XCTAssertEqual(mac.metered, .expensive)
+        network.report(.lowDataMode)
+        network.report(nil)
+        try await until("free told") { door.stated("network").last == "free" }
+        XCTAssertNil(mac.metered)
+        XCTAssertEqual(door.changes("network"), ["metered", "free"], "each change once, a repeat none")
+        XCTAssertEqual(door.changes("room"), ["ok", "low", "full", "low"], "each level once, the unknown reading low")
+        try record("stated", ["room": door.changes("room"), "network": door.changes("network")])
+    }
+
+    func testThePhotoPassStatesTheWayToItsHomeAndTheInternetApart() async throws {
+        let network = ReportedNetwork()
+        let disk = Volume(folder, read: { _ in 100 * Self.gb })
+        let paths = ShippingDomains.conventional(home: folder, spool: folder.appendingPathComponent("spool"),
+                                                 fullDiskAccessWitness: folder.appendingPathComponent("witness"),
+                                                 photosAllowed: { false },
+                                                 importRoom: ImportRoom(onPower: { true }, disk: disk, homeFree: { nil }), files: DeviceFiles(.plain))
+        let settings = MacSettings(file: folder.appendingPathComponent("settings.json"), files: DeviceFiles(.plain))
+        let here = MacPhotoPass(paths: paths, link: try link(Door()), settings: settings, network: MacNetwork(network), disk: disk)
+        let away = MacPhotoPass(paths: paths, link: try link(Door(), at: "http://100.100.1.1:4680", folder: "away"),
+                                settings: settings, network: MacNetwork(network), disk: disk)
+        let facts = { (pass: MacPhotoPass) async -> String in
+            let device = await pass.device
+            return "\(device.homeMetered ? "home metered" : "home free"), \(device.internetMetered ? "internet metered" : "internet free")"
+        }
+        var seen = [[await facts(here), await facts(away)]]
+        for cost in [nil, .expensive, nil, .lowDataMode] as [Metered?] {
+            network.report(cost)
+            seen.append([await facts(here), await facts(away)])
+        }
+        let free = ["home free, internet free", "home free, internet free"]
+        let held = ["home free, internet metered", "home metered, internet metered"]
+        XCTAssertEqual(seen, [held, free, held, free, held],
+                       "unknown, a hotspot and Low Data Mode hold iCloud's downloads; the files to a home on this Mac never wait")
+    }
+
+    func testSetUpCountsItsDaysAboveTheLineAndRefusesADiskUnderIt() {
+        XCTAssertEqual(Runway.days(free: Double(Room.keepBytes)), 0, "nothing above the line: no day")
+        XCTAssertEqual(Runway.days(free: Double(Room.keepBytes) + Runway.daily * 3.5), 3, "whole days above the line")
+        XCTAssertNil(Runway.full(free: Double(Room.keepBytes)), "5 GB free is the line, and Set up takes it")
+        XCTAssertNotNil(Runway.full(free: Double(Room.keepBytes) - 1), "under it, refused by the one line")
+    }
+
+
+    private func link(_ door: Door, at name: String = "http://127.0.0.1:4680", folder sub: String = "link") throws -> HomeLink {
+        let stored = try JSONSerialization.data(withJSONObject: ["name": name, "pass": "fake-pass-000000000000",
+                                                                 "paired": true, "unit": "macbook-pro-0001"])
+        return HomeLink(device: .init(kind: .mac, version: "500", model: "MacBook Pro", serial4: "0001"),
+                        credentials: Stored(stored), folder: folder.appendingPathComponent(sub), transport: door, files: DeviceFiles(.plain))
+    }
+
+    private func record(_ name: String, _ object: Any) throws {
+        let folder = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+            .appendingPathComponent(".build/e2e/mac-limits", isDirectory: true)
+        try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        try JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted, .sortedKeys])
+            .write(to: folder.appendingPathComponent(name + ".json"))
+    }
+
+    private final class Door: HomeTransport, @unchecked Sendable {
+        private let lock = NSLock()
+        private var bodies: [[String: Any]] = []
+
+        func stated(_ member: String) -> [String] { lock.withLock { bodies.compactMap { $0[member] as? String } } }
+        func changes(_ member: String) -> [String] {
+            stated(member).reduce(into: []) { if $0.last != $1 { $0.append($1) } }
+        }
+
+        func perform(_ request: HomeRequest) async throws -> HomeResponse {
+            guard request.url.path == "/v1/exchange" else { return HomeResponse(status: 404, body: Data("{}".utf8)) }
+            let n = lock.withLock { () -> Int in
+                if case .json(let data) = request.body, let body = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                    bodies.append(body)
+                }
+                return bodies.count
+            }
+            let answer: [String: Any] = ["home": ["id": "h-00000001", "version": "5b3c0d2", "floors": ["mac": "0.1.0"]],
+                                         "pass": "p-00000001", "unit": "macbook-pro-0001", "sources": [:], "owner": [String](),
+                                         "needs": [Any](), "calls": [Any](), "settings": [String: Any](), "turn": ["run": "0000000000057a27", "n": n]]
+            return HomeResponse(status: 200, body: try JSONSerialization.data(withJSONObject: answer))
+        }
+    }
+
+    private final class Stored: Credentials, @unchecked Sendable {
+        private let lock = NSLock()
+        private var data: Data?
+        init(_ data: Data?) { self.data = data }
+        func read() throws -> Data? { lock.withLock { data } }
+        func write(_ data: Data) throws { lock.withLock { self.data = data } }
+        func delete() throws { lock.withLock { data = nil } }
+    }
+
+    private final class Disk: @unchecked Sendable {
+        private let lock = NSLock()
+        private var bytes: Int64?
+        private var at = Date(timeIntervalSince1970: 1_800_000_000)
+        init(free: Int64?) { bytes = free }
+        var free: Int64? {
+            get { lock.withLock { bytes } }
+            set { lock.withLock { bytes = newValue } }
+        }
+        var now: Date {
+            get { lock.withLock { at } }
+            set { lock.withLock { at = newValue } }
+        }
+    }
+}
+
+final class ReportedNetwork: NetworkWatch, @unchecked Sendable {
+    private let lock = NSLock()
+    private var latest: NetworkFacts?
+    private var readers: [AsyncStream<NetworkFacts>.Continuation] = []
+
+    init() {}
+
+    convenience init(reporting cost: Metered?) {
+        self.init()
+        report(cost)
+    }
+
+    var facts: NetworkFacts? { lock.withLock { latest } }
+
+    func changes() -> AsyncStream<NetworkFacts> {
+        AsyncStream { continuation in
+            lock.withLock {
+                readers.append(continuation)
+                if let latest { continuation.yield(latest) }
+            }
+        }
+    }
+
+    func report(_ cost: Metered?) {
+        lock.withLock {
+            let facts = NetworkFacts(online: true, onLocalNetwork: true, tunnelUp: false, path: (latest?.path ?? 0) + 1, metered: cost)
+            latest = facts
+            for reader in readers { reader.yield(facts) }
+        }
+    }
+}

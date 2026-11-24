@@ -1,0 +1,13 @@
+{
+  "family": "health",
+  "key": {
+    "code": "7",
+    "adapters": {
+      "health/apple-health": "2",
+      "health/screen-time": "1",
+      "health/whoop": "2"
+    }
+  },
+  "rows": 2753,
+  "digest": "sha256:cf7111da56ad3fc45c2fb2fb666a0bcfe756d3a7edd41c46d6841562e5e14e4d"
+}

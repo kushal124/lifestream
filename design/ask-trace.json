@@ -1,0 +1,847 @@
+{
+ "pace": {
+  "dwell": 650,
+  "quiet": 900,
+  "word": 14
+ },
+ "cases": [
+  {
+   "name": "quick: Sending until the turn is named, one step, then “Thought for” as the first word shows; bold drawn bold from its first word, a citation list whole",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 300,
+     "began": 1,
+     "words": "Searching messages for “Ben birthday dinner”"
+    },
+    {
+     "at": 1100,
+     "ended": 1,
+     "words": "Searched messages for “Ben birthday dinner”",
+     "failed": false
+    },
+    {
+     "at": 1900,
+     "text": "Ben’s birthday dinner is on **"
+    },
+    {
+     "at": 2060,
+     "text": "Saturday 21 November** at 20:0"
+    },
+    {
+     "at": 2220,
+     "text": "0 [r1]. Asha booked a table fo"
+    },
+    {
+     "at": 2380,
+     "text": "r six [r2, r4]."
+    },
+    {
+     "at": 3600,
+     "done": "Ben’s birthday dinner is on **Saturday 21 November** at 20:00 [r1]. Asha booked a table for six [r2, r4].",
+     "thought_ms": 1880
+    }
+   ],
+   "frames": [
+    {
+     "at": 100,
+     "line": "Sending",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 700,
+     "line": "Searching messages for “Ben birthday dinner”",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1300,
+     "line": "Searching messages for “Ben birthday dinner”",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1950,
+     "line": "Thought for 2s",
+     "shown": "Ben’s",
+     "settled": false
+    },
+    {
+     "at": 2050,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday",
+     "settled": false
+    },
+    {
+     "at": 2300,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday dinner is on **Saturday**",
+     "settled": false
+    },
+    {
+     "at": 2700,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday dinner is on **Saturday 21 November** at 20:00 [r1].",
+     "settled": false
+    },
+    {
+     "at": 3100,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday dinner is on **Saturday 21 November** at 20:00 [r1]. Asha booked a table for six",
+     "settled": false
+    },
+    {
+     "at": 3700,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday dinner is on **Saturday 21 November** at 20:00 [r1]. Asha booked a table for six [r2, r4].",
+     "settled": true
+    },
+    {
+     "at": 4500,
+     "line": "Thought for 2s",
+     "shown": "Ben’s birthday dinner is on **Saturday 21 November** at 20:00 [r1]. Asha booked a table for six [r2, r4].",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "long: a silence with no step open says Thinking once the quiet passes, never before",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 100,
+     "began": 1,
+     "words": "Searching mail for “visa”"
+    },
+    {
+     "at": 400,
+     "ended": 1,
+     "words": "Searched mail for “visa”",
+     "failed": false
+    },
+    {
+     "at": 2400,
+     "began": 2,
+     "words": "Reading 3 Oct"
+    },
+    {
+     "at": 2600,
+     "ended": 2,
+     "words": "Read 3 Oct",
+     "failed": false
+    },
+    {
+     "at": 4000,
+     "text": "Your visa came on 3 October."
+    },
+    {
+     "at": 4500,
+     "done": "Your visa came on 3 October."
+    }
+   ],
+   "frames": [
+    {
+     "at": 500,
+     "line": "Sending",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1250,
+     "line": "Searching mail for “visa”",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1350,
+     "line": "Thinking",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 2500,
+     "line": "Reading 3 Oct",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 3100,
+     "line": "Reading 3 Oct",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 4050,
+     "line": "Thought for 4s",
+     "shown": "Your",
+     "settled": false
+    },
+    {
+     "at": 4600,
+     "line": "Thought for 4s",
+     "shown": "Your visa came on 3 October.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a step quicker than the dwell with a newer one waiting is never shown; parallel steps show the newest still open",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 1000,
+     "began": 1,
+     "words": "Searching messages for “gym”"
+    },
+    {
+     "at": 1120,
+     "ended": 1,
+     "words": "Searched messages for “gym”",
+     "failed": false
+    },
+    {
+     "at": 1250,
+     "began": 2,
+     "words": "Reading 1 Nov"
+    },
+    {
+     "at": 2400,
+     "ended": 2,
+     "words": "Read 1 Nov",
+     "failed": false
+    },
+    {
+     "at": 2500,
+     "began": 3,
+     "words": "Searching mail for “gym”"
+    },
+    {
+     "at": 2500,
+     "began": 4,
+     "words": "Searching notes for “gym”"
+    },
+    {
+     "at": 2500,
+     "began": 5,
+     "words": "Reading 2 Nov"
+    },
+    {
+     "at": 2600,
+     "ended": 4,
+     "words": "Searched notes for “gym”",
+     "failed": false
+    },
+    {
+     "at": 3600,
+     "ended": 3,
+     "words": "Searched mail for “gym”",
+     "failed": false
+    },
+    {
+     "at": 3600,
+     "ended": 5,
+     "words": "Read 2 Nov",
+     "failed": false
+    },
+    {
+     "at": 3800,
+     "text": "You went twice."
+    },
+    {
+     "at": 4000,
+     "done": "You went twice."
+    }
+   ],
+   "frames": [
+    {
+     "at": 700,
+     "line": "Thinking",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1250,
+     "line": "Thinking",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1400,
+     "line": "Reading 1 Nov",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 2000,
+     "line": "Reading 1 Nov",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 2550,
+     "line": "Searching mail for “gym”",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 3000,
+     "line": "Searching mail for “gym”",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 3700,
+     "line": "Reading 2 Nov",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 3900,
+     "line": "Thought for 4s",
+     "shown": "You went",
+     "settled": false
+    },
+    {
+     "at": 4200,
+     "line": "Thought for 4s",
+     "shown": "You went twice.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "the answer starting while a step is open: its paragraph shows, and the step ending moves nothing",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 300,
+     "began": 1,
+     "words": "Reading your sleep"
+    },
+    {
+     "at": 900,
+     "text": "You slept 7 hours.\n\n"
+    },
+    {
+     "at": 3000,
+     "ended": 1,
+     "words": "Read your sleep",
+     "failed": false
+    },
+    {
+     "at": 3100,
+     "text": "The night before, 6."
+    },
+    {
+     "at": 3200,
+     "done": "You slept 7 hours.\n\nThe night before, 6."
+    }
+   ],
+   "frames": [
+    {
+     "at": 700,
+     "line": "Reading your sleep",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1000,
+     "line": "Thought for 0.9s",
+     "shown": "You slept",
+     "settled": false
+    },
+    {
+     "at": 1200,
+     "line": "Thought for 0.9s",
+     "shown": "You slept 7 hours.",
+     "settled": false
+    },
+    {
+     "at": 3050,
+     "line": "Thought for 0.9s",
+     "shown": "You slept 7 hours.",
+     "settled": false
+    },
+    {
+     "at": 3300,
+     "line": "Thought for 0.9s",
+     "shown": "You slept 7 hours.\n\nThe night before,",
+     "settled": false
+    },
+    {
+     "at": 3600,
+     "line": "Thought for 0.9s",
+     "shown": "You slept 7 hours.\n\nThe night before, 6.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "narration then a step: the home’s said is the line’s next phrase, before the step’s own words",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 500,
+     "began": 1,
+     "words": "Searching messages",
+     "said": "Let me look through your messages"
+    },
+    {
+     "at": 1800,
+     "ended": 1,
+     "words": "Searched messages",
+     "failed": false
+    },
+    {
+     "at": 2000,
+     "text": "Person A wrote to you most."
+    },
+    {
+     "at": 2300,
+     "done": "Person A wrote to you most."
+    }
+   ],
+   "frames": [
+    {
+     "at": 600,
+     "line": "Sending",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1200,
+     "line": "Let me look through your messages",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1700,
+     "line": "Searching messages",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1900,
+     "line": "Searching messages",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 2050,
+     "line": "Thought for 2s",
+     "shown": "Person",
+     "settled": false
+    },
+    {
+     "at": 2400,
+     "line": "Thought for 2s",
+     "shown": "Person A wrote to you most.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a step after “Thought for”: the line rolls back to work, the words shown stay, and “Thought for” comes again when text resumes",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 700,
+     "text": "Here is the first part.\n\n"
+    },
+    {
+     "at": 2500,
+     "began": 1,
+     "words": "Searching mail for “refund”"
+    },
+    {
+     "at": 3000,
+     "ended": 1,
+     "words": "Searched mail for “refund”",
+     "failed": false
+    },
+    {
+     "at": 3200,
+     "text": "And the refund came."
+    },
+    {
+     "at": 5200,
+     "done": "Here is the first part.\n\nAnd the refund came."
+    }
+   ],
+   "frames": [
+    {
+     "at": 650,
+     "line": "Thinking",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 800,
+     "line": "Thought for 0.7s",
+     "shown": "Here is the",
+     "settled": false
+    },
+    {
+     "at": 2400,
+     "line": "Thought for 0.7s",
+     "shown": "Here is the first part.",
+     "settled": false
+    },
+    {
+     "at": 2600,
+     "line": "Searching mail for “refund”",
+     "shown": "Here is the first part.",
+     "settled": false
+    },
+    {
+     "at": 3150,
+     "line": "Searching mail for “refund”",
+     "shown": "Here is the first part.",
+     "settled": false
+    },
+    {
+     "at": 3250,
+     "line": "Thought for 3s",
+     "shown": "Here is the first part.\n\nAnd the",
+     "settled": false
+    },
+    {
+     "at": 3500,
+     "line": "Thought for 3s",
+     "shown": "Here is the first part.\n\nAnd the refund",
+     "settled": false
+    },
+    {
+     "at": 5300,
+     "line": "Thought for 3s",
+     "shown": "Here is the first part.\n\nAnd the refund came.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a link and a table: each drawn whole, never its raw marks",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 200,
+     "began": 1,
+     "words": "Reading 3 Nov"
+    },
+    {
+     "at": 800,
+     "ended": 1,
+     "words": "Read 3 Nov",
+     "failed": false
+    },
+    {
+     "at": 1000,
+     "text": "The booking "
+    },
+    {
+     "at": 1120,
+     "text": "is on [the v"
+    },
+    {
+     "at": 1240,
+     "text": "enue’s page]"
+    },
+    {
+     "at": 1360,
+     "text": "(https://exa"
+    },
+    {
+     "at": 1480,
+     "text": "mple.com/boo"
+    },
+    {
+     "at": 1600,
+     "text": "king) and co"
+    },
+    {
+     "at": 1720,
+     "text": "sts 40 a hea"
+    },
+    {
+     "at": 1840,
+     "text": "d [r1]."
+    },
+    {
+     "at": 2200,
+     "text": "\n\nBy week:\n\n| W"
+    },
+    {
+     "at": 2320,
+     "text": "eek | Runs |\n| "
+    },
+    {
+     "at": 2440,
+     "text": "--- | --- |\n| 2"
+    },
+    {
+     "at": 2560,
+     "text": "7 Oct | 2 |\n| 3"
+    },
+    {
+     "at": 2680,
+     "text": " Nov | 3 |\n\nMor"
+    },
+    {
+     "at": 2800,
+     "text": "e in November ["
+    },
+    {
+     "at": 2920,
+     "text": "r1, r2, r3]."
+    },
+    {
+     "at": 3800,
+     "done": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:\n\n| Week | Runs |\n| --- | --- |\n| 27 Oct | 2 |\n| 3 Nov | 3 |\n\nMore in November [r1, r2, r3]."
+    }
+   ],
+   "frames": [
+    {
+     "at": 1050,
+     "line": "Thought for 1s",
+     "shown": "The booking",
+     "settled": false
+    },
+    {
+     "at": 1200,
+     "line": "Thought for 1s",
+     "shown": "The booking is on",
+     "settled": false
+    },
+    {
+     "at": 1400,
+     "line": "Thought for 1s",
+     "shown": "The booking is on",
+     "settled": false
+    },
+    {
+     "at": 1700,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking)",
+     "settled": false
+    },
+    {
+     "at": 2000,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40",
+     "settled": false
+    },
+    {
+     "at": 2400,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:",
+     "settled": false
+    },
+    {
+     "at": 2800,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:\n\n| Week | Runs |\n| --- | --- |\n| 27 Oct | 2 |\n| 3 Nov | 3 |",
+     "settled": false
+    },
+    {
+     "at": 3200,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:\n\n| Week | Runs |\n| --- | --- |\n| 27 Oct | 2 |\n| 3 Nov | 3 |",
+     "settled": false
+    },
+    {
+     "at": 3400,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:\n\n| Week | Runs |\n| --- | --- |\n| 27 Oct | 2 |\n| 3 Nov | 3 |",
+     "settled": false
+    },
+    {
+     "at": 3900,
+     "line": "Thought for 1s",
+     "shown": "The booking is on [the venue’s page](https://example.com/booking) and costs 40 a head [r1].\n\nBy week:\n\n| Week | Runs |\n| --- | --- |\n| 27 Oct | 2 |\n| 3 Nov | 3 |\n\nMore in November [r1, r2, r3].",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a stop: the words so far at once, and the line says how long it thought by the home’s measure when no word showed",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 200,
+     "began": 1,
+     "words": "Searching messages"
+    },
+    {
+     "at": 900,
+     "ended": 1,
+     "words": "Searched messages",
+     "failed": false
+    },
+    {
+     "at": 1500,
+     "cut": true,
+     "thought_ms": 1480
+    }
+   ],
+   "frames": [
+    {
+     "at": 1000,
+     "line": "Searching messages",
+     "shown": "",
+     "settled": false
+    },
+    {
+     "at": 1600,
+     "line": "Thought for 1s",
+     "shown": "",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a stop mid-answer: what arrived shows at once, the line keeps its live measure",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 300,
+     "text": "The first words of a long answer arrive here and "
+    },
+    {
+     "at": 400,
+     "cut": true,
+     "thought_ms": 290
+    }
+   ],
+   "frames": [
+    {
+     "at": 350,
+     "line": "Thought for 0.3s",
+     "shown": "The first",
+     "settled": false
+    },
+    {
+     "at": 450,
+     "line": "Thought for 0.3s",
+     "shown": "The first words of a long answer arrive here and ",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a done whose text differs: done’s words replace what streamed, nothing shown is kept over them",
+   "events": [
+    {
+     "at": 0,
+     "named": true
+    },
+    {
+     "at": 300,
+     "text": "You met [[Person 1]] at the "
+    },
+    {
+     "at": 2000,
+     "done": "You met Person A at the market on Friday.",
+     "thought_ms": 300
+    }
+   ],
+   "frames": [
+    {
+     "at": 350,
+     "line": "Thought for 0.3s",
+     "shown": "You met",
+     "settled": false
+    },
+    {
+     "at": 1000,
+     "line": "Thought for 0.3s",
+     "shown": "You met [[Person 1]] at the",
+     "settled": false
+    },
+    {
+     "at": 2050,
+     "line": "Thought for 0.3s",
+     "shown": "You met Person A at the market on Friday.",
+     "settled": true
+    },
+    {
+     "at": 2300,
+     "line": "Thought for 0.3s",
+     "shown": "You met Person A at the market on Friday.",
+     "settled": true
+    }
+   ]
+  },
+  {
+   "name": "a followed turn: the replay arrives at once, the end takes the home’s thought_ms",
+   "followed": true,
+   "events": [
+    {
+     "at": 60000,
+     "named": true
+    },
+    {
+     "at": 60000,
+     "began": 1,
+     "words": "Reading 3 Nov"
+    },
+    {
+     "at": 60000,
+     "ended": 1,
+     "words": "Read 3 Nov",
+     "failed": false
+    },
+    {
+     "at": 60000,
+     "text": "You ran 5 km [r1]."
+    },
+    {
+     "at": 60100,
+     "done": "You ran 5 km [r1].",
+     "thought_ms": 4200
+    }
+   ],
+   "frames": [
+    {
+     "at": 60050,
+     "line": "Thought for 1m",
+     "shown": "You ran",
+     "settled": false
+    },
+    {
+     "at": 60500,
+     "line": "Thought for 4s",
+     "shown": "You ran 5 km [r1].",
+     "settled": true
+    }
+   ]
+  }
+ ]
+}

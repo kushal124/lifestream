@@ -1,0 +1,80 @@
+{
+  "family": "screen",
+  "sittings": [
+    {
+      "at": "2026-11-14T21:40+00:00",
+      "day": "2026-11-14",
+      "windows": 1,
+      "matched": [
+        {
+          "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xNCIsIkV4YW1wbGUgTWFpbCIsIiIsIkJvb2tpbmcgY29uZmlybWVkIMK3IFJpdmVyc2lkZSBHeW0iLDE3OTQ2OTI0MDAwMDBd",
+          "at": "2026-11-14T21:40+00:00",
+          "app": "Example Mail",
+          "title": "Booking confirmed · Riverside Gym",
+          "snippet": "court 3 at «Riverside» Gym, Friday 18:30"
+        }
+      ]
+    },
+    {
+      "focus": "u:screen:local:macbook-pro-0001/1794595800000",
+      "at": "2026-11-13T18:50+00:00",
+      "day": "2026-11-13",
+      "summary": "Booked a court for Friday",
+      "windows": 1,
+      "matched": [
+        {
+          "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xMyIsIkV4YW1wbGUgQnJvd3NlciIsInJpdmVyc2lkZS1neW0uZXhhbXBsZSIsIkJvb2sgYSBjb3VydCDCtyBSaXZlcnNpZGUgR3ltIiwxNzk0NTk1OTIwMDAwXQ",
+          "at": "2026-11-13T18:52+00:00",
+          "app": "Example Browser",
+          "title": "Book a court · Riverside Gym",
+          "snippet": "«Riverside» Gym courts: Friday 18:30 free",
+          "focus": "u:screen:local:macbook-pro-0001/1794595800000@1794595920000-1794595980000"
+        }
+      ]
+    },
+    {
+      "focus": "u:screen:local:macbook-pro-0001/1794472260000",
+      "at": "2026-11-12T08:31+00:00",
+      "day": "2026-11-12",
+      "summary": "Compared membership plans on the Riverside Gym site",
+      "snippet": "Compared membership plans on the «Riverside» Gym site",
+      "windows": 2,
+      "matched": [
+        {
+          "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xMiIsIkV4YW1wbGUgQnJvd3NlciIsInJpdmVyc2lkZS1neW0uZXhhbXBsZSIsIk1lbWJlcnNoaXBzIMK3IFJpdmVyc2lkZSBHeW0iLDE3OTQ0NzI0NDAwMDBd",
+          "at": "2026-11-12T08:34+00:00",
+          "app": "Example Browser",
+          "title": "Memberships · Riverside Gym",
+          "snippet": "«Riverside» Gym memberships from 30 a month",
+          "focus": "u:screen:local:macbook-pro-0001/1794472260000@1794472440000-1794472500000"
+        },
+        {
+          "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0xMiIsIkV4YW1wbGUgQnJvd3NlciIsInJpdmVyc2lkZS1neW0uZXhhbXBsZSIsIkNsYXNzIHRpbWV0YWJsZSDCtyBSaXZlcnNpZGUgR3ltIiwxNzk0NDcyODYwMDAwXQ",
+          "at": "2026-11-12T08:41+00:00",
+          "app": "Example Browser",
+          "title": "Class timetable · Riverside Gym",
+          "snippet": "this week at «Riverside»: spin, yoga, swim",
+          "focus": "u:screen:local:macbook-pro-0001/1794472260000@1794472860000-1794472920000"
+        }
+      ]
+    },
+    {
+      "focus": "u:screen:local:macbook-pro-0001/1793714700000",
+      "at": "2026-11-03T14:05+00:00",
+      "day": "2026-11-03",
+      "summary": "Wrote the running club's November newsletter",
+      "windows": 1,
+      "matched": [
+        {
+          "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0wMyIsIkV4YW1wbGUgTm90ZXMiLCIiLCJDbHViIG5ld3NsZXR0ZXIsIE5vdmVtYmVyIiwxNzkzNzE1NzIwMDAwXQ",
+          "at": "2026-11-03T14:22+00:00",
+          "app": "Example Notes",
+          "title": "Club newsletter, November",
+          "snippet": "the relay at «Riverside» on the 22nd",
+          "focus": "u:screen:local:macbook-pro-0001/1793714700000@1793715720000-1793715780000"
+        }
+      ]
+    }
+  ],
+  "next": "cursor:screen:k2"
+}

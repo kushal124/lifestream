@@ -1,0 +1,192 @@
+[
+  {
+    "kind": "google-takeout",
+    "name": "Google Takeout",
+    "icon": "archive",
+    "gives": "Your past from Google Takeout: Calendar, Contacts, Google Photos, Mail, My Activity",
+    "takes": "A download you make at Google",
+    "coming": "More products are coming soon. Everything else in your Takeout is kept, and read as Lifestream learns to.",
+    "drop": "Drop your Takeout files here",
+    "drop_line": "Lifestream also watches Downloads for them. Files are removed once Lifestream has read them.",
+    "labels": {
+      "reads": "What Lifestream reads today",
+      "guide": "How to get it",
+      "held": "Your Takeouts"
+    },
+    "guide": [
+      {
+        "words": "On Google Takeout, press Deselect all, then tick the products listed above. Under My Activity press Multiple formats and choose JSON.",
+        "open": {
+          "label": "Open Google Takeout",
+          "url": "https://takeout.google.com/"
+        }
+      },
+      {
+        "words": "Press Next step. Keep Send download link via email, Export once and .zip, choose 10 GB files, and press Create export."
+      },
+      {
+        "words": "Google emails you when it's ready: minutes for a few products, hours with photos. Download every file."
+      }
+    ],
+    "products": [
+      {
+        "id": "calendar",
+        "name": "Calendar"
+      },
+      {
+        "id": "contacts",
+        "name": "Contacts"
+      },
+      {
+        "id": "google-photos",
+        "name": "Google Photos"
+      },
+      {
+        "id": "mail",
+        "name": "Mail"
+      },
+      {
+        "id": "my-activity",
+        "name": "My Activity"
+      }
+    ],
+    "accounts": [
+      "person-a@example.com",
+      "person-b@example.com"
+    ],
+    "health": {
+      "state": "ok",
+      "reason": null,
+      "words": "",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [],
+      "detail": null
+    },
+    "line": "Found 3 files",
+    "found": [
+      {
+        "id": "20261029T140000Z",
+        "unit": "macbook-pro-0001",
+        "handed": false,
+        "words": "Found 3 files of a Google Takeout · 11 GB",
+        "lines": [],
+        "account": "person-a@example.com",
+        "ask": null,
+        "files": [
+          {
+            "name": "takeout-20261029T140000Z-1-001.zip",
+            "bytes": 4294967296,
+            "state": "found",
+            "words": "Found",
+            "line": "4.3 GB"
+          },
+          {
+            "name": "takeout-20261029T140000Z-2-001.zip",
+            "bytes": 4294967296,
+            "state": "found",
+            "words": "Found",
+            "line": "4.3 GB"
+          },
+          {
+            "name": "takeout-20261029T140000Z-3-001.zip",
+            "bytes": 2899102924,
+            "state": "found",
+            "words": "Found",
+            "line": "2.9 GB"
+          }
+        ]
+      }
+    ],
+    "held": [
+      {
+        "id": "20261027T091500Z",
+        "name": "27 Oct · person-a@example.com",
+        "account": "person-a@example.com",
+        "exported_at": "2026-10-27T09:15:00Z",
+        "health": {
+          "state": "ok",
+          "reason": null,
+          "words": "",
+          "since_ms": null,
+          "next_ms": null,
+          "acts": [],
+          "detail": null
+        },
+        "line": "In · 2009–2026",
+        "files": [
+          {
+            "name": "takeout-20261027T091500Z-1-001.zip",
+            "bytes": 912680550,
+            "state": "removed",
+            "words": "Removed",
+            "line": "913 MB"
+          },
+          {
+            "name": "takeout-20261027T091500Z-2-001.zip",
+            "bytes": 4294967296,
+            "state": "removed",
+            "words": "Removed",
+            "line": "4.3 GB"
+          },
+          {
+            "name": "takeout-20261027T091500Z-3-001.zip",
+            "bytes": 6657199309,
+            "state": "read",
+            "words": "Read",
+            "line": "6.7 GB"
+          }
+        ],
+        "products": [
+          {
+            "id": "calendar",
+            "name": "Calendar",
+            "state": "read",
+            "count": 1210,
+            "line": "1,210 events"
+          },
+          {
+            "id": "contacts",
+            "name": "Contacts",
+            "state": "read",
+            "count": 2430,
+            "line": "2,430 contacts"
+          },
+          {
+            "id": "mail",
+            "name": "Mail",
+            "state": "read",
+            "count": 58210,
+            "line": "58,210 emails"
+          },
+          {
+            "id": "my-activity",
+            "name": "My Activity",
+            "state": "read",
+            "count": 166263,
+            "line": "166,263 entries"
+          },
+          {
+            "id": "google-photos",
+            "name": "Google Photos",
+            "state": "read",
+            "count": 12040,
+            "line": "12,040 photos"
+          },
+          {
+            "id": "keep",
+            "name": "Keep",
+            "state": "not-read",
+            "count": 0,
+            "line": "not read yet"
+          }
+        ],
+        "span": {
+          "from": "2009-03-02",
+          "to": "2026-10-27"
+        },
+        "open_day": "2016-07-09"
+      }
+    ]
+  }
+]

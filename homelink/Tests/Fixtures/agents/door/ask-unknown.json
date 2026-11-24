@@ -1,0 +1,9 @@
+{
+  "route": "GET /v1/agents/asks/<id>",
+  "request": null,
+  "status": 404,
+  "answer": {
+    "code": "AGENT_REQUEST_GONE",
+    "message": "This request is over."
+  }
+}

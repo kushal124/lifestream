@@ -1,0 +1,16 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "account": "gmail:person-z@example.com"
+      }
+    },
+    "reason": "Another mailbox."
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "gmail:person-z@example.com is no account on this home: name one as an answer gave it."
+  }
+}

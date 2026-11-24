@@ -1,0 +1,494 @@
+{
+  "extracts": [
+    {
+      "unit": "2026-10-02:imessage:+15550000004",
+      "reading": "sha256:bd930db241a20685763e9fad156c8976eae11048a5fe0ac23e29361768bbf646",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "+15550000004",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790953260000,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "GUID-I2",
+            "parts": [
+              {
+                "ask": "transcript",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000022",
+                "format": "m4a",
+                "media_type": "audio/x-caf",
+                "what": "voice note"
+              }
+            ],
+            "source": "imessage:person-me@example.com:macbook-pro-0001"
+          },
+          {
+            "at": 1790953320000,
+            "from": {
+              "id": "+15550000004",
+              "kind": "phone"
+            },
+            "key": "GUID-I3",
+            "parts": [
+              {
+                "what": "reaction: love"
+              }
+            ],
+            "reply_to": "GUID-I2",
+            "source": "imessage:person-me@example.com:macbook-pro-0001"
+          }
+        ],
+        "network": "imessage"
+      }
+    },
+    {
+      "unit": "2026-10-02:imessage:+15550000004,person-e@example.com",
+      "reading": "sha256:976e8fdf396b52686b1c9ff25a62a32ed7d61dbb5439c16d6df7c116a58b7891",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "+15550000004,person-e@example.com",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790956800000,
+            "from": {
+              "id": "person-e@example.com",
+              "kind": "email"
+            },
+            "key": "GUID-I4",
+            "parts": [
+              {
+                "ask": "caption",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000013",
+                "media_type": "image/heic",
+                "what": "photo"
+              }
+            ],
+            "source": "imessage:person-me@example.com:iphone-aa01"
+          },
+          {
+            "at": 1790956860000,
+            "edited": true,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "GUID-I5",
+            "source": "imessage:person-me@example.com:macbook-pro-0001",
+            "text": "edited text"
+          },
+          {
+            "at": 1790956920000,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "GUID-I6",
+            "parts": [
+              {
+                "what": "message unsent"
+              }
+            ],
+            "source": "imessage:person-me@example.com:macbook-pro-0001",
+            "withdrawn": true
+          }
+        ],
+        "network": "imessage"
+      }
+    },
+    {
+      "unit": "2026-10-02:imessage:person-d@example.com",
+      "reading": "sha256:cb1cffef2310ee87e984b2af7766b5e4198ac2c147db1fea4e6f83da39168abd",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "person-d@example.com",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790953200000,
+            "from": {
+              "id": "person-d@example.com",
+              "kind": "email"
+            },
+            "key": "GUID-I1",
+            "source": "imessage:person-me@example.com:iphone-aa01",
+            "text": "imessage one"
+          }
+        ],
+        "network": "imessage"
+      }
+    },
+    {
+      "unit": "2026-10-02:whatsapp:120363000000000001@g.us",
+      "reading": "sha256:91785763255aca58ee437a8e16502b68f617dd2246abe1e30b82c5911c2aae10",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "120363000000000001@g.us",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790949600000,
+            "from": {
+              "id": "15550000003@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "120363000000000001@g.us:G1",
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "group hello"
+          },
+          {
+            "at": 1790949660000,
+            "from": {
+              "id": "900000000001@lid",
+              "kind": "jid"
+            },
+            "key": "120363000000000001@g.us:G2",
+            "parts": [
+              {
+                "ask": "caption",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000012",
+                "media_type": "image/jpeg",
+                "what": "photo"
+              }
+            ],
+            "source": "whatsapp:15550000000:macbook-pro-0001"
+          },
+          {
+            "at": 1790949720000,
+            "from": {
+              "id": "120363000000000001@g.us",
+              "kind": "system"
+            },
+            "key": "120363000000000001@g.us:G3",
+            "parts": [
+              {
+                "what": "group event, kind 1: subject changed"
+              }
+            ],
+            "source": "whatsapp:15550000000:macbook-pro-0001"
+          }
+        ],
+        "network": "whatsapp"
+      }
+    },
+    {
+      "unit": "2026-10-02:whatsapp:15550000001@s.whatsapp.net",
+      "reading": "sha256:f37c516c2bb17b740428c07ffa2cb7e970ebd78839c2de05ae811990ed24fdb3",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "15550000001@s.whatsapp.net",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790946000000,
+            "from": {
+              "id": "15550000001@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "15550000001@s.whatsapp.net:A1",
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "hello from a"
+          }
+        ],
+        "network": "whatsapp"
+      }
+    },
+    {
+      "unit": "2026-10-02:whatsapp:15550000002@s.whatsapp.net",
+      "reading": "sha256:83659715027f9176aa1d5f4f2b7d086bdae7862001080906e019ccd057a81bf3",
+      "days": [
+        "2026-10-01",
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "15550000002@s.whatsapp.net",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790910000000,
+            "from": {
+              "id": "15550000002@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "15550000002@s.whatsapp.net:B1",
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "message one"
+          },
+          {
+            "at": 1790910300000,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "15550000002@s.whatsapp.net:B2",
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "message two"
+          },
+          {
+            "at": 1790942400000,
+            "from": {
+              "id": "15550000002@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "15550000002@s.whatsapp.net:B3",
+            "parts": [
+              {
+                "ask": "caption",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000011",
+                "media_type": "image/jpeg",
+                "what": "photo"
+              }
+            ],
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "look"
+          },
+          {
+            "at": 1790942460000,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "15550000002@s.whatsapp.net:B4",
+            "parts": [
+              {
+                "ask": "transcript",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000021",
+                "format": "ogg",
+                "media_type": "audio/ogg",
+                "seconds": 7,
+                "what": "voice note"
+              }
+            ],
+            "source": "whatsapp:15550000000:macbook-pro-0001"
+          },
+          {
+            "at": 1790942520000,
+            "from": {
+              "id": "15550000002@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "15550000002@s.whatsapp.net:B5",
+            "reply_to": "15550000002@s.whatsapp.net:B2",
+            "source": "whatsapp:15550000000:iphone-aa01",
+            "text": "reply text"
+          },
+          {
+            "at": 1790944200000,
+            "forwarded": true,
+            "from": {
+              "id": "15550000002@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "15550000002@s.whatsapp.net:B6",
+            "parts": [
+              {
+                "ask": "caption",
+                "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000012",
+                "media_type": "image/jpeg",
+                "what": "photo"
+              }
+            ],
+            "source": "whatsapp:15550000000:macbook-pro-0001"
+          }
+        ],
+        "network": "whatsapp"
+      }
+    },
+    {
+      "unit": "2026-10-02:whatsapp:900000000001@lid",
+      "reading": "sha256:8c25a128e13540d4f28bf6f0c7e0135df4416ff940aea05b869b1f9af1388f6e",
+      "days": [
+        "2026-10-02"
+      ],
+      "content": {
+        "chat": "900000000001@lid",
+        "day": "2026-10-02",
+        "messages": [
+          {
+            "at": 1790946000000,
+            "from": {
+              "id": "15550000001@s.whatsapp.net",
+              "kind": "jid"
+            },
+            "key": "900000000001@lid:A1",
+            "source": "whatsapp:15550000000:macbook-pro-0001",
+            "text": "hello from a"
+          },
+          {
+            "at": 1790946300000,
+            "from": {
+              "id": "me",
+              "kind": "me"
+            },
+            "key": "900000000001@lid:A2",
+            "source": "whatsapp:15550000000:macbook-pro-0001",
+            "text": "hello back"
+          }
+        ],
+        "network": "whatsapp"
+      }
+    }
+  ],
+  "asks": [
+    {
+      "item": "sha256:0000000000000000000000000000000000000000000000000000000000000011",
+      "prompt": "chat-image-caption",
+      "identity": null,
+      "input_hash": "sha256:a0756c076f409c8535c93f5b7b5b1a3245a8e89e6975f676c2cdcfd0f623b3a1",
+      "attachments": [
+        {
+          "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000011",
+          "media_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "item": "sha256:0000000000000000000000000000000000000000000000000000000000000012",
+      "prompt": "chat-image-caption",
+      "identity": null,
+      "input_hash": "sha256:273ece2f6b872dc2224f38cc7427aa81afac3a1f59b143e0c67eae767a5ef3a6",
+      "attachments": [
+        {
+          "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000012",
+          "media_type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "item": "sha256:0000000000000000000000000000000000000000000000000000000000000013",
+      "prompt": "chat-image-caption",
+      "identity": null,
+      "input_hash": "sha256:d2be40f7a675d2758ede01e60b2439dde64c42e0e8a9e8eb3b202f91e4d28860",
+      "attachments": [
+        {
+          "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000013",
+          "media_type": "image/heic"
+        }
+      ]
+    },
+    {
+      "item": "sha256:0000000000000000000000000000000000000000000000000000000000000021",
+      "prompt": "voice-note-transcript",
+      "identity": {
+        "audio": "sha256:0000000000000000000000000000000000000000000000000000000000000021",
+        "format": "ogg"
+      },
+      "input_hash": "sha256:200a1cd7d4dbba1149b3c356a0d511602810f8d5de4a10b44e374d46a24138f6",
+      "attachments": [
+        {
+          "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000021",
+          "media_type": "audio/ogg"
+        }
+      ]
+    },
+    {
+      "item": "sha256:0000000000000000000000000000000000000000000000000000000000000022",
+      "prompt": "voice-note-transcript",
+      "identity": {
+        "audio": "sha256:0000000000000000000000000000000000000000000000000000000000000022",
+        "format": "m4a"
+      },
+      "input_hash": "sha256:9a57181f68975000e2f85321bc25f529f567034e3251c62413c7016cfe9e4940",
+      "attachments": [
+        {
+          "blob": "sha256:0000000000000000000000000000000000000000000000000000000000000022",
+          "media_type": "audio/x-caf"
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "day": "2026-10-02",
+      "network": "imessage",
+      "chat": "+15550000004"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "imessage",
+      "chat": "+15550000004,person-e@example.com"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "imessage",
+      "chat": "person-d@example.com"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "whatsapp",
+      "chat": "120363000000000001@g.us"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "whatsapp",
+      "chat": "15550000001@s.whatsapp.net"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "whatsapp",
+      "chat": "15550000002@s.whatsapp.net"
+    },
+    {
+      "day": "2026-10-02",
+      "network": "whatsapp",
+      "chat": "900000000001@lid"
+    }
+  ],
+  "days": {
+    "2026-10-01": [
+      "Day 2026-10-01 (Thursday) in America/New_York, 04:00 to 2026-10-02 04:00 (24 h)",
+      "2 atoms: messages 2",
+      "",
+      "23:00–23:05 Person B (2)",
+      "  23:00 Person B: message one",
+      "  23:05 the user: message two",
+      "",
+      "Coverage",
+      "messages: whatsapp:15550000000:iphone-aa01 read through the day; whatsapp:15550000000:macbook-pro-0001 read through the day",
+      ""
+    ],
+    "2026-10-02": [
+      "Day 2026-10-02 (Friday) in America/New_York, 04:00 to 2026-10-03 04:00 (24 h)",
+      "15 atoms: messages 15",
+      "",
+      "08:00–08:30 Person B (4)",
+      "  08:00 Person B: look [photo: A synthetic picture, item 11.]",
+      "  08:01 the user: [voice note, 7 s: \"synthetic spoken words 21\"]",
+      "  08:02 Person B: reply text (reply to the user, 2026-10-01 23:05)",
+      "  08:30 Person B: (forwarded) [photo: A synthetic picture, item 12.]",
+      "09:00–09:05 Person A (2)",
+      "  09:00 Person A: hello from a",
+      "  09:05 the user: hello back",
+      "10:00–10:02 Group Alpha (3)",
+      "  10:00 Person C: group hello",
+      "  10:01 Person A: [photo: A synthetic picture, item 12.]",
+      "  10:02 the group: [group event, kind 1: subject changed]",
+      "11:00 Person D · Person D: imessage one",
+      "11:01–11:02 Person D (2)",
+      "  11:01 the user: [voice note: \"synthetic spoken words 22\"]",
+      "  11:02 Person D: [reaction: love] (to the user, 11:01)",
+      "12:00–12:02 Person D, person-e@example.com (3)",
+      "  12:00 person-e@example.com: [photo: A synthetic picture, item 13.]",
+      "  12:01 the user: edited text (edited)",
+      "  12:02 the user: [message unsent]",
+      "",
+      "Coverage",
+      "messages: imessage:person-me@example.com:iphone-aa01 read into the day; imessage:person-me@example.com:macbook-pro-0001 read into the day; whatsapp:15550000000:iphone-aa01 read into the day; whatsapp:15550000000:macbook-pro-0001 read into the day",
+      ""
+    ]
+  }
+}

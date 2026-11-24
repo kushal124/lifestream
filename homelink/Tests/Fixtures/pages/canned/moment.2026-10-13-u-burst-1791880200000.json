@@ -1,0 +1,81 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-13",
+  "state": "found",
+  "moment": {
+    "key": "e5",
+    "row": "e5",
+    "kind": "photos",
+    "icon": "photos",
+    "title": "4 photos",
+    "name": "4 photos",
+    "near": null,
+    "start_ms": 1791880200000,
+    "end_ms": null,
+    "untimed": null,
+    "length_ms": null,
+    "products": [],
+    "people": [],
+    "place": {
+      "name": "Salinas",
+      "unit": "stay/location:local:iphone-aa00/1791786600000",
+      "slug": null
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [
+      {
+        "hash": "sha256:ac7fd759b29026487982c1e563265e61f7c8804afca469218f06a1abd8502a80",
+        "alt": "Photo",
+        "words": "",
+        "video": false,
+        "duration_ms": null,
+        "live": false
+      },
+      {
+        "hash": "sha256:cf57a7d149d311766bad075a465e98750b0c8536fa2c8afdeeffcbf5c65fcaba",
+        "alt": "Photo",
+        "words": "",
+        "video": false,
+        "duration_ms": null,
+        "live": false
+      },
+      {
+        "hash": "sha256:2dfc4dc7e5849e28f1bb5d766fddb137ba9c63354ea91393bab0663b91248975",
+        "alt": "Video",
+        "words": "",
+        "video": true,
+        "duration_ms": 4000,
+        "live": false
+      },
+      {
+        "hash": "sha256:fa6cb4a1ec11ab499c561cc8691494ea437ce4c35d78b7e06a5231afef223a40",
+        "alt": "Live Photo",
+        "words": "",
+        "video": false,
+        "duration_ms": null,
+        "live": true
+      }
+    ],
+    "source": {
+      "records": [],
+      "more": 0,
+      "units": [
+        {
+          "family": "photos",
+          "unit": "burst/1791880200000"
+        }
+      ],
+      "atoms": 4,
+      "start_ms": 1791880200000,
+      "end_ms": 1791880290000
+    },
+    "view": {
+      "lines": [],
+      "view": "photos"
+    }
+  }
+}

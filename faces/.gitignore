@@ -1,0 +1,4 @@
+.DS_Store
+# The engine's model files (fetch-models.sh; never committed) and measurement output
+/models/
+/measure/

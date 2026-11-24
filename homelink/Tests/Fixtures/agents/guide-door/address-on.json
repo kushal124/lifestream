@@ -1,0 +1,10 @@
+{
+  "route": "GET /v1/agents/address",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "state": "on",
+    "url": "https://macbook-pro-0001.tail0000.ts.net/mcp",
+    "line": "Lifestream’s agent address is now on the internet. Only agents you say yes to can read."
+  }
+}

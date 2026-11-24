@@ -1,0 +1,25 @@
+{
+  "record": {
+    "as_of": "2026-11-14T22:10+00:00",
+    "building": null
+  },
+  "screen": {
+    "as_of": "2026-11-14T22:05+00:00",
+    "building": {
+      "done": 120,
+      "of": 366
+    },
+    "meaning": "runner-macbook-pro-0001",
+    "model": "embeddinggemma-2-q8-512",
+    "power": "plugged-idle",
+    "words_indexed_through": "2026-11-14 22:05",
+    "bytes": 104857600,
+    "vectors_bytes": 20971520,
+    "queued": 40,
+    "waits": "battery",
+    "waits_line": "Search by meaning waits for the Mac to be plugged in.",
+    "embedded": 9000,
+    "named": 9040,
+    "skipped": 0
+  }
+}

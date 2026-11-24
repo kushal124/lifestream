@@ -1,0 +1,80 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "act" : "agent-access",
+    "expect" : 0,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-unknown.json",
+  "reply" : {
+    "refused" : {
+      "code" : "AGENT_UNKNOWN",
+      "message" : "This agent was disconnected."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "expect" : 0
+  }
+}

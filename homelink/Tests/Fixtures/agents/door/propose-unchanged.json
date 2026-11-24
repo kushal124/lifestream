@@ -1,0 +1,54 @@
+{
+  "route": "POST /v1/agents/<id>/propose",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms": null,
+          "window": null
+        },
+        {
+          "reach": {
+            "but": [],
+            "type": "mail"
+          },
+          "until_ms": 1794654000000,
+          "window": {
+            "past_ms": 604800000
+          }
+        },
+        {
+          "reach": {
+            "account": "whoop:person-a@example.com",
+            "but": []
+          },
+          "until_ms": 1794650400000,
+          "window": {
+            "past_ms": 86400000
+          }
+        }
+      ],
+      "hide": "names",
+      "items": [],
+      "not": [],
+      "only": [],
+      "shown": [],
+      "window": null
+    },
+    "expect": 3
+  },
+  "status": 200,
+  "answer": {
+    "id": "p-00000001@3",
+    "kind": "unchanged",
+    "reader": "p-00000001",
+    "words": "Hermes already reads this."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "note": "two contacts go by this name: p1 in touch 2019-02-01 → 2021-06-30, p2 2024-03-04 → 2026-11-13",
+  "matches": [
+    {
+      "ref": "r1",
+      "kind": "person",
+      "name": "[[Person 1]]",
+      "also": [
+        "Per"
+      ],
+      "tied": [
+        "r2"
+      ],
+      "same": [
+        {
+          "ref": "r3",
+          "why": "the same full name, as a sender or a chat gave it"
+        }
+      ],
+      "handles": [
+        "[[Phone 1]]",
+        "[[Email 1]]"
+      ],
+      "chats": [
+        {
+          "chat": "r4",
+          "title": "[[Person 1]]",
+          "messages": 4500
+        }
+      ],
+      "reach": {
+        "messages": [
+          4800,
+          "2019-02-01",
+          "2021-06-30"
+        ],
+        "calls": [
+          280,
+          "2019-02-09",
+          "2021-06-12"
+        ]
+      }
+    },
+    {
+      "ref": "r2",
+      "kind": "person",
+      "name": "[[Person 1]]",
+      "tied": [
+        "r1"
+      ],
+      "handles": [
+        "[[Phone 2]]"
+      ],
+      "chats": [
+        {
+          "chat": "r5",
+          "title": "[[Person 1]]",
+          "messages": 900
+        }
+      ],
+      "reach": {
+        "messages": [
+          900,
+          "2024-03-04",
+          "2026-11-13"
+        ]
+      }
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "family": "calls",
+  "key": {
+    "code": "3:sha256:44024794f9914712f3a922fa2826ff318bf87f57e85900991a0e4fded1e3adbd",
+    "adapters": {
+      "calls/apple-calls": "1",
+      "calls/whatsapp": "1",
+      "messages/imessage": "1",
+      "messages/whatsapp": "2"
+    }
+  },
+  "rows": 6,
+  "digest": "sha256:1d4dee05bdc77d40914ad291f717625a9b2ab6b6c471dccc2c442b143a8a37bc"
+}

@@ -1,0 +1,91 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "title": "Group Alpha",
+    "photo": null,
+    "line": "WhatsApp group · 2 people",
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "word": "rule",
+    "quiet": false,
+    "why": null
+  },
+  "total": 75,
+  "writers": [
+    {
+      "id": "person:person-a",
+      "name": "Person A",
+      "named": true,
+      "photo": null,
+      "share": "30 messages"
+    },
+    {
+      "id": "person:person-b",
+      "name": "Person B",
+      "named": true,
+      "photo": null,
+      "share": "25 messages"
+    }
+  ],
+  "yours": "27%",
+  "talk": {
+    "day": "2026-10-05",
+    "chat": "whatsapp:120363000000000001@g.us",
+    "title": "Group Alpha",
+    "group": true,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line alpha-a-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line alpha-me-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 2
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line alpha-a-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 3
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line alpha-me-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line alpha-a-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      }
+    ],
+    "folded": [],
+    "focus": "a5"
+  },
+  "counting": false
+}

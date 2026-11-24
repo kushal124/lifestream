@@ -1,0 +1,17 @@
+{
+  "what": "raw",
+  "span": {
+    "from": "2026-10-02",
+    "to": "2026-10-02"
+  },
+  "records": [
+    {
+      "what": "record",
+      "ref": "record.WyJyZWNvcmQiLCJnbWFpbDptZUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtNyJd",
+      "day": "2026-10-02",
+      "family": "mail",
+      "text": "Thank you for your example order. Total: 40.00 EUR."
+    }
+  ],
+  "next": "cursor:raw:r2"
+}

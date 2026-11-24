@@ -1,0 +1,22 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "codex-sessions",
+  name: "codex",
+  held: ["~/.codex/sessions/", "~/.codex/archived_sessions/"],
+  account: "local",
+  engine: {
+    kind: "logs",
+    match: "^rollout-\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?:_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})?\\.jsonl$",
+    roots: [{ days: true, depth: 3, path: "~/.codex/sessions" }, { path: "~/.codex/archived_sessions" }],
+    start: {
+      line: "first",
+      program: [
+        { at: "payload.originator", equals: "codex_exec" },
+        { at: "payload.source", equals: "exec" },
+        { at: "payload.thread_source", equals: "automation" },
+      ],
+      session: [{ at: "type", equals: "session_meta" }, { at: "payload", object: true }],
+    },
+  },
+} satisfies MacStore;

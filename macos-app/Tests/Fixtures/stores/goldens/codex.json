@@ -1,0 +1,95 @@
+{
+  "connector" : "codex",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "codex:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "codex-sessions",
+          "indexes" : {
+            "parts.json" : {
+              "files" : [
+
+              ],
+              "parts" : [
+                {
+                  "file" : "rollout-2026-09-20T08-00-00-00000000-0000-7000-8000-0000000000d3.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 2
+                },
+                {
+                  "file" : "rollout-2026-10-01T10-00-00-00000000-0000-7000-8000-0000000000d1.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 11
+                },
+                {
+                  "file" : "rollout-2026-10-01T10-30-00-00000000-0000-7000-8000-0000000000d1_00000000-0000-7000-8000-0000000000e1.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 3
+                },
+                {
+                  "file" : "rollout-2026-10-01T10-40-00-00000000-0000-7000-8000-0000000000d4.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 4
+                },
+                {
+                  "file" : "rollout-2026-10-01T11-00-00-00000000-0000-7000-8000-0000000000f4.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 1
+                }
+              ]
+            }
+          },
+          "members" : [
+            "parts.json",
+            "rollout-2026-09-20T08-00-00-00000000-0000-7000-8000-0000000000d3.jsonl",
+            "rollout-2026-10-01T10-00-00-00000000-0000-7000-8000-0000000000d1.jsonl",
+            "rollout-2026-10-01T10-30-00-00000000-0000-7000-8000-0000000000d1_00000000-0000-7000-8000-0000000000e1.jsonl",
+            "rollout-2026-10-01T10-40-00-00000000-0000-7000-8000-0000000000d4.jsonl",
+            "rollout-2026-10-01T11-00-00-00000000-0000-7000-8000-0000000000f4.jsonl"
+          ],
+          "source_id" : "codex:local:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "codex:local:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "codex:local:macbook-pro-0001"
+      ]
+    }
+  },
+  "name" : "codex"
+}

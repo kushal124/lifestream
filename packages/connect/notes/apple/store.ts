@@ -1,0 +1,53 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "notes-mac",
+  name: "notes",
+  held: "~/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite",
+  account: "apple-id",
+  wake: "com.apple.Notes",
+  engine: {
+    kind: "sqlite",
+    stores: [
+      {
+        attachments: {
+          member: "media.json",
+          select: "SELECT 'Accounts/' || account.ZIDENTIFIER || '/Media/' || media.ZIDENTIFIER || '/' || media.ZGENERATION1 || '/' || media.ZFILENAME FROM ZICCLOUDSYNCINGOBJECT AS media JOIN ZICCLOUDSYNCINGOBJECT AS account ON account.Z_PK = media.ZACCOUNT6 AND account.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME = 'ICAccount') WHERE media.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME = 'ICMedia') AND typeof(account.ZIDENTIFIER) = 'text' AND account.ZIDENTIFIER != '' AND instr(account.ZIDENTIFIER, '/') = 0 AND instr(account.ZIDENTIFIER, char(0)) = 0 AND typeof(media.ZIDENTIFIER) = 'text' AND media.ZIDENTIFIER != '' AND instr(media.ZIDENTIFIER, '/') = 0 AND instr(media.ZIDENTIFIER, char(0)) = 0 AND typeof(media.ZGENERATION1) = 'text' AND media.ZGENERATION1 != '' AND instr(media.ZGENERATION1, '/') = 0 AND instr(media.ZGENERATION1, char(0)) = 0 AND typeof(media.ZFILENAME) = 'text' AND media.ZFILENAME != '' AND instr(media.ZFILENAME, '/') = 0 AND instr(media.ZFILENAME, char(0)) = 0 ORDER BY media.Z_PK",
+        },
+        file_root: "~/Library/Group Containers/group.com.apple.notes",
+        identity: "core-data",
+        member: "notes.sqlite",
+        path: "~/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite",
+        tables: [
+          {
+            chosen: "Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME = 'ICNote')",
+            files: [
+              "CASE WHEN Z_ENT = (SELECT Z_ENT FROM source.Z_PRIMARYKEY WHERE Z_NAME = 'ICMedia') THEN 'Accounts/' || (SELECT account.ZIDENTIFIER FROM source.ZICCLOUDSYNCINGOBJECT AS account WHERE account.Z_PK = ZICCLOUDSYNCINGOBJECT.ZACCOUNT6 AND account.Z_ENT = (SELECT Z_ENT FROM source.Z_PRIMARYKEY WHERE Z_NAME = 'ICAccount')) || '/Media/' || ZIDENTIFIER || '/' || ZGENERATION1 || '/' || ZFILENAME END",
+            ],
+            keep: "Z_ENT IS NOT (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME = 'ICNote')",
+            key: "Z_PK",
+            name: "ZICCLOUDSYNCINGOBJECT",
+            role: "changes",
+            touched_by: [
+              [
+                "ZICNOTEDATA",
+                "SELECT ZNOTE AS k FROM ZICNOTEDATA WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZICNOTEDATA')",
+              ],
+              [
+                "ZICCLOUDSYNCINGOBJECT",
+                "SELECT ZNOTE AS k FROM ZICCLOUDSYNCINGOBJECT WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZICCLOUDSYNCINGOBJECT') UNION SELECT ZNOTE FROM ZICCLOUDSYNCINGOBJECT WHERE ZMEDIA IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZICCLOUDSYNCINGOBJECT') UNION SELECT Z_PK FROM ZICCLOUDSYNCINGOBJECT WHERE ZFOLDER IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZICCLOUDSYNCINGOBJECT')",
+              ],
+            ],
+          },
+          {
+            keep: "ZNOTE IN (SELECT Z_PK FROM ZICCLOUDSYNCINGOBJECT)",
+            key: "Z_PK",
+            name: "ZICNOTEDATA",
+            role: "follows",
+          },
+          { name: "Z_PRIMARYKEY", role: "whole" },
+        ],
+      },
+    ],
+  },
+} satisfies MacStore;

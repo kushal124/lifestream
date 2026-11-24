@@ -1,0 +1,27 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "slug": "harbour-inn",
+  "circle": {
+    "latitude": 36.6031,
+    "longitude": -121.8991,
+    "radius_m": 80
+  },
+  "others": [],
+  "points": [
+    {
+      "latitude": 36.6002,
+      "longitude": -121.8947,
+      "count": 3
+    },
+    {
+      "latitude": 36.6031,
+      "longitude": -121.8991,
+      "count": 1
+    }
+  ],
+  "held": 0,
+  "read": true,
+  "line": null,
+  "counting": false
+}

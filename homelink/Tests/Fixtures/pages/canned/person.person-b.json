@@ -1,0 +1,493 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person B",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [
+      {
+        "month": 11,
+        "day": 14,
+        "kind": "birthday"
+      }
+    ],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000002",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000002",
+      "from": "You added",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 2
+      },
+      {
+        "day": "2026-09-14",
+        "count": 7
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 7
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 16,
+    "calls": null,
+    "line": "16 messages in the last 30 days",
+    "before": {
+      "day": "2026-09-02",
+      "joiner": " · before that, "
+    }
+  },
+  "history": {
+    "weeks": [
+      {
+        "start": "2026-03-16",
+        "count": 5,
+        "day": "2026-03-19"
+      },
+      {
+        "start": "2026-03-23",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-03-30",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-06",
+        "count": 5,
+        "day": "2026-04-06"
+      },
+      {
+        "start": "2026-04-13",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-20",
+        "count": 5,
+        "day": "2026-04-24"
+      },
+      {
+        "start": "2026-04-27",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-04",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-11",
+        "count": 5,
+        "day": "2026-05-12"
+      },
+      {
+        "start": "2026-05-18",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-25",
+        "count": 5,
+        "day": "2026-05-30"
+      },
+      {
+        "start": "2026-06-01",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-08",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-15",
+        "count": 5,
+        "day": "2026-06-17"
+      },
+      {
+        "start": "2026-06-22",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-29",
+        "count": 6,
+        "day": "2026-07-04"
+      },
+      {
+        "start": "2026-07-06",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-13",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-20",
+        "count": 6,
+        "day": "2026-07-22"
+      },
+      {
+        "start": "2026-07-27",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-08-03",
+        "count": 9,
+        "day": "2026-08-09"
+      },
+      {
+        "start": "2026-08-10",
+        "count": 2,
+        "day": "2026-08-11"
+      },
+      {
+        "start": "2026-08-17",
+        "count": 4,
+        "day": "2026-08-17"
+      },
+      {
+        "start": "2026-08-24",
+        "count": 7,
+        "day": "2026-08-27"
+      },
+      {
+        "start": "2026-08-31",
+        "count": 2,
+        "day": "2026-09-02"
+      },
+      {
+        "start": "2026-09-07",
+        "count": 2,
+        "day": "2026-09-13"
+      },
+      {
+        "start": "2026-09-14",
+        "count": 7,
+        "day": "2026-09-14"
+      },
+      {
+        "start": "2026-09-21",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-09-28",
+        "count": 7,
+        "day": "2026-10-02"
+      },
+      {
+        "start": "2026-10-05",
+        "count": 0,
+        "day": null
+      }
+    ],
+    "marked": 20,
+    "kind": "weeks"
+  },
+  "talk": {
+    "day": "2026-10-02",
+    "chat": "whatsapp:15550000002@s.whatsapp.net",
+    "title": "Person B",
+    "group": false,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-b",
+        "name": "Person B",
+        "text": "synthetic line b-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line b-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 2
+      },
+      {
+        "who": "person:person-b",
+        "name": "Person B",
+        "text": "synthetic line b-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 3
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line b-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-b",
+        "name": "Person B",
+        "text": "synthetic line b-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line b-out-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 6
+      },
+      {
+        "who": "person:person-b",
+        "name": "Person B",
+        "text": "synthetic line b-in-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      }
+    ],
+    "folded": [],
+    "focus": "a7"
+  },
+  "where": [
+    {
+      "chat": "whatsapp:15550000002@s.whatsapp.net",
+      "title": "WhatsApp",
+      "group": false,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 40,
+      "line": "40 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000001@g.us",
+      "title": "Group Alpha",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 25,
+      "line": "25 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000011@g.us",
+      "title": "Group Delta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 300,
+      "line": "300 messages",
+      "quiet": true
+    }
+  ],
+  "suggestions_line": null,
+  "edit": {
+    "call": "Person B",
+    "full_name": null,
+    "name_from": null,
+    "record_id": "person-b",
+    "face": false,
+    "reach": "WhatsApp",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "82 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": {
+      "type": "people.person",
+      "slug": "person-b",
+      "name": "Person B",
+      "full_name": null,
+      "show": "name",
+      "entity": "person",
+      "relationship": null,
+      "hidden": false,
+      "me": false,
+      "anchor": {
+        "kind": "phone",
+        "value": "+15550000002"
+      },
+      "handles": [],
+      "excluded": [],
+      "dismissed": [],
+      "also_called": [],
+      "merged_into": null
+    },
+    "details": {
+      "work": null,
+      "birthday": {
+        "month": 11,
+        "day": 14,
+        "year": null
+      },
+      "profiles": [],
+      "cleared": []
+    },
+    "suggestions": [],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

@@ -1,0 +1,33 @@
+{
+  "what": "people",
+  "match": {
+    "ref": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+    "kind": "person",
+    "name": "Person A",
+    "id": "person:person-a-1",
+    "chats": [
+      {
+        "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+        "title": "Person A",
+        "messages": 4500
+      }
+    ]
+  },
+  "latest": {
+    "what": "chat",
+    "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+    "title": "Person A",
+    "span": {
+      "from": "2026-11-13",
+      "to": "2026-11-13"
+    },
+    "lines": [
+      {
+        "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJ6MSJd",
+        "at": "2026-11-13T21:30+00:00",
+        "from": "Person A",
+        "text": "goodnight"
+      }
+    ]
+  }
+}

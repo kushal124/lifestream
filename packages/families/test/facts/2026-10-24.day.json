@@ -1,0 +1,16 @@
+{
+  "day": "2026-10-24",
+  "zone": "America/New_York",
+  "day_start_hour": 4,
+  "window": {"start_ms":1792828800000,"end_ms":1792915200000},
+  "renderer": "13/3-7414146adf6d/7",
+  "inputs": "sha256:cee1769342f7e75d04fbad239ed8b3f8e6c78edf525bf918c587a88cf2642fd2",
+  "counts": {"total":1,"per_family":{"tally":1}},
+  "coverage": [{"family":"tally","sources":[{"source":"example-tally:acct-aa01:mac-0001","read":"none"}]}],
+  "atoms": [
+    {"n":1,"family":"tally","unit":"tally/c1","units":["tally/c1"],"start_ms":1792914000000,"end_ms":1792915200000,"local_start":"2026-10-25 03:40","local_end":"2026-10-25 04:00","flags":["continues_into_next_day"],"text":"Call to +15550000001","record":{"source":"example-tally:acct-aa01:mac-0001","kind":"call","key":"c1"}}
+  ],
+  "facts": [
+    {"id":"calls:debe53fddb0e37e56b297bb3","family":"tally","of":"calls","time_ms":1792914000000,"start_ms":1792914000000,"end_ms":1792917600000,"keys":{"service":"phone","direction":"out"},"measures":{"minutes":60},"who":[{"handle":"+15550000001","role":"receiver"}],"from":{"units":["tally/c1"],"record":{"source":"example-tally:acct-aa01:mac-0001","kind":"call","key":"c1"},"alone":true},"lines":[1]}
+  ]
+}

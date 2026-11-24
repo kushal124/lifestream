@@ -1,0 +1,22 @@
+[
+  {
+    "text": "workout — running, duration 0:45, strain 11.2",
+    "ms": 2700000
+  },
+  {
+    "text": "workout — duration 1:05, strain 9",
+    "ms": 3900000
+  },
+  {
+    "text": "workout — cycling, duration 0:30",
+    "ms": 1800000
+  },
+  {
+    "text": "workout — running, duration 0:35, distance 6.60 km (Strava)",
+    "ms": 2100000
+  },
+  {
+    "text": "workout — running, duration 0:50 (Strava)",
+    "ms": 3000000
+  }
+]

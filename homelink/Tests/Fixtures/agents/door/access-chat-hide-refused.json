@@ -1,0 +1,29 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 1
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Each conversation hides what you pick in it."
+  }
+}

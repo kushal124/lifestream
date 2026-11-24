@@ -1,0 +1,13 @@
+{
+  "family": "calendar",
+  "key": {
+    "code": "7",
+    "adapters": {
+      "calendar/apple-calendar": "1",
+      "calendar/apple-reminders": "1",
+      "calendar/google-calendar": "2"
+    }
+  },
+  "rows": 6,
+  "digest": "sha256:fc99f69e44cf32051050781df125a8f75b630ffd440657fc291e4272d3749acb"
+}

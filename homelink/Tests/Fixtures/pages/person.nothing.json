@@ -1,0 +1,205 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "+15550000403",
+    "named": false,
+    "full_name": null,
+    "photo": null,
+    "chips": [],
+    "since": null,
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000403",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000403",
+      "from": "You added",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 0,
+    "calls": null,
+    "line": "None in the last 30 days",
+    "before": null
+  },
+  "history": {
+    "total": 0,
+    "first": null,
+    "kind": "facts"
+  },
+  "talk": null,
+  "where": [],
+  "suggestions_line": null,
+  "edit": {
+    "call": null,
+    "full_name": null,
+    "name_from": null,
+    "record_id": "person-u",
+    "face": false,
+    "reach": null,
+    "last": null,
+    "much": "0 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": {
+      "type": "people.person",
+      "slug": "person-u",
+      "name": null,
+      "full_name": null,
+      "show": "name",
+      "entity": "person",
+      "relationship": null,
+      "hidden": false,
+      "me": false,
+      "anchor": {
+        "kind": "phone",
+        "value": "+15550000403"
+      },
+      "handles": [],
+      "excluded": [],
+      "dismissed": [],
+      "also_called": [],
+      "merged_into": null
+    },
+    "details": null,
+    "suggestions": [],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

@@ -1,0 +1,9 @@
+{
+  "route": "POST /v1/agents/<id>/disconnect",
+  "request": {},
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Allow this in Lifestream on your Mac or iPhone."
+  }
+}

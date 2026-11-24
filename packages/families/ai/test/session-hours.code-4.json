@@ -1,0 +1,65 @@
+[
+  {
+    "family": "ai",
+    "unit": "claude-code:local:macbook-pro-0001/00000000-0000-4000-8000-0000000000a1/2026-10-01T09",
+    "reading": "sha256:87ad4d24b77c148d16de73e37dbcb9b736231984f3502e31323c081a60680833",
+    "code": "4",
+    "content": {
+      "agents": [
+        "a0000000000000001"
+      ],
+      "files": [],
+      "folder": "project",
+      "provider": "claude-code",
+      "tool_calls": 1,
+      "turns": [
+        {
+          "at_ms": 1790845201000,
+          "chars": 44,
+          "key": "10000000-0000-4000-8000-000000000001",
+          "words": "Fix the failing test in the example project."
+        },
+        {
+          "at_ms": 1790845800000,
+          "chars": 24,
+          "key": "10000000-0000-4000-8000-000000000008",
+          "words": "Now run the whole suite."
+        }
+      ]
+    },
+    "start_ms": 1790845201000,
+    "end_ms": 1790845830000,
+    "days": [
+      "2026-10-01"
+    ]
+  },
+  {
+    "family": "ai",
+    "unit": "claude-code:local:macbook-pro-0001/00000000-0000-4000-8000-0000000000e1/2026-10-01T10",
+    "reading": "sha256:75b14167c10992f1a76bd341e483c92aa9d06f2502033fa23b59638494323547",
+    "code": "4",
+    "content": {
+      "agents": [],
+      "files": [
+        "src/a.ts",
+        "src/b.ts"
+      ],
+      "folder": "example-repo",
+      "provider": "claude-code",
+      "tool_calls": 2,
+      "turns": [
+        {
+          "at_ms": 1790848800000,
+          "chars": 19,
+          "key": "20000000-0000-4000-8000-000000000060",
+          "words": "Edit the two files."
+        }
+      ]
+    },
+    "start_ms": 1790848800000,
+    "end_ms": 1790848920000,
+    "days": [
+      "2026-10-01"
+    ]
+  }
+]

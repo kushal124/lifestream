@@ -1,0 +1,66 @@
+{
+  "connector" : "apple-calls",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "callhistory-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "callhistory.sqlite"
+          ],
+          "source_id" : "apple-calls:person-a@example.com:macbook-pro-0001"
+        },
+        {
+          "feeder" : "callhistory-mac",
+          "indexes" : {
+
+          },
+          "kind" : "history",
+          "members" : [
+            "callhistory.sqlite"
+          ],
+          "source_id" : "apple-calls:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-calls:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-calls:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "calls"
+}

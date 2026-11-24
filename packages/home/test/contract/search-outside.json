@@ -1,0 +1,22 @@
+{
+  "outside": true,
+  "record": {
+    "total": 1,
+    "capped": false,
+    "hits": [
+      {
+        "ref": "record.WyJyZWNvcmQiLCJnbWFpbDpwZXJzb24tYUBleGFtcGxlLmNvbTptYWMiLCJtZXNzYWdlIiwibTEiXQ",
+        "at": "2026-11-13T09:30+00:00",
+        "day": "2026-11-13",
+        "family": "mail",
+        "product": "gmail",
+        "title": "Synthetic subject",
+        "snippet": "the «invoice» is attached"
+      }
+    ],
+    "next": null
+  },
+  "screen": {
+    "unread": "the screen records no person"
+  }
+}

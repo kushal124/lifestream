@@ -1,0 +1,100 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "slug": "spot:37.3412,-122.0215",
+  "circle": {
+    "latitude": 37.3412,
+    "longitude": -122.0215,
+    "radius_m": 80
+  },
+  "others": [
+    {
+      "slug": "corner-bakery",
+      "latitude": 37.3301,
+      "longitude": -122.0142,
+      "radius_m": 80
+    },
+    {
+      "slug": "home-place",
+      "latitude": 37.3349,
+      "longitude": -122.009,
+      "radius_m": 120
+    },
+    {
+      "slug": "old-office",
+      "latitude": 37.3275,
+      "longitude": -121.9905,
+      "radius_m": 80
+    },
+    {
+      "slug": "the-office",
+      "latitude": 37.322,
+      "longitude": -122.001,
+      "radius_m": 90
+    },
+    {
+      "slug": "willow-court",
+      "latitude": 37.342,
+      "longitude": -122.017,
+      "radius_m": 55
+    },
+    {
+      "slug": "willow-court",
+      "latitude": 37.342,
+      "longitude": -122.01626,
+      "radius_m": 30
+    },
+    {
+      "slug": "willow-court",
+      "latitude": 37.34097,
+      "longitude": -122.017,
+      "radius_m": 80
+    }
+  ],
+  "points": [
+    {
+      "latitude": 37.3187,
+      "longitude": -122.009,
+      "count": 8
+    },
+    {
+      "latitude": 37.322,
+      "longitude": -122.001,
+      "count": 8
+    },
+    {
+      "latitude": 37.3275,
+      "longitude": -121.9905,
+      "count": 2
+    },
+    {
+      "latitude": 37.3301,
+      "longitude": -122.0142,
+      "count": 1
+    },
+    {
+      "latitude": 37.3349,
+      "longitude": -122.009,
+      "count": 29
+    },
+    {
+      "latitude": 37.3412,
+      "longitude": -122.0215,
+      "count": 1
+    },
+    {
+      "latitude": 37.342,
+      "longitude": -122.017,
+      "count": 2
+    },
+    {
+      "latitude": 37.3426,
+      "longitude": -122.0153,
+      "count": 2
+    }
+  ],
+  "held": 0,
+  "read": true,
+  "line": null,
+  "counting": false
+}

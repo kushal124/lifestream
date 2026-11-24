@@ -1,0 +1,144 @@
+[
+ {
+  "type": "access",
+  "change": {
+   "id": "ch-12",
+   "kind": "narrowed",
+   "reader": "p-00000001",
+   "words": [
+    {
+     "text": "Saved. Synthetic Agent now sees the "
+    },
+    {
+     "text": "past 24 hours",
+     "bold": true
+    },
+    {
+     "text": "."
+    }
+   ],
+   "undo": {
+    "access": {
+     "allow": [
+      {
+       "reach": {
+        "all": true,
+        "but": []
+       },
+       "window": null,
+       "until_ms": null
+      }
+     ],
+     "items": [],
+     "not": [],
+     "only": [],
+     "window": null,
+     "hide": "none",
+     "shown": []
+    },
+    "expect": 3
+   }
+  }
+ },
+ {
+  "type": "access",
+  "change": {
+   "id": "rq-0000000000000001",
+   "kind": "asked",
+   "snapshot": {
+    "id": "rq-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Synthetic Agent",
+    "by": "chat",
+    "head": "Let Synthetic Agent read more?",
+    "line": "Chat proposes All time",
+    "asked_line": [
+     {
+      "kind": "words",
+      "words": "Asked"
+     },
+     {
+      "kind": "time",
+      "time": {
+       "kind": "clock",
+       "at_ms": 1790870400000
+      }
+     },
+     {
+      "kind": "words",
+      "words": "· the ask ends"
+     },
+     {
+      "kind": "time",
+      "time": {
+       "kind": "clock",
+       "at_ms": 1790956800000
+      }
+     }
+    ],
+    "under_line": [
+     {
+      "kind": "words",
+      "words": "Asked"
+     },
+     {
+      "kind": "time",
+      "time": {
+       "kind": "clock",
+       "at_ms": 1790870400000
+      }
+     }
+    ],
+    "says_title": "Synthetic Agent says",
+    "wants": "All time",
+    "today": [
+     {
+      "text": "Today Synthetic Agent sees everything from the past 24 hours."
+     }
+    ],
+    "under": null,
+    "reason": null,
+    "screen": null,
+    "adds": [
+     "All time"
+    ],
+    "keeps": null,
+    "choices": [
+     {
+      "answer": "always",
+      "words": "Allow"
+     },
+     {
+      "answer": "no",
+      "words": "Don’t allow"
+     }
+    ],
+    "editable": true,
+    "default": "always",
+    "version": 3,
+    "proposed": {
+     "allow": [
+      {
+       "reach": {
+        "all": true,
+        "but": []
+       },
+       "window": null,
+       "until_ms": null
+      }
+     ],
+     "items": [],
+     "not": [],
+     "only": [],
+     "window": null,
+     "hide": "none",
+     "shown": []
+    },
+    "at_ms": 1790870400000,
+    "until_ms": 1790956800000,
+    "state": "open",
+    "outcome": null
+   }
+  }
+ }
+]

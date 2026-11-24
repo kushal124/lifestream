@@ -1,0 +1,28 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "rq-0000000000000001",
+    "answer": "once",
+    "expect": 1
+  },
+  "status": 200,
+  "answer": {
+    "state": "allowed",
+    "version": 2,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Allowed until"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794650400000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

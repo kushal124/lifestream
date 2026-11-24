@@ -1,0 +1,616 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 6
+  },
+  "status": 200,
+  "answer": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 7,
+    "view": {
+      "sentence": [
+        {
+          "text": "Editor sees everything but "
+        },
+        {
+          "text": "Health",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "Money",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "summary": "Everything but Health and Money · details hidden",
+      "reads": "Everything but Health and Money",
+      "mode": "but",
+      "modes": [
+        {
+          "mode": "but",
+          "words": "Everything but"
+        },
+        {
+          "mode": "only",
+          "words": "Only these"
+        }
+      ],
+      "mode_line": "Everything you leave checked, and new connectors as you add them.",
+      "window": {
+        "value": {
+          "window": null
+        },
+        "words": "All time"
+      },
+      "times": [
+        {
+          "choice": "all",
+          "window": null,
+          "words": "All time"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 31536000000
+          },
+          "words": "Past year"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 2592000000
+          },
+          "words": "Past 30 days"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 604800000
+          },
+          "words": "Past 7 days"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 86400000
+          },
+          "words": "Past 24 hours"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 3600000
+          },
+          "words": "Past hour"
+        },
+        {
+          "choice": "since",
+          "window": null,
+          "words": "Since a date…"
+        }
+      ],
+      "categories": [
+        {
+          "type": "messages",
+          "name": "Messages",
+          "icon": "message",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "whatsapp:15550000001",
+              "name": "WhatsApp",
+              "line": "15550000001",
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": null
+        },
+        {
+          "type": "mail",
+          "name": "Mail",
+          "icon": "mail",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "gmail:person-a@example.com",
+              "name": "Gmail",
+              "line": "person-a@example.com",
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            },
+            {
+              "account": "gmail:person-b@example.com",
+              "name": "Gmail",
+              "line": "person-b@example.com",
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": "2 accounts"
+        },
+        {
+          "type": "voice",
+          "name": "Voice",
+          "icon": "voice-note",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "voice-notes:local",
+              "name": "Voice notes",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": null
+        },
+        {
+          "type": "health",
+          "name": "Health",
+          "icon": "health",
+          "state": "off",
+          "accounts": [
+            {
+              "account": "whoop:person-a@example.com",
+              "name": "WHOOP",
+              "line": "person-a@example.com",
+              "state": "off",
+              "limit": null
+            }
+          ],
+          "line": null,
+          "limit": null,
+          "reads": null,
+          "differs": null
+        },
+        {
+          "type": "places",
+          "name": "Places",
+          "icon": "places",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "location:local",
+              "name": "Location",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            },
+            {
+              "account": "motion:local",
+              "name": "Motion",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": "2 accounts"
+        },
+        {
+          "type": "photos",
+          "name": "Photos",
+          "icon": "photos",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "camera:local",
+              "name": "Camera",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": null
+        },
+        {
+          "type": "device-activity",
+          "name": "Screen",
+          "icon": "screen",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "screen-time:local",
+              "name": "Screen Time",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            },
+            {
+              "account": "screen:local",
+              "name": "Screen",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": "2 accounts"
+        },
+        {
+          "type": "ai",
+          "name": "AI chats",
+          "icon": "ai",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "ask:local",
+              "name": "Ask",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            },
+            {
+              "account": "claude-code:local",
+              "name": "Claude Code",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            },
+            {
+              "account": "codex:local",
+              "name": "Codex",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": "3 accounts"
+        },
+        {
+          "type": "notes",
+          "name": "Notes",
+          "icon": "note",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "apple-notes:local",
+              "name": "Notes",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": null
+        },
+        {
+          "type": "check-ins",
+          "name": "Check-ins",
+          "icon": "check-in",
+          "state": "on",
+          "accounts": [
+            {
+              "account": "checkin:local",
+              "name": "Check-ins",
+              "line": null,
+              "state": "on",
+              "limit": {
+                "value": {
+                  "window": null
+                },
+                "words": "All time"
+              }
+            }
+          ],
+          "line": null,
+          "limit": {
+            "value": {
+              "window": null
+            },
+            "words": "All time"
+          },
+          "reads": null,
+          "differs": null
+        }
+      ],
+      "hide": {
+        "choice": "names",
+        "words": "Details",
+        "choices": [
+          {
+            "level": "none",
+            "words": "Nothing",
+            "line": "It sees names, numbers and addresses as they are",
+            "selected": false
+          },
+          {
+            "level": "names",
+            "words": "Details",
+            "line": "Phone numbers, addresses and account numbers are blanks",
+            "selected": true
+          },
+          {
+            "level": "all",
+            "words": "Names and details",
+            "line": "People are “a person”, and the details are blanks",
+            "selected": false
+          },
+          {
+            "level": "custom",
+            "words": "Choose…",
+            "line": null,
+            "selected": false
+          }
+        ],
+        "types": [
+          {
+            "type": "person",
+            "name": "Names",
+            "state": "shown",
+            "subtypes": []
+          },
+          {
+            "type": "account",
+            "name": "Accounts",
+            "state": "shown",
+            "subtypes": []
+          },
+          {
+            "type": "email",
+            "name": "Email addresses",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "phone",
+            "name": "Phone numbers",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "address",
+            "name": "Addresses",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "place",
+            "name": "Places",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "number",
+            "name": "Numbers",
+            "state": "hidden",
+            "subtypes": [
+              {
+                "type": "number.bank",
+                "name": "Bank numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.card",
+                "name": "Card numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.government",
+                "name": "ID numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.tax",
+                "name": "Tax IDs",
+                "state": "fixed"
+              },
+              {
+                "type": "number.payment",
+                "name": "Payment addresses",
+                "state": "fixed"
+              },
+              {
+                "type": "number.order",
+                "name": "Order numbers",
+                "state": "fixed"
+              }
+            ]
+          },
+          {
+            "type": "secret",
+            "name": "Passwords and keys",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "link",
+            "name": "Links",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "word",
+            "name": "Words you listed",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "face",
+            "name": "Faces",
+            "state": "shown",
+            "subtypes": []
+          }
+        ]
+      },
+      "widens": false,
+      "widening": null,
+      "screen": null
+    },
+    "narrowed": null,
+    "saved": null
+  }
+}

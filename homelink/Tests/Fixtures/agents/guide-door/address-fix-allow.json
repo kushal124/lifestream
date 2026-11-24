@@ -1,0 +1,17 @@
+{
+  "route": "POST /v1/agents/address",
+  "request": {
+    "on": true
+  },
+  "status": 200,
+  "answer": {
+    "state": "fix",
+    "url": null,
+    "words": "Allow Funnel in Tailscale to put your address on the internet.",
+    "act": {
+      "label": "Allow Funnel",
+      "to": "web",
+      "url": "https://login.tailscale.com/f/funnel?node=nFAKE0001"
+    }
+  }
+}

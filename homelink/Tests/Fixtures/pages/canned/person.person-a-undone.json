@@ -1,0 +1,808 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person A",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [
+      {
+        "month": 10,
+        "day": 8,
+        "kind": "birthday"
+      },
+      {
+        "network": "instagram",
+        "words": "@person.a",
+        "href": "https://www.instagram.com/person.a/",
+        "kind": "profile"
+      },
+      {
+        "network": "site",
+        "words": "example.com",
+        "href": "https://example.com/person-a",
+        "kind": "profile"
+      }
+    ],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": "Friend from college",
+    "work": "Community lead, Northern Harbour Synthetic Supporters' Club (Coast District)",
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000001",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000001",
+      "from": "You added",
+      "own": false
+    },
+    {
+      "id": "email:person-a.home@example.com",
+      "kind": "email",
+      "network": null,
+      "words": "person-a.home@example.com",
+      "from": "Contacts",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 8
+      },
+      {
+        "day": "2026-09-07",
+        "count": 10
+      },
+      {
+        "day": "2026-09-08",
+        "count": 15
+      },
+      {
+        "day": "2026-09-09",
+        "count": 17
+      },
+      {
+        "day": "2026-09-10",
+        "count": 4
+      },
+      {
+        "day": "2026-09-11",
+        "count": 14
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 18
+      },
+      {
+        "day": "2026-09-14",
+        "count": 7
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 11
+      },
+      {
+        "day": "2026-09-17",
+        "count": 8
+      },
+      {
+        "day": "2026-09-18",
+        "count": 11
+      },
+      {
+        "day": "2026-09-19",
+        "count": 15
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 5
+      },
+      {
+        "day": "2026-09-22",
+        "count": 14
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 15
+      },
+      {
+        "day": "2026-09-25",
+        "count": 7
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 6
+      },
+      {
+        "day": "2026-09-28",
+        "count": 9
+      },
+      {
+        "day": "2026-09-29",
+        "count": 8
+      },
+      {
+        "day": "2026-09-30",
+        "count": 11
+      },
+      {
+        "day": "2026-10-01",
+        "count": 1
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 8
+      },
+      {
+        "day": "2026-10-04",
+        "count": 17
+      },
+      {
+        "day": "2026-10-05",
+        "count": 3
+      }
+    ],
+    "count": 242,
+    "calls": {
+      "count": 3,
+      "words": "3 calls"
+    },
+    "line": "242 messages in the last 30 days",
+    "before": {
+      "day": "2026-09-05",
+      "joiner": " · before that, "
+    }
+  },
+  "history": {
+    "weeks": [
+      {
+        "start": "2025-12-29",
+        "count": 16,
+        "day": "2025-12-29"
+      },
+      {
+        "start": "2026-01-05",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-01-12",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-01-19",
+        "count": 16,
+        "day": "2026-01-23"
+      },
+      {
+        "start": "2026-01-26",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-02-02",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-02-09",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-02-16",
+        "count": 16,
+        "day": "2026-02-18"
+      },
+      {
+        "start": "2026-02-23",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-03-02",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-03-09",
+        "count": 16,
+        "day": "2026-03-15"
+      },
+      {
+        "start": "2026-03-16",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-03-23",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-03-30",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-06",
+        "count": 17,
+        "day": "2026-04-09"
+      },
+      {
+        "start": "2026-04-13",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-20",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-27",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-04",
+        "count": 17,
+        "day": "2026-05-05"
+      },
+      {
+        "start": "2026-05-11",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-18",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-25",
+        "count": 17,
+        "day": "2026-05-30"
+      },
+      {
+        "start": "2026-06-01",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-08",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-15",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-22",
+        "count": 17,
+        "day": "2026-06-25"
+      },
+      {
+        "start": "2026-06-29",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-06",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-13",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-20",
+        "count": 32,
+        "day": "2026-07-20"
+      },
+      {
+        "start": "2026-07-27",
+        "count": 29,
+        "day": "2026-07-31"
+      },
+      {
+        "start": "2026-08-03",
+        "count": 55,
+        "day": "2026-08-06"
+      },
+      {
+        "start": "2026-08-10",
+        "count": 65,
+        "day": "2026-08-14"
+      },
+      {
+        "start": "2026-08-17",
+        "count": 53,
+        "day": "2026-08-22"
+      },
+      {
+        "start": "2026-08-24",
+        "count": 44,
+        "day": "2026-08-28"
+      },
+      {
+        "start": "2026-08-31",
+        "count": 55,
+        "day": "2026-09-02"
+      },
+      {
+        "start": "2026-09-07",
+        "count": 78,
+        "day": "2026-09-13"
+      },
+      {
+        "start": "2026-09-14",
+        "count": 52,
+        "day": "2026-09-19"
+      },
+      {
+        "start": "2026-09-21",
+        "count": 47,
+        "day": "2026-09-24"
+      },
+      {
+        "start": "2026-09-28",
+        "count": 54,
+        "day": "2026-10-04"
+      },
+      {
+        "start": "2026-10-05",
+        "count": 3,
+        "day": "2026-10-05"
+      }
+    ],
+    "marked": 36,
+    "kind": "weeks"
+  },
+  "talk": {
+    "day": "2026-10-04",
+    "chat": "whatsapp:15550000001@s.whatsapp.net",
+    "title": "Person A",
+    "group": false,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 2
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 3
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 6
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 8
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 9
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 10
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 11
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 12
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 13
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 14
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 15
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 16
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line a-out-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 17
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 18
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 19
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line a-in-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 20
+      }
+    ],
+    "folded": [],
+    "focus": "a20"
+  },
+  "where": [
+    {
+      "chat": "whatsapp:15550000001@s.whatsapp.net",
+      "title": "WhatsApp",
+      "group": false,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 120,
+      "line": "120 messages",
+      "quiet": false
+    },
+    {
+      "chat": null,
+      "title": "Mail",
+      "group": false,
+      "network": "Mail",
+      "when": null,
+      "count": 4,
+      "line": "4 mails",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000003@g.us",
+      "title": "Group Gamma",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 90,
+      "line": "90 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000004@g.us",
+      "title": "Group Epsilon",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 80,
+      "line": "80 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000005@g.us",
+      "title": "Group Zeta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 70,
+      "line": "70 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000006@g.us",
+      "title": "Group Eta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 60,
+      "line": "60 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000007@g.us",
+      "title": "Group Theta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 50,
+      "line": "50 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000008@g.us",
+      "title": "Group Iota",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 40,
+      "line": "40 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000001@g.us",
+      "title": "Group Alpha",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 30,
+      "line": "30 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000011@g.us",
+      "title": "Group Delta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 300,
+      "line": "300 messages",
+      "quiet": true
+    },
+    {
+      "chat": "whatsapp:120363000000000012@g.us",
+      "title": "Synthetic Shop Deals",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 300,
+      "line": "300 messages",
+      "quiet": true
+    },
+    {
+      "chat": "whatsapp:120363000000000013@g.us",
+      "title": "Group Kappa",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 75,
+      "line": "75 messages",
+      "quiet": true
+    }
+  ],
+  "suggestions_line": "1 suggestion",
+  "edit": {
+    "call": "Person A",
+    "full_name": null,
+    "name_from": null,
+    "record_id": "person-a",
+    "face": false,
+    "reach": "WhatsApp and Mail",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "695 messages · 4 mails",
+    "mails": {
+      "from": 4,
+      "to": 0,
+      "newest": []
+    },
+    "record": {
+      "type": "people.person",
+      "slug": "person-a",
+      "name": "Person A",
+      "full_name": null,
+      "show": "name",
+      "entity": "person",
+      "relationship": "Friend from college",
+      "hidden": false,
+      "me": false,
+      "anchor": {
+        "kind": "phone",
+        "value": "+15550000001"
+      },
+      "handles": [],
+      "excluded": [],
+      "dismissed": [],
+      "also_called": [],
+      "merged_into": null
+    },
+    "details": {
+      "work": "Community lead, Northern Harbour Synthetic Supporters' Club (Coast District)",
+      "birthday": {
+        "month": 10,
+        "day": 8,
+        "year": null
+      },
+      "profiles": [
+        {
+          "network": "instagram",
+          "value": "person.a"
+        },
+        {
+          "network": "site",
+          "value": "example.com/person-a"
+        }
+      ],
+      "cleared": []
+    },
+    "suggestions": [
+      {
+        "id": "f39e76582d050fa2",
+        "kind": "full_name",
+        "value": "Person A Fullname",
+        "reasons": [
+          {
+            "reason": "mail",
+            "count": 4
+          },
+          {
+            "reason": "photos",
+            "count": 0
+          },
+          {
+            "reason": "whatsapp",
+            "count": 1
+          }
+        ],
+        "ticked": true,
+        "other": null
+      }
+    ],
+    "also_called": [],
+    "names_seen": [
+      "Person A Fullname"
+    ],
+    "joined": []
+  },
+  "counting": false
+}

@@ -1,0 +1,9 @@
+Day 2026-09-03 (Thursday) in America/New_York, 04:00 to 2026-09-04 04:00 (24 h)
+2 atoms: money 2
+
+On 2026-09-03, time unknown
+−1200.50 INR Example Bank …1234: POS 0000XXXXXX0001 SYNTHETIC GROCER (balance 13549.50) [the balance before it does not follow: -250.00 INR of lines missing]
++99.00 INR Example Bank …1234: REFUND STREAMING (balance 13549.50) [the balance before it does not follow: -99.00 INR of lines missing]
+
+Coverage
+money: example-bank:00000000001234:export read through the day

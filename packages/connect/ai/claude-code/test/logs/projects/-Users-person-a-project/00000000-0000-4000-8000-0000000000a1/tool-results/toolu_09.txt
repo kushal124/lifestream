@@ -1,0 +1,1 @@
+A long synthetic tool output no line names.

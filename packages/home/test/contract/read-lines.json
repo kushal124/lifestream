@@ -1,0 +1,39 @@
+{
+  "what": "lines",
+  "span": {
+    "from": "2026-10-04",
+    "to": "2026-10-04"
+  },
+  "lines": [
+    {
+      "at": "2026-10-04T08:00+01:00",
+      "day": "2026-10-04",
+      "family": "physical",
+      "text": "at home until 08:50"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJhMSJd",
+      "at": "2026-10-04T09:15+01:00",
+      "day": "2026-10-04",
+      "family": "messages",
+      "from": "Person A",
+      "text": "the example on Example Street at nine"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJwaG90b3M6bG9jYWw6aXBob25lLWFhMDEiLCJwaG90byIsInBoMSJd",
+      "at": "2026-10-04T12:30+01:00",
+      "day": "2026-10-04",
+      "family": "photos",
+      "picture": true,
+      "text": "a picture: `read` it to see it"
+    }
+  ],
+  "pending": [
+    {
+      "day": "2026-10-04",
+      "why": "new"
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

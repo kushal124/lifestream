@@ -1,0 +1,128 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-23",
+  "id": "advanced",
+  "title": "Advanced",
+  "line": null,
+  "parts": [
+    {
+      "label": null,
+      "line": null,
+      "rows": [
+        {
+          "id": "model-cap",
+          "label": "Model calls at once",
+          "line": "The most model calls Lifestream makes at the same time.",
+          "end": {
+            "key": "model.cap",
+            "choices": [
+              {
+                "words": "1",
+                "value": 1,
+                "chosen": false,
+                "default": false
+              },
+              {
+                "words": "2",
+                "value": 2,
+                "chosen": false,
+                "default": false
+              },
+              {
+                "words": "4",
+                "value": 4,
+                "chosen": false,
+                "default": false
+              },
+              {
+                "words": "8",
+                "value": 8,
+                "chosen": true,
+                "default": true
+              },
+              {
+                "words": "16",
+                "value": 16,
+                "chosen": false,
+                "default": false
+              },
+              {
+                "words": "32",
+                "value": 32,
+                "chosen": false,
+                "default": false
+              }
+            ],
+            "kind": "choice"
+          }
+        },
+        {
+          "id": "helpers",
+          "label": "Background work",
+          "line": "How many jobs Lifestream runs side by side, each on a thread of its own.",
+          "end": {
+            "value": [
+              {
+                "words": "Automatic · 6",
+                "kind": "words"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        },
+        {
+          "id": "max-bundle",
+          "label": "Largest upload",
+          "line": "A device’s single upload above this is refused.",
+          "end": {
+            "value": [
+              {
+                "words": "69 GB",
+                "kind": "words"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Network",
+      "line": null,
+      "rows": [
+        {
+          "id": "port",
+          "label": "Port",
+          "line": "Where apps and agents on this Mac and on Tailscale reach Lifestream.",
+          "end": {
+            "value": [
+              {
+                "words": "4680",
+                "kind": "words"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        },
+        {
+          "id": "lan-port",
+          "label": "Local network port",
+          "line": "Where your iPhone reaches Lifestream on the same Wi-Fi.",
+          "end": {
+            "value": [
+              {
+                "words": "4682",
+                "kind": "words"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        }
+      ]
+    }
+  ]
+}

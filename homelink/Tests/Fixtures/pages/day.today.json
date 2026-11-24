@@ -1,0 +1,217 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "day": "2026-10-05",
+  "state": "ready",
+  "line": null,
+  "now_ms": 1791968400000,
+  "updated_ms": 1791968400000,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "trip/location:local:iphone-aa01/1791116880000@1791153000000",
+      "kind": "move",
+      "episode": "e1",
+      "head": {
+        "title": "Move 5.2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "4h"
+      },
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1791167400000@1791167400000",
+      "kind": "stay",
+      "episode": "e2",
+      "head": {
+        "title": "Bengaluru",
+        "line": null,
+        "place": "spot:12.9716,77.5946",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": null
+      },
+      "start_ms": 1791968400000,
+      "end_ms": null,
+      "folded": true,
+      "names": [
+        {
+          "text": "Synthetic standup",
+          "first_row": "e3",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …00302",
+          "first_row": "e4",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1791167400000@1791167400000#run",
+          "kind": "run",
+          "start_ms": 1791968400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e3",
+              "kind": "event",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "calendar-event",
+              "name": "Synthetic standup",
+              "note": "",
+              "words": [
+                {
+                  "text": "Google Calendar",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "30m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:google-calendar:person-a@example.com:cloud event met-today@example.com",
+              "divider": null
+            },
+            {
+              "key": "e4",
+              "kind": "conversation",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …00302",
+              "note": "",
+              "words": [
+                {
+                  "text": "synthetic line t2",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000302@s.whatsapp.net:t1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [
+    {
+      "key": "e6",
+      "kind": "event",
+      "at_ms": 1791968400000,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Synthetic plan",
+      "note": "",
+      "words": [
+        {
+          "text": "Google Calendar",
+          "tone": "secondary",
+          "title": false,
+          "type": "text"
+        }
+      ],
+      "count": {
+        "text": "1h",
+        "kind": "words"
+      },
+      "quiet": false,
+      "focus": "rec:google-calendar:person-a@example.com:cloud event plan-today@example.com",
+      "divider": null
+    }
+  ],
+  "until_ms": 1791968400000,
+  "now_divider": null,
+  "end_ms": 1791968400000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "1",
+        "words": "message sent"
+      },
+      {
+        "key": "received",
+        "value": "1",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "spot:12.9716,77.5946",
+        "slug": null,
+        "name": "Bengaluru",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 19680000,
+        "length": "5h 28m",
+        "spoken": "Bengaluru, 5 hours 28 minutes",
+        "point": {
+          "latitude": 12.9716,
+          "longitude": 77.5946,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e2"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "whatsapp:15550000302@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …00302",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "unknown …00302, 1 message sent",
+        "rows": [
+          "e4"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

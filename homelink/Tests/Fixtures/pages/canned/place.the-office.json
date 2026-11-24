@@ -1,0 +1,128 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "name": "The Office",
+    "line": "San Jose",
+    "since": null
+  },
+  "here": false,
+  "rhythm": "8 days here since Sep 2026",
+  "stays": 8,
+  "visits": {
+    "count": 8,
+    "rows": [
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790758800000@1790758800000-1790769480000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790758800000",
+        "day": "2026-09-30",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790758800000@1790758800000-1790769480000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790672400000@1790672400000-1790683080000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790672400000",
+        "day": "2026-09-29",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790672400000@1790672400000-1790683080000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790586000000@1790586000000-1790596680000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790586000000",
+        "day": "2026-09-28",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790586000000@1790586000000-1790596680000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790326800000@1790326800000-1790337480000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790326800000",
+        "day": "2026-09-25",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790326800000@1790326800000-1790337480000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790240400000@1790240400000-1790251080000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790240400000",
+        "day": "2026-09-24",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790240400000@1790240400000-1790251080000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790154000000@1790154000000-1790164680000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790154000000",
+        "day": "2026-09-23",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790154000000@1790154000000-1790164680000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790067600000@1790067600000-1790078280000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790067600000",
+        "day": "2026-09-22",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790067600000@1790067600000-1790078280000",
+        "people": [
+          "person:person-a"
+        ]
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789981200000@1789981200000-1789991880000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789981200000",
+        "day": "2026-09-21",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789981200000@1789981200000-1789991880000",
+        "people": [
+          "person:person-a"
+        ]
+      }
+    ]
+  },
+  "people": [
+    {
+      "id": "person:person-a",
+      "name": "Person A",
+      "photo": null,
+      "line": "8 days"
+    }
+  ],
+  "photos": {
+    "first": [
+      "sha256:fe9e053fb6ee474f572560815928aefa8a669f93aba8d52fac10e189eae706a0",
+      "sha256:90efe666a68d44d766281f948dffb4143b531d6200b74ad36a75234a1e379fe4",
+      "sha256:ee74851d4acc3cbd94dabcb8e8f323669a27cc1e76be8ad17798353a3732a40f",
+      "sha256:6dbf1822df6f80c9a923e4fdbe948c20c22c35c43301a845f2291e0fdc652ed5"
+    ],
+    "total": 8,
+    "line": "8 photos"
+  },
+  "part_of": null,
+  "inside": [],
+  "ask_home": null,
+  "clashes": [],
+  "counting": false
+}

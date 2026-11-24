@@ -1,0 +1,527 @@
+{
+  "about": "The when-words (design/writing.md, \"When\"): each case a form, the home's today, the day (with its clock, and whether its row stands in a list grouped under Today and Yesterday), or for sectionWhen the section key the home sends, or for lineMonth the month, and the words. dashboard/test/when-words.mjs and the iPhone's WhenWordsTests read every case.",
+  "cases": [
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "clock": "14:10",
+      "words": "14:10"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "words": "Today"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "words": "Yesterday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "clock": "21:27",
+      "words": "Yesterday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "clock": "21:27",
+      "grouped": true,
+      "words": "21:27"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "clock": "14:10",
+      "grouped": true,
+      "words": "14:10"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-14",
+      "words": "Saturday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "words": "Thursday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "clock": "09:02",
+      "grouped": true,
+      "words": "Thursday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-10",
+      "words": "Tuesday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-09",
+      "words": "9 Nov"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-07",
+      "words": "7 Nov"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-10-03",
+      "words": "3 Oct"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-09-28",
+      "words": "28 Sep"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "words": "14 Aug 2024"
+    },
+    {
+      "form": "rowDay",
+      "today": "2026-11-16",
+      "day": "2026-11-20",
+      "words": "20 Nov"
+    },
+    {
+      "form": "rowDay",
+      "today": "2027-01-02",
+      "day": "2026-12-31",
+      "words": "Thursday"
+    },
+    {
+      "form": "rowDay",
+      "today": "2027-01-20",
+      "day": "2026-12-31",
+      "words": "31 Dec 2026"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "words": "Today"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "words": "Yesterday"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-14",
+      "words": "Previous 7 days"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-09",
+      "words": "Previous 7 days"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-08",
+      "words": "Previous 30 days"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-10-17",
+      "words": "Previous 30 days"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-10-16",
+      "words": "October"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-10-03",
+      "words": "October"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-01-05",
+      "words": "January"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "words": "2024"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-20",
+      "words": "Coming up"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2027-01-10",
+      "day": "2026-12-28",
+      "words": "Previous 30 days"
+    },
+    {
+      "form": "groupWhen",
+      "today": "2027-01-10",
+      "day": "2026-12-01",
+      "words": "2026"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2026-11-16",
+      "key": "month:2026-11",
+      "words": "This month"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2026-11-30",
+      "key": "month:2026-11",
+      "words": "This month"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2026-11-16",
+      "key": "month:2026-10",
+      "words": "October"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2026-11-16",
+      "key": "month:2026-01",
+      "words": "January"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2027-01-10",
+      "key": "month:2026-11",
+      "words": "November 2026"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2027-01-02",
+      "key": "month:2026-12",
+      "words": "December 2026"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2026-11-16",
+      "key": "year:2025",
+      "words": "2025"
+    },
+    {
+      "form": "sectionWhen",
+      "today": "2027-01-10",
+      "key": "year:2024",
+      "words": "2024"
+    },
+    {
+      "form": "dateTitle",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "words": "Today"
+    },
+    {
+      "form": "dateTitle",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "words": "Yesterday"
+    },
+    {
+      "form": "dateTitle",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "words": "Thursday 12 November"
+    },
+    {
+      "form": "dateTitle",
+      "today": "2026-11-16",
+      "day": "2026-10-03",
+      "words": "Saturday 3 October"
+    },
+    {
+      "form": "dateTitle",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "words": "Wednesday 14 August 2024"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "words": "Today"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "words": "Yesterday"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "words": "4 days ago"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-07",
+      "words": "9 days ago"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-10-17",
+      "words": "30 days ago"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-10-16",
+      "words": "16 Oct"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-10-03",
+      "words": "3 Oct"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "words": "14 Aug 2024"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-17",
+      "words": "in 1 day"
+    },
+    {
+      "form": "nearDay",
+      "today": "2026-11-16",
+      "day": "2026-11-18",
+      "words": "in 2 days"
+    },
+    {
+      "form": "stampWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "clock": "08:29",
+      "words": "Today 08:29"
+    },
+    {
+      "form": "stampWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "clock": "21:10",
+      "words": "Yesterday 21:10"
+    },
+    {
+      "form": "stampWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "clock": "09:02",
+      "words": "Thursday 09:02"
+    },
+    {
+      "form": "stampWhen",
+      "today": "2026-11-16",
+      "day": "2026-11-07",
+      "clock": "10:04",
+      "words": "7 Nov 10:04"
+    },
+    {
+      "form": "stampWhen",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "clock": "10:04",
+      "words": "14 Aug 2024 10:04"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "words": "today"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "clock": "14:10",
+      "words": "14:10"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "words": "yesterday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "clock": "21:27",
+      "words": "yesterday 21:27"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-17",
+      "words": "tomorrow"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-17",
+      "clock": "08:00",
+      "words": "tomorrow 08:00"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-14",
+      "words": "Saturday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-14",
+      "clock": "09:02",
+      "words": "Saturday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-10",
+      "words": "Tuesday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-09",
+      "words": "9 Nov"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-20",
+      "words": "Friday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2026-11-23",
+      "words": "23 Nov"
+    },
+    {
+      "form": "lineDay",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "clock": "10:04",
+      "words": "14 Aug 2024"
+    },
+    {
+      "form": "lineDay",
+      "today": "2027-01-02",
+      "day": "2026-12-31",
+      "words": "Thursday"
+    },
+    {
+      "form": "lineDay",
+      "today": "2027-01-20",
+      "day": "2026-12-31",
+      "words": "31 Dec 2026"
+    },
+    {
+      "form": "lineMonth",
+      "today": "2026-11-16",
+      "month": "2026-03",
+      "words": "Mar 2026"
+    },
+    {
+      "form": "lineMonth",
+      "today": "2026-11-16",
+      "month": "2025-11",
+      "words": "Nov 2025"
+    },
+    {
+      "form": "lineMonth",
+      "today": "2027-01-10",
+      "month": "2026-09",
+      "words": "Sep 2026"
+    },
+    {
+      "form": "lineClock",
+      "today": "2026-11-16",
+      "day": "2026-11-16",
+      "clock": "14:10",
+      "words": "14:10"
+    },
+    {
+      "form": "lineClock",
+      "today": "2026-11-16",
+      "day": "2026-11-15",
+      "clock": "21:27",
+      "words": "15 Nov 21:27"
+    },
+    {
+      "form": "lineClock",
+      "today": "2026-11-16",
+      "day": "2026-11-17",
+      "clock": "08:00",
+      "words": "17 Nov 08:00"
+    },
+    {
+      "form": "lineClock",
+      "today": "2026-11-16",
+      "day": "2026-11-12",
+      "clock": "09:02",
+      "words": "12 Nov 09:02"
+    },
+    {
+      "form": "lineClock",
+      "today": "2026-11-16",
+      "day": "2024-08-14",
+      "clock": "10:04",
+      "words": "14 Aug 2024 10:04"
+    },
+    {
+      "form": "lineClock",
+      "today": "2027-01-02",
+      "day": "2026-12-31",
+      "clock": "23:50",
+      "words": "31 Dec 2026 23:50"
+    }
+  ]
+}

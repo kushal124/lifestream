@@ -1,0 +1,36 @@
+[
+  {
+    "family": "physical",
+    "unit": "seen/google-photos:person-a@example.com:export/2026-09-15",
+    "reading": "sha256:ba327c05a3359240e7eb3555c9f8e43807dfe6783df3dda3486fb05a3ad44dcf",
+    "code": "11",
+    "content": {
+      "by": "Photos",
+      "date": "2026-09-15",
+      "end_ms": 1789466520000,
+      "how": "seen",
+      "kind": "seen",
+      "rank": 20,
+      "sightings": [
+        {
+          "accuracy_m": null,
+          "camera": "synthetic-make/own-camera",
+          "centre": {
+            "latitude": 48.853,
+            "longitude": 2.3499
+          },
+          "end_ms": 1789466520000,
+          "photos": 3,
+          "start_ms": 1789466400000
+        }
+      ],
+      "source": "google-photos:person-a@example.com:export",
+      "start_ms": 1789466400000
+    },
+    "start_ms": 1789466400000,
+    "end_ms": 1789466520000,
+    "days": [
+      "2026-09-15"
+    ]
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "asked": "sum of times over plays, the plays themselves, each with its keys and measures, earliest first",
+  "matched": {
+    "from": "2026-11-01",
+    "to": "2026-11-30",
+    "track": {
+      "=Riverside": [
+        "Riverside (13)"
+      ]
+    },
+    "artist": {
+      "=The Quiet Hours": [
+        "The Quiet Hours (13)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 13,
+    "valued": 13,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2026-06-03",
+    "last": "2026-11-14"
+  },
+  "counted": "counted from plays as now-playing:person-a@example.com:iphone-aa01 (read to 2026-11-14) and now-playing:person-a@example.com:macbook-pro-0001 (read to 2026-11-14) state them",
+  "total": {
+    "n": 13,
+    "sum": 20,
+    "ref": "row.WyJyb3ciLHsiYnkiOlsiaXRlbSJdLCJmcm9tIjoiMjAyNi0xMS0wMSIsIm1hdGNoIjp7ImFydGlzdCI6Ij1UaGUgUXVpZXQgSG91cnMiLCJ0cmFjayI6Ij1SaXZlcnNpZGUifSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ0aW1lIiwidG8iOiIyMDI2LTExLTMwIn0se30seyJ0IjpudWxsfSwxM10"
+  },
+  "columns": [
+    "time",
+    "track",
+    "artist",
+    "album",
+    "app",
+    "device",
+    "minutes",
+    "times",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-11-01T08:12+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTAxVDA4MTIwMFo6MSJd"
+    ],
+    [
+      "2026-11-02T07:40+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTAyVDA3NDAwMFo6MSJd"
+    ],
+    [
+      "2026-11-03T13:58+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Music",
+      "macbook-pro-0001",
+      8,
+      2,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTptYWNib29rLXByby1hYTQyIiwibm93LXBsYXlpbmciLCIwMDAwQUFBQS0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDE6MjAyNjExMDNUMTM1ODAwWjoxIl0"
+    ],
+    [
+      "2026-11-04T18:21+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTA0VDE4MjEwMFo6MSJd"
+    ],
+    [
+      "2026-11-05T07:44+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTA1VDA3NDQwMFo6MSJd"
+    ],
+    [
+      "2026-11-06T21:03+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Music",
+      "macbook-pro-0001",
+      12,
+      3,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTptYWNib29rLXByby1hYTQyIiwibm93LXBsYXlpbmciLCIwMDAwQUFBQS0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDE6MjAyNjExMDZUMjEwMzAwWjoxIl0"
+    ],
+    [
+      "2026-11-08T10:30+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTA4VDEwMzAwMFo6MSJd"
+    ],
+    [
+      "2026-11-09T09:15+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTA5VDA5MTUwMFo6MSJd"
+    ],
+    [
+      "2026-11-10T07:38+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      8,
+      2,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTEwVDA3MzgwMFo6MSJd"
+    ],
+    [
+      "2026-11-11T06:52+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTExVDA2NTIwMFo6MSJd"
+    ],
+    [
+      "2026-11-12T08:29+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Music",
+      "macbook-pro-0001",
+      8,
+      2,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTptYWNib29rLXByby1hYTQyIiwibm93LXBsYXlpbmciLCIwMDAwQUFBQS0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDE6MjAyNjExMTJUMDgyOTAwWjoxIl0"
+    ],
+    [
+      "2026-11-13T17:47+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Spotify",
+      "iphone-aa01",
+      4,
+      1,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTppcGhvbmUtYWEwMSIsIm5vdy1wbGF5aW5nIiwiMDAwMEJCQkItMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyOjIwMjYxMTEzVDE3NDcwMFo6MSJd"
+    ],
+    [
+      "2026-11-14T20:05+00:00",
+      "Riverside",
+      "The Quiet Hours",
+      "Low Tide",
+      "Music",
+      "macbook-pro-0001",
+      12,
+      3,
+      "record.WyJyZWNvcmQiLCJub3ctcGxheWluZzpwZXJzb24tYUBleGFtcGxlLmNvbTptYWNib29rLXByby1hYTQyIiwibm93LXBsYXlpbmciLCIwMDAwQUFBQS0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDE6MjAyNjExMTRUMjAwNTAwWjoxIl0"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

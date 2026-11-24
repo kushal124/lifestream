@@ -1,0 +1,17 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "top": [],
+  "kinds": [],
+  "total": {
+    "n": 0,
+    "partial": false
+  },
+  "held": null,
+  "reading": {
+    "line": "Search is getting ready",
+    "percent": null,
+    "state": "building"
+  },
+  "nothing": null
+}

@@ -1,0 +1,86 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-06",
+  "state": "found",
+  "moment": {
+    "key": "e4",
+    "row": "e4",
+    "kind": "mail_received",
+    "icon": "mail",
+    "title": "Statement ready",
+    "name": "1 mail",
+    "near": null,
+    "start_ms": 1793927160000,
+    "end_ms": null,
+    "untimed": null,
+    "length_ms": null,
+    "products": [
+      "Gmail"
+    ],
+    "people": [
+      {
+        "name": "Synthetic Bank",
+        "person": null,
+        "chat": null,
+        "call": null
+      }
+    ],
+    "place": {
+      "name": "Home",
+      "unit": "stay/location:local:iphone-aa01/1793886840000",
+      "slug": "home-place"
+    },
+    "out": null,
+    "record": {
+      "source": "gmail:person-a@example.com:cloud",
+      "kind": "mailmsg",
+      "key": "bank-2026-11-06"
+    },
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "gmail:person-a@example.com:cloud",
+          "kind": "mailmsg",
+          "key": "bank-2026-11-06",
+          "at_ms": 1793927160000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "mail",
+          "unit": "gmail:person-a@example.com:cloud/2026-11-06"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1793927160000,
+      "end_ms": null
+    },
+    "view": {
+      "list": false,
+      "letters": [
+        {
+          "at_ms": 1793927160000,
+          "from": "Synthetic Bank",
+          "to": "You",
+          "subject": "Statement ready",
+          "words": "Your synthetic statement is ready.",
+          "attached": [],
+          "address": "statements@bank.example.com",
+          "person": "Synthetic Bank",
+          "person_id": null,
+          "record": {
+            "source": "gmail:person-a@example.com:cloud",
+            "kind": "mailmsg",
+            "key": "bank-2026-11-06"
+          }
+        }
+      ],
+      "view": "mail"
+    }
+  }
+}

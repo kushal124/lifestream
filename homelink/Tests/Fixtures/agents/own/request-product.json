@@ -1,0 +1,24 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "product": "gmail"
+      },
+      "past": "7d"
+    },
+    "for": "2h",
+    "reason": "Mail about the garden."
+  },
+  "status": 200,
+  "answer": {
+    "state": "asked",
+    "words": "Asked. Your person will see it on their Mac or iPhone. Call `access` to see their answer.",
+    "request": {
+      "id": "rq-0000000000000001",
+      "wants": "all of Gmail from the past 7 days for 2 hours",
+      "at_ms": 1788840000000,
+      "until_ms": 1788926400000
+    }
+  }
+}

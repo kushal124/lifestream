@@ -1,0 +1,40 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-25",
+  "year": 2025,
+  "span": {
+    "first": 2025,
+    "last": 2026
+  },
+  "trips": [],
+  "figures": [
+    {
+      "count": 0,
+      "words": "Nights away"
+    },
+    {
+      "count": 1,
+      "words": "Country"
+    },
+    {
+      "count": 0,
+      "words": "Cities"
+    }
+  ],
+  "cities": [
+    {
+      "name": "San Jose",
+      "nights": 2,
+      "point": {
+        "latitude": 37.33939,
+        "longitude": -121.89496
+      },
+      "country": "United States",
+      "base": true
+    }
+  ],
+  "base": {
+    "name": "San Jose",
+    "nights": 32
+  }
+}

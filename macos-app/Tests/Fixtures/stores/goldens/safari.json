@@ -1,0 +1,66 @@
+{
+  "connector" : "safari",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "safari-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "history.sqlite"
+          ],
+          "source_id" : "safari:local:macbook-pro-0001"
+        }
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+        "safari:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "safari:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "safari-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "history.sqlite",
+            "cloudtabs.sqlite"
+          ],
+          "source_id" : "safari:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "safari:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "safari:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "safari"
+}

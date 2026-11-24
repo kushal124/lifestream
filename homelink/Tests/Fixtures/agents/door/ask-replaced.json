@@ -1,0 +1,133 @@
+{
+  "route": "GET /v1/agents/asks/<id>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "rq-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Claude",
+    "by": "agent",
+    "head": "Claude asks to see your Gmail (person-a@example.com) for 1 hour",
+    "line": "asks to see your Gmail (person-a@example.com) for 1 hour",
+    "asked_line": [
+      {
+        "kind": "words",
+        "words": "Asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      },
+      {
+        "kind": "words",
+        "words": "· the ask ends"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794733200000
+        }
+      }
+    ],
+    "under_line": [
+      {
+        "kind": "words",
+        "words": "“The work mailbox.” · asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "says_title": "Claude says",
+    "wants": "your Gmail (person-a@example.com) for 1 hour",
+    "today": [
+      {
+        "text": "Today Claude sees everything but "
+      },
+      {
+        "text": "Health",
+        "bold": true
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "Money",
+        "bold": true
+      },
+      {
+        "text": " from the past 24 hours."
+      }
+    ],
+    "under": "person-a@example.com",
+    "reason": "The work mailbox.",
+    "screen": null,
+    "adds": [],
+    "keeps": null,
+    "choices": [
+      {
+        "answer": "once",
+        "words": "Allow for 1 hour"
+      },
+      {
+        "answer": "always",
+        "words": "Always allow"
+      },
+      {
+        "answer": "no",
+        "words": "Don’t allow"
+      }
+    ],
+    "editable": true,
+    "default": "once",
+    "version": 1,
+    "proposed": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        },
+        {
+          "reach": {
+            "account": "gmail:person-a@example.com",
+            "but": []
+          },
+          "window": null,
+          "lasts_ms": 3600000
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    },
+    "at_ms": 1794646800000,
+    "until_ms": 1794733200000,
+    "state": "replaced",
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Claude asked again."
+      }
+    ]
+  }
+}

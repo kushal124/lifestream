@@ -1,0 +1,9 @@
+Day 2026-10-03 (Saturday) in America/New_York, 04:00 to 2026-10-04 04:00 (24 h)
+3 atoms: mail 3
+
+05:15 Mail from Person B to the user: “Re: synthetic plans” — Sounds good, see you at the synthetic place at six. It’s on me. Bring the synthetic notes.
+16:45 Mail from Synthetic News 📰: “Weekly digest — issue 42” — newsletter, weekly digest: A weekly digest of synthetic items. (Synthetic News)
+23:30 Mail from the user to Doe, Person C, Person D, Person E: “Synthetic résumé attached” — Hi both, Attached is the synthetic document. [attached: résumé.pdf]
+
+Coverage
+mail: gmail:person-a@example.com:cloud read through the day

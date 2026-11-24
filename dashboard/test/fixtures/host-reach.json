@@ -1,0 +1,778 @@
+{
+  "about": "The Mac host contract's reach, version 6, which the Mac and its window meet at: HostState.reach (the strip's words, a wait keeping the strip its episode showed and \"Lifestream is back\" at the end of one that showed one; while unreachable its details too, the head's Last reached and the path from this Mac to its home a link a row, from one diagnosis with the strip's line; checking while Check again runs) and HostState.sending for each reach state; an act's reply for each said, by the door's answer it met; the probe act's request and reply; Pair again's (the act of a refused pass's strip: reach after the pass is forgotten, or its refusal while the home still knows the pass); a recovery sequence and what a page shows at each step; and the outcomes, each door answer a device meets (status, code, the door's words, Retry-After, and a NOT_NOW's kind as `wait`: starting, needs, busy) with the request state the one code table gives it (a wait's `after` in seconds from the answer). The home's own not-now (starting, needs) is reach's wherever it is met, and a start met by any request but the probe asks one probe; a read's own (busy) is its wait. Every word is HomeLink's ReachWords output for the Mac; a held home's words are synthetic. MainWindowTests holds HostState.reach, HomeLink.state and ReachWords to it; dashboard/test/host.mjs, test/reach.mjs and test/kit-reach.mjs read it, the last holding lib/reach.js's table to the outcomes.",
+  "version": 6,
+  "states": {
+    "answering": {
+      "reach": {
+        "state": "answering",
+        "revision": 7,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "answering, its last send held": {
+      "reach": {
+        "state": "answering",
+        "revision": 7,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": "Waiting for space on Lifestream's disk"
+    },
+    "answering, just reached again": {
+      "reach": {
+        "state": "answering",
+        "revision": 8,
+        "tone": "done",
+        "title": "Lifestream is back",
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "waiting": {
+      "reach": {
+        "state": "waiting",
+        "revision": 7,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "waiting, after a start": {
+      "reach": {
+        "state": "waiting",
+        "revision": 7,
+        "tone": "waiting",
+        "title": "Lifestream is starting",
+        "line": "It answers in a moment.",
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "starting": {
+      "reach": {
+        "state": "starting",
+        "revision": 7,
+        "tone": "waiting",
+        "title": "Lifestream is starting",
+        "line": "It answers in a moment.",
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "unreachable": {
+      "reach": {
+        "state": "unreachable",
+        "revision": 7,
+        "tone": "warning",
+        "title": "Can't reach Lifestream",
+        "line": "Lifestream isn't answering",
+        "meta": "since 14:02",
+        "acts": [],
+        "last": "Last reached 14:02",
+        "path": [
+          {
+            "id": "lifestream",
+            "name": "Lifestream on this Mac",
+            "state": "passed",
+            "value": "Running",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "drive",
+            "name": "Lifestream's drive",
+            "state": "passed",
+            "value": "Connected",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "home",
+            "name": "Lifestream",
+            "state": "failed",
+            "value": "Not answering",
+            "fix": "Lifestream asks it again on its own",
+            "act": null
+          }
+        ],
+        "checking": false
+      },
+      "sending": null
+    },
+    "unreachable, checking again": {
+      "reach": {
+        "state": "unreachable",
+        "revision": 7,
+        "tone": "warning",
+        "title": "Can't reach Lifestream",
+        "line": "Lifestream isn't answering",
+        "meta": "since 14:02",
+        "acts": [],
+        "last": "Last reached 14:02",
+        "path": [
+          {
+            "id": "lifestream",
+            "name": "Lifestream on this Mac",
+            "state": "passed",
+            "value": "Running",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "drive",
+            "name": "Lifestream's drive",
+            "state": "passed",
+            "value": "Connected",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "home",
+            "name": "Lifestream",
+            "state": "failed",
+            "value": "Not answering",
+            "fix": "Lifestream asks it again on its own",
+            "act": null
+          }
+        ],
+        "checking": true
+      },
+      "sending": null
+    },
+    "unreachable, Lifestream not running": {
+      "reach": {
+        "state": "unreachable",
+        "revision": 7,
+        "tone": "warning",
+        "title": "Lifestream isn't running",
+        "line": "Nothing is read or saved",
+        "meta": "since Sat 14 Nov",
+        "acts": [
+          {
+            "do": "open",
+            "label": "Start Lifestream"
+          }
+        ],
+        "last": "Last reached Sat 14 Nov · 14:02",
+        "path": [
+          {
+            "id": "lifestream",
+            "name": "Lifestream on this Mac",
+            "state": "failed",
+            "value": "Not running",
+            "fix": "Open it, and Lifestream starts again",
+            "act": {
+              "do": "open",
+              "label": "Open"
+            }
+          },
+          {
+            "id": "drive",
+            "name": "Lifestream's drive",
+            "state": "passed",
+            "value": "Connected",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "home",
+            "name": "Lifestream",
+            "state": "unchecked",
+            "value": "Not checked",
+            "fix": null,
+            "act": null
+          }
+        ],
+        "checking": false
+      },
+      "sending": null
+    },
+    "held": {
+      "reach": {
+        "state": "held",
+        "revision": 7,
+        "tone": "warning",
+        "title": "Lifestream is held",
+        "line": "The drive holding it went away.",
+        "meta": "since 14:02",
+        "acts": [
+          {
+            "do": "verify",
+            "label": "Check again"
+          }
+        ],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "update, the home's": {
+      "reach": {
+        "state": "update",
+        "revision": 7,
+        "tone": "caution",
+        "title": "Lifestream needs an update",
+        "line": "Update it on your Mac",
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "update, this Mac's": {
+      "reach": {
+        "state": "update",
+        "revision": 7,
+        "tone": "caution",
+        "title": "Update Lifestream on this Mac",
+        "line": "What it records waits here",
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "refused": {
+      "reach": {
+        "state": "refused",
+        "revision": 7,
+        "tone": "caution",
+        "title": "Lifestream no longer knows this Mac",
+        "line": "Pair it again to send",
+        "meta": null,
+        "acts": [
+          {
+            "do": "pair",
+            "label": "Pair again"
+          }
+        ],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    },
+    "unpaired": {
+      "reach": {
+        "state": "unpaired",
+        "revision": 0,
+        "tone": "caution",
+        "title": "This Mac isn't paired",
+        "line": "Pair it to send what it records",
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "sending": null
+    }
+  },
+  "acts": [
+    {
+      "door": {
+        "status": 503,
+        "code": "NOT_NOW",
+        "message": "Lifestream is starting.",
+        "wait": "starting"
+      },
+      "reply": {
+        "refused": "Not sent",
+        "said": "not-sent"
+      },
+      "probe": true
+    },
+    {
+      "door": {
+        "status": 503,
+        "code": "NOT_NOW",
+        "message": "Your people are being prepared.",
+        "wait": "busy",
+        "retryAfter": 3
+      },
+      "reply": {
+        "refused": "Your people are being prepared.",
+        "said": "refused"
+      },
+      "probe": false
+    },
+    {
+      "door": {
+        "status": 503,
+        "code": "INDEX_BUSY",
+        "message": "Lifestream is building its index.",
+        "retryAfter": 5
+      },
+      "reply": {
+        "refused": "Lifestream is building its index.",
+        "said": "refused"
+      },
+      "probe": false
+    },
+    {
+      "door": {
+        "status": 503,
+        "code": "OUTCOME_UNKNOWN",
+        "message": null
+      },
+      "reply": {
+        "refused": "Lifestream didn't say whether this was done.",
+        "said": "unknown"
+      },
+      "probe": false
+    },
+    {
+      "door": {
+        "status": 500,
+        "code": "HOME_FAILED",
+        "message": "Lifestream failed this."
+      },
+      "reply": {
+        "refused": "Not sent",
+        "said": "not-sent"
+      },
+      "probe": false
+    }
+  ],
+  "outcomes": [
+    [
+      {
+        "status": 426,
+        "code": "DEVICE_TOO_OLD",
+        "words": "Update this device."
+      },
+      {
+        "state": "reach"
+      }
+    ],
+    [
+      {
+        "status": 426,
+        "code": null,
+        "words": null
+      },
+      {
+        "state": "reach"
+      }
+    ],
+    [
+      {
+        "status": 401,
+        "code": "PRINCIPAL_UNKNOWN",
+        "words": "No such pass."
+      },
+      {
+        "state": "reach"
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "NOT_NOW",
+        "words": "Lifestream is held",
+        "retryAfter": 60,
+        "wait": "needs"
+      },
+      {
+        "state": "reach"
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "NOT_NOW",
+        "words": "Lifestream is starting: it answers in a moment.",
+        "retryAfter": 5,
+        "wait": "starting"
+      },
+      {
+        "state": "reach"
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "NOT_NOW",
+        "words": "Your people are being prepared.",
+        "retryAfter": 5,
+        "wait": "busy"
+      },
+      {
+        "state": "wait",
+        "words": "Your people are being prepared.",
+        "after": 5
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "NOT_NOW",
+        "words": null
+      },
+      {
+        "state": "wait",
+        "words": "Waiting for Lifestream.",
+        "after": 10
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "OUTCOME_UNKNOWN",
+        "words": "Lifestream did not answer in time: it may have done it."
+      },
+      {
+        "state": "unknown",
+        "words": "Lifestream did not answer in time: it may have done it."
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "OUTCOME_UNKNOWN",
+        "words": null
+      },
+      {
+        "state": "unknown",
+        "words": "Lifestream didn't say whether this was done."
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "INDEX_BUSY",
+        "words": "Lifestream is building its index.",
+        "retryAfter": 5
+      },
+      {
+        "state": "wait",
+        "words": "Lifestream is building its index.",
+        "after": 5
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "INDEX_BUILDING",
+        "words": "The home is building its search index."
+      },
+      {
+        "state": "wait",
+        "words": "The home is building its search index.",
+        "after": 10
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "MEANING_NOT_NOW",
+        "words": null
+      },
+      {
+        "state": "wait",
+        "words": "Waiting for Lifestream.",
+        "after": 10
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "ASK_DOWN",
+        "words": "Ask is not answering (ECONNREFUSED)",
+        "retryAfter": 5
+      },
+      {
+        "state": "wait",
+        "words": "Chat isn't answering on your Mac",
+        "after": 5
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "DISK_LOW",
+        "words": "12 bytes free, 40 taken",
+        "retryAfter": 300
+      },
+      {
+        "state": "wait",
+        "words": "Waiting for space on Lifestream's disk",
+        "after": 300
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "HOME_FAILED",
+        "words": "it failed"
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 500,
+        "code": "HOME_FAILED",
+        "words": "it failed"
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": null,
+        "words": null
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 503,
+        "code": "HTTP_503",
+        "words": null
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 502,
+        "code": "BAD_GATEWAY",
+        "words": null
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 500,
+        "code": null,
+        "words": null
+      },
+      {
+        "state": "failed"
+      }
+    ],
+    [
+      {
+        "status": 403,
+        "code": "PRINCIPAL_SCOPE",
+        "words": "Not from this device."
+      },
+      {
+        "state": "refused",
+        "words": "Not from this device."
+      }
+    ],
+    [
+      {
+        "status": 404,
+        "code": null,
+        "words": null
+      },
+      {
+        "state": "refused",
+        "words": "Lifestream didn't take this."
+      }
+    ],
+    [
+      {
+        "status": 409,
+        "code": "STALE",
+        "words": "A newer answer is kept."
+      },
+      {
+        "state": "refused",
+        "words": "A newer answer is kept."
+      }
+    ],
+    [
+      {
+        "status": 413,
+        "code": "BODY_TOO_LARGE",
+        "words": "That is too large for Lifestream."
+      },
+      {
+        "state": "refused",
+        "words": "That is too large for Lifestream."
+      }
+    ],
+    [
+      {
+        "status": 422,
+        "code": "NOT_A_DAY",
+        "words": "That isn't a day."
+      },
+      {
+        "state": "refused",
+        "words": "That isn't a day."
+      }
+    ]
+  ],
+  "probe": {
+    "request": {
+      "type": "act",
+      "act": "home",
+      "do": "probe"
+    },
+    "reply": {
+      "state": "answering",
+      "revision": 8
+    }
+  },
+  "pair": {
+    "request": {
+      "type": "act",
+      "act": "home",
+      "do": "pair"
+    },
+    "reply": {
+      "state": "unpaired",
+      "revision": 0
+    },
+    "refused": {
+      "refused": "Lifestream still knows this Mac, so its pass was kept.",
+      "said": "refused"
+    }
+  },
+  "recovery": [
+    {
+      "step": "the home answers",
+      "reach": {
+        "state": "answering",
+        "revision": 7,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "lacks": false,
+      "reads": 0
+    },
+    {
+      "step": "a request met no answer: inside the grace, a read's waiting line stands",
+      "reach": {
+        "state": "waiting",
+        "revision": 7,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "lacks": false,
+      "reads": 0
+    },
+    {
+      "step": "a probe past the grace failed: the banner says why, the page what it lacks",
+      "reach": {
+        "state": "unreachable",
+        "revision": 7,
+        "tone": "warning",
+        "title": "Can't reach Lifestream",
+        "line": "Lifestream isn't answering",
+        "meta": "since 14:02",
+        "acts": [],
+        "last": "Last reached 14:02",
+        "path": [
+          {
+            "id": "lifestream",
+            "name": "Lifestream on this Mac",
+            "state": "passed",
+            "value": "Running",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "drive",
+            "name": "Lifestream's drive",
+            "state": "passed",
+            "value": "Connected",
+            "fix": null,
+            "act": null
+          },
+          {
+            "id": "home",
+            "name": "Lifestream",
+            "state": "failed",
+            "value": "Not answering",
+            "fix": "Lifestream asks it again on its own",
+            "act": null
+          }
+        ],
+        "checking": false
+      },
+      "lacks": true,
+      "reads": 0
+    },
+    {
+      "step": "the home answers again: the revision rises, a read that failed for reach reads again once",
+      "reach": {
+        "state": "answering",
+        "revision": 8,
+        "tone": null,
+        "title": null,
+        "line": null,
+        "meta": null,
+        "acts": [],
+        "last": null,
+        "path": [],
+        "checking": false
+      },
+      "lacks": false,
+      "reads": 1
+    }
+  ]
+}

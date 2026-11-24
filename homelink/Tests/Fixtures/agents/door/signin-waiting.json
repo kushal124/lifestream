@@ -1,0 +1,12 @@
+{
+  "route": "GET /v1/agents/signins/<id>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMQ",
+    "state": "waiting",
+    "outcome": null,
+    "reader": null,
+    "connected": null
+  }
+}

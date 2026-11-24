@@ -1,0 +1,22 @@
+{
+  "answer.json" : {
+    "excluded" : 0,
+    "mode" : 420
+  },
+  "clock.json" : {
+    "excluded" : 0,
+    "mode" : 420
+  },
+  "credentials.json" : {
+    "excluded" : 1,
+    "mode" : 384
+  },
+  "reach.json" : {
+    "excluded" : 0,
+    "mode" : 420
+  },
+  "settings-queue.json" : {
+    "excluded" : 0,
+    "mode" : 420
+  }
+}

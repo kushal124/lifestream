@@ -1,0 +1,20 @@
+#!/bin/sh
+# lifestream <verb> [arguments…]: the command a person or their coding agent types
+# (packages/home/cli.ts). In a release (a folder holding RELEASE.json) it runs the release's own
+# node on dist/home.mjs; in a checkout it runs packages/home/cli.ts through the checkout's tsx, on
+# the node the shell gives. It follows its own links first, however many, so ~/.local/bin/lifestream
+# reaches the release `current` names. The directory it was run from is kept: a verb reads a
+# relative path from there.
+self=$0
+while [ -L "$self" ]; do
+  link=$(readlink "$self")
+  case $link in
+    /*) self=$link ;;
+    *) self=$(dirname "$self")/$link ;;
+  esac
+done
+root=$(cd "$(dirname "$self")/.." && pwd -P) || exit 2
+if [ -f "$root/RELEASE.json" ]; then
+  exec "$root/node" "$root/dist/home.mjs" "$@"
+fi
+exec node --import "$root/node_modules/tsx/dist/loader.mjs" "$root/packages/home/cli.ts" "$@"

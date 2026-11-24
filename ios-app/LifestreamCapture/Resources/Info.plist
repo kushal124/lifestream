@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>org.lifestreamprotocol.phone.refresh</string>
+		<string>org.lifestreamprotocol.phone.processing</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).continued.*</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(LIFESTREAM_DISPLAY_NAME)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.4.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).pair</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(LIFESTREAM_URL_SCHEME)</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LifestreamAppGroup</key>
+	<string>$(LIFESTREAM_APP_GROUP)</string>
+	<key>LifestreamCommit</key>
+	<string>$(LIFESTREAM_COMMIT)</string>
+	<key>LifestreamHomeFloor</key>
+	<string>$(LIFESTREAM_HOME_FLOOR)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_lifestream._tcp</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Lifestream uses the camera to scan your Mac's pairing code, and for the photos you take in it, which go to your Mac.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Lifestream keeps a copy of your contacts and their photos on your Mac, so it knows who's who in your messages, calls and photos.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Lifestream asks for Face ID before it shows your days, people, places and searches, so only you can open them. Recording and capturing never ask.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Lifestream reads the Health data you allow, so your days on your Mac show how you slept and how you felt; your sleep also times your check-ins.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Lifestream never writes to Health. It only reads the Health data you allow.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>So it can find your Mac and send it what this iPhone records.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow Always so Lifestream records where you go while it's closed too, and your days on your Mac have no gaps.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Lifestream records where you go, so each day on your Mac has its places and the way between them.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Lifestream records the voice notes you start, and sends them to your Mac.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Lifestream records when you walk, run, drive or stay still, and your steps, so your days on your Mac show how you moved.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Lifestream reads your photo library, with when and where each photo was taken, so your days on your Mac have their pictures.</string>
+	<key>NSSupportsLiveActivities</key>
+	<false/>
+	<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+	</dict>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

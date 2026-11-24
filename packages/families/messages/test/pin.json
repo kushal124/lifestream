@@ -1,0 +1,12 @@
+{
+  "family": "messages",
+  "key": {
+    "code": "4",
+    "adapters": {
+      "messages/imessage": "1",
+      "messages/whatsapp": "2"
+    }
+  },
+  "rows": 7,
+  "digest": "sha256:df9cfaeb8239384d9478464e34ef141a9c2b5da689b6ffc67d441105dc6cfc5f"
+}

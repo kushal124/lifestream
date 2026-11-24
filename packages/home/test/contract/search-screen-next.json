@@ -1,0 +1,29 @@
+{
+  "screen": {
+    "as_of": "2026-11-14T22:05+00:00",
+    "total": 37,
+    "capped": true,
+    "reached": {
+      "side": "newest",
+      "whole": "2026-10-15"
+    },
+    "meaning": "waits",
+    "waits": "search by meaning waits for the Mac to be plugged in",
+    "hits": [
+      {
+        "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMC0yMCIsIkV4YW1wbGUgTWFpbCIsIiIsIkluYm94IixudWxsXQ",
+        "at": "2026-10-20T16:00+01:00",
+        "until": "2026-10-20T16:40+01:00",
+        "time_precision": "range",
+        "day": "2026-10-20",
+        "app": "Example Mail",
+        "title": "Inbox",
+        "snippet": "Your «example» booking",
+        "reason": "partial"
+      }
+    ],
+    "next": "cursor:screen:s2",
+    "next_gives": "windows",
+    "order": "newest"
+  }
+}

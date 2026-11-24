@@ -1,0 +1,259 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person K",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000401",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000401",
+      "from": "Contacts",
+      "own": false
+    },
+    {
+      "id": "email:person-k@example.com",
+      "kind": "email",
+      "network": null,
+      "words": "person-k@example.com",
+      "from": "Contacts",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 2
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 1
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 3,
+    "calls": null,
+    "line": "3 messages in the last 30 days",
+    "before": null
+  },
+  "history": {
+    "total": 3,
+    "first": "2026-09-20",
+    "kind": "facts"
+  },
+  "talk": {
+    "day": "2026-09-20",
+    "chat": "whatsapp:15550000401@s.whatsapp.net",
+    "title": "Person K",
+    "group": false,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "phone:+15550000401",
+        "name": "Person K",
+        "text": "synthetic line k1",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "phone:+919000000009",
+        "name": "You",
+        "text": "synthetic line k2",
+        "forwarded": true,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 2
+      }
+    ],
+    "folded": [],
+    "focus": "a2"
+  },
+  "where": [
+    {
+      "chat": "whatsapp:15550000401@s.whatsapp.net",
+      "title": "WhatsApp",
+      "group": false,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 1,
+      "line": "1 message",
+      "quiet": false
+    },
+    {
+      "chat": null,
+      "title": "Mail",
+      "group": false,
+      "network": "Mail",
+      "when": null,
+      "count": 1,
+      "line": "1 mail",
+      "quiet": false
+    }
+  ],
+  "suggestions_line": null,
+  "edit": {
+    "call": "Person K",
+    "full_name": null,
+    "name_from": null,
+    "record_id": null,
+    "face": false,
+    "reach": "WhatsApp and Mail",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "2 messages · 1 mail",
+    "mails": {
+      "from": 1,
+      "to": 0,
+      "newest": [
+        {
+          "family": "mail",
+          "title": "synthetic m1",
+          "from": "Person K",
+          "day": "2026-10-03"
+        }
+      ]
+    },
+    "record": null,
+    "details": null,
+    "suggestions": [],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

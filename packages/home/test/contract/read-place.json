@@ -1,0 +1,84 @@
+{
+  "what": "place",
+  "ref": "place.WyJwbGFjZSIsImV4YW1wbGUtY2FmZSJd",
+  "place": {
+    "slug": "example-cafe",
+    "name": "Example Cafe",
+    "latitude": 10.5,
+    "longitude": -20.25,
+    "radius_m": 60,
+    "also": [
+      {
+        "latitude": 10.5004,
+        "longitude": -20.2496,
+        "radius_m": 40
+      }
+    ],
+    "ids": [
+      "google:example-place-id-0001"
+    ],
+    "area": {
+      "city": "Example City",
+      "region": null,
+      "country": "Example Country"
+    },
+    "days": 2,
+    "hours": 1.5,
+    "first_ms": 1775000000000,
+    "last_ms": 1793503600000,
+    "visits_count": 2,
+    "nights": 0,
+    "here": false,
+    "part_of": {
+      "slug": "example-quarter",
+      "name": "Example Quarter"
+    },
+    "inside": [],
+    "ask_home": null,
+    "rhythm": null,
+    "visits": [
+      {
+        "unit": "stay/location:local:iphone-aa01/1793500000000",
+        "start_ms": 1793500000000,
+        "end_ms": 1793503600000,
+        "day": "2026-10-31",
+        "people": [
+          "person:person-a-1"
+        ],
+        "centre": {
+          "latitude": 10.5001,
+          "longitude": -20.2501
+        }
+      },
+      {
+        "unit": "stay/location:local:iphone-aa01/1775000000000",
+        "start_ms": 1775000000000,
+        "end_ms": 1775001800000,
+        "day": "2026-03-31",
+        "people": [],
+        "centre": {
+          "latitude": 10.4999,
+          "longitude": -20.2499
+        }
+      }
+    ],
+    "photos": [
+      {
+        "image": "0000000000000000000000000000000000000000000000000000000000000001",
+        "at_ms": 1793501000000
+      }
+    ],
+    "photos_count": 1,
+    "people": [
+      {
+        "id": "person:person-a-1",
+        "name": "Person A",
+        "days": 1,
+        "photo": {
+          "crop": "sha256:0000000000000000000000000000000000000000000000000000000000000002"
+        }
+      }
+    ]
+  },
+  "as_of": "2026-11-02T06:03+01:00"
+}

@@ -1,0 +1,16 @@
+{
+  "about": "Built once on synthetic blobs from the code that first asked chat voice-note transcripts; the family's ask keeps its prompt's bytes and its identity, and `identity` is the input hash the ledger keys a transcript by: the digest of the ask's `{audio, format}`.",
+  "identities": [
+    {
+      "audio": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "format": "ogg",
+      "identity": "sha256:6f3c2b3742efdc55467c7281ec9f41e4d202670a34ffbd5bc00be6d4307bfa24"
+    },
+    {
+      "audio": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "format": "m4a",
+      "identity": "sha256:0993010bd372eadccc26a1988cebc1e30ed628b153d6d502d31416ded71e6daf"
+    }
+  ],
+  "input": "the old request body was the prompt text alone: the input is the prompt file's bytes"
+}

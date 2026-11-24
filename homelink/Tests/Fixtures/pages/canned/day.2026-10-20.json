@@ -1,0 +1,588 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-20",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa00/1792418040000@1792449000000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "4h 28m"
+      },
+      "start_ms": 1792449000000,
+      "end_ms": 1792465080000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person A",
+          "first_row": "e6",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa00/1792418040000@1792449000000#run",
+          "kind": "run",
+          "start_ms": 1792449000000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e6",
+              "kind": "conversation",
+              "at_ms": 1792462020000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "yes, heading in soon",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550000001@s.whatsapp.net:a-2026-10-20-4570",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792465080000@1792465080000",
+      "kind": "move",
+      "episode": "e8",
+      "head": {
+        "title": "Walk 2.4 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "26m"
+      },
+      "start_ms": 1792465080000,
+      "end_ms": 1792466640000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792466640000@1792466640000",
+      "kind": "stay",
+      "episode": "e10",
+      "head": {
+        "title": "The Office",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "8h 40m"
+      },
+      "start_ms": 1792466640000,
+      "end_ms": 1792497840000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Group Alpha",
+          "first_row": "e11",
+          "at_ms": null
+        },
+        {
+          "text": "Person B",
+          "first_row": "e15",
+          "at_ms": null
+        },
+        {
+          "text": "Design review",
+          "first_row": "e16",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa00/1792466640000@1792466640000#run",
+          "kind": "run",
+          "start_ms": 1792466640000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e11",
+              "kind": "conversation",
+              "at_ms": 1792471380000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 2,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-10-20-6130",
+              "divider": null
+            },
+            {
+              "key": "e13",
+              "kind": "conversation",
+              "at_ms": 1792474260000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [
+                {
+                  "text": "thanks both",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-10-20-6610",
+              "divider": null
+            },
+            {
+              "key": "e15",
+              "kind": "call",
+              "at_ms": 1792478160000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person B",
+              "note": "",
+              "words": [
+                {
+                  "text": "Called you",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "12m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:sam.2014@example.com:iphone-aa01 call CALL-2026-10-20",
+              "divider": null
+            },
+            {
+              "key": "e16",
+              "kind": "event",
+              "at_ms": 1792492200000,
+              "end_ms": null,
+              "icon": "calendar-event",
+              "name": "Design review",
+              "note": "",
+              "words": [
+                {
+                  "text": "Google Calendar",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "30m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:google-calendar:person-a@example.com:cloud event review-2026-10-20@example.com",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792497840000@1792497840000",
+      "kind": "move",
+      "episode": "e17",
+      "head": {
+        "title": "Walk 2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "17m"
+      },
+      "start_ms": 1792497840000,
+      "end_ms": 1792498860000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792498860000@1792498860000",
+      "kind": "stay",
+      "episode": "e19",
+      "head": {
+        "title": "Near Home",
+        "line": "1.8 km away",
+        "place": "spot:37.3187,-122.009",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 8m"
+      },
+      "start_ms": 1792498860000,
+      "end_ms": 1792502940000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Voice note",
+          "first_row": "e20",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa00/1792498860000@1792498860000#run",
+          "kind": "run",
+          "start_ms": 1792498860000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e20",
+              "kind": "voice_note",
+              "at_ms": 1792501200000,
+              "end_ms": null,
+              "icon": "voice-note",
+              "name": "Voice note",
+              "note": "",
+              "words": [
+                {
+                  "text": "fake reply 0d1bb2e721c5",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "text": "38s",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:voice-notes:local:iphone-aa01 voice voice-2026-10-20",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792502940000@1792502940000",
+      "kind": "move",
+      "episode": "e21",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [],
+        "length": "25m"
+      },
+      "start_ms": 1792502940000,
+      "end_ms": 1792504440000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792504440000@1792504440000",
+      "kind": "stay",
+      "episode": "e23",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "8h 36m"
+      },
+      "start_ms": 1792504440000,
+      "end_ms": 1792535400000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person C",
+          "first_row": "e24",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa00/1792504440000@1792504440000#run",
+          "kind": "run",
+          "start_ms": 1792504440000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e24",
+              "kind": "conversation",
+              "at_ms": 1792510620000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "text": "not yet, no spoilers",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:imessage:+15550000090:iphone-aa01 msg c-2026-10-20-12670",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1792535400000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "steps",
+        "value": "1,460",
+        "words": "steps"
+      },
+      {
+        "key": "sent",
+        "value": "3",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "5",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 47040000,
+        "length": "13h 4m",
+        "spoken": "Home, 13 hours 4 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e3",
+          "e23"
+        ]
+      },
+      {
+        "key": "the-office",
+        "slug": "the-office",
+        "name": "The Office",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 31200000,
+        "length": "8h 40m",
+        "spoken": "The Office, 8 hours 40 minutes",
+        "point": {
+          "latitude": 37.322,
+          "longitude": -121.987,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e10"
+        ]
+      },
+      {
+        "key": "spot:37.3187,-122.009",
+        "slug": null,
+        "name": "Near Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4080000,
+        "length": "1h 8m",
+        "spoken": "Near Home, 1 hour 8 minutes",
+        "point": {
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e19"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "phone:+15550000001",
+        "person": "phone:+15550000001",
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 message sent",
+        "rows": [
+          "e6"
+        ]
+      },
+      {
+        "key": "phone:+15550000002",
+        "person": "phone:+15550000002",
+        "name": "Person B",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "call",
+            "value": "12m",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person B, 1 call, 12 minutes",
+        "rows": [
+          "e15"
+        ]
+      },
+      {
+        "key": "email:person-c@example.com",
+        "person": "email:person-c@example.com",
+        "name": "Person C",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 message sent",
+        "rows": [
+          "e24"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "chat": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha",
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Alpha, 1 message sent",
+        "quiet": false,
+        "rows": [
+          "e11",
+          "e13"
+        ]
+      }
+    ],
+    "unreturned": []
+  }
+}

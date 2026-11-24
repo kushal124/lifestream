@@ -1,0 +1,151 @@
+{
+  "extracts": [
+    {
+      "unit": "0000BBBB-0000-4000-8000-000000000002/2026-10-06",
+      "days": [
+        "2026-10-06"
+      ],
+      "content": {
+        "day": "2026-10-06",
+        "device": "0000BBBB-0000-4000-8000-000000000002",
+        "focus": [
+          {
+            "app": "com.example.social",
+            "end_ms": 1791285660000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T111200Z:com.example.social:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:mac-mini-aa43"
+            },
+            "start_ms": 1791285120000,
+            "stated": "both"
+          },
+          {
+            "app": "com.example.chat",
+            "end_ms": 1791286020000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T112100Z:com.example.chat:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:mac-mini-aa43"
+            },
+            "start_ms": 1791285660000,
+            "stated": "both"
+          },
+          {
+            "app": "com.apple.mobilesafari",
+            "end_ms": 1791286200000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T112700Z:com.apple.mobilesafari:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:mac-mini-aa43"
+            },
+            "start_ms": 1791286020000,
+            "stated": "both"
+          },
+          {
+            "app": "com.example.notes",
+            "end_ms": 1791286400000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T113300Z:com.example.notes:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:mac-mini-aa43"
+            },
+            "start_ms": 1791286380000,
+            "stated": "both"
+          },
+          {
+            "app": "com.example.maps",
+            "end_ms": 1791286800000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T114000Z:com.example.maps:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791286800000,
+            "stated": "start"
+          },
+          {
+            "app": "com.example.camera",
+            "end_ms": 1791302400000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T160000Z:com.example.camera:out",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791302400000,
+            "stated": "end"
+          },
+          {
+            "app": "com.example.video",
+            "end_ms": 1791331800000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261006T235800Z:com.example.video:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791331080000,
+            "stated": "both"
+          }
+        ]
+      }
+    },
+    {
+      "unit": "0000BBBB-0000-4000-8000-000000000002/2026-10-07",
+      "days": [
+        "2026-10-06"
+      ],
+      "content": {
+        "day": "2026-10-07",
+        "device": "0000BBBB-0000-4000-8000-000000000002",
+        "focus": [
+          {
+            "app": "com.example.reader",
+            "end_ms": 1791334800000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261007T010000Z:com.example.reader:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791334800000,
+            "stated": "start"
+          },
+          {
+            "app": "com.example.reader",
+            "end_ms": 1791358200000,
+            "record": {
+              "key": "0000BBBB-0000-4000-8000-000000000002:20261007T073000Z:com.example.reader:out",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791358200000,
+            "stated": "end"
+          }
+        ]
+      }
+    },
+    {
+      "unit": "0000DDDD-0000-4000-8000-000000000004/2026-10-06",
+      "days": [
+        "2026-10-06"
+      ],
+      "content": {
+        "day": "2026-10-06",
+        "device": "0000DDDD-0000-4000-8000-000000000004",
+        "focus": [
+          {
+            "app": "com.example.books",
+            "end_ms": 1791306300000,
+            "record": {
+              "key": "0000DDDD-0000-4000-8000-000000000004:20261006T170000Z:com.example.books:in",
+              "kind": "app-focus",
+              "source": "screen-time:person-a@example.com:macbook-pro-0001"
+            },
+            "start_ms": 1791306000000,
+            "stated": "both"
+          }
+        ]
+      }
+    }
+  ],
+  "day": "Day 2026-10-06 (Tuesday) in America/New_York, 04:00 to 2026-10-07 04:00 (24 h)\n8 atoms: phone 7, screen 1\n\n07:12–07:33 iPhone: com.example.social 9 min, com.example.chat 6 min, com.apple.mobilesafari 3 min, com.example.notes <1 min\n07:40 iPhone: com.example.maps (no end stated)\n09:00–09:29 Screen: Browser 30 min · 29.8 min at the Mac (account pending)\n12:00 iPhone: com.example.camera (no start stated)\n13:00–13:05 Device 0000DDDD: com.example.books 5 min\n19:58–20:10 iPhone: com.example.video 12 min\n21:00 iPhone: com.example.reader (no end stated)\n2026-10-07 03:30 iPhone: com.example.reader (no start stated)\n\nCoverage\nphone: screen-time:person-a@example.com:mac-mini-aa43 read through the day; screen-time:person-a@example.com:macbook-pro-0001 read through the day\nscreen: screen:local:macbook-pro-0001 read into the day\n"
+}

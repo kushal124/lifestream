@@ -1,0 +1,122 @@
+{
+  "day": "day",
+  "zone": "string",
+  "day_start_hour": "integer",
+  "window": {
+    "start_ms": "integer",
+    "end_ms": "integer"
+  },
+  "renderer": "string",
+  "inputs": "digest",
+  "counts": {
+    "total": "integer",
+    "per_family": {
+      "*": "integer"
+    }
+  },
+  "coverage": [
+    {
+      "family": "string",
+      "sources": [
+        {
+          "source": "string",
+          "read": "read"
+        }
+      ]
+    }
+  ],
+  "atoms": [
+    {
+      "n": "integer",
+      "family": "string",
+      "unit": "string",
+      "units": [
+        "string"
+      ],
+      "accounts?": [
+        "string"
+      ],
+      "start_ms": "integer|null",
+      "end_ms": "integer|null",
+      "local_start": "string|null",
+      "local_end": "string|null",
+      "flags": [
+        "flag"
+      ],
+      "text": "string",
+      "names?": [
+        {
+          "start": "integer",
+          "end": "integer",
+          "who": "string"
+        }
+      ],
+      "record?": {
+        "source": "string",
+        "kind": "string",
+        "key": "string"
+      },
+      "item?": "string",
+      "block?": {
+        "key": "string",
+        "title": "string",
+        "names?": [
+          {
+            "start": "integer",
+            "end": "integer",
+            "who": "string"
+          }
+        ]
+      },
+      "chat?": "string",
+      "pictures?": "integer",
+      "type?": "string",
+      "video?": {
+        "duration_ms": "integer|null"
+      },
+      "live?": "true"
+    }
+  ],
+  "facts": [
+    {
+      "id": "string",
+      "family": "string",
+      "of": "string",
+      "time_ms": "integer",
+      "start_ms": "integer",
+      "end_ms": "integer",
+      "date_only?": "true",
+      "keys": {
+        "*": "string"
+      },
+      "measures": {
+        "*": "measure"
+      },
+      "who": [
+        {
+          "handle": "string",
+          "role": "role"
+        }
+      ],
+      "from": {
+        "units": [
+          "string"
+        ],
+        "accounts?": [
+          "string"
+        ],
+        "record?": {
+          "source": "string",
+          "kind": "string",
+          "key": "string"
+        },
+        "alone?": "true",
+        "item?": "string",
+        "instrument?": "string"
+      },
+      "lines": [
+        "integer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "rq-0000000000000001",
+    "answer": "always",
+    "expect": 2
+  },
+  "status": 200,
+  "answer": {
+    "state": "allowed",
+    "version": 3,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Allowed on Mac,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

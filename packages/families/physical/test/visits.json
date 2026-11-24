@@ -1,0 +1,182 @@
+{
+ "cathedral": [
+  {
+   "start_ms": 1789495200000,
+   "end_ms": 1789534860000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.853,
+    "longitude": 2.349903
+   },
+   "from": null,
+   "to": null,
+   "how": "observed",
+   "by": "Phone",
+   "units": [
+    "stay/location:local:iphone-aa01/1789495200000"
+   ],
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1789546800000,
+   "end_ms": 1789609740000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.853,
+    "longitude": 2.3499
+   },
+   "from": null,
+   "to": null,
+   "how": "observed",
+   "by": "Phone",
+   "units": [
+    "stay/location:local:iphone-aa01/1789546800000"
+   ],
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1789611000000,
+   "end_ms": 1789628440000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.853002,
+    "longitude": 2.349895
+   },
+   "from": null,
+   "to": null,
+   "how": "observed",
+   "by": "Phone",
+   "units": [
+    "stay/location:local:iphone-aa01/1789611000000"
+   ],
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1789920000000,
+   "end_ms": 1789956000000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "id": "google:synthetic-place-r",
+    "latitude": 48.853,
+    "longitude": 2.3499
+   },
+   "from": null,
+   "to": null,
+   "how": "stated",
+   "by": "Timeline",
+   "units": [
+    "stay/google-timeline:person-a@example.com:export/visit-1789920000000"
+   ],
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1790042400000,
+   "end_ms": 1790071200000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "id": "google:synthetic-place-r",
+    "latitude": 48.853,
+    "longitude": 2.3499
+   },
+   "from": null,
+   "to": null,
+   "how": "stated",
+   "by": "Timeline",
+   "units": [
+    "stay/google-timeline:person-a@example.com:export/visit-1789920000000"
+   ],
+   "walks": [],
+   "silences": []
+  }
+ ],
+ "square": [
+  {
+   "start_ms": 1789536000000,
+   "end_ms": 1789545660000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.8532,
+    "longitude": 2.369188
+   },
+   "from": null,
+   "to": null,
+   "how": "observed",
+   "by": "Phone",
+   "units": [
+    "stay/location:local:iphone-aa01/1789536000000"
+   ],
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1789698000000,
+   "end_ms": 1789725540000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.8532,
+    "longitude": 2.3692
+   },
+   "from": null,
+   "to": null,
+   "how": "observed",
+   "by": "Phone",
+   "units": [
+    "stay/location:local:iphone-aa01/1789698000000"
+   ],
+   "open": true,
+   "walks": [],
+   "silences": []
+  },
+  {
+   "start_ms": 1789989780000,
+   "end_ms": 1789991580000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.8532,
+    "longitude": 2.3692
+   },
+   "from": null,
+   "to": null,
+   "how": "seen",
+   "by": "Photos",
+   "units": [
+    "seen/google-photos:person-a@example.com:export/2026-09-21"
+   ],
+   "walks": [],
+   "silences": []
+  }
+ ],
+ "palace": [
+  {
+   "start_ms": 1790213100000,
+   "end_ms": 1790216340000,
+   "kind": "stay",
+   "level": "place",
+   "point": {
+    "latitude": 48.8049,
+    "longitude": 2.1204
+   },
+   "from": null,
+   "to": null,
+   "how": "seen",
+   "by": "Photos",
+   "units": [
+    "seen/google-photos:person-a@example.com:export/2026-09-24"
+   ],
+   "walks": [],
+   "silences": []
+  }
+ ]
+}

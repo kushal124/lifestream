@@ -1,0 +1,1827 @@
+{
+  "sign-in": [
+    {
+      "case": "opened, the address not read yet",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": null,
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "checking",
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "add",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "before the copy",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "add",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "not ready: Funnel not allowed",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "not ready, no act: Check again",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "fix",
+        "act": null
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "check",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "a fresh Mac, no Tailscale: Tailscale is step 1, the rest waits",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "web"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "Tailscale ready after its fixes, the address not made: Turn on",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "turn-on",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "the address on after the fixes: Tailscale done, adding here",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "add",
+          "line"
+        ],
+        "lines": [
+          "addr.on"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "copied after the fixes: Tailscale done, waiting",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here",
+          "here"
+        ],
+        "shows": [
+          "tailscale",
+          "copied",
+          "waiting"
+        ],
+        "lines": [
+          "addr.on"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "the sign-in arrives after the fixes",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s1",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "done",
+          "here"
+        ],
+        "shows": [
+          "tailscale",
+          "one-line",
+          "arrived"
+        ],
+        "lines": [],
+        "signin": "s1",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    },
+    {
+      "case": "copied, the address not on yet",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "here"
+        ],
+        "shows": [
+          "copied",
+          "waiting"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "copied, the address on",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "here"
+        ],
+        "shows": [
+          "copied",
+          "waiting"
+        ],
+        "lines": [
+          "addr.on"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "copied, the copy answered fix",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": true,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "nothing arrives: back in front with nothing waiting",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": true,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "here"
+        ],
+        "shows": [
+          "copied",
+          "waiting"
+        ],
+        "lines": [
+          "addr.on",
+          "yes.hint"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "another app's sign-in waits",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s9",
+          "app": null,
+          "host": "agent.example",
+          "at_ms": 3
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "here"
+        ],
+        "shows": [
+          "copied",
+          "waiting"
+        ],
+        "lines": [
+          "addr.on"
+        ],
+        "signin": null,
+        "other": "s9",
+        "foot": []
+      }
+    },
+    {
+      "case": "the sign-in arrives after the copy",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s1",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "arrived"
+        ],
+        "lines": [],
+        "signin": "s1",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    },
+    {
+      "case": "the sign-in arrives with no copy here (another device, or reopened)",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s1",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "plain",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "arrived"
+        ],
+        "lines": [],
+        "signin": "s1",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    },
+    {
+      "case": "two of this app wait: the newest shows",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s2",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 1
+        },
+        {
+          "id": "s1",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "arrived"
+        ],
+        "lines": [],
+        "signin": "s1",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    },
+    {
+      "case": "Edit",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": null,
+        "editing": true
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s1",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "edit"
+        ],
+        "lines": [],
+        "signin": "s1",
+        "other": null,
+        "foot": [
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "a wrong number, the next of this app waits",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": "wrong",
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s2",
+          "app": "chatgpt",
+          "host": "chatgpt.com",
+          "at_ms": 1
+        }
+      ],
+      "read": {
+        "id": "s1",
+        "state": "wrong",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "arrived"
+        ],
+        "lines": [
+          "yes.wrong"
+        ],
+        "signin": "s2",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    },
+    {
+      "case": "a wrong number, none other waits",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": "wrong",
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "wrong",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "waiting"
+        ],
+        "lines": [
+          "yes.wrong"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "finishing: approved, no reader yet",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "approved",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "finishing"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "did not finish: gone after finishing",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": "finishing",
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "gone",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "waiting"
+        ],
+        "lines": [
+          "yes.unfinished"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "timed out: gone, never approved (a restart reads the same)",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "gone",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "waiting"
+        ],
+        "lines": [
+          "yes.out"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "Don't allow",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": "denied",
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "denied",
+        "reader": null
+      },
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "denied"
+        ],
+        "lines": [
+          "yes.denied"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": [
+          "start-again"
+        ]
+      }
+    },
+    {
+      "case": "connected: the yes given here or on the other device",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": "s1",
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": {
+        "id": "s1",
+        "state": "approved",
+        "reader": "p-00000001"
+      },
+      "state": {
+        "address": null,
+        "head": "done",
+        "marks": [
+          "done",
+          "done"
+        ],
+        "shows": [
+          "one-line",
+          "connected"
+        ],
+        "lines": [
+          "connected.line",
+          "done.ask"
+        ],
+        "signin": null,
+        "other": null,
+        "foot": [
+          "open",
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "reopened after a copy, nothing waiting",
+      "app": "chatgpt",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "add",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "Muse before the copy",
+      "app": "muse",
+      "dialog": {
+        "copied": false,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "waiting": [],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "message",
+          "line"
+        ],
+        "lines": [],
+        "signin": null,
+        "other": null,
+        "foot": []
+      }
+    },
+    {
+      "case": "Muse's sign-in arrives after the copy",
+      "app": "muse",
+      "dialog": {
+        "copied": true,
+        "setup": false,
+        "returned": false,
+        "shown": null,
+        "outcome": null,
+        "editing": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "waiting": [
+        {
+          "id": "s3",
+          "app": "muse",
+          "host": "agent.meta.ai",
+          "at_ms": 2
+        }
+      ],
+      "read": null,
+      "state": {
+        "address": null,
+        "head": "short",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "one-line",
+          "arrived"
+        ],
+        "lines": [],
+        "signin": "s3",
+        "other": null,
+        "foot": [
+          "pick_line",
+          "deny"
+        ]
+      }
+    }
+  ],
+  "key": [
+    {
+      "case": "Grok Bot before the key",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot, the address not ready: Make the key waits",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make-waits"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot making the key",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": true,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "making"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot, the keys reply 409: the fix shows",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": "refused",
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make-waits"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot, Tailscale ready after its fixes: Turn on, Make the key waits",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "state": {
+        "address": "turn-on",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make-waits"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot, the address on after the fixes: Tailscale done",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot, the keys reply lost",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": "unknown",
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later"
+        ],
+        "shows": [
+          "sees",
+          "line"
+        ],
+        "lines": [
+          "give.unknown"
+        ],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot made",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": "made",
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here"
+        ],
+        "shows": [
+          "sees-done",
+          "rows"
+        ],
+        "lines": [
+          "give.once"
+        ],
+        "foot": [
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot connected",
+      "app": "grok-bot",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": "made",
+        "done": true
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "done",
+        "marks": [
+          "done",
+          "done"
+        ],
+        "shows": [
+          "sees-done",
+          "one-line"
+        ],
+        "lines": [
+          "connected.line",
+          "done.ask"
+        ],
+        "foot": [
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "Grok Bot on the iPhone",
+      "app": "grok-bot",
+      "device": "phone",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here"
+        ],
+        "shows": [
+          "elsewhere"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    },
+    {
+      "case": "Instinct before the link",
+      "app": "instinct",
+      "device": "phone",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "off"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "message",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    },
+    {
+      "case": "Instinct on a fresh Mac: Tailscale is step 1",
+      "app": "instinct",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "web"
+      },
+      "state": {
+        "address": "fix",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    },
+    {
+      "case": "Instinct on the iPhone, Tailscale not ready on the Mac: words and Check again",
+      "app": "instinct",
+      "device": "phone",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": null
+      },
+      "state": {
+        "address": "check",
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "line",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    },
+    {
+      "case": "Instinct after the fixes, with the link",
+      "app": "instinct",
+      "device": "mac",
+      "dialog": {
+        "linked": true,
+        "named": null,
+        "setup": true,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "done",
+          "here",
+          "later"
+        ],
+        "shows": [
+          "tailscale",
+          "message",
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Instinct with the link",
+      "app": "instinct",
+      "device": "phone",
+      "dialog": {
+        "linked": true,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here",
+          "later"
+        ],
+        "shows": [
+          "message",
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Instinct made",
+      "app": "instinct",
+      "device": "phone",
+      "dialog": {
+        "linked": true,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": "made",
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "done",
+          "here"
+        ],
+        "shows": [
+          "message",
+          "sees-done",
+          "rows"
+        ],
+        "lines": [
+          "give.warn",
+          "give.once"
+        ],
+        "foot": [
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "Instinct connected",
+      "app": "instinct",
+      "device": "phone",
+      "dialog": {
+        "linked": true,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": "made",
+        "done": true
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "done",
+        "marks": [
+          "done",
+          "done",
+          "done"
+        ],
+        "shows": [
+          "message",
+          "sees-done",
+          "one-line"
+        ],
+        "lines": [
+          "connected.line",
+          "done.ask"
+        ],
+        "foot": [
+          "open",
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "Instinct reopened after I have the link",
+      "app": "instinct",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "message",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    },
+    {
+      "case": "Another agent, no name yet",
+      "app": "another",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here",
+          "later",
+          "later"
+        ],
+        "shows": [
+          "name",
+          "line",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make-waits"
+        ]
+      }
+    },
+    {
+      "case": "Another agent named, no Tailscale needed",
+      "app": "another",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": "Claude Code",
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "here",
+          "later"
+        ],
+        "shows": [
+          "name",
+          "sees",
+          "line"
+        ],
+        "lines": [],
+        "foot": [
+          "make"
+        ]
+      }
+    },
+    {
+      "case": "Another agent made",
+      "app": "another",
+      "device": "mac",
+      "dialog": {
+        "linked": false,
+        "named": "Claude Code",
+        "setup": false,
+        "making": false,
+        "made": "made",
+        "done": false
+      },
+      "address": {
+        "state": "fix",
+        "act": "turn-on"
+      },
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "done",
+          "done",
+          "here"
+        ],
+        "shows": [
+          "name",
+          "sees-done",
+          "rows"
+        ],
+        "lines": [
+          "give.once"
+        ],
+        "foot": [
+          "done"
+        ]
+      }
+    },
+    {
+      "case": "Another agent on the iPhone",
+      "app": "another",
+      "device": "phone",
+      "dialog": {
+        "linked": false,
+        "named": null,
+        "setup": false,
+        "making": false,
+        "made": null,
+        "done": false
+      },
+      "address": null,
+      "state": {
+        "address": null,
+        "head": "need",
+        "marks": [
+          "here"
+        ],
+        "shows": [
+          "elsewhere"
+        ],
+        "lines": [],
+        "foot": []
+      }
+    }
+  ]
+}

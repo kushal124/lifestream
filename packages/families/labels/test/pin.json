@@ -1,0 +1,15 @@
+{
+  "family": "labels",
+  "key": {
+    "code": "9",
+    "adapters": {
+      "labels/apple-contacts": "1",
+      "labels/google-contacts": "1",
+      "mail/gmail": "1",
+      "messages/imessage": "1",
+      "messages/whatsapp": "2"
+    }
+  },
+  "rows": 10,
+  "digest": "sha256:70c4e6bc235ba362b6277017b8fb1a211dec93d212c04095656f36da1e370623"
+}

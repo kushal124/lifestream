@@ -1,0 +1,36 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : "once",
+    "expect" : 1,
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-ended.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Allowed until"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794650400000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "allowed",
+      "version" : 2
+    }
+  },
+  "sent" : {
+    "answer" : "once",
+    "expect" : 1,
+    "id" : "rq-0000000000000001"
+  }
+}

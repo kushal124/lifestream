@@ -1,0 +1,16 @@
+{
+  "family": "web",
+  "key": {
+    "code": "4:1790052780000",
+    "adapters": {
+      "screen/coast": "1",
+      "screen/input": "1",
+      "screen/machine": "1",
+      "screen/screen": "1",
+      "web/chrome": "2",
+      "web/safari": "1"
+    }
+  },
+  "rows": 5,
+  "digest": "sha256:1d04be95cc85b93721f38660efa4c80aea80d8feaa6e489644515fa9bcd6fe50"
+}

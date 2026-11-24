@@ -1,0 +1,141 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "title": "Group Kappa",
+    "photo": null,
+    "line": "WhatsApp group · 1 person",
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "word": "always",
+    "quiet": true,
+    "why": {
+      "words": "You set it",
+      "since": null
+    }
+  },
+  "total": 115,
+  "writers": [
+    {
+      "id": "person:person-a",
+      "name": "Person A",
+      "named": true,
+      "photo": null,
+      "share": "75 messages"
+    }
+  ],
+  "yours": "35%",
+  "talk": {
+    "day": "2026-09-29",
+    "chat": "whatsapp:120363000000000013@g.us",
+    "title": "Group Kappa",
+    "group": true,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line 120363000000000013@g.us-me-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line 120363000000000013@g.us-me-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line 120363000000000013@g.us-me-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line 120363000000000013@g.us-me-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000013@g.us-a-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      }
+    ],
+    "folded": [],
+    "focus": "a4"
+  },
+  "counting": false
+}

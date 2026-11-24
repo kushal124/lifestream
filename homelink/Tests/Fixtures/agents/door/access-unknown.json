@@ -1,0 +1,34 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 0
+  },
+  "status": 404,
+  "answer": {
+    "code": "AGENT_UNKNOWN",
+    "message": "This agent was disconnected."
+  }
+}

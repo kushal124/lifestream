@@ -1,0 +1,48 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-23",
+  "id": "time",
+  "title": "Day and time",
+  "line": null,
+  "parts": [
+    {
+      "label": null,
+      "line": null,
+      "rows": [
+        {
+          "id": "zone",
+          "label": "Time zone",
+          "line": "Days, times and the Timeline follow this zone.",
+          "end": {
+            "value": [
+              {
+                "words": "Asia/Kolkata · GMT+5:30",
+                "kind": "words"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        },
+        {
+          "id": "day-start",
+          "label": "A day starts at",
+          "line": "Anything before this counts as the night before, so a late night stays one day.",
+          "end": {
+            "value": [
+              {
+                "time": {
+                  "at_ms": 1791968400000,
+                  "kind": "clock"
+                },
+                "kind": "time"
+              }
+            ],
+            "signal": null,
+            "kind": "value"
+          }
+        }
+      ]
+    }
+  ]
+}

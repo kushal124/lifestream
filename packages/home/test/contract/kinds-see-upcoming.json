@@ -1,0 +1,25 @@
+{
+  "family": "calendar",
+  "upcoming": true,
+  "hits": [
+    {
+      "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImU1MTAyIl0",
+      "at": "2026-11-18T07:00+00:00",
+      "day": "2026-11-18",
+      "family": "calendar",
+      "product": "google-calendar",
+      "title": "Spin class, Riverside Gym",
+      "snippet": "Spin class, «Riverside» Gym"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImU1MTQwIl0",
+      "at": "2026-12-06T09:00+00:00",
+      "day": "2026-12-06",
+      "family": "calendar",
+      "product": "google-calendar",
+      "title": "Riverside 10k",
+      "snippet": "«Riverside» 10k, start line by the boathouse"
+    }
+  ],
+  "next": null
+}

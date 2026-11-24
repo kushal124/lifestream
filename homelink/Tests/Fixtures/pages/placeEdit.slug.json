@@ -1,0 +1,84 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "slug": "cafe-0c0c0c",
+  "circle": {
+    "latitude": 48.8606,
+    "longitude": 2.3376,
+    "radius_m": 60
+  },
+  "others": [
+    {
+      "slug": "home",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "radius_m": 120
+    }
+  ],
+  "points": [
+    {
+      "latitude": 48.850124,
+      "longitude": 2.359854,
+      "count": 1
+    },
+    {
+      "latitude": 48.853004,
+      "longitude": 2.369981,
+      "count": 3
+    },
+    {
+      "latitude": 48.856598,
+      "longitude": 2.352203,
+      "count": 1
+    },
+    {
+      "latitude": 48.856599,
+      "longitude": 2.352201,
+      "count": 1
+    },
+    {
+      "latitude": 48.856601,
+      "longitude": 2.352197,
+      "count": 1
+    },
+    {
+      "latitude": 48.856602,
+      "longitude": 2.352192,
+      "count": 2
+    },
+    {
+      "latitude": 48.856604,
+      "longitude": 2.352184,
+      "count": 3
+    },
+    {
+      "latitude": 48.856604,
+      "longitude": 2.352185,
+      "count": 2
+    },
+    {
+      "latitude": 48.856605,
+      "longitude": 2.352181,
+      "count": 1
+    },
+    {
+      "latitude": 48.856605,
+      "longitude": 2.352182,
+      "count": 1
+    },
+    {
+      "latitude": 48.856685,
+      "longitude": 2.351909,
+      "count": 1
+    },
+    {
+      "latitude": 48.860582,
+      "longitude": 2.337666,
+      "count": 7
+    }
+  ],
+  "held": 0,
+  "read": true,
+  "line": null,
+  "counting": false
+}

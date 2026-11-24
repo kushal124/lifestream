@@ -1,0 +1,91 @@
+import * as folder_ai from "./ai/index.js";
+import * as folder_ai_ask from "./ai/ask/index.js";
+import * as folder_ai_claude_code from "./ai/claude-code/index.js";
+import * as folder_ai_codex from "./ai/codex/index.js";
+import * as folder_biome from "./biome/index.js";
+import * as folder_browser_chrome from "./browser/chrome/index.js";
+import * as folder_browser_safari from "./browser/safari/index.js";
+import * as folder_calendar_apple from "./calendar/apple/index.js";
+import * as folder_calendar_apple_reminders from "./calendar/apple-reminders/index.js";
+import * as folder_calendar_google from "./calendar/google/index.js";
+import * as folder_calls_apple from "./calls/apple/index.js";
+import * as folder_code_github from "./code/github/index.js";
+import * as folder_contacts_vcard from "./contacts/vcard/index.js";
+import * as folder_devices from "./devices/index.js";
+import * as folder_google_my_activity from "./google/my-activity/index.js";
+import * as folder_health_apple from "./health/apple/index.js";
+import * as folder_health_whoop from "./health/whoop/index.js";
+import * as folder_ios_app from "./ios-app/index.js";
+import * as folder_labelers_cameras from "./labelers/cameras/index.js";
+import * as folder_labelers_faces from "./labelers/faces/index.js";
+import * as folder_labelers_google_places from "./labelers/google-places/index.js";
+import * as folder_labelers_groups from "./labelers/groups/index.js";
+import * as folder_listening_spotify from "./listening/spotify/index.js";
+import * as folder_location_google_timeline from "./location/google-timeline/index.js";
+import * as folder_macos_app_audio from "./macos-app/audio/index.js";
+import * as folder_macos_app_input from "./macos-app/input/index.js";
+import * as folder_macos_app_machine from "./macos-app/machine/index.js";
+import * as folder_mail_gmail from "./mail/gmail/index.js";
+import * as folder_messages_imessage from "./messages/imessage/index.js";
+import * as folder_messages_whatsapp from "./messages/whatsapp/index.js";
+import * as folder_notes_apple from "./notes/apple/index.js";
+import * as folder_notes_granola from "./notes/granola/index.js";
+import * as folder_people from "./people/index.js";
+import * as folder_photos_apple from "./photos/apple/index.js";
+import * as folder_photos_google from "./photos/google/index.js";
+import * as folder_places from "./places/index.js";
+import * as folder_screen from "./screen/index.js";
+import * as folder_social_facebook from "./social/facebook/index.js";
+import * as folder_social_instagram from "./social/instagram/index.js";
+import * as folder_social_x from "./social/x/index.js";
+import * as folder_stations from "./stations/index.js";
+import * as folder_upload from "./upload/index.js";
+import * as folder_voice_aqua_voice from "./voice/aqua-voice/index.js";
+import * as folder_voice_wispr_flow from "./voice/wispr-flow/index.js";
+
+export const FOLDERS = [
+  { folder: "ai", module: folder_ai },
+  { folder: "ai/ask", module: folder_ai_ask },
+  { folder: "ai/claude-code", module: folder_ai_claude_code },
+  { folder: "ai/codex", module: folder_ai_codex },
+  { folder: "biome", module: folder_biome },
+  { folder: "browser/chrome", module: folder_browser_chrome },
+  { folder: "browser/safari", module: folder_browser_safari },
+  { folder: "calendar/apple", module: folder_calendar_apple },
+  { folder: "calendar/apple-reminders", module: folder_calendar_apple_reminders },
+  { folder: "calendar/google", module: folder_calendar_google },
+  { folder: "calls/apple", module: folder_calls_apple },
+  { folder: "code/github", module: folder_code_github },
+  { folder: "contacts/vcard", module: folder_contacts_vcard },
+  { folder: "devices", module: folder_devices },
+  { folder: "google/my-activity", module: folder_google_my_activity },
+  { folder: "health/apple", module: folder_health_apple },
+  { folder: "health/whoop", module: folder_health_whoop },
+  { folder: "ios-app", module: folder_ios_app },
+  { folder: "labelers/cameras", module: folder_labelers_cameras },
+  { folder: "labelers/faces", module: folder_labelers_faces },
+  { folder: "labelers/google-places", module: folder_labelers_google_places },
+  { folder: "labelers/groups", module: folder_labelers_groups },
+  { folder: "listening/spotify", module: folder_listening_spotify },
+  { folder: "location/google-timeline", module: folder_location_google_timeline },
+  { folder: "macos-app/audio", module: folder_macos_app_audio },
+  { folder: "macos-app/input", module: folder_macos_app_input },
+  { folder: "macos-app/machine", module: folder_macos_app_machine },
+  { folder: "mail/gmail", module: folder_mail_gmail },
+  { folder: "messages/imessage", module: folder_messages_imessage },
+  { folder: "messages/whatsapp", module: folder_messages_whatsapp },
+  { folder: "notes/apple", module: folder_notes_apple },
+  { folder: "notes/granola", module: folder_notes_granola },
+  { folder: "people", module: folder_people },
+  { folder: "photos/apple", module: folder_photos_apple },
+  { folder: "photos/google", module: folder_photos_google },
+  { folder: "places", module: folder_places },
+  { folder: "screen", module: folder_screen },
+  { folder: "social/facebook", module: folder_social_facebook },
+  { folder: "social/instagram", module: folder_social_instagram },
+  { folder: "social/x", module: folder_social_x },
+  { folder: "stations", module: folder_stations },
+  { folder: "upload", module: folder_upload },
+  { folder: "voice/aqua-voice", module: folder_voice_aqua_voice },
+  { folder: "voice/wispr-flow", module: folder_voice_wispr_flow },
+] as const satisfies readonly { readonly folder: string; readonly module: object }[];

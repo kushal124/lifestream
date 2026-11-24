@@ -1,0 +1,734 @@
+{
+  "chapters": [
+    {
+      "kind": "day",
+      "episode": null,
+      "start_ms": 1933090200000,
+      "end_ms": 1933180200000,
+      "rows": [
+        "gap:1933090200000",
+        "e4",
+        "e8",
+        "gap:1933111800000",
+        "e22",
+        "gap:1933115442000",
+        "e11",
+        "gap:1933119000000",
+        "e12",
+        "gap:1933122600000",
+        "e13",
+        "gap:1933144200000",
+        "e14",
+        "gap:1933170000000",
+        "e16",
+        "gap:1933174200000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1933090200000",
+          "start_ms": 1933090200000,
+          "end_ms": 1933104600000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "4h"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933111800000",
+          "start_ms": 1933111800000,
+          "end_ms": 1933115400000,
+          "played": [
+            "e21"
+          ],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [
+              {
+                "type": "text",
+                "text": "Synthetic Show",
+                "tone": "secondary"
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Synthetic Episode 12"
+                ]
+              }
+            ],
+            "count": {
+              "text": "1h"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933115442000",
+          "start_ms": 1933115442000,
+          "end_ms": 1933119000000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "59m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933119000000",
+          "start_ms": 1933119000000,
+          "end_ms": 1933122600000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "1h"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933122600000",
+          "start_ms": 1933122600000,
+          "end_ms": 1933144200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "6h"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933144200000",
+          "start_ms": 1933144200000,
+          "end_ms": 1933170000000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "7h 10m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933170000000",
+          "start_ms": 1933170000000,
+          "end_ms": 1933174200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "1h 10m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1933174200000",
+          "start_ms": 1933174200000,
+          "end_ms": 1933180200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "1h 40m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Person D",
+          "firstRowId": "e4"
+        },
+        {
+          "text": "Mac 1h",
+          "firstRowId": "e8"
+        },
+        {
+          "text": "Podcasts 23m",
+          "firstRowId": "e21"
+        },
+        {
+          "text": "Voice note",
+          "firstRowId": "e22"
+        },
+        {
+          "text": "An unknown number",
+          "firstRowId": "e12"
+        },
+        {
+          "text": "Group Beta",
+          "firstRowId": "e13"
+        },
+        {
+          "text": "Mail",
+          "firstRowId": "e14"
+        }
+      ],
+      "hours": [
+        {
+          "start_ms": 1933090200000,
+          "rows": [
+            "gap:1933090200000"
+          ],
+          "sent": 0,
+          "names": []
+        },
+        {
+          "start_ms": 1933104600000,
+          "rows": [
+            "e4"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Person D",
+              "firstRowId": "e4"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933108200000,
+          "rows": [
+            "e8"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Mac 1h",
+              "firstRowId": "e8"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933111800000,
+          "rows": [
+            "gap:1933111800000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Podcasts 23m",
+              "firstRowId": "e21"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933115400000,
+          "rows": [
+            "e22",
+            "gap:1933115442000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Voice note",
+              "firstRowId": "e22"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933119000000,
+          "rows": [
+            "e11",
+            "gap:1933119000000"
+          ],
+          "sent": 0,
+          "names": []
+        },
+        {
+          "start_ms": 1933122600000,
+          "rows": [
+            "e12",
+            "gap:1933122600000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "An unknown number",
+              "firstRowId": "e12"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933144200000,
+          "rows": [
+            "e13",
+            "gap:1933144200000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Group Beta",
+              "firstRowId": "e13"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933169400000,
+          "rows": [
+            "e14",
+            "gap:1933170000000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Mail",
+              "firstRowId": "e14"
+            }
+          ]
+        },
+        {
+          "start_ms": 1933173000000,
+          "rows": [
+            "e16",
+            "gap:1933174200000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Mail",
+              "firstRowId": "e16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e4",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person D",
+      "row": {
+        "name": "Person D",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 4
+        },
+        "quiet": true
+      },
+      "start_ms": 1933104600000,
+      "end_ms": 1933108080000,
+      "at_ms": 1933104600000,
+      "atoms": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "count": 4,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e8",
+      "kind": "sitting",
+      "family": "screen",
+      "title": "Mail 41 min, Chrome 19 min",
+      "row": {
+        "name": "Mac",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Mail 41m",
+              "Chrome 19m"
+            ]
+          },
+          {
+            "type": "titles",
+            "items": [
+              "Replying to synthetic mail in Mail"
+            ]
+          }
+        ],
+        "count": {
+          "text": "1h"
+        },
+        "quiet": false
+      },
+      "start_ms": 1933108200000,
+      "end_ms": 1933111800000,
+      "at_ms": 1933108200000,
+      "atoms": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "e10",
+      "kind": "browsing",
+      "family": "web",
+      "title": "mail.example",
+      "row": {
+        "name": "mail.example",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "17m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1933110660000,
+      "end_ms": 1933111680000,
+      "at_ms": 1933110660000,
+      "atoms": [
+        10
+      ],
+      "within": "e8"
+    },
+    {
+      "id": "e11",
+      "kind": "photos",
+      "family": "photos",
+      "title": null,
+      "row": {
+        "name": "Photo",
+        "note": "",
+        "words": [
+          {
+            "type": "tiles",
+            "photos": [
+              {
+                "item": "photo:ec7fae5939a8137c44004188a2c8a5c7b83f570dc65b8aaa15b129e3a482d194",
+                "hash": "sha256:ec7fae5939a8137c44004188a2c8a5c7b83f570dc65b8aaa15b129e3a482d194",
+                "at_ms": 1933119000000,
+                "video": false,
+                "duration_ms": null
+              }
+            ],
+            "more": 0
+          }
+        ],
+        "count": {
+          "text": "1 photo"
+        },
+        "quiet": false
+      },
+      "start_ms": 1933119000000,
+      "end_ms": null,
+      "at_ms": 1933119000000,
+      "atoms": [
+        11
+      ],
+      "count": 1
+    },
+    {
+      "id": "e12",
+      "kind": "call",
+      "family": "calls",
+      "title": "an unknown number",
+      "row": {
+        "name": "An unknown number",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Missed call",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1933122600000,
+      "end_ms": null,
+      "at_ms": 1933122600000,
+      "atoms": [
+        12
+      ]
+    },
+    {
+      "id": "e13",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Beta",
+      "row": {
+        "name": "Group Beta",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1933144200000,
+      "end_ms": null,
+      "at_ms": 1933144200000,
+      "atoms": [
+        13
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e14",
+      "kind": "mail_received",
+      "family": "mail",
+      "title": null,
+      "row": {
+        "name": "2 mails",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Synthetic News",
+              "Synthetic Shop"
+            ]
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1933170000000,
+      "end_ms": null,
+      "at_ms": 1933170000000,
+      "atoms": [
+        14,
+        15
+      ],
+      "count": 2
+    },
+    {
+      "id": "e16",
+      "kind": "mail_received",
+      "family": "mail",
+      "title": null,
+      "row": {
+        "name": "1 mail",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Person D"
+            ]
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1933174200000,
+      "end_ms": null,
+      "at_ms": 1933174200000,
+      "atoms": [
+        16
+      ],
+      "count": 1
+    },
+    {
+      "id": "e17",
+      "kind": "event",
+      "family": "calendar",
+      "title": "Synthetic errand",
+      "row": {
+        "name": "Synthetic errand",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Calendar · all day · due · in Synthetic list · flagged",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        17
+      ]
+    },
+    {
+      "id": "e18",
+      "kind": "payment",
+      "family": "money",
+      "title": "SALARY SYNTHETIC EMPLOYER",
+      "row": {
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "+1200.00 USD",
+            "tone": "secondary"
+          },
+          {
+            "type": "text",
+            "text": "SALARY SYNTHETIC EMPLOYER",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        18
+      ]
+    },
+    {
+      "id": "e19",
+      "kind": "dictation",
+      "family": "voice",
+      "title": "A dictation that states no time.",
+      "row": {
+        "name": "Dictated",
+        "note": "to Editor",
+        "words": [
+          {
+            "type": "quote",
+            "text": "A dictation that states no time."
+          }
+        ],
+        "count": {
+          "text": "1 dictation"
+        },
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        19
+      ],
+      "count": 1
+    },
+    {
+      "id": "e21",
+      "kind": "listening",
+      "family": "listening",
+      "title": "Synthetic Episode 12 by Synthetic Show in Podcasts, 23 min",
+      "row": {
+        "name": "Podcasts",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Synthetic Show"
+            ]
+          }
+        ],
+        "count": {
+          "text": "1 episode"
+        },
+        "quiet": false
+      },
+      "start_ms": 1933113600000,
+      "end_ms": 1933114980000,
+      "at_ms": 1933113600000,
+      "atoms": [
+        21
+      ]
+    },
+    {
+      "id": "e22",
+      "kind": "voice_note",
+      "family": "voice",
+      "title": null,
+      "row": {
+        "name": "Voice note",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "42s"
+        },
+        "quiet": false
+      },
+      "start_ms": 1933115400000,
+      "end_ms": 1933115442000,
+      "at_ms": 1933115400000,
+      "atoms": [
+        22
+      ]
+    }
+  ],
+  "also": [
+    "e17",
+    "e18",
+    "e19"
+  ],
+  "all_day": [
+    "e17"
+  ],
+  "untimed": {
+    "rows": [
+      "e18",
+      "e19"
+    ],
+    "names": [
+      {
+        "text": "Payment",
+        "firstRowId": "e18"
+      },
+      {
+        "text": "Dictated",
+        "firstRowId": "e19"
+      }
+    ]
+  },
+  "plan": [],
+  "headings": [
+    1,
+    2
+  ],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": null,
+    "people": 2,
+    "mac_ms": 3600000,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": 0,
+    "received": 5
+  },
+  "people": {
+    "contacts": [
+      {
+        "key": "imessage:+15550000007",
+        "title": "Person D",
+        "sent": 0,
+        "received": 4,
+        "first_ms": 1933104600000
+      }
+    ],
+    "groups": []
+  },
+  "updated": 1933180200000
+}

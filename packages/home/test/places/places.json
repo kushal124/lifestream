@@ -1,0 +1,83 @@
+{
+  "here": {
+    "end_ms": 1790866680000,
+    "latitude": 0,
+    "longitude": 0,
+    "slug": "home",
+    "start_ms": 1790862000000
+  },
+  "places": [
+    {
+      "slug": "home",
+      "name": "Synthetic House",
+      "latitude": 0,
+      "longitude": 0,
+      "radius_m": 120,
+      "also": [],
+      "ids": [],
+      "stays": 2,
+      "days": 1,
+      "hours": 4.31,
+      "longest_day_hours": 4.31,
+      "first_ms": 1790834400000,
+      "last_ms": 1790866680000,
+      "area": {
+        "city": null,
+        "country": null,
+        "region": null
+      },
+      "ask_home": null,
+      "today_hours": 0
+    },
+    {
+      "slug": "studio-3f9a2c",
+      "name": "Synthetic Studio",
+      "latitude": 0,
+      "longitude": 0.0135,
+      "radius_m": 150,
+      "also": [],
+      "ids": [
+        "google:synthetic-place-s"
+      ],
+      "stays": 1,
+      "days": 1,
+      "hours": 2.85,
+      "longest_day_hours": 2.85,
+      "first_ms": 1790845780000,
+      "last_ms": 1790856040000,
+      "area": {
+        "city": null,
+        "country": null,
+        "region": null
+      },
+      "ask_home": null,
+      "today_hours": 0
+    }
+  ],
+  "spots": [
+    {
+      "area": {
+        "city": null,
+        "country": null,
+        "region": null
+      },
+      "ask_home": null,
+      "days": 1,
+      "first_ms": 1790856560000,
+      "home_ask": null,
+      "hours": 1.35,
+      "key": "spot:0.008973,0.01349",
+      "last": null,
+      "last_ms": 1790861420000,
+      "latitude": 0.008973,
+      "longest_day_hours": 1.35,
+      "longitude": 0.01349,
+      "photos": [],
+      "photos_count": 0,
+      "stays": 1,
+      "witnessed": "You were here on Thu 1 Oct 2026 from 12:09 to 13:30.",
+      "worth": true
+    }
+  ],
+  "hidden": []
+}

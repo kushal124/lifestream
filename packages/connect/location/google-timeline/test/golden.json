@@ -1,0 +1,112 @@
+[
+  {
+    "kind": "path",
+    "key": "20260905T034500Z",
+    "content": {
+      "type": "timeline.path",
+      "content": {
+        "startTime": "2026-09-05T09:15:00.000+05:30",
+        "endTime": "2026-09-05T10:00:00.000+05:30",
+        "timelinePath": [
+          {
+            "point": "10.0000000°, 20.0000000°",
+            "time": "2026-09-05T09:16:00.000+05:30"
+          },
+          {
+            "point": "10.0100000°, 20.0200000°",
+            "time": "2026-09-05T09:39:00.000+05:30"
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1788579900000,
+      "end_ms": 1788582600000,
+      "offset_min": 330,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "trip",
+    "key": "20260905T034500Z",
+    "content": {
+      "type": "timeline.trip",
+      "content": {
+        "startTime": "2026-09-05T09:15:00.000+05:30",
+        "endTime": "2026-09-05T09:40:30.500+05:30",
+        "activity": {
+          "start": {
+            "latLng": "10.0000000°, 20.0000000°"
+          },
+          "end": {
+            "latLng": "10.0100000°, 20.0200000°"
+          },
+          "distanceMeters": 2345.5,
+          "probability": 0.5,
+          "topCandidate": {
+            "type": "IN_PASSENGER_VEHICLE",
+            "probability": 0.25
+          }
+        }
+      }
+    },
+    "time": {
+      "start_ms": 1788579900000,
+      "end_ms": 1788581430500,
+      "offset_min": 330,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "place-visit",
+    "key": "20260905T023000Z:ChIJ-synthetic-place-0001",
+    "content": {
+      "type": "timeline.visit",
+      "content": {
+        "startTime": "2026-09-05T08:00:00.000+05:30",
+        "endTime": "2026-09-05T09:15:00.000+05:30",
+        "startTimeTimezoneUtcOffsetMinutes": 330,
+        "endTimeTimezoneUtcOffsetMinutes": 330,
+        "visit": {
+          "hierarchyLevel": 0,
+          "probability": 0.85,
+          "topCandidate": {
+            "placeID": "ChIJ-synthetic-place-0001",
+            "semanticType": "HOME",
+            "probability": 0.75,
+            "placeLocation": {
+              "latLng": "10.0000000°, 20.0000000°"
+            }
+          }
+        }
+      }
+    },
+    "time": {
+      "start_ms": 1788575400000,
+      "end_ms": 1788579900000,
+      "offset_min": 330,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "place-visit",
+    "key": "20260905T041030Z",
+    "content": {
+      "type": "timeline.visit",
+      "content": {
+        "startTime": "2026-09-05T04:10:30.750Z",
+        "endTime": "2026-09-05T06:00:00.000Z",
+        "visit": {
+          "hierarchyLevel": 1,
+          "probability": 0.5,
+          "isTimelessVisit": false
+        }
+      }
+    },
+    "time": {
+      "start_ms": 1788581430750,
+      "end_ms": 1788588000000,
+      "precision": "ms"
+    }
+  }
+]

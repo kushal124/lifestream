@@ -1,0 +1,44 @@
+{
+  "asked": "count of calls with [[Person 1]], by month",
+  "matched": {
+    "person": {
+      "[[Person 1]]": [
+        "[[Person 1]] (42)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 42,
+    "valued": 42,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2019-02-09",
+    "last": "2026-11-12"
+  },
+  "counted": "counted from calls as the phone's call log states them, read to 2026-11-14",
+  "total": {
+    "n": 42,
+    "ref": "r1"
+  },
+  "columns": [
+    "month",
+    "n",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-10",
+      30,
+      "r2"
+    ],
+    [
+      "2026-11",
+      12,
+      "r3"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

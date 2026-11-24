@@ -1,0 +1,16 @@
+{
+  "grants": [
+    "fullDiskAccess"
+  ],
+  "product": "now-playing",
+  "store": {
+    "feeder": "biome-now-playing",
+    "name": "now_playing",
+    "held": "~/Library/Biome/streams/restricted/Media.NowPlaying/",
+    "account": "apple-id",
+    "engine": {
+      "kind": "biome",
+      "stream": "Media.NowPlaying"
+    }
+  }
+}

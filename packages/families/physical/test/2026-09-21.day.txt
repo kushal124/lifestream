@@ -1,0 +1,18 @@
+Day 2026-09-21 (Monday) in America/New_York, 04:00 to 2026-09-22 04:00 (24 h)
+12 atoms: physical 12
+
+04:00–08:00 At Home
+08:00–08:09 Road vehicle, Home → Office, 1.4 km
+08:09–12:31 At Office
+09:00 Check-in (moment): alertness 5/7, activity: synthetic task
+09:30 Vigilance test: 29 responses, median 280 ms, 1 lapse, 1 false start
+10:00–10:15 Walking at Office
+12:31–12:44 Walk, Office → an unnamed place 1.0 km from Office, 0.9 km
+12:44–13:46 At an unnamed place 1.0 km from Office
+13:46–13:59 Walk, an unnamed place 1.0 km from Office → Office, 0.9 km
+13:59–18:00 At Office
+18:00–18:09 Road vehicle, Office → Home, 1.4 km
+18:09–2026-09-22 04:00 At Home (continues into 22 Sep)
+
+Coverage
+physical: checkin:local:iphone-0001 read through the day; google-timeline:person-a@example.com:export not read into the day; location:local:iphone-0001 read through the day; motion:local:iphone-0001 read through the day

@@ -1,0 +1,11 @@
+{
+  "family": "mail",
+  "key": {
+    "code": "6",
+    "adapters": {
+      "mail/gmail": "1"
+    }
+  },
+  "rows": 3,
+  "digest": "sha256:4c2bf4dbb6f8be61a72aa7ba8d93a79c9f877819f5500b5585d9d4ddf8e6fecb"
+}

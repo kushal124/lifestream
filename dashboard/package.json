@@ -1,0 +1,16 @@
+{
+  "name": "lifestream-dashboard",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "sh -c '[ $# -gt 0 ] || { files=$(node ../testing/files.mts dashboard) || exit 1; [ -n \"$files\" ] || { echo \"no test files\" >&2; exit 1; }; set -- $files; }; ../tools/test-lock.sh node ../testing/run-node.mjs --import ../testing/process.mjs --test --test-concurrency=3 --test-timeout=120000 --test-reporter=../testing/slow.mjs --test-reporter-destination=stdout \"$@\"' sh",
+    "typecheck": "sh -c '../node_modules/.bin/tsc -p tsconfig.json & p1=$!; ../node_modules/.bin/tsc -p tsconfig.browser.json & p2=$!; wait $p1 && wait $p2'",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "dompurify": "3.4.18",
+    "marked": "17.0.1"
+  }
+}

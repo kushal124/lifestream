@@ -1,0 +1,108 @@
+{
+  "route": "GET /v1/agents/asks/<id>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "rq-0000000000000001",
+    "reader": "p-00000001",
+    "name": "ChatGPT",
+    "by": "agent",
+    "head": "ChatGPT asks to see everything from the past 24 hours for 1 hour",
+    "line": "asks to see everything from the past 24 hours for 1 hour",
+    "asked_line": [
+      {
+        "kind": "words",
+        "words": "Asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      },
+      {
+        "kind": "words",
+        "words": "· the ask ends"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794733200000
+        }
+      }
+    ],
+    "under_line": [
+      {
+        "kind": "words",
+        "words": "“Everything from today.” · asked"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "says_title": "ChatGPT says",
+    "wants": "everything from the past 24 hours for 1 hour",
+    "today": [
+      {
+        "text": "Today ChatGPT sees nothing."
+      }
+    ],
+    "under": null,
+    "reason": "Everything from today.",
+    "screen": "Screen shows almost everything you did.",
+    "adds": [],
+    "keeps": null,
+    "choices": [
+      {
+        "answer": "once",
+        "words": "Allow for 1 hour"
+      },
+      {
+        "answer": "always",
+        "words": "Always allow"
+      },
+      {
+        "answer": "no",
+        "words": "Don’t allow"
+      }
+    ],
+    "editable": true,
+    "default": "once",
+    "version": 0,
+    "proposed": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": {
+            "past_ms": 86400000
+          },
+          "lasts_ms": 3600000
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "at_ms": 1794646800000,
+    "until_ms": 1794733200000,
+    "state": "dropped",
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "This request is over."
+      }
+    ]
+  }
+}

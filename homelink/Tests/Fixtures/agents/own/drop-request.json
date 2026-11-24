@@ -1,0 +1,37 @@
+{
+  "route": "POST /v1/access/drop",
+  "request": {
+    "drop": "request"
+  },
+  "status": 200,
+  "answer": {
+    "words": "Dropped your request.",
+    "now": {
+      "version": 5,
+      "access": {
+        "allow": [],
+        "items": [],
+        "not": [],
+        "only": [],
+        "window": null,
+        "hide": "names",
+        "shown": []
+      },
+      "lines": [
+        "1. details hidden"
+      ],
+      "text": "Your access to this Lifestream:\nNothing yet: ask for it with `access`.\n1. details hidden\nAlso in this Lifestream, outside your access: Gmail, WHOOP.\nYour request (your Gmail for 30 minutes) was dropped.\nAsk for more, or drop a line, with `access`.",
+      "request": null,
+      "answer": {
+        "id": "rq-0000000000000001",
+        "wants": "your Gmail for 30 minutes",
+        "state": "dropped",
+        "outcome": "This request is over."
+      },
+      "outside": [
+        "Gmail",
+        "WHOOP"
+      ]
+    }
+  }
+}

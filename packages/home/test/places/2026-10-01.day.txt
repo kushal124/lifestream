@@ -1,0 +1,14 @@
+Day 2026-10-01 (Thursday) in UTC, 04:00 to 2026-10-02 04:00 (24 h)
+7 atoms: photos 0, physical 7
+
+06:00–09:00 At Synthetic House
+09:00–09:09 Road vehicle, Synthetic House → Synthetic Studio, 1.4 km
+09:09–12:00 At Synthetic Studio
+12:00–12:09 Road vehicle, Synthetic Studio → an unnamed place 1.0 km from Synthetic Studio, 0.9 km
+12:09–13:30 At an unnamed place 1.0 km from Synthetic Studio
+13:30–13:40 Road vehicle, an unnamed place 1.0 km from Synthetic Studio → Synthetic House, 1.7 km
+13:40–14:58 At Synthetic House (still there at the last fix)
+
+Coverage
+photos: no sources
+physical: location:local:iphone-fixes-aa01 read through the day

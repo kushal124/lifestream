@@ -1,0 +1,107 @@
+{
+  "about": "Type-to-filter over a row's `find` words: each find word folded for case and accents and split on every character that is not a letter or a digit; what is typed folded the same and split on spaces; each typed word split on the same characters, and every piece found: a run of digits inside some find word as the home sent it, anything else at the start of some split find word. A typed word with no piece finds nothing; nothing typed shows every row. Written by hand; the dashboard's lib/words.js found and the phone's PageFilter.shows read it case by case.",
+  "cases": [
+    {
+      "about": "each typed word, folded for case and accents, starts some find word",
+      "find": [
+        "Person A"
+      ],
+      "typed": "PÉRSON  a",
+      "shown": true
+    },
+    {
+      "about": "every typed word must be found",
+      "find": [
+        "Person A"
+      ],
+      "typed": "person b",
+      "shown": false
+    },
+    {
+      "about": "a word inside a name starts a find word",
+      "find": [
+        "Sam Example"
+      ],
+      "typed": "example",
+      "shown": true
+    },
+    {
+      "about": "letters inside a word find nothing",
+      "find": [
+        "Sam Example"
+      ],
+      "typed": "xample",
+      "shown": false
+    },
+    {
+      "about": "a run of digits is found inside a find word",
+      "find": [
+        "+1 555 000 0004",
+        "15550000004"
+      ],
+      "typed": "0000004",
+      "shown": true
+    },
+    {
+      "about": "a find word is split on punctuation, as the home splits the words it finds by",
+      "find": [
+        "Mary-Jane Person"
+      ],
+      "typed": "jane",
+      "shown": true
+    },
+    {
+      "about": "a typed word is split on punctuation and each piece starts some find word",
+      "find": [
+        "Ace",
+        "jean",
+        "luc"
+      ],
+      "typed": "Jean-Luc",
+      "shown": true
+    },
+    {
+      "about": "every piece of a typed word must be found",
+      "find": [
+        "Ace",
+        "jean",
+        "luc"
+      ],
+      "typed": "jean-paul",
+      "shown": false
+    },
+    {
+      "about": "a typed address finds the address by its pieces",
+      "find": [
+        "Person C",
+        "person-c@example.com"
+      ],
+      "typed": "person-c@example",
+      "shown": true
+    },
+    {
+      "about": "initials typed with their dots find a name written with them",
+      "find": [
+        "S.E. Person"
+      ],
+      "typed": "s.e.",
+      "shown": true
+    },
+    {
+      "about": "punctuation alone finds nothing",
+      "find": [
+        "Person C"
+      ],
+      "typed": "@",
+      "shown": false
+    },
+    {
+      "about": "nothing typed shows every row",
+      "find": [
+        "Person C"
+      ],
+      "typed": "",
+      "shown": true
+    }
+  ]
+}

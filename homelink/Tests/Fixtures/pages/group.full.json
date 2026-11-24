@@ -1,0 +1,73 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "title": "Group Friends",
+    "photo": null,
+    "line": "WhatsApp group · 2 people",
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "word": "rule",
+    "quiet": false,
+    "why": null
+  },
+  "total": 3,
+  "writers": [
+    {
+      "id": "phone:+15550000402",
+      "name": "Person L",
+      "named": true,
+      "photo": null,
+      "share": "1 message"
+    },
+    {
+      "id": "phone:+15550000408",
+      "name": "Person M",
+      "named": true,
+      "photo": null,
+      "share": "1 message"
+    }
+  ],
+  "yours": "33%",
+  "talk": {
+    "day": "2026-10-04",
+    "chat": "whatsapp:120363000000000051@g.us",
+    "title": "Group Friends",
+    "group": true,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "phone:+15550000402",
+        "name": "Person L",
+        "text": "synthetic line fr1",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "phone:+15550000408",
+        "name": "Person M",
+        "text": "synthetic line fr2",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 2
+      },
+      {
+        "who": "phone:+919000000009",
+        "name": "You",
+        "text": "synthetic line fr3",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 3
+      }
+    ],
+    "folded": [],
+    "focus": "a3"
+  },
+  "counting": false
+}

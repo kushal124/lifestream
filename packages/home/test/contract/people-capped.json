@@ -1,0 +1,41 @@
+{
+  "matches": [
+    {
+      "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDkiXQ",
+      "kind": "person",
+      "name": "You",
+      "the_user": true,
+      "handles": [
+        "+15550000009",
+        "me@example.com"
+      ],
+      "reach": {
+        "messages": [
+          52000,
+          "2019-01-01",
+          "2026-11-14"
+        ]
+      }
+    },
+    {
+      "ref": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTIwMzYzMDAwMDAwMDAwMDA0QGcudXMiXQ",
+      "kind": "group",
+      "name": "Example Group",
+      "chats": [
+        {
+          "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTIwMzYzMDAwMDAwMDAwMDA0QGcudXMiXQ",
+          "title": "Example Group",
+          "messages": 12000
+        }
+      ]
+    },
+    {
+      "ref": "person.WyJwZXJzb24iLCJwZXJzb246ZXhhbXBsZS1haXIiXQ",
+      "kind": "business",
+      "name": "Example Air"
+    }
+  ],
+  "capped": true,
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": "cursor:people:w1"
+}

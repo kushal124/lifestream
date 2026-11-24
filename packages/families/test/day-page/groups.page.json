@@ -1,0 +1,1739 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:phone-aa01/1936996200000@1936996200000",
+      "kind": "stay",
+      "episode": "e1",
+      "head": {
+        "title": "Synthetic Studio",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "12h"
+      },
+      "start_ms": 1936996200000,
+      "end_ms": 1937039400000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e2",
+          "at_ms": null
+        },
+        {
+          "text": "Person B",
+          "firstRowId": "e4",
+          "at_ms": null
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e5",
+          "at_ms": null
+        },
+        {
+          "text": "Person D",
+          "firstRowId": "e6",
+          "at_ms": null
+        },
+        {
+          "text": "Person E",
+          "firstRowId": "e8",
+          "at_ms": null
+        },
+        {
+          "text": "Person F",
+          "firstRowId": "e9",
+          "at_ms": null
+        },
+        {
+          "text": "Person G",
+          "firstRowId": "e10",
+          "at_ms": null
+        },
+        {
+          "text": "Person H",
+          "firstRowId": "e12",
+          "at_ms": null
+        },
+        {
+          "text": "Person I",
+          "firstRowId": "e13",
+          "at_ms": null
+        },
+        {
+          "text": "Person J",
+          "firstRowId": "e14",
+          "at_ms": null
+        },
+        {
+          "text": "Person K",
+          "firstRowId": "e16",
+          "at_ms": null
+        },
+        {
+          "text": "Person L",
+          "firstRowId": "e17",
+          "at_ms": null
+        },
+        {
+          "text": "Person M",
+          "firstRowId": "e18",
+          "at_ms": null
+        },
+        {
+          "text": "Person N",
+          "firstRowId": "e20",
+          "at_ms": null
+        },
+        {
+          "text": "Person O",
+          "firstRowId": "e21",
+          "at_ms": null
+        },
+        {
+          "text": "Person P",
+          "firstRowId": "e22",
+          "at_ms": null
+        },
+        {
+          "text": "Person Q",
+          "firstRowId": "e24",
+          "at_ms": null
+        },
+        {
+          "text": "Person R",
+          "firstRowId": "e25",
+          "at_ms": null
+        },
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e26",
+          "at_ms": null
+        },
+        {
+          "text": "Group Beta",
+          "firstRowId": "e27",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1936999800000",
+          "kind": "hour",
+          "start_ms": 1936999800000,
+          "title": null,
+          "line": "Person A, Person B, Person C and 6 others",
+          "count": {
+            "sent": 3
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e2",
+              "kind": "conversation",
+              "at_ms": 1936999920000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 1"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-1",
+              "divider": null
+            },
+            {
+              "key": "e4",
+              "kind": "conversation",
+              "at_ms": 1937000280000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person B",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-2",
+              "divider": null
+            },
+            {
+              "key": "e5",
+              "kind": "conversation",
+              "at_ms": 1937000640000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-3",
+              "divider": null
+            },
+            {
+              "key": "e6",
+              "kind": "conversation",
+              "at_ms": 1937001000000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person D",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 4"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-4",
+              "divider": null
+            },
+            {
+              "key": "e8",
+              "kind": "conversation",
+              "at_ms": 1937001360000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person E",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-5",
+              "divider": null
+            },
+            {
+              "key": "e9",
+              "kind": "conversation",
+              "at_ms": 1937001720000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person F",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-6",
+              "divider": null
+            },
+            {
+              "key": "e10",
+              "kind": "conversation",
+              "at_ms": 1937002080000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person G",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 7"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-7",
+              "divider": null
+            },
+            {
+              "key": "e12",
+              "kind": "conversation",
+              "at_ms": 1937002440000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person H",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-8",
+              "divider": null
+            },
+            {
+              "key": "e13",
+              "kind": "conversation",
+              "at_ms": 1937002800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person I",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-9",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937003400000",
+          "kind": "hour",
+          "start_ms": 1937003400000,
+          "title": null,
+          "line": "Person J, Person K, Person L and 6 others",
+          "count": {
+            "sent": 3
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e14",
+              "kind": "conversation",
+              "at_ms": 1937003520000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person J",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 10"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-10",
+              "divider": null
+            },
+            {
+              "key": "e16",
+              "kind": "conversation",
+              "at_ms": 1937003880000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person K",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-11",
+              "divider": null
+            },
+            {
+              "key": "e17",
+              "kind": "conversation",
+              "at_ms": 1937004240000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person L",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-12",
+              "divider": null
+            },
+            {
+              "key": "e18",
+              "kind": "conversation",
+              "at_ms": 1937004600000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person M",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 13"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-13",
+              "divider": null
+            },
+            {
+              "key": "e20",
+              "kind": "conversation",
+              "at_ms": 1937004960000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person N",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-14",
+              "divider": null
+            },
+            {
+              "key": "e21",
+              "kind": "conversation",
+              "at_ms": 1937005320000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person O",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-15",
+              "divider": null
+            },
+            {
+              "key": "e22",
+              "kind": "conversation",
+              "at_ms": 1937005680000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person P",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 16"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-16",
+              "divider": null
+            },
+            {
+              "key": "e24",
+              "kind": "conversation",
+              "at_ms": 1937006040000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person Q",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-17",
+              "divider": null
+            },
+            {
+              "key": "e25",
+              "kind": "conversation",
+              "at_ms": 1937006400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person R",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-18",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937007000000",
+          "kind": "hour",
+          "start_ms": 1937007000000,
+          "title": null,
+          "line": "Group Alpha, Group Beta, Person A and 5 others",
+          "count": {
+            "sent": 2
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e26",
+              "kind": "conversation",
+              "at_ms": 1937007120000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic message 19"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-19",
+              "divider": null
+            },
+            {
+              "key": "e27",
+              "kind": "conversation",
+              "at_ms": 1937007480000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Beta",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic message 20"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-20",
+              "divider": null
+            },
+            {
+              "key": "e28",
+              "kind": "conversation",
+              "at_ms": 1937007840000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-21",
+              "divider": null
+            },
+            {
+              "key": "e29",
+              "kind": "conversation",
+              "at_ms": 1937008200000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person B",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-22",
+              "divider": null
+            },
+            {
+              "key": "e30",
+              "kind": "conversation",
+              "at_ms": 1937008560000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-23",
+              "divider": null
+            },
+            {
+              "key": "e31",
+              "kind": "conversation",
+              "at_ms": 1937008920000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person D",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-24",
+              "divider": null
+            },
+            {
+              "key": "e32",
+              "kind": "conversation",
+              "at_ms": 1937009280000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person E",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-25",
+              "divider": null
+            },
+            {
+              "key": "e33",
+              "kind": "conversation",
+              "at_ms": 1937009640000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person F",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-26",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937017800000",
+          "kind": "hour",
+          "start_ms": 1937017800000,
+          "title": null,
+          "line": "Person G, Person H, Person I and 6 others",
+          "count": {
+            "sent": 3
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e34",
+              "kind": "conversation",
+              "at_ms": 1937017920000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person G",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-27",
+              "divider": null
+            },
+            {
+              "key": "e35",
+              "kind": "conversation",
+              "at_ms": 1937018280000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person H",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 28"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-28",
+              "divider": null
+            },
+            {
+              "key": "e37",
+              "kind": "conversation",
+              "at_ms": 1937018640000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person I",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-29",
+              "divider": null
+            },
+            {
+              "key": "e38",
+              "kind": "conversation",
+              "at_ms": 1937019000000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person J",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-30",
+              "divider": null
+            },
+            {
+              "key": "e39",
+              "kind": "conversation",
+              "at_ms": 1937019360000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person K",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 31"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-31",
+              "divider": null
+            },
+            {
+              "key": "e41",
+              "kind": "conversation",
+              "at_ms": 1937019720000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person L",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-32",
+              "divider": null
+            },
+            {
+              "key": "e42",
+              "kind": "conversation",
+              "at_ms": 1937020080000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person M",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-33",
+              "divider": null
+            },
+            {
+              "key": "e43",
+              "kind": "conversation",
+              "at_ms": 1937020440000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person N",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 34"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-34",
+              "divider": null
+            },
+            {
+              "key": "e45",
+              "kind": "conversation",
+              "at_ms": 1937020800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person O",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-35",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937021400000",
+          "kind": "hour",
+          "start_ms": 1937021400000,
+          "title": null,
+          "line": "Person P, Person Q, Person R and 6 others",
+          "count": {
+            "sent": 4
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e46",
+              "kind": "conversation",
+              "at_ms": 1937021520000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person P",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-36",
+              "divider": null
+            },
+            {
+              "key": "e47",
+              "kind": "conversation",
+              "at_ms": 1937021880000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person Q",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 37"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-37",
+              "divider": null
+            },
+            {
+              "key": "e49",
+              "kind": "conversation",
+              "at_ms": 1937022240000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person R",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-38",
+              "divider": null
+            },
+            {
+              "key": "e50",
+              "kind": "conversation",
+              "at_ms": 1937022600000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-39",
+              "divider": null
+            },
+            {
+              "key": "e51",
+              "kind": "conversation",
+              "at_ms": 1937022960000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Beta",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic message 40"
+                },
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 40"
+                }
+              ],
+              "count": {
+                "sent": 2
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-40",
+              "divider": null
+            },
+            {
+              "key": "e53",
+              "kind": "conversation",
+              "at_ms": 1937023320000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-41",
+              "divider": null
+            },
+            {
+              "key": "e54",
+              "kind": "conversation",
+              "at_ms": 1937023680000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person B",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-42",
+              "divider": null
+            },
+            {
+              "key": "e55",
+              "kind": "conversation",
+              "at_ms": 1937024040000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 43"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-43",
+              "divider": null
+            },
+            {
+              "key": "e57",
+              "kind": "conversation",
+              "at_ms": 1937024400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person D",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-44",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937025000000",
+          "kind": "hour",
+          "start_ms": 1937025000000,
+          "title": null,
+          "line": "Person E, Person F, Person G and 5 others",
+          "count": {
+            "sent": 3
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e58",
+              "kind": "conversation",
+              "at_ms": 1937025120000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person E",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-45",
+              "divider": null
+            },
+            {
+              "key": "e59",
+              "kind": "conversation",
+              "at_ms": 1937025480000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person F",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 46"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-46",
+              "divider": null
+            },
+            {
+              "key": "e61",
+              "kind": "conversation",
+              "at_ms": 1937025840000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person G",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-47",
+              "divider": null
+            },
+            {
+              "key": "e62",
+              "kind": "conversation",
+              "at_ms": 1937026200000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person H",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-48",
+              "divider": null
+            },
+            {
+              "key": "e63",
+              "kind": "conversation",
+              "at_ms": 1937026560000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person I",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 49"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-49",
+              "divider": null
+            },
+            {
+              "key": "e65",
+              "kind": "conversation",
+              "at_ms": 1937026920000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person J",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-50",
+              "divider": null
+            },
+            {
+              "key": "e66",
+              "kind": "conversation",
+              "at_ms": 1937027280000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person K",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-51",
+              "divider": null
+            },
+            {
+              "key": "e67",
+              "kind": "conversation",
+              "at_ms": 1937027640000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person L",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 52"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-52",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1936996200000@1936996200000#1937028600000",
+          "kind": "hour",
+          "start_ms": 1937028600000,
+          "title": null,
+          "line": "Person M, Person N, Person O and 5 others",
+          "count": {
+            "sent": 2
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e69",
+              "kind": "conversation",
+              "at_ms": 1937028720000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person M",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-53",
+              "divider": null
+            },
+            {
+              "key": "e70",
+              "kind": "conversation",
+              "at_ms": 1937029080000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person N",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-54",
+              "divider": null
+            },
+            {
+              "key": "e71",
+              "kind": "conversation",
+              "at_ms": 1937029440000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person O",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 55"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-55",
+              "divider": null
+            },
+            {
+              "key": "e73",
+              "kind": "conversation",
+              "at_ms": 1937029800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person P",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-56",
+              "divider": null
+            },
+            {
+              "key": "e74",
+              "kind": "conversation",
+              "at_ms": 1937030160000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person Q",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-57",
+              "divider": null
+            },
+            {
+              "key": "e75",
+              "kind": "conversation",
+              "at_ms": 1937030520000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person R",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply 58"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-58",
+              "divider": null
+            },
+            {
+              "key": "e77",
+              "kind": "conversation",
+              "at_ms": 1937030880000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-59",
+              "divider": null
+            },
+            {
+              "key": "e78",
+              "kind": "conversation",
+              "at_ms": 1937031240000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Beta",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg d-60",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1937039400000@1937039400000",
+      "kind": "move",
+      "episode": "e79",
+      "head": {
+        "title": "Cycle 3.2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "20m"
+      },
+      "start_ms": 1937039400000,
+      "end_ms": 1937040600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1937068200000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "20",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "57",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "synthetic-studio",
+        "slug": "synthetic-studio",
+        "name": "Synthetic Studio",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 43200000,
+        "length": "12h",
+        "spoken": "Synthetic Studio, 12 hours",
+        "point": {
+          "latitude": 10.1001,
+          "longitude": 20.1001
+        },
+        "radius_m": null,
+        "rows": [
+          "e1"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "person-a",
+        "person": "person-a",
+        "name": "Person A",
+        "photo": "crop-person-a",
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 message sent",
+        "rows": [
+          "e2",
+          "e28",
+          "e53"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001003@s.whatsapp.net",
+        "person": null,
+        "name": "Person C",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 message sent",
+        "rows": [
+          "e5",
+          "e30",
+          "e55"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001004@s.whatsapp.net",
+        "person": null,
+        "name": "Person D",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person D, 1 message sent",
+        "rows": [
+          "e6",
+          "e31",
+          "e57"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001006@s.whatsapp.net",
+        "person": null,
+        "name": "Person F",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person F, 1 message sent",
+        "rows": [
+          "e9",
+          "e33",
+          "e59"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001007@s.whatsapp.net",
+        "person": null,
+        "name": "Person G",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person G, 1 message sent",
+        "rows": [
+          "e10",
+          "e34",
+          "e61"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001008@s.whatsapp.net",
+        "person": null,
+        "name": "Person H",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person H, 1 message sent",
+        "rows": [
+          "e12",
+          "e35",
+          "e62"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001009@s.whatsapp.net",
+        "person": null,
+        "name": "Person I",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person I, 1 message sent",
+        "rows": [
+          "e13",
+          "e37",
+          "e63"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001010@s.whatsapp.net",
+        "person": null,
+        "name": "Person J",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person J, 1 message sent",
+        "rows": [
+          "e14",
+          "e38",
+          "e65"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001011@s.whatsapp.net",
+        "person": null,
+        "name": "Person K",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person K, 1 message sent",
+        "rows": [
+          "e16",
+          "e39",
+          "e66"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001012@s.whatsapp.net",
+        "person": null,
+        "name": "Person L",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person L, 1 message sent",
+        "rows": [
+          "e17",
+          "e41",
+          "e67"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001013@s.whatsapp.net",
+        "person": null,
+        "name": "Person M",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person M, 1 message sent",
+        "rows": [
+          "e18",
+          "e42",
+          "e69"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001014@s.whatsapp.net",
+        "person": null,
+        "name": "Person N",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person N, 1 message sent",
+        "rows": [
+          "e20",
+          "e43",
+          "e70"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001015@s.whatsapp.net",
+        "person": null,
+        "name": "Person O",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person O, 1 message sent",
+        "rows": [
+          "e21",
+          "e45",
+          "e71"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001016@s.whatsapp.net",
+        "person": null,
+        "name": "Person P",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person P, 1 message sent",
+        "rows": [
+          "e22",
+          "e46",
+          "e73"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001017@s.whatsapp.net",
+        "person": null,
+        "name": "Person Q",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person Q, 1 message sent",
+        "rows": [
+          "e24",
+          "e47",
+          "e74"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001018@s.whatsapp.net",
+        "person": null,
+        "name": "Person R",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person R, 1 message sent",
+        "rows": [
+          "e25",
+          "e49",
+          "e75"
+        ]
+      },
+      {
+        "key": "person-b",
+        "person": "person-b",
+        "name": "Person B",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "3",
+            "quiet": true
+          }
+        ],
+        "spoken": "Person B, 3 messages received",
+        "rows": [
+          "e4",
+          "e29",
+          "e54"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001005@s.whatsapp.net",
+        "person": null,
+        "name": "Person E",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "3",
+            "quiet": true
+          }
+        ],
+        "spoken": "Person E, 3 messages received",
+        "rows": [
+          "e8",
+          "e32",
+          "e58"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "chat": "whatsapp:120363000000000022@g.us",
+        "title": "Group Beta",
+        "quiet": false,
+        "rows": [
+          "e27",
+          "e51",
+          "e78"
+        ],
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "3",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Beta, 3 messages sent"
+      },
+      {
+        "chat": "whatsapp:120363000000000021@g.us",
+        "title": "Group Alpha",
+        "quiet": false,
+        "rows": [
+          "e26",
+          "e50",
+          "e77"
+        ],
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Alpha, 1 message sent"
+      }
+    ],
+    "unreturned": []
+  }
+}

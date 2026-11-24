@@ -1,0 +1,268 @@
+{
+  "where": [
+    {
+      "kind": "stay",
+      "start_ms": 1930303800000,
+      "end_ms": 1930340400000,
+      "point": {
+        "latitude": 10.0001,
+        "longitude": 20.0001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930303800000"
+      ],
+      "place": {
+        "slug": "synthetic-home",
+        "name": "Synthetic Home"
+      }
+    },
+    {
+      "kind": "move",
+      "start_ms": 1930340400000,
+      "end_ms": 1930342200000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930342200000,
+      "end_ms": 1930357680000,
+      "point": {
+        "latitude": 10.0101,
+        "longitude": 20.0101
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930342200000"
+      ],
+      "names": {
+        "point": {
+          "words": "Synthetic Office",
+          "area": {
+            "city": "Synthetic City"
+          }
+        }
+      },
+      "place": null,
+      "spot": "spot:10.0101,20.0101"
+    },
+    {
+      "kind": "move",
+      "start_ms": 1930357800000,
+      "end_ms": 1930358520000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930358520000,
+      "end_ms": 1930361100000,
+      "point": {
+        "latitude": 10.0151,
+        "longitude": 20.0151
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930358520000"
+      ],
+      "names": {
+        "point": {
+          "words": "Synthetic Cafe",
+          "area": {
+            "city": "Synthetic City"
+          }
+        }
+      },
+      "place": null
+    },
+    {
+      "kind": "gap",
+      "start_ms": 1930361100000,
+      "end_ms": 1930362600000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930362600000,
+      "end_ms": 1930365000000,
+      "point": {
+        "latitude": 10.0201,
+        "longitude": 20.0201
+      },
+      "units": [
+        "stay/google-timeline:person-a@example.com:export/visit-1"
+      ],
+      "names": {
+        "point": {
+          "words": null,
+          "area": {
+            "city": "Synthetic City"
+          }
+        }
+      },
+      "place": null,
+      "spot": "spot:10.0201,20.0201"
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930365000000,
+      "end_ms": 1930365600000,
+      "point": {
+        "latitude": 10.0301,
+        "longitude": 20.0301
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930365000000"
+      ],
+      "names": {
+        "point": null
+      },
+      "place": null
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930365600000,
+      "end_ms": 1930366800000,
+      "point": {
+        "latitude": 10.0401,
+        "longitude": 20.0401
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930365600000"
+      ],
+      "names": {
+        "point": {
+          "words": null,
+          "area": {
+            "city": "Synthetic Port Town"
+          }
+        }
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1930366800000,
+      "end_ms": 1930368000000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1930368000000,
+      "end_ms": 1930420000000,
+      "point": {
+        "latitude": 10.0001,
+        "longitude": 20.0001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1930368000000"
+      ],
+      "place": {
+        "slug": "synthetic-home",
+        "name": "Synthetic Home"
+      }
+    }
+  ],
+  "places": [
+    {
+      "slug": "synthetic-home",
+      "home": true,
+      "radius_m": 80
+    }
+  ],
+  "people": [
+    {
+      "id": "person-a",
+      "name": "Person A",
+      "photo": {
+        "crop": "crop-person-a"
+      },
+      "chats": [
+        {
+          "key": "whatsapp:15550000001@s.whatsapp.net"
+        }
+      ],
+      "handles": [
+        {
+          "id": "phone:+15550000001",
+          "kind": "phone"
+        }
+      ]
+    },
+    {
+      "id": "person-c",
+      "name": "Person C",
+      "photo": {
+        "card": "card-person-c"
+      },
+      "chats": [
+        {
+          "key": "imessage:+15550000005"
+        }
+      ],
+      "handles": [
+        {
+          "id": "phone:+15550000005",
+          "kind": "phone"
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0001"
+      },
+      "who": [
+        "+15550000001"
+      ],
+      "title": "Person A"
+    },
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0002"
+      },
+      "who": [
+        "+15550000006"
+      ],
+      "title": ""
+    },
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0003"
+      },
+      "who": [
+        "+15550000005"
+      ],
+      "title": "Person C"
+    },
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0004"
+      },
+      "who": [
+        "+15550000006"
+      ],
+      "title": ""
+    },
+    {
+      "record": {
+        "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+        "kind": "call",
+        "key": "CALL-0005"
+      },
+      "who": [
+        "+15550000001"
+      ],
+      "title": "Person A"
+    }
+  ]
+}

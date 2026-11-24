@@ -1,0 +1,49 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "name": "Old Office",
+    "line": "San Jose",
+    "since": {
+      "month": "2026-09",
+      "kind": "month"
+    }
+  },
+  "here": false,
+  "rhythm": null,
+  "stays": 2,
+  "visits": {
+    "count": 2,
+    "rows": [
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789639200000@1789639200000-1789646280000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789639200000",
+        "day": "2026-09-17",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789639200000@1789639200000-1789646280000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789466400000@1789466400000-1789473480000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789466400000",
+        "day": "2026-09-15",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789466400000@1789466400000-1789473480000",
+        "people": []
+      }
+    ]
+  },
+  "people": [],
+  "photos": {
+    "first": [],
+    "total": 0,
+    "line": null
+  },
+  "part_of": null,
+  "inside": [],
+  "ask_home": null,
+  "clashes": [],
+  "counting": false
+}

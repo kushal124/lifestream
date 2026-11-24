@@ -1,0 +1,19 @@
+{
+  "what": "refs",
+  "opened": [
+    {
+      "what": "record",
+      "ref": "record.WyJyZWNvcmQiLCJnbWFpbDptZUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtNyJd",
+      "day": "2026-10-02",
+      "family": "mail",
+      "title": "Your example receipt",
+      "text": "Total: 40.00 EUR."
+    },
+    {
+      "what": "photo",
+      "ref": "record.WyJyZWNvcmQiLCJwaG90b3M6bG9jYWw6aXBob25lLWFhMDEiLCJwaG90byIsInBoMSJd",
+      "day": "2026-10-04",
+      "image": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
+    }
+  ]
+}

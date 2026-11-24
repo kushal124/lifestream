@@ -1,0 +1,14 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": "everything"
+    },
+    "expect": 3
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Couldn’t save this access. Try again."
+  }
+}

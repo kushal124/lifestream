@@ -1,0 +1,48 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "opening": "2026-10-05",
+  "days": [
+    {
+      "day": "2026-10-04",
+      "counts": {
+        "total": 8,
+        "families": [
+          {
+            "family": "calendar",
+            "count": 0
+          },
+          {
+            "family": "messages",
+            "count": 3
+          },
+          {
+            "family": "physical",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "day": "2026-10-05",
+      "counts": {
+        "total": 6,
+        "families": [
+          {
+            "family": "calendar",
+            "count": 2
+          },
+          {
+            "family": "messages",
+            "count": 2
+          },
+          {
+            "family": "physical",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "next": null
+}

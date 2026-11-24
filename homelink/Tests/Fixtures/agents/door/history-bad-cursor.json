@@ -1,0 +1,9 @@
+{
+  "route": "GET /v1/agents/<id>/history?before=",
+  "request": null,
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "before is a cursor a history page answered"
+  }
+}

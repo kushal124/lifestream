@@ -1,0 +1,258 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-29",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "day@1793226600000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1793226600000,
+      "end_ms": 1793313000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1793226600000#run",
+          "kind": "run",
+          "start_ms": 1793226600000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e5",
+              "kind": "conversation",
+              "at_ms": 1793240100000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "yes, heading in soon",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550000001@s.whatsapp.net:a-2026-10-29-4650",
+              "divider": null
+            },
+            {
+              "key": "e7",
+              "kind": "conversation",
+              "at_ms": 1793249460000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 2,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-10-29-6210",
+              "divider": null
+            },
+            {
+              "key": "e9",
+              "kind": "conversation",
+              "at_ms": 1793252340000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [
+                {
+                  "text": "thanks both",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-10-29-6690",
+              "divider": null
+            },
+            {
+              "key": "e11",
+              "kind": "call",
+              "at_ms": 1793257200000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "You called",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "4m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:sam.2014@example.com:iphone-aa01 call CALL-2026-10-29",
+              "divider": null
+            },
+            {
+              "key": "e12",
+              "kind": "event",
+              "at_ms": 1793269800000,
+              "end_ms": null,
+              "icon": "calendar-event",
+              "name": "Design review",
+              "note": "",
+              "words": [
+                {
+                  "text": "Google Calendar",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "30m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:google-calendar:person-a@example.com:cloud event review-2026-10-29@example.com",
+              "divider": null
+            },
+            {
+              "key": "e13",
+              "kind": "conversation",
+              "at_ms": 1793288700000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "text": "not yet, no spoilers",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:imessage:+15550000090:iphone-aa01 msg c-2026-10-29-12750",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1793313000000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "steps",
+        "value": "1,460",
+        "words": "steps"
+      },
+      {
+        "key": "sent",
+        "value": "3",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "5",
+        "words": "to you"
+      }
+    ],
+    "located": false,
+    "places": [],
+    "people": [
+      {
+        "key": "phone:+15550000001",
+        "person": "phone:+15550000001",
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          },
+          {
+            "glyph": "call",
+            "value": "4m",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 message sent, 1 call, 4 minutes",
+        "rows": [
+          "e5",
+          "e11"
+        ]
+      },
+      {
+        "key": "email:person-c@example.com",
+        "person": "email:person-c@example.com",
+        "name": "Person C",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 message sent",
+        "rows": [
+          "e13"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "chat": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha",
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Alpha, 1 message sent",
+        "quiet": false,
+        "rows": [
+          "e7",
+          "e9"
+        ]
+      }
+    ],
+    "unreturned": []
+  }
+}

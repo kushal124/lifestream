@@ -1,0 +1,73 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "year": 2026,
+  "span": {
+    "first": 2026,
+    "last": 2026
+  },
+  "trips": [
+    {
+      "title": "New York City",
+      "nights": "2 nights",
+      "range": {
+        "first": "2026-09-28",
+        "last": "2026-09-29"
+      },
+      "route": [
+        "New York City"
+      ],
+      "guessed": false,
+      "days": [
+        {
+          "day": "2026-09-28",
+          "line": "New York City · Synthetic Hotel, Synthetic Home"
+        },
+        {
+          "day": "2026-09-29",
+          "line": "New York City · Synthetic Hotel"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "count": 2,
+      "words": "Nights away"
+    },
+    {
+      "count": 2,
+      "words": "Countries"
+    },
+    {
+      "count": 1,
+      "words": "City"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Paris",
+      "nights": 18,
+      "point": {
+        "latitude": 48.85341,
+        "longitude": 2.3488
+      },
+      "country": "France",
+      "base": true
+    },
+    {
+      "name": "New York City",
+      "nights": 2,
+      "point": {
+        "latitude": 40.71427,
+        "longitude": -74.00597
+      },
+      "country": "United States",
+      "base": false
+    }
+  ],
+  "base": {
+    "name": "Paris",
+    "nights": 49
+  }
+}

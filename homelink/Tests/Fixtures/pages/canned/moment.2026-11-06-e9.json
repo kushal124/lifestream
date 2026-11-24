@@ -1,0 +1,74 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-06",
+  "state": "found",
+  "moment": {
+    "key": "e9",
+    "row": "e9",
+    "kind": "conversation",
+    "icon": "message",
+    "title": "Person A",
+    "name": "Person A",
+    "near": null,
+    "start_ms": 1793931420000,
+    "end_ms": 1793931600000,
+    "untimed": null,
+    "length_ms": 180000,
+    "products": [
+      "WhatsApp"
+    ],
+    "people": [
+      {
+        "name": "Person A",
+        "person": "phone:+15550000001",
+        "chat": "whatsapp:15550000001@s.whatsapp.net",
+        "call": null
+      }
+    ],
+    "place": {
+      "name": "Home",
+      "unit": "stay/location:local:iphone-aa01/1793886840000",
+      "slug": "home-place"
+    },
+    "out": {
+      "label": "Open in WhatsApp",
+      "href": "https://wa.me/15550000001"
+    },
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-4670",
+          "at_ms": 1793931420000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-4700",
+          "at_ms": 1793931600000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "messages",
+          "unit": "2026-11-06:whatsapp:15550000001@s.whatsapp.net"
+        }
+      ],
+      "atoms": 2,
+      "start_ms": 1793931420000,
+      "end_ms": 1793931600000
+    },
+    "view": {
+      "chat": "whatsapp:15550000001@s.whatsapp.net",
+      "group": false,
+      "view": "thread"
+    }
+  }
+}

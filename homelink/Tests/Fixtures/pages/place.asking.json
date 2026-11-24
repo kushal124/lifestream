@@ -1,0 +1,46 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "name": "Synthetic Flat",
+    "line": "Paris",
+    "since": {
+      "month": "2026-09",
+      "kind": "month"
+    }
+  },
+  "here": false,
+  "rhythm": null,
+  "stays": 1,
+  "visits": {
+    "count": 1,
+    "rows": [
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790625600000@1790625600000-1790841620000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790625600000",
+        "day": "2026-09-28",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790625600000@1790625600000-1790841620000",
+        "people": []
+      }
+    ]
+  },
+  "people": [],
+  "photos": {
+    "first": [],
+    "total": 0,
+    "line": null
+  },
+  "part_of": null,
+  "inside": [],
+  "ask_home": {
+    "line": "You've slept here 3 nights",
+    "since": {
+      "day": "2026-09-28",
+      "kind": "day"
+    }
+  },
+  "clashes": [],
+  "counting": false
+}

@@ -1,0 +1,910 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "here": "home-place",
+  "frame": {
+    "north": 37.40185997692758,
+    "south": 37.29550844412504,
+    "east": -121.94697984240402,
+    "west": -122.05564639297607
+  },
+  "cities": [
+    {
+      "key": "city:San Jose",
+      "title": "San Jose",
+      "here": true,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 37.34690325814537,
+        "longitude": -122.00184624060152
+      },
+      "places": [
+        {
+          "slug": "home-place",
+          "name": "Home",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Home",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "radius_m": 120,
+          "also": [],
+          "hours": 384.33
+        },
+        {
+          "slug": "synthetic-gym-0c0c0c",
+          "name": "Synthetic Gym",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Gym",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "radius_m": 80,
+          "also": [],
+          "hours": 27.73
+        },
+        {
+          "slug": "the-office",
+          "name": "The Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "The Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.322,
+          "longitude": -122.001,
+          "radius_m": 90,
+          "also": [],
+          "hours": 23.73
+        },
+        {
+          "slug": "willow-court",
+          "name": "Willow Court",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Willow Court",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.342,
+          "longitude": -122.017,
+          "radius_m": 55,
+          "also": [
+            {
+              "latitude": 37.342,
+              "longitude": -122.01626,
+              "radius_m": 30
+            },
+            {
+              "latitude": 37.34097,
+              "longitude": -122.017,
+              "radius_m": 80
+            }
+          ],
+          "hours": 3.93
+        },
+        {
+          "slug": "old-office",
+          "name": "Old Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Old Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3275,
+          "longitude": -121.9905,
+          "radius_m": 80,
+          "also": [],
+          "hours": 3.93
+        },
+        {
+          "slug": "filler-place-8",
+          "name": "Place Bika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Bika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.34736842105263,
+          "longitude": -122.01842105263158,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-22",
+          "name": "Place Boka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Boka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.305263157894736,
+          "longitude": -122.01315789473684,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-36",
+          "name": "Place Buka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Buka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.36315789473684,
+          "longitude": -122.0078947368421,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-9",
+          "name": "Place Dika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Dika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.36578947368421,
+          "longitude": -121.98947368421052,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-23",
+          "name": "Place Doka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Doka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.32368421052632,
+          "longitude": -121.98421052631579,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-37",
+          "name": "Place Duka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Duka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.38157894736842,
+          "longitude": -121.97894736842105,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-10",
+          "name": "Place Fika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Fika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.38421052631578,
+          "longitude": -121.96052631578947,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-24",
+          "name": "Place Foka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Foka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.34210526315789,
+          "longitude": -121.95526315789473,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-11",
+          "name": "Place Gika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Gika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.30263157894736,
+          "longitude": -122.03157894736842,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-25",
+          "name": "Place Goka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Goka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.36052631578947,
+          "longitude": -122.02631578947368,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-26",
+          "name": "Place Koka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Koka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.37894736842105,
+          "longitude": -121.99736842105263,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-13",
+          "name": "Place Lika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Lika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.339473684210525,
+          "longitude": -121.97368421052632,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-27",
+          "name": "Place Loka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Loka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.397368421052626,
+          "longitude": -121.96842105263157,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-0",
+          "name": "Place Meka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Meka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3,
+          "longitude": -122.05,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-14",
+          "name": "Place Mika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Mika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.357894736842105,
+          "longitude": -122.04473684210527,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-28",
+          "name": "Place Moka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Moka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.315789473684205,
+          "longitude": -122.03947368421052,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-1",
+          "name": "Place Neka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Neka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.31842105263158,
+          "longitude": -122.02105263157894,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-15",
+          "name": "Place Nika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Nika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.37631578947368,
+          "longitude": -122.01578947368421,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-2",
+          "name": "Place Peka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Peka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.33684210526315,
+          "longitude": -121.9921052631579,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-16",
+          "name": "Place Pika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Pika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.39473684210526,
+          "longitude": -121.98684210526315,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-30",
+          "name": "Place Poka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Poka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.35263157894737,
+          "longitude": -121.98157894736842,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-3",
+          "name": "Place Reka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Reka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.35526315789473,
+          "longitude": -121.96315789473684,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-17",
+          "name": "Place Rika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Rika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.31315789473684,
+          "longitude": -121.9578947368421,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-31",
+          "name": "Place Roka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Roka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.37105263157895,
+          "longitude": -121.95263157894736,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-4",
+          "name": "Place Seka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Seka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.373684210526314,
+          "longitude": -122.03421052631579,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-18",
+          "name": "Place Sika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Sika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.33157894736842,
+          "longitude": -122.02894736842104,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-32",
+          "name": "Place Soka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Soka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.38947368421052,
+          "longitude": -122.02368421052631,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-5",
+          "name": "Place Teka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Teka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.392105263157895,
+          "longitude": -122.00526315789473,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-19",
+          "name": "Place Tika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Tika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.349999999999994,
+          "longitude": -122,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-33",
+          "name": "Place Toka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Toka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3078947368421,
+          "longitude": -121.99473684210525,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-6",
+          "name": "Place Veka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Veka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.310526315789474,
+          "longitude": -121.97631578947369,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-20",
+          "name": "Place Vika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Vika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.368421052631575,
+          "longitude": -121.97105263157894,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-34",
+          "name": "Place Voka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Voka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.32631578947368,
+          "longitude": -121.96578947368421,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-7",
+          "name": "Place Zeka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Zeka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.32894736842105,
+          "longitude": -122.04736842105262,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-21",
+          "name": "Place Zika",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Zika",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.386842105263156,
+          "longitude": -122.0421052631579,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        },
+        {
+          "slug": "filler-place-35",
+          "name": "Place Zoka",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Place Zoka",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.34473684210526,
+          "longitude": -122.03684210526316,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        }
+      ],
+      "once": [
+        {
+          "slug": "corner-bakery",
+          "name": "Corner Bakery",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Corner Bakery",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3301,
+          "longitude": -122.0142,
+          "radius_m": 80,
+          "also": [],
+          "hours": 0.63
+        }
+      ]
+    },
+    {
+      "key": "city:Salinas",
+      "title": "Salinas",
+      "here": false,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 36.6031,
+        "longitude": -121.8991
+      },
+      "places": [],
+      "once": [
+        {
+          "slug": "harbour-inn",
+          "name": "Harbour Inn",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Harbour Inn",
+            "Salinas",
+            "California",
+            "United States"
+          ],
+          "latitude": 36.6031,
+          "longitude": -121.8991,
+          "radius_m": 80,
+          "also": [],
+          "hours": 2.47
+        }
+      ]
+    }
+  ],
+  "to_name": [
+    {
+      "key": "spot:36.6002,-121.8947",
+      "latitude": 36.6002,
+      "longitude": -121.8947,
+      "line": "4 days · 3 stays",
+      "find": [
+        "Salinas",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [],
+      "photos_total": 0,
+      "ask": {
+        "line": "You've slept here 3 nights",
+        "since": {
+          "day": "2026-10-01",
+          "kind": "day"
+        }
+      },
+      "city": "Salinas"
+    }
+  ],
+  "hidden": [
+    {
+      "key": "hidden-3c3c3c",
+      "latitude": 37.3412,
+      "longitude": -122.0215,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "1 day · 399 m from Willow Court"
+    },
+    {
+      "key": "hidden-0a0b0c",
+      "latitude": 37.315,
+      "longitude": -122.03,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "842 m from Place Moka"
+    }
+  ],
+  "counting": false
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "kind": "person",
+    "key": "person-b",
+    "content": {
+      "type": "people.person",
+      "slug": "person-b",
+      "name": "Person B",
+      "handles": [
+        {
+          "kind": "email",
+          "value": "person-b@example.com",
+          "by": "agent",
+          "since": "2026-09-02T10:00:00Z"
+        },
+        {
+          "kind": "name",
+          "value": "Person B",
+          "by": "subject",
+          "since": "2026-09-01T00:00:00Z"
+        },
+        {
+          "kind": "phone",
+          "value": "+15550000002",
+          "by": "subject",
+          "since": "2026-09-03T08:30:00+05:30"
+        }
+      ],
+      "excluded": [
+        {
+          "kind": "phone",
+          "value": "+15550000009",
+          "by": "subject",
+          "since": "2026-09-02T00:00:00Z"
+        }
+      ],
+      "merged_into": null
+    },
+    "time": null
+  },
+  {
+    "kind": "person",
+    "key": "person-c",
+    "content": {
+      "type": "people.person",
+      "slug": "person-c",
+      "name": "Person C",
+      "handles": [
+        {
+          "kind": "name",
+          "value": "Person C",
+          "by": "subject",
+          "since": "2026-09-04T12:00:00.250Z"
+        }
+      ],
+      "excluded": [],
+      "merged_into": "person-b"
+    },
+    "time": null
+  }
+]

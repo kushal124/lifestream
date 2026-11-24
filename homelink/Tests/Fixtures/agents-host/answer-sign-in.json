@@ -1,0 +1,96 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "act" : "agent-answer",
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-sign-in.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Allowed on iPhone,"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794646800000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "approved",
+      "version" : null
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ"
+  }
+}

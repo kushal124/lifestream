@@ -1,0 +1,18 @@
+{
+  "day": "2026-09-19",
+  "zone": "America/New_York",
+  "day_start_hour": 4,
+  "window": {"start_ms":1789804800000,"end_ms":1789891200000},
+  "renderer": "13/3-7414146adf6d/7",
+  "inputs": "sha256:80d979c2a601bd2aad10e35fe9e8efa781e531b82a5f85c16a912d945806df31",
+  "counts": {"total":3,"per_family":{"physical":3}},
+  "coverage": [{"family":"physical","sources":[{"source":"google-timeline:person-a@example.com:export","read":"through"}]}],
+  "atoms": [
+    {"n":1,"family":"physical","unit":"stay/google-timeline:person-a@example.com:export/20260919T0000000400","units":["stay/google-timeline:person-a@example.com:export/20260919T0000000400"],"start_ms":1789804800000,"end_ms":1789822800000,"local_start":"04:00","local_end":"09:00","flags":["continues_from_previous_day"],"text":"At Home (stated by Timeline)","record":{"source":"google-timeline:person-a@example.com:export","kind":"place-visit","key":"20260919T0000000400"}},
+    {"n":2,"family":"physical","unit":"trip/google-timeline:person-a@example.com:export/20260919T0900000400","units":["trip/google-timeline:person-a@example.com:export/20260919T0900000400"],"start_ms":1789822800000,"end_ms":1789824000000,"local_start":"09:00","local_end":"09:20","flags":[],"text":"Walking (stated by Timeline), Home → Office, 1.5 km in 20 m","record":{"source":"google-timeline:person-a@example.com:export","kind":"trip","key":"20260919T0900000400"}},
+    {"n":3,"family":"physical","unit":"stay/google-timeline:person-a@example.com:export/20260919T0920000400","units":["stay/google-timeline:person-a@example.com:export/20260919T0920000400"],"start_ms":1789824000000,"end_ms":1789851600000,"local_start":"09:20","local_end":"17:00","flags":[],"text":"At Office (stated by Timeline)","record":{"source":"google-timeline:person-a@example.com:export","kind":"place-visit","key":"20260919T0920000400"}}
+  ],
+  "facts": [
+    {"id":"stays:4bef4dc8da1d2c6b5ca084ba","family":"physical","of":"stays","time_ms":1789824000000,"start_ms":1789824000000,"end_ms":1789851600000,"keys":{"place":"Office","how":"stated"},"measures":{"minutes":460},"who":[],"from":{"units":["stay/google-timeline:person-a@example.com:export/20260919T0920000400"],"accounts":["google-timeline:person-a@example.com"],"record":{"source":"google-timeline:person-a@example.com:export","kind":"place-visit","key":"20260919T0920000400"},"instrument":"Timeline"},"lines":[3]}
+  ]
+}

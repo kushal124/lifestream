@@ -1,0 +1,254 @@
+{
+  "chapters": [
+    {
+      "kind": "day",
+      "episode": null,
+      "start_ms": 1792915200000,
+      "end_ms": 1793001600000,
+      "rows": [
+        "e2",
+        "e3",
+        "e5",
+        "e6",
+        "e7",
+        "e10",
+        "e12",
+        "gap:1792999500000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1792999500000",
+          "start_ms": 1792999500000,
+          "end_ms": 1793001600000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "35m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Vitals",
+          "firstRowId": "e2"
+        },
+        {
+          "text": "Person A",
+          "firstRowId": "e3"
+        },
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e7"
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e2",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Asleep",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Asleep",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "2h 30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1792915200000,
+      "end_ms": 1792924200000,
+      "at_ms": 1792915200000,
+      "atoms": [
+        2
+      ]
+    },
+    {
+      "id": "e3",
+      "kind": "other",
+      "family": "chat",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "21h 9m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1792923360000,
+      "end_ms": 1792999500000,
+      "at_ms": 1792923360000,
+      "atoms": [
+        3,
+        4,
+        11,
+        14
+      ]
+    },
+    {
+      "id": "e5",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 64",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 64",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1792940100000,
+      "end_ms": null,
+      "at_ms": 1792940100000,
+      "atoms": [
+        5
+      ]
+    },
+    {
+      "id": "e6",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 75",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 75",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1792942800000,
+      "end_ms": null,
+      "at_ms": 1792942800000,
+      "atoms": [
+        6
+      ]
+    },
+    {
+      "id": "e7",
+      "kind": "other",
+      "family": "chat",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "12h 56m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1792943160000,
+      "end_ms": 1792989720000,
+      "at_ms": 1792943160000,
+      "atoms": [
+        7,
+        8,
+        9,
+        13
+      ]
+    },
+    {
+      "id": "e10",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 79",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 79",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1792974720000,
+      "end_ms": null,
+      "at_ms": 1792974720000,
+      "atoms": [
+        10
+      ]
+    },
+    {
+      "id": "e12",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 67",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 67",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1792979160000,
+      "end_ms": null,
+      "at_ms": 1792979160000,
+      "atoms": [
+        12
+      ]
+    }
+  ],
+  "also": [],
+  "all_day": [],
+  "untimed": {
+    "rows": [],
+    "names": []
+  },
+  "plan": [],
+  "headings": [
+    1
+  ],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": null,
+    "people": null,
+    "mac_ms": null,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": null,
+    "received": null
+  },
+  "people": {
+    "contacts": [],
+    "groups": []
+  },
+  "updated": 1793001600000
+}

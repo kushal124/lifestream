@@ -1,0 +1,44 @@
+{
+  "route": "GET /v1/access",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "version": 1,
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "lines": [
+      "1. Everything but Health and Money · all time",
+      "2. details hidden"
+    ],
+    "text": "Your access to this Lifestream:\n1. Everything but Health and Money · all time\n2. details hidden\nAlso in this Lifestream, outside your access: WHOOP.\nYour request (Health for 1 hour) waits for your person's answer.\nAsk for more, or drop a line, with `access`.",
+    "request": {
+      "id": "rq-0000000000000001",
+      "wants": "Health for 1 hour",
+      "at_ms": 1788840000000,
+      "until_ms": 1788926400000
+    },
+    "answer": null,
+    "outside": [
+      "WHOOP"
+    ]
+  }
+}

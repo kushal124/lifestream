@@ -1,0 +1,9 @@
+Day 2026-09-19 (Saturday) in America/New_York, 04:00 to 2026-09-20 04:00 (24 h)
+3 atoms: physical 3
+
+04:00–09:00 At Home (stated by Timeline) (continues from 18 Sep)
+09:00–09:20 Walking (stated by Timeline), Home → Office, 1.5 km in 20 m
+09:20–17:00 At Office (stated by Timeline)
+
+Coverage
+physical: google-timeline:person-a@example.com:export read through the day

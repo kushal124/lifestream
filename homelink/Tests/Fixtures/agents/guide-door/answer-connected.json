@@ -1,0 +1,30 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMQ",
+    "answer": 42
+  },
+  "status": 200,
+  "answer": {
+    "state": "approved",
+    "version": null,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Allowed on iPhone,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1791968400000
+        }
+      }
+    ],
+    "reader": "p-0000dddd",
+    "connected": {
+      "reader": "p-0000dddd",
+      "line": "It sees everything but Health and Money. Change it any time in Agents."
+    }
+  }
+}

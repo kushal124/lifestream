@@ -1,0 +1,21 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : "once",
+    "expect" : 0,
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-unknown.json",
+  "reply" : {
+    "refused" : {
+      "code" : "AGENT_REQUEST_GONE",
+      "message" : "This request is over."
+    }
+  },
+  "sent" : {
+    "answer" : "once",
+    "expect" : 0,
+    "id" : "rq-0000000000000001"
+  }
+}

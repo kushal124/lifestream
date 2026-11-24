@@ -1,0 +1,70 @@
+{
+  "where": [
+    {
+      "kind": "gap",
+      "start_ms": 1936981800000,
+      "end_ms": 1936996200000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1936996200000,
+      "end_ms": 1937039400000,
+      "point": {
+        "latitude": 10.1001,
+        "longitude": 20.1001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1936996200000"
+      ],
+      "place": {
+        "slug": "synthetic-studio",
+        "name": "Synthetic Studio"
+      }
+    },
+    {
+      "kind": "move",
+      "start_ms": 1937039400000,
+      "end_ms": 1937040600000,
+      "point": null,
+      "units": []
+    }
+  ],
+  "places": [
+    {
+      "slug": "synthetic-home",
+      "home": true
+    },
+    {
+      "slug": "synthetic-studio"
+    }
+  ],
+  "people": [
+    {
+      "id": "person-a",
+      "name": "Person A",
+      "photo": {
+        "crop": "crop-person-a"
+      },
+      "chats": [
+        {
+          "key": "whatsapp:15550001001@s.whatsapp.net"
+        }
+      ],
+      "handles": []
+    },
+    {
+      "id": "person-b",
+      "name": "Person B",
+      "photo": null,
+      "chats": [
+        {
+          "key": "whatsapp:15550001002@s.whatsapp.net"
+        }
+      ],
+      "handles": []
+    }
+  ],
+  "calls": []
+}

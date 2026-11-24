@@ -1,0 +1,14 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": "everything"
+    },
+    "reason": "Everything.‮"
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "reason is plain text: it holds a mark that turns the direction of the text (U+202E), which would show your words as something else"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "asks": [
+    {
+      "unit": "chatgpt:user-synthetic-aa01:export/00000000-0000-4000-8000-0000000000a1/2026-09-14",
+      "item": "sha256:be7360c79cdbbe4ccbe52c5694e9ed48aea4b28d92302110b891169c1da39c2b",
+      "prompt": "ai-reply",
+      "model": "gpt-6-luna",
+      "input_hash": "sha256:d50463862703a1036edbad3ef93bf7516180fe02890615530efdc0c4295fab10",
+      "key": "sha256:48114a2161e9395dc060637fd420a0554389d804ed46127f95b7bb17fe856bcc"
+    },
+    {
+      "unit": "claude:00000000-0000-4000-8000-0000000000c1:cloud/00000000-0000-4000-8000-0000000000c1/2026-09-14",
+      "item": "sha256:a78f34050911ab70a2c35e57b869457cb651b0639317e414998c61c78041a69f",
+      "prompt": "ai-turn",
+      "model": "gpt-6-luna",
+      "input_hash": "sha256:91af3595034b930fb2436d2e6432b36737ce109cf949fc5cba7059d83a9c6130",
+      "key": "sha256:7157b397f518aec8c7c3d146056848c69b8ce4da4735335e9d3c6448c71699e5"
+    },
+    {
+      "unit": "chatgpt:user-synthetic-aa01:export/00000000-0000-4000-8000-0000000000a1/2026-09-14",
+      "item": "sha256:2bdf203665091082f475318eedcd027f47b0de996afa3740711fcd92b4ea24d6",
+      "prompt": "ai-turn",
+      "model": "gpt-6-luna",
+      "input_hash": "sha256:fd7c9b7405bc48d938ceeb49a85c7bdd9acb5294ff84de2cf909c3575cff9b7b",
+      "key": "sha256:8c4ee4e27ebac9b10660fd3301f00e32b7ebe9ee41312bbdf9cb521446dde085"
+    },
+    {
+      "unit": "claude:00000000-0000-4000-8000-0000000000c1:cloud/00000000-0000-4000-8000-0000000000c1/2026-09-14",
+      "item": "sha256:fd22d955bcef5483c8e2d641e3169f2d41da95d7dcd3a16efb4cc93174055b20",
+      "prompt": "ai-reply",
+      "model": "gpt-6-luna",
+      "input_hash": "sha256:ffdc35cfb12bdb1266c9fbcb072913074350d3131655ba61ba27c8ebe9c07faa",
+      "key": "sha256:9a29414325f5dbcf13008d1bf940bdd3061f6db42b645988574aa854164c1758"
+    },
+    {
+      "unit": "claude:00000000-0000-4000-8000-0000000000c1:cloud/00000000-0000-4000-8000-0000000000c1/2026-09-14",
+      "item": "sha256:31d3e92d19d8c279b0a11effe3cac778eac2440deb4a1f774ddc777d4da03a32",
+      "prompt": "ai-turn",
+      "model": "gpt-6-luna",
+      "input_hash": "sha256:5e676c3a48d4bad7d62cfcca8061a81dbb6ae70c55b2702c613a8ab1a5adb99a",
+      "key": "sha256:b9262c4d02221185999dc4e97dc248c0691338e23e11d28df9981795cf1e6917"
+    }
+  ],
+  "items": [
+    {
+      "item": "sha256:2bdf203665091082f475318eedcd027f47b0de996afa3740711fcd92b4ea24d6",
+      "prompt": "ai-turn"
+    },
+    {
+      "item": "sha256:31d3e92d19d8c279b0a11effe3cac778eac2440deb4a1f774ddc777d4da03a32",
+      "prompt": "ai-turn"
+    },
+    {
+      "item": "sha256:a78f34050911ab70a2c35e57b869457cb651b0639317e414998c61c78041a69f",
+      "prompt": "ai-turn"
+    },
+    {
+      "item": "sha256:be7360c79cdbbe4ccbe52c5694e9ed48aea4b28d92302110b891169c1da39c2b",
+      "prompt": "ai-reply"
+    },
+    {
+      "item": "sha256:fd22d955bcef5483c8e2d641e3169f2d41da95d7dcd3a16efb4cc93174055b20",
+      "prompt": "ai-reply"
+    }
+  ]
+}

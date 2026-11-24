@@ -1,0 +1,11 @@
+{
+  "route": "POST /v1/agents/address",
+  "request": {
+    "on": "yes"
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "an address is turned on: on is true"
+  }
+}

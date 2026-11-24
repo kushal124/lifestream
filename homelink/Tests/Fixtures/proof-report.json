@@ -1,0 +1,3027 @@
+{
+  "at_ms": 1793179800000,
+  "day": "2026-10-28",
+  "needs": [
+    {
+      "id": "folder:example-broken",
+      "state": "needs-you",
+      "reason": null,
+      "words": "A connector didn't load",
+      "since_ms": 1793179200000,
+      "next_ms": null,
+      "acts": [],
+      "detail": null,
+      "line": "example-broken: index.ts exports no connector",
+      "connector": null,
+      "streams": null,
+      "copy": null,
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    }
+  ],
+  "disk": {
+    "free_bytes": 400000000000,
+    "max_bundle_bytes": 68719476736
+  },
+  "paused": [],
+  "home": {
+    "name": "Lifestream",
+    "health": {
+      "state": "ok",
+      "reason": null,
+      "words": "Running on MacBook Pro",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [],
+      "detail": null
+    },
+    "settings": {
+      "zone": "UTC",
+      "day_start_hour": 4,
+      "helpers": 4,
+      "helpers_resolved": 4,
+      "model_cap": 8,
+      "model_cap_default": 8,
+      "port": 4680,
+      "lan_port": 4682
+    }
+  },
+  "devices": [
+    {
+      "unit": "macbook-pro-0001",
+      "kind": "mac",
+      "name": "MacBook Pro",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "contact_ms": 1793179680000,
+      "grants": {
+        "fullDiskAccess": "on"
+      },
+      "found": [
+        "example-store"
+      ],
+      "pass": "p-0c0c0c0c",
+      "replaced": [],
+      "retired": false,
+      "streams": []
+    }
+  ],
+  "extension": {
+    "name": "Chrome extension",
+    "health": {
+      "state": "ok",
+      "reason": null,
+      "words": "Running in Chrome",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [],
+      "detail": null
+    },
+    "placed": false,
+    "present": true,
+    "browsers": [
+      "Chrome"
+    ]
+  },
+  "connectors": [
+    {
+      "id": "example-bank",
+      "type": {
+        "key": "money",
+        "name": "Money",
+        "icon": "money"
+      },
+      "icon": "money",
+      "name": "Example Bank",
+      "product": "example-bank",
+      "noun": [
+        "transaction",
+        "transactions"
+      ],
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every transaction in your statements, with its closing balance.",
+      "gives": "Every transaction in your statements, with its closing balance.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Last transaction 28 Sep",
+      "lead": null,
+      "line_parts": {
+        "words": "Last transaction",
+        "time": {
+          "kind": "day",
+          "day": "2026-09-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793179800000,
+        "words": "Checked 28 Sep",
+        "last_ms": 1793179800000,
+        "last": "09:30"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-bank:00001234:export",
+          "name": "Example Bank",
+          "road": "upload",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 2,
+          "newest_ms": 1793179800000,
+          "oldest_ms": 1793179800000,
+          "store": null,
+          "line": "2 transactions · last 28 Sep"
+        }
+      ],
+      "account": {
+        "name": "Account",
+        "line": "Statements since 1 Mar 2019",
+        "copy": null
+      },
+      "export": {
+        "import": "example-bank",
+        "name": "Example Bank statement",
+        "icon": "money",
+        "opens": false,
+        "line": "A statement you download from Example Bank"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": true,
+              "act": null,
+              "words": "Imported 28 Sep",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "The zip you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "since",
+          "kind": "date",
+          "label": "Statements since",
+          "about": null,
+          "value": "2019-03-01",
+          "words": "1 Mar 2019",
+          "from": "person",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "date",
+          "where": null
+        },
+        {
+          "key": "nickname",
+          "kind": "text",
+          "label": "Account name",
+          "about": null,
+          "value": null,
+          "words": "Not set yet",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "text",
+          "where": null,
+          "placeholder": "Everyday account"
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-chat",
+      "type": {
+        "key": "messages",
+        "name": "Messages and calls",
+        "icon": "message"
+      },
+      "icon": "message",
+      "name": "Example Chat",
+      "product": "example-chat",
+      "noun": [
+        "message",
+        "messages"
+      ],
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every message in your chats, with who sent it.",
+      "gives": "Every message in your chats, with who sent it.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Last message 28 Sep",
+      "lead": null,
+      "line_parts": {
+        "words": "Last message",
+        "time": {
+          "kind": "at",
+          "at_ms": 1793179800000
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793179800000,
+        "words": "Checked 28 Sep",
+        "last_ms": 1793179800000,
+        "last": "09:30"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-chat:person-z@example.com:export",
+          "name": "Example Chat",
+          "road": "upload",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 2,
+          "newest_ms": 1793179800000,
+          "oldest_ms": 1793179800000,
+          "store": null,
+          "line": "2 messages · last 28 Sep"
+        }
+      ],
+      "account": null,
+      "export": {
+        "import": "example-chat",
+        "name": "Example Chat",
+        "icon": "message",
+        "opens": false,
+        "line": "Example Chat sends a download you ask for"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": true,
+              "act": null,
+              "words": "Imported 28 Sep",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "The zip you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "llm.photos",
+          "kind": "choice",
+          "label": "Photo descriptions",
+          "about": "A model describes the photos in your chats, so they read as text in your days and in search.",
+          "value": "default",
+          "words": "Fake model · This computer",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Fake model"
+            },
+            {
+              "value": "codex:gpt-6-luna",
+              "words": "GPT-6 Luna",
+              "note": "ChatGPT isn't set up on this Mac yet"
+            },
+            {
+              "value": "claude:claude-haiku-5-5",
+              "words": "Claude Haiku 5.5",
+              "note": "Claude isn't set up on this Mac yet"
+            },
+            {
+              "value": "openrouter:google/gemini-3.8-flash",
+              "words": "Gemini 3.8 Flash",
+              "note": "Add the key for OpenRouter"
+            },
+            {
+              "value": "fake:fake-model",
+              "words": "Fake model",
+              "note": "Stays on this computer"
+            }
+          ],
+          "route": "fake:fake-model",
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.voice",
+          "kind": "choice",
+          "label": "Voice note transcripts",
+          "about": "A model transcribes your voice notes.",
+          "value": "default",
+          "words": "Fake model · This computer",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Fake model"
+            },
+            {
+              "value": "openrouter:google/gemini-3.8-flash",
+              "words": "Gemini 3.8 Flash",
+              "note": "Add the key for OpenRouter"
+            },
+            {
+              "value": "openrouter-voice:elevenlabs/scribe-v2",
+              "words": "Scribe v2",
+              "note": "Add the key for OpenRouter"
+            },
+            {
+              "value": "fake:fake-model",
+              "words": "Fake model",
+              "note": "Stays on this computer"
+            }
+          ],
+          "route": "fake:fake-model",
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.range",
+          "kind": "choice",
+          "label": "Read back to",
+          "about": null,
+          "value": null,
+          "words": "28 Sept 2026",
+          "from": "unset",
+          "default": null,
+          "steps": [
+            {
+              "value": "2026-10-28",
+              "words": "New only",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2026-09-28",
+              "words": "Last 30 days",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2025-10-28",
+              "words": "Last year",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "all",
+              "words": "All time",
+              "note": "Nothing to read"
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.photos",
+          "kind": "choice",
+          "label": "Photo descriptions: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.voice",
+          "kind": "choice",
+          "label": "Voice note transcripts: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": {
+        "rows": [
+          {
+            "member": "llm.photos",
+            "shape": "done",
+            "line": "Up to date",
+            "privacy": null
+          },
+          {
+            "member": "llm.voice",
+            "shape": "done",
+            "line": "Up to date",
+            "privacy": null
+          },
+          {
+            "member": "llm.range",
+            "shape": null,
+            "line": null,
+            "privacy": null
+          }
+        ]
+      },
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-log",
+      "type": {
+        "key": "notes",
+        "name": "Notes and voice",
+        "icon": "note"
+      },
+      "icon": "recording",
+      "name": "Example Log",
+      "product": "example-log",
+      "noun": [
+        "entry",
+        "entries"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Every entry of your log, with its time.",
+      "gives": "Every entry of your log, with its time.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Last entry 28 Sep",
+      "lead": null,
+      "line_parts": {
+        "words": "Last entry",
+        "time": {
+          "kind": "at",
+          "at_ms": 1793179800000
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": null,
+        "words": "Not checked yet",
+        "last_ms": 1793179800000,
+        "last": "09:30"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-log:local:macbook-pro-0001",
+          "name": "Example Log",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 2,
+          "newest_ms": 1793179800000,
+          "oldest_ms": 1793179800000,
+          "store": null,
+          "line": "2 entries · last 28 Sep"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "where": "Example Log’s servers, from your Mac, every 15 minutes. Nothing leaves your Mac but the request.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "file",
+          "kind": "path",
+          "label": "Log file",
+          "about": null,
+          "value": "/Users/person-a/Library/Logs/example-log.ndjson",
+          "words": "example-log.ndjson",
+          "from": "person",
+          "default": null,
+          "steps": null,
+          "panel": "settings",
+          "control": "path",
+          "where": {
+            "unit": "macbook-pro-0001",
+            "name": "macbook-pro-0001"
+          }
+        },
+        {
+          "key": "zone",
+          "kind": "zone",
+          "label": "The log's clock",
+          "about": null,
+          "value": null,
+          "words": "Lifestream’s time zone",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "settings",
+          "control": "zone",
+          "where": null
+        },
+        {
+          "key": "lines",
+          "kind": "number",
+          "label": "Entries a fetch reads",
+          "about": null,
+          "value": 500,
+          "words": "500",
+          "from": "declaration",
+          "default": 500,
+          "min": 1,
+          "max": 5000,
+          "steps": null,
+          "panel": "settings",
+          "control": "stepper",
+          "where": null
+        },
+        {
+          "key": "blank",
+          "kind": "toggle",
+          "label": "Keep blank entries",
+          "about": null,
+          "value": false,
+          "words": "Off",
+          "from": "declaration",
+          "default": false,
+          "steps": null,
+          "panel": "settings",
+          "control": "toggle",
+          "where": null
+        },
+        {
+          "key": "levels",
+          "kind": "list",
+          "label": "Levels",
+          "about": null,
+          "value": [],
+          "words": "Every level",
+          "from": "declaration",
+          "default": [],
+          "steps": null,
+          "panel": "settings",
+          "control": "list",
+          "where": null,
+          "add": "Add a level"
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-log"
+        },
+        "blocked": null,
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-store",
+      "type": {
+        "key": "notes",
+        "name": "Notes and voice",
+        "icon": "note"
+      },
+      "icon": "note",
+      "name": "Example Store",
+      "product": "example-store",
+      "noun": [
+        "note",
+        "notes"
+      ],
+      "starter": false,
+      "roads": [
+        "mac"
+      ],
+      "shown": "stream",
+      "records": "Every note's title and text, as the app keeps them.",
+      "gives": "Every note's title and text, as the app keeps them.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Last note 28 Sep",
+      "lead": null,
+      "line_parts": {
+        "words": "Last note",
+        "time": {
+          "kind": "at",
+          "at_ms": 1793179800000
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793179800000,
+        "words": "Checked 28 Sep",
+        "last_ms": 1793179800000,
+        "last": "09:30"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-store:local:macbook-pro-0001",
+          "name": "Example Store",
+          "road": "mac",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 2,
+          "newest_ms": 1793179800000,
+          "oldest_ms": 1793179800000,
+          "store": null,
+          "line": "2 notes · last 28 Sep"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": true,
+              "act": null,
+              "words": "Example Store is on your Mac",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "What Example Store keeps on your Mac. Nothing leaves it.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the notes the app already keeps.",
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-oauth",
+      "type": {
+        "key": "notes",
+        "name": "Notes and voice",
+        "icon": "note"
+      },
+      "icon": "note",
+      "name": "Example OAuth",
+      "product": "example-oauth",
+      "noun": [
+        "note",
+        "notes"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Every note's title and text.",
+      "gives": "Every note's title and text.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "signin",
+            "label": "Sign in",
+            "of": "example-oauth"
+          }
+        ],
+        "detail": null,
+        "words": "Sign in to Example OAuth"
+      },
+      "line": "Sign in to Example OAuth",
+      "lead": null,
+      "line_parts": {
+        "words": "Sign in to Example OAuth",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [
+        {
+          "id": "example-oauth:person-a@example.com:cloud",
+          "name": "Example OAuth",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 2,
+          "newest_ms": 1793179800000,
+          "oldest_ms": 1793179800000,
+          "store": null,
+          "line": "2 notes · last 28 Sep"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "sign-in",
+              "met": false,
+              "act": {
+                "do": "signin",
+                "label": "Sign in",
+                "of": "example-oauth"
+              },
+              "words": "Sign in to Example OAuth",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Example OAuth’s servers, from your Mac, every 5 minutes. Nothing leaves your Mac but the request.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "account",
+          "kind": "email",
+          "label": "Example email",
+          "about": null,
+          "value": null,
+          "words": "Not set yet",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "email",
+          "where": null
+        },
+        {
+          "key": "token",
+          "kind": "secret",
+          "label": "Example sign-in",
+          "about": null,
+          "value": "example-oauth.signin",
+          "words": "",
+          "from": "declaration",
+          "default": "example-oauth.signin",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "example-oauth.signin",
+          "held": false
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        },
+        {
+          "key": "pace",
+          "kind": "duration",
+          "label": "Catch up every",
+          "about": null,
+          "value": "1m",
+          "words": "Every minute",
+          "from": "declaration",
+          "default": "1m",
+          "steps": [
+            {
+              "value": "30s",
+              "words": "Every 30 sec",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 min",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 min",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 min",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 min",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 min",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the notes already in your account, a batch at a time.",
+      "routes": [
+        {
+          "id": "example-oauth",
+          "acquirer": "example-oauth",
+          "way": "client",
+          "label": "Sign in with Example",
+          "steps": [],
+          "note": null,
+          "fields": [],
+          "sets": [
+            "account",
+            "token"
+          ],
+          "client": {
+            "id": "example",
+            "name": "Example",
+            "held": false,
+            "before": [
+              "In Example, open Settings, then Developers, and make an OAuth client.",
+              "Copy its client id and secret here."
+            ]
+          }
+        }
+      ],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-site",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Site",
+      "product": "example-site",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "chrome"
+      ],
+      "shown": "stream",
+      "records": "Your Example Site items.",
+      "gives": "Your Example Site items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-site:person-a@example.com:browser",
+          "name": "Example Site",
+          "road": "chrome",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "chrome",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-site"
+        },
+        "blocked": {
+          "reason": "chrome",
+          "words": "Open Chrome",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": "https://site.example.com",
+      "origins": [
+        "https://site.example.com",
+        "https://login.example.com",
+        "https://api.example.com"
+      ],
+      "browser": null,
+      "signed_in": true,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": true,
+      "checking": false,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Site in your own Chrome, where you’re signed in.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-feed",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Feed",
+      "product": "example-feed",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example Feed items.",
+      "gives": "Your Example Feed items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-feed:local",
+          "name": "Example Feed",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-feed"
+        },
+        "blocked": {
+          "reason": "paused",
+          "words": "Paused",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Feed’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-api",
+      "type": null,
+      "icon": "recording",
+      "name": "Example API",
+      "product": "example-api",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example API items.",
+      "gives": "Your Example API items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-api:local",
+          "name": "Example API",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-api"
+        },
+        "blocked": {
+          "reason": "offline",
+          "words": "Waiting for internet",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example API’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-files",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Files",
+      "product": "example-files",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example Files items.",
+      "gives": "Your Example Files items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-files:local",
+          "name": "Example Files",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-files"
+        },
+        "blocked": {
+          "reason": "disk",
+          "words": "Lifestream's disk is full",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Files’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-notes",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Notes",
+      "product": "example-notes",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example Notes items.",
+      "gives": "Your Example Notes items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-notes:local",
+          "name": "Example Notes",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-notes"
+        },
+        "blocked": {
+          "reason": "vault",
+          "words": "Unlock Lifestream first",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Notes’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-sync",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Sync",
+      "product": "example-sync",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example Sync items.",
+      "gives": "Your Example Sync items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-sync:local",
+          "name": "Example Sync",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-sync"
+        },
+        "blocked": {
+          "reason": "running",
+          "words": "Refreshing",
+          "until_ms": null
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Sync’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-wait",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Wait",
+      "product": "example-wait",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your Example Wait items.",
+      "gives": "Your Example Wait items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-wait:local",
+          "name": "Example Wait",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": null
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-wait"
+        },
+        "blocked": {
+          "reason": "held",
+          "words": "Example Wait asked to wait until 14:20",
+          "until_ms": 1793197200000
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Example Wait’s servers, from your Mac. Nothing leaves your Mac but the request.",
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "example-mac",
+      "type": null,
+      "icon": "recording",
+      "name": "Example Mac",
+      "product": "example-mac",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "mac"
+      ],
+      "shown": "stream",
+      "records": "Your Example Mac items.",
+      "gives": "Your Example Mac items.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "line": "12 items today",
+      "lead": null,
+      "line_parts": {
+        "words": "12 items today",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 12,
+        "week": [
+          3,
+          0,
+          5,
+          1,
+          0,
+          2,
+          12
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1793179680000,
+        "last": "09:28"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "example-mac:local:macbook-pro-0001",
+          "name": "Example Mac",
+          "road": "mac",
+          "unit": "macbook-pro-0001",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "Checked 09:28",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "held": 12,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1790587800000,
+          "line": "12 items · last 08:30",
+          "store": "asked"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": true,
+          "requirements": []
+        }
+      ],
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Refresh rate",
+          "about": null,
+          "value": "15m",
+          "words": "Every 15 minutes",
+          "from": "declaration",
+          "default": "15m",
+          "steps": [
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "example-mac"
+        },
+        "blocked": {
+          "reason": "device",
+          "words": "Open Lifestream on MacBook Pro",
+          "until_ms": null
+        },
+        "asked": [
+          {
+            "unit": "macbook-pro-0001",
+            "name": "MacBook Pro"
+          }
+        ]
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "where": "Your Mac, as you use it. Nothing leaves it.",
+      "joins": null,
+      "callout": []
+    }
+  ],
+  "setup": null,
+  "off": [],
+  "imports": [],
+  "products": "sha256:a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+  "adding": {
+    "prompt": "Lifestream runs on this Mac. Run ~/.local/bin/lifestream help connectors and follow it to add a connector for ___; type each lifestream command it names as ~/.local/bin/lifestream.",
+    "blank": "___"
+  },
+  "rows": [
+    {
+      "ids": [
+        "example-bank"
+      ],
+      "joined": false,
+      "name": "Example Bank",
+      "icon": "money",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Last transaction",
+      "time": {
+        "kind": "day",
+        "day": "2026-09-28"
+      },
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "act": null,
+      "find": [
+        "Example Bank",
+        "Money",
+        "Every transaction in your statements, with its closing balance."
+      ]
+    },
+    {
+      "ids": [
+        "example-chat"
+      ],
+      "joined": false,
+      "name": "Example Chat",
+      "icon": "message",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Last message",
+      "time": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "act": null,
+      "find": [
+        "Example Chat",
+        "Messages and calls",
+        "Every message in your chats, with who sent it."
+      ]
+    },
+    {
+      "ids": [
+        "example-log"
+      ],
+      "joined": false,
+      "name": "Example Log",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Last entry",
+      "time": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "act": null,
+      "find": [
+        "Example Log",
+        "Notes and voice",
+        "Every entry of your log, with its time."
+      ]
+    },
+    {
+      "ids": [
+        "example-store"
+      ],
+      "joined": false,
+      "name": "Example Store",
+      "icon": "note",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Last note",
+      "time": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179800000
+      },
+      "act": null,
+      "find": [
+        "Example Store",
+        "Notes and voice",
+        "Every note's title and text, as the app keeps them."
+      ]
+    },
+    {
+      "ids": [
+        "example-oauth"
+      ],
+      "joined": false,
+      "name": "Example OAuth",
+      "icon": "note",
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "words": "Sign in to Example OAuth",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "signin",
+            "label": "Sign in",
+            "of": "example-oauth"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Every note's title and text.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Example OAuth",
+        "Notes and voice",
+        "Every note's title and text."
+      ]
+    },
+    {
+      "ids": [
+        "example-site"
+      ],
+      "joined": false,
+      "name": "Example Site",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Site",
+        "Your Example Site items."
+      ]
+    },
+    {
+      "ids": [
+        "example-feed"
+      ],
+      "joined": false,
+      "name": "Example Feed",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Feed",
+        "Your Example Feed items."
+      ]
+    },
+    {
+      "ids": [
+        "example-api"
+      ],
+      "joined": false,
+      "name": "Example API",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example API",
+        "Your Example API items."
+      ]
+    },
+    {
+      "ids": [
+        "example-files"
+      ],
+      "joined": false,
+      "name": "Example Files",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Files",
+        "Your Example Files items."
+      ]
+    },
+    {
+      "ids": [
+        "example-notes"
+      ],
+      "joined": false,
+      "name": "Example Notes",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Notes",
+        "Your Example Notes items."
+      ]
+    },
+    {
+      "ids": [
+        "example-sync"
+      ],
+      "joined": false,
+      "name": "Example Sync",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Sync",
+        "Your Example Sync items."
+      ]
+    },
+    {
+      "ids": [
+        "example-wait"
+      ],
+      "joined": false,
+      "name": "Example Wait",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Wait",
+        "Your Example Wait items."
+      ]
+    },
+    {
+      "ids": [
+        "example-mac"
+      ],
+      "joined": false,
+      "name": "Example Mac",
+      "icon": "recording",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "12 items today",
+      "time": null,
+      "more": [],
+      "last": {
+        "kind": "at",
+        "at_ms": 1793179680000
+      },
+      "act": null,
+      "find": [
+        "Example Mac",
+        "Your Example Mac items."
+      ]
+    }
+  ],
+  "badge": {
+    "needs": 1,
+    "asks": 0
+  }
+}

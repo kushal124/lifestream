@@ -1,0 +1,20 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMw",
+    "answer": 42
+  },
+  "status": 200,
+  "answer": {
+    "state": "wrong",
+    "version": null,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Wrong number, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

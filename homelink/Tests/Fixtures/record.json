@@ -1,0 +1,52 @@
+{
+  "position": "1:1791968400000",
+  "source": "voice-notes:local:iphone-aa01",
+  "kind": "voice",
+  "key": "note-held",
+  "head": {
+    "version": "sha256:770f30b9d1d01834de770d550c77f7449cb4c6625a7b05957256c36ad58e30d3",
+    "stated_ms": 1791968400000,
+    "since_ms": 1791968400000,
+    "start_ms": 1791968400000,
+    "end_ms": null,
+    "precision": "ms"
+  },
+  "version": {
+    "id": "sha256:770f30b9d1d01834de770d550c77f7449cb4c6625a7b05957256c36ad58e30d3",
+    "content": {
+      "content": {
+        "payload": {
+          "blob": {
+            "hash": "sha256:409c76f18d7a4f377480cd88b29584c92eccef04a322377a0caf66265a9eb807",
+            "type": "audio/mp4"
+          },
+          "duration_seconds": 21,
+          "ended_at": "2026-10-14T09:00:21.000Z",
+          "location": null,
+          "started_at": "2026-10-14T09:00:00.000Z"
+        }
+      },
+      "type": "voice.note"
+    },
+    "start_ms": 1791968400000,
+    "end_ms": null,
+    "offset_min": null,
+    "precision": "ms"
+  },
+  "blobs": [
+    "sha256:409c76f18d7a4f377480cd88b29584c92eccef04a322377a0caf66265a9eb807"
+  ],
+  "open": null,
+  "transcribed": {
+    "by": "Fake model",
+    "at_ms": 1791968400000,
+    "state": "done",
+    "line": "Fake model · 14 Oct",
+    "ask": {
+      "family": "voice",
+      "item": "voice:409c76f18d7a4f377480cd88b29584c92eccef04a322377a0caf66265a9eb807",
+      "prompt": "voice-transcript"
+    },
+    "choose": []
+  }
+}

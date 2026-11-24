@@ -1,0 +1,114 @@
+"""Create synthetic practical-recall fixture and frozen answer key; no live data."""
+import json
+import re
+from pathlib import Path
+root = Path(__file__).parent
+phases = [
+    dict(phase='article', seconds=66, mode='article', marker='PRACTICALARTICLE101', lines=[
+        'PRACTICALARTICLE101', 'Synthetic engineering bulletin',
+        'Project Alpha will replace the copper filter with a ceramic filter.',
+        'The trial begins on 2031-04-17 and lasts 12 days.',
+        'Success means fewer than 3 rejected samples per batch.',
+        'The review room is Lab 7.']),
+    dict(phase='receipt', seconds=66, mode='receipt', marker='PRACTICALRECEIPT202', lines=[
+        'PRACTICALRECEIPT202', 'Synthetic purchase receipt',
+        'Reference RCPT-0O10-O001', 'Item calibration kit',
+        'Subtotal 82.00 credits', 'Service fee 7.40 credits',
+        'Total 89.40 credits', 'Payment state SETTLED']),
+    dict(phase='document-before', seconds=54, mode='document', marker='PRACTICALDOC301', lines=[
+        'PRACTICALDOC301', 'Synthetic configuration document',
+        'Revision BEFORE', 'Storage quota 2400 MB',
+        'Retry limit 6', 'Retention period 28 days',
+        'Change request CFG-31']),
+    dict(phase='document-after', seconds=54, mode='document', marker='PRACTICALDOC302', lines=[
+        'PRACTICALDOC302', 'Synthetic configuration document',
+        'Revision AFTER', 'Storage quota 3600 MB',
+        'Retry limit 6', 'Retention period 28 days',
+        'Change request CFG-31']),
+    dict(phase='notification', seconds=6, mode='notification', marker='PRACTICALNOTICE707', lines=[
+        'PRACTICALNOTICE707', 'Synthetic notice',
+        'Build review moved to 18:45.', 'Bring report REV-0O7.']),
+    dict(phase='canvas', seconds=54, mode='canvas', marker='PRACTICALCANVAS808', lines=[
+        'PRACTICALCANVAS808', 'Synthetic instrument panel',
+        'Tank pressure 17.6 bar', 'Valve status CLOSED',
+        'Calibration key GAUGE-0O8', 'Next inspection in 9 hours'])]
+assert sum(p['seconds'] for p in phases) == 300
+manifest = dict(version=2, scenarios={})
+for phase in phases:
+    words = re.findall(r'[^\W_]+', ' '.join(phase['lines']))
+    manifest['scenarios'][phase['phase']] = dict(marker=phase['marker'], visibleLines=phase['lines'],
+        scenarioContentTokens=sorted(set(w.lower() for w in words)), expectedTokenOccurrences=words,
+        requiredNumericIdentifierOccurrences=[w for w in words if any(c.isdigit() for c in w)],
+        expectedPhrases=phase['lines'])
+questions = [
+    dict(id='article-change', question='Which filter material replaces which material?',
+         relevantPhases=['article'], answer={'from':'copper','to':'ceramic'}),
+    dict(id='article-schedule', question='When does the trial begin and how many days does it last?',
+         relevantPhases=['article'], answer={'date':'2031-04-17','days':12}),
+    dict(id='article-success', question='What is the maximum acceptable rejection condition per batch?',
+         relevantPhases=['article'], answer={'condition':'fewer than 3 rejected samples per batch'}),
+    dict(id='receipt-reference', question='What is the exact receipt reference, preserving zero versus letter O?',
+         relevantPhases=['receipt'], answer={'reference':'RCPT-0O10-O001'}),
+    dict(id='receipt-total', question='What is the total paid and payment state?',
+         relevantPhases=['receipt'], answer={'total':'89.40','unit':'credits','state':'SETTLED'}),
+    dict(id='document-change', question='What storage quota changed, from what value to what value?',
+         relevantPhases=['document-before','document-after'], answer={'beforeMB':2400,'afterMB':3600}),
+    dict(id='document-unchanged', question='Which retry limit and retention period remained unchanged?',
+         relevantPhases=['document-before','document-after'], answer={'retryLimit':6,'retentionDays':28}),
+    dict(id='brief-notice', question='What time did the build review move to, and which exact report should be brought?',
+         relevantPhases=['notification'], answer={'time':'18:45','report':'REV-0O7'}),
+    dict(id='canvas-state', question='What pressure and valve state were shown on the instrument panel?',
+         relevantPhases=['canvas'], answer={'pressure':'17.6','unit':'bar','valve':'CLOSED'}),
+    dict(id='canvas-key', question='What is the exact calibration key and time until next inspection?',
+         relevantPhases=['canvas'], answer={'key':'GAUGE-0O8','hours':9})]
+requirements = {
+    'article-change': [('article', ['copper filter', 'ceramic filter'])],
+    'article-schedule': [('article', ['2031-04-17', '12 days'])],
+    'article-success': [('article', ['fewer than 3 rejected samples per batch'])],
+    'receipt-reference': [('receipt', ['RCPT-0O10-O001'])],
+    'receipt-total': [('receipt', ['89.40 credits', 'SETTLED'])],
+    'document-change': [('document-before', ['Storage quota 2400 MB']), ('document-after', ['Storage quota 3600 MB'])],
+    'document-unchanged': [('document-before', ['Retry limit 6', 'Retention period 28 days']), ('document-after', ['Retry limit 6', 'Retention period 28 days'])],
+    'brief-notice': [('notification', ['18:45', 'REV-0O7'])],
+    'canvas-state': [('canvas', ['17.6 bar', 'CLOSED'])],
+    'canvas-key': [('canvas', ['GAUGE-0O8', '9 hours'])]
+}
+questions = [dict(id=q['id'], question=q['question'], evidence=[dict(phase=phase, answers=answers)
+    for phase, answers in requirements[q['id']]]) for q in questions]
+answer_key = dict(version=1, fixture='practical-recall', questions=questions, scoring={
+    'method':'Each evidence requirement needs all literal answers within the same eligible observation of its phase. Every requirement is needed for question success; missing phases or samples are misses.',
+    'identifierPolicy':'Exact case-sensitive spelling and punctuation; never equate digit 0 with letter O.',
+    'numericPolicy':'Literal numeric spelling and stated units; separate before and after requirements must both pass.',
+    'prosePolicy':'Declared literal evidence strings are matched; this is retrieval-evidence coverage, not a model comprehension or paraphrase evaluation.',
+    'noClaim':'Question truth is predeclared. No model run, retrieval success, or combined AX/OCR score is implied.'})
+page = '''<!doctype html><html lang="en"><meta charset="utf-8"><title>Synthetic practical recall lab</title>
+<style>
+body{margin:0;background:#edf2f5;color:#182a38;font:24px/1.45 system-ui}header{background:white;padding:16px 32px;font-weight:650}main{position:relative;margin:24px 32px;width:1120px;height:570px;overflow:hidden;background:white;border:2px solid #7b91a1;box-sizing:border-box}main p{margin:12px 28px}main p:first-child{font:700 28px/1.4 monospace;margin-top:24px}main.receipt,main.document{font:26px/1.35 monospace}main.notification{background:#fff8e7;border:5px solid #9b651b;font-size:30px}canvas{width:1116px;height:566px}button{font:17px system-ui;padding:8px 12px}footer{position:fixed;bottom:0;left:0;right:0;background:white;border-top:2px solid #7b91a1;padding:10px 24px;font:15px system-ui;display:flex;gap:12px;align-items:center;flex-wrap:wrap}#window{font:14px monospace;width:610px;padding:7px}#events-panel{position:fixed;z-index:5;right:15px;bottom:110px;background:white;border:2px solid #7b91a1;padding:16px}textarea{display:block;width:750px}#ready{position:absolute;top:200px;left:40px;font:700 30px monospace;animation:ready-motion 4s linear infinite alternate}@keyframes ready-motion{from{transform:translateX(0)}to{transform:translateX(280px)}}
+</style>
+<header>Synthetic practical recall lab</header><main id="scene"><div id="ready">PRACTICALREADY501</div></main>
+<footer><button id="start">Start five-minute sequence</button><button id="cancel" disabled>Cancel</button><span id="status">Neutral preflight. Thirty-second lead-in.</span><label>Scheduled window JSON <input id="window" readonly value="null"></label><button id="show-events" disabled>Show actual events</button></footer>
+<section id="events-panel" hidden><label>Actual event JSON<textarea id="events" readonly rows="10">[]</textarea></label><label>Run result JSON<textarea id="outcome" readonly rows="3">null</textarea></label></section>
+<script>
+const phases=PHASES;const el=id=>document.getElementById(id);let running=false,generation=0,timers=[];
+function neutral(){el('scene').className='';el('scene').innerHTML='<div id="ready">PRACTICALREADY501</div>';}
+function render(phase){
+ const scene=el('scene');scene.replaceChildren();scene.className=phase.mode;
+ if(phase.mode==='canvas'){
+  const canvas=document.createElement('canvas');canvas.width=2232;canvas.height=1132;scene.append(canvas);
+  const ctx=canvas.getContext('2d');ctx.scale(2,2);ctx.fillStyle='white';ctx.fillRect(0,0,1116,566);ctx.fillStyle='#182a38';ctx.font='28px monospace';phase.lines.forEach((line,i)=>ctx.fillText(line,35,64+i*78));
+ }else{for(const line of phase.lines){const p=document.createElement('p');p.textContent=line;scene.append(p);}}
+}
+function stop(reason){if(!running)return;running=false;generation++;timers.forEach(clearTimeout);timers=[];el('start').disabled=false;el('cancel').disabled=true;el('show-events').disabled=false;el('status').textContent=reason;el('outcome').value=JSON.stringify({status:reason,finishedAt:Date.now()/1000});}
+el('cancel').onclick=()=>stop('cancelled');document.addEventListener('visibilitychange',()=>{if(document.hidden)stop('page-hidden');});
+el('show-events').onclick=()=>{if(!running)el('events-panel').hidden=!el('events-panel').hidden;};
+el('start').onclick=()=>{
+ if(running)return;neutral();running=true;const token=++generation;el('start').disabled=true;el('cancel').disabled=false;el('show-events').disabled=true;el('events-panel').hidden=true;
+ const start=Date.now()/1000+30;el('window').value=JSON.stringify({start,end:start+300});el('events').value='[]';el('outcome').value=JSON.stringify({status:'running',leadInSeconds:30});el('status').textContent='Armed. Neutral marker remains until the scheduled start.';
+ let offset=0;for(const phase of phases){const planned=start+offset;offset+=phase.seconds;
+ timers.push(setTimeout(()=>{if(!running||token!==generation)return;if(document.hidden){stop('page-hidden');return;}render(phase);const at=Date.now()/1000;const events=JSON.parse(el('events').value);events.push({at,phase:phase.phase,scheduledAt:planned,callbackLatenessSeconds:at-planned});el('events').value=JSON.stringify(events);el('status').textContent='Recording scheduled scenes.';},Math.max(0,(planned-Date.now()/1000)*1000)));
+ }timers.push(setTimeout(()=>stop('completed'),Math.max(0,(start+300-Date.now()/1000)*1000)));
+};
+</script></html>'''.replace('PHASES',json.dumps(phases))
+(root/'practical-autoplay.html').write_text(page)
+(root/'practical-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+(root/'practical-questions.json').write_text(json.dumps(answer_key,indent=2)+'\n')

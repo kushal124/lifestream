@@ -1,0 +1,31 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 1
+  },
+  "status": 409,
+  "answer": {
+    "code": "ACCESS_CHANGED",
+    "message": "This access just changed. Look again, then save."
+  }
+}

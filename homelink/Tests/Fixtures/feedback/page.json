@@ -1,0 +1,49 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-09-08",
+  "open": true,
+  "title": "Send feedback",
+  "about": {
+    "chat": "Feedback on this answer",
+    "connector": "Report a problem with {name}"
+  },
+  "field": {
+    "placeholder": "What happened, or what would make Lifestream better?",
+    "max": 5000
+  },
+  "email": {
+    "label": "Email for a reply",
+    "placeholder": "Optional"
+  },
+  "kinds": [
+    {
+      "kind": "answer",
+      "title": "This answer",
+      "add": null
+    },
+    {
+      "kind": "connector",
+      "title": "{name}'s status",
+      "add": null
+    },
+    {
+      "kind": "app",
+      "title": "App details",
+      "add": null
+    },
+    {
+      "kind": "screenshot",
+      "title": "Screenshot",
+      "add": "Add screenshot"
+    }
+  ],
+  "see": "See what's sent",
+  "send": "Send",
+  "clear": "Clear",
+  "sent": {
+    "title": "Sent. Thank you.",
+    "line": "We'll reply to {email}."
+  },
+  "again": "The attachments were made again. Read them before you send.",
+  "privacy": "Names and contact details in attachments are replaced. Read it before you send. A screenshot goes as it is."
+}

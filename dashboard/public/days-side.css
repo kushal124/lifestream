@@ -1,0 +1,76 @@
+
+.ds { width: 100%; min-width: 0; position: relative; display: flex; flex-direction: column; height: 100%; }
+.ds-figures { position: absolute; z-index: 4; top: var(--space-4); left: var(--space-4); width: auto; height: auto; padding: var(--space-1) var(--space-3); border-radius: var(--radius-sm); background: var(--map-plate); box-shadow: var(--shadow-plate); }
+.ds-card { flex: 1; min-height: 0; margin: 0; position: relative; }
+.ds > .ds-card:first-child { margin-top: 0; }
+.ds-part { padding-top: var(--space-6); display: flex; flex-direction: column; gap: var(--space-2); }
+.ds > .ds-part:first-child { padding-top: 0; }
+.ds-units, .ds-people { margin: 0; padding: 0; list-style: none; }
+
+.ds-map { width: 100%; height: 100%; border-radius: 0; }
+.ds-map::after { content: ''; position: absolute; inset: 0; z-index: 3; border-radius: inherit; box-shadow: inset 0 0 0 var(--stroke-border) var(--hairline); pointer-events: none; display: none; }
+.ds-map.is-waiting .ck-map__box { visibility: hidden; }
+
+.ck-map__names { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.ck-map__name { position: absolute; top: 0; left: 0; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); background: var(--map-plate); box-shadow: var(--shadow-plate); color: var(--text); font-size: var(--mac-subhead-size); line-height: 16px; font-weight: 500; white-space: nowrap; }
+.ck-map__spent { margin-left: var(--space-2); color: var(--text-secondary); font-weight: 400; }
+
+.ds-people > li.is-quiet .ck-prow__name { color: var(--text-secondary); }
+.ck-popover .ds-part + .ds-part { padding-top: var(--space-4); }
+
+.ds-more { display: block; width: calc(100% + 16px); height: 28px; margin-inline: calc(-1 * var(--space-2)); padding: 0 var(--space-2) 0 var(--space-10); border-radius: var(--radius-sm); color: var(--text-secondary); text-align: left; }
+.ds-more:hover { background: var(--hover); }
+.ds-more:active { background: var(--pressed); }
+
+.ds-line { display: flex; align-items: center; gap: var(--space-4); height: 32px; }
+.ds-pills { display: flex; flex: none; gap: var(--space-2); margin-left: auto; }
+.ck-pillpop { position: relative; }
+.ck-pill { display: inline-flex; align-items: baseline; gap: var(--space-2); height: 32px; padding: var(--space-2) var(--space-3) 0; border-radius: var(--radius-full); box-shadow: inset 0 0 0 var(--stroke-border) var(--border); color: var(--text); white-space: nowrap; transition: background-color var(--duration-instant) var(--ease-out); }
+.ck-pill__count { color: var(--text-tertiary); }
+button.ck-pill:hover { background: var(--hover); }
+button.ck-pill:active { background: var(--pressed); }
+.ck-pill.is-open, .ck-pill.is-open:hover { background: var(--selection); }
+.ck-pill.is-open .ck-pill__label { color: var(--here); }
+.ck-popover .ds-card { margin-top: 0; }
+.ck-popover .ds-card + .ds-part { padding-top: var(--space-3); }
+.ck-popover .ds-part { padding-top: 0; }
+
+:is(.ds:not([aria-hidden]), .ck-popover) .is-reading .ck-sk, .ds:not([aria-hidden]) .ck-punit__line > .ck-sk,
+.ck-popover .ck-punit__line > .ck-sk, .ds-line:not([aria-hidden]) .ck-pill__count > .ck-sk { opacity: 0; animation: ds-grace var(--duration-fast) var(--ease-out) var(--duration-grace) forwards; }
+:is(.ds, .ck-popover) .is-arriving { animation: ds-arrive var(--duration-fast) var(--ease-out); }
+@keyframes ds-grace { to { opacity: 1; } }
+@keyframes ds-arrive { from { opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  :is(.ds:not([aria-hidden]), .ck-popover) .is-reading, .ds:not([aria-hidden]) .ck-punit__line:has(> .ck-sk) { animation: ck-sk-breath var(--duration-breath) var(--ease-in-out) infinite alternate; }
+}
+
+
+.ds-figures[data-figures="messages"] { display: flex; align-items: baseline; gap: var(--space-3); height: auto; }
+.ds-figures[data-figures="messages"]::before { content: "Messages"; color: var(--text-secondary); font-size: var(--mac-body-size); line-height: 20px; }
+.ds-figures .ck-figrow { display: flex; height: auto; column-gap: 0; }
+.ds-figures .ck-figrow__figure { flex-direction: row; align-items: baseline; gap: var(--space-1); }
+.ds-figures .ck-figrow__figure + .ck-figrow__figure::before { content: "·"; margin-inline: var(--space-2) var(--space-1); color: var(--text-tertiary); }
+.ds-figures :is(.ck-figrow__value, .ck-figrow__caption) { font-size: var(--mac-body-size); line-height: 20px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.ds-figures .ck-figrow__value { font-weight: 500; }
+
+.ds-foot { flex: none; display: flex; flex-direction: column; gap: var(--space-5); max-height: 46%; padding: var(--space-4) var(--space-6) var(--space-5); overflow-y: auto; overscroll-behavior: contain; background: var(--stage); box-shadow: inset 0 var(--stroke-border) 0 var(--hairline); }
+.ds-foot:empty { display: none; }
+.ds-foot :is(.ds-units, .ds-people) { columns: 3 200px; column-gap: var(--space-8); }
+.ds-foot :is(.ds-units, .ds-people) > li { break-inside: avoid; }
+.ds-part, .ds > .ds-part:first-child { padding-top: 0; }
+.ck-popover .ds-map { height: 168px; border-radius: var(--radius-lg); }
+.ck-popover .ds-map::after { display: block; }
+.ds-card[data-side-part="map"]:has(.is-waiting) .ck-map__names { display: none; }
+.dy:has(.dy-panel.is-open) .ds-figures { display: none; }
+
+.ds--rail { height: auto; gap: var(--space-6); }
+.ds--rail .ds-figures { position: static; display: block; padding: 0; border-radius: 0; background: none; box-shadow: none; }
+.ds--rail .ds-figures[data-figures="messages"] { display: block; }
+.ds--rail .ds-figures[data-figures="messages"]::before { display: block; height: 20px; margin-bottom: var(--space-2); font-weight: 500; }
+.ds--rail .ds-figures .ck-figrow { display: flex; column-gap: var(--space-10); }
+.ds--rail .ds-figures .ck-figrow__figure { flex-direction: column; align-items: flex-start; gap: var(--space-1); }
+.ds--rail .ds-figures .ck-figrow__figure + .ck-figrow__figure::before { content: none; }
+.ds--rail .ds-figures .ck-figrow__value { font-size: var(--mac-display-size); line-height: 32px; font-weight: 300; letter-spacing: -0.4px; }
+.ds--rail .ds-figures .ck-figrow__caption { font-size: var(--mac-body-size); line-height: 18px; }
+.ds--rail .ds-foot { display: flex; flex-direction: column; gap: var(--space-6); max-height: none; padding: 0; overflow: visible; background: none; box-shadow: none; }
+.dy:has(.dy-panel.is-open) .ds--rail { visibility: hidden; }

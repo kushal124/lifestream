@@ -1,0 +1,96 @@
+[
+  {
+    "kind": "event",
+    "key": "evt0001@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:evt0001@google.com\r\nDTSTART;TZID=Asia/Kolkata:20260908T100000\r\nDTEND;TZID=Asia/Kolkata:20260908T110000\r\nSUMMARY:Synthetic planning\\, a long title that runs past the seventy-five o\r\n ctet fold — with ünïcödé\r\nSTATUS:CONFIRMED\r\nTRANSP:OPAQUE\r\nORGANIZER;CN=\"Person ^'B^'\":mailto:person-b@example.com\r\nATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED:mailto:person-a@example.com\r\nATTENDEE;CN=\"Person C\";ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION:mailto:pe\r\n rson-c@example.com\r\nATTENDEE;ROLE=CHAIR;PARTSTAT=TENTATIVE:mailto:person-b@example.com\r\nDESCRIPTION:Line one\\nLine two\\; with a comma\\, and a backslash \\\\ here\r\nLOCATION:Room 1\\, Example Building\r\nCREATED:20260801T100000Z\r\nLAST-MODIFIED:20260802T113015Z\r\nSEQUENCE:2\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788841800000,
+      "end_ms": 1788845400000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "evt0002@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:evt0002@google.com\r\nDTSTART;VALUE=DATE:20260910\r\nDTEND;VALUE=DATE:20260913\r\nSUMMARY:Synthetic trip\r\nSTATUS:CONFIRMED\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788998400000,
+      "end_ms": 1789257600000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "evt0003@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:evt0003@google.com\r\nDTSTART;VALUE=DATE:20260914\r\nDTEND;VALUE=DATE:20260915\r\nSUMMARY:One synthetic day\r\nSTATUS:CONFIRMED\r\nTRANSP:TRANSPARENT\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1789344000000,
+      "end_ms": 1789430400000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "series01@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:series01@google.com\r\nDTSTART;TZID=Asia/Kolkata:20260907T090000\r\nDTEND;TZID=Asia/Kolkata:20260907T093000\r\nSUMMARY:Weekly synthetic sync\r\nRRULE:FREQ=WEEKLY;BYDAY=MO\r\nEXDATE:20260921T033000Z\r\nSTATUS:CONFIRMED\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788751800000,
+      "end_ms": 1788753600000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "series01@google.com:20260914T033000Z",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:series01@google.com\r\nDTSTART;TZID=Asia/Kolkata:20260914T110000\r\nDTEND;TZID=Asia/Kolkata:20260914T113000\r\nRECURRENCE-ID;TZID=Asia/Kolkata:20260914T090000\r\nSUMMARY:Weekly synthetic sync (moved)\r\nSTATUS:CONFIRMED\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1789363800000,
+      "end_ms": 1789365600000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "series02@google.com:20260920",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:series02@google.com\r\nDTSTART;VALUE=DATE:20260920\r\nDTEND;VALUE=DATE:20260921\r\nRECURRENCE-ID;VALUE=DATE:20260920\r\nSTATUS:CANCELLED\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1789862400000,
+      "end_ms": 1789948800000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "utc0001@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nUID:utc0001@google.com\r\nDTSTART:20260909T150000Z\r\nDTEND:20260909T154500Z\r\nSUMMARY:UTC synthetic call\r\nSTATUS:CONFIRMED\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788966000000,
+      "end_ms": 1788968700000,
+      "precision": "s"
+    }
+  }
+]

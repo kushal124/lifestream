@@ -1,0 +1,135 @@
+[
+  {
+    "kind": "machine-event",
+    "key": "20260906T230000Z:state",
+    "content": {
+      "type": "machine.event",
+      "event": "state",
+      "detail": {
+        "awake": true,
+        "battery_percent": 72,
+        "display_awake": true,
+        "lid_open": true,
+        "locked": false,
+        "power": "ac",
+        "session_active": true,
+        "wifi_joined": true,
+        "wifi_name": "synthetic-network"
+      }
+    },
+    "time": {
+      "start_ms": 1788735600000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260906T230500Z:lock",
+    "content": {
+      "type": "machine.event",
+      "event": "lock",
+      "detail": {}
+    },
+    "time": {
+      "start_ms": 1788735900000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260906T231000.25Z:wifi_join",
+    "content": {
+      "type": "machine.event",
+      "event": "wifi_join",
+      "detail": {
+        "name_unavailable": true
+      }
+    },
+    "time": {
+      "start_ms": 1788736200250,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260906T231000.25Z:wifi_join:1",
+    "content": {
+      "type": "machine.event",
+      "event": "wifi_join",
+      "detail": {
+        "name": "synthetic-network-2"
+      }
+    },
+    "time": {
+      "start_ms": 1788736200250,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260906T231100.125Z:output_volume",
+    "content": {
+      "type": "machine.event",
+      "event": "output_volume",
+      "detail": {
+        "muted": false,
+        "volume": 0.25
+      }
+    },
+    "time": {
+      "start_ms": 1788736260125,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260907T223000Z:state",
+    "content": {
+      "type": "machine.event",
+      "event": "state",
+      "detail": {
+        "awake": true,
+        "battery_percent": 72,
+        "display_awake": true,
+        "lid_open": true,
+        "locked": false,
+        "power": "ac",
+        "session_active": true,
+        "wifi_joined": true,
+        "wifi_name": "synthetic-network"
+      }
+    },
+    "time": {
+      "start_ms": 1788820200000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260907T223100.001Z:power_battery",
+    "content": {
+      "type": "machine.event",
+      "event": "power_battery",
+      "detail": {
+        "battery_percent": 71
+      }
+    },
+    "time": {
+      "start_ms": 1788820260001,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "machine-event",
+    "key": "20260907T223500.999Z:sleep",
+    "content": {
+      "type": "machine.event",
+      "event": "sleep",
+      "detail": {}
+    },
+    "time": {
+      "start_ms": 1788820500999,
+      "precision": "ms"
+    }
+  }
+]

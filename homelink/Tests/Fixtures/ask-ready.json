@@ -1,0 +1,55 @@
+{
+  "model": "gpt-6.1-terra",
+  "name": "GPT-6.1 Terra",
+  "thinking": "high",
+  "group": "ChatGPT",
+  "login": "ready",
+  "said": "Your pick needs your Claude sign-in on your Mac. Asking GPT-6.1 Terra.",
+  "models": [
+    { "id": "gpt-6.1-terra", "name": "GPT-6.1 Terra", "thinking": ["low", "medium", "high", "xhigh", "max"], "default": "high", "group": "ChatGPT", "photos": true },
+    { "id": "gpt-6-luna", "name": "GPT-6 Luna", "thinking": ["low", "medium", "high", "xhigh", "max"], "default": "high", "group": "ChatGPT", "photos": true },
+    { "id": "gpt-6-sol", "name": "GPT-6 Sol", "thinking": ["low", "medium"], "default": "medium", "group": "ChatGPT", "photos": false }
+  ],
+  "default": { "model": "gpt-6.1-terra" },
+  "starters": [
+    { "kind": "places", "question": "Where have I been today?" },
+    { "kind": "walking", "question": "How far did I walk today?" },
+    { "kind": "photos", "question": "What did I photograph this week?" }
+  ],
+  "voice": {
+    "ready": true,
+    "words": "Parakeet · your Mac",
+    "line": null,
+    "caution": null,
+    "value": "default",
+    "choices": [
+      { "value": "runner:runner-macbook-pro-0001/parakeet-unified-en-0.6b", "words": "Parakeet · your Mac", "sent": false },
+      { "value": "openrouter-voice:elevenlabs/scribe-v2", "words": "Scribe v2 · Sent as it is", "sent": true }
+    ]
+  },
+  "limits": { "photos": 10, "photo_bytes": 26214400, "voice_ms": 600000 },
+  "voices": {
+    "not ready, on the Mac": {
+      "ready": false, "words": "No model yet", "line": "Voice notes need Parakeet: download it in Settings › AI models.", "caution": null,
+      "value": "default", "choices": []
+    },
+    "not ready, on a phone": {
+      "ready": false, "words": "No model yet", "line": "Voice notes need Parakeet on your Mac: download it in Lifestream's Settings › AI models.", "caution": null,
+      "value": "default", "choices": []
+    },
+    "sent as it is, under Hide all": {
+      "ready": true, "words": "Scribe v2 · Sent as it is", "line": null, "caution": "Voice notes go to OpenRouter as they are: sound can't be hidden.",
+      "value": "default",
+      "choices": [
+        { "value": "openrouter-voice:elevenlabs/scribe-v2", "words": "Scribe v2 · Sent as it is", "sent": true }
+      ]
+    },
+    "Parakeet's runner away, on a phone": {
+      "ready": true, "words": "Parakeet · your Mac", "line": null, "caution": null,
+      "value": "default",
+      "choices": [
+        { "value": "runner:runner-macbook-pro-0001/parakeet-unified-en-0.6b", "words": "Parakeet · your Mac", "sent": false }
+      ]
+    }
+  }
+}

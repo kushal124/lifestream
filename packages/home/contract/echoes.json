@@ -1,0 +1,15 @@
+{
+  "/v1/search": [
+    "not_searched",
+    "person[].asked",
+    "read_as.as",
+    "read_as.without",
+    "variants"
+  ],
+  "/v1/count": [
+    "matched",
+    "not_searched"
+  ],
+  "/v1/people/search": [],
+  "/v1/read": []
+}

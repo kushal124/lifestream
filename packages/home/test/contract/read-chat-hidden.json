@@ -1,0 +1,43 @@
+{
+  "what": "chat",
+  "chat": "r1",
+  "title": "[[Person 1]]",
+  "around": "r2",
+  "span": {
+    "from": "2026-10-03",
+    "to": "2026-10-05"
+  },
+  "lines": [
+    {
+      "ref": "r3",
+      "at": "2026-10-04T09:12+01:00",
+      "day": "2026-10-04",
+      "from": "You",
+      "text": "where shall we meet?"
+    },
+    {
+      "ref": "r2",
+      "at": "2026-10-04T09:15+01:00",
+      "day": "2026-10-04",
+      "from": "[[Person 1]]",
+      "text": "the example on [[Address 1]] at nine"
+    },
+    {
+      "ref": "r4",
+      "at": "2026-10-04T09:16+01:00",
+      "day": "2026-10-04",
+      "from": "[[Person 1]]",
+      "picture": true,
+      "text": "a picture: `read` it to see it"
+    },
+    {
+      "ref": "r5",
+      "at": "2026-10-04T09:20+01:00",
+      "day": "2026-10-04",
+      "from": "You",
+      "text": "(voice note) on my way"
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": "r6"
+}

@@ -1,0 +1,274 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": {
+    "target": {
+      "key": "instinct"
+    },
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": null,
+    "edit": {
+      "type": "health",
+      "on": true
+    }
+  },
+  "status": 200,
+  "answer": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": null,
+    "view": {
+      "sentence": [
+        {
+          "text": "Instinct sees everything but "
+        },
+        {
+          "text": "Money",
+          "bold": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "summary": "Everything but Money · details hidden",
+      "reads": "Everything but Money",
+      "mode": "but",
+      "modes": [
+        {
+          "mode": "but",
+          "words": "Everything but"
+        },
+        {
+          "mode": "only",
+          "words": "Only these"
+        }
+      ],
+      "mode_line": "Everything you leave checked, and new connectors as you add them.",
+      "window": {
+        "value": {
+          "window": null
+        },
+        "words": "All time"
+      },
+      "times": [
+        {
+          "choice": "all",
+          "window": null,
+          "words": "All time"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 1791968400000
+          },
+          "words": "Past year"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 1791968400000
+          },
+          "words": "Past 30 days"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 1791968400000
+          },
+          "words": "Past 7 days"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 1791968400000
+          },
+          "words": "Past 24 hours"
+        },
+        {
+          "choice": "past",
+          "window": {
+            "past_ms": 1791968400000
+          },
+          "words": "Past hour"
+        },
+        {
+          "choice": "since",
+          "window": null,
+          "words": "Since a date…"
+        }
+      ],
+      "categories": [],
+      "hide": {
+        "choice": "names",
+        "words": "Details",
+        "choices": [
+          {
+            "level": "none",
+            "words": "Nothing",
+            "line": "It sees names, numbers and addresses as they are",
+            "selected": false
+          },
+          {
+            "level": "names",
+            "words": "Details",
+            "line": "Phone numbers, addresses and account numbers are blanks",
+            "selected": true
+          },
+          {
+            "level": "all",
+            "words": "Names and details",
+            "line": "People are “a person”, and the details are blanks",
+            "selected": false
+          },
+          {
+            "level": "custom",
+            "words": "Choose…",
+            "line": null,
+            "selected": false
+          }
+        ],
+        "types": [
+          {
+            "type": "person",
+            "name": "Names",
+            "state": "shown",
+            "subtypes": []
+          },
+          {
+            "type": "account",
+            "name": "Accounts",
+            "state": "shown",
+            "subtypes": []
+          },
+          {
+            "type": "email",
+            "name": "Email addresses",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "phone",
+            "name": "Phone numbers",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "address",
+            "name": "Addresses",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "place",
+            "name": "Places",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "number",
+            "name": "Numbers",
+            "state": "hidden",
+            "subtypes": [
+              {
+                "type": "number.bank",
+                "name": "Bank numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.card",
+                "name": "Card numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.government",
+                "name": "ID numbers",
+                "state": "fixed"
+              },
+              {
+                "type": "number.tax",
+                "name": "Tax IDs",
+                "state": "fixed"
+              },
+              {
+                "type": "number.payment",
+                "name": "Payment addresses",
+                "state": "fixed"
+              },
+              {
+                "type": "number.order",
+                "name": "Order numbers",
+                "state": "fixed"
+              }
+            ]
+          },
+          {
+            "type": "secret",
+            "name": "Passwords and keys",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "link",
+            "name": "Links",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "word",
+            "name": "Words you listed",
+            "state": "hidden",
+            "subtypes": []
+          },
+          {
+            "type": "face",
+            "name": "Faces",
+            "state": "shown",
+            "subtypes": []
+          }
+        ]
+      },
+      "widens": true,
+      "widening": null,
+      "screen": null
+    },
+    "narrowed": null,
+    "saved": null
+  }
+}

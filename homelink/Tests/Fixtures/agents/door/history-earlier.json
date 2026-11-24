@@ -1,0 +1,211 @@
+{
+  "route": "GET /v1/agents/<id>/history?before=",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": null,
+    "chips": [],
+    "kind": null,
+    "empty": null,
+    "sessions": [
+      {
+        "key": "s-1",
+        "from_ms": 1794646800000,
+        "to_ms": 1794648540000,
+        "calls": 29,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "55 reads"
+        },
+        "reads": "29 reads",
+        "lines": [
+          {
+            "kind": "fold",
+            "at_ms": 1794647280000,
+            "n": 25,
+            "icon": "more",
+            "words": "25 more reads",
+            "line": "Searched for 13 · Read your day 12",
+            "lines": [
+              {
+                "kind": "call",
+                "id": "call-0000000000000001",
+                "at_ms": 1794647280000,
+                "words": "Searched for “dinner 8”",
+                "kept": "names kept from it",
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 email, 1 message",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000002",
+                "at_ms": 1794647220000,
+                "words": "Tried to read your day, 13 Nov",
+                "kept": null,
+                "tone": "refused",
+                "icon": "close",
+                "opens": true,
+                "line": "Stopped",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000003",
+                "at_ms": 1794647160000,
+                "words": "Searched for “dinner 6”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "Nothing found",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000004",
+                "at_ms": 1794647100000,
+                "words": "Read your day, 13 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "Nothing found",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000005",
+                "at_ms": 1794647040000,
+                "words": "Searched for “dinner 4”",
+                "kept": "names kept from it",
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "1 email",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000006",
+                "at_ms": 1794646980000,
+                "words": "Read your day, 13 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "Nothing found",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000007",
+                "at_ms": 1794646920000,
+                "words": "Searched for “dinner 2”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "Nothing found",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000008",
+                "at_ms": 1794646860000,
+                "words": "Read your day, 13 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "Nothing found",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000009",
+                "at_ms": 1794646800000,
+                "words": "Searched for “dinner 0”",
+                "kept": "names kept from it",
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 email, 1 message",
+                "more": 0,
+                "took_ms": 12,
+                "told": null
+              }
+            ],
+            "continues": true
+          }
+        ]
+      },
+      {
+        "key": "c-40",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "55 reads"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You let Pager see everything but Health and Money",
+            "line": "You",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-39",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "55 reads"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You allowed Pager",
+            "line": "You · Everything but Health and Money · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

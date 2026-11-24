@@ -1,0 +1,31 @@
+{
+  "asked": "the first fact of payments with amount",
+  "op": "first",
+  "matched": {
+    "payee": {
+      "acme": [
+        "ACME CABS LIMITED (6)"
+      ]
+    }
+  },
+  "found": {
+    "value": "12.50 EUR",
+    "at": "2022-01-04T08:15+00:00",
+    "day": "2022-01-04",
+    "said": "ACME CABS LIMITED, out",
+    "ref": "record.WyJyZWNvcmQiLCJleGFtcGxlLWJhbms6YWNjb3VudC0xOnVwbG9hZCIsImxpbmUiLCIxIl0"
+  },
+  "ties": [
+    {
+      "value": "3.00 EUR",
+      "at": "2022-01-04T08:15+00:00",
+      "day": "2022-01-04",
+      "ref": "record.WyJyZWNvcmQiLCJleGFtcGxlLWJhbms6YWNjb3VudC0xOnVwbG9hZCIsImxpbmUiLCIyIl0"
+    }
+  ],
+  "held": {
+    "first": "2022-01-04",
+    "last": "2026-11-06"
+  },
+  "as_of": "2026-11-14T22:10+00:00"
+}

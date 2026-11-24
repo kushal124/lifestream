@@ -1,0 +1,18 @@
+{
+  "args": {
+    "of": "calls",
+    "by": [
+      "month"
+    ],
+    "person": [
+      "r14"
+    ],
+    "chat": "r15",
+    "match": {
+      "direction": "outgoing"
+    },
+    "from": "2026-10-01"
+  },
+  "to": "openai",
+  "shown": []
+}

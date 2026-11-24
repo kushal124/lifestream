@@ -1,0 +1,130 @@
+{
+ "about": "the ledger at version 3 as the releases of numbered steps built it (meta steps 3): every object's CREATE statement as SQLite stores it, in the order it made them, columns added by ALTER spliced where SQLite put them. Schema.version reads such a file by its meta.steps row; the tests check expected(3) against these and build an old-scheme file from them.",
+ "meta": [
+  {
+   "key": "steps",
+   "value": "3"
+  },
+  {
+   "key": "writer",
+   "value": "{\"release\":\"checkout\",\"steps\":3}"
+  }
+ ],
+ "objects": [
+  {
+   "type": "table",
+   "name": "meta",
+   "sql": "CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT NOT NULL)"
+  },
+  {
+   "type": "table",
+   "name": "replies",
+   "sql": "CREATE TABLE replies(\n    key TEXT PRIMARY KEY, model TEXT, prompt_hash TEXT, input_hash TEXT, effort TEXT,\n    sampling TEXT, output_schema TEXT, text TEXT NOT NULL, reply_model TEXT,\n    invocation TEXT, runtime TEXT, input_tokens INTEGER, output_tokens INTEGER,\n    cost_usd REAL, validation TEXT CHECK(validation IN ('accepted','refused')),\n    validated_at TEXT, created TEXT NOT NULL, source TEXT, feeder TEXT, unit TEXT\n  , prompt TEXT, prompt_version INTEGER)"
+  },
+  {
+   "type": "table",
+   "name": "prompts",
+   "sql": "CREATE TABLE prompts(hash TEXT PRIMARY KEY, version TEXT NOT NULL, text TEXT NOT NULL)"
+  },
+  {
+   "type": "table",
+   "name": "requests",
+   "sql": "CREATE TABLE requests(\n    key TEXT PRIMARY KEY, family TEXT, feeder TEXT, unit TEXT NOT NULL, revision TEXT,\n    model TEXT NOT NULL, effort TEXT NOT NULL, sampling TEXT, transport TEXT NOT NULL,\n    prompt_hash TEXT NOT NULL REFERENCES prompts(hash), input_hash TEXT NOT NULL,\n    body TEXT NOT NULL, attachments TEXT NOT NULL, requested TEXT NOT NULL,\n    open INTEGER NOT NULL DEFAULT 0\n  , prompt TEXT, prompt_version INTEGER)"
+  },
+  {
+   "type": "index",
+   "name": "requests_unit",
+   "sql": "CREATE INDEX requests_unit ON requests(unit)"
+  },
+  {
+   "type": "index",
+   "name": "requests_open",
+   "sql": "CREATE INDEX requests_open ON requests(requested) WHERE open = 1"
+  },
+  {
+   "type": "table",
+   "name": "attempts",
+   "sql": "CREATE TABLE attempts(\n    id INTEGER PRIMARY KEY, key TEXT NOT NULL,\n    state TEXT NOT NULL CHECK(state IN ('sending','replied','failed','unknown','settled')),\n    started TEXT NOT NULL, finished TEXT, error TEXT,\n    input_tokens INTEGER, output_tokens INTEGER, cost_usd REAL,\n    validation TEXT CHECK(validation IN ('accepted','refused')), settled TEXT\n  , transport TEXT)"
+  },
+  {
+   "type": "index",
+   "name": "attempts_key",
+   "sql": "CREATE INDEX attempts_key ON attempts(key, id)"
+  },
+  {
+   "type": "index",
+   "name": "attempts_started",
+   "sql": "CREATE INDEX attempts_started ON attempts(started)"
+  },
+  {
+   "type": "index",
+   "name": "attempts_finished",
+   "sql": "CREATE INDEX attempts_finished ON attempts(finished)"
+  },
+  {
+   "type": "table",
+   "name": "unit_failures",
+   "sql": "CREATE TABLE unit_failures(\n    id INTEGER PRIMARY KEY, revision TEXT NOT NULL, family TEXT, unit TEXT NOT NULL,\n    at TEXT NOT NULL, reason TEXT NOT NULL\n  )"
+  },
+  {
+   "type": "index",
+   "name": "unit_failures_revision",
+   "sql": "CREATE INDEX unit_failures_revision ON unit_failures(revision)"
+  },
+  {
+   "type": "index",
+   "name": "replies_lookup",
+   "sql": "CREATE INDEX replies_lookup ON replies(prompt_hash, input_hash)"
+  },
+  {
+   "type": "index",
+   "name": "replies_carried",
+   "sql": "CREATE INDEX replies_carried ON replies(invocation)"
+  },
+  {
+   "type": "index",
+   "name": "requests_revision",
+   "sql": "CREATE INDEX requests_revision ON requests(revision)"
+  },
+  {
+   "type": "table",
+   "name": "outcomes",
+   "sql": "CREATE TABLE outcomes(seq INTEGER PRIMARY KEY AUTOINCREMENT, attempt INTEGER NOT NULL, key TEXT NOT NULL, state TEXT NOT NULL)"
+  },
+  {
+   "type": "table",
+   "name": "paid",
+   "sql": "CREATE TABLE paid(attempt INTEGER PRIMARY KEY, grant_id INTEGER NOT NULL, started TEXT NOT NULL)"
+  },
+  {
+   "type": "index",
+   "name": "paid_grant",
+   "sql": "CREATE INDEX paid_grant ON paid(grant_id, started)"
+  },
+  {
+   "type": "table",
+   "name": "request_schemas",
+   "sql": "CREATE TABLE request_schemas(key TEXT PRIMARY KEY, schema TEXT NOT NULL)"
+  },
+  {
+   "type": "index",
+   "name": "requests_hashes",
+   "sql": "CREATE INDEX requests_hashes ON requests(prompt_hash, input_hash)"
+  },
+  {
+   "type": "index",
+   "name": "replies_versions",
+   "sql": "CREATE INDEX replies_versions ON replies(prompt, input_hash, prompt_version)"
+  },
+  {
+   "type": "index",
+   "name": "requests_versions",
+   "sql": "CREATE INDEX requests_versions ON requests(prompt, input_hash, prompt_version)"
+  },
+  {
+   "type": "table",
+   "name": "prompt_types",
+   "sql": "CREATE TABLE prompt_types(name TEXT NOT NULL, version INTEGER NOT NULL, type TEXT NOT NULL, first_ms INTEGER NOT NULL, PRIMARY KEY(name, version, type))"
+  }
+ ]
+}

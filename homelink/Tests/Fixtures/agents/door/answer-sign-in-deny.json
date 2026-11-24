@@ -1,0 +1,27 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMg",
+    "answer": "deny"
+  },
+  "status": 200,
+  "answer": {
+    "state": "denied",
+    "version": null,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Not allowed on iPhone,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

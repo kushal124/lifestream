@@ -1,0 +1,34 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : "no",
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-no.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Not allowed on iPhone,"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794646800000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "declined",
+      "version" : 3
+    }
+  },
+  "sent" : {
+    "answer" : "no",
+    "id" : "rq-0000000000000001"
+  }
+}

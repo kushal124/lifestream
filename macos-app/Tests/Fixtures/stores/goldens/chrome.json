@@ -1,0 +1,78 @@
+{
+  "connector" : "chrome",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "chrome-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "history.sqlite"
+          ],
+          "source_id" : "chrome:default:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "chrome:default:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "chrome:default:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "chrome-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "history.sqlite"
+          ],
+          "source_id" : "chrome:default:macbook-pro-0001"
+        },
+        {
+          "feeder" : "chrome-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "history.sqlite"
+          ],
+          "source_id" : "chrome:profile-2:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "chrome:default:macbook-pro-0001",
+        "chrome:profile-2:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "chrome:default:macbook-pro-0001",
+        "chrome:profile-2:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "chrome"
+}

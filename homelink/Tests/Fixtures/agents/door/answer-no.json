@@ -1,0 +1,27 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "rq-0000000000000001",
+    "answer": "no"
+  },
+  "status": 200,
+  "answer": {
+    "state": "declined",
+    "version": 3,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Not allowed on iPhone,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

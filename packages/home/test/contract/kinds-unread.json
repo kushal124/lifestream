@@ -1,0 +1,131 @@
+{
+  "as_of": "2026-11-14T22:10+00:00",
+  "held": {
+    "first": "2019-02-01",
+    "last": "2026-11-14"
+  },
+  "total": {
+    "n": 11604,
+    "partial": true
+  },
+  "capped": true,
+  "reached": {
+    "side": "newest",
+    "at": "2026-10-30T12:04+00:00",
+    "whole": "2026-10-31"
+  },
+  "top": [
+    {
+      "person": {
+        "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDgiXQ",
+        "name": "Person B"
+      }
+    },
+    {
+      "hit": {
+        "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDptYWNib29rLXByby1hYTQyIiwibm90ZSIsIm4zMTAiXQ",
+        "at": "2026-11-13T22:40+00:00",
+        "day": "2026-11-13",
+        "family": "notes",
+        "product": "apple-notes",
+        "title": "Packing list",
+        "snippet": "«the» charger, «the» blue jacket, passport"
+      }
+    },
+    {
+      "hit": {
+        "ref": "record.WyJyZWNvcmQiLCJ3aXNwci1mbG93OmxvY2FsOm1hY2Jvb2stcHJvLWFhNDIiLCJkaWN0YXRpb24iLCJkODgiXQ",
+        "at": "2026-11-12T16:20+00:00",
+        "day": "2026-11-12",
+        "family": "voice",
+        "product": "wispr-flow",
+        "title": "Dictation",
+        "snippet": "move «the» review to Thursday afternoon"
+      }
+    }
+  ],
+  "kinds": [
+    {
+      "family": "messages",
+      "n": {
+        "n": 9200,
+        "partial": true
+      },
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJpbWVzc2FnZTpsb2NhbDptYWNib29rLXByby1hYTQyIiwibWVzc2FnZSIsImIyMjUxIl0",
+          "at": "2026-11-14T07:58+00:00",
+          "day": "2026-11-14",
+          "family": "messages",
+          "product": "imessage",
+          "title": "Ben",
+          "from": "the user",
+          "snippet": "on «the» train, there in twenty",
+          "chat": "chat.WyJjaGF0IiwiaW1lc3NhZ2U6KzE1NTUwMDAwMDAyIl0",
+          "chat_title": "Ben"
+        }
+      ]
+    },
+    {
+      "family": "mail",
+      "n": {
+        "n": 2400,
+        "partial": true
+      },
+      "hits": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJnbWFpbDpwZXJzb24tYUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtODg0MCJd",
+          "at": "2026-11-14T06:00+00:00",
+          "day": "2026-11-14",
+          "family": "mail",
+          "product": "gmail",
+          "title": "Your weekly summary",
+          "from": "updates@example.com",
+          "snippet": "«the» week in numbers"
+        }
+      ]
+    },
+    {
+      "family": "screen",
+      "n": {
+        "n": 2,
+        "partial": true
+      },
+      "unread": "Screen search is getting ready.",
+      "sittings": [
+        {
+          "focus": "u:screen:local:macbook-pro-0001/1794599280000",
+          "at": "2026-11-13T19:48+00:00",
+          "day": "2026-11-13",
+          "summary": "Read the race guide and planned the route",
+          "snippet": "Read «the» race guide and planned «the» route",
+          "windows": 0,
+          "matched": []
+        },
+        {
+          "focus": "u:screen:local:macbook-pro-0001/1794296400000",
+          "at": "2026-11-10T07:40+00:00",
+          "day": "2026-11-10",
+          "summary": "Sorted the week's invoices",
+          "snippet": "Sorted «the» week's invoices",
+          "windows": 0,
+          "matched": []
+        }
+      ]
+    },
+    {
+      "family": "notes",
+      "n": 1,
+      "hits": []
+    },
+    {
+      "family": "voice",
+      "n": 1,
+      "hits": []
+    },
+    {
+      "family": "listening",
+      "unread": "Too many plays match to count. Add a word or pick a time."
+    }
+  ]
+}

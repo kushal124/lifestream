@@ -1,0 +1,46 @@
+{
+  "route": "POST /v1/agents/keys",
+  "request": {
+    "app": "instinct",
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    }
+  },
+  "status": 200,
+  "answer": {
+    "reader": "p-0000cccc",
+    "name": "Instinct",
+    "rows": [
+      {
+        "label": "Address",
+        "text": "https://macbook-pro-0001.tail0000.ts.net/mcp"
+      },
+      {
+        "label": "Key",
+        "text": "synthetic-pass-0001"
+      }
+    ],
+    "connected": {
+      "reader": "p-0000cccc",
+      "line": "It sees everything but Health and Money. Change it any time in Agents."
+    }
+  }
+}

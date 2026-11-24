@@ -1,0 +1,42 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "name": "Corner Bakery",
+    "line": "San Jose",
+    "since": {
+      "day": "2026-09-16",
+      "kind": "day"
+    }
+  },
+  "here": false,
+  "rhythm": null,
+  "stays": 1,
+  "visits": {
+    "count": 1,
+    "rows": [
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789545600000@1789545600000-1789547880000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789545600000",
+        "day": "2026-09-16",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789545600000@1789545600000-1789547880000",
+        "people": []
+      }
+    ]
+  },
+  "people": [],
+  "photos": {
+    "first": [
+      "sha256:288d1ac4dc62e41d7e86e6b711b6691e191615f963334695ae2272626c0a17f1"
+    ],
+    "total": 1,
+    "line": "1 photo"
+  },
+  "part_of": null,
+  "inside": [],
+  "ask_home": null,
+  "clashes": [],
+  "counting": false
+}

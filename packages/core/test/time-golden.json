@@ -1,0 +1,622 @@
+{
+  "zones": [
+    "Asia/Kolkata",
+    "America/New_York",
+    "UTC"
+  ],
+  "day_settings": {
+    "zone": "Asia/Kolkata",
+    "day_start_hour": 4
+  },
+  "rows": [
+    {
+      "value": "2026-10-03T14:05:09+05:30",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 330,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T14:05:09.123+05:30",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509123,
+        "offset_min": 330,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T08:35:09.123Z",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T08:35:09.123456Z",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T08:35:09+00:00",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 0,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T08:35:09-00:00",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T08:35:09.123Z",
+      "rule": "rfc3339",
+      "opts": {
+        "offset": "+05:30"
+      },
+      "instant": {
+        "start_ms": 1791016509123,
+        "offset_min": 330,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03t04:35:09-04:00",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": -240,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03 14:05:09+05:30",
+      "rule": "rfc3339",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 330,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T14:05:09",
+      "rule": "local",
+      "opts": {
+        "zone": "Asia/Kolkata"
+      },
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03 14:05",
+      "rule": "local",
+      "opts": {
+        "zone": "America/New_York"
+      },
+      "instant": {
+        "start_ms": 1791050700000,
+        "precision": "minute"
+      },
+      "iso": "2026-10-03T18:05:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 23:35",
+        "America/New_York": "2026-10-03 14:05",
+        "UTC": "2026-10-03 18:05"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03T14:05:09",
+      "rule": "local",
+      "opts": {
+        "zone": "+05:30"
+      },
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03 14:05:09 +0530",
+      "rule": "healthkit",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 330,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03 04:35:09 -0400",
+      "rule": "healthkit",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": -240,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "Sat, 3 Oct 2026 14:05:09 +0530 (IST)",
+      "rule": "rfc2822",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 330,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "Sat, 03 Oct 2026 08:35:09 GMT",
+      "rule": "rfc2822",
+      "instant": {
+        "start_ms": 1791016509000,
+        "offset_min": 0,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "3 Oct 2026 04:35 EDT",
+      "rule": "rfc2822",
+      "instant": {
+        "start_ms": 1791016500000,
+        "offset_min": -240,
+        "precision": "minute"
+      },
+      "iso": "2026-10-03T08:35:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05",
+        "America/New_York": "2026-10-03 04:35",
+        "UTC": "2026-10-03 08:35"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "Sat, 3 Oct 26 08:35:09 -0000",
+      "rule": "rfc2822",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "Sat Oct  3 08:35:09 +0000 2026",
+      "rule": "mbox",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "20261003T083509Z",
+      "rule": "ical",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "20261003T140509",
+      "rule": "ical",
+      "opts": {
+        "zone": "Asia/Kolkata"
+      },
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "20261003",
+      "rule": "ical",
+      "instant": {
+        "start_ms": 1790985600000,
+        "end_ms": 1791072000000,
+        "precision": "day"
+      },
+      "iso": "2026-10-03T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03",
+        "America/New_York": "2026-10-03",
+        "UTC": "2026-10-03"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": 812709309,
+      "rule": "apple-s",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": 812709309.123,
+      "rule": "apple-s",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "812709309123456789",
+      "rule": "apple-ns",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": 1791016509,
+      "rule": "unix-s",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "1791016509",
+      "rule": "unix-s",
+      "instant": {
+        "start_ms": 1791016509000,
+        "precision": "s"
+      },
+      "iso": "2026-10-03T08:35:09.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09",
+        "America/New_York": "2026-10-03 04:35:09",
+        "UTC": "2026-10-03 08:35:09"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": 1791016509.123456,
+      "rule": "unix-s",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": 1791016509123,
+      "rule": "unix-ms",
+      "instant": {
+        "start_ms": 1791016509123,
+        "precision": "ms"
+      },
+      "iso": "2026-10-03T08:35:09.123Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03 14:05:09.123",
+        "America/New_York": "2026-10-03 04:35:09.123",
+        "UTC": "2026-10-03 08:35:09.123"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10-03",
+      "rule": "date",
+      "instant": {
+        "start_ms": 1790985600000,
+        "end_ms": 1791072000000,
+        "precision": "day"
+      },
+      "iso": "2026-10-03T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03",
+        "America/New_York": "2026-10-03",
+        "UTC": "2026-10-03"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "2026-10",
+      "rule": "month",
+      "instant": {
+        "start_ms": 1790812800000,
+        "end_ms": 1793491200000,
+        "precision": "month"
+      },
+      "iso": "2026-10-01T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10",
+        "America/New_York": "2026-10",
+        "UTC": "2026-10"
+      },
+      "days": []
+    },
+    {
+      "value": "2026",
+      "rule": "year",
+      "instant": {
+        "start_ms": 1767225600000,
+        "end_ms": 1798761600000,
+        "precision": "year"
+      },
+      "iso": "2026-01-01T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026",
+        "America/New_York": "2026",
+        "UTC": "2026"
+      },
+      "days": []
+    },
+    {
+      "value": "03/10/26",
+      "rule": "dmy",
+      "opts": {
+        "century": 2000
+      },
+      "instant": {
+        "start_ms": 1790985600000,
+        "end_ms": 1791072000000,
+        "precision": "day"
+      },
+      "iso": "2026-10-03T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03",
+        "America/New_York": "2026-10-03",
+        "UTC": "2026-10-03"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    },
+    {
+      "value": "03/10/2026",
+      "rule": "dmy",
+      "instant": {
+        "start_ms": 1790985600000,
+        "end_ms": 1791072000000,
+        "precision": "day"
+      },
+      "iso": "2026-10-03T00:00:00.000Z",
+      "render": {
+        "Asia/Kolkata": "2026-10-03",
+        "America/New_York": "2026-10-03",
+        "UTC": "2026-10-03"
+      },
+      "days": [
+        "2026-10-03"
+      ]
+    }
+  ]
+}

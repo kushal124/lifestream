@@ -1,0 +1,29 @@
+{
+  "route": "POST /v1/agents/<id>/propose",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "none",
+      "shown": []
+    },
+    "expect": 0
+  },
+  "status": 409,
+  "answer": {
+    "code": "ACCESS_NOT_STARTED",
+    "message": "Update Lifestream on your Mac to connect agents."
+  }
+}

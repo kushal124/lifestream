@@ -1,0 +1,59 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": {
+    "target": {
+      "reader": "p-00000001"
+    },
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "mail",
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        },
+        {
+          "reach": {
+            "type": "mail",
+            "but": [
+              "gmail:person-a@example.com"
+            ]
+          },
+          "window": {
+            "past_ms": 604800000
+          },
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 2592000000
+      },
+      "hide": [
+        "email",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word"
+      ],
+      "shown": []
+    },
+    "expect": 1,
+    "edit": null
+  },
+  "status": 409,
+  "answer": {
+    "code": "ACCESS_CHANGED",
+    "message": "This access just changed. Look again, then save."
+  }
+}

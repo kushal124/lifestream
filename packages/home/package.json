@@ -1,0 +1,30 @@
+{
+  "name": "@lifestreamprotocol/home",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "The home process, the door and the operator verbs.",
+  "type": "module",
+  "packageManager": "npm@10.9.7",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "vitest run --root ../.. --project home"
+  },
+  "dependencies": {
+    "@lifestreamprotocol/core": "file:../core",
+    "@lifestreamprotocol/connect": "file:../connect",
+    "@lifestreamprotocol/families": "file:../families",
+    "@lifestreamprotocol/model": "file:../model",
+    "@lifestreamprotocol/privacy": "file:../privacy",
+    "better-sqlite3": "13.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11",
+    "@types/better-sqlite3": "7.6.13"
+  }
+}

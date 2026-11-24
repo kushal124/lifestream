@@ -1,0 +1,59 @@
+{
+  "route": "POST /v1/agents/<id>/access",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        },
+        {
+          "reach": {
+            "type": "mail",
+            "but": []
+          },
+          "window": {
+            "past_ms": 604800000
+          },
+          "until_ms": 1794654000000
+        },
+        {
+          "reach": {
+            "account": "whoop:person-a@example.com",
+            "but": []
+          },
+          "window": {
+            "past_ms": 86400000
+          },
+          "until_ms": 1794650400000
+        }
+      ],
+      "items": [],
+      "not": [
+        {
+          "id": "person-alex",
+          "handles": [
+            "+15550000003"
+          ]
+        }
+      ],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 3
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Couldn’t save this access. Try again."
+  }
+}

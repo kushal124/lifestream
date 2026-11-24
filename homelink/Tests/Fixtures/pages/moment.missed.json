@@ -1,0 +1,83 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-03-12",
+  "day": "2031-03-04",
+  "state": "found",
+  "moment": {
+    "key": "e50",
+    "row": "e50",
+    "kind": "call",
+    "icon": "call",
+    "title": "+15550000006",
+    "name": "+15550000006",
+    "near": null,
+    "start_ms": 1791968400000,
+    "end_ms": null,
+    "untimed": null,
+    "length_ms": null,
+    "products": [
+      "Phone call"
+    ],
+    "people": [],
+    "place": null,
+    "out": null,
+    "record": {
+      "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+      "kind": "call",
+      "key": "CALL-0002"
+    },
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+          "kind": "call",
+          "key": "CALL-0002",
+          "at_ms": 1791968400000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "calls",
+          "unit": "apple:CALL-0002"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1791968400000,
+      "end_ms": null
+    },
+    "view": {
+      "figure": {
+        "length_ms": null,
+        "words": "Missed",
+        "label": "They called"
+      },
+      "group": "",
+      "name": "+15550000006",
+      "others": [
+        {
+          "at_ms": 1791968400000,
+          "way": "You called",
+          "length_ms": 120000
+        }
+      ],
+      "week": {
+        "current": false,
+        "calls": [
+          {
+            "day": "2031-03-04",
+            "at_ms": 1791968400000,
+            "title": "Phone call",
+            "icon": "call",
+            "length_ms": 120000,
+            "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0004"
+          }
+        ]
+      },
+      "view": "call"
+    }
+  }
+}

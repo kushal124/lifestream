@@ -1,0 +1,19 @@
+{
+  "args": {
+    "query": "refund",
+    "person": [
+      "[[Person 1]]"
+    ],
+    "chat": "r2",
+    "from": "2026-10-01",
+    "lists": [
+      "record",
+      "screen"
+    ]
+  },
+  "to": "anthropic",
+  "shown": [
+    "refund",
+    "Example Air"
+  ]
+}

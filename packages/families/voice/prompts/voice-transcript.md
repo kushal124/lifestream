@@ -1,0 +1,1 @@
+Transcribe the attached voice note. Write the words exactly as spoken, in the language spoken, with normal punctuation. Do not translate, summarise, or add commentary. Leave out filler sounds. Mark words you cannot make out as [inaudible]. If the recording has no speech, reply with exactly: [no speech]

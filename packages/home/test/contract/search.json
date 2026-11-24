@@ -1,0 +1,126 @@
+{
+  "read_as": {
+    "without": [
+      "what",
+      "did"
+    ],
+    "as": {}
+  },
+  "variants": {
+    "exampel": [
+      "example"
+    ]
+  },
+  "record": {
+    "as_of": "2026-11-14T22:10+00:00",
+    "total": 10000,
+    "capped": true,
+    "reached": {
+      "side": "newest",
+      "at": "2026-09-03T14:22+01:00",
+      "whole": "2026-09-04"
+    },
+    "hits": [
+      {
+        "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJhMSJd",
+        "at": "2026-10-04T09:15+01:00",
+        "day": "2026-10-04",
+        "family": "messages",
+        "product": "whatsapp",
+        "title": "Person A",
+        "from": "Person A",
+        "snippet": "… the «example» on «Example Street» at nine …",
+        "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+        "chat_title": "Person A",
+        "the_user_was_at": "Example City",
+        "picture": 1
+      },
+      {
+        "ref": "record.WyJyZWNvcmQiLCJnbWFpbDptZUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtNyJd",
+        "at": "2026-10-02T18:40+01:00",
+        "day": "2026-10-02",
+        "family": "mail",
+        "product": "gmail",
+        "title": "Your example receipt",
+        "from": "receipts@example.com",
+        "snippet": "Thank you for your «example» order …",
+        "the_user_was_at": "Example City",
+        "more": true
+      },
+      {
+        "ref": "line.WyJsaW5lIiwiMjAyNi0xMC0wMSIsIjBhMGIwYzBkMGUwZjEwMTEiLDAsImNhbGVuZGFyL2UzIixudWxsXQ",
+        "day": "2026-10-01",
+        "family": "calendar",
+        "product": "google-calendar",
+        "title": "Example review",
+        "snippet": "all day: «Example» review",
+        "rev": "rev9"
+      }
+    ],
+    "spread": {
+      "families": {
+        "messages": 9200,
+        "mail": 800
+      },
+      "months": {
+        "2026-10": 310,
+        "2026-09": {
+          "n": 120,
+          "partial": true
+        }
+      }
+    },
+    "next": "cursor:record:k1"
+  },
+  "screen": {
+    "as_of": "2026-11-14T22:05+00:00",
+    "total": 37,
+    "capped": true,
+    "reached": {
+      "side": "newest",
+      "whole": "2026-10-15"
+    },
+    "meaning": "off",
+    "hits": [
+      {
+        "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMS0wMiIsIkV4YW1wbGUgQnJvd3NlciIsImV4YW1wbGUtYWlyLmV4YW1wbGUuY29tIiwiRXhhbXBsZSBBaXI6IHlvdXIgdHJpcCIsMTc5MzU5NTc4MDAwMF0",
+        "at": "2026-11-02T06:03+01:00",
+        "day": "2026-11-02",
+        "app": "Example Browser",
+        "title": "Example Air: your trip",
+        "snippet": "… «example» seat 14A …",
+        "reason": "words",
+        "also": 2
+      },
+      {
+        "ref": "window.WyJ3aW5kb3ciLCJtYWNib29rLXByby1hYTQyIiwiMjAyNi0xMC0zMCIsIkV4YW1wbGUgTm90ZXMiLCIiLCJUcmlwIGxpc3QiLG51bGxd",
+        "at": "2026-10-30T13:00+00:00",
+        "until": "2026-10-30T13:55+00:00",
+        "time_precision": "range",
+        "day": "2026-10-30",
+        "app": "Example Notes",
+        "title": "Trip list",
+        "snippet": "… «exampel» bag …",
+        "reason": "spelling"
+      }
+    ],
+    "next": "cursor:screen:s1",
+    "next_gives": "windows"
+  },
+  "goto": {
+    "people": [
+      {
+        "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDEiXQ",
+        "name": "Person A"
+      }
+    ],
+    "places": [
+      {
+        "ref": "place.WyJwbGFjZSIsImV4YW1wbGUtY2FmZSJd",
+        "name": "Example Cafe"
+      }
+    ],
+    "day": null,
+    "month": null
+  }
+}

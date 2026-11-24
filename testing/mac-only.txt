@@ -1,0 +1,15 @@
+# The test files only a Mac runs, one a line: the file, from the root, then what the home or its
+# tests lack off a Mac. testing/files.mts is the one reader
+# (vitest's projects, the dashboard's and the MCP server's npm test); tools/test-lock.sh runs a
+# command naming a listed file on the Mac; tools/check-tests.ts holds every line to a file that
+# exists. The list only shrinks: a file comes off the day Linux runs it, and goes on only with what
+# the home lacks there. A test that fails on Linux for any other reason is a bug, fixed at its root.
+packages/home/release.e2e.test.ts a release is the Mac's: launchd runs its jobs (release.ts launchd(), no systemd user units)
+packages/home/subscriptions.e2e.test.ts a program is its maker's darwin build, checked by macOS's codesign (subscriptions.ts: the table holds darwin-arm64 alone); a Linux home's row and its check are not built
+packages/home/move.e2e.test.ts a move goes onto APFS alone (move.ts): one flush of the folder commits the whole copy there, and no rule for another file system is built
+packages/home/connecting.e2e.test.ts the door names a browser asking to connect by the Mac app bundle it runs in (connecting.ts browserOf, through /usr/sbin/lsof and ps); no rule names a browser on Linux, where every asker is "Chrome"
+packages/runner/convert.e2e.test.ts a voice note other than Ogg Opus is converted by macOS's afconvert (runner/audio.ts); Linux's converter is ffmpeg, which the test server lacks
+packages/home/pictures-mac.e2e.test.ts every picture and poster is made by the face engine (faces/ `picture`) through Apple's ImageIO and AVFoundation, which only macOS has
+packages/home/video.e2e.test.ts the journey's pictures and posters are made by the face engine (faces/ `picture`) through Apple's ImageIO and AVFoundation, which only macOS has
+dashboard/test/video-door.mjs its home is the video journey's (packages/home/test/video-home.ts), whose pictures the face engine makes through Apple's ImageIO and AVFoundation, which only macOS has
+packages/home/engine-pictures-mac.e2e.test.ts the face engine's read and make run Apple's Vision (faces/), which only macOS has

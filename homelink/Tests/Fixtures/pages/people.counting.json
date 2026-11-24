@@ -1,0 +1,246 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-06",
+  "you": {
+    "id": "phone:+919000000009",
+    "name": "+919000000009",
+    "named": false,
+    "face": false,
+    "photo": null,
+    "when": null,
+    "line": "You",
+    "find": [
+      "+919000000009",
+      "919000000009"
+    ]
+  },
+  "counts": {
+    "people": 7,
+    "groups": 1
+  },
+  "most": [
+    {
+      "id": "phone:+15550000301",
+      "line": "4 messages"
+    },
+    {
+      "id": "phone:+15550000302",
+      "line": "1 message"
+    }
+  ],
+  "sections": [
+    {
+      "key": "month:2026-10",
+      "title": null,
+      "rows": [
+        {
+          "id": "phone:+15550000302",
+          "name": "Person B",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person B",
+            "person",
+            "b",
+            "+15550000302",
+            "15550000302"
+          ]
+        },
+        {
+          "id": "phone:+15550000301",
+          "name": "Person A",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person A",
+            "person",
+            "a",
+            "+15550000301",
+            "15550000301"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "year:2025",
+      "title": null,
+      "rows": [
+        {
+          "id": "phone:+15550000303",
+          "name": "Person C",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person C",
+            "person",
+            "c",
+            "+15550000303",
+            "15550000303"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "none",
+      "title": "No messages yet",
+      "rows": [
+        {
+          "id": "contact:cc2afceda3284b54",
+          "name": "Person Card Only",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": null,
+          "line": "Contact card",
+          "find": [
+            "Person Card Only",
+            "person",
+            "card",
+            "only"
+          ]
+        },
+        {
+          "id": "person:person-u",
+          "name": "Person U",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": null,
+          "line": "+15550000231",
+          "find": [
+            "Person U",
+            "15550000231",
+            "+15550000231",
+            "+15550000232",
+            "15550000232"
+          ]
+        },
+        {
+          "id": "phone:+15550000392",
+          "name": "Synthetic Shop",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": null,
+          "line": "+15550000392",
+          "find": [
+            "Synthetic Shop",
+            "synthetic",
+            "shop",
+            "+15550000392",
+            "15550000392"
+          ]
+        }
+      ]
+    }
+  ],
+  "ai": [
+    {
+      "id": "person:person-ai",
+      "name": "Synthetic Assistant",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": null,
+      "find": [
+        "Synthetic Assistant",
+        "synthetic",
+        "assistant",
+        "+15550000391",
+        "15550000391"
+      ]
+    }
+  ],
+  "new": [
+    {
+      "id": "phone:+15550000301",
+      "line": "New · 4 messages"
+    }
+  ],
+  "businesses": {
+    "line": "1 to accept",
+    "offered": [
+      {
+        "id": "phone:+15550000392",
+        "name": "Synthetic Shop",
+        "named": true,
+        "photo": null,
+        "why": "A company, no person’s name",
+        "handles": [
+          {
+            "id": "phone:+15550000392",
+            "words": "+15550000392"
+          }
+        ]
+      }
+    ]
+  },
+  "organise": {
+    "count": 4,
+    "line": "2 organised · 4 more",
+    "queue": [
+      "phone:+15550000301",
+      "phone:+15550000302",
+      "phone:+15550000303",
+      "phone:+15550000392"
+    ],
+    "organised": 2,
+    "often": 0
+  },
+  "groups": {
+    "yours": [
+      {
+        "chat": "whatsapp:120363000000000031@g.us",
+        "title": "Group Friends",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Friends"
+        ]
+      }
+    ],
+    "quiet": [
+      {
+        "chat": "whatsapp:120363000000000032@g.us",
+        "title": "Group Shop",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Shop"
+        ]
+      }
+    ],
+    "quiet_line": "1 group"
+  },
+  "counting": true
+}

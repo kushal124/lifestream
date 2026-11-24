@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "typeRoots": ["../node_modules/@types"],
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".build/tsc/server.tsbuildinfo",
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["server.mjs", "lib/**/*.mjs", "lib/**/*.d.ts"]
+}

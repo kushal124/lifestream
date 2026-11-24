@@ -1,0 +1,36 @@
+{
+  "record": {
+    "as_of": "2026-11-14T22:10+00:00",
+    "total": 3,
+    "capped": true,
+    "hits": [
+      {
+        "ref": "r1",
+        "at": "2026-11-12T20:01+00:00",
+        "day": "2026-11-12",
+        "family": "messages",
+        "product": "imessage",
+        "title": "[[Person 1]]",
+        "from": "[[Person 1]]",
+        "snippet": "«[[Person 1]]»: see you at eight",
+        "chat": "r2",
+        "chat_title": "[[Person 1]]"
+      },
+      {
+        "ref": "r3",
+        "at": "2026-11-10T08:45+00:00",
+        "day": "2026-11-10",
+        "family": "calls",
+        "product": "phone",
+        "title": "Call with [[Person 1]]"
+      },
+      {
+        "ref": "r4",
+        "day": "2026-11-09",
+        "family": "calendar",
+        "title": "Lunch with [[Person 1]]"
+      }
+    ],
+    "next": "r5"
+  }
+}

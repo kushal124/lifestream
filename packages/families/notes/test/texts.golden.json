@@ -1,0 +1,39 @@
+{
+  "NOTE-BLANK-FIRST": {
+    "title": "Blank first",
+    "text": "Blank first\nafter the blank"
+  },
+  "NOTE-BROKEN": {
+    "title": "Broken synthetic",
+    "text": "the preview Notes kept"
+  },
+  "NOTE-CUT-TITLE": {
+    "title": "A synthetic first line that Notes cut…",
+    "text": "A synthetic first line that Notes cut short as its title\nmore"
+  },
+  "NOTE-GROCERIES": {
+    "title": "Groceries",
+    "text": "Groceries\n😀 fake list\n[x] synthetic milk\n[ ] synthetic eggs\n[ ] synthetic bread"
+  },
+  "NOTE-LOCKED": {
+    "title": "Synthetic secret",
+    "text": ""
+  },
+  "NOTE-PLAN": {
+    "title": "Plan",
+    "text": "Plan\n1. first synthetic step\n2. second synthetic step\n  - nested bullet\n3. third synthetic step"
+  },
+  "NOTE-PURGED": null,
+  "NOTE-SKETCH": {
+    "title": "Sketches",
+    "text": "Sketches\nsee [image] and [drawing]\nalso [link: https://example.com/synthetic]\n[attachment: synthetic file.bin]"
+  },
+  "NOTE-TRASH": {
+    "title": "Old synthetic draft",
+    "text": "Old synthetic draft\ndraft text"
+  },
+  "NOTE-UNTIMED": {
+    "title": "No synthetic time",
+    "text": "No synthetic time\ntimeless"
+  }
+}

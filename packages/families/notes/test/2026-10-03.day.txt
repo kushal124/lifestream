@@ -1,0 +1,14 @@
+Day 2026-10-03 (Saturday) in America/New_York, 04:00 to 2026-10-04 04:00 (24 h)
+8 atoms: notes 8
+
+09:00–09:20 Note “Groceries” written: 😀 fake list [x] synthetic milk [ ] synthetic eggs [ ] synthetic bread
+10:00 Note “Broken synthetic” written: the preview Notes kept
+11:00 Note “Blank first” written: after the blank
+12:00 Note “A synthetic first line that Notes cut…” written: A synthetic first line that Notes cut short as its title more
+14:30 Note “Plan” edited: 1. first synthetic step 2. second synthetic step - nested bullet 3. third synthetic step
+16:00 Note “Sketches” written: see [image] and [drawing] also [link: https://example.com/synthetic] [attachment: synthetic file.bin]
+17:00–17:05 Note “Synthetic secret” written, locked
+18:00–18:10 Note “Old synthetic draft” written, in Recently Deleted: draft text
+
+Coverage
+notes: apple-notes:person-a@example.com:macbook-pro-0001 read through the day

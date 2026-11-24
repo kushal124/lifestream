@@ -1,0 +1,142 @@
+{
+  "done": {
+    "by": "Vision One",
+    "at_ms": 1793179500000,
+    "state": "done",
+    "line": "Vision One · 28 Oct",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+        "words": "Qwen 3.5",
+        "note": "Stays on MacBook Pro"
+      }
+    ]
+  },
+  "queued": {
+    "by": null,
+    "at_ms": null,
+    "state": "waiting",
+    "line": "In the queue",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "openrouter:vendor-a/vision-1",
+        "words": "Vision One",
+        "note": "Sent to OpenRouter"
+      }
+    ]
+  },
+  "older": {
+    "by": null,
+    "at_ms": null,
+    "state": "off",
+    "line": "Older than this stream's range",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "openrouter:vendor-a/vision-1",
+        "words": "Vision One",
+        "note": "Sent to OpenRouter"
+      }
+    ]
+  },
+  "failed": {
+    "by": null,
+    "at_ms": null,
+    "state": "failed",
+    "line": "Could not be processed",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa4",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+        "words": "Qwen 3.5",
+        "note": "Stays on MacBook Pro"
+      }
+    ]
+  },
+  "needs": {
+    "by": null,
+    "at_ms": null,
+    "state": "needs",
+    "line": "Connect a model that takes audio",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa5",
+      "prompt": "voice-note-transcript"
+    },
+    "choose": []
+  },
+  "none": {
+    "by": null,
+    "at_ms": null,
+    "state": "off",
+    "line": null,
+    "ask": null,
+    "choose": []
+  },
+  "resting": {
+    "by": null,
+    "at_ms": null,
+    "state": "waiting",
+    "line": "Your Claude plan is used up · resets 14:00",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1",
+      "prompt": "chat-image-caption"
+    },
+    "choose": []
+  },
+  "off": {
+    "by": null,
+    "at_ms": null,
+    "state": "off",
+    "line": null,
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "openrouter:vendor-a/vision-1",
+        "words": "Vision One",
+        "note": "Sent to OpenRouter"
+      }
+    ]
+  },
+  "chosen": {
+    "by": "Vision One",
+    "at_ms": 1793179500000,
+    "state": "waiting",
+    "line": "Your Claude plan is used up · resets 14:00",
+    "ask": {
+      "family": "messages",
+      "item": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6",
+      "prompt": "chat-image-caption"
+    },
+    "choose": [
+      {
+        "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+        "words": "Qwen 3.5",
+        "note": "Stays on MacBook Pro"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-person-only.json",
+  "reply" : {
+    "refused" : {
+      "code" : "PERSON_ONLY",
+      "message" : "Allow this in Lifestream on your Mac or iPhone."
+    }
+  },
+  "sent" : {
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ"
+  }
+}

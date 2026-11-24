@@ -1,0 +1,79 @@
+import type { Json, OpenView } from "@lifestreamprotocol/core";
+import { compare, routesOf, type Missing, type PhotoRoutes } from "./read.js";
+
+export const WANTED_UNIT = "wanted/";
+const WANTED_PAGE = 1_000;
+
+export interface WantedContent {
+  at_ms: number | null;
+  missing: Missing[];
+  routes: { source: string; asset: string; files: string[]; refused: boolean }[];
+}
+
+export interface Served {
+  contents(prefix: string): Iterable<Json>;
+}
+
+export interface Left {
+  wanted: number;
+  unavailable: number;
+  bytes: number;
+}
+
+export interface WantedAnswer {
+  photos: { asset: string; files: string[] }[];
+  left: Left;
+}
+
+export interface Coming extends Left {
+  unsized: number;
+  libraries: Record<string, number>;
+}
+
+export function wanted(view: OpenView, photos: PhotoRoutes, source: string, asking: ReadonlySet<string>, start_ms: number | null): WantedAnswer {
+  const routes = routesOf(view, photos);
+  const asked: { at_ms: number | null; asset: string; files: string[] }[] = [];
+  const order = (id: string) => (routes.get(id)?.rank === 0 ? 1 : asking.has(id) ? 0 : null);
+  const units = [...wantedUnits(servedOf(view))].filter(fromStart(start_ms));
+  for (const photo of units) {
+    const first = photo.routes.filter((route) => !route.refused).filter((route) => order(route.source) !== null)
+      .sort((one, other) => order(one.source)! - order(other.source)! || compare(one.source, other.source) || compare(one.asset, other.asset))[0];
+    if (first?.source === source) asked.push({ at_ms: photo.at_ms, asset: first.asset, files: first.files });
+  }
+  asked.sort((one, other) => (other.at_ms ?? Number.MIN_SAFE_INTEGER) - (one.at_ms ?? Number.MIN_SAFE_INTEGER) || compare(one.asset, other.asset));
+  const { unsized: _unsized, libraries: _libraries, ...left } = coming(units, start_ms);
+  return { photos: asked.slice(0, WANTED_PAGE).map(({ asset, files }) => ({ asset, files })), left };
+}
+
+export function coming(units: Iterable<WantedContent>, start_ms: number | null): Coming {
+  const counted: Coming = { wanted: 0, unavailable: 0, bytes: 0, unsized: 0, libraries: {} };
+  const kept = fromStart(start_ms);
+  for (const photo of units) {
+    if (!kept(photo)) continue;
+    if (photo.routes.every((route) => route.refused)) {
+      counted.unavailable++;
+      continue;
+    }
+    counted.wanted++;
+    for (const source of new Set(photo.routes.map((route) => route.source))) counted.libraries[source] = (counted.libraries[source] ?? 0) + 1;
+    for (const file of photo.missing) {
+      if (file.size === null) counted.unsized++;
+      else counted.bytes += file.size;
+    }
+  }
+  return counted;
+}
+
+const fromStart = (start_ms: number | null) => (photo: WantedContent): boolean => start_ms === null || photo.at_ms === null || photo.at_ms >= start_ms;
+
+export function* wantedUnits(served: Served): Iterable<WantedContent> {
+  for (const content of served.contents(WANTED_UNIT)) yield content as unknown as WantedContent;
+}
+
+function servedOf(view: OpenView): Served {
+  return {
+    contents: function* (prefix) {
+      for (const stored of view.extractsUnder("photos", prefix)) yield stored.content;
+    },
+  };
+}

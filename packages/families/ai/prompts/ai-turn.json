@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "type": {
+    "type": "object",
+    "properties": {
+      "own": { "type": "array", "items": { "type": "string" } },
+      "pasted": { "type": "string" },
+      "attachments": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["own", "pasted", "attachments"],
+    "additionalProperties": false
+  },
+  "keeps": []
+}

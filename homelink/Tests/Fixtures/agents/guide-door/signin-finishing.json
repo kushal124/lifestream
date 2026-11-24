@@ -1,0 +1,24 @@
+{
+  "route": "GET /v1/agents/signins/<id>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMQ",
+    "state": "approved",
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Allowed on iPhone,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1791968400000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

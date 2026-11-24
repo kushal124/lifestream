@@ -1,0 +1,13 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "rq-0000000000000001",
+    "answer": "once",
+    "expect": 1
+  },
+  "status": 409,
+  "answer": {
+    "code": "ACCESS_CHANGED",
+    "message": "This access just changed. Look again, then save."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "rq-0000000000000001",
+    "answer": "always",
+    "expect": 3
+  },
+  "status": 409,
+  "answer": {
+    "code": "AGENT_REQUEST_ERASED",
+    "message": "What this asked for was erased."
+  }
+}

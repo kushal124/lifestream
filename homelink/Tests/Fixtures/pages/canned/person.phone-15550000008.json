@@ -1,0 +1,457 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person F",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000008",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000008",
+      "from": null,
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 0,
+    "calls": null,
+    "line": "None in the last 30 days",
+    "before": {
+      "day": "2025-08-21",
+      "joiner": " · last, "
+    }
+  },
+  "history": {
+    "years": [
+      {
+        "year": "2024",
+        "count": 111,
+        "day": "2024-08-30"
+      },
+      {
+        "year": "2025",
+        "count": 116,
+        "day": "2025-07-07"
+      },
+      {
+        "year": "2026",
+        "count": 0,
+        "day": null
+      }
+    ],
+    "total": 227,
+    "marked": 1,
+    "kind": "years"
+  },
+  "talk": {
+    "day": "2025-08-21",
+    "chat": "whatsapp:15550000008@s.whatsapp.net",
+    "title": "Person F",
+    "group": false,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 2
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 3
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 6
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 8
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 9
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 10
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 11
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 12
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 13
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 14
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 15
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 16
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 17
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 18
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 19
+      },
+      {
+        "who": "phone:+15550000008",
+        "name": "Person F",
+        "text": "synthetic line former-F-in-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 20
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 21
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 22
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-F-out-120",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 23
+      }
+    ],
+    "folded": [],
+    "focus": "a23"
+  },
+  "where": [
+    {
+      "chat": "whatsapp:15550000008@s.whatsapp.net",
+      "title": "WhatsApp",
+      "group": false,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 105,
+      "line": "105 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000002@g.us",
+      "title": "Group Beta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 35,
+      "line": "35 messages",
+      "quiet": false
+    }
+  ],
+  "suggestions_line": "1 suggestion",
+  "edit": {
+    "call": "Person F",
+    "full_name": null,
+    "name_from": null,
+    "record_id": null,
+    "face": false,
+    "reach": "WhatsApp",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "227 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": null,
+    "details": null,
+    "suggestions": [
+      {
+        "id": "4f2571f3d2380118",
+        "kind": "same",
+        "value": "email:person-f@example.com",
+        "reasons": [
+          {
+            "reason": "linked",
+            "count": 0
+          },
+          {
+            "reason": "named",
+            "count": 1
+          },
+          {
+            "reason": "seen",
+            "count": 0
+          }
+        ],
+        "ticked": false,
+        "other": {
+          "id": "email:person-f@example.com",
+          "name": "Person F",
+          "photo": null,
+          "named": true,
+          "face": false
+        }
+      }
+    ],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

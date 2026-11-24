@@ -1,0 +1,261 @@
+{
+  "extract": {
+    "unit": "macbook-pro-0001/1791358800000",
+    "start_ms": 1791358800000,
+    "end_ms": 1791361498000,
+    "days": [
+      "2026-10-06",
+      "2026-10-07"
+    ],
+    "closed": true,
+    "apps": [
+      [
+        "Browser",
+        1498
+      ],
+      [
+        "Editor",
+        1200
+      ]
+    ],
+    "blocks": [
+      {
+        "end_ms": 1791361498001,
+        "parts": [
+          {
+            "carry": [],
+            "empty": false,
+            "end_ms": 1791361498001,
+            "evidence": [
+              {
+                "text": "STRETCH: 03:40:00 to 04:24:58 America/New_York, 2026-10-07\nSources: the screen (the app, window and website in front about every 2 s, with the text on screen; \"marked idle\" = no keyboard or mouse for a few seconds), and the input log (every key, click and scroll).\n\n## 1. TIMELINE (every stretch where the app, window and site stayed the same)\n03:40:00–03:50:00 (10 min) Editor · “"
+              },
+              {
+                "free": true,
+                "text": "notes-1.txt"
+              },
+              {
+                "text": "” · hands: 12 keys, 2 clicks, 0 scrolls, 0 pointer moves · longest still 295 s\n03:50:00–04:00:00 (10 min) Editor · “"
+              },
+              {
+                "free": true,
+                "text": "notes-2.txt"
+              },
+              {
+                "text": "” · hands: 12 keys, 2 clicks, 0 scrolls, 0 pointer moves · longest still 295 s\n04:00:00–04:24:58 (25 min) Browser · “"
+              },
+              {
+                "free": true,
+                "text": "Example page"
+              },
+              {
+                "text": "” · hands: 30 keys, 5 clicks, 0 scrolls, 0 pointer moves · longest still 295 s\n\n## 2. MACHINE EVENTS (and the first minutes after the person left the Mac)\n(none)\n\n## 3. ACTIONS (from the input log; typed text is what the keys produced, deletes applied)\n03:40:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Editor) → nothing changed in front\n03:40:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Editor)\n03:45:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Editor) → nothing changed in front\n03:45:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Editor)\n03:50:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Editor) → nothing changed in front\n03:50:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Editor)\n03:55:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Editor) → nothing changed in front\n03:55:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Editor)\n04:00:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Browser) → nothing changed in front\n04:00:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Browser)\n04:05:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Browser) → nothing changed in front\n04:05:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Browser)\n04:10:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Browser) → nothing changed in front\n04:10:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Browser)\n04:15:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Browser) → nothing changed in front\n04:15:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Browser)\n04:20:01 typed "
+              },
+              {
+                "free": true,
+                "text": "\"hello⏎\""
+              },
+              {
+                "text": " (Browser) → nothing changed in front\n04:20:05 clicked Button “"
+              },
+              {
+                "free": true,
+                "text": "Send"
+              },
+              {
+                "text": "” (Browser)\n\n## 4. SCREEN TEXT (page text at the start of each stretch, next to each action, and periodically; each window shows only lines it has not shown before)\n--- 03:40:00 · Editor · “"
+              },
+              {
+                "free": true,
+                "text": "notes-1.txt"
+              },
+              {
+                "text": "” · 2 new lines\n"
+              },
+              {
+                "free": true,
+                "text": "notes-1.txt: synthetic line one\nnotes-1.txt: synthetic line two"
+              },
+              {
+                "text": "\n\n--- 03:50:00 · Editor · “"
+              },
+              {
+                "free": true,
+                "text": "notes-2.txt"
+              },
+              {
+                "text": "” · 2 new lines\n"
+              },
+              {
+                "free": true,
+                "text": "notes-2.txt: synthetic line one\nnotes-2.txt: synthetic line two"
+              },
+              {
+                "text": "\n\n--- 04:00:00 · Browser · “"
+              },
+              {
+                "free": true,
+                "text": "Example page"
+              },
+              {
+                "text": "” · 2 new lines\n"
+              },
+              {
+                "free": true,
+                "text": "Example page: synthetic line one\nExample page: synthetic line two"
+              },
+              {
+                "text": "\n"
+              }
+            ],
+            "start_ms": 1791358800000
+          }
+        ],
+        "start_ms": 1791358800000
+      }
+    ]
+  },
+  "account": {
+    "actions": [
+      {
+        "at_ms": 1791358800000,
+        "what": "Sent a synthetic message"
+      }
+    ],
+    "life": {
+      "other": [],
+      "people": [],
+      "projects": [
+        "synthetic project"
+      ]
+    },
+    "summary": "Worked in Editor on notes-1.txt.",
+    "timeline": [
+      {
+        "doing": "Worked in Editor on notes-1.txt",
+        "end_ms": 1791361498000,
+        "present": "yes",
+        "present_why": "typing",
+        "start_ms": 1791358800000,
+        "task": "synthetic task",
+        "where": "Editor"
+      }
+    ]
+  },
+  "days": {
+    "2026-10-06": "Day 2026-10-06 (Tuesday) in America/New_York, 04:00 to 2026-10-07 04:00 (24 h)\n3 atoms: screen 3\n\n2026-10-07 03:40–04:00 Screen: Browser 25 min, Editor 20 min (3)\n  2026-10-07 03:40–04:00 Summary: Worked in Editor on notes-1.txt. (continues into 7 Oct)\n  Worked in Editor on notes-1.txt [synthetic task] in Editor (continues into 7 Oct)\n  2026-10-07 03:40 Did: Sent a synthetic message\n\nCoverage\nscreen: input:local:macbook-pro-0001 read through the day; screen:local:macbook-pro-0001 read through the day\n",
+    "2026-10-07": "Day 2026-10-07 (Wednesday) in America/New_York, 04:00 to 2026-10-08 04:00 (24 h)\n2 atoms: screen 2\n\n04:00–04:24 Screen: Browser 25 min, Editor 20 min (2)\n  04:00–04:24 Summary: Worked in Editor on notes-1.txt. (continues from 6 Oct)\n  Worked in Editor on notes-1.txt [synthetic task] in Editor (continues from 6 Oct)\n\nCoverage\nscreen: input:local:macbook-pro-0001 read into the day; screen:local:macbook-pro-0001 read into the day\n"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-04",
+  "state": "found",
+  "moment": {
+    "key": "e20",
+    "row": "e20",
+    "kind": "photos",
+    "icon": "photos",
+    "title": "2 photos",
+    "name": "2 photos",
+    "near": null,
+    "start_ms": 1793796120000,
+    "end_ms": null,
+    "untimed": null,
+    "length_ms": null,
+    "products": [],
+    "people": [],
+    "place": {
+      "name": "Near Home",
+      "unit": "stay/location:local:iphone-aa01/1793794860000",
+      "slug": null
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [
+      {
+        "hash": "sha256:6f2b9865e37d725bf0d1149256ad023d90c91af59e06d00b9b6d13ea910888f4",
+        "alt": "Photo",
+        "words": "",
+        "video": false,
+        "duration_ms": null,
+        "live": false
+      },
+      {
+        "hash": "sha256:3f315cd4931a32704443722123a35f12ad845b66aee944230b5faed1adee882d",
+        "alt": "Photo",
+        "words": "",
+        "video": false,
+        "duration_ms": null,
+        "live": false
+      }
+    ],
+    "source": {
+      "records": [],
+      "more": 0,
+      "units": [
+        {
+          "family": "photos",
+          "unit": "burst/1793796120000"
+        }
+      ],
+      "atoms": 2,
+      "start_ms": 1793796120000,
+      "end_ms": 1793796150000
+    },
+    "view": {
+      "lines": [],
+      "view": "photos"
+    }
+  }
+}

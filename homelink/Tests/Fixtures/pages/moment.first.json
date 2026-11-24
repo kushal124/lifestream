@@ -1,0 +1,119 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-03-12",
+  "day": "2031-03-04",
+  "state": "found",
+  "moment": {
+    "key": "e1",
+    "row": "e1",
+    "kind": "sleep",
+    "icon": "sleep",
+    "title": "Asleep",
+    "name": "Asleep",
+    "near": null,
+    "start_ms": 1791968400000,
+    "end_ms": 1791968400000,
+    "untimed": null,
+    "length_ms": null,
+    "products": [
+      "WHOOP"
+    ],
+    "people": [],
+    "place": {
+      "name": "Synthetic Home",
+      "unit": "stay/location:local:phone-aa01/1930303800000",
+      "slug": null
+    },
+    "out": null,
+    "record": {
+      "source": "whoop:1:cloud",
+      "kind": "sleep",
+      "key": "00000000-0000-4000-8000-000000000101"
+    },
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "whoop:1:cloud",
+          "kind": "sleep",
+          "key": "00000000-0000-4000-8000-000000000101",
+          "at_ms": null
+        },
+        {
+          "source": "whoop:1:cloud",
+          "kind": "recovery",
+          "key": "2001",
+          "at_ms": 1791968400000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "health",
+          "unit": "sleep/whoop:1:cloud/00000000-0000-4000-8000-000000000101"
+        },
+        {
+          "family": "health",
+          "unit": "recovery/whoop:1:cloud/2001"
+        }
+      ],
+      "atoms": 2,
+      "start_ms": 1791968400000,
+      "end_ms": null
+    },
+    "view": {
+      "label": "Asleep",
+      "length_ms": 24600000,
+      "bed_ms": 1791968400000,
+      "wake_ms": 1791968400000,
+      "facts": [
+        [
+          {
+            "label": "In bed",
+            "value": "6:50"
+          },
+          {
+            "label": "Light",
+            "value": "3:10"
+          },
+          {
+            "label": "Deep",
+            "value": "1:20"
+          },
+          {
+            "label": "REM",
+            "value": "1:30"
+          },
+          {
+            "label": "Awake",
+            "value": "0:40"
+          },
+          {
+            "label": "Efficiency",
+            "value": "90%"
+          }
+        ],
+        [
+          {
+            "label": "Score",
+            "value": "64"
+          },
+          {
+            "label": "HRV",
+            "value": "52.1"
+          },
+          {
+            "label": "Resting heart rate",
+            "value": "55"
+          }
+        ]
+      ],
+      "vitals": [
+        "Vitals against 18 Feb–3 Mar: heart rate high, over 92, at 07:15–07:30 (peak avg 101.2); stress never above 2.1; steps 0 (median 7,010.5 over 14 prior days)"
+      ],
+      "view": "body"
+    }
+  }
+}

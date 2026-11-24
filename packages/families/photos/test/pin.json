@@ -1,0 +1,13 @@
+{
+  "family": "photos",
+  "key": {
+    "code": "13",
+    "adapters": {
+      "photos/apple-photos": "1",
+      "photos/camera": "1",
+      "photos/google-photos": "1"
+    }
+  },
+  "rows": 10,
+  "digest": "sha256:edceb5cc8ced427901c6a017e4dffd2abc60ce1ad7f9124ef225195c8321f6f7"
+}

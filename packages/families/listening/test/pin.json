@@ -1,0 +1,12 @@
+{
+  "family": "listening",
+  "key": {
+    "code": "2",
+    "adapters": {
+      "listening/now-playing": "2",
+      "listening/spotify": "1"
+    }
+  },
+  "rows": 2,
+  "digest": "sha256:ef3df3e7d9a1014844e41bbbf2d0fec4f2b634867d0714a9426ccaee5b9f65e3"
+}

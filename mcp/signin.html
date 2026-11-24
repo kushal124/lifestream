@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Sign in to Lifestream</title>
+<link rel="stylesheet" href="/oauth/signin.css">
+</head>
+<body>
+<main class="signin">
+  <span class="mark" aria-hidden="true">{{MARK}}</span>
+  <p class="brand">Lifestream</p>
+  <section id="ask" hidden>
+    <h1 id="head"></h1>
+    <p id="from" class="from"></p>
+    <p class="gets">You choose what it reads where you approve it. It can't change your record.</p>
+    <p id="number" class="number"></p>
+    <p class="how">Approve on your Mac or iPhone. Tap this number there.</p>
+  </section>
+  <section id="said" hidden>
+    <h1 id="said-head"></h1>
+    <p id="said-line" class="from"></p>
+  </section>
+  <p class="foot">Didn't start this? Close this page.</p>
+</main>
+<script type="application/json" id="data">{{DATA}}</script>
+<script>
+(() => {
+  const data = JSON.parse(document.getElementById('data').textContent);
+  const element = id => document.getElementById(id);
+  const say = (head, line) => {
+    element('ask').hidden = true;
+    element('said').hidden = false;
+    element('said-head').textContent = head;
+    element('said-line').textContent = line;
+  };
+  const ended = () => say('This sign-in ended.', 'Start connecting again.');
+  if (typeof data.error === 'string') return say("This sign-in can't go on.", data.error);
+  if (data.ended === true) return ended();
+  element('head').textContent = `${data.name} wants to read your Lifestream.`;
+  element('from').textContent = data.line;
+  element('number').textContent = String(data.number);
+  element('ask').hidden = false;
+  const wait = async () => {
+    let answer = null;
+    try {
+      const response = await fetch(data.wait, { cache: 'no-store' });
+      if (response.ok) answer = await response.json();
+    } catch {}
+    if (answer?.state === 'approved') {
+      say('Approved.', `Taking you back to ${data.name}.`);
+      return location.replace(answer.redirect);
+    }
+    if (answer?.state === 'denied' || answer?.state === 'wrong') {
+      say('Not allowed.', answer.state === 'wrong' ? 'Another number was tapped. Start connecting again.' : `${data.name} won't read your Lifestream.`);
+      return location.replace(answer.redirect);
+    }
+    if (answer?.state === 'gone') return ended();
+    setTimeout(wait, 2000);
+  };
+  setTimeout(wait, 2000);
+})();
+</script>
+</body>
+</html>

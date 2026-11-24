@@ -1,0 +1,1 @@
+Parts of the image may have been covered for privacy before you see it: a face or some words filled flat. They are covered on purpose. Never describe a covering as a box, a block or a shape, and never guess what is under it; describe the rest.

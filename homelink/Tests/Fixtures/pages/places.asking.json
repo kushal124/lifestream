@@ -1,0 +1,83 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "here": null,
+  "frame": {
+    "north": 48.861271218109955,
+    "south": 48.851928781890045,
+    "east": 2.3592996998186018,
+    "west": 2.345100300181398
+  },
+  "cities": [
+    {
+      "key": "city:Paris",
+      "title": "Paris",
+      "here": false,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      },
+      "places": [
+        {
+          "slug": "flat-0d0d0d",
+          "name": "Synthetic Flat",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Flat",
+            "Paris",
+            "Île-de-France",
+            "France"
+          ],
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "radius_m": 120,
+          "also": [],
+          "hours": 60.01
+        }
+      ],
+      "once": []
+    }
+  ],
+  "to_name": [
+    {
+      "key": "spot:48.853,2.369999",
+      "latitude": 48.853,
+      "longitude": 2.369999,
+      "line": "4 days · 1 stay",
+      "find": [
+        "Paris",
+        "Île-de-France",
+        "France"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [],
+      "photos_total": 0,
+      "ask": {
+        "line": "You've slept here 3 nights",
+        "since": {
+          "day": "2026-10-01",
+          "kind": "day"
+        }
+      },
+      "city": "Paris"
+    }
+  ],
+  "hidden": [],
+  "counting": false
+}

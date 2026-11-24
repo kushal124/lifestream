@@ -1,0 +1,57 @@
+{
+  "connector" : "now-playing",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "biome-now-playing",
+          "indexes" : {
+
+          },
+          "members" : [
+            "local/810000000000000.segb",
+            "local/tombstone/810000050000000.segb",
+            "remote/0000BBBB-0000-4000-8000-000000000002/809990000000000.segb",
+            "remote/0000BBBB-0000-4000-8000-000000000002/tombstone/809990050000000.segb"
+          ],
+          "source_id" : "now-playing:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "now-playing:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "now-playing:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "now_playing"
+}

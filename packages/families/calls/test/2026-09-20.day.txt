@@ -1,0 +1,12 @@
+Day 2026-09-20 (Sunday) in America/New_York, 04:00 to 2026-09-21 04:00 (24 h)
+6 atoms: calls 6
+
+10:05–10:08 Phone call with Person A, the user called, 3 min
+11:30 Missed phone call from Person B
+13:00 FaceTime video call with Person A, they called, 42 s
+14:10 Phone call to Synthetic Clinic, no answer
+16:00 Missed phone call from an unknown number
+2026-09-21 03:50–04:00 Phone call with Person B, they called, 30 min (continues into 21 Sep)
+
+Coverage
+calls: apple-calls:person-a@example.com:macbook-pro-0001 read into the day

@@ -1,0 +1,8 @@
+Day 2026-10-07 (Wednesday) in America/New_York, 04:00 to 2026-10-08 04:00 (24 h)
+2 atoms: calendar 2
+
+12:00–13:00 Event “Synthetic planning, round two”, organised by Person B, 3 attendees, you accepted, video call, Room 4, synthetic building, in America/Los_Angeles time
+23:30–2026-10-08 04:00 Event “Synthetic night shift”, tentative (continues into 8 Oct)
+
+Coverage
+calendar: google-calendar:person-a@example.com:cloud not read into the day; google-calendar:person-a@example.com:export not read into the day

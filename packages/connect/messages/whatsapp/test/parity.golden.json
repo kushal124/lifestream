@@ -1,0 +1,1302 @@
+{
+  "mac-snapshot": [
+    {
+      "kind": "call",
+      "key": "SYNTH-CALL-1",
+      "content": {
+        "type": "whatsapp.call",
+        "call": {
+          "ZBYTESRECEIVED": 100,
+          "ZBYTESSENT": 50,
+          "ZISBOTGROUPCALL": 0,
+          "ZISLIGHTWEIGHT": 0,
+          "ZOUTCOME": 1,
+          "ZDATE": 800000000,
+          "ZDURATION": 120.5,
+          "ZCALLIDSTRING": "SYNTH-CALL-1",
+          "ZGROUPCALLCREATORUSERJIDSTRING": null,
+          "ZGROUPJIDSTRING": null,
+          "ZREMINDERID": null,
+          "ZSCHEDULEDID": "SYNTH-SCHEDULE-1"
+        },
+        "aggregate": {
+          "ZINCOMING": 1,
+          "ZMISSED": 0,
+          "ZMISSEDREASON": 0,
+          "ZVIDEO": 1,
+          "ZFIRSTDATE": 799999999.5,
+          "ZLINKTOKEN": "SYNTH-LINK-1"
+        },
+        "participants": [
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 30,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 2,
+            "ZJIDSTRING": "15550000003@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": null,
+            "ZJIDSTRING": "15550000008@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "90000000000007@lid"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": null
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307200000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "call",
+      "key": "SYNTH-CALL-2",
+      "content": {
+        "type": "whatsapp.call",
+        "call": {
+          "ZBYTESRECEIVED": 200,
+          "ZBYTESSENT": 100,
+          "ZISBOTGROUPCALL": 0,
+          "ZISLIGHTWEIGHT": 0,
+          "ZOUTCOME": 2,
+          "ZDATE": 800000003.5,
+          "ZDURATION": 0.25,
+          "ZCALLIDSTRING": "SYNTH-CALL-2",
+          "ZGROUPCALLCREATORUSERJIDSTRING": null,
+          "ZGROUPJIDSTRING": null,
+          "ZREMINDERID": null,
+          "ZSCHEDULEDID": null
+        },
+        "aggregate": {
+          "ZINCOMING": 0,
+          "ZMISSED": 1,
+          "ZMISSEDREASON": 2,
+          "ZVIDEO": 0,
+          "ZFIRSTDATE": 800000003,
+          "ZLINKTOKEN": null
+        },
+        "participants": []
+      },
+      "time": {
+        "start_ms": 1778307203500,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "call",
+      "key": "SYNTH-CALL-3",
+      "content": {
+        "type": "whatsapp.call",
+        "call": {
+          "ZBYTESRECEIVED": 300,
+          "ZBYTESSENT": 150,
+          "ZISBOTGROUPCALL": 0,
+          "ZISLIGHTWEIGHT": 0,
+          "ZOUTCOME": 3,
+          "ZDATE": 800000100,
+          "ZDURATION": 0.25,
+          "ZCALLIDSTRING": "SYNTH-CALL-3",
+          "ZGROUPCALLCREATORUSERJIDSTRING": "15550000002@s.whatsapp.net",
+          "ZGROUPJIDSTRING": "15550000001-1700000000@g.us",
+          "ZREMINDERID": null,
+          "ZSCHEDULEDID": null
+        },
+        "aggregate": {
+          "ZINCOMING": 1,
+          "ZMISSED": 0,
+          "ZMISSEDREASON": 0,
+          "ZVIDEO": 1,
+          "ZFIRSTDATE": 799999999.5,
+          "ZLINKTOKEN": "SYNTH-LINK-1"
+        },
+        "participants": [
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 30,
+            "ZJIDSTRING": "15550000002@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 2,
+            "ZJIDSTRING": "15550000003@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": null,
+            "ZJIDSTRING": "15550000008@s.whatsapp.net"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": "90000000000007@lid"
+          },
+          {
+            "ZOUTCOME": 1,
+            "ZJIDSTRING": null
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307300000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "0@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "0@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 5",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 2,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 0,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-5",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": null
+    },
+    {
+      "kind": "chat",
+      "key": "15550000001-1700000000@g.us",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000001-1700000000@g.us",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 4",
+          "ZSESSIONTYPE": 1,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 1,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000041,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-4",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": {
+          "ZSTATE": 2,
+          "ZCREATIONDATE": 700000000.25,
+          "ZSUBJECTTIMESTAMP": 700000100.5,
+          "ZCREATORJID": "15550000006@s.whatsapp.net",
+          "ZOWNERJID": "15550000006@s.whatsapp.net",
+          "ZSUBJECTOWNERJID": "90000000000007@lid",
+          "ZSOURCEJID": "15550000001-1700000000@g.us",
+          "ZPICTUREID": "SYNTH-PICTURE-1"
+        }
+      },
+      "time": {
+        "start_ms": 1778307241000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "15550000004@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000004@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": "15550000004@s.whatsapp.net",
+          "ZPARTNERNAME": "Synthetic Chat 3",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 0,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000030.9996,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-3",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307230999,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "15550000009@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000009@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 6",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 0,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 790000000,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-6",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": null
+    },
+    {
+      "kind": "chat",
+      "key": "90000000000002@lid",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000002@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": "90000000000002@lid",
+          "ZPARTNERNAME": "Synthetic Chat 1",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 1,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000010.125,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-1",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307210125,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "90000000000003@lid",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "90000000000003@LID",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 2",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 2,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000020.5,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-2",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307220500,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "0@s.whatsapp.net:SYNTH-9",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-9",
+          "ZTEXT": "synthetic message 9",
+          "ZFROMJID": "0@s.whatsapp.net",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 0,
+          "ZSENTDATE": 0,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "0@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": null
+    },
+    {
+      "kind": "msg",
+      "key": "15550000001-1700000000@g.us:SYNTH-5",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-5",
+          "ZTEXT": "synthetic message 5",
+          "ZFROMJID": "15550000001-1700000000@g.us",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000040.25,
+          "ZSENTDATE": 800000040.5,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000001-1700000000@g.us",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": "15550000006@s.whatsapp.net",
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307240250,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "15550000001-1700000000@g.us:SYNTH-6",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-6",
+          "ZTEXT": "synthetic message 6",
+          "ZFROMJID": "15550000001-1700000000@g.us",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000041,
+          "ZSENTDATE": 800000041.25,
+          "ZMESSAGETYPE": 1,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000001-1700000000@g.us",
+        "parent_stanza_id": null,
+        "media_item": {
+          "ZFILESIZE": 41,
+          "ZMEDIAORIGIN": 0,
+          "ZMOVIEDURATION": 0,
+          "ZASPECTRATIO": 1.5,
+          "ZHACCURACY": 0,
+          "ZLATITUDE": 0,
+          "ZLONGITUDE": 0,
+          "ZMEDIAURLDATE": 800000000.5,
+          "ZAUTHORNAME": null,
+          "ZCOLLECTIONNAME": null,
+          "ZMEDIAURL": "https://media.example.invalid/2",
+          "ZTITLE": null,
+          "ZVCARDNAME": null,
+          "ZVCARDSTRING": null,
+          "ZMEDIAKEY": {
+            "$bytes64": "AQL/Ag=="
+          }
+        },
+        "group_member_jid": "90000000000007@lid",
+        "blobs": [
+          {
+            "hash": "sha256:1901ea0e852b58d7214f1042a25e3c2b3df8a953f42bbf9748a79ac32eb8b2bd",
+            "bytes": 62,
+            "role": "ZWAMEDIAITEM.ZMEDIALOCALPATH"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307241000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "15550000004@s.whatsapp.net:SYNTH:4:colon",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH:4:colon",
+          "ZTEXT": "synthetic café line",
+          "ZFROMJID": "15550000004@s.whatsapp.net",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000030.9996,
+          "ZSENTDATE": 800000031.2496,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000004@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307230999,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000002@lid:SYNTH-1",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-1",
+          "ZTEXT": "synthetic message 1",
+          "ZFROMJID": "15550000002@s.whatsapp.net",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000000,
+          "ZSENTDATE": 800000000,
+          "ZMESSAGETYPE": 1,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000002@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": {
+          "ZFILESIZE": 41,
+          "ZMEDIAORIGIN": 0,
+          "ZMOVIEDURATION": 0,
+          "ZASPECTRATIO": 1.5,
+          "ZHACCURACY": 0,
+          "ZLATITUDE": 0,
+          "ZLONGITUDE": 0,
+          "ZMEDIAURLDATE": 800000000.5,
+          "ZAUTHORNAME": null,
+          "ZCOLLECTIONNAME": null,
+          "ZMEDIAURL": "https://media.example.invalid/1",
+          "ZTITLE": null,
+          "ZVCARDNAME": null,
+          "ZVCARDSTRING": null,
+          "ZMEDIAKEY": {
+            "$bytes64": "AQL/AQ=="
+          }
+        },
+        "group_member_jid": null,
+        "blobs": [
+          {
+            "hash": "sha256:132197a795c155b521318591d744aee5b4a07254ddb5dfaa6fbe20d6764c5873",
+            "bytes": 50,
+            "role": "ZWAMEDIAITEM.ZMEDIALOCALPATH"
+          },
+          {
+            "hash": "sha256:1f9280a6909173c05a3f12bb35f3ce24ca49d6b85da66547246b68baf9b6a709",
+            "bytes": 52,
+            "role": "ZWAMEDIAITEM.ZTHUMBNAILLOCALPATH"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307200000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000002@lid:SYNTH-2",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-2",
+          "ZTEXT": "synthetic message 2",
+          "ZFROMJID": "15550000001@s.whatsapp.net",
+          "ZTOJID": "15550000002@s.whatsapp.net",
+          "ZPUSHNAME": null,
+          "ZMESSAGEDATE": 800000010.125,
+          "ZSENTDATE": 800000010.375,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 8,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 1,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000002@s.whatsapp.net",
+        "parent_stanza_id": "SYNTH-1",
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307210125,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000003@lid:SYNTH-3",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-3",
+          "ZTEXT": "synthetic message 3",
+          "ZFROMJID": "90000000000003@lid",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000020.5,
+          "ZSENTDATE": 800000020.75,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": 1,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "90000000000003@lid",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307220500,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "unattached:15550000001-1700000000@g.us:SYNTH-5",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-5",
+          "ZTEXT": null,
+          "ZFROMJID": "15550000001-1700000000@g.us",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000050,
+          "ZSENTDATE": 800000050.25,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000001-1700000000@g.us",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307250000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "unattached:15550000005@s.whatsapp.net:SYNTH-8",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-8",
+          "ZTEXT": "synthetic message 8",
+          "ZFROMJID": "15550000005@s.whatsapp.net",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000060,
+          "ZSENTDATE": 800000060.25,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000005@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307260000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "pushname",
+      "key": "0@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "0@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Service"
+      },
+      "time": null
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000002@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000002@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Peer B"
+      },
+      "time": null
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000006@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000006@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Member 😀"
+      },
+      "time": null
+    },
+    {
+      "kind": "pushname",
+      "key": "90000000000003@lid",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "90000000000003@LID",
+        "ZPUSHNAME": "Synthetic Peer C"
+      },
+      "time": null
+    }
+  ],
+  "mac-delta": [
+    {
+      "kind": "chat",
+      "key": "15550000001-1700000000@g.us",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000001-1700000000@g.us",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 4",
+          "ZSESSIONTYPE": 1,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 1,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000041,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-4",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": {
+          "ZSTATE": 2,
+          "ZCREATIONDATE": 700000000.25,
+          "ZSUBJECTTIMESTAMP": 700000100.5,
+          "ZCREATORJID": "15550000006@s.whatsapp.net",
+          "ZOWNERJID": "15550000006@s.whatsapp.net",
+          "ZSUBJECTOWNERJID": "90000000000007@lid",
+          "ZSOURCEJID": "15550000001-1700000000@g.us",
+          "ZPICTUREID": "SYNTH-PICTURE-1"
+        }
+      },
+      "time": {
+        "start_ms": 1778307410000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "15550000008@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000008@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 7",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 1,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000220,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-7",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307420000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "90000000000002@lid",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000002@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": "90000000000002@lid",
+          "ZPARTNERNAME": "Synthetic Chat 1",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 5,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000200,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-1",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307400000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "15550000001-1700000000@g.us:SYNTH-11",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-11",
+          "ZTEXT": "synthetic message 11",
+          "ZFROMJID": "15550000001-1700000000@g.us",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000210,
+          "ZSENTDATE": 800000210.25,
+          "ZMESSAGETYPE": 1,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000001-1700000000@g.us",
+        "parent_stanza_id": null,
+        "media_item": {
+          "ZFILESIZE": 41,
+          "ZMEDIAORIGIN": 0,
+          "ZMOVIEDURATION": 0,
+          "ZASPECTRATIO": 1.5,
+          "ZHACCURACY": 0,
+          "ZLATITUDE": 0,
+          "ZLONGITUDE": 0,
+          "ZMEDIAURLDATE": 800000000.5,
+          "ZAUTHORNAME": null,
+          "ZCOLLECTIONNAME": null,
+          "ZMEDIAURL": "https://media.example.invalid/3",
+          "ZTITLE": null,
+          "ZVCARDNAME": null,
+          "ZVCARDSTRING": null,
+          "ZMEDIAKEY": {
+            "$bytes64": "AQL/Aw=="
+          }
+        },
+        "group_member_jid": "15550000006@s.whatsapp.net",
+        "blobs": [
+          {
+            "hash": "sha256:2e8b1431a596b3509e2e76c4741b64067e6a3039fb9c7044a1bf2df54adb7c92",
+            "bytes": 61,
+            "role": "ZWAMEDIAITEM.ZMEDIALOCALPATH"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307410000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "15550000008@s.whatsapp.net:SYNTH-12",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-12",
+          "ZTEXT": "synthetic message 12",
+          "ZFROMJID": "15550000001@s.whatsapp.net",
+          "ZTOJID": "15550000008@s.whatsapp.net",
+          "ZPUSHNAME": null,
+          "ZMESSAGEDATE": 800000220,
+          "ZSENTDATE": 800000220.25,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 8,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 1,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000008@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307420000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000002@lid:SYNTH-10",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-10",
+          "ZTEXT": "synthetic message 10",
+          "ZFROMJID": "15550000002@s.whatsapp.net",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000200,
+          "ZSENTDATE": 800000200.25,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000002@s.whatsapp.net",
+        "parent_stanza_id": "SYNTH-2",
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307400000,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000002@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000002@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Peer B"
+      },
+      "time": null
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000006@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000006@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Member 😀"
+      },
+      "time": null
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000008@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000008@s.whatsapp.net",
+        "ZPUSHNAME": "Synthetic Peer H"
+      },
+      "time": null
+    }
+  ],
+  "phone-backup": [
+    {
+      "kind": "chat",
+      "key": "15550000001-1700000000@g.us",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000001-1700000000@g.us",
+          "ZCONTACTIDENTIFIER": null,
+          "ZPARTNERNAME": "Synthetic Chat 12",
+          "ZSESSIONTYPE": 1,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 0,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000040.25,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-12",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": {
+          "ZSTATE": 1,
+          "ZCREATIONDATE": 700000000.25,
+          "ZSUBJECTTIMESTAMP": null,
+          "ZCREATORJID": "15550000006@s.whatsapp.net",
+          "ZOWNERJID": null,
+          "ZSUBJECTOWNERJID": null,
+          "ZSOURCEJID": "15550000001-1700000000@g.us",
+          "ZPICTUREID": null
+        }
+      },
+      "time": {
+        "start_ms": 1778307240250,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "90000000000002@lid",
+      "content": {
+        "type": "whatsapp.chat",
+        "chat": {
+          "ZCONTACTJID": "15550000002@s.whatsapp.net",
+          "ZCONTACTIDENTIFIER": "90000000000002@lid",
+          "ZPARTNERNAME": "Synthetic Chat 11",
+          "ZSESSIONTYPE": 0,
+          "ZFLAGS": 0,
+          "ZARCHIVED": 0,
+          "ZHIDDEN": 0,
+          "ZREMOVED": 0,
+          "ZMESSAGECOUNTER": 2,
+          "ZUNREADCOUNT": 2,
+          "ZIDENTITYVERIFICATIONSTATE": 0,
+          "ZIDENTITYVERIFICATIONEPOCH": 0,
+          "ZLASTMESSAGEDATE": 800000010.125,
+          "ZLASTMESSAGETEXT": "synthetic last line",
+          "ZLOCATIONSHARINGENDDATE": 0,
+          "ZETAG": "SYNTH-ETAG-11",
+          "ZSAVEDINPUT": null
+        },
+        "group_info": null
+      },
+      "time": {
+        "start_ms": 1778307210125,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "15550000001-1700000000@g.us:SYNTH-5",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-5",
+          "ZTEXT": "synthetic message 103",
+          "ZFROMJID": "15550000001-1700000000@g.us",
+          "ZTOJID": null,
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000040.25,
+          "ZSENTDATE": 800000040.5,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000001-1700000000@g.us",
+        "parent_stanza_id": null,
+        "media_item": null,
+        "group_member_jid": "15550000006@s.whatsapp.net",
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307240250,
+        "precision": "s"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000002@lid:SYNTH-1",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-1",
+          "ZTEXT": "synthetic message 101",
+          "ZFROMJID": "15550000002@s.whatsapp.net",
+          "ZTOJID": "15550000001@s.whatsapp.net",
+          "ZPUSHNAME": "Synthetic Sender",
+          "ZMESSAGEDATE": 800000000.000001,
+          "ZSENTDATE": 800000000.250001,
+          "ZMESSAGETYPE": 1,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 6,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 0,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 1,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000002@s.whatsapp.net",
+        "parent_stanza_id": null,
+        "media_item": {
+          "ZFILESIZE": 41,
+          "ZMEDIAORIGIN": 0,
+          "ZMOVIEDURATION": 0,
+          "ZASPECTRATIO": 1.5,
+          "ZHACCURACY": 0,
+          "ZLATITUDE": 0,
+          "ZLONGITUDE": 0,
+          "ZMEDIAURLDATE": 800000000.5,
+          "ZAUTHORNAME": null,
+          "ZCOLLECTIONNAME": null,
+          "ZMEDIAURL": "https://media.example.invalid/41",
+          "ZTITLE": null,
+          "ZVCARDNAME": null,
+          "ZVCARDSTRING": null,
+          "ZMEDIAKEY": {
+            "$bytes64": "AQL/KQ=="
+          }
+        },
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307200000,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "90000000000002@lid:SYNTH-2",
+      "content": {
+        "type": "whatsapp.msg",
+        "message": {
+          "ZSTANZAID": "SYNTH-2",
+          "ZTEXT": "synthetic message 102",
+          "ZFROMJID": "15550000001@s.whatsapp.net",
+          "ZTOJID": "15550000002@s.whatsapp.net",
+          "ZPUSHNAME": null,
+          "ZMESSAGEDATE": 800000010.125,
+          "ZSENTDATE": 800000010.375,
+          "ZMESSAGETYPE": 0,
+          "ZGROUPEVENTTYPE": 0,
+          "ZFLAGS": 0,
+          "ZMESSAGESTATUS": 8,
+          "ZMESSAGEERRORSTATUS": 0,
+          "ZISFROMME": 1,
+          "ZSTARRED": null,
+          "ZMEDIASECTIONID": null,
+          "ZPHASH": null,
+          "ZENCRETRYCOUNT": 0,
+          "ZFILTEREDRECIPIENTCOUNT": 0,
+          "ZCHILDMESSAGESDELIVEREDCOUNT": 0,
+          "ZCHILDMESSAGESPLAYEDCOUNT": 0,
+          "ZCHILDMESSAGESREADCOUNT": 0,
+          "ZDATAITEMVERSION": 3
+        },
+        "session_jid": "15550000002@s.whatsapp.net",
+        "parent_stanza_id": "SYNTH-1",
+        "media_item": null,
+        "group_member_jid": null,
+        "blobs": []
+      },
+      "time": {
+        "start_ms": 1778307210125,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "pushname",
+      "key": "15550000002@s.whatsapp.net",
+      "content": {
+        "type": "whatsapp.pushname",
+        "ZJID": "15550000002@S.WHATSAPP.NET",
+        "ZPUSHNAME": "Synthetic Peer B"
+      },
+      "time": null
+    }
+  ]
+}

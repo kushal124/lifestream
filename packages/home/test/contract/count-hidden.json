@@ -1,0 +1,54 @@
+{
+  "asked": "sum of amount over payments, by item",
+  "matched": {
+    "from": "2026-03-01",
+    "to": "2026-03-31",
+    "payee": {
+      "acme": [
+        "ACME CABS LIMITED (6)",
+        "ACME CABS (1)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 7,
+    "valued": 7,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2022-01-01",
+    "last": "2026-11-06"
+  },
+  "counted": "counted from payments as Example Bank statement lines state them, read to 2026-11-06",
+  "total": {
+    "n": 7,
+    "sum": "350.00 EUR",
+    "ref": "r1"
+  },
+  "columns": [
+    "day",
+    "payee",
+    "direction",
+    "amount",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-03-02",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "r2"
+    ],
+    [
+      "2026-03-09",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "r3"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

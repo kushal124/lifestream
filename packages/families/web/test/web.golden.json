@@ -1,0 +1,3142 @@
+{
+  "screen_requests": [
+    "screen-part macbook-pro-0001/1791291600000/part/1791291600000 sha256:7f41f2f573d57d6385cd48930bc42f160a689cc55a5930b124b39a594c033b58",
+    "screen-part macbook-pro-0001/1791291600000/part/1791295200000 sha256:1641654ee42b795805da08fb6b294ead1e17e90e0aef39ff2e8a8c50daf79ad8",
+    "screen-sitting macbook-pro-0001/1791291600000/sitting sha256:050cb808e5963570f9233219d19dfd339bf903b4f40f695fbff74e3933daa988",
+    "screen-part macbook-pro-0001/1791313200000/part/1791313200000 sha256:d6a1010f697516cb288fa76434561720d71312038b23728382d3e96d5ae5f4f0"
+  ],
+  "extract": [
+    {
+      "unit": "macbook-pro-0001/2026-10-06T11",
+      "content": {
+        "hour": "2026-10-06T11",
+        "items": [
+          {
+            "at_ms": 1791286200000,
+            "browser": "Safari",
+            "device": "Synthetic Phone",
+            "record": {
+              "key": "SYNTH-TAB-0001",
+              "kind": "tab",
+              "source": "safari:person-a@example.com:macbook-pro-0001"
+            },
+            "site": "example.com",
+            "sitting": null,
+            "title": "Tab One",
+            "what": "tab"
+          }
+        ],
+        "machine": "macbook-pro-0001"
+      }
+    },
+    {
+      "unit": "macbook-pro-0001/2026-10-06T13",
+      "content": {
+        "hour": "2026-10-06T13",
+        "items": [
+          {
+            "at_ms": 1791291605000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "1:13435765205000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 0",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291625000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "2:13435765225000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 1",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291645000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "3:13435765245000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 2",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291665000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "4:13435765265000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 3",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291685000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "5:13435765285000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 4",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291705000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "6:13435765305000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 5",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291725000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "7:13435765325000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 6",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291745000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "8:13435765345000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 7",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291765000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "9:13435765365000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 8",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291785000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "10:13435765385000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 9",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291805000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "11:13435765405000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 10",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291825000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "12:13435765425000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 11",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291845000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "13:13435765445000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 12",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291865000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "14:13435765465000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 13",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291885000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "15:13435765485000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 14",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291905000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "16:13435765505000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 15",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291925000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "17:13435765525000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 16",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291945000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "18:13435765545000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 17",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291965000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "19:13435765565000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 18",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791291985000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "20:13435765585000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 19",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292005000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "21:13435765605000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 20",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292025000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "22:13435765625000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 21",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292045000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "23:13435765645000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 22",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292065000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "24:13435765665000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 23",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292085000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "25:13435765685000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 24",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292105000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "26:13435765705000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 25",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292125000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "27:13435765725000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 26",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292145000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "28:13435765745000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 27",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292165000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "29:13435765765000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 28",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292185000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "30:13435765785000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 29",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292200000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "171:13435765800000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (0)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292205000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "31:13435765805000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 0",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292225000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "32:13435765825000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 1",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292245000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "33:13435765845000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 2",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292261000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "172:13435765861000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (1)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292265000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "34:13435765865000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 3",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292285000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "35:13435765885000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 4",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292305000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "36:13435765905000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 5",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292322000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "173:13435765922000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (2)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292325000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "37:13435765925000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 6",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292345000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "38:13435765945000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 7",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292365000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "39:13435765965000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 8",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292383000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "174:13435765983000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (3)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292385000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "40:13435765985000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 9",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292405000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "41:13435766005000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 10",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292425000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "42:13435766025000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 11",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292444000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "175:13435766044000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (4)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292445000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "43:13435766045000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 12",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292465000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "44:13435766065000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 13",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292485000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "45:13435766085000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 14",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292500000,
+            "browser": "Chrome",
+            "device": "another device",
+            "record": {
+              "key": "210:13435766100000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "site": "phone-news.example",
+            "sitting": null,
+            "title": "A story",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292505000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "176:13435766105000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (5)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292505000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "46:13435766105000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 15",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292525000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "47:13435766125000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 16",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292545000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "48:13435766145000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 17",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292560000,
+            "browser": "Safari",
+            "device": "another device",
+            "record": {
+              "key": "212:812985360",
+              "kind": "page-visit",
+              "source": "safari:person-a@example.com:macbook-pro-0001"
+            },
+            "site": "recipes.example",
+            "sitting": null,
+            "title": "Soup",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292565000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "49:13435766165000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 18",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292566000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "177:13435766166000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (6)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292585000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "50:13435766185000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 19",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292605000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "51:13435766205000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 20",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292625000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "52:13435766225000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 21",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292627000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "178:13435766227000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (7)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292645000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "53:13435766245000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 22",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292665000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "54:13435766265000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 23",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292685000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "55:13435766285000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 24",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292688000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "179:13435766288000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (8)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292705000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "56:13435766305000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 25",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292725000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "57:13435766325000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 26",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292745000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "58:13435766345000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 27",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292749000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "180:13435766349000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (9)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292765000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "59:13435766365000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 28",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292785000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "60:13435766385000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 29",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292805000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "61:13435766405000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 0",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292810000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "181:13435766410000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (10)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292825000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "62:13435766425000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 1",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292830000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "199:13435766430000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "site": "search.example",
+            "sitting": 1791291600000,
+            "term": "synthetic query",
+            "title": "synthetic query - Search",
+            "what": "search"
+          },
+          {
+            "at_ms": 1791292845000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "63:13435766445000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 2",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292865000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "64:13435766465000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 3",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292871000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "182:13435766471000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (11)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292885000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "65:13435766485000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 4",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292905000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "66:13435766505000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 5",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292925000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "67:13435766525000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 6",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292932000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "183:13435766532000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (12)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292945000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "68:13435766545000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 7",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292965000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "69:13435766565000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 8",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292985000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "70:13435766585000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 9",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791292993000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "184:13435766593000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (13)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293005000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "71:13435766605000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 10",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293025000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "72:13435766625000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 11",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293045000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "73:13435766645000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 12",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293054000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "185:13435766654000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (14)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293065000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "74:13435766665000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 13",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293085000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "75:13435766685000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 14",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293105000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "76:13435766705000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 15",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293115000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "186:13435766715000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (15)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293125000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "77:13435766725000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 16",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293145000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "78:13435766745000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 17",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293165000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "79:13435766765000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 18",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293176000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "187:13435766776000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (16)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293185000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "80:13435766785000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 19",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293205000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "81:13435766805000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 20",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293225000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "82:13435766825000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 21",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293237000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "188:13435766837000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (17)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293245000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "83:13435766845000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 22",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293265000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "84:13435766865000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 23",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293285000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "85:13435766885000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 24",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293298000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "189:13435766898000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (18)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293305000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "86:13435766905000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 25",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293325000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "87:13435766925000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 26",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293345000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "88:13435766945000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 27",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293359000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "190:13435766959000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (19)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293365000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "89:13435766965000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 28",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293385000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "90:13435766985000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 29",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293400000,
+            "browser": "Chrome",
+            "device": null,
+            "file": "report.pdf",
+            "record": {
+              "key": "SYNTH-0000-0000-0000-DOWNLOAD0001",
+              "kind": "download",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "site": "files.example",
+            "sitting": 1791291600000,
+            "title": null,
+            "what": "download"
+          },
+          {
+            "at_ms": 1791293405000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "91:13435767005000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 0",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293420000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "191:13435767020000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (20)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293425000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "92:13435767025000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 1",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293445000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "93:13435767045000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 2",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293465000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "94:13435767065000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 3",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293481000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "192:13435767081000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (21)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293485000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "95:13435767085000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 4",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293505000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "96:13435767105000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 5",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293525000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "97:13435767125000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 6",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293542000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "193:13435767142000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (22)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293545000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "98:13435767145000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 7",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293565000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "99:13435767165000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 8",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293585000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "100:13435767185000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 9",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293603000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "194:13435767203000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (23)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293605000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "101:13435767205000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 10",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293625000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "102:13435767225000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 11",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293645000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "103:13435767245000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 12",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293664000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "195:13435767264000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (24)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293665000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "104:13435767265000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 13",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293685000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "105:13435767285000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 14",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293705000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "106:13435767305000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 15",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293725000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "107:13435767325000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 16",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293725000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "196:13435767325000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (25)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293745000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "108:13435767345000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 17",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293765000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "109:13435767365000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 18",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293785000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "110:13435767385000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 19",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293786000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "197:13435767386000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (26)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293805000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "111:13435767405000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 20",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293825000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "112:13435767425000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 21",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293845000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "113:13435767445000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 22",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293847000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "198:13435767447000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "mail.example",
+            "sitting": 1791291600000,
+            "title": "Inbox (27)",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293865000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "114:13435767465000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 23",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293885000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "115:13435767485000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 24",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293905000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "116:13435767505000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 25",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293925000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "117:13435767525000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 26",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293945000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "118:13435767545000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 27",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293965000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "119:13435767565000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 28",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791293985000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "120:13435767585000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "code.example",
+            "sitting": 1791291600000,
+            "title": "Change 29",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294060000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "121:13435767660000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294110000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "122:13435767710000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294160000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "123:13435767760000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294210000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "124:13435767810000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294260000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "125:13435767860000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294310000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "126:13435767910000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294360000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "127:13435767960000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294410000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "128:13435768010000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294460000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "129:13435768060000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294510000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "130:13435768110000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294560000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "131:13435768160000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294600000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "200:13435768200000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "site": "search.example",
+            "sitting": 1791291600000,
+            "term": "synthetic query",
+            "title": "synthetic query - Search",
+            "what": "search"
+          },
+          {
+            "at_ms": 1791294610000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "132:13435768210000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294660000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "133:13435768260000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294710000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "134:13435768310000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294760000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "135:13435768360000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294810000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "136:13435768410000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294860000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "137:13435768460000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294910000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "138:13435768510000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791294960000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "139:13435768560000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295010000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "140:13435768610000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295060000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "141:13435768660000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295110000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "142:13435768710000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295160000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "143:13435768760000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          }
+        ],
+        "machine": "macbook-pro-0001"
+      }
+    },
+    {
+      "unit": "macbook-pro-0001/2026-10-06T14",
+      "content": {
+        "hour": "2026-10-06T14",
+        "items": [
+          {
+            "at_ms": 1791295210000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "144:13435768810000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295260000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "145:13435768860000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295310000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "146:13435768910000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295360000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "147:13435768960000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295410000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "148:13435769010000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295460000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "149:13435769060000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295510000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "150:13435769110000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295560000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "151:13435769160000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295610000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "152:13435769210000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295660000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "153:13435769260000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295710000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "154:13435769310000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295760000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "155:13435769360000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295810000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "156:13435769410000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295860000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "157:13435769460000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295910000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "158:13435769510000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791295960000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "159:13435769560000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296010000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "160:13435769610000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296060000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "161:13435769660000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296110000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "162:13435769710000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296160000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "163:13435769760000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296210000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "164:13435769810000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296260000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "165:13435769860000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296310000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "166:13435769910000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296360000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "167:13435769960000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296410000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "168:13435770010000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296460000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "169:13435770060000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          },
+          {
+            "at_ms": 1791296510000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "170:13435770110000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "seen": false,
+            "site": "docs.example",
+            "sitting": 1791291600000,
+            "title": "Reference",
+            "what": "visit"
+          }
+        ],
+        "machine": "macbook-pro-0001"
+      }
+    },
+    {
+      "unit": "macbook-pro-0001/2026-10-06T16",
+      "content": {
+        "hour": "2026-10-06T16",
+        "items": [
+          {
+            "at_ms": 1791302400000,
+            "browser": "Chrome",
+            "device": null,
+            "record": {
+              "key": "211:13435776000000000",
+              "kind": "page-visit",
+              "source": "chrome:profile-2:macbook-pro-0001"
+            },
+            "site": "feed.example",
+            "sitting": null,
+            "title": "Feed",
+            "what": "visit"
+          }
+        ],
+        "machine": "macbook-pro-0001"
+      }
+    },
+    {
+      "unit": "macbook-pro-0001/2026-10-06T19",
+      "content": {
+        "hour": "2026-10-06T19",
+        "items": [
+          {
+            "at_ms": 1791313500000,
+            "browser": "Safari",
+            "device": null,
+            "record": {
+              "key": "214:813006300",
+              "kind": "page-visit",
+              "source": "safari:person-a@example.com:macbook-pro-0001"
+            },
+            "seen": true,
+            "site": "news.example",
+            "sitting": 1791313200000,
+            "title": "Headlines",
+            "what": "visit"
+          }
+        ],
+        "machine": "macbook-pro-0001"
+      }
+    }
+  ],
+  "day": "Day 2026-10-06 (Tuesday) in America/New_York, 04:00 to 2026-10-07 04:00 (24 h)\n12 atoms: screen 2, web 10\n\n07:30 Safari on Synthetic Phone · tab open: \"Tab One\" (example.com)\n09:00–10:29 Screen: Editor 50 min, Browser 40 min (3)\n  09:00–10:29 89.8 min at the Mac (account pending)\n  09:00–09:39 Chrome: visited code.example 120 times: \"Change 0\", \"Change 1\", \"Change 2\" and 27 other titles (on screen)\n  09:10–09:37 Chrome: visited mail.example 28 times: \"Inbox (0)\", \"Inbox (1)\", \"Inbox (2)\" and 25 other titles\n09:15 Chrome, synced from another device · visited phone-news.example: \"A story\"\n09:16 Safari, synced from another device · visited recipes.example: \"Soup\"\n09:20–10:21 Web in the 09:00 sitting (3)\n  09:20–09:50 Chrome: searched \"synthetic query\" (2 times)\n  09:30 Chrome: downloaded report.pdf from files.example\n  09:41–10:21 Chrome: visited docs.example 50 times: \"Reference\"\n12:00 Chrome · visited feed.example: \"Feed\"\n15:00–15:19 Screen: Browser 20 min (2)\n  15:00–15:19 19.8 min at the Mac (account pending)\n  15:05 Safari: visited news.example: \"Headlines\" (on screen)\n\nCoverage\nscreen: screen:local:macbook-pro-0001 read into the day\nweb: chrome:profile-2:macbook-pro-0001 read into the day; safari:person-a@example.com:macbook-pro-0001 read into the day\n"
+}

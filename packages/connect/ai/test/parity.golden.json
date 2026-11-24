@@ -1,0 +1,709 @@
+[
+  {
+    "name": "chatgpt-first",
+    "rows": [
+      {
+        "kind": "msg",
+        "key": "aaaaaaaa-0000-4000-8000-00000000000a:a0000000-0000-4000-8000-000000000001",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "aaaaaaaa-0000-4000-8000-00000000000a",
+          "node": {
+            "id": "a0000000-0000-4000-8000-000000000001",
+            "parent": "client-created-root",
+            "children": [],
+            "message": {
+              "id": "a0000000-0000-4000-8000-000000000001",
+              "author": {
+                "role": "user",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000001.123456,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "Synthetic question about a list.",
+                  {
+                    "content_type": "image_asset_pointer",
+                    "asset_pointer": "file-service://file-AbC123",
+                    "size_bytes": 27
+                  }
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": null,
+              "weight": 1,
+              "metadata": {
+                "attachments": [
+                  {
+                    "id": "file_00aa11",
+                    "name": "synthetic.pdf",
+                    "mime_type": "application/pdf"
+                  },
+                  {
+                    "id": "file-Missing1",
+                    "name": "voice.wav"
+                  }
+                ]
+              },
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000001123,
+          "precision": "ms"
+        },
+        "locator": "conversations-000.json:conversations[0].mapping[a0000000-0000-4000-8000-000000000001]"
+      },
+      {
+        "kind": "msg",
+        "key": "aaaaaaaa-0000-4000-8000-00000000000a:a0000000-0000-4000-8000-000000000002",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "aaaaaaaa-0000-4000-8000-00000000000a",
+          "node": {
+            "id": "a0000000-0000-4000-8000-000000000002",
+            "parent": "a0000000-0000-4000-8000-000000000001",
+            "children": [],
+            "message": {
+              "id": "a0000000-0000-4000-8000-000000000002",
+              "author": {
+                "role": "assistant",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000002.5,
+              "update_time": null,
+              "content": {
+                "content_type": "thoughts",
+                "thoughts": [
+                  {
+                    "summary": "Synthetic step",
+                    "content": "Synthetic reasoning."
+                  }
+                ],
+                "source_analysis_msg_id": "x"
+              },
+              "status": "finished_successfully",
+              "end_turn": true,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000002500,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[0].mapping[a0000000-0000-4000-8000-000000000002]"
+      },
+      {
+        "kind": "msg",
+        "key": "aaaaaaaa-0000-4000-8000-00000000000a:a0000000-0000-4000-8000-000000000003",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "aaaaaaaa-0000-4000-8000-00000000000a",
+          "node": {
+            "id": "a0000000-0000-4000-8000-000000000003",
+            "parent": "a0000000-0000-4000-8000-000000000002",
+            "children": [],
+            "message": {
+              "id": "a0000000-0000-4000-8000-000000000003",
+              "author": {
+                "role": "assistant",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000003,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "A synthetic answer."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": true,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000003000,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[0].mapping[a0000000-0000-4000-8000-000000000003]"
+      },
+      {
+        "kind": "chat",
+        "key": "aaaaaaaa-0000-4000-8000-00000000000a",
+        "content": {
+          "type": "chatgpt.shell",
+          "conversation_id": "aaaaaaaa-0000-4000-8000-00000000000a",
+          "title": "Synthetic planning",
+          "update_time": 1754000100.5,
+          "current_node": "a0000000-0000-4000-8000-000000000003"
+        },
+        "time": {
+          "start_ms": 1754000100500,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[0]"
+      },
+      {
+        "kind": "msg",
+        "key": "bbbbbbbb-0000-4000-8000-00000000000b:b0000000-0000-4000-8000-000000000001",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "bbbbbbbb-0000-4000-8000-00000000000b",
+          "node": {
+            "id": "b0000000-0000-4000-8000-000000000001",
+            "parent": "client-created-root",
+            "children": [],
+            "message": {
+              "id": "b0000000-0000-4000-8000-000000000001",
+              "author": {
+                "role": "user",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000150.75,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "Synthetic recipe question."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": null,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000150750,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[2].mapping[b0000000-0000-4000-8000-000000000001]"
+      },
+      {
+        "kind": "chat",
+        "key": "bbbbbbbb-0000-4000-8000-00000000000b",
+        "content": {
+          "type": "chatgpt.shell",
+          "conversation_id": "bbbbbbbb-0000-4000-8000-00000000000b",
+          "title": "Synthetic recipe",
+          "update_time": 1754000200,
+          "current_node": "b0000000-0000-4000-8000-000000000001"
+        },
+        "time": {
+          "start_ms": 1754000200000,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[2]"
+      },
+      {
+        "kind": "msg",
+        "key": "cccccccc-0000-4000-8000-00000000000c:c0000000-0000-4000-8000-000000000001",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "cccccccc-0000-4000-8000-00000000000c",
+          "node": {
+            "id": "c0000000-0000-4000-8000-000000000001",
+            "parent": "client-created-root",
+            "children": [],
+            "message": {
+              "id": "c0000000-0000-4000-8000-000000000001",
+              "author": {
+                "role": "user",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000299,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "Synthetic question in shard two."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": null,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000299000,
+          "precision": "s"
+        },
+        "locator": "conversations-001.json:conversations[0].mapping[c0000000-0000-4000-8000-000000000001]"
+      },
+      {
+        "kind": "chat",
+        "key": "cccccccc-0000-4000-8000-00000000000c",
+        "content": {
+          "type": "chatgpt.shell",
+          "conversation_id": "cccccccc-0000-4000-8000-00000000000c",
+          "title": "Synthetic shard two",
+          "update_time": 1754000300,
+          "current_node": "c0000000-0000-4000-8000-000000000001"
+        },
+        "time": {
+          "start_ms": 1754000300000,
+          "precision": "s"
+        },
+        "locator": "conversations-001.json:conversations[0]"
+      }
+    ]
+  },
+  {
+    "name": "chatgpt-later",
+    "rows": [
+      {
+        "kind": "msg",
+        "key": "bbbbbbbb-0000-4000-8000-00000000000b:b0000000-0000-4000-8000-000000000001",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "bbbbbbbb-0000-4000-8000-00000000000b",
+          "node": {
+            "id": "b0000000-0000-4000-8000-000000000001",
+            "parent": "client-created-root",
+            "children": [],
+            "message": {
+              "id": "b0000000-0000-4000-8000-000000000001",
+              "author": {
+                "role": "user",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000150.75,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "Synthetic recipe question."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": null,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000150750,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[1].mapping[b0000000-0000-4000-8000-000000000001]"
+      },
+      {
+        "kind": "msg",
+        "key": "bbbbbbbb-0000-4000-8000-00000000000b:b0000000-0000-4000-8000-000000000002",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "bbbbbbbb-0000-4000-8000-00000000000b",
+          "node": {
+            "id": "b0000000-0000-4000-8000-000000000002",
+            "parent": "b0000000-0000-4000-8000-000000000001",
+            "children": [],
+            "message": {
+              "id": "b0000000-0000-4000-8000-000000000002",
+              "author": {
+                "role": "assistant",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754100150,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "A later synthetic reply."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": true,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754100150000,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[1].mapping[b0000000-0000-4000-8000-000000000002]"
+      },
+      {
+        "kind": "chat",
+        "key": "bbbbbbbb-0000-4000-8000-00000000000b",
+        "content": {
+          "type": "chatgpt.shell",
+          "conversation_id": "bbbbbbbb-0000-4000-8000-00000000000b",
+          "title": "Synthetic recipe, renamed",
+          "update_time": 1754100200,
+          "current_node": "b0000000-0000-4000-8000-000000000002"
+        },
+        "time": {
+          "start_ms": 1754100200000,
+          "precision": "s"
+        },
+        "locator": "conversations-000.json:conversations[1]"
+      },
+      {
+        "kind": "msg",
+        "key": "cccccccc-0000-4000-8000-00000000000c:c0000000-0000-4000-8000-000000000001",
+        "content": {
+          "type": "chatgpt.msg",
+          "conversation_id": "cccccccc-0000-4000-8000-00000000000c",
+          "node": {
+            "id": "c0000000-0000-4000-8000-000000000001",
+            "parent": "client-created-root",
+            "children": [],
+            "message": {
+              "id": "c0000000-0000-4000-8000-000000000001",
+              "author": {
+                "role": "user",
+                "name": null,
+                "metadata": {}
+              },
+              "create_time": 1754000299,
+              "update_time": null,
+              "content": {
+                "content_type": "text",
+                "parts": [
+                  "Synthetic question in shard two."
+                ]
+              },
+              "status": "finished_successfully",
+              "end_turn": null,
+              "weight": 1,
+              "metadata": {},
+              "recipient": "all",
+              "channel": null
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1754000299000,
+          "precision": "s"
+        },
+        "locator": "conversations-001.json:conversations[0].mapping[c0000000-0000-4000-8000-000000000001]"
+      },
+      {
+        "kind": "chat",
+        "key": "cccccccc-0000-4000-8000-00000000000c",
+        "content": {
+          "type": "chatgpt.shell",
+          "conversation_id": "cccccccc-0000-4000-8000-00000000000c",
+          "title": "Synthetic shard two",
+          "update_time": 1754000300,
+          "current_node": "c0000000-0000-4000-8000-000000000001"
+        },
+        "time": {
+          "start_ms": 1754000300000,
+          "precision": "s"
+        },
+        "locator": "conversations-001.json:conversations[0]"
+      }
+    ]
+  },
+  {
+    "name": "claude-first",
+    "rows": [
+      {
+        "kind": "msg",
+        "key": "22222222-2222-4222-8222-222222222222:44444444-4444-4444-8444-444444444444",
+        "content": {
+          "type": "claude.msg",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "message": {
+            "uuid": "44444444-4444-4444-8444-444444444444",
+            "text": "Synthetic first turn.",
+            "content": [
+              {
+                "start_timestamp": "2026-08-31T10:00:00.000001Z",
+                "stop_timestamp": "2026-08-31T10:00:00.000001Z",
+                "type": "text",
+                "text": "Synthetic first turn.",
+                "citations": []
+              }
+            ],
+            "sender": "human",
+            "created_at": "2026-08-31T10:00:00.000001Z",
+            "updated_at": "2026-08-31T10:00:00.000001Z",
+            "attachments": [],
+            "files": [],
+            "parent_message_uuid": null
+          }
+        },
+        "time": {
+          "start_ms": 1788170400000,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0].chat_messages[0]"
+      },
+      {
+        "kind": "msg",
+        "key": "22222222-2222-4222-8222-222222222222:55555555-5555-4555-8555-555555555555",
+        "content": {
+          "type": "claude.msg",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "message": {
+            "uuid": "55555555-5555-4555-8555-555555555555",
+            "text": "",
+            "content": [
+              {
+                "type": "thinking",
+                "thinking": "Synthetic thought.",
+                "signature": "sig-synthetic-1"
+              },
+              {
+                "type": "tool_use",
+                "name": "synthetic_tool",
+                "input": {
+                  "query": "synthetic"
+                }
+              },
+              {
+                "type": "tool_result",
+                "name": "synthetic_tool",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Synthetic result."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Synthetic answer."
+              }
+            ],
+            "sender": "assistant",
+            "created_at": "2026-08-31T10:00:05.123456Z",
+            "updated_at": "2026-08-31T10:00:05.123456Z",
+            "attachments": [],
+            "files": [],
+            "parent_message_uuid": "44444444-4444-4444-8444-444444444444"
+          }
+        },
+        "time": {
+          "start_ms": 1788170405123,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0].chat_messages[1]"
+      },
+      {
+        "kind": "chat",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "claude.shell",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "name": "Synthetic chat",
+          "summary": "",
+          "created_at": "2026-08-31T09:00:00.000001Z",
+          "updated_at": "2026-08-31T10:01:00.000002Z"
+        },
+        "time": {
+          "start_ms": 1788170460000,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0]"
+      },
+      {
+        "kind": "msg",
+        "key": "33333333-3333-4333-8333-333333333333:77777777-7777-4777-8777-777777777777",
+        "content": {
+          "type": "claude.msg",
+          "conversation_uuid": "33333333-3333-4333-8333-333333333333",
+          "message": {
+            "uuid": "77777777-7777-4777-8777-777777777777",
+            "text": "Synthetic question.",
+            "content": [
+              {
+                "start_timestamp": "2024-03-01T09:00:01.000001Z",
+                "stop_timestamp": "2024-03-01T09:00:01.000001Z",
+                "type": "text",
+                "text": "Synthetic question.",
+                "citations": []
+              }
+            ],
+            "sender": "human",
+            "created_at": "2024-03-01T09:00:01.000001Z",
+            "updated_at": "2024-03-01T09:00:01.000001Z",
+            "attachments": [],
+            "files": [],
+            "parent_message_uuid": "00000000-0000-4000-8000-000000000000"
+          }
+        },
+        "time": {
+          "start_ms": 1709283601000,
+          "precision": "ms"
+        },
+        "locator": "data-0002/conversations.json:conversations[0].chat_messages[0]"
+      },
+      {
+        "kind": "chat",
+        "key": "33333333-3333-4333-8333-333333333333",
+        "content": {
+          "type": "claude.shell",
+          "conversation_uuid": "33333333-3333-4333-8333-333333333333",
+          "name": "Synthetic second chat",
+          "summary": "",
+          "created_at": "2024-03-01T09:00:00.000001Z",
+          "updated_at": "2023-07-01T00:00:00Z"
+        },
+        "time": {
+          "start_ms": 1709283600000,
+          "precision": "ms"
+        },
+        "locator": "data-0002/conversations.json:conversations[0]"
+      }
+    ]
+  },
+  {
+    "name": "claude-later",
+    "rows": [
+      {
+        "kind": "msg",
+        "key": "22222222-2222-4222-8222-222222222222:44444444-4444-4444-8444-444444444444",
+        "content": {
+          "type": "claude.msg",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "message": {
+            "uuid": "44444444-4444-4444-8444-444444444444",
+            "text": "Synthetic first turn.",
+            "content": [
+              {
+                "start_timestamp": "2026-08-31T10:00:00.000001Z",
+                "stop_timestamp": "2026-08-31T10:00:00.000001Z",
+                "type": "text",
+                "text": "Synthetic first turn.",
+                "citations": []
+              }
+            ],
+            "sender": "human",
+            "created_at": "2026-08-31T10:00:00.000001Z",
+            "updated_at": "2026-08-31T10:00:00.000001Z",
+            "attachments": [],
+            "files": [],
+            "parent_message_uuid": null
+          }
+        },
+        "time": {
+          "start_ms": 1788170400000,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0].chat_messages[0]"
+      },
+      {
+        "kind": "msg",
+        "key": "22222222-2222-4222-8222-222222222222:55555555-5555-4555-8555-555555555555",
+        "content": {
+          "type": "claude.msg",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "message": {
+            "uuid": "55555555-5555-4555-8555-555555555555",
+            "text": "",
+            "content": [
+              {
+                "type": "thinking",
+                "thinking": "Synthetic thought.",
+                "signature": "sig-synthetic-2"
+              },
+              {
+                "type": "tool_use",
+                "name": "synthetic_tool",
+                "input": {
+                  "query": "synthetic"
+                }
+              },
+              {
+                "type": "tool_result",
+                "name": "synthetic_tool",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Synthetic result."
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Synthetic answer."
+              }
+            ],
+            "sender": "assistant",
+            "created_at": "2026-08-31T10:00:05.123456Z",
+            "updated_at": "2026-08-31T10:00:05.123456Z",
+            "attachments": [],
+            "files": [],
+            "parent_message_uuid": "44444444-4444-4444-8444-444444444444"
+          }
+        },
+        "time": {
+          "start_ms": 1788170405123,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0].chat_messages[1]"
+      },
+      {
+        "kind": "chat",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "claude.shell",
+          "conversation_uuid": "22222222-2222-4222-8222-222222222222",
+          "name": "Synthetic chat, renamed",
+          "summary": "",
+          "created_at": "2026-08-31T09:00:00.000001Z",
+          "updated_at": "2026-09-02T10:01:00.000002Z"
+        },
+        "time": {
+          "start_ms": 1788343260000,
+          "precision": "ms"
+        },
+        "locator": "data-0001/conversations.json:conversations[0]"
+      },
+      {
+        "kind": "chat",
+        "key": "33333333-3333-4333-8333-333333333333",
+        "content": {
+          "type": "claude.shell",
+          "conversation_uuid": "33333333-3333-4333-8333-333333333333",
+          "name": "",
+          "summary": "",
+          "created_at": "2024-03-01T09:00:00.000001Z",
+          "updated_at": "2026-09-02T00:00:00.000001Z"
+        },
+        "time": {
+          "start_ms": 1788307200000,
+          "precision": "ms"
+        },
+        "locator": "data-0002/conversations.json:conversations[0]"
+      }
+    ]
+  }
+]

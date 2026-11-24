@@ -1,0 +1,169 @@
+[
+  {
+    "kind": "input",
+    "key": "20260906T230000Z",
+    "content": {
+      "type": "input.chunk",
+      "until": "2026-09-06T23:01:00.000Z",
+      "layout": "com.example.keylayout.US",
+      "apps": [
+        "com.example.editor"
+      ],
+      "events": [
+        {
+          "e": "key_down",
+          "t": 120,
+          "k": 4,
+          "app": 0
+        },
+        {
+          "e": "key_up",
+          "t": 180,
+          "k": 4,
+          "app": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788735600000,
+      "end_ms": 1788735660000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "input",
+    "key": "20260906T230100Z",
+    "content": {
+      "type": "input.chunk",
+      "until": "2026-09-06T23:02:00.000Z",
+      "layout": "com.example.keylayout.US",
+      "apps": [
+        "com.example.browser",
+        "com.example.editor"
+      ],
+      "sites": [
+        "example.com"
+      ],
+      "events": [
+        {
+          "e": "activate",
+          "t": 5,
+          "app": 1
+        },
+        {
+          "e": "down",
+          "t": 10,
+          "x": 0.25,
+          "y": 0.5,
+          "b": 0,
+          "app": 0
+        },
+        {
+          "e": "scroll",
+          "t": 40,
+          "dy": -3.5,
+          "app": 0,
+          "syn": 1
+        },
+        {
+          "e": "site_unknown",
+          "t": 50
+        }
+      ],
+      "activity": [
+        {
+          "app": 0,
+          "ms": 41000
+        },
+        {
+          "app": 1,
+          "ms": 12500
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788735660000,
+      "end_ms": 1788735720000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "input",
+    "key": "20260906T230200Z",
+    "content": {
+      "type": "input.chunk",
+      "until": "2026-09-06T23:02:30.125Z",
+      "layout": "com.example.keylayout.US",
+      "apps": [
+        "com.example.editor"
+      ],
+      "events": [
+        {
+          "e": "log_stop",
+          "t": 30125
+        }
+      ],
+      "lost": 3
+    },
+    "time": {
+      "start_ms": 1788735720000,
+      "end_ms": 1788735750125,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "input",
+    "key": "20260906T233000Z",
+    "content": {
+      "type": "input.chunk",
+      "until": "2026-09-06T23:31:00.000Z",
+      "layout": "com.example.keylayout.US",
+      "apps": [
+        "com.example.editor"
+      ],
+      "events": [
+        {
+          "e": "log_start",
+          "t": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788737400000,
+      "end_ms": 1788737460000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "input",
+    "key": "20260906T233000Z:1",
+    "content": {
+      "type": "input.chunk",
+      "until": "2026-09-06T23:30:40.500Z",
+      "layout": "com.example.keylayout.US",
+      "apps": [
+        "com.example.editor"
+      ],
+      "events": [
+        {
+          "e": "key_down",
+          "t": 120,
+          "k": 4,
+          "app": 0
+        },
+        {
+          "e": "key_up",
+          "t": 180,
+          "k": 4,
+          "app": 0
+        }
+      ],
+      "recovered": true
+    },
+    "time": {
+      "start_ms": 1788737400000,
+      "end_ms": 1788737440500,
+      "precision": "ms"
+    }
+  }
+]

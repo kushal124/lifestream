@@ -1,0 +1,436 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "you": {
+    "id": "person:sam-example",
+    "name": "Sam",
+    "named": true,
+    "face": false,
+    "photo": null,
+    "when": null,
+    "line": "You",
+    "find": [
+      "Sam",
+      "Sam Example",
+      "sam",
+      "example",
+      "sammy",
+      "+15550000000",
+      "15550000000",
+      "+15550000090",
+      "15550000090",
+      "+15550000091",
+      "15550000091",
+      "+15550000092",
+      "15550000092",
+      "s.example@example.net",
+      "sam.2014@example.com",
+      "sam@work.example.com"
+    ]
+  },
+  "counts": {
+    "people": 10,
+    "groups": 8
+  },
+  "most": [
+    {
+      "id": "person:person-h",
+      "line": "275 messages"
+    },
+    {
+      "id": "person:person-a",
+      "line": "242 messages"
+    },
+    {
+      "id": "person:person-d",
+      "line": "67 messages"
+    },
+    {
+      "id": "person:person-b",
+      "line": "16 messages"
+    },
+    {
+      "id": "person:person-c",
+      "line": "13 messages"
+    }
+  ],
+  "sections": [
+    {
+      "key": "month:2026-10",
+      "title": null,
+      "rows": [
+        {
+          "id": "person:person-a",
+          "name": "Person A",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person A",
+            "person",
+            "a",
+            "fullname",
+            "+15550000001",
+            "15550000001",
+            "person-a.home@example.com"
+          ]
+        },
+        {
+          "id": "person:person-b",
+          "name": "Person B",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person B",
+            "person",
+            "b",
+            "+15550000002",
+            "15550000002"
+          ]
+        },
+        {
+          "id": "person:person-h",
+          "name": "Person H",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person H",
+            "person",
+            "h",
+            "+15550000010",
+            "15550000010"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "month:2026-09",
+      "title": null,
+      "rows": [
+        {
+          "id": "person:person-c",
+          "name": "Person C",
+          "named": true,
+          "face": false,
+          "photo": "sha256:2a950088fb27694f26accf82d4fbef5caf16501046992a1d66bb03448fc4f61e",
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person C",
+            "person",
+            "c",
+            "person-c@example.com"
+          ]
+        },
+        {
+          "id": "person:person-d",
+          "name": "Person D",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person D",
+            "person",
+            "d",
+            "+15550000004",
+            "15550000004"
+          ]
+        },
+        {
+          "id": "phone:+15550000006",
+          "name": "+15550000006",
+          "named": false,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "+15550000006",
+            "15550000006"
+          ]
+        },
+        {
+          "id": "person:person-j",
+          "name": "Person J",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person J",
+            "person",
+            "j",
+            "+15550000011",
+            "15550000011"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "month:2026-08",
+      "title": null,
+      "rows": [
+        {
+          "id": "phone:+15550000005",
+          "name": "Person E",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person E",
+            "person",
+            "e",
+            "+15550000005",
+            "15550000005"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "year:2025",
+      "title": null,
+      "rows": [
+        {
+          "id": "phone:+15550000008",
+          "name": "Person F",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person F",
+            "person",
+            "f",
+            "+15550000008",
+            "15550000008"
+          ]
+        },
+        {
+          "id": "email:person-f@example.com",
+          "name": "Person F",
+          "named": true,
+          "face": false,
+          "photo": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "line": null,
+          "find": [
+            "Person F",
+            "person",
+            "f",
+            "person-f@example.com"
+          ]
+        }
+      ]
+    }
+  ],
+  "ai": [],
+  "new": [],
+  "businesses": null,
+  "organise": {
+    "count": 4,
+    "line": "6 organised · 2 more you talk to often",
+    "queue": [
+      "phone:+15550000005",
+      "phone:+15550000006",
+      "phone:+15550000008",
+      "email:person-f@example.com"
+    ],
+    "organised": 6,
+    "often": 2
+  },
+  "groups": {
+    "yours": [
+      {
+        "chat": "whatsapp:120363000000000003@g.us",
+        "title": "Group Gamma",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Gamma"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000004@g.us",
+        "title": "Group Epsilon",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Epsilon"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000005@g.us",
+        "title": "Group Zeta",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Zeta"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000002@g.us",
+        "title": "Group Beta",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Beta"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000006@g.us",
+        "title": "Group Eta",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Eta"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Alpha"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000007@g.us",
+        "title": "Group Theta",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Theta"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000008@g.us",
+        "title": "Group Iota",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Iota"
+        ]
+      }
+    ],
+    "quiet": [
+      {
+        "chat": "whatsapp:120363000000000011@g.us",
+        "title": "Group Delta",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Delta"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000012@g.us",
+        "title": "Synthetic Shop Deals",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Synthetic Shop Deals"
+        ]
+      },
+      {
+        "chat": "whatsapp:120363000000000013@g.us",
+        "title": "Group Kappa",
+        "photo": null,
+        "when": {
+          "at_ms": 1791968400000,
+          "kind": "at"
+        },
+        "line": null,
+        "find": [
+          "Group Kappa"
+        ]
+      }
+    ],
+    "quiet_line": "3 groups"
+  },
+  "counting": false
+}

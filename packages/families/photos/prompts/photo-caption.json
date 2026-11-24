@@ -1,0 +1,21 @@
+{
+  "version": 10,
+  "type": {
+    "type": "object",
+    "properties": {
+      "caption": { "type": "string" },
+      "faces": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": { "placeholder": { "type": "string" }, "who": { "type": "string" } },
+          "required": ["placeholder", "who"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["caption", "faces"],
+    "additionalProperties": false
+  },
+  "keeps": [{ "version": 9, "type": "text" }]
+}

@@ -1,0 +1,11 @@
+{
+  "from" : "agents/door/waiting-none.json",
+  "state" : {
+    "agent_asks" : [
+
+    ],
+    "agent_requests" : [
+
+    ]
+  }
+}

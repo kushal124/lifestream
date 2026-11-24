@@ -1,0 +1,22 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "category": "health"
+      }
+    },
+    "reason": "Your sleep this week."
+  },
+  "status": 200,
+  "answer": {
+    "state": "asked",
+    "words": "Asked. Your person will see it on their Mac or iPhone. Call `access` to see their answer.",
+    "request": {
+      "id": "rq-0000000000000001",
+      "wants": "Health for 1 hour",
+      "at_ms": 1788840000000,
+      "until_ms": 1788926400000
+    }
+  }
+}

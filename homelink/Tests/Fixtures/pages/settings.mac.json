@@ -1,0 +1,32 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-23",
+  "you": {
+    "id": "person:0001",
+    "name": "Person A",
+    "named": true,
+    "face": false,
+    "photo": null,
+    "when": null,
+    "line": "You",
+    "find": [
+      "person a"
+    ]
+  },
+  "values": [
+    {
+      "id": "mac",
+      "label": "Macs",
+      "value": null,
+      "signal": null
+    },
+    {
+      "id": "iphone",
+      "label": "iPhones",
+      "value": null,
+      "signal": "needs-you"
+    }
+  ],
+  "devices": [],
+  "removed": "0 removed"
+}

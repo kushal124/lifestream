@@ -1,0 +1,25 @@
+{
+  "what": "row",
+  "ref": "r1",
+  "asked": "sum of amount over payments, by item",
+  "n": 7,
+  "now": 8,
+  "columns": [
+    "day",
+    "payee",
+    "direction",
+    "amount",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-03-02",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "r2"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

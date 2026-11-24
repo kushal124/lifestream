@@ -1,0 +1,72 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>/things",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "title": "The 4 things",
+    "gone": null,
+    "groups": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 4,
+        "things": [
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTAiXQ",
+            "title": "history 0",
+            "line": null,
+            "when": "14 Nov, 04:41",
+            "day": "2026-11-14",
+            "at_ms": 1794631260000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-0"
+            }
+          },
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTEiXQ",
+            "title": "history 1",
+            "line": null,
+            "when": "14 Nov, 05:41",
+            "day": "2026-11-14",
+            "at_ms": 1794634860000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-1"
+            }
+          },
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTIiXQ",
+            "title": "history 2",
+            "line": null,
+            "when": "14 Nov, 06:41",
+            "day": "2026-11-14",
+            "at_ms": 1794638460000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-2"
+            }
+          },
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTMiXQ",
+            "title": "history 3",
+            "line": null,
+            "when": "14 Nov, 07:41",
+            "day": "2026-11-14",
+            "at_ms": 1794642060000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-3"
+            }
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

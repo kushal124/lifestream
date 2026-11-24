@@ -1,0 +1,34 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "slug": "spot:36.6002,-121.8947",
+  "circle": {
+    "latitude": 36.6002,
+    "longitude": -121.8947,
+    "radius_m": 80
+  },
+  "others": [
+    {
+      "slug": "harbour-inn",
+      "latitude": 36.6031,
+      "longitude": -121.8991,
+      "radius_m": 80
+    }
+  ],
+  "points": [
+    {
+      "latitude": 36.6002,
+      "longitude": -121.8947,
+      "count": 3
+    },
+    {
+      "latitude": 36.6031,
+      "longitude": -121.8991,
+      "count": 1
+    }
+  ],
+  "held": 0,
+  "read": true,
+  "line": null,
+  "counting": false
+}

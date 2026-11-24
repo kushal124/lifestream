@@ -1,0 +1,47 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "you": null,
+  "counts": {
+    "people": 0,
+    "groups": 0
+  },
+  "most": [],
+  "sections": [
+    {
+      "key": "none",
+      "title": "No messages yet",
+      "rows": [
+        {
+          "id": "person:person-u",
+          "name": "+15550000231",
+          "named": false,
+          "face": false,
+          "photo": null,
+          "when": null,
+          "line": null,
+          "find": [
+            "+15550000231",
+            "15550000231"
+          ]
+        }
+      ]
+    }
+  ],
+  "ai": [],
+  "new": [],
+  "businesses": null,
+  "organise": {
+    "count": 0,
+    "line": null,
+    "queue": [],
+    "organised": 1,
+    "often": 0
+  },
+  "groups": {
+    "yours": [],
+    "quiet": [],
+    "quiet_line": null
+  },
+  "counting": false
+}

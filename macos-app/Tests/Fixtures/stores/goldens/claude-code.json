@@ -1,0 +1,104 @@
+{
+  "connector" : "claude-code",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "claude-code:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "claude-code-sessions",
+          "indexes" : {
+            "parts.json" : {
+              "files" : [
+                {
+                  "bytes" : 148,
+                  "file" : "00000000-0000-4000-8000-0000000000a1/subagents/agent-a0000000000000001.meta.json",
+                  "sha256" : "2123d6a62fe6389f2c5aea80314ec968167649834be2996ea5ca185406b05de2"
+                },
+                {
+                  "bytes" : 18,
+                  "file" : "00000000-0000-4000-8000-0000000000a1/tool-results/pdf-00000000-0000-4000-8000-0000000000f1/page-1.jpg",
+                  "sha256" : "93e6c333ed34cb8b2657494d472d9bf03daeefa24cfe253801d03fd4b4f5f392"
+                },
+                {
+                  "bytes" : 44,
+                  "file" : "00000000-0000-4000-8000-0000000000a1/tool-results/toolu_01.txt",
+                  "sha256" : "64eb78e40b9586702d71bad06cadc18ef31c4d45c1f8f56798ad1929850e93a4"
+                },
+                {
+                  "bytes" : 44,
+                  "file" : "00000000-0000-4000-8000-0000000000a1/tool-results/toolu_09.txt",
+                  "sha256" : "5bf0182a434e46305e917ae993eaeb940d0150e9267bebe30399351de46005d9"
+                }
+              ],
+              "parts" : [
+                {
+                  "file" : "00000000-0000-4000-8000-0000000000a1.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 11
+                },
+                {
+                  "file" : "00000000-0000-4000-8000-0000000000a1/subagents/agent-a0000000000000001.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 3
+                },
+                {
+                  "file" : "00000000-0000-4000-8000-0000000000e2.jsonl",
+                  "from_byte" : 0,
+                  "from_line" : 1,
+                  "lines" : 1
+                }
+              ]
+            }
+          },
+          "members" : [
+            "parts.json",
+            "00000000-0000-4000-8000-0000000000a1.jsonl",
+            "00000000-0000-4000-8000-0000000000a1/subagents/agent-a0000000000000001.jsonl",
+            "00000000-0000-4000-8000-0000000000e2.jsonl",
+            "00000000-0000-4000-8000-0000000000a1/subagents/agent-a0000000000000001.meta.json",
+            "00000000-0000-4000-8000-0000000000a1/tool-results/pdf-00000000-0000-4000-8000-0000000000f1/page-1.jpg",
+            "00000000-0000-4000-8000-0000000000a1/tool-results/toolu_01.txt",
+            "00000000-0000-4000-8000-0000000000a1/tool-results/toolu_09.txt"
+          ],
+          "source_id" : "claude-code:local:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "claude-code:local:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+        "claude-code:local:macbook-pro-0001"
+      ]
+    }
+  },
+  "name" : "claude_code"
+}

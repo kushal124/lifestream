@@ -1,0 +1,35 @@
+name = "lifestream-feedback"
+main = "index.ts"
+compatibility_date = "2026-11-01"
+workers_dev = false
+preview_urls = false
+logpush = false
+routes = [{ pattern = "feedback.lifestreamprotocol.org", custom_domain = true }]
+
+[observability]
+enabled = false
+
+[vars]
+CLOSED = "false"
+BUDGET = "500"
+ACCESS_TEAM = "<team name>"
+ACCESS_AUD = "<application audience tag>"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lifestream-feedback"
+database_id = "eb7ffae7-d98e-4369-9048-b2ca91469164"
+
+[[r2_buckets]]
+binding = "SHOTS"
+bucket_name = "lifestream-feedback"
+
+[[ratelimits]]
+name = "ADDRESS"
+namespace_id = "1001"
+simple = { limit = 3, period = 60 }
+
+[[ratelimits]]
+name = "NETWORK"
+namespace_id = "1002"
+simple = { limit = 10, period = 60 }

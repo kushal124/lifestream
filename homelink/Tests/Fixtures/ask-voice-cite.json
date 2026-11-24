@@ -1,0 +1,216 @@
+{
+ "lines": [
+  {
+   "type": "chat",
+   "chat": "1792396847000-3fa9c2",
+   "n": 2,
+   "level": "none"
+  },
+  {
+   "type": "step",
+   "call": 1,
+   "name": "read",
+   "words": "Reading 27 Sep, 18:30–19:30"
+  },
+  {
+   "type": "step",
+   "call": 1,
+   "words": "Read 27 Sep, 18:30–19:30",
+   "ms": 0
+  },
+  {
+   "type": "ref",
+   "handle": "r1",
+   "cited": {
+    "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+    "kind": "message",
+    "day": "2026-09-27",
+    "opens": {
+     "page": "days",
+     "day": "2026-09-27",
+     "focus": "rec:whatsapp:+15550000009:iphone-aa01 msg 15550000001@s.whatsapp.net:V1"
+    },
+    "at": "2026-09-27T19:00-04:00",
+    "title": "Person A",
+    "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+    "chat_title": "Person A",
+    "voice": {
+     "audio": "sha256:3a591e9909835140cb6279843ef2dd87b106605d182488b80335cec17c2389b5",
+     "record": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+     "seconds": 3,
+     "from": "Person A"
+    }
+   }
+  },
+  {
+   "type": "ref",
+   "handle": "r2",
+   "cited": {
+    "ref": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+    "kind": "record",
+    "day": "2026-09-27",
+    "opens": {
+     "page": "days",
+     "day": "2026-09-27",
+     "focus": "rec:voice-notes:local:iphone-aa01 voice 11111111-1111-4111-8111-111111111111:1"
+    },
+    "at": "2026-09-27T19:20-04:00",
+    "title": "Voice note, 3 s: fake reply e0d09bbae0ec",
+    "voice": {
+     "audio": "sha256:e352b1bfb679d14f04f8caabd845fa4fb498e63d994f8a519e2562df1d396095",
+     "record": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+     "seconds": 3,
+     "mine": true
+    }
+   }
+  },
+  {
+   "type": "text",
+   "delta": "Person A sent a voice note [r1], and you recorded one after it [r2]."
+  },
+  {
+   "type": "done",
+   "message": {
+    "type": "ask.msg",
+    "chat": "1792396847000-3fa9c2",
+    "n": 2,
+    "at_ms": 1790870400000,
+    "role": "assistant",
+    "text": "Person A sent a voice note [r1], and you recorded one after it [r2].",
+    "refs": {
+     "r1": {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+      "kind": "message",
+      "day": "2026-09-27",
+      "opens": {
+       "page": "days",
+       "day": "2026-09-27",
+       "focus": "rec:whatsapp:+15550000009:iphone-aa01 msg 15550000001@s.whatsapp.net:V1"
+      },
+      "at": "2026-09-27T19:00-04:00",
+      "title": "Person A",
+      "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+      "chat_title": "Person A",
+      "voice": {
+       "audio": "sha256:3a591e9909835140cb6279843ef2dd87b106605d182488b80335cec17c2389b5",
+       "record": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+       "seconds": 3,
+       "from": "Person A"
+      }
+     },
+     "r2": {
+      "ref": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+      "kind": "record",
+      "day": "2026-09-27",
+      "opens": {
+       "page": "days",
+       "day": "2026-09-27",
+       "focus": "rec:voice-notes:local:iphone-aa01 voice 11111111-1111-4111-8111-111111111111:1"
+      },
+      "at": "2026-09-27T19:20-04:00",
+      "title": "Voice note, 3 s: fake reply e0d09bbae0ec",
+      "voice": {
+       "audio": "sha256:e352b1bfb679d14f04f8caabd845fa4fb498e63d994f8a519e2562df1d396095",
+       "record": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+       "seconds": 3,
+       "mine": true
+      }
+     }
+    },
+    "steps": [
+     {
+      "name": "read",
+      "words": "Read 27 Sep, 18:30–19:30",
+      "ms": 0,
+      "line": "read {from: 2026-09-27T18:30, to: 2026-09-27T19:30} → r1–r2"
+     }
+    ],
+    "model": "faux-1",
+    "thinking": "high",
+    "ms": 0,
+    "thought_ms": 0,
+    "end": "done"
+   }
+  },
+  {
+   "type": "title",
+   "chat": "1792396847000-3fa9c2",
+   "title": "Two voice notes"
+  }
+ ],
+ "conversation": {
+  "chat": "1792396847000-3fa9c2",
+  "title": "Two voice notes",
+  "messages": [
+   {
+    "at_ms": 1790870400000,
+    "chat": "1792396847000-3fa9c2",
+    "n": 1,
+    "role": "user",
+    "text": "What did Person A say that evening, and what did I record?",
+    "type": "ask.msg"
+   },
+   {
+    "at_ms": 1790870400000,
+    "chat": "1792396847000-3fa9c2",
+    "end": "done",
+    "model": "faux-1",
+    "ms": 0,
+    "n": 2,
+    "refs": {
+     "r1": {
+      "at": "2026-09-27T19:00-04:00",
+      "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+      "chat_title": "Person A",
+      "day": "2026-09-27",
+      "kind": "message",
+      "opens": {
+       "day": "2026-09-27",
+       "focus": "rec:whatsapp:+15550000009:iphone-aa01 msg 15550000001@s.whatsapp.net:V1",
+       "page": "days"
+      },
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+      "title": "Person A",
+      "voice": {
+       "audio": "sha256:3a591e9909835140cb6279843ef2dd87b106605d182488b80335cec17c2389b5",
+       "from": "Person A",
+       "record": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDorMTU1NTAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDAwMUBzLndoYXRzYXBwLm5ldDpWMSJd",
+       "seconds": 3
+      }
+     },
+     "r2": {
+      "at": "2026-09-27T19:20-04:00",
+      "day": "2026-09-27",
+      "kind": "record",
+      "opens": {
+       "day": "2026-09-27",
+       "focus": "rec:voice-notes:local:iphone-aa01 voice 11111111-1111-4111-8111-111111111111:1",
+       "page": "days"
+      },
+      "ref": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+      "title": "Voice note, 3 s: fake reply e0d09bbae0ec",
+      "voice": {
+       "audio": "sha256:e352b1bfb679d14f04f8caabd845fa4fb498e63d994f8a519e2562df1d396095",
+       "mine": true,
+       "record": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwiMTExMTExMTEtMTExMS00MTExLTgxMTEtMTExMTExMTExMTExOjEiXQ",
+       "seconds": 3
+      }
+     }
+    },
+    "role": "assistant",
+    "steps": [
+     {
+      "line": "read {from: 2026-09-27T18:30, to: 2026-09-27T19:30} → r1–r2",
+      "ms": 0,
+      "name": "read",
+      "words": "Read 27 Sep, 18:30–19:30"
+     }
+    ],
+    "text": "Person A sent a voice note [r1], and you recorded one after it [r2].",
+    "thinking": "high",
+    "thought_ms": 0,
+    "type": "ask.msg"
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+  "day": "2026-09-22",
+  "zone": "America/New_York",
+  "day_start_hour": 4,
+  "window": {"start_ms":1790064000000,"end_ms":1790150400000},
+  "renderer": "13/3-7414146adf6d/7",
+  "inputs": "sha256:7a563a7380689aa52d2537bf94b10f75f4d442cc3357fccf57533de96bf8e875",
+  "counts": {"total":10,"per_family":{"physical":10}},
+  "coverage": [{"family":"physical","sources":[{"source":"checkin:local:iphone-0001","read":"into"},{"source":"google-timeline:person-a@example.com:export","read":"none"},{"source":"location:local:iphone-0001","read":"through"},{"source":"motion:local:iphone-0001","read":"through"}]}],
+  "atoms": [
+    {"n":1,"family":"physical","unit":"stay/location:local:iphone-0001/1790028580000","units":["stay/location:local:iphone-0001/1790028580000"],"accounts":["location:local","motion:local"],"start_ms":1790064000000,"end_ms":1790078420000,"local_start":"04:00","local_end":"08:00","flags":["continues_from_previous_day"],"text":"At Home"},
+    {"n":2,"family":"physical","unit":"trip/location:local:iphone-0001/1790078420000","units":["trip/location:local:iphone-0001/1790078420000"],"accounts":["location:local","motion:local"],"start_ms":1790078420000,"end_ms":1790078980000,"local_start":"08:00","local_end":"08:09","flags":[],"text":"Road vehicle, Home → Office, 1.4 km"},
+    {"n":3,"family":"physical","unit":"stay/location:local:iphone-0001/1790078980000","units":["stay/location:local:iphone-0001/1790078980000"],"accounts":["location:local","motion:local"],"start_ms":1790078980000,"end_ms":1790094660000,"local_start":"08:09","local_end":"12:31","flags":[],"text":"At Office"},
+    {"n":4,"family":"physical","unit":"stay/location:local:iphone-0001/1790078980000","units":["stay/location:local:iphone-0001/1790078980000"],"accounts":["location:local","motion:local"],"start_ms":1790085600000,"end_ms":1790086500000,"local_start":"10:00","local_end":"10:15","flags":[],"text":"Walking at Office"},
+    {"n":5,"family":"physical","unit":"trip/location:local:iphone-0001/1790094660000","units":["trip/location:local:iphone-0001/1790094660000"],"accounts":["location:local","motion:local"],"start_ms":1790094660000,"end_ms":1790095440000,"local_start":"12:31","local_end":"12:44","flags":[],"text":"Walk, Office → an unnamed place 1.0 km from Office, 0.9 km"},
+    {"n":6,"family":"physical","unit":"stay/location:local:iphone-0001/1790095440000","units":["stay/location:local:iphone-0001/1790095440000"],"accounts":["location:local","motion:local"],"start_ms":1790095440000,"end_ms":1790099160000,"local_start":"12:44","local_end":"13:46","flags":[],"text":"At an unnamed place 1.0 km from Office"},
+    {"n":7,"family":"physical","unit":"trip/location:local:iphone-0001/1790099160000","units":["trip/location:local:iphone-0001/1790099160000"],"accounts":["location:local","motion:local"],"start_ms":1790099160000,"end_ms":1790099940000,"local_start":"13:46","local_end":"13:59","flags":[],"text":"Walk, an unnamed place 1.0 km from Office → Office, 0.9 km"},
+    {"n":8,"family":"physical","unit":"stay/location:local:iphone-0001/1790099940000","units":["stay/location:local:iphone-0001/1790099940000"],"accounts":["location:local","motion:local"],"start_ms":1790099940000,"end_ms":1790114420000,"local_start":"13:59","local_end":"18:00","flags":[],"text":"At Office"},
+    {"n":9,"family":"physical","unit":"trip/location:local:iphone-0001/1790114420000","units":["trip/location:local:iphone-0001/1790114420000"],"accounts":["location:local","motion:local"],"start_ms":1790114420000,"end_ms":1790115000000,"local_start":"18:00","local_end":"18:10","flags":[],"text":"Road vehicle, Office → Home, 1.5 km"},
+    {"n":10,"family":"physical","unit":"stay/location:local:iphone-0001/1790115000000","units":["stay/location:local:iphone-0001/1790115000000"],"accounts":["location:local","motion:local"],"start_ms":1790115000000,"end_ms":1790150400000,"local_start":"18:10","local_end":"2026-09-23 04:00","flags":["continues_into_next_day"],"text":"At Home"}
+  ],
+  "facts": [
+    {"id":"stays:dca493cefe19e62c3bbeeb86","family":"physical","of":"stays","time_ms":1790078980000,"start_ms":1790078980000,"end_ms":1790094660000,"keys":{"place":"Office","how":"observed"},"measures":{"minutes":261.3333333333333},"who":[],"from":{"units":["stay/location:local:iphone-0001/1790078980000"],"accounts":["location:local","motion:local"],"instrument":"Phone"},"lines":[3]},
+    {"id":"stays:ac0c4d9a54391d04300b4508","family":"physical","of":"stays","time_ms":1790095440000,"start_ms":1790095440000,"end_ms":1790099160000,"keys":{"how":"observed"},"measures":{"minutes":62},"who":[],"from":{"units":["stay/location:local:iphone-0001/1790095440000"],"accounts":["location:local","motion:local"],"instrument":"Phone"},"lines":[6]},
+    {"id":"stays:64a1f2aca0ce393f3c2b5903","family":"physical","of":"stays","time_ms":1790099940000,"start_ms":1790099940000,"end_ms":1790114420000,"keys":{"place":"Office","how":"observed"},"measures":{"minutes":241.33333333333334},"who":[],"from":{"units":["stay/location:local:iphone-0001/1790099940000"],"accounts":["location:local","motion:local"],"instrument":"Phone"},"lines":[8]},
+    {"id":"stays:d2dec67e7def7829e9402f83","family":"physical","of":"stays","time_ms":1790115000000,"start_ms":1790115000000,"end_ms":1790164820000,"keys":{"place":"Home","how":"observed"},"measures":{"minutes":830.3333333333334},"who":[],"from":{"units":["stay/location:local:iphone-0001/1790115000000"],"accounts":["location:local","motion:local"],"instrument":"Phone"},"lines":[10]}
+  ]
+}

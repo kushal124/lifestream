@@ -1,0 +1,92 @@
+{
+  "connector" : "aqua-voice",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "aqua-voice-mac",
+          "indexes" : {
+            "audio.json" : {
+
+            }
+          },
+          "members" : [
+            "history.json",
+            "audio.json"
+          ],
+          "source_id" : "aqua-voice:100001:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "aqua-voice:100001:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "aqua-voice:100001:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "aqua-voice-mac",
+          "indexes" : {
+            "audio.json" : {
+              "audio/AQ_1.wav" : {
+                "bytes" : 18,
+                "sha256" : "854d56a839cd074fd63b5f80972d4fe4f6489406e33e63d3d89ad0d8b4b4f19b"
+              }
+            }
+          },
+          "members" : [
+            "history.json",
+            "audio.json",
+            "blobs/854d56a839cd074fd63b5f80972d4fe4f6489406e33e63d3d89ad0d8b4b4f19b"
+          ],
+          "source_id" : "aqua-voice:100001:macbook-pro-0001"
+        },
+        {
+          "feeder" : "aqua-voice-mac",
+          "indexes" : {
+            "audio.json" : {
+              "audio/AQ_9.wav" : {
+                "bytes" : 18,
+                "sha256" : "6422006f05c154ec38671120549a47d60cac52b737be476134bdd9e87bf51916"
+              }
+            }
+          },
+          "members" : [
+            "history.json",
+            "audio.json",
+            "blobs/6422006f05c154ec38671120549a47d60cac52b737be476134bdd9e87bf51916"
+          ],
+          "source_id" : "aqua-voice:100002:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "aqua-voice:100001:macbook-pro-0001",
+        "aqua-voice:100002:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "aqua-voice:100001:macbook-pro-0001",
+        "aqua-voice:100002:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "aqua_voice"
+}

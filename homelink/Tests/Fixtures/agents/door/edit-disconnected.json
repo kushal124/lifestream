@@ -1,0 +1,24 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": {
+    "target": {
+      "reader": "p-00000001"
+    },
+    "access": {
+      "allow": [],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 0,
+    "edit": null
+  },
+  "status": 404,
+  "answer": {
+    "code": "AGENT_UNKNOWN",
+    "message": "This agent was disconnected."
+  }
+}

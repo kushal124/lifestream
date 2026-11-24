@@ -1,0 +1,13 @@
+{
+  "what": "photo",
+  "ref": "record.WyJyZWNvcmQiLCJwaG90b3M6bG9jYWw6aXBob25lLWFhMDEiLCJwaG90byIsInBoMSJd",
+  "day": "2026-10-04",
+  "at": "2026-10-04T12:30+01:00",
+  "title": "A cafe table with two cups",
+  "the_user_was_at": "Example Cafe",
+  "image": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "facts": [
+    "taken with the iPhone",
+    "2 faces, not named"
+  ]
+}

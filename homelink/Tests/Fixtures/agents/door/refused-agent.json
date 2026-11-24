@@ -1,0 +1,9 @@
+{
+  "route": "GET /v1/agents",
+  "request": null,
+  "status": 403,
+  "answer": {
+    "code": "PRINCIPAL_SCOPE",
+    "message": "principal p-00000001 reads for a model, which does not reach GET /v1/agents"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "off": {
+    "signal": "idle",
+    "word": "Off"
+  },
+  "setup": {
+    "signal": null,
+    "word": null
+  },
+  "paused": {
+    "signal": "idle",
+    "word": "Paused"
+  },
+  "needs-you": {
+    "signal": "caution",
+    "word": "Needs you"
+  },
+  "broken": {
+    "signal": "warning",
+    "word": "Stopped"
+  },
+  "waiting": {
+    "signal": "idle",
+    "word": "Waiting"
+  },
+  "quiet": {
+    "signal": "idle",
+    "word": null
+  },
+  "syncing": {
+    "signal": null,
+    "word": null
+  },
+  "ok": {
+    "signal": null,
+    "word": null
+  }
+}

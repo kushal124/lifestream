@@ -1,0 +1,659 @@
+{
+  "about": "backup.json as the Mac writes it into each folder it pulls out of an iPhone backup (packages/connect/imports/imports.md, Each kind), and the home reads it (imports/iphone-backup/import.ts). Every valid case's text is the bytes the Mac writes: keys sorted at every level, each account list sorted and distinct, no spaces, no newline. named is the accounts the folder names for its store's domain, stamp the import it joins, time_ms its stated time. A refused case refuses its folder whole.",
+  "valid": [
+    {
+      "case": "the iMessage folder of a backup",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\"],\"whatsapp\":[\"15550000001@s.whatsapp.net\"]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"imessage\"}",
+      "named": [
+        "person-a@example.com"
+      ],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:apple",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "its WhatsApp folder: the JID's digits, the whatsapp domain",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "whatsapp"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\"],\"whatsapp\":[\"15550000001@s.whatsapp.net\"]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"whatsapp\"}",
+      "named": [
+        "15550000001"
+      ],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:whatsapp",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "its calls folder: the iMessage folder's import",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "apple-calls"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\"],\"whatsapp\":[\"15550000001@s.whatsapp.net\"]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"apple-calls\"}",
+      "named": [
+        "person-a@example.com"
+      ],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:apple",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "a store signed in with two Apple IDs: both named, the home asks",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com",
+            "person-b@example.com"
+          ],
+          "whatsapp": []
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\",\"person-b@example.com\"],\"whatsapp\":[]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"imessage\"}",
+      "named": [
+        "person-a@example.com",
+        "person-b@example.com"
+      ],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:apple",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "Messages in iCloud: no Apple ID in the store, none named",
+      "backup": {
+        "accounts": {
+          "apple": [],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      },
+      "text": "{\"accounts\":{\"apple\":[],\"whatsapp\":[\"15550000001@s.whatsapp.net\"]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"imessage\"}",
+      "named": [],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:apple",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "no WhatsApp on the phone, its folder names none",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": []
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "whatsapp"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\"],\"whatsapp\":[]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":true,\"ios\":\"27.0\",\"last_backup\":\"2026-08-28T09:12:44Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"serial4\":\"c0de\",\"store\":\"whatsapp\"}",
+      "named": [],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-08-28T09:12:44Z:whatsapp",
+      "time_ms": 1787908364000
+    },
+    {
+      "case": "a backup stating no serial, not encrypted, a later backup of the phone",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": false,
+        "ios": "27.0.1",
+        "last_backup": "2026-09-28T21:00:05Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "store": "imessage"
+      },
+      "text": "{\"accounts\":{\"apple\":[\"person-a@example.com\"],\"whatsapp\":[\"15550000001@s.whatsapp.net\"]},\"device\":\"3f9c0d1e2a4b5c6d\",\"encrypted\":false,\"ios\":\"27.0.1\",\"last_backup\":\"2026-09-28T21:00:05Z\",\"model\":\"iPhone18,1\",\"model_name\":\"iPhone 17 Pro\",\"store\":\"imessage\"}",
+      "named": [
+        "person-a@example.com"
+      ],
+      "stamp": "3f9c0d1e2a4b5c6d:2026-09-28T21:00:05Z:apple",
+      "time_ms": 1790629205000
+    }
+  ],
+  "refused": [
+    {
+      "case": "a time of the pull-out: the same backup would make other bytes",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage",
+        "pulled_at": "2026-08-28T10:00:00Z"
+      }
+    },
+    {
+      "case": "accounts out of order: the same backup would make other bytes",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-b@example.com",
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an account twice",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net",
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "a WhatsApp LID, no number",
+      "backup": {
+        "accounts": {
+          "apple": [],
+          "whatsapp": [
+            "90000000000002@lid"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "a JID spelled in upper case",
+      "backup": {
+        "accounts": {
+          "apple": [],
+          "whatsapp": [
+            "15550000001@S.WHATSAPP.NET"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "a JID with a plus",
+      "backup": {
+        "accounts": {
+          "apple": [],
+          "whatsapp": [
+            "+15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "the digits alone, judged on the Mac",
+      "backup": {
+        "accounts": {
+          "apple": [],
+          "whatsapp": [
+            "15550000001"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an Apple ID not lower case",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "Person-A@Example.com"
+          ],
+          "whatsapp": []
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "the phone's number as an Apple ID (a p: value)",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "+15550000001"
+          ],
+          "whatsapp": []
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an Apple ID with its e: prefix",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "e:person-a@example.com"
+          ],
+          "whatsapp": []
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "no whatsapp list",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "the UDID itself",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "00008140-001a2b3c4d5e6f70",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "a device hash in upper case",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3F9C0D1E2A4B5C6D",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an instant with milliseconds",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44.000Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an instant that is no day",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-02-30T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "an instant with an offset",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T14:42:44+05:30",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "the serial itself",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "F2LXXXXXXXXX",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "a store the home reads no folder of",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "health"
+      }
+    },
+    {
+      "case": "no store",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de"
+      }
+    },
+    {
+      "case": "no model name",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "the phone's own name as its model",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "Person A's iPhone",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "encrypted as words",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "device": "3f9c0d1e2a4b5c6d",
+        "encrypted": "yes",
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "no device",
+      "backup": {
+        "accounts": {
+          "apple": [
+            "person-a@example.com"
+          ],
+          "whatsapp": [
+            "15550000001@s.whatsapp.net"
+          ]
+        },
+        "encrypted": true,
+        "ios": "27.0",
+        "last_backup": "2026-08-28T09:12:44Z",
+        "model": "iPhone18,1",
+        "model_name": "iPhone 17 Pro",
+        "serial4": "c0de",
+        "store": "imessage"
+      }
+    },
+    {
+      "case": "not an object",
+      "backup": [
+        "imessage"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-07",
+  "state": "found",
+  "moment": {
+    "key": "e16",
+    "row": "e16",
+    "kind": "conversation",
+    "icon": "meeting",
+    "title": "Group Alpha",
+    "name": "Group Alpha",
+    "near": null,
+    "start_ms": 1794043800000,
+    "end_ms": 1794044520000,
+    "untimed": null,
+    "length_ms": 720000,
+    "products": [
+      "WhatsApp"
+    ],
+    "people": [
+      {
+        "name": "Person A",
+        "person": "phone:+15550000001",
+        "chat": null,
+        "call": null
+      },
+      {
+        "name": "Person B",
+        "person": "phone:+15550000002",
+        "chat": null,
+        "call": null
+      }
+    ],
+    "place": {
+      "name": "Home",
+      "unit": "stay/location:local:iphone-aa01/1794034800000",
+      "slug": "home-place"
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [
+      "120363000000000001@g.us:alpha-2026-11-07-9000"
+    ],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "120363000000000001@g.us:alpha-2026-11-07-9000",
+          "at_ms": 1794043800000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "120363000000000001@g.us:alpha-2026-11-07-9120",
+          "at_ms": 1794044520000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "messages",
+          "unit": "2026-11-07:whatsapp:120363000000000001@g.us"
+        }
+      ],
+      "atoms": 2,
+      "start_ms": 1794043800000,
+      "end_ms": 1794044520000
+    },
+    "view": {
+      "chat": "whatsapp:120363000000000001@g.us",
+      "group": true,
+      "view": "thread"
+    }
+  }
+}

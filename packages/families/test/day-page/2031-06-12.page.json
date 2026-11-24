@@ -1,0 +1,484 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:phone-aa01/1938943800000@1938969000000",
+      "kind": "stay",
+      "episode": "e1",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "3h 30m"
+      },
+      "start_ms": 1938969000000,
+      "end_ms": 1938981600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1938981600000@1938981600000",
+      "kind": "move",
+      "episode": "e2",
+      "head": {
+        "title": "Walk 1.9 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [],
+        "length": "20m"
+      },
+      "start_ms": 1938981600000,
+      "end_ms": 1938982800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1938982800000@1938982800000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Near Synthetic Home",
+        "line": "1.8 km away",
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "50m"
+      },
+      "start_ms": 1938982800000,
+      "end_ms": 1938985800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1938985800000@1938985800000",
+      "kind": "move",
+      "episode": "e4",
+      "head": {
+        "title": "Drive 6.1 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [],
+        "length": "20m"
+      },
+      "start_ms": 1938985800000,
+      "end_ms": 1938987000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1938987000000@1938987000000",
+      "kind": "stay",
+      "episode": "e5",
+      "head": {
+        "title": "Fresh from Synthetic Farm",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "1h"
+      },
+      "start_ms": 1938987000000,
+      "end_ms": 1938990600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/google-timeline:person-a@example.com:export/activity-1@1938990600000",
+      "kind": "move",
+      "episode": "e6",
+      "head": {
+        "title": "Drive 13.4 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [],
+        "length": "40m"
+      },
+      "start_ms": 1938990600000,
+      "end_ms": 1938993000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/google-timeline:person-a@example.com:export/visit-1@1938993000000",
+      "kind": "stay",
+      "episode": "e7",
+      "head": {
+        "title": "Near Fresh from Synthetic Farm",
+        "line": "12 km away",
+        "place": null,
+        "stated_by": "stated by Timeline",
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 20m"
+      },
+      "start_ms": 1938993000000,
+      "end_ms": 1938997800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1938997800000@1938997800000",
+      "kind": "move",
+      "episode": "e8",
+      "head": {
+        "title": "Drive 41 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [],
+        "length": "1h"
+      },
+      "start_ms": 1938997800000,
+      "end_ms": 1939001400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1939001400000@1939001400000",
+      "kind": "stay",
+      "episode": "e9",
+      "head": {
+        "title": "Synthetic Port Town",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 30m"
+      },
+      "start_ms": 1939001400000,
+      "end_ms": 1939006800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1939006800000@1939006800000",
+      "kind": "move",
+      "episode": "e10",
+      "head": {
+        "title": "Ferry 38 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "1h 30m"
+      },
+      "start_ms": 1939006800000,
+      "end_ms": 1939012200000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1939012200000@1939012200000",
+      "kind": "stay",
+      "episode": "e11",
+      "head": {
+        "title": "Unnamed place",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h"
+      },
+      "start_ms": 1939012200000,
+      "end_ms": 1939015800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1939015800000@1939015800000",
+      "kind": "move",
+      "episode": "e12",
+      "head": {
+        "title": "Ferry 30.5 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "30m"
+      },
+      "start_ms": 1939015800000,
+      "end_ms": 1939017600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-06-12@1939017600000",
+      "kind": "stay",
+      "episode": "e13",
+      "head": {
+        "title": "a hidden place",
+        "line": null,
+        "place": null,
+        "stated_by": "from photos",
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h"
+      },
+      "start_ms": 1939017600000,
+      "end_ms": 1939021200000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1939021200000@1939021200000",
+      "kind": "move",
+      "episode": "e14",
+      "head": {
+        "title": "Drive 9.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [],
+        "length": "30m"
+      },
+      "start_ms": 1939021200000,
+      "end_ms": 1939023000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1939023000000@1939023000000",
+      "kind": "stay",
+      "episode": "e15",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "9h"
+      },
+      "start_ms": 1939023000000,
+      "end_ms": 1939055400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1939055400000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": true,
+    "places": [
+      {
+        "key": "synthetic-home",
+        "slug": "synthetic-home",
+        "name": "Synthetic Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 45000000,
+        "length": "12h 30m",
+        "spoken": "Synthetic Home, 12 hours 30 minutes",
+        "point": {
+          "latitude": 10.0001,
+          "longitude": 20.0001
+        },
+        "radius_m": null,
+        "rows": [
+          "e1",
+          "e15"
+        ]
+      },
+      {
+        "key": "spot:10.2001,20.2001",
+        "slug": null,
+        "name": "Synthetic Port Town",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 5400000,
+        "length": "1h 30m",
+        "spoken": "Synthetic Port Town, 1 hour 30 minutes",
+        "point": {
+          "latitude": 10.2001,
+          "longitude": 20.2001
+        },
+        "radius_m": null,
+        "rows": [
+          "e9"
+        ]
+      },
+      {
+        "key": "spot:10.1501,20.0501",
+        "slug": null,
+        "name": "Near Fresh from Synthetic Farm",
+        "line": "12 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4800000,
+        "length": "1h 20m",
+        "spoken": "Near Fresh from Synthetic Farm, 1 hour 20 minutes",
+        "point": {
+          "latitude": 10.1501,
+          "longitude": 20.0501
+        },
+        "radius_m": null,
+        "rows": [
+          "e7"
+        ]
+      },
+      {
+        "key": "synthetic-farm",
+        "slug": "synthetic-farm",
+        "name": "Fresh from Synthetic Farm",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 3600000,
+        "length": "1h",
+        "spoken": "Fresh from Synthetic Farm, 1 hour",
+        "point": {
+          "latitude": 10.0501,
+          "longitude": 20.0501
+        },
+        "radius_m": null,
+        "rows": [
+          "e5"
+        ]
+      },
+      {
+        "key": "spot:10.3001,20.3001",
+        "slug": null,
+        "name": "Unnamed place",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 3600000,
+        "length": "1h",
+        "spoken": "Unnamed place, 1 hour",
+        "point": {
+          "latitude": 10.3001,
+          "longitude": 20.3001
+        },
+        "radius_m": null,
+        "rows": [
+          "e11"
+        ]
+      },
+      {
+        "key": "spot:10.0161,20.0001",
+        "slug": null,
+        "name": "Near Synthetic Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 3000000,
+        "length": "50m",
+        "spoken": "Near Synthetic Home, 50 minutes",
+        "point": {
+          "latitude": 10.0161,
+          "longitude": 20.0001
+        },
+        "radius_m": null,
+        "rows": [
+          "e3"
+        ]
+      }
+    ],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

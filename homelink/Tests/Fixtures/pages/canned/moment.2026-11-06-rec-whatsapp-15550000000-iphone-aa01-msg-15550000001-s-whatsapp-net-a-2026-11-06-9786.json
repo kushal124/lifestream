@@ -1,0 +1,100 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-06",
+  "state": "found",
+  "moment": {
+    "key": "e20",
+    "row": "e20",
+    "kind": "conversation",
+    "icon": "message",
+    "title": "Person A",
+    "name": "Person A",
+    "near": null,
+    "start_ms": 1793962080000,
+    "end_ms": 1793962260000,
+    "untimed": null,
+    "length_ms": 180000,
+    "products": [
+      "WhatsApp"
+    ],
+    "people": [
+      {
+        "name": "Person A",
+        "person": "phone:+15550000001",
+        "chat": "whatsapp:15550000001@s.whatsapp.net",
+        "call": null
+      }
+    ],
+    "place": {
+      "name": "The Office",
+      "unit": "stay/location:local:iphone-aa01/1793935440000",
+      "slug": "the-office"
+    },
+    "out": {
+      "label": "Open in WhatsApp",
+      "href": "https://wa.me/15550000001"
+    },
+    "record": null,
+    "letter": null,
+    "marks": [
+      "15550000001@s.whatsapp.net:a-2026-11-06-9786"
+    ],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9780",
+          "at_ms": 1793962080000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9786",
+          "at_ms": 1793962116000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9792",
+          "at_ms": 1793962152000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9798",
+          "at_ms": 1793962188000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9804",
+          "at_ms": 1793962224000
+        },
+        {
+          "source": "whatsapp:15550000000:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000001@s.whatsapp.net:a-2026-11-06-9810",
+          "at_ms": 1793962260000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "messages",
+          "unit": "2026-11-06:whatsapp:15550000001@s.whatsapp.net"
+        }
+      ],
+      "atoms": 6,
+      "start_ms": 1793962080000,
+      "end_ms": 1793962260000
+    },
+    "view": {
+      "chat": "whatsapp:15550000001@s.whatsapp.net",
+      "group": false,
+      "view": "thread"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# The tests that run nowhere until they are fixed, one a line: a TypeScript test file from the
+# root, or a Swift test as <package>/<Target>/<Class>/<test>, then why.
+# testing/files.mts leaves the files out of every run but one naming them; the Swift suites skip the tests
+# by name (tools/check.ts, ios-app/check.sh); tools/check-tests.ts holds every line to a test that
+# exists. A fix takes the line off and runs the test by name.
+ios-app/LifestreamCaptureUITests/DaysFlowUITests/testJourneyDay red on and off in main runs, no change reaching it: the first stay row never shows
+ios-app/LifestreamCaptureUITests/DaysFlowUITests/testJourneyUnnamedStay red on and off in main runs, no change reaching it: yesterday never shows in 30 s

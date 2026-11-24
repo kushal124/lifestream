@@ -1,0 +1,82 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-23",
+  "you": {
+    "id": "person:0001",
+    "name": "Person A",
+    "named": true,
+    "face": false,
+    "photo": null,
+    "when": null,
+    "line": "You",
+    "find": [
+      "person a"
+    ]
+  },
+  "values": [
+    {
+      "id": "storage",
+      "label": null,
+      "value": [
+        {
+          "words": "111 GB left",
+          "kind": "words"
+        }
+      ],
+      "signal": null
+    },
+    {
+      "id": "time",
+      "label": null,
+      "value": [
+        {
+          "words": "Starts ",
+          "kind": "words"
+        },
+        {
+          "time": {
+            "at_ms": 1791968400000,
+            "kind": "clock"
+          },
+          "kind": "time"
+        }
+      ],
+      "signal": null
+    }
+  ],
+  "devices": [
+    {
+      "id": "macbook-pro-0001",
+      "name": "Desk Mac",
+      "icon": "work-mac",
+      "line": "Running",
+      "signal": "ok",
+      "removed": false
+    },
+    {
+      "id": "iphone-0002",
+      "name": "Phone B",
+      "icon": "phone-screen",
+      "line": "Needs you to open it",
+      "signal": "needs-you",
+      "removed": false
+    },
+    {
+      "id": "extension",
+      "name": "Chrome extension",
+      "icon": "web",
+      "line": "Running in Chrome",
+      "signal": "ok",
+      "removed": false
+    },
+    {
+      "id": "iphone-0003",
+      "name": "Phone C",
+      "icon": "phone-screen",
+      "line": "Removed",
+      "signal": "off",
+      "removed": true
+    }
+  ],
+  "removed": "1 removed"
+}

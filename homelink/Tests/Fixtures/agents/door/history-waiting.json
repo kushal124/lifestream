@@ -1,0 +1,154 @@
+{
+  "route": "GET /v1/agents/<id>/history",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": {
+      "today": 1,
+      "words": "read today",
+      "days": [
+        {
+          "day": "2026-11-08",
+          "words": "Sun",
+          "n": 0
+        },
+        {
+          "day": "2026-11-09",
+          "words": "Mon",
+          "n": 0
+        },
+        {
+          "day": "2026-11-10",
+          "words": "Tue",
+          "n": 0
+        },
+        {
+          "day": "2026-11-11",
+          "words": "Wed",
+          "n": 0
+        },
+        {
+          "day": "2026-11-12",
+          "words": "Thu",
+          "n": 0
+        },
+        {
+          "day": "2026-11-13",
+          "words": "Fri",
+          "n": 0
+        },
+        {
+          "day": "2026-11-14",
+          "words": "Sat",
+          "n": 1
+        }
+      ],
+      "said": [
+        {
+          "text": "Mostly your "
+        },
+        {
+          "text": "email",
+          "bold": true
+        },
+        {
+          "text": ". Nothing from "
+        },
+        {
+          "text": "Health",
+          "bold": true
+        },
+        {
+          "text": ": Asker can’t see it."
+        }
+      ]
+    },
+    "chips": [
+      {
+        "kind": "mail",
+        "name": "Mail",
+        "icon": "mail",
+        "n": 1
+      }
+    ],
+    "kind": null,
+    "empty": null,
+    "sessions": [
+      {
+        "key": "s-1",
+        "from_ms": 1794674760000,
+        "to_ms": 1794674760000,
+        "calls": 1,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "1 read"
+        },
+        "reads": "1 read",
+        "lines": [
+          {
+            "kind": "call",
+            "id": "call-0000000000000001",
+            "at_ms": 1794674760000,
+            "words": "Searched for “flights”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 emails",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          }
+        ]
+      },
+      {
+        "key": "c-53",
+        "from_ms": 1794674760000,
+        "to_ms": 1794674760000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "1 read"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794674760000,
+            "icon": "needs-you",
+            "words": "Asked to see Health for 1 hour",
+            "line": "“Your sleep, to plan the trip.” · waiting for you",
+            "ask": "rq-0000000000000001",
+            "tone": "waiting"
+          }
+        ]
+      },
+      {
+        "key": "c-52",
+        "from_ms": 1794674760000,
+        "to_ms": 1794674760000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "1 read"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794674760000,
+            "icon": "private",
+            "words": "You allowed Asker",
+            "line": "You · Everything but Health and Money · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

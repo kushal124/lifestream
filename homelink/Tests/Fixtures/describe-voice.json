@@ -1,0 +1,73 @@
+{
+  "described": [
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJ2MSJd",
+      "kind": "message",
+      "day": "2026-11-04",
+      "at": "2026-11-04T21:40+05:30",
+      "title": "Person A",
+      "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+      "chat_title": "Person A",
+      "opens": {
+        "page": "days",
+        "day": "2026-11-04",
+        "focus": "rec:whatsapp:15550000009:iphone-aa01 message v1"
+      },
+      "voice": {
+        "audio": "sha256:0000000000000000000000000000000000000000000000000000000000000001",
+        "record": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJ2MSJd",
+        "seconds": 23,
+        "from": "Person A"
+      }
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwibm90ZS1oZWxkIl0",
+      "kind": "record",
+      "day": "2026-11-05",
+      "at": "2026-11-05T08:12+05:30",
+      "title": "Voice note",
+      "opens": {
+        "page": "days",
+        "day": "2026-11-05",
+        "focus": "rec:voice-notes:local:iphone-aa01 voice note-held"
+      },
+      "voice": {
+        "audio": "sha256:0000000000000000000000000000000000000000000000000000000000000002",
+        "record": "record.WyJyZWNvcmQiLCJ2b2ljZS1ub3Rlczpsb2NhbDppcGhvbmUtYWEwMSIsInZvaWNlIiwibm90ZS1oZWxkIl0",
+        "seconds": 0,
+        "mine": true
+      }
+    },
+    {
+      "ref": "line.WyJsaW5lIiwiMjAyNi0xMC0wNiIsIjBhMGIwYzBkMGUwZjEwMTEiLDIsIm1lc3NhZ2VzL3YzIixudWxsXQ",
+      "kind": "line",
+      "day": "2026-10-06",
+      "at": "2026-10-06T19:02+05:30",
+      "title": "Person B",
+      "opens": {
+        "page": "days",
+        "day": "2026-10-06",
+        "focus": "rec:imessage:local:macbook-pro-0001 message v3"
+      },
+      "voice": {
+        "audio": "sha256:0000000000000000000000000000000000000000000000000000000000000003",
+        "record": "record.WyJyZWNvcmQiLCJpbWVzc2FnZTpsb2NhbDptYWNib29rLXByby0wMDAxIiwibWVzc2FnZSIsInYzIl0",
+        "from": "Person B"
+      }
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDoxNTU1MDAwMDAwOTppcGhvbmUtYWEwMSIsIm1lc3NhZ2UiLCJhMSJd",
+      "kind": "message",
+      "day": "2026-10-04",
+      "at": "2026-10-04T09:15+01:00",
+      "title": "Person A",
+      "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+      "chat_title": "Person A",
+      "opens": {
+        "page": "days",
+        "day": "2026-10-04",
+        "focus": "rec:whatsapp:15550000009:iphone-aa01 message a1"
+      }
+    }
+  ]
+}

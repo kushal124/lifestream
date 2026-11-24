@@ -1,0 +1,59 @@
+{
+  "asked": "avg of sleep over days, by month",
+  "population": {
+    "facts": 61,
+    "valued": 58,
+    "missing": 3,
+    "excluded": {
+      "no watch worn": 3
+    },
+    "shared": 0
+  },
+  "counted": "counted from days as the watch's sleep states them, read to 2026-11-13",
+  "readings": [
+    "asleep",
+    "in bed"
+  ],
+  "days_there": {
+    "zone": "Etc/GMT-1",
+    "first": "2026-09-01",
+    "last": "2026-10-31"
+  },
+  "total": {
+    "n": 58,
+    "avg": "6 h 38 min",
+    "said": "avg: asleep 6 h 38 min; in bed 7 h 13 min",
+    "ref": "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsidCI6bnVsbH0sNThd"
+  },
+  "columns": [
+    "month",
+    "n",
+    "asleep",
+    "in bed",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-09",
+      29,
+      "6 h 41 min",
+      "7 h 15 min",
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsiZyI6WyIyMDI2LTA5Il0sInAiOm51bGx9LDI5XQ"
+    ],
+    [
+      "2026-10",
+      29,
+      "6 h 35 min",
+      "7 h 11 min",
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsiZyI6WyIyMDI2LTEwIl0sInAiOm51bGx9LDI5XQ"
+    ]
+  ],
+  "pending": [
+    {
+      "day": "2026-10-31",
+      "why": "failed"
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

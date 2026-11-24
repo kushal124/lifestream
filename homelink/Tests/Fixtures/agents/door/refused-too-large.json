@@ -1,0 +1,9 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": null,
+  "status": 413,
+  "answer": {
+    "code": "BODY_TOO_LARGE",
+    "message": "the body states 2097310 bytes; the door reads at most 2097152"
+  }
+}

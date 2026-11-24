@@ -1,0 +1,11 @@
+{
+  "route": "POST /v1/access/drop",
+  "request": {
+    "drop": "request"
+  },
+  "status": 404,
+  "answer": {
+    "code": "AGENT_REQUEST_GONE",
+    "message": "You have no open request to drop."
+  }
+}

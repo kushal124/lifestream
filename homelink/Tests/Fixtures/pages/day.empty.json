@@ -1,0 +1,25 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "day": "2026-09-01",
+  "state": "empty",
+  "line": "Nothing recorded this day.",
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": null,
+  "before_home": "Before Lifestream’s first day",
+  "side": {
+    "figures": [],
+    "located": false,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

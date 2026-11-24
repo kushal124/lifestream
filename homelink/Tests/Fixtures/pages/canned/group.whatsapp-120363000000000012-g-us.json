@@ -1,0 +1,267 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "title": "Synthetic Shop Deals",
+    "photo": null,
+    "line": "WhatsApp group · 1 person",
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "word": "rule",
+    "quiet": true,
+    "why": {
+      "words": "You archived it in WhatsApp",
+      "since": null
+    }
+  },
+  "total": 300,
+  "writers": [
+    {
+      "id": "person:person-a",
+      "name": "Person A",
+      "named": true,
+      "photo": null,
+      "share": "300 messages"
+    }
+  ],
+  "yours": "0%",
+  "talk": {
+    "day": "2026-10-05",
+    "chat": "whatsapp:120363000000000012@g.us",
+    "title": "Synthetic Shop Deals",
+    "group": true,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-120",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-132",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-144",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-156",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-168",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-180",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-192",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-204",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-216",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-228",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-240",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-252",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-264",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-276",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:person-a",
+        "name": "Person A",
+        "text": "synthetic line 120363000000000012@g.us-a-288",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      }
+    ],
+    "folded": [],
+    "focus": "a7"
+  },
+  "counting": false
+}

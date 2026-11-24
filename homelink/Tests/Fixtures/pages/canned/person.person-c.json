@@ -1,0 +1,414 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person C",
+    "named": true,
+    "full_name": null,
+    "photo": "sha256:2a950088fb27694f26accf82d4fbef5caf16501046992a1d66bb03448fc4f61e",
+    "chips": [],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "email:person-c@example.com",
+      "kind": "email",
+      "network": null,
+      "words": "person-c@example.com",
+      "from": "You added",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 4
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 4
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 5
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 13,
+    "calls": null,
+    "line": "13 messages in the last 30 days",
+    "before": {
+      "day": "2026-08-27",
+      "joiner": " · before that, "
+    }
+  },
+  "history": {
+    "weeks": [
+      {
+        "start": "2026-04-13",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-20",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-04-27",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-04",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-11",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-18",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-05-25",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-01",
+        "count": 3,
+        "day": "2026-06-07"
+      },
+      {
+        "start": "2026-06-08",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-06-15",
+        "count": 3,
+        "day": "2026-06-17"
+      },
+      {
+        "start": "2026-06-22",
+        "count": 3,
+        "day": "2026-06-27"
+      },
+      {
+        "start": "2026-06-29",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-06",
+        "count": 3,
+        "day": "2026-07-07"
+      },
+      {
+        "start": "2026-07-13",
+        "count": 4,
+        "day": "2026-07-17"
+      },
+      {
+        "start": "2026-07-20",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-07-27",
+        "count": 4,
+        "day": "2026-07-27"
+      },
+      {
+        "start": "2026-08-03",
+        "count": 4,
+        "day": "2026-08-07"
+      },
+      {
+        "start": "2026-08-10",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-08-17",
+        "count": 4,
+        "day": "2026-08-17"
+      },
+      {
+        "start": "2026-08-24",
+        "count": 4,
+        "day": "2026-08-27"
+      },
+      {
+        "start": "2026-08-31",
+        "count": 4,
+        "day": "2026-09-06"
+      },
+      {
+        "start": "2026-09-07",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-09-14",
+        "count": 4,
+        "day": "2026-09-16"
+      },
+      {
+        "start": "2026-09-21",
+        "count": 5,
+        "day": "2026-09-26"
+      },
+      {
+        "start": "2026-09-28",
+        "count": 0,
+        "day": null
+      },
+      {
+        "start": "2026-10-05",
+        "count": 0,
+        "day": null
+      }
+    ],
+    "marked": 23,
+    "kind": "weeks"
+  },
+  "talk": {
+    "day": "2026-09-26",
+    "chat": "imessage:person-c@example.com",
+    "title": "Person C",
+    "group": false,
+    "network": "iMessage",
+    "lines": [
+      {
+        "who": "person:person-c",
+        "name": "Person C",
+        "text": "synthetic imessage c-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 2
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic imessage c-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 3
+      },
+      {
+        "who": "person:person-c",
+        "name": "Person C",
+        "text": "synthetic imessage c-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 4
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic imessage c-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 5
+      },
+      {
+        "who": "person:person-c",
+        "name": "Person C",
+        "text": "synthetic imessage c-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 6
+      }
+    ],
+    "folded": [],
+    "focus": "a6"
+  },
+  "where": [
+    {
+      "chat": "imessage:person-c@example.com",
+      "title": "iMessage",
+      "group": false,
+      "network": "iMessage",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 25,
+      "line": "25 messages",
+      "quiet": false
+    }
+  ],
+  "suggestions_line": null,
+  "edit": {
+    "call": "Person C",
+    "full_name": null,
+    "name_from": null,
+    "record_id": "person-c",
+    "face": false,
+    "reach": "iMessage",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "45 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": {
+      "type": "people.person",
+      "slug": "person-c",
+      "name": "Person C",
+      "full_name": null,
+      "show": "name",
+      "entity": "person",
+      "relationship": null,
+      "hidden": false,
+      "me": false,
+      "anchor": {
+        "kind": "email",
+        "value": "person-c@example.com"
+      },
+      "handles": [],
+      "excluded": [],
+      "dismissed": [],
+      "also_called": [],
+      "merged_into": null
+    },
+    "details": null,
+    "suggestions": [],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

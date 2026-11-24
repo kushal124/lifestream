@@ -1,0 +1,650 @@
+{
+  "image": [
+    {
+      "key": "3d0de19c3c4b33ceb18bad5aa87ab8a799d9d03d85ebcf7d68de529f30b0cfcf",
+      "version": "sha256:818e05953a6b4fe1d6fc726b5a1eee1e705cf818e0655a357eeb5cb1be678bd5",
+      "content": {
+        "at_ms": 1685613600000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    },
+    {
+      "key": "5fc0166ef7a6b8b37fbd22910286a86395df1fbd3db9c8003b9d7355c9fdcd0c",
+      "version": "sha256:f4c59323dbc80352bf54b0e6aa80f7bac45a00d512d11fdd6fa08b9aaf9433cc",
+      "content": {
+        "at_ms": 1654077600000,
+        "chat": true,
+        "labels": [],
+        "library": true,
+        "senders": [
+          {
+            "kind": "phone",
+            "value": "+15550000002"
+          }
+        ]
+      }
+    },
+    {
+      "key": "86485321f58ac7d423b553f8437d0459ea2a1916ee1dffcef063f65c990c0731",
+      "version": "sha256:3c612474506241cd82d1645ec107473c60527304821003ad88acf18830e90b14",
+      "content": {
+        "at_ms": 1577818800000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    },
+    {
+      "key": "a2790bdcaecee7ad1d9469b5a2497c2bda09f0efe059e521e43febdc1f5de5a1",
+      "version": "sha256:33e28875416ea61fa3820de0e3a7b615b24bdd2b25706aaa4185ae02d91165e1",
+      "content": {
+        "at_ms": 1656669600000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    },
+    {
+      "key": "ab81e3c73438139840ebd3c9282091f45cfc563d5e6ba5ff8782febe76582a6c",
+      "version": "sha256:742e96a42ab69444b8379db2cceb80c87fdaaed601f374eaae148ee0afe766de",
+      "content": {
+        "at_ms": 1717236000000,
+        "chat": true,
+        "labels": [],
+        "library": false,
+        "senders": [
+          {
+            "kind": "jid",
+            "value": "15550000002@s.whatsapp.net"
+          }
+        ]
+      }
+    },
+    {
+      "key": "b781b2454371fb001590e36434b7e693204c343846e9329aefaee57c6a2ffc41",
+      "version": "sha256:ef63d5241b5fb22c6c71a61b1a6fe2cded11f0c1ddaf26949079137a39479a9e",
+      "content": {
+        "at_ms": 1591005600000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    },
+    {
+      "key": "e56a095fef6a7883390623ec2fb47090988f26c127bd20070afa9348e71d7aa5",
+      "version": "sha256:e23ff087c495098eb691e49e0f1a193e0cf6609be607e56d666b499dfa47ea84",
+      "content": {
+        "at_ms": 1622541600000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    },
+    {
+      "key": "e8e2fa18a6aa80d10ccdd79a4cd4a332ef7ac8c95348041cd89a011a91bf3410",
+      "version": "sha256:39bd796c572d4df0c72ea869d89d39f091e445d64f4f65daab2557fc677cdca2",
+      "content": {
+        "at_ms": 1559383200000,
+        "chat": false,
+        "labels": [],
+        "library": true,
+        "senders": []
+      }
+    }
+  ],
+  "scan": [
+    {
+      "key": "3d0de19c3c4b33ceb18bad5aa87ab8a799d9d03d85ebcf7d68de529f30b0cfcf",
+      "version": "sha256:1760cf5c6aff96cd040361d2c6d8bce19048cbfd7bfb5fb011eb5f0cd4791b2b",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              500,
+              100,
+              700,
+              300
+            ],
+            "crop": "sha256:7496b77364fee23072987ccc02039d9d2e694991705a4c33e461e077768dd469",
+            "landmarks": [
+              [
+                500,
+                100
+              ],
+              [
+                700,
+                100
+              ],
+              [
+                600,
+                200
+              ],
+              [
+                500,
+                300
+              ],
+              [
+                700,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "seed"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:95e13f8cb1fbe50c35bbf87bb8d55fc8e025f0fe638f25df945a60374b415554",
+        "width": 4000
+      }
+    },
+    {
+      "key": "5fc0166ef7a6b8b37fbd22910286a86395df1fbd3db9c8003b9d7355c9fdcd0c",
+      "version": "sha256:367904817b44033c2c0b24a2334daa6bb6144485425fddcc98df12bd5b8f8dd9",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ],
+            "crop": null,
+            "landmarks": [
+              [
+                100,
+                100
+              ],
+              [
+                300,
+                100
+              ],
+              [
+                200,
+                200
+              ],
+              [
+                100,
+                300
+              ],
+              [
+                300,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "observe"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:b1aa933e2b785b2cedae70b0ef6f7941c86ac99fc2d25373429250c621e3727f",
+        "width": 4000
+      }
+    },
+    {
+      "key": "86485321f58ac7d423b553f8437d0459ea2a1916ee1dffcef063f65c990c0731",
+      "version": "sha256:9d70a795484261e7dc24e4b3a28ae4be2c1b60493c792f6210fb8fc8cf8217af",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ],
+            "crop": "sha256:9559ea42e05796b4491875b123627e6726cf872b053b8f033f35f23b97a7e239",
+            "landmarks": [
+              [
+                100,
+                100
+              ],
+              [
+                300,
+                100
+              ],
+              [
+                200,
+                200
+              ],
+              [
+                100,
+                300
+              ],
+              [
+                300,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "seed"
+          },
+          {
+            "box": [
+              500,
+              100,
+              700,
+              300
+            ],
+            "crop": "sha256:1fa8b820a346681390a6d9468bc9ebeefc2f9c88aadf490c44e084da8daf6a51",
+            "landmarks": [
+              [
+                500,
+                100
+              ],
+              [
+                700,
+                100
+              ],
+              [
+                600,
+                200
+              ],
+              [
+                500,
+                300
+              ],
+              [
+                700,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "seed"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:cffdb0b25521a46d5f8892493dfb013c786227d7a87187f49b494850595c8043",
+        "width": 4000
+      }
+    },
+    {
+      "key": "a2790bdcaecee7ad1d9469b5a2497c2bda09f0efe059e521e43febdc1f5de5a1",
+      "version": "sha256:af56a50174f2c12ac436d9516c674bc7b562a96dcb0d9be32fb4799d549f309b",
+      "content": {
+        "faces": null,
+        "height": null,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "unreadable",
+        "vectors": null,
+        "width": null
+      }
+    },
+    {
+      "key": "ab81e3c73438139840ebd3c9282091f45cfc563d5e6ba5ff8782febe76582a6c",
+      "version": "sha256:982ea3e1efe6f0233d8273a423b97f9f38b4d3fe648ab69004a5e9b4631df34d",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ],
+            "crop": "sha256:81da93a1be09a781371e0cb24d8473317025c33e5b591d923dddba67c69c9185",
+            "landmarks": [
+              [
+                100,
+                100
+              ],
+              [
+                300,
+                100
+              ],
+              [
+                200,
+                200
+              ],
+              [
+                100,
+                300
+              ],
+              [
+                300,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "seed"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:c76508064123e918bb9d20c42f3d4d8cab86508402456d5e6557da308c884eee",
+        "width": 4000
+      }
+    },
+    {
+      "key": "b781b2454371fb001590e36434b7e693204c343846e9329aefaee57c6a2ffc41",
+      "version": "sha256:16b723156b44f45eae32524972ba33c291f66aa79f8b86ab316a67bf74947bbf",
+      "content": {
+        "faces": [],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": null,
+        "width": 4000
+      }
+    },
+    {
+      "key": "e56a095fef6a7883390623ec2fb47090988f26c127bd20070afa9348e71d7aa5",
+      "version": "sha256:ccb3dae38bfc1a9bda552a7d7ce101a4399d61c25c84d70f1f12f641dd484708",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ],
+            "crop": "sha256:887b1adf3de70dfdef131c916123852619d3a169b7d80cd7efaa403719100a23",
+            "landmarks": [
+              [
+                100,
+                100
+              ],
+              [
+                300,
+                100
+              ],
+              [
+                200,
+                200
+              ],
+              [
+                100,
+                300
+              ],
+              [
+                300,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "seed"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:c76508064123e918bb9d20c42f3d4d8cab86508402456d5e6557da308c884eee",
+        "width": 4000
+      }
+    },
+    {
+      "key": "e8e2fa18a6aa80d10ccdd79a4cd4a332ef7ac8c95348041cd89a011a91bf3410",
+      "version": "sha256:027adec11d55da0524eef3425206e2f93e649a49618966c310f73e51bd8f638b",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ],
+            "crop": "sha256:1542d9ab338d2298e8e8b7df11decfbbe538167d8f6a6dfcb668e266e8d30152",
+            "landmarks": [
+              [
+                100,
+                100
+              ],
+              [
+                300,
+                100
+              ],
+              [
+                200,
+                200
+              ],
+              [
+                100,
+                300
+              ],
+              [
+                300,
+                300
+              ]
+            ],
+            "score": 0.9,
+            "size": 200,
+            "tier": "assign"
+          }
+        ],
+        "height": 3000,
+        "pipeline": "sha256:8ea392e73af47045522f28652bace21a444d787d533ffd0cd15aac80d6a08256",
+        "status": "ok",
+        "vectors": "sha256:d011c5456e077b448aa72b7949a87859e44d7d3eedf45a5ced2fd2e4c52239b9",
+        "width": 4000
+      }
+    }
+  ],
+  "named": [
+    {
+      "key": "person-a",
+      "version": "sha256:895053280cffe0489e5b9605040ffda6b8ff193453b492d2c6248f6425a90c24",
+      "content": {
+        "labels": [],
+        "photos": [
+          {
+            "at_ms": 1577818800000,
+            "camera": true,
+            "crop": "sha256:9559ea42e05796b4491875b123627e6726cf872b053b8f033f35f23b97a7e239",
+            "face": "86485321f58ac7d423b553f8437d0459ea2a1916ee1dffcef063f65c990c0731:100,100,300,300",
+            "size": 200,
+            "tier": "seed"
+          },
+          {
+            "at_ms": 1559383200000,
+            "camera": true,
+            "crop": "sha256:1542d9ab338d2298e8e8b7df11decfbbe538167d8f6a6dfcb668e266e8d30152",
+            "face": "e8e2fa18a6aa80d10ccdd79a4cd4a332ef7ac8c95348041cd89a011a91bf3410:100,100,300,300",
+            "size": 200,
+            "tier": "assign"
+          }
+        ]
+      }
+    }
+  ],
+  "cluster": [
+    {
+      "key": "58c589ebde41764c",
+      "version": "sha256:f1406d94425a92cb1650ebff074072f1a165ad06930d5c2cb8a7517469a4c643",
+      "content": {
+        "chat_share": 0.25,
+        "evidence": {
+          "labels": [],
+          "senders": [
+            {
+              "faces": 1,
+              "kind": "jid",
+              "value": "15550000002@s.whatsapp.net"
+            }
+          ]
+        },
+        "faces": [
+          {
+            "at_ms": 1685613600000,
+            "crop": "sha256:7496b77364fee23072987ccc02039d9d2e694991705a4c33e461e077768dd469",
+            "face": "3d0de19c3c4b33ceb18bad5aa87ab8a799d9d03d85ebcf7d68de529f30b0cfcf:500,100,700,300"
+          },
+          {
+            "at_ms": 1577818800000,
+            "crop": "sha256:1fa8b820a346681390a6d9468bc9ebeefc2f9c88aadf490c44e084da8daf6a51",
+            "face": "86485321f58ac7d423b553f8437d0459ea2a1916ee1dffcef063f65c990c0731:500,100,700,300"
+          },
+          {
+            "at_ms": 1717236000000,
+            "crop": "sha256:81da93a1be09a781371e0cb24d8473317025c33e5b591d923dddba67c69c9185",
+            "face": "ab81e3c73438139840ebd3c9282091f45cfc563d5e6ba5ff8782febe76582a6c:100,100,300,300"
+          },
+          {
+            "at_ms": 1622541600000,
+            "crop": "sha256:887b1adf3de70dfdef131c916123852619d3a169b7d80cd7efaa403719100a23",
+            "face": "e56a095fef6a7883390623ec2fb47090988f26c127bd20070afa9348e71d7aa5:100,100,300,300"
+          }
+        ],
+        "outliers": [
+          "3d0de19c3c4b33ceb18bad5aa87ab8a799d9d03d85ebcf7d68de529f30b0cfcf:500,100,700,300"
+        ],
+        "photos": 4,
+        "rule": "sha256:ac60b977938428376df1cd6c99ed705e4ffbd846da73a55ef1edaf673ccb1532",
+        "size": 4,
+        "suggested": [
+          {
+            "person": "person-b",
+            "score": 0.61
+          }
+        ],
+        "year_count": 4,
+        "years": [
+          2020,
+          2024
+        ]
+      }
+    }
+  ],
+  "maybe": [],
+  "model-image": [
+    {
+      "key": "3d0de19c3c4b33ceb18bad5aa87ab8a799d9d03d85ebcf7d68de529f30b0cfcf",
+      "version": "sha256:289308c6414fa90c6cb427d9d27217b71c14563313a72aa0d60466d160e12a18",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              500,
+              100,
+              700,
+              300
+            ]
+          }
+        ],
+        "names": [
+          null
+        ]
+      }
+    },
+    {
+      "key": "5fc0166ef7a6b8b37fbd22910286a86395df1fbd3db9c8003b9d7355c9fdcd0c",
+      "version": "sha256:471eb79c4ee64840337923ff3822c3e6a98d28bd39601229353176c5a84c3afa",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ]
+          }
+        ],
+        "names": [
+          null
+        ]
+      }
+    },
+    {
+      "key": "86485321f58ac7d423b553f8437d0459ea2a1916ee1dffcef063f65c990c0731",
+      "version": "sha256:76fcf4b18df1ce41d0649dd45cd96fa9f7325f952fa7c159f438f3ec5010ecd7",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ]
+          },
+          {
+            "box": [
+              500,
+              100,
+              700,
+              300
+            ]
+          }
+        ],
+        "names": [
+          {
+            "shown": "Person A",
+            "who": "person:person-a"
+          },
+          null
+        ]
+      }
+    },
+    {
+      "key": "b781b2454371fb001590e36434b7e693204c343846e9329aefaee57c6a2ffc41",
+      "version": "sha256:78d6376aaeef7bec99e02035d4f7a7bc4b0564c0523eef55549258d2ff9afc38",
+      "content": {
+        "faces": [],
+        "names": []
+      }
+    },
+    {
+      "key": "e56a095fef6a7883390623ec2fb47090988f26c127bd20070afa9348e71d7aa5",
+      "version": "sha256:66cd4d2e5a316e01bb63f2f1d9a1b5b1282236c92cc1f333be5731b8f869ef67",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ]
+          }
+        ],
+        "names": [
+          null
+        ]
+      }
+    },
+    {
+      "key": "e8e2fa18a6aa80d10ccdd79a4cd4a332ef7ac8c95348041cd89a011a91bf3410",
+      "version": "sha256:7c72f819969ca14521061bdc4929f0368c7f459092be086154c7297271f4337c",
+      "content": {
+        "faces": [
+          {
+            "box": [
+              100,
+              100,
+              300,
+              300
+            ]
+          }
+        ],
+        "names": [
+          {
+            "shown": "Person A",
+            "who": "person:person-a"
+          }
+        ]
+      }
+    }
+  ]
+}

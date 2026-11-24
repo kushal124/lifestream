@@ -1,0 +1,7387 @@
+{
+  "position": "1:1793179800000",
+  "today": "2026-10-28",
+  "rows": [
+    {
+      "ids": [
+        "apple-calls"
+      ],
+      "joined": false,
+      "name": "Calls",
+      "icon": "call",
+      "health": {
+        "state": "setup",
+        "reason": "app",
+        "words": "Install FaceTime on MacBook Air",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Who you called, when, and for how long.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Calls",
+        "Messages and calls",
+        "Who you called, when, and for how long."
+      ]
+    },
+    {
+      "ids": [
+        "whatsapp"
+      ],
+      "joined": false,
+      "name": "WhatsApp",
+      "icon": "message",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "3 messages",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800000,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "WhatsApp",
+        "Messages and calls",
+        "Every chat and group, with its media and calls."
+      ]
+    },
+    {
+      "ids": [
+        "gmail"
+      ],
+      "joined": false,
+      "name": "Gmail",
+      "icon": "mail",
+      "health": {
+        "state": "waiting",
+        "reason": "provider-limit",
+        "words": "Gmail allows more tomorrow",
+        "since_ms": 1793178000000,
+        "next_ms": 1793251800000,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Gmail allows more tomorrow",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800002,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Gmail",
+        "Mail and calendar",
+        "Every email, sent and received, with its labels."
+      ]
+    },
+    {
+      "ids": [
+        "google-calendar"
+      ],
+      "joined": false,
+      "name": "Google Calendar",
+      "icon": "calendar-event",
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "words": "Sign in to Google Calendar",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "label": "Sign in",
+            "of": "gcal-api",
+            "do": "signin"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Your Google calendars, with people and place.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Google Calendar",
+        "Mail and calendar",
+        "Your Google calendars, with people and place."
+      ]
+    },
+    {
+      "ids": [
+        "chatgpt"
+      ],
+      "joined": false,
+      "name": "ChatGPT",
+      "icon": "ai",
+      "health": {
+        "state": "syncing",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Catching up · back to",
+      "time": {
+        "month": "2026-10",
+        "kind": "month"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800003,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "ChatGPT",
+        "AI",
+        "Your conversations and their files."
+      ]
+    },
+    {
+      "ids": [
+        "claude"
+      ],
+      "joined": false,
+      "name": "Claude",
+      "icon": "ai",
+      "health": {
+        "state": "needs-you",
+        "reason": "other-account",
+        "words": "Another Claude account",
+        "since_ms": 1793172600000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "label": "Read it too",
+            "need": "poll:claude-browser",
+            "of": "claude:person-b@example.com:browser",
+            "do": "read"
+          },
+          {
+            "label": "Not this one",
+            "need": "poll:claude-browser",
+            "of": "claude:person-b@example.com:browser",
+            "do": "ignore"
+          }
+        ],
+        "detail": null,
+        "line": "person-b@example.com in Chrome"
+      },
+      "line": "Another Claude account",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800004,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Claude",
+        "AI",
+        "Your conversations and their files."
+      ]
+    },
+    {
+      "ids": [
+        "google-takeout"
+      ],
+      "joined": false,
+      "name": "Google activity",
+      "icon": "search",
+      "health": {
+        "state": "paused",
+        "reason": null,
+        "words": "",
+        "since_ms": 1793007000000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Paused since",
+      "time": {
+        "at_ms": 1793007000000,
+        "kind": "at"
+      },
+      "more": [
+        "Couldn't read 3 files"
+      ],
+      "last": {
+        "at_ms": 1793007000000,
+        "kind": "at"
+      },
+      "act": {
+        "label": "Resume",
+        "of": "google-takeout",
+        "do": "resume"
+      },
+      "find": [
+        "Google activity",
+        "Browsing",
+        "Your Takeout."
+      ]
+    },
+    {
+      "ids": [
+        "google"
+      ],
+      "joined": false,
+      "name": "Google Search",
+      "icon": "web",
+      "health": {
+        "state": "setup",
+        "reason": "export",
+        "words": "Import your Google Search export",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "label": "Show",
+            "kind": "google-takeout",
+            "do": "import"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "What you searched and watched across Google.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Google Search",
+        "Browsing",
+        "What you searched and watched across Google."
+      ]
+    },
+    {
+      "ids": [
+        "screen"
+      ],
+      "joined": false,
+      "name": "Screen",
+      "icon": "screen",
+      "health": {
+        "state": "quiet",
+        "reason": "device",
+        "words": "Nothing from MacBook Pro since 06:30",
+        "since_ms": 1793169000000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Nothing from MacBook Pro since 06:30",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800007,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Screen",
+        "Activity",
+        "What you saw, as text you can search."
+      ]
+    },
+    {
+      "ids": [
+        "screen-time"
+      ],
+      "joined": false,
+      "name": "Screen Time",
+      "icon": "phone-screen",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 app switch",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800015,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Screen Time",
+        "Activity",
+        "Which app you were in, on Mac and iPhone."
+      ]
+    },
+    {
+      "ids": [
+        "google-photos"
+      ],
+      "joined": false,
+      "name": "Google Photos",
+      "icon": "photos",
+      "health": {
+        "state": "setup",
+        "reason": "export",
+        "words": "Import your Google Photos export",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "label": "Show",
+            "kind": "google-takeout",
+            "do": "import"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Every photo and video in your Google account.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Google Photos",
+        "Photos",
+        "Every photo and video in your Google account."
+      ]
+    },
+    {
+      "ids": [
+        "apple-photos"
+      ],
+      "joined": false,
+      "name": "Photos",
+      "icon": "photos",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "5 photos",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800025,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Photos",
+        "Every photo and video, with time and place."
+      ]
+    },
+    {
+      "ids": [
+        "spotify"
+      ],
+      "joined": false,
+      "name": "Spotify",
+      "icon": "listening",
+      "health": {
+        "state": "off",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "label": "Connect",
+            "ids": [
+              "spotify",
+              "spotify:person-a:export"
+            ],
+            "do": "turn"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Disconnected",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Spotify",
+        "Listening and watching",
+        "Every play since your account began, with how long it played."
+      ]
+    },
+    {
+      "ids": [
+        "granola"
+      ],
+      "joined": false,
+      "name": "Granola",
+      "icon": "note",
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "words": "Sign in to Granola",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "label": "Sign in",
+            "of": "granola-mcp",
+            "do": "signin"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Every meeting’s summary and who was there.",
+      "time": null,
+      "more": [],
+      "last": null,
+      "act": null,
+      "find": [
+        "Granola",
+        "Notes and voice",
+        "Every meeting’s summary and who was there."
+      ]
+    },
+    {
+      "ids": [
+        "notes"
+      ],
+      "joined": true,
+      "name": "Lifestream notes",
+      "icon": "compose",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 note",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800019,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Lifestream notes",
+        "Notes and voice",
+        "What you write and snap in Lifestream."
+      ]
+    },
+    {
+      "ids": [
+        "checkin"
+      ],
+      "joined": false,
+      "name": "Check-ins",
+      "icon": "check-in",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 check-in",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800017,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Check-ins",
+        "Health",
+        "How you feel, asked twice a day."
+      ]
+    },
+    {
+      "ids": [
+        "apple-health"
+      ],
+      "joined": false,
+      "name": "Health",
+      "icon": "health",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 sample",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800011,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Health",
+        "Sleep, steps, heart, and anything else you allow."
+      ]
+    },
+    {
+      "ids": [
+        "whoop"
+      ],
+      "joined": false,
+      "name": "WHOOP",
+      "icon": "health",
+      "health": {
+        "state": "needs-you",
+        "reason": "password",
+        "words": "Type your WHOOP password",
+        "since_ms": 1793169000000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "label": "Set",
+            "member": "password",
+            "do": "set"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Type your WHOOP password",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800028,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "WHOOP",
+        "Health",
+        "Your sleeps, strain and heart rate."
+      ]
+    },
+    {
+      "ids": [
+        "github"
+      ],
+      "joined": false,
+      "name": "GitHub",
+      "icon": "coding-agent",
+      "health": {
+        "state": "broken",
+        "reason": "failing",
+        "words": "Couldn’t read GitHub",
+        "since_ms": 1793172600000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "label": "Try now",
+            "need": "poll:github-api",
+            "do": "try"
+          }
+        ],
+        "detail": null,
+        "line": null
+      },
+      "line": "Couldn’t read GitHub",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800029,
+        "kind": "at"
+      },
+      "act": {
+        "label": "Try now",
+        "need": "poll:github-api",
+        "do": "try"
+      },
+      "find": [
+        "GitHub",
+        "Code and work",
+        "Your commits, pull requests, issues and reviews."
+      ]
+    },
+    {
+      "ids": [
+        "location"
+      ],
+      "joined": false,
+      "name": "Location",
+      "icon": "places",
+      "health": {
+        "state": "quiet",
+        "reason": "nothing-new",
+        "words": "Nothing new since 14 Oct",
+        "since_ms": 1791970200000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "Nothing new since 14 Oct",
+      "time": null,
+      "more": [],
+      "last": {
+        "at_ms": 1792315800021,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Location",
+        "Places",
+        "Where you go, point by point."
+      ]
+    },
+    {
+      "ids": [
+        "motion"
+      ],
+      "joined": false,
+      "name": "Motion",
+      "icon": "walk",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 activity",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800009,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Motion",
+        "Places",
+        "When you walk, run, drive or stay still."
+      ]
+    },
+    {
+      "ids": [
+        "apple-contacts"
+      ],
+      "joined": false,
+      "name": "Contacts",
+      "icon": "people",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "line": null
+      },
+      "line": "1 contact",
+      "time": {
+        "day": "2026-10-28",
+        "kind": "day"
+      },
+      "more": [],
+      "last": {
+        "at_ms": 1792315800013,
+        "kind": "at"
+      },
+      "act": null,
+      "find": [
+        "Contacts",
+        "Every contact card, so names show instead of numbers."
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "id": "fetch:github-api:github:person-a:cloud",
+      "state": "broken",
+      "reason": "failing",
+      "words": "Couldn’t read GitHub",
+      "since_ms": 1793172600000,
+      "next_ms": 1793180100000,
+      "acts": [
+        {
+          "label": "Try now",
+          "need": "poll:github-api",
+          "do": "try"
+        }
+      ],
+      "detail": null,
+      "line": null,
+      "connector": "github",
+      "streams": null,
+      "copy": "github:person-a:cloud",
+      "unit": null,
+      "at": null,
+      "weight": "stopped",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "job:import:youtube:person-a@example.com:export",
+      "state": "broken",
+      "reason": "import",
+      "words": "Couldn’t import YouTube",
+      "since_ms": 1793093400000,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Skip it",
+          "need": "job:import:youtube:person-a@example.com:export",
+          "do": "skip"
+        }
+      ],
+      "detail": null,
+      "line": "From your Google Takeout",
+      "connector": "google-takeout",
+      "streams": null,
+      "copy": "youtube:person-a@example.com:export",
+      "unit": null,
+      "at": null,
+      "weight": "stopped",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "fetch:claude-browser:claude:person-a@example.com:browser",
+      "state": "needs-you",
+      "reason": "other-account",
+      "words": "Another Claude account",
+      "since_ms": 1793172600000,
+      "next_ms": 1793180100000,
+      "acts": [
+        {
+          "label": "Read it too",
+          "need": "poll:claude-browser",
+          "of": "claude:person-b@example.com:browser",
+          "do": "read"
+        },
+        {
+          "label": "Not this one",
+          "need": "poll:claude-browser",
+          "of": "claude:person-b@example.com:browser",
+          "do": "ignore"
+        }
+      ],
+      "detail": null,
+      "line": "person-b@example.com in Chrome",
+      "connector": "claude",
+      "streams": null,
+      "copy": "claude:person-a@example.com:browser",
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "lost:google-takeout:person-a@example.com:export",
+      "state": "broken",
+      "reason": "missing-file",
+      "words": "Couldn't read 3 files",
+      "since_ms": 1793007000000,
+      "next_ms": null,
+      "acts": [],
+      "detail": null,
+      "line": "Google activity",
+      "connector": "google-takeout",
+      "streams": null,
+      "copy": "google-takeout:person-a@example.com:export",
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "grant:photos:iphone-17-pro-aa01",
+      "state": "needs-you",
+      "reason": "grant",
+      "words": "Allow Photos",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Allow",
+          "unit": "iphone-17-pro-aa01",
+          "grant": "photos",
+          "do": "grant"
+        }
+      ],
+      "detail": null,
+      "line": "iPhone 17 Pro",
+      "connector": "apple-photos",
+      "streams": [
+        "apple-photos"
+      ],
+      "copy": null,
+      "unit": "iphone-17-pro-aa01",
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "password:lifestream-whoop-password",
+      "state": "needs-you",
+      "reason": "password",
+      "words": "Type your WHOOP password",
+      "since_ms": 1793169000000,
+      "next_ms": 1793180100000,
+      "acts": [
+        {
+          "label": "Set",
+          "member": "password",
+          "do": "set"
+        }
+      ],
+      "detail": null,
+      "line": null,
+      "connector": "whoop",
+      "streams": null,
+      "copy": "whoop:10000001:cloud",
+      "unit": null,
+      "at": {
+        "site": "id.whoop.example",
+        "open": null,
+        "errand": null
+      },
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "password",
+      "about": "Lifestream keeps it locked with your other passwords."
+    },
+    {
+      "id": "pair:iphone-12-cc03",
+      "state": "needs-you",
+      "reason": "pair",
+      "words": "Pair iPhone 12 again",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Pair",
+          "do": "pair"
+        }
+      ],
+      "detail": null,
+      "line": null,
+      "connector": null,
+      "streams": null,
+      "copy": null,
+      "unit": "iphone-12-cc03",
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "import:a000000000000002:refused",
+      "state": "needs-you",
+      "reason": "import",
+      "words": "Couldn't read 1 file",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Skip it",
+          "need": "import:a000000000000002:refused",
+          "do": "skip"
+        }
+      ],
+      "detail": null,
+      "line": "From your Google Takeout",
+      "connector": "google-takeout",
+      "streams": null,
+      "copy": null,
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "import:a000000000000013:which",
+      "state": "needs-you",
+      "reason": "choose",
+      "words": "Which iPhone is this backup from?",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Choose",
+          "kind": "iphone-backup",
+          "do": "import"
+        }
+      ],
+      "detail": null,
+      "line": "Your iPhone backup",
+      "connector": "iphone-backup",
+      "streams": null,
+      "copy": null,
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "import:a000000000000012:whose",
+      "state": "needs-you",
+      "reason": "choose",
+      "words": "Whose Spotify is this?",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Choose",
+          "kind": "spotify",
+          "do": "import"
+        }
+      ],
+      "detail": null,
+      "line": "Your Spotify",
+      "connector": "spotify",
+      "streams": null,
+      "copy": null,
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    },
+    {
+      "id": "disk",
+      "state": "needs-you",
+      "reason": null,
+      "words": "Lifestream's disk fills in about 21 days",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [
+        {
+          "label": "Free up space",
+          "do": "storage"
+        }
+      ],
+      "detail": null,
+      "line": null,
+      "connector": null,
+      "streams": null,
+      "copy": null,
+      "unit": null,
+      "at": null,
+      "weight": "advice",
+      "banner": false,
+      "dismissed": false,
+      "kind": "notice",
+      "about": null
+    }
+  ],
+  "badge": {
+    "needs": 11,
+    "asks": 0
+  },
+  "at_ms": 1793179800000,
+  "day": "2026-10-28",
+  "products": "sha256:0b0c7f7657ee88c72963c09431a9e408ef7e527599a875c0896992d0b33fde1d",
+  "disk": {
+    "free_bytes": 400000000000,
+    "max_bundle_bytes": 68719476736
+  },
+  "paused": [
+    {
+      "target": "pause:google-takeout",
+      "by": "terminal",
+      "reason": "the Takeout is read again after the deploy",
+      "at_ms": 1793007000000,
+      "holds": null,
+      "title": "Paused: Google activity",
+      "line": "the Takeout is read again after the deploy · since Monday"
+    }
+  ],
+  "home": {
+    "name": "Lifestream",
+    "health": {
+      "state": "ok",
+      "reason": null,
+      "words": "Running on MacBook Pro",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [],
+      "detail": null
+    },
+    "settings": {
+      "zone": "UTC",
+      "day_start_hour": 4,
+      "helpers": 4,
+      "helpers_resolved": 4,
+      "model_cap": 8,
+      "model_cap_default": 8,
+      "port": 4680,
+      "lan_port": 4682
+    }
+  },
+  "devices": [
+    {
+      "unit": "macbook-air-bb07",
+      "kind": "mac",
+      "name": "MacBook Air",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:28",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "contact_ms": 1793179680000,
+      "grants": {
+        "fullDiskAccess": "on",
+        "photos": "on"
+      },
+      "found": [
+        "apple-photos",
+        "screen",
+        "whatsapp"
+      ],
+      "pass": "p-04040404",
+      "replaced": [],
+      "retired": false,
+      "streams": [
+        {
+          "id": "whatsapp",
+          "line": "3 messages today"
+        },
+        {
+          "id": "apple-photos",
+          "line": "5 photos · last 08:30"
+        }
+      ]
+    },
+    {
+      "unit": "macbook-pro-0001",
+      "kind": "mac",
+      "name": "MacBook Pro",
+      "health": {
+        "state": "quiet",
+        "reason": "device",
+        "since_ms": 1793169000000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": "Nothing from MacBook Pro since 06:30"
+      },
+      "contact_ms": 1793169000000,
+      "grants": null,
+      "found": null,
+      "pass": "p-0c0c0c0c",
+      "replaced": [
+        "p-02020202"
+      ],
+      "retired": false,
+      "streams": [
+        {
+          "id": "screen",
+          "line": "Nothing from MacBook Pro since 06:30"
+        }
+      ]
+    },
+    {
+      "unit": "iphone-12-cc03",
+      "kind": "phone",
+      "name": "iPhone 12",
+      "health": {
+        "state": "needs-you",
+        "reason": "pair",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "pair",
+            "label": "Pair"
+          }
+        ],
+        "detail": null,
+        "words": "Pair iPhone 12 again"
+      },
+      "contact_ms": null,
+      "grants": null,
+      "found": null,
+      "pass": null,
+      "replaced": [],
+      "retired": false,
+      "streams": []
+    },
+    {
+      "unit": "iphone-17-pro-aa01",
+      "kind": "phone",
+      "name": "iPhone 17 Pro",
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "words": "Checked 09:29",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null
+      },
+      "contact_ms": 1793179740000,
+      "grants": {
+        "location": "on",
+        "photos": "off",
+        "motion": "on",
+        "health": "on",
+        "contacts": "on",
+        "screen-time": "on",
+        "notifications": "on"
+      },
+      "found": null,
+      "pass": "p-06060606",
+      "replaced": [],
+      "retired": false,
+      "streams": [
+        {
+          "id": "screen-time",
+          "line": "1 app switch today"
+        },
+        {
+          "id": "apple-photos",
+          "line": "Allow Photos"
+        },
+        {
+          "id": "notes",
+          "line": "1 note today"
+        },
+        {
+          "id": "checkin",
+          "line": "1 check-in today"
+        },
+        {
+          "id": "location",
+          "line": "Nothing new since 14 Oct"
+        },
+        {
+          "id": "motion",
+          "line": "1 activity today"
+        },
+        {
+          "id": "apple-contacts",
+          "line": "1 contact today"
+        }
+      ]
+    }
+  ],
+  "extension": {
+    "name": "Chrome extension",
+    "placed": false,
+    "present": true,
+    "browsers": [
+      "Chrome"
+    ],
+    "health": {
+      "state": "ok",
+      "reason": null,
+      "words": "Running in Chrome",
+      "since_ms": null,
+      "next_ms": null,
+      "acts": [],
+      "detail": null
+    }
+  },
+  "connectors": [
+    {
+      "id": "apple-calls",
+      "type": {
+        "key": "messages",
+        "name": "Messages and calls",
+        "icon": "message"
+      },
+      "icon": "call",
+      "name": "Calls",
+      "product": "apple-calls",
+      "noun": [
+        "call",
+        "calls"
+      ],
+      "starter": false,
+      "roads": [
+        "mac",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Each call's number or address, direction, time and length.",
+      "gives": "Who you called, when, and for how long.",
+      "before": [
+        "On your iPhone, turn on Calls on Other Devices."
+      ],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [
+        "fullDiskAccess"
+      ],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "app",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": "Install FaceTime on MacBook Air"
+      },
+      "line": "Install FaceTime on MacBook Air",
+      "lead": null,
+      "line_parts": {
+        "words": "Install FaceTime on MacBook Air",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [],
+      "account": null,
+      "export": {
+        "import": "iphone-backup",
+        "name": "iPhone backup",
+        "icon": "phone-backup",
+        "opens": false,
+        "line": "Importing"
+      },
+      "ways": [
+        {
+          "road": "mac",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": false,
+              "act": null,
+              "words": "Install FaceTime on MacBook Air",
+              "line": "Lifestream finds it on its own once it’s installed."
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on MacBook Air",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "iphone-backup"
+              },
+              "words": "Import your Calls export",
+              "line": "Finder takes an hour or more."
+            }
+          ]
+        }
+      ],
+      "where": "What FaceTime keeps on your Mac. Nothing leaves it.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the calls already in your call history.",
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "whatsapp",
+      "type": {
+        "key": "messages",
+        "name": "Messages and calls",
+        "icon": "message"
+      },
+      "icon": "message",
+      "name": "WhatsApp",
+      "product": "whatsapp",
+      "noun": [
+        "message",
+        "messages"
+      ],
+      "starter": false,
+      "roads": [
+        "mac",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every chat and group with its messages and media, and calls.",
+      "gives": "Every chat and group, with its media and calls.",
+      "before": [
+        "Install WhatsApp for Mac and link it to your phone."
+      ],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [
+        "fullDiskAccess"
+      ],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "3 messages today",
+      "lead": null,
+      "line_parts": {
+        "words": "3 messages",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 3,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "checked_ms": 1793179680000,
+        "words": "Checked 09:28",
+        "last_ms": 1792315800000,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793161800000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "whatsapp:+15550000001:macbook-air-bb07",
+          "name": "MacBook Air",
+          "road": "mac",
+          "unit": "macbook-air-bb07",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 3,
+          "newest_ms": 1793178000000,
+          "oldest_ms": 1793161800000,
+          "store": null,
+          "line": "3 messages · last 09:00"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": true,
+              "act": null,
+              "words": "WhatsApp is on MacBook Air",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on MacBook Air",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "upload",
+                "label": "Upload"
+              },
+              "words": "Import your WhatsApp export",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your Mac, as you use it. Nothing leaves it.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "groups_archived",
+          "kind": "choice",
+          "label": "Archived groups are quiet",
+          "about": "Even if you wrote there recently.",
+          "value": "on",
+          "words": "Yes",
+          "from": "declaration",
+          "default": "on",
+          "steps": [
+            {
+              "value": "on",
+              "words": "Yes",
+              "note": null
+            },
+            {
+              "value": "off",
+              "words": "No",
+              "note": null
+            }
+          ],
+          "panel": "groups",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "groups_quiet_after",
+          "kind": "choice",
+          "label": "Quiet after",
+          "about": "A group goes quiet once you have written nothing in it for this long.",
+          "value": "90d",
+          "words": "90 days",
+          "from": "declaration",
+          "default": "90d",
+          "steps": [
+            {
+              "value": "30d",
+              "words": "30 days",
+              "note": null
+            },
+            {
+              "value": "90d",
+              "words": "90 days",
+              "note": null
+            },
+            {
+              "value": "never",
+              "words": "Never",
+              "note": null
+            }
+          ],
+          "panel": "groups",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.photos",
+          "kind": "choice",
+          "label": "Photo descriptions",
+          "about": "A model describes the photos in your chats, so they read as text in your days and in search.",
+          "value": "default",
+          "words": "Vision One · OpenRouter",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Vision One"
+            },
+            {
+              "value": "openrouter:vendor-a/vision-1",
+              "words": "Vision One",
+              "note": "Sent to OpenRouter"
+            },
+            {
+              "value": "claude:plan-model-1",
+              "words": "Plan Model One",
+              "note": "Your Claude plan is used up · resets 14:00"
+            },
+            {
+              "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+              "words": "Qwen 3.5",
+              "note": "Stays on MacBook Pro",
+              "runner": {
+                "unit": "runner-macbook-pro-0001",
+                "name": "MacBook Pro",
+                "home": true
+              }
+            }
+          ],
+          "route": "openrouter:vendor-a/vision-1",
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.voice",
+          "kind": "choice",
+          "label": "Voice note transcripts",
+          "about": "A model transcribes your voice notes.",
+          "value": "default",
+          "words": "Off",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Off"
+            },
+            {
+              "value": "claude:plan-model-1",
+              "words": "Plan Model One",
+              "note": "Your Claude plan is used up · resets 14:00"
+            },
+            {
+              "value": "runner:runner-macbook-pro-0001/parakeet-unified-en-0.6b",
+              "words": "Parakeet",
+              "note": "Downloading, 0.3 of 0.7 GB",
+              "runner": {
+                "unit": "runner-macbook-pro-0001",
+                "name": "MacBook Pro",
+                "home": true
+              }
+            },
+            {
+              "value": "runner:runner-macbook-pro-0001/nemotron-3.5-asr-0.6b",
+              "words": "Nemotron Speech",
+              "note": "Not downloaded",
+              "runner": {
+                "unit": "runner-macbook-pro-0001",
+                "name": "MacBook Pro",
+                "home": true
+              }
+            }
+          ],
+          "route": null,
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.range",
+          "kind": "choice",
+          "label": "Read back to",
+          "about": null,
+          "value": null,
+          "words": "29 Aug 2026",
+          "from": "unset",
+          "default": null,
+          "steps": [
+            {
+              "value": "2026-10-28",
+              "words": "New only",
+              "note": "1 photo · about $1"
+            },
+            {
+              "value": "2026-09-28",
+              "words": "Last 30 days",
+              "note": "1 photo · about $1"
+            },
+            {
+              "value": "2025-10-28",
+              "words": "Last year",
+              "note": "2 photos · about $1"
+            },
+            {
+              "value": "all",
+              "words": "All time",
+              "note": "3 photos · about $2"
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.photos",
+          "kind": "choice",
+          "label": "Photo descriptions: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.voice",
+          "kind": "choice",
+          "label": "Voice note transcripts: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": {
+        "rows": [
+          {
+            "member": "llm.photos",
+            "shape": "running",
+            "line": "2 photos left · about 5 min · about $1 · 1 could not be processed",
+            "privacy": {
+              "member": "privacy.photos",
+              "value": "default",
+              "words": "Personal details hidden",
+              "steps": [
+                {
+                  "value": "default",
+                  "words": "Default",
+                  "note": "Hide all"
+                },
+                {
+                  "value": "all",
+                  "words": "Hide all",
+                  "note": "Names, numbers and faces are replaced. The model still reads what was said."
+                },
+                {
+                  "value": "names",
+                  "words": "Keep names",
+                  "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+                },
+                {
+                  "value": "none",
+                  "words": "Don't hide",
+                  "note": "Everything is sent as it is."
+                }
+              ],
+              "note": "Names, numbers and faces are replaced. The model still reads what was said.",
+              "waiting": false
+            }
+          },
+          {
+            "member": "llm.voice",
+            "shape": "needs",
+            "line": "Connect a model that takes audio",
+            "privacy": null
+          },
+          {
+            "member": "llm.range",
+            "shape": null,
+            "line": null,
+            "privacy": null
+          }
+        ]
+      },
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "whatsapp"
+        },
+        "blocked": null,
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": 4,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "gmail",
+      "type": {
+        "key": "mail",
+        "name": "Mail and calendar",
+        "icon": "mail"
+      },
+      "icon": "mail",
+      "name": "Gmail",
+      "product": "gmail",
+      "noun": [
+        "email",
+        "emails"
+      ],
+      "starter": false,
+      "roads": [
+        "poll",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every email in All Mail, with its labels and attachments.",
+      "gives": "Every email, sent and received, with its labels.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "waiting",
+        "reason": "provider-limit",
+        "since_ms": 1793178000000,
+        "next_ms": 1793251800000,
+        "acts": [],
+        "detail": null,
+        "words": "Gmail allows more tomorrow"
+      },
+      "line": "Gmail allows more tomorrow",
+      "lead": null,
+      "line_parts": {
+        "words": "Gmail allows more tomorrow",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "checked_ms": 1793178000000,
+        "words": "Checked 09:00",
+        "last_ms": 1792315800002,
+        "last": "18 Oct"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "gmail:person-a@example.com:cloud",
+          "name": "Gmail",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "waiting",
+            "reason": "provider-limit",
+            "since_ms": 1793178000000,
+            "next_ms": 1793251800000,
+            "acts": [],
+            "detail": null,
+            "words": "Gmail allows more tomorrow"
+          },
+          "held": 2,
+          "newest_ms": 1793093400000,
+          "oldest_ms": 1793089800000,
+          "store": null,
+          "line": "2 emails · last yesterday 09:30"
+        }
+      ],
+      "account": {
+        "name": "person-a@example.com",
+        "line": "Account · 2 emails",
+        "copy": "gmail:person-a@example.com:cloud"
+      },
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": false,
+        "line": "Google takes minutes, or hours with photos"
+      },
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "sign-in",
+              "met": true,
+              "act": null,
+              "words": "Signed in as person-a@example.com",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "google-takeout"
+              },
+              "words": "Import your Gmail export",
+              "line": "Google takes minutes, or hours with photos."
+            }
+          ]
+        }
+      ],
+      "where": "Gmail’s servers, from your Mac, every 5 minutes. Nothing leaves your Mac but the request.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "account",
+          "kind": "email",
+          "label": "Gmail address",
+          "about": null,
+          "value": "person-a@example.com",
+          "words": "person-a@example.com",
+          "from": "person",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "email",
+          "where": null
+        },
+        {
+          "key": "password",
+          "kind": "secret",
+          "label": "App password",
+          "about": null,
+          "value": "gmail.password",
+          "words": "",
+          "from": "declaration",
+          "default": "gmail.password",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "gmail.password",
+          "held": false
+        },
+        {
+          "key": "spam",
+          "kind": "toggle",
+          "label": "Include Spam",
+          "about": "From when you turn it on.",
+          "value": false,
+          "words": "Off",
+          "from": "declaration",
+          "default": false,
+          "steps": null,
+          "panel": "settings",
+          "control": "toggle",
+          "where": null
+        },
+        {
+          "key": "trash",
+          "kind": "toggle",
+          "label": "Include Trash",
+          "about": "From when you turn it on.",
+          "value": false,
+          "words": "Off",
+          "from": "declaration",
+          "default": false,
+          "steps": null,
+          "panel": "settings",
+          "control": "toggle",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [
+        {
+          "id": "gmail-imap",
+          "acquirer": "gmail-imap",
+          "way": "key",
+          "label": "Use an app password",
+          "steps": [
+            {
+              "title": "Turn on 2-Step Verification",
+              "words": "In your Google account, under Security.",
+              "open": {
+                "label": "Open Google account",
+                "url": "https://myaccount.google.com/security"
+              }
+            },
+            {
+              "title": "Make an app password",
+              "words": "At myaccount.google.com/apppasswords. Name it Lifestream.",
+              "open": {
+                "label": "Open app passwords",
+                "url": "https://myaccount.google.com/apppasswords"
+              }
+            }
+          ],
+          "note": "Signs in with an app password, never your Google password.",
+          "fields": [
+            "account",
+            "password"
+          ],
+          "sets": [
+            "account",
+            "password"
+          ],
+          "client": null
+        }
+      ],
+      "route": "gmail-imap",
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "gmail"
+        },
+        "blocked": {
+          "reason": "held",
+          "words": "Gmail asked to wait until tomorrow 05:30",
+          "until_ms": 1793251800000
+        },
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "google-calendar",
+      "type": {
+        "key": "mail",
+        "name": "Mail and calendar",
+        "icon": "mail"
+      },
+      "icon": "calendar-event",
+      "name": "Google Calendar",
+      "product": "google-calendar",
+      "noun": [
+        "event",
+        "events"
+      ],
+      "starter": false,
+      "roads": [
+        "poll",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every event in your calendars, with people and place.",
+      "gives": "Your Google calendars, with people and place.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "signin",
+            "label": "Sign in",
+            "of": "gcal-api"
+          }
+        ],
+        "detail": null,
+        "words": "Sign in to Google Calendar"
+      },
+      "line": "Sign in to Google Calendar",
+      "lead": null,
+      "line_parts": {
+        "words": "Sign in to Google Calendar",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [],
+      "account": null,
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": false,
+        "line": "Google takes minutes, or hours with photos"
+      },
+      "ways": [
+        {
+          "road": "poll",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "sign-in",
+              "met": false,
+              "act": {
+                "do": "signin",
+                "label": "Sign in",
+                "of": "gcal-api"
+              },
+              "words": "Sign in to Google Calendar",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "google-takeout"
+              },
+              "words": "Import your Google Calendar export",
+              "line": "Google takes minutes, or hours with photos."
+            }
+          ]
+        }
+      ],
+      "where": "Google Calendar’s servers, from your Mac, every 5 minutes. Nothing leaves your Mac but the request.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "account",
+          "kind": "email",
+          "label": "Google account",
+          "about": null,
+          "value": null,
+          "words": "Not set yet",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "email",
+          "where": null
+        },
+        {
+          "key": "signin",
+          "kind": "secret",
+          "label": "Sign-in",
+          "about": null,
+          "value": "google-calendar.signin",
+          "words": "",
+          "from": "declaration",
+          "default": "google-calendar.signin",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "google-calendar.signin",
+          "held": false
+        },
+        {
+          "key": "calendars",
+          "kind": "list",
+          "label": "Calendars",
+          "about": null,
+          "value": [],
+          "words": "Every calendar",
+          "from": "declaration",
+          "default": [],
+          "steps": null,
+          "panel": "settings",
+          "control": "list",
+          "where": null,
+          "add": "Add a calendar"
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        },
+        {
+          "key": "pace",
+          "kind": "duration",
+          "label": "Catch up every",
+          "about": null,
+          "value": "1m",
+          "words": "Every minute",
+          "from": "declaration",
+          "default": "1m",
+          "steps": [
+            {
+              "value": "30s",
+              "words": "Every 30 sec",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 min",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 min",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 min",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 min",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 min",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the events already in your calendars.",
+      "routes": [
+        {
+          "id": "gcal-api",
+          "acquirer": "gcal-api",
+          "way": "client",
+          "label": "Sign in with Google",
+          "steps": [
+            {
+              "title": "Turn on the Google Calendar API",
+              "words": "In your Google Cloud project, under APIs & Services.",
+              "open": {
+                "label": "Open the Calendar API",
+                "url": "https://console.cloud.google.com/apis/library/calendar-json.googleapis.com"
+              }
+            }
+          ],
+          "note": null,
+          "fields": [],
+          "sets": [
+            "account",
+            "signin"
+          ],
+          "client": {
+            "id": "google",
+            "name": "Google",
+            "held": false,
+            "before": [
+              "At console.cloud.google.com, make a project for Lifestream.",
+              "Under Google Auth Platform, fill in Branding, choose External under Audience, and press Publish app, so your sign-in does not end after seven days.",
+              "Under Clients, make a client of type Desktop app, and copy its client ID and client secret here."
+            ]
+          }
+        }
+      ],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "chatgpt",
+      "type": {
+        "key": "ai",
+        "name": "AI",
+        "icon": "ai"
+      },
+      "icon": "ai",
+      "name": "ChatGPT",
+      "product": "chatgpt",
+      "noun": [
+        "conversation",
+        "conversations"
+      ],
+      "starter": false,
+      "roads": [
+        "chrome"
+      ],
+      "shown": "stream",
+      "records": "Your conversations and their files, as chatgpt.com shows them.",
+      "gives": "Your conversations and their files.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "syncing",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "back to Oct 2026",
+      "lead": "Catching up",
+      "line_parts": {
+        "words": "back to",
+        "time": {
+          "kind": "month",
+          "month": "2026-10"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "checked_ms": 1793179740000,
+        "words": "Checked 09:29",
+        "last_ms": 1792315800003,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "syncing",
+        "back_to_ms": 1793007000000,
+        "left": 1750,
+        "unit": [
+          "conversation",
+          "conversations"
+        ],
+        "eta_ms": 1793194800000,
+        "done": 1,
+        "total": 1751,
+        "progress": "1 of about 1,751",
+        "words": "Back to Oct 2026 · about 4 h left",
+        "arriving": "Back to Oct 2026 · 1,750 conversations left",
+        "start": {
+          "day": null,
+          "own": false
+        }
+      },
+      "copies": [
+        {
+          "id": "chatgpt:person-a@example.com:browser",
+          "name": "person-a@example.com",
+          "road": "chrome",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "syncing",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793007000000,
+          "oldest_ms": 1793007000000,
+          "store": null,
+          "line": "1 conversation · last Monday"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "chrome",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "choose",
+              "met": true,
+              "act": null,
+              "words": "On in Chrome",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "ChatGPT in your own Chrome, where you’re signed in, every hour.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "1h",
+          "words": "Every hour",
+          "from": "declaration",
+          "default": "1h",
+          "steps": [
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        },
+        {
+          "key": "pace",
+          "kind": "duration",
+          "label": "Catch up every",
+          "about": null,
+          "value": "1m",
+          "words": "Every minute",
+          "from": "declaration",
+          "default": "1m",
+          "steps": [
+            {
+              "value": "1s",
+              "words": "Every second",
+              "note": null
+            },
+            {
+              "value": "2s",
+              "words": "Every 2 sec",
+              "note": null
+            },
+            {
+              "value": "5s",
+              "words": "Every 5 sec",
+              "note": null
+            },
+            {
+              "value": "10s",
+              "words": "Every 10 sec",
+              "note": null
+            },
+            {
+              "value": "30s",
+              "words": "Every 30 sec",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 min",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 min",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 min",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 min",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 min",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Every day",
+              "note": null
+            }
+          ],
+          "panel": "backfill",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "chatgpt"
+        },
+        "blocked": null,
+        "asked": []
+      },
+      "origin": "https://chatgpt.example.com",
+      "origins": [
+        "https://chatgpt.example.com"
+      ],
+      "browser": {
+        "unit": "chrome-dd04",
+        "name": "Chrome"
+      },
+      "signed_in": true,
+      "allowed": null,
+      "chrome_account": {
+        "email": "person-a@example.com",
+        "verdict": "read"
+      },
+      "chosen": true,
+      "checking": false,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "claude",
+      "type": {
+        "key": "ai",
+        "name": "AI",
+        "icon": "ai"
+      },
+      "icon": "ai",
+      "name": "Claude",
+      "product": "claude",
+      "noun": [
+        "conversation",
+        "conversations"
+      ],
+      "starter": false,
+      "roads": [
+        "chrome"
+      ],
+      "shown": "stream",
+      "records": "Your conversations and their files, as claude.ai shows them.",
+      "gives": "Your conversations and their files.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "needs-you",
+        "reason": "other-account",
+        "since_ms": 1793172600000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "do": "read",
+            "label": "Read it too",
+            "need": "poll:claude-browser",
+            "of": "claude:person-b@example.com:browser"
+          },
+          {
+            "do": "ignore",
+            "label": "Not this one",
+            "need": "poll:claude-browser",
+            "of": "claude:person-b@example.com:browser"
+          }
+        ],
+        "detail": null,
+        "words": "Another Claude account",
+        "line": "person-b@example.com in Chrome"
+      },
+      "line": "Another Claude account",
+      "lead": null,
+      "line_parts": {
+        "words": "Another Claude account",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793172600000,
+        "words": "Checked 07:30",
+        "last_ms": 1792315800004,
+        "last": "18 Oct"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "claude:person-a@example.com:browser",
+          "name": "person-a@example.com",
+          "road": "chrome",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "needs-you",
+            "reason": "other-account",
+            "since_ms": 1793172600000,
+            "next_ms": 1793180100000,
+            "acts": [
+              {
+                "do": "read",
+                "label": "Read it too",
+                "need": "poll:claude-browser",
+                "of": "claude:person-b@example.com:browser"
+              },
+              {
+                "do": "ignore",
+                "label": "Not this one",
+                "need": "poll:claude-browser",
+                "of": "claude:person-b@example.com:browser"
+              }
+            ],
+            "detail": null,
+            "words": "Another Claude account",
+            "line": "person-b@example.com in Chrome"
+          },
+          "held": 0,
+          "newest_ms": null,
+          "oldest_ms": null,
+          "store": null,
+          "line": "Nothing yet"
+        },
+        {
+          "id": "claude:person-c@example.com:browser",
+          "name": "person-c@example.com",
+          "road": "chrome",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793169000000,
+          "oldest_ms": 1793169000000,
+          "store": null,
+          "line": "1 conversation · last 06:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "chrome",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "choose",
+              "met": true,
+              "act": null,
+              "words": "On in Chrome",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Claude in your own Chrome, where you’re signed in, every hour.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "1h",
+          "words": "Every hour",
+          "from": "declaration",
+          "default": "1h",
+          "steps": [
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": "https://claude.example.com",
+      "origins": [
+        "https://claude.example.com"
+      ],
+      "browser": {
+        "unit": "chrome-dd04",
+        "name": "Chrome"
+      },
+      "signed_in": true,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": true,
+      "checking": false,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "google-takeout",
+      "type": {
+        "key": "web",
+        "name": "Browsing",
+        "icon": "web"
+      },
+      "icon": "search",
+      "name": "Google activity",
+      "product": "google-takeout",
+      "noun": [
+        "item",
+        "items"
+      ],
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Your Takeout.",
+      "gives": "Your Takeout.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "paused",
+        "reason": null,
+        "since_ms": 1793007000000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Paused since Monday · Couldn't read 3 files",
+      "lead": null,
+      "line_parts": {
+        "words": "Paused since",
+        "time": {
+          "kind": "at",
+          "at_ms": 1793007000000
+        },
+        "more": [
+          "Couldn't read 3 files"
+        ]
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793007000000,
+        "words": "Checked Monday",
+        "last_ms": 1793007000000,
+        "last": "Monday"
+      },
+      "history": {
+        "state": "syncing",
+        "back_to_ms": 1758619800000,
+        "left": 3,
+        "unit": [
+          "file",
+          "files"
+        ],
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Sep 2025 · 3 files left",
+        "arriving": "Back to Sep 2025 · 3 files left",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "google-takeout:person-a@example.com:export",
+          "name": "Google activity",
+          "road": "upload",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "broken",
+            "reason": "missing-file",
+            "since_ms": 1793007000000,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": "Couldn't read 3 files",
+            "line": "Google activity"
+          },
+          "held": 1,
+          "newest_ms": 1758619800000,
+          "oldest_ms": 1758619800000,
+          "store": null,
+          "line": "1 item · last 23 Sep 2025"
+        }
+      ],
+      "account": null,
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": false,
+        "line": "Importing"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": true,
+              "act": null,
+              "words": "Imported Monday",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "The file you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": true,
+      "pauses": [
+        {
+          "scope": "all",
+          "by": "terminal",
+          "reason": "the Takeout is read again after the deploy",
+          "at_ms": 1793007000000
+        }
+      ],
+      "on": true,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": [
+        {
+          "id": "job:import:youtube:person-a@example.com:export",
+          "state": "broken",
+          "reason": "import",
+          "words": "Couldn’t import YouTube",
+          "since_ms": 1793093400000,
+          "next_ms": null,
+          "acts": [
+            {
+              "do": "skip",
+              "label": "Skip it",
+              "need": "job:import:youtube:person-a@example.com:export"
+            }
+          ],
+          "detail": null,
+          "line": "From your Google Takeout",
+          "connector": "google-takeout",
+          "streams": null,
+          "copy": "youtube:person-a@example.com:export",
+          "unit": null,
+          "at": null,
+          "weight": "stopped",
+          "banner": false,
+          "dismissed": false,
+          "kind": "notice",
+          "about": null
+        },
+        {
+          "id": "lost:google-takeout:person-a@example.com:export",
+          "state": "broken",
+          "reason": "missing-file",
+          "words": "Couldn't read 3 files",
+          "since_ms": 1793007000000,
+          "next_ms": null,
+          "acts": [],
+          "detail": null,
+          "line": "Google activity",
+          "connector": "google-takeout",
+          "streams": null,
+          "copy": "google-takeout:person-a@example.com:export",
+          "unit": null,
+          "at": null,
+          "weight": "advice",
+          "banner": false,
+          "dismissed": false,
+          "kind": "notice",
+          "about": null
+        },
+        {
+          "id": "import:a000000000000002:refused",
+          "state": "needs-you",
+          "reason": "import",
+          "words": "Couldn't read 1 file",
+          "since_ms": null,
+          "next_ms": null,
+          "acts": [
+            {
+              "do": "skip",
+              "label": "Skip it",
+              "need": "import:a000000000000002:refused"
+            }
+          ],
+          "detail": null,
+          "line": "From your Google Takeout",
+          "connector": "google-takeout",
+          "streams": null,
+          "copy": null,
+          "unit": null,
+          "at": null,
+          "weight": "advice",
+          "banner": false,
+          "dismissed": false,
+          "kind": "notice",
+          "about": null
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "type": {
+        "key": "web",
+        "name": "Browsing",
+        "icon": "web"
+      },
+      "icon": "web",
+      "name": "Google Search",
+      "product": "google-search",
+      "noun": null,
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Your My Activity, product by product, from your Takeouts.",
+      "gives": "What you searched and watched across Google.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "export",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "import",
+            "label": "Show",
+            "kind": "google-takeout"
+          }
+        ],
+        "detail": null,
+        "words": "Import your Google Search export"
+      },
+      "line": "Import a Google Takeout",
+      "lead": null,
+      "line_parts": {
+        "words": "Import your Google Search export",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [],
+      "account": null,
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": true,
+        "line": "Importing"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "google-takeout"
+              },
+              "words": "Import your Google Search export",
+              "line": "Google takes minutes, or hours with photos."
+            }
+          ]
+        }
+      ],
+      "where": "The zip you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "screen",
+      "type": {
+        "key": "device-activity",
+        "name": "Activity",
+        "icon": "screen"
+      },
+      "icon": "screen",
+      "name": "Screen",
+      "product": "screen",
+      "noun": [
+        "frame",
+        "frames"
+      ],
+      "starter": false,
+      "roads": [
+        "mac"
+      ],
+      "shown": "stream",
+      "records": "What’s on your screen, as video and text, so you can find anything you saw.",
+      "gives": "What you saw, as text you can search.",
+      "before": [],
+      "sensor": true,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [
+        "screenRecording"
+      ],
+      "mac_copy": null,
+      "health": {
+        "state": "quiet",
+        "reason": "device",
+        "since_ms": 1793169000000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": "Nothing from MacBook Pro since 06:30"
+      },
+      "line": "Nothing from MacBook Pro since 06:30",
+      "lead": null,
+      "line_parts": {
+        "words": "Nothing from MacBook Pro since 06:30",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793169000000,
+        "words": "Checked 06:30",
+        "last_ms": 1792315800007,
+        "last": "18 Oct"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "screen:local:macbook-pro-0001",
+          "name": "MacBook Pro",
+          "road": "mac",
+          "unit": "macbook-pro-0001",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "quiet",
+            "reason": "device",
+            "since_ms": 1793169000000,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": "Nothing from MacBook Pro since 06:30"
+          },
+          "held": 1,
+          "newest_ms": 1793169000000,
+          "oldest_ms": 1793169000000,
+          "store": null,
+          "line": "1 frame · last 06:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": true,
+              "act": null,
+              "words": "Found on your Mac",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Screen Recording is allowed",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your Mac, as you use it. Nothing leaves it.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "apps",
+          "kind": "list",
+          "label": "Apps and sites",
+          "about": null,
+          "value": [],
+          "words": "Everything recorded",
+          "from": "declaration",
+          "default": [],
+          "steps": null,
+          "panel": null,
+          "control": "list",
+          "where": null,
+          "items": "modes",
+          "add": "Add to Apps and sites",
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "idle_pause",
+          "kind": "duration",
+          "label": "Idle timeout",
+          "about": null,
+          "value": "5m",
+          "words": "5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "1 minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "1 hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "1 day",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "llm.screen",
+          "kind": "choice",
+          "label": "Screen summaries",
+          "about": "A model reads the text that was on your screen during one sitting at your Mac and writes what you were doing.",
+          "value": "default",
+          "words": "No model yet",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "No model yet"
+            },
+            {
+              "value": "openrouter:vendor-a/vision-1",
+              "words": "Vision One",
+              "note": "Sent to OpenRouter"
+            },
+            {
+              "value": "claude:plan-model-1",
+              "words": "Plan Model One",
+              "note": "Your Claude plan is used up · resets 14:00"
+            }
+          ],
+          "route": null,
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.range",
+          "kind": "choice",
+          "label": "Read back to",
+          "about": null,
+          "value": null,
+          "words": "29 Aug 2026",
+          "from": "unset",
+          "default": null,
+          "steps": [
+            {
+              "value": "2026-10-28",
+              "words": "New only",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2026-09-28",
+              "words": "Last 30 days",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2025-10-28",
+              "words": "Last year",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "all",
+              "words": "All time",
+              "note": "Nothing to read"
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.screen",
+          "kind": "choice",
+          "label": "Screen summaries: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": {
+        "rows": [
+          {
+            "member": "llm.screen",
+            "shape": "needs",
+            "line": "Connect a model that takes text",
+            "privacy": null
+          },
+          {
+            "member": "llm.range",
+            "shape": null,
+            "line": null,
+            "privacy": null
+          }
+        ]
+      },
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "screen-time",
+      "type": {
+        "key": "device-activity",
+        "name": "Activity",
+        "icon": "screen"
+      },
+      "icon": "phone-screen",
+      "name": "Screen Time",
+      "product": "screen-time",
+      "noun": [
+        "app switch",
+        "app switches"
+      ],
+      "starter": false,
+      "roads": [
+        "mac",
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "Each app coming to the front and leaving it, your devices' too.",
+      "gives": "Which app you were in, on Mac and iPhone.",
+      "before": [
+        "On your iPhone, turn on Screen Time › Share Across Devices."
+      ],
+      "sensor": false,
+      "phone_screen": 5,
+      "recorder": false,
+      "mac_grants": [
+        "fullDiskAccess"
+      ],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 app switch today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 app switch",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800015,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": {
+          "day": null,
+          "own": false
+        }
+      },
+      "copies": [
+        {
+          "id": "screen-time:local:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 app switch · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": false,
+              "act": null,
+              "words": "Screen Time isn’t on MacBook Air",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on MacBook Air",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "What Screen Time keeps on your Mac, and your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the app switches your Mac's log already holds.",
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "google-photos",
+      "type": {
+        "key": "photos",
+        "name": "Photos",
+        "icon": "photos"
+      },
+      "icon": "photos",
+      "name": "Google Photos",
+      "product": "google-photos",
+      "noun": [
+        "photo",
+        "photos"
+      ],
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every photo and video in the export, with Google's metadata.",
+      "gives": "Every photo and video in your Google account.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "export",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "import",
+            "label": "Show",
+            "kind": "google-takeout"
+          }
+        ],
+        "detail": null,
+        "words": "Import your Google Photos export"
+      },
+      "line": "Import a Google Takeout",
+      "lead": null,
+      "line_parts": {
+        "words": "Import your Google Photos export",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [],
+      "account": null,
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": true,
+        "line": "Google takes minutes, or hours with photos"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "google-takeout"
+              },
+              "words": "Import your Google Photos export",
+              "line": "Google takes minutes, or hours with photos."
+            }
+          ]
+        }
+      ],
+      "where": "The zip you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "llm.photos",
+          "kind": "choice",
+          "label": "Photo descriptions",
+          "about": "A model writes a short description of each photo, so you can search your photos by what is in them.",
+          "value": "default",
+          "words": "Vision One · OpenRouter",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "off",
+              "words": "Off",
+              "note": null
+            },
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Vision One"
+            },
+            {
+              "value": "openrouter:vendor-a/vision-1",
+              "words": "Vision One",
+              "note": "Sent to OpenRouter"
+            },
+            {
+              "value": "claude:plan-model-1",
+              "words": "Plan Model One",
+              "note": "Your Claude plan is used up · resets 14:00"
+            },
+            {
+              "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+              "words": "Qwen 3.5",
+              "note": "Stays on MacBook Pro",
+              "runner": {
+                "unit": "runner-macbook-pro-0001",
+                "name": "MacBook Pro",
+                "home": true
+              }
+            }
+          ],
+          "route": "openrouter:vendor-a/vision-1",
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "llm.range",
+          "kind": "choice",
+          "label": "Read back to",
+          "about": null,
+          "value": null,
+          "words": "28 Sept 2026",
+          "from": "unset",
+          "default": null,
+          "steps": [
+            {
+              "value": "2026-10-28",
+              "words": "New only",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2026-09-28",
+              "words": "Last 30 days",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "2025-10-28",
+              "words": "Last year",
+              "note": "Nothing to read"
+            },
+            {
+              "value": "all",
+              "words": "All time",
+              "note": "Nothing to read"
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "privacy.photos",
+          "kind": "choice",
+          "label": "Photo descriptions: personal details",
+          "about": null,
+          "value": "default",
+          "words": "Personal details hidden",
+          "from": "declaration",
+          "default": null,
+          "steps": [
+            {
+              "value": "default",
+              "words": "Default",
+              "note": "Hide all"
+            },
+            {
+              "value": "all",
+              "words": "Hide all",
+              "note": "Names, numbers and faces are replaced. The model still reads what was said."
+            },
+            {
+              "value": "names",
+              "words": "Keep names",
+              "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+            },
+            {
+              "value": "none",
+              "words": "Don't hide",
+              "note": "Everything is sent as it is."
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": {
+        "rows": [
+          {
+            "member": "llm.photos",
+            "shape": "done",
+            "line": "Up to date",
+            "privacy": {
+              "member": "privacy.photos",
+              "value": "default",
+              "words": "Personal details hidden",
+              "steps": [
+                {
+                  "value": "default",
+                  "words": "Default",
+                  "note": "Hide all"
+                },
+                {
+                  "value": "all",
+                  "words": "Hide all",
+                  "note": "Names, numbers and faces are replaced. The model still reads what was said."
+                },
+                {
+                  "value": "names",
+                  "words": "Keep names",
+                  "note": "Numbers and faces are replaced; names are sent as they are. The model still reads what was said."
+                },
+                {
+                  "value": "none",
+                  "words": "Don't hide",
+                  "note": "Everything is sent as it is."
+                }
+              ],
+              "note": "Names, numbers and faces are replaced. The model still reads what was said.",
+              "waiting": false
+            }
+          },
+          {
+            "member": "llm.range",
+            "shape": null,
+            "line": null,
+            "privacy": null
+          }
+        ]
+      },
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "apple-photos",
+      "type": {
+        "key": "photos",
+        "name": "Photos",
+        "icon": "photos"
+      },
+      "icon": "photos",
+      "name": "Photos",
+      "product": "apple-photos",
+      "noun": [
+        "photo",
+        "photos"
+      ],
+      "starter": false,
+      "roads": [
+        "mac",
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "Every photo and video with its times, place, files and edits.",
+      "gives": "Every photo and video, with time and place.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": 3,
+      "recorder": false,
+      "mac_grants": [
+        "photos"
+      ],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "5 photos today",
+      "lead": null,
+      "line_parts": {
+        "words": "5 photos",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 5,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        "checked_ms": 1793179620000,
+        "words": "Checked 09:27",
+        "last_ms": 1792315800025,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793161800000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": {
+          "day": null,
+          "own": false
+        }
+      },
+      "copies": [
+        {
+          "id": "apple-photos:person-a@example.com:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 5,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1793161800000,
+          "store": null,
+          "line": "5 photos · last 08:30"
+        },
+        {
+          "id": "apple-photos:person-a@example.com:macbook-air-bb07",
+          "name": "MacBook Air",
+          "road": "mac",
+          "unit": "macbook-air-bb07",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 5,
+          "newest_ms": 1793176200000,
+          "oldest_ms": 1793161800000,
+          "store": null,
+          "line": "5 photos · last 08:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "mac",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "app",
+              "met": true,
+              "act": null,
+              "words": "Found on MacBook Air",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on MacBook Air",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "phone",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": false,
+              "act": {
+                "do": "grant",
+                "label": "Allow",
+                "unit": "iphone-17-pro-aa01",
+                "grant": "photos"
+              },
+              "words": "Allow Photos on iPhone 17 Pro",
+              "line": "Choose Full Access when your iPhone asks."
+            }
+          ]
+        }
+      ],
+      "where": "Your Mac, as you use it, and your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": "On MacBook Air"
+        },
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Catches up on the photos already in your library.",
+      "routes": [],
+      "route": null,
+      "refresh_now": {
+        "act": {
+          "do": "refresh",
+          "label": "Check now",
+          "of": "apple-photos"
+        },
+        "blocked": null,
+        "asked": []
+      },
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": [
+        {
+          "id": "grant:photos:iphone-17-pro-aa01",
+          "state": "needs-you",
+          "reason": "grant",
+          "words": "Allow Photos",
+          "since_ms": null,
+          "next_ms": null,
+          "acts": [
+            {
+              "do": "grant",
+              "label": "Allow",
+              "unit": "iphone-17-pro-aa01",
+              "grant": "photos"
+            }
+          ],
+          "detail": null,
+          "line": "iPhone 17 Pro",
+          "connector": "apple-photos",
+          "streams": [
+            "apple-photos"
+          ],
+          "copy": null,
+          "unit": "iphone-17-pro-aa01",
+          "at": null,
+          "weight": "advice",
+          "banner": false,
+          "dismissed": false,
+          "kind": "notice",
+          "about": null
+        }
+      ]
+    },
+    {
+      "id": "faces",
+      "type": null,
+      "icon": "recording",
+      "name": "Faces",
+      "product": "faces",
+      "noun": [
+        "photo",
+        "photos"
+      ],
+      "starter": false,
+      "roads": [
+        "label"
+      ],
+      "shown": "home",
+      "records": "Faces in your photos and chat images, and the groups you name.",
+      "gives": "Faces in your photos and chat images, and the groups you name.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "waiting",
+        "reason": "power",
+        "since_ms": 1793179200000,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "try",
+            "label": "Scan now",
+            "need": "label:face-engine"
+          }
+        ],
+        "detail": null,
+        "words": "Waiting for power"
+      },
+      "line": "Waiting for power",
+      "lead": null,
+      "line_parts": {
+        "words": "Waiting for power",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": null,
+        "words": "Not checked yet",
+        "last_ms": null,
+        "last": null
+      },
+      "history": {
+        "state": "syncing",
+        "back_to_ms": null,
+        "left": 120,
+        "unit": [
+          "photo",
+          "photos"
+        ],
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "120 photos left",
+        "arriving": "120 photos left",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "faces:local:labels",
+          "name": "Faces",
+          "road": "label",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "syncing",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 0,
+          "newest_ms": null,
+          "oldest_ms": null,
+          "store": null,
+          "line": "Nothing yet"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "label",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "install",
+              "met": true,
+              "act": null,
+              "words": "Installed",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": null,
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "battery_backlog",
+          "kind": "number",
+          "label": "Photos scanned on battery",
+          "about": "With more photos than this waiting, faces are scanned only while the Mac is plugged in.",
+          "value": 500,
+          "words": "500",
+          "from": "declaration",
+          "default": 500,
+          "min": 0,
+          "max": 5000,
+          "steps": null,
+          "panel": "settings",
+          "control": "stepper",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "spotify",
+      "type": {
+        "key": "listening",
+        "name": "Listening and watching",
+        "icon": "listening"
+      },
+      "icon": "listening",
+      "name": "Spotify",
+      "product": "spotify",
+      "noun": [
+        "play",
+        "plays"
+      ],
+      "starter": false,
+      "roads": [
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every play since your account began, with how long it played.",
+      "gives": "Every play since your account began, with how long it played.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "off",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "turn",
+            "label": "Connect",
+            "ids": [
+              "spotify",
+              "spotify:person-a:export"
+            ]
+          }
+        ],
+        "detail": null,
+        "words": ""
+      },
+      "line": "Disconnected",
+      "lead": null,
+      "line_parts": {
+        "words": "Disconnected",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [
+        {
+          "id": "spotify:person-a:export",
+          "name": "Spotify",
+          "road": "upload",
+          "unit": null,
+          "on": false,
+          "retired": false,
+          "health": {
+            "state": "off",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [
+              {
+                "do": "turn",
+                "label": "Connect",
+                "ids": [
+                  "spotify",
+                  "spotify:person-a:export"
+                ]
+              }
+            ],
+            "detail": null,
+            "words": ""
+          },
+          "held": 0,
+          "newest_ms": null,
+          "oldest_ms": null,
+          "store": null,
+          "line": "Off"
+        }
+      ],
+      "account": null,
+      "export": {
+        "import": "spotify",
+        "name": "Spotify",
+        "icon": "listening",
+        "opens": false,
+        "line": "Imported 23 Oct"
+      },
+      "ways": [
+        {
+          "road": "upload",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": true,
+              "act": null,
+              "words": "Imported Friday",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "The zip you import. Lifestream reads a copy; your file stays where it is.",
+      "set_up": true,
+      "pauses": [],
+      "on": false,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": [
+        {
+          "id": "import:a000000000000012:whose",
+          "state": "needs-you",
+          "reason": "choose",
+          "words": "Whose Spotify is this?",
+          "since_ms": null,
+          "next_ms": null,
+          "acts": [
+            {
+              "do": "import",
+              "label": "Choose",
+              "kind": "spotify"
+            }
+          ],
+          "detail": null,
+          "line": "Your Spotify",
+          "connector": "spotify",
+          "streams": null,
+          "copy": null,
+          "unit": null,
+          "at": null,
+          "weight": "advice",
+          "banner": false,
+          "dismissed": false,
+          "kind": "notice",
+          "about": null
+        }
+      ]
+    },
+    {
+      "id": "granola",
+      "type": {
+        "key": "notes",
+        "name": "Notes and voice",
+        "icon": "note"
+      },
+      "icon": "note",
+      "name": "Granola",
+      "product": "granola",
+      "noun": [
+        "meeting",
+        "meetings"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Every meeting's summary, your notes and who was there.",
+      "gives": "Every meeting’s summary and who was there.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "setup",
+        "reason": "sign-in",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "signin",
+            "label": "Sign in",
+            "of": "granola-mcp"
+          }
+        ],
+        "detail": null,
+        "words": "Sign in to Granola"
+      },
+      "line": "Sign in to Granola",
+      "lead": null,
+      "line_parts": {
+        "words": "Sign in to Granola",
+        "time": null,
+        "more": []
+      },
+      "figure": null,
+      "history": null,
+      "copies": [],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "sign-in",
+              "met": false,
+              "act": {
+                "do": "signin",
+                "label": "Sign in",
+                "of": "granola-mcp"
+              },
+              "words": "Sign in to Granola",
+              "line": "Opens Granola in your browser."
+            }
+          ]
+        }
+      ],
+      "where": "Granola’s servers, from your Mac, every hour. Nothing leaves your Mac but the request.",
+      "set_up": false,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "1h",
+          "words": "Every hour",
+          "from": "declaration",
+          "default": "1h",
+          "steps": [
+            {
+              "value": "1s",
+              "words": "Every second",
+              "note": null
+            },
+            {
+              "value": "2s",
+              "words": "Every 2 seconds",
+              "note": null
+            },
+            {
+              "value": "5s",
+              "words": "Every 5 seconds",
+              "note": null
+            },
+            {
+              "value": "10s",
+              "words": "Every 10 seconds",
+              "note": null
+            },
+            {
+              "value": "30s",
+              "words": "Every 30 seconds",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "account",
+          "kind": "email",
+          "label": "Granola email",
+          "about": null,
+          "value": null,
+          "words": "Not set yet",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "email",
+          "where": null
+        },
+        {
+          "key": "key",
+          "kind": "secret",
+          "label": "API key",
+          "about": null,
+          "value": "granola",
+          "words": "",
+          "from": "declaration",
+          "default": "granola",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "granola",
+          "held": false
+        },
+        {
+          "key": "signin",
+          "kind": "secret",
+          "label": "Sign-in",
+          "about": null,
+          "value": "granola.signin",
+          "words": "",
+          "from": "declaration",
+          "default": "granola.signin",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "granola.signin",
+          "held": false
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [
+        {
+          "id": "granola-mcp",
+          "acquirer": "granola-mcp",
+          "way": "device",
+          "label": "Sign in with Granola",
+          "about": "Any plan. Free keeps 30 days, no transcripts.",
+          "steps": [],
+          "note": "Opens Granola in your browser.",
+          "fields": [],
+          "sets": [
+            "account",
+            "signin"
+          ],
+          "client": null
+        },
+        {
+          "id": "granola-api",
+          "acquirer": "granola-api",
+          "way": "key",
+          "label": "Use an API key",
+          "about": "Business or Enterprise. Every meeting, with transcripts.",
+          "steps": [
+            {
+              "title": "Make an API key",
+              "words": "In Granola, open Settings › Connectors › API keys, and make a key with Personal notes only."
+            }
+          ],
+          "note": null,
+          "fields": [
+            "account",
+            "key"
+          ],
+          "sets": [
+            "account",
+            "key"
+          ],
+          "client": null
+        }
+      ],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "notes",
+      "type": {
+        "key": "notes",
+        "name": "Notes and voice",
+        "icon": "note"
+      },
+      "icon": "note",
+      "name": "Lifestream notes",
+      "product": "notes",
+      "noun": [
+        "note",
+        "notes"
+      ],
+      "starter": false,
+      "roads": [
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "Each note and folder you keep in the app, with what you attach.",
+      "gives": "What you write and snap in Lifestream.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 note today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 note",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800019,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "notes:local:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 note · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": {
+        "name": "Lifestream notes",
+        "icon": "compose",
+        "gives": "What you write and snap in Lifestream.",
+        "apps": [
+          "Lifestream notes"
+        ]
+      },
+      "callout": []
+    },
+    {
+      "id": "checkin",
+      "type": {
+        "key": "health",
+        "name": "Health",
+        "icon": "health"
+      },
+      "icon": "check-in",
+      "name": "Check-ins",
+      "product": "checkin",
+      "noun": [
+        "check-in",
+        "check-ins"
+      ],
+      "starter": false,
+      "roads": [
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "Your answers about your day, and your reaction-time tests.",
+      "gives": "How you feel, asked twice a day.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 check-in today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 check-in",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800017,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "checkin:local:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 check-in · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "prompts",
+          "kind": "toggle",
+          "label": "Ask through the day",
+          "about": "Twice a day, at random, between waking and bedtime.",
+          "value": false,
+          "words": "Off",
+          "from": "declaration",
+          "default": false,
+          "steps": null,
+          "panel": null,
+          "control": "toggle",
+          "where": null,
+          "waiting": [],
+          "only": null
+        },
+        {
+          "key": "bedtime",
+          "kind": "choice",
+          "label": "Bedtime",
+          "about": "The day's check-in comes at this time.",
+          "value": "23:30",
+          "words": "23:30",
+          "from": "declaration",
+          "default": "23:30",
+          "steps": [
+            {
+              "value": "21:00",
+              "words": "21:00",
+              "note": null
+            },
+            {
+              "value": "21:30",
+              "words": "21:30",
+              "note": null
+            },
+            {
+              "value": "22:00",
+              "words": "22:00",
+              "note": null
+            },
+            {
+              "value": "22:30",
+              "words": "22:30",
+              "note": null
+            },
+            {
+              "value": "23:00",
+              "words": "23:00",
+              "note": null
+            },
+            {
+              "value": "23:30",
+              "words": "23:30",
+              "note": null
+            },
+            {
+              "value": "00:00",
+              "words": "00:00",
+              "note": null
+            },
+            {
+              "value": "00:30",
+              "words": "00:30",
+              "note": null
+            },
+            {
+              "value": "01:00",
+              "words": "01:00",
+              "note": null
+            },
+            {
+              "value": "01:30",
+              "words": "01:30",
+              "note": null
+            },
+            {
+              "value": "02:00",
+              "words": "02:00",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "apple-health",
+      "type": {
+        "key": "health",
+        "name": "Health",
+        "icon": "health"
+      },
+      "icon": "health",
+      "name": "Health",
+      "product": "apple-health",
+      "noun": [
+        "sample",
+        "samples"
+      ],
+      "starter": true,
+      "roads": [
+        "phone",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every sample you allow, with State of Mind and medications.",
+      "gives": "Sleep, steps, heart, and anything else you allow.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": 2,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 sample today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 sample",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800011,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": {
+          "day": null,
+          "own": false
+        }
+      },
+      "copies": [
+        {
+          "id": "apple-health:person-a@example.com:cloud",
+          "name": "Health",
+          "road": "phone",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 sample · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "upload",
+                "label": "Upload"
+              },
+              "words": "Import your Health export",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "start",
+          "kind": "start",
+          "label": "Starts from",
+          "about": null,
+          "value": null,
+          "words": "All time",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "backfill",
+          "control": "date",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": "Collects the samples Health already keeps.",
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "whoop",
+      "type": {
+        "key": "health",
+        "name": "Health",
+        "icon": "health"
+      },
+      "icon": "health",
+      "name": "WHOOP",
+      "product": "whoop",
+      "noun": [
+        "reading",
+        "readings"
+      ],
+      "starter": false,
+      "roads": [
+        "chrome"
+      ],
+      "shown": "stream",
+      "records": "Your cycles, sleeps, stress and heart rate, as WHOOP reads them.",
+      "gives": "Your sleeps, strain and heart rate.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "needs-you",
+        "reason": "password",
+        "since_ms": 1793169000000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "do": "set",
+            "label": "Set",
+            "member": "password"
+          }
+        ],
+        "detail": null,
+        "words": "Type your WHOOP password"
+      },
+      "line": "Type your WHOOP password",
+      "lead": null,
+      "line_parts": {
+        "words": "Type your WHOOP password",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793169000000,
+        "words": "Checked 06:30",
+        "last_ms": 1792315800028,
+        "last": "18 Oct"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "whoop:10000001:cloud",
+          "name": "person-a@example.com",
+          "road": "chrome",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "needs-you",
+            "reason": "password",
+            "since_ms": 1793169000000,
+            "next_ms": 1793180100000,
+            "acts": [
+              {
+                "do": "set",
+                "label": "Set",
+                "member": "password"
+              }
+            ],
+            "detail": null,
+            "words": "Type your WHOOP password"
+          },
+          "held": 1,
+          "newest_ms": 1792661400000,
+          "oldest_ms": 1792661400000,
+          "store": null,
+          "line": "1 reading · last Thursday"
+        }
+      ],
+      "account": {
+        "name": "person-a@example.com",
+        "line": "Account · 1 reading",
+        "copy": "whoop:10000001:cloud"
+      },
+      "export": null,
+      "ways": [
+        {
+          "road": "chrome",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "choose",
+              "met": true,
+              "act": null,
+              "words": "On in Chrome",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "WHOOP in your own Chrome, where you’re signed in, every hour.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "1h",
+          "words": "Every hour",
+          "from": "declaration",
+          "default": "1h",
+          "steps": [
+            {
+              "value": "1s",
+              "words": "Every second",
+              "note": null
+            },
+            {
+              "value": "2s",
+              "words": "Every 2 seconds",
+              "note": null
+            },
+            {
+              "value": "5s",
+              "words": "Every 5 seconds",
+              "note": null
+            },
+            {
+              "value": "10s",
+              "words": "Every 10 seconds",
+              "note": null
+            },
+            {
+              "value": "30s",
+              "words": "Every 30 seconds",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "email",
+          "kind": "email",
+          "label": "WHOOP email",
+          "about": null,
+          "value": "person-a@example.com",
+          "words": "person-a@example.com",
+          "from": "person",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "email",
+          "where": null
+        },
+        {
+          "key": "password",
+          "kind": "secret",
+          "label": "WHOOP password",
+          "about": null,
+          "value": "lifestream-whoop-password",
+          "words": "",
+          "from": "declaration",
+          "default": "lifestream-whoop-password",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "lifestream-whoop-password",
+          "held": false
+        },
+        {
+          "key": "timezone",
+          "kind": "zone",
+          "label": "Time zone",
+          "about": "The time zone WHOOP's days are read in. Lifestream’s, unless you pick one.",
+          "value": null,
+          "words": "Lifestream’s time zone",
+          "from": "unset",
+          "default": null,
+          "steps": null,
+          "panel": "settings",
+          "control": "zone",
+          "where": null
+        },
+        {
+          "key": "heart_rate_step",
+          "kind": "choice",
+          "label": "Heart rate resolution",
+          "about": "How often a heart rate reading is kept.",
+          "value": "1m",
+          "words": "Every minute",
+          "from": "declaration",
+          "default": "1m",
+          "steps": [
+            {
+              "value": "6s",
+              "words": "Every 6 seconds",
+              "note": null
+            },
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": "https://app.whoop.example",
+      "origins": [
+        "https://app.whoop.example"
+      ],
+      "browser": {
+        "unit": "chrome-dd04",
+        "name": "Chrome"
+      },
+      "signed_in": false,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": true,
+      "checking": false,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "github",
+      "type": {
+        "key": "code",
+        "name": "Code and work",
+        "icon": "coding-agent"
+      },
+      "icon": "coding-agent",
+      "name": "GitHub",
+      "product": "github",
+      "noun": [
+        "contribution",
+        "contributions"
+      ],
+      "starter": false,
+      "roads": [
+        "poll"
+      ],
+      "shown": "stream",
+      "records": "Your commits, pull requests, issues, reviews and comments.",
+      "gives": "Your commits, pull requests, issues and reviews.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": null,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "broken",
+        "reason": "failing",
+        "since_ms": 1793172600000,
+        "next_ms": 1793180100000,
+        "acts": [
+          {
+            "do": "try",
+            "label": "Try now",
+            "need": "poll:github-api"
+          }
+        ],
+        "detail": null,
+        "words": "Couldn’t read GitHub"
+      },
+      "line": "Couldn’t read GitHub",
+      "lead": null,
+      "line_parts": {
+        "words": "Couldn’t read GitHub",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793172600000,
+        "words": "Checked 07:30",
+        "last_ms": 1792315800029,
+        "last": "18 Oct"
+      },
+      "history": null,
+      "copies": [
+        {
+          "id": "github:person-a:cloud",
+          "name": "GitHub",
+          "road": "poll",
+          "unit": null,
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "broken",
+            "reason": "failing",
+            "since_ms": 1793172600000,
+            "next_ms": 1793180100000,
+            "acts": [
+              {
+                "do": "try",
+                "label": "Try now",
+                "need": "poll:github-api"
+              }
+            ],
+            "detail": null,
+            "words": "Couldn’t read GitHub"
+          },
+          "held": 1,
+          "newest_ms": 1792920600000,
+          "oldest_ms": 1792920600000,
+          "store": null,
+          "line": "1 contribution · last Sunday"
+        }
+      ],
+      "account": {
+        "name": "person-a",
+        "line": "Account · 1 contribution",
+        "copy": "github:person-a:cloud"
+      },
+      "export": null,
+      "ways": [
+        {
+          "road": "poll",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "sign-in",
+              "met": true,
+              "act": null,
+              "words": "Signed in as person-a",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "GitHub’s servers, from your Mac, every 5 minutes. Nothing leaves your Mac but the request.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "refresh",
+          "kind": "duration",
+          "label": "Check every",
+          "about": null,
+          "value": "5m",
+          "words": "Every 5 minutes",
+          "from": "declaration",
+          "default": "5m",
+          "steps": [
+            {
+              "value": "1m",
+              "words": "Every minute",
+              "note": null
+            },
+            {
+              "value": "2m",
+              "words": "Every 2 minutes",
+              "note": null
+            },
+            {
+              "value": "5m",
+              "words": "Every 5 minutes",
+              "note": null
+            },
+            {
+              "value": "10m",
+              "words": "Every 10 minutes",
+              "note": null
+            },
+            {
+              "value": "15m",
+              "words": "Every 15 minutes",
+              "note": null
+            },
+            {
+              "value": "30m",
+              "words": "Every 30 minutes",
+              "note": null
+            },
+            {
+              "value": "1h",
+              "words": "Every hour",
+              "note": null
+            },
+            {
+              "value": "6h",
+              "words": "Every 6 hours",
+              "note": null
+            },
+            {
+              "value": "12h",
+              "words": "Every 12 hours",
+              "note": null
+            },
+            {
+              "value": "1d",
+              "words": "Daily",
+              "note": null
+            }
+          ],
+          "panel": "settings",
+          "control": "menu",
+          "where": null
+        },
+        {
+          "key": "login",
+          "kind": "text",
+          "label": "GitHub login",
+          "about": null,
+          "value": "person-a",
+          "words": "person-a",
+          "from": "person",
+          "default": null,
+          "steps": null,
+          "panel": "account",
+          "control": "text",
+          "where": null
+        },
+        {
+          "key": "token",
+          "kind": "secret",
+          "label": "Access token",
+          "about": null,
+          "value": "github",
+          "words": "",
+          "from": "declaration",
+          "default": "github",
+          "steps": null,
+          "panel": "account",
+          "control": "secret",
+          "where": null,
+          "secret": "github",
+          "held": false
+        },
+        {
+          "key": "clones",
+          "kind": "path",
+          "label": "Clones folder",
+          "about": "The folder your clones are in, on this Mac.",
+          "value": "/Users/person-a/Code",
+          "words": "Code",
+          "from": "declaration",
+          "default": "/Users/person-a/Code",
+          "steps": null,
+          "panel": "settings",
+          "control": "path",
+          "where": {
+            "unit": "macbook-pro-0001",
+            "name": "MacBook Pro"
+          },
+          "folder": true
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [
+        {
+          "id": "github-api",
+          "acquirer": "github-api",
+          "way": "key",
+          "label": "Token",
+          "steps": [],
+          "note": null,
+          "fields": [
+            "token"
+          ],
+          "sets": [
+            "token"
+          ],
+          "client": null
+        }
+      ],
+      "route": "github-api",
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "location",
+      "type": {
+        "key": "places",
+        "name": "Places",
+        "icon": "places"
+      },
+      "icon": "places",
+      "name": "Location",
+      "product": "location",
+      "noun": [
+        "point",
+        "points"
+      ],
+      "starter": true,
+      "roads": [
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "Where you go, point by point, and where iOS left a gap.",
+      "gives": "Where you go, point by point.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": 0,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "quiet",
+        "reason": "nothing-new",
+        "since_ms": 1791970200000,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": "Nothing new since 14 Oct"
+      },
+      "line": "Nothing new since 14 Oct",
+      "lead": null,
+      "line_parts": {
+        "words": "Nothing new since 14 Oct",
+        "time": null,
+        "more": []
+      },
+      "figure": {
+        "today": 0,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "checked_ms": 1793179740000,
+        "words": "Checked 09:29",
+        "last_ms": 1792315800021,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1791970200000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "location:local:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "quiet",
+            "reason": "nothing-new",
+            "since_ms": 1791970200000,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": "Nothing new since 14 Oct"
+          },
+          "held": 1,
+          "newest_ms": 1791970200000,
+          "oldest_ms": 1791970200000,
+          "store": null,
+          "line": "1 point · last 14 Oct"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [
+        {
+          "key": "precision",
+          "kind": "choice",
+          "label": "Precision",
+          "about": "Battery saving: where you stay and each move of a few hundred metres.",
+          "value": "precise",
+          "words": "Precise",
+          "from": "declaration",
+          "default": "precise",
+          "steps": [
+            {
+              "value": "precise",
+              "words": "Precise",
+              "note": null
+            },
+            {
+              "value": "battery",
+              "words": "Battery saving",
+              "note": null
+            }
+          ],
+          "panel": null,
+          "control": "menu",
+          "where": null,
+          "waiting": [],
+          "only": null
+        }
+      ],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "motion",
+      "type": {
+        "key": "places",
+        "name": "Places",
+        "icon": "places"
+      },
+      "icon": "walk",
+      "name": "Motion",
+      "product": "motion",
+      "noun": [
+        "activity",
+        "activities"
+      ],
+      "starter": false,
+      "roads": [
+        "phone"
+      ],
+      "shown": "stream",
+      "records": "When you walk, run, drive or stay still, and your daily steps.",
+      "gives": "When you walk, run, drive or stay still.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": 1,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 activity today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 activity",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800009,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "motion:local:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 activity · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": null,
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    },
+    {
+      "id": "apple-contacts",
+      "type": {
+        "key": "contacts",
+        "name": "Contacts",
+        "icon": "people"
+      },
+      "icon": "people",
+      "name": "Contacts",
+      "product": "apple-contacts",
+      "noun": [
+        "contact",
+        "contacts"
+      ],
+      "starter": false,
+      "roads": [
+        "phone",
+        "upload"
+      ],
+      "shown": "stream",
+      "records": "Every contact card, whole, with its photo.",
+      "gives": "Every contact card, so names show instead of numbers.",
+      "before": [],
+      "sensor": false,
+      "phone_screen": 4,
+      "recorder": false,
+      "mac_grants": [],
+      "mac_copy": null,
+      "health": {
+        "state": "ok",
+        "reason": null,
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [],
+        "detail": null,
+        "words": ""
+      },
+      "line": "1 contact today",
+      "lead": null,
+      "line_parts": {
+        "words": "1 contact",
+        "time": {
+          "kind": "day",
+          "day": "2026-10-28"
+        },
+        "more": []
+      },
+      "figure": {
+        "today": 1,
+        "week": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "checked_ms": 1793179500000,
+        "words": "Checked 09:25",
+        "last_ms": 1792315800013,
+        "last": "18 Oct"
+      },
+      "history": {
+        "state": "done",
+        "back_to_ms": 1793172600000,
+        "left": null,
+        "unit": null,
+        "eta_ms": null,
+        "done": null,
+        "total": null,
+        "progress": null,
+        "words": "Back to Oct 2026",
+        "arriving": "Back to Oct 2026",
+        "start": null
+      },
+      "copies": [
+        {
+          "id": "apple-contacts:person-a@example.com:iphone-17-pro-aa01",
+          "name": "iPhone 17 Pro",
+          "road": "phone",
+          "unit": "iphone-17-pro-aa01",
+          "on": true,
+          "retired": false,
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null,
+            "words": ""
+          },
+          "held": 1,
+          "newest_ms": 1793172600000,
+          "oldest_ms": 1793172600000,
+          "store": null,
+          "line": "1 contact · last 07:30"
+        }
+      ],
+      "account": null,
+      "export": {
+        "import": "google-takeout",
+        "name": "Google Takeout",
+        "icon": "archive",
+        "opens": false,
+        "line": "Google takes minutes, or hours with photos"
+      },
+      "ways": [
+        {
+          "road": "phone",
+          "ready": true,
+          "requirements": [
+            {
+              "kind": "pair",
+              "met": true,
+              "act": null,
+              "words": "iPhone 17 Pro is paired",
+              "line": null
+            },
+            {
+              "kind": "grant",
+              "met": true,
+              "act": null,
+              "words": "Allowed on iPhone 17 Pro",
+              "line": null
+            }
+          ]
+        },
+        {
+          "road": "upload",
+          "ready": false,
+          "requirements": [
+            {
+              "kind": "export",
+              "met": false,
+              "act": {
+                "do": "import",
+                "label": "Show",
+                "kind": "google-takeout"
+              },
+              "words": "Import your Contacts export",
+              "line": "Google takes minutes, or hours with photos."
+            }
+          ]
+        }
+      ],
+      "where": "Your iPhone, which sends to your Mac.",
+      "set_up": true,
+      "pauses": [],
+      "on": true,
+      "members": [],
+      "processing": null,
+      "backfill_about": null,
+      "routes": [],
+      "route": null,
+      "refresh_now": null,
+      "origin": null,
+      "origins": null,
+      "browser": null,
+      "signed_in": null,
+      "allowed": null,
+      "chrome_account": null,
+      "chosen": null,
+      "checking": null,
+      "choosing": null,
+      "quiet": null,
+      "joins": null,
+      "callout": []
+    }
+  ],
+  "setup": null,
+  "off": [
+    "spotify",
+    "spotify:person-a:export"
+  ],
+  "imports": [
+    {
+      "kind": "google-takeout",
+      "name": "Google Takeout",
+      "icon": "archive",
+      "takes": "Google takes minutes, or hours with photos",
+      "wait": "Minutes, or hours with photos",
+      "file": "zip",
+      "reads": null,
+      "products": [
+        {
+          "id": "mail",
+          "name": "Gmail"
+        },
+        {
+          "id": "my-activity",
+          "name": "Google Search"
+        },
+        {
+          "id": "contacts",
+          "name": "Contacts"
+        },
+        {
+          "id": "calendar",
+          "name": "Google Calendar"
+        },
+        {
+          "id": "google-photos",
+          "name": "Google Photos"
+        }
+      ],
+      "guide": [
+        {
+          "title": "Choose what Google sends",
+          "words": "On Google Takeout, press Deselect all, then tick Mail, Calendar, Contacts, Google Photos and My Activity. Under My Activity, press Multiple formats and choose JSON.",
+          "open": {
+            "label": "Open Google Takeout",
+            "url": "https://takeout.google.com/"
+          }
+        },
+        {
+          "title": "Make the export",
+          "words": "Press Next step. Keep Send download link via email, Export once and .zip, choose 10 GB files, and press Create export."
+        },
+        {
+          "title": "Wait for the email",
+          "words": "When Google emails you, download every file."
+        }
+      ],
+      "recognise": [
+        "Takeout/Mail/**/*.mbox",
+        "Takeout/My Activity/AI Mode/**",
+        "Takeout/My Activity/Google Lens/**",
+        "Takeout/My Activity/Image Search/**",
+        "Takeout/My Activity/Search/**",
+        "Takeout/My Activity/Video Search/**",
+        "Takeout/My Activity/YouTube/**",
+        "Takeout/My Activity/Maps/**",
+        "Takeout/My Activity/Chrome/**",
+        "Takeout/My Activity/Gemini Apps/**",
+        "Takeout/My Activity/Android/**",
+        "Takeout/My Activity/Gmail/**",
+        "Takeout/My Activity/Ads/**",
+        "Takeout/My Activity/Google Analytics/**",
+        "Takeout/My Activity/Google Arts & Culture/**",
+        "Takeout/My Activity/Assistant/**",
+        "Takeout/My Activity/Books/**",
+        "Takeout/My Activity/Google Business Profile/**",
+        "Takeout/My Activity/Developers/**",
+        "Takeout/My Activity/Discover/**",
+        "Takeout/My Activity/Drive/**",
+        "Takeout/My Activity/Flights/**",
+        "Takeout/My Activity/Help/**",
+        "Takeout/My Activity/Hotels/**",
+        "Takeout/My Activity/Google News/**",
+        "Takeout/My Activity/News/**",
+        "Takeout/My Activity/Google Play Store/**",
+        "Takeout/My Activity/Google Play Games/**",
+        "Takeout/My Activity/Google Play Movies & TV/**",
+        "Takeout/My Activity/Shopping/**",
+        "Takeout/My Activity/Google Store/**",
+        "Takeout/My Activity/Takeout/**",
+        "Takeout/My Activity/Google Translate/**",
+        "Takeout/My Activity/Travel/**",
+        "Takeout/My Activity/Google TV/**",
+        "Takeout/My Activity/Voice Match/**",
+        "Takeout/Contacts/*/*.vcf",
+        "Takeout/Calendar/**/*.ics",
+        "Takeout/Google Photos/**"
+      ],
+      "leaves": [],
+      "root": "Takeout/",
+      "drop": {
+        "words": "Drop the zip here",
+        "line": "Lifestream reads a copy; your file stays where it is.",
+        "choose": "Choose file…",
+        "away": "On your Mac"
+      },
+      "titles": {
+        "reads": "What it brings",
+        "guide": "How to get it",
+        "held": "Your imports"
+      },
+      "health": {
+        "state": "needs-you",
+        "reason": "import",
+        "words": "Couldn't read 1 file",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "skip",
+            "label": "Skip it",
+            "need": "import:a000000000000002:refused"
+          }
+        ],
+        "detail": null,
+        "line": "From your Google Takeout"
+      },
+      "line": "Sending · 1 of 3 files",
+      "coming": [
+        {
+          "id": "file-01",
+          "name": "takeout-20261004T080000Z-1-001.zip",
+          "bytes": 2000000000,
+          "state": "waiting",
+          "words": "Waiting",
+          "line": "plug in your Mac",
+          "acts": []
+        },
+        {
+          "id": "file-02",
+          "name": "takeout-20261004T080000Z-2-001.zip",
+          "bytes": 1000000000,
+          "state": "sending",
+          "words": "Sending",
+          "line": "250 MB of 1.0 GB",
+          "acts": []
+        },
+        {
+          "id": "file-03",
+          "name": "takeout-20261004T080000Z-3-001.zip",
+          "bytes": 1000000,
+          "state": "sent",
+          "words": "Imported",
+          "line": "1 MB",
+          "acts": []
+        },
+        {
+          "id": "file-04",
+          "name": "notes.zip",
+          "bytes": 8192,
+          "state": "refused",
+          "words": "This isn’t a Google Takeout",
+          "line": "Choose the zip Google emailed you",
+          "acts": []
+        },
+        {
+          "id": "file-05",
+          "name": "takeout-20261003T080000Z-1-001.zip",
+          "bytes": 3000000000,
+          "state": "missing",
+          "words": "Can't find it",
+          "line": "Choose it again",
+          "acts": []
+        }
+      ],
+      "held": [
+        {
+          "id": "a000000000000001",
+          "account": "person-a@example.com",
+          "made_at": "2026-10-27T08:00:00.000Z",
+          "name": "27 Oct 2026 · person-a@example.com",
+          "health": {
+            "state": "broken",
+            "reason": "import",
+            "words": "Couldn’t import YouTube",
+            "since_ms": 1793093400000,
+            "next_ms": null,
+            "acts": [
+              {
+                "do": "skip",
+                "label": "Skip it",
+                "need": "job:import:youtube:person-a@example.com:export"
+              }
+            ],
+            "detail": null,
+            "line": "From your Google Takeout"
+          },
+          "line": "Importing · Google Search 0 so far",
+          "ask": null,
+          "files": [
+            {
+              "id": "b7cd0cf7a8054348",
+              "name": "takeout-20261027T080000Z-1-001.zip",
+              "bytes": 4096,
+              "state": "held",
+              "words": "Imported",
+              "line": "4 KB",
+              "acts": []
+            }
+          ],
+          "products": [
+            {
+              "id": "my-activity",
+              "name": "Google Search",
+              "count": 0,
+              "state": "reading",
+              "line": "Google Search · 0 so far"
+            }
+          ],
+          "span": null,
+          "open_day": null,
+          "open": null,
+          "downloaded": null,
+          "notice": null
+        },
+        {
+          "id": "a000000000000002",
+          "account": "person-a@example.com",
+          "made_at": "2026-10-20T08:00:00.000Z",
+          "name": "20 Oct 2026 · person-a@example.com",
+          "health": {
+            "state": "needs-you",
+            "reason": "import",
+            "words": "Couldn't read 1 file",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [
+              {
+                "do": "skip",
+                "label": "Skip it",
+                "need": "import:a000000000000002:refused"
+              }
+            ],
+            "detail": null,
+            "line": "From your Google Takeout"
+          },
+          "line": "Imported · 1 file couldn’t be read",
+          "ask": null,
+          "files": [
+            {
+              "id": "b9ab517384dca75a",
+              "name": "takeout-20261020T080000Z-1-001.zip",
+              "bytes": 2048,
+              "state": "kept",
+              "words": "Kept",
+              "line": "couldn’t read it",
+              "acts": [
+                {
+                  "do": "let-go",
+                  "label": "Remove file",
+                  "need": "import:a000000000000002:file:b9ab517384dca75a"
+                }
+              ]
+            },
+            {
+              "id": "71415c770919773e",
+              "name": "takeout-20261020T080000Z-2-001.zip",
+              "bytes": 4096,
+              "state": "kept",
+              "words": "Kept",
+              "line": "1 file couldn't be read",
+              "acts": [
+                {
+                  "do": "let-go",
+                  "label": "Remove file",
+                  "need": "import:a000000000000002:file:71415c770919773e"
+                }
+              ]
+            }
+          ],
+          "products": [
+            {
+              "id": "my-activity",
+              "name": "Google Search",
+              "count": 0,
+              "state": "partly",
+              "line": "Google Search · 1 file couldn’t be read"
+            }
+          ],
+          "span": null,
+          "open_day": null,
+          "open": null,
+          "downloaded": "You can delete the file you downloaded.",
+          "notice": {
+            "title": "Google Takeout imported",
+            "body": "1 file couldn’t be read"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "iphone-backup",
+      "name": "iPhone backup",
+      "icon": "phone-backup",
+      "takes": "Finder takes an hour or more",
+      "wait": "An hour or more",
+      "file": "backup",
+      "reads": null,
+      "products": [],
+      "guide": [
+        {
+          "title": "Plug in your iPhone",
+          "words": "Plug your iPhone into this Mac. In Finder, choose it in the sidebar."
+        },
+        {
+          "title": "Choose an encrypted backup",
+          "words": "Under Backups, choose Back up all of the data on your iPhone to this Mac and tick Encrypt local backup. Set a password: calls are in the backup only when it's encrypted."
+        },
+        {
+          "title": "Back up",
+          "words": "Press Back Up Now. It takes an hour or more; the phone can stay in use."
+        }
+      ],
+      "recognise": [
+        "**/apple-calls/callhistory.sqlite"
+      ],
+      "leaves": [],
+      "lists": "backups",
+      "which": [
+        {
+          "need": "import:a000000000000013:which",
+          "words": "Which iPhone is this backup from?",
+          "line": "iPhone 17 Pro · 28 Oct 2026",
+          "imports": [
+            "a000000000000013"
+          ],
+          "choices": [
+            {
+              "unit": "iphone-17-pro-aa01",
+              "words": "iPhone 17 Pro",
+              "line": "nothing sent yet"
+            },
+            {
+              "unit": "iphone-12-cc03",
+              "words": "iPhone 12",
+              "line": "nothing sent yet"
+            },
+            {
+              "unit": "new",
+              "words": "An iPhone not set up with Lifestream",
+              "line": ""
+            }
+          ],
+          "choose": "Choose"
+        }
+      ],
+      "drop": {
+        "words": "Drop the backup here",
+        "line": "Lifestream reads a copy; your file stays where it is.",
+        "choose": "Choose file…",
+        "away": "On your Mac"
+      },
+      "titles": {
+        "reads": "What it brings",
+        "guide": "How to get it",
+        "held": "Your imports"
+      },
+      "health": {
+        "state": "needs-you",
+        "reason": "choose",
+        "words": "Which iPhone is this backup from?",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "import",
+            "label": "Choose",
+            "kind": "iphone-backup"
+          }
+        ],
+        "detail": null,
+        "line": "Your iPhone backup"
+      },
+      "line": "Which iPhone is this backup from?",
+      "coming": [],
+      "held": [
+        {
+          "id": "a000000000000013",
+          "account": "person-a@example.com",
+          "made_at": "2026-10-28T08:00:00.000Z",
+          "name": "iPhone 17 Pro · backup of 28 Oct",
+          "health": {
+            "state": "needs-you",
+            "reason": "choose",
+            "words": "Which iPhone is this backup from?",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [
+              {
+                "do": "import",
+                "label": "Choose",
+                "kind": "iphone-backup"
+              }
+            ],
+            "detail": null,
+            "line": "Your iPhone backup"
+          },
+          "line": "Which iPhone is this backup from?",
+          "ask": null,
+          "files": [
+            {
+              "id": "a3694f2fb6e53a9e",
+              "name": "Calls",
+              "bytes": 8192,
+              "state": "held",
+              "words": "Imported",
+              "line": "8 KB",
+              "acts": [
+                {
+                  "do": "let-go",
+                  "label": "Remove file",
+                  "need": "import:a000000000000013:file:a3694f2fb6e53a9e"
+                }
+              ]
+            }
+          ],
+          "products": [
+            {
+              "id": "apple-calls",
+              "name": "Calls",
+              "count": 0,
+              "state": "asked",
+              "line": "Calls"
+            }
+          ],
+          "span": null,
+          "open_day": null,
+          "open": null,
+          "downloaded": null,
+          "notice": null
+        }
+      ]
+    },
+    {
+      "kind": "spotify",
+      "name": "Spotify",
+      "icon": "listening",
+      "takes": "Spotify sends a download you ask for",
+      "wait": null,
+      "file": "zip",
+      "reads": "Every play since your account began, with how long it played.",
+      "products": [],
+      "guide": [
+        {
+          "words": "Ask Spotify for your data, then download it.",
+          "open": {
+            "label": "Open Spotify",
+            "url": "https://spotify.example.com/privacy"
+          }
+        }
+      ],
+      "recognise": [
+        "**/Streaming_History_*.json"
+      ],
+      "leaves": [],
+      "drop": {
+        "words": "Drop the zip here",
+        "line": "Lifestream reads a copy; your file stays where it is.",
+        "choose": "Choose file…",
+        "away": "On your Mac"
+      },
+      "titles": {
+        "reads": "What it brings",
+        "guide": "How to get it",
+        "held": "Your imports"
+      },
+      "health": {
+        "state": "needs-you",
+        "reason": "choose",
+        "words": "Whose Spotify is this?",
+        "since_ms": null,
+        "next_ms": null,
+        "acts": [
+          {
+            "do": "import",
+            "label": "Choose",
+            "kind": "spotify"
+          }
+        ],
+        "detail": null,
+        "line": "Your Spotify"
+      },
+      "line": "Whose Spotify is this?",
+      "coming": [],
+      "held": [
+        {
+          "id": "a000000000000012",
+          "account": null,
+          "made_at": "2026-10-28T06:30:00.000Z",
+          "name": "28 Oct 2026 · Spotify",
+          "health": {
+            "state": "needs-you",
+            "reason": "choose",
+            "words": "Whose Spotify is this?",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [
+              {
+                "do": "import",
+                "label": "Choose",
+                "kind": "spotify"
+              }
+            ],
+            "detail": null,
+            "line": "Your Spotify"
+          },
+          "line": "Whose Spotify is this?",
+          "ask": {
+            "words": "Whose Spotify is this?",
+            "choices": [
+              "person-a"
+            ],
+            "other": true,
+            "choose": "Choose",
+            "another": "Another…"
+          },
+          "files": [
+            {
+              "id": "d5266c4b04fd97a7",
+              "name": "my_spotify_data.zip",
+              "bytes": 2048,
+              "state": "held",
+              "words": "Imported",
+              "line": "2 KB",
+              "acts": [
+                {
+                  "do": "let-go",
+                  "label": "Remove file",
+                  "need": "import:a000000000000012:file:d5266c4b04fd97a7"
+                }
+              ]
+            }
+          ],
+          "products": [
+            {
+              "id": "spotify",
+              "name": "Spotify",
+              "count": 0,
+              "state": "asked",
+              "line": "Spotify"
+            }
+          ],
+          "span": null,
+          "open_day": null,
+          "open": null,
+          "downloaded": null,
+          "notice": null
+        },
+        {
+          "id": "a000000000000011",
+          "account": "person-a",
+          "made_at": "2026-09-02T08:00:00.000Z",
+          "name": "2 Sep 2026 · person-a",
+          "health": {
+            "state": "ok",
+            "reason": null,
+            "words": "",
+            "since_ms": null,
+            "next_ms": null,
+            "acts": [],
+            "detail": null
+          },
+          "line": "Imported · 2014–2026 · 3 plays",
+          "ask": null,
+          "files": [],
+          "products": [
+            {
+              "id": "spotify",
+              "name": "Spotify",
+              "count": 3,
+              "state": "read",
+              "line": "Spotify · 3 plays"
+            }
+          ],
+          "span": {
+            "from": "2014-03-02",
+            "to": "2026-09-01"
+          },
+          "open_day": "2026-09-01",
+          "open": "Open a day",
+          "downloaded": "You can delete the file you downloaded.",
+          "notice": {
+            "title": "Spotify imported",
+            "body": "2014–2026 · 3 plays"
+          }
+        }
+      ]
+    }
+  ],
+  "adding": {
+    "prompt": "Lifestream runs on this Mac. Run ~/.local/bin/lifestream help connectors and follow it to add a connector for ___; type each lifestream command it names as ~/.local/bin/lifestream.",
+    "blank": "___"
+  }
+}

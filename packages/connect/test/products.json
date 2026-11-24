@@ -1,0 +1,330 @@
+{
+  "android": {
+    "name": "Android",
+    "vendor": "google"
+  },
+  "apple-calendar": {
+    "name": "Calendar",
+    "vendor": "apple"
+  },
+  "apple-calls": {
+    "name": "Calls",
+    "vendor": "apple"
+  },
+  "apple-contacts": {
+    "name": "Contacts",
+    "vendor": "apple"
+  },
+  "apple-health": {
+    "name": "Health",
+    "vendor": "apple"
+  },
+  "apple-notes": {
+    "name": "Notes",
+    "vendor": "apple"
+  },
+  "apple-photos": {
+    "name": "Photos",
+    "vendor": "apple"
+  },
+  "apple-reminders": {
+    "name": "Reminders",
+    "vendor": "apple"
+  },
+  "aqua-voice": {
+    "name": "Aqua Voice",
+    "vendor": "aqua"
+  },
+  "ask": {
+    "name": "Ask",
+    "vendor": "lifestream"
+  },
+  "audio": {
+    "name": "Audio",
+    "vendor": "lifestream"
+  },
+  "camera": {
+    "name": "Camera",
+    "vendor": "lifestream"
+  },
+  "cameras": {
+    "name": "Cameras",
+    "vendor": "lifestream"
+  },
+  "chatgpt": {
+    "name": "ChatGPT",
+    "vendor": "openai"
+  },
+  "checkin": {
+    "name": "Check-ins",
+    "vendor": "lifestream"
+  },
+  "chrome": {
+    "name": "Chrome",
+    "vendor": "google"
+  },
+  "claude": {
+    "name": "Claude",
+    "vendor": "anthropic"
+  },
+  "claude-code": {
+    "name": "Claude Code",
+    "vendor": "anthropic"
+  },
+  "coast": {
+    "name": "Coast",
+    "vendor": "coast"
+  },
+  "codex": {
+    "name": "Codex",
+    "vendor": "openai"
+  },
+  "devices": {
+    "name": "Devices",
+    "vendor": "lifestream"
+  },
+  "energy": {
+    "name": "Battery",
+    "vendor": "lifestream"
+  },
+  "facebook": {
+    "name": "Facebook",
+    "vendor": "meta"
+  },
+  "faces": {
+    "name": "Faces",
+    "vendor": "lifestream"
+  },
+  "gemini": {
+    "name": "Gemini",
+    "vendor": "google"
+  },
+  "github": {
+    "name": "GitHub",
+    "vendor": "microsoft"
+  },
+  "gmail": {
+    "name": "Gmail",
+    "vendor": "google"
+  },
+  "gmail-activity": {
+    "name": "Gmail activity",
+    "vendor": "google"
+  },
+  "google-ads": {
+    "name": "Google Ads",
+    "vendor": "google"
+  },
+  "google-analytics": {
+    "name": "Google Analytics",
+    "vendor": "google"
+  },
+  "google-arts-culture": {
+    "name": "Google Arts & Culture",
+    "vendor": "google"
+  },
+  "google-assistant": {
+    "name": "Google Assistant",
+    "vendor": "google"
+  },
+  "google-books": {
+    "name": "Google Books",
+    "vendor": "google"
+  },
+  "google-business-profile": {
+    "name": "Google Business Profile",
+    "vendor": "google"
+  },
+  "google-calendar": {
+    "name": "Google Calendar",
+    "vendor": "google"
+  },
+  "google-contacts": {
+    "name": "Google Contacts",
+    "vendor": "google"
+  },
+  "google-developers": {
+    "name": "Google Developers",
+    "vendor": "google"
+  },
+  "google-discover": {
+    "name": "Discover",
+    "vendor": "google"
+  },
+  "google-drive": {
+    "name": "Google Drive",
+    "vendor": "google"
+  },
+  "google-flights": {
+    "name": "Google Flights",
+    "vendor": "google"
+  },
+  "google-help": {
+    "name": "Google Help",
+    "vendor": "google"
+  },
+  "google-hotels": {
+    "name": "Google Hotels",
+    "vendor": "google"
+  },
+  "google-maps": {
+    "name": "Google Maps",
+    "vendor": "google"
+  },
+  "google-news": {
+    "name": "Google News",
+    "vendor": "google"
+  },
+  "google-photos": {
+    "name": "Google Photos",
+    "vendor": "google"
+  },
+  "google-places": {
+    "name": "Google Places",
+    "vendor": "google"
+  },
+  "google-play": {
+    "name": "Google Play",
+    "vendor": "google"
+  },
+  "google-play-games": {
+    "name": "Google Play Games",
+    "vendor": "google"
+  },
+  "google-play-movies": {
+    "name": "Google Play Movies & TV",
+    "vendor": "google"
+  },
+  "google-search": {
+    "name": "Google Search",
+    "vendor": "google"
+  },
+  "google-shopping": {
+    "name": "Google Shopping",
+    "vendor": "google"
+  },
+  "google-store": {
+    "name": "Google Store",
+    "vendor": "google"
+  },
+  "google-takeout": {
+    "name": "Google activity",
+    "vendor": "google"
+  },
+  "google-timeline": {
+    "name": "Google Maps Timeline",
+    "vendor": "google"
+  },
+  "google-translate": {
+    "name": "Google Translate",
+    "vendor": "google"
+  },
+  "google-travel": {
+    "name": "Google Travel",
+    "vendor": "google"
+  },
+  "google-tv": {
+    "name": "Google TV",
+    "vendor": "google"
+  },
+  "google-voice-match": {
+    "name": "Voice Match",
+    "vendor": "google"
+  },
+  "granola": {
+    "name": "Granola",
+    "vendor": "granola"
+  },
+  "groups": {
+    "name": "Groups",
+    "vendor": "lifestream"
+  },
+  "imessage": {
+    "name": "iMessage",
+    "vendor": "apple"
+  },
+  "input": {
+    "name": "Keyboard and mouse",
+    "vendor": "lifestream"
+  },
+  "instagram": {
+    "name": "Instagram",
+    "vendor": "meta"
+  },
+  "location": {
+    "name": "Location",
+    "vendor": "lifestream"
+  },
+  "machine": {
+    "name": "Mac events",
+    "vendor": "lifestream"
+  },
+  "motion": {
+    "name": "Motion",
+    "vendor": "lifestream"
+  },
+  "notes": {
+    "name": "Lifestream notes",
+    "vendor": "lifestream"
+  },
+  "now-playing": {
+    "name": "Now playing",
+    "vendor": "apple"
+  },
+  "people": {
+    "name": "People",
+    "vendor": "lifestream"
+  },
+  "places": {
+    "name": "Places",
+    "vendor": "lifestream"
+  },
+  "safari": {
+    "name": "Safari",
+    "vendor": "apple"
+  },
+  "screen": {
+    "name": "Screen",
+    "vendor": "lifestream"
+  },
+  "screen-time": {
+    "name": "Screen Time",
+    "vendor": "apple"
+  },
+  "spotify": {
+    "name": "Spotify",
+    "vendor": "spotify"
+  },
+  "stations": {
+    "name": "Stations",
+    "vendor": "lifestream"
+  },
+  "upload": {
+    "name": "Files you hand in",
+    "vendor": "lifestream"
+  },
+  "voice-notes": {
+    "name": "Voice notes",
+    "vendor": "lifestream"
+  },
+  "whatsapp": {
+    "name": "WhatsApp",
+    "vendor": "meta"
+  },
+  "whoop": {
+    "name": "WHOOP",
+    "vendor": "whoop"
+  },
+  "wispr-flow": {
+    "name": "Wispr Flow",
+    "vendor": "wispr"
+  },
+  "x": {
+    "name": "X",
+    "vendor": "x"
+  },
+  "youtube": {
+    "name": "YouTube",
+    "vendor": "google"
+  }
+}

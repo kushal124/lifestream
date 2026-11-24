@@ -1,0 +1,73 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-03-12",
+  "day": "2031-03-04",
+  "state": "found",
+  "moment": {
+    "key": "e39",
+    "row": "e39",
+    "kind": "photos",
+    "icon": "photos",
+    "title": "3 photos",
+    "name": "3 photos",
+    "near": null,
+    "start_ms": 1791968400000,
+    "end_ms": null,
+    "untimed": null,
+    "length_ms": null,
+    "products": [],
+    "people": [],
+    "place": {
+      "name": "Synthetic Cafe",
+      "unit": "seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-03-04",
+      "slug": null
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [
+      {
+        "hash": "sha256:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+        "alt": "a synthetic cafe table",
+        "words": "a synthetic cafe table",
+        "video": false,
+        "duration_ms": null,
+        "live": false
+      },
+      {
+        "hash": "sha256:67d6791b837fcd69c0428d6ec3b02e54680df9dc59b5088729caed142b625802",
+        "alt": "A chalked hand on a hold.",
+        "words": "A chalked hand on a hold.",
+        "video": false,
+        "duration_ms": null,
+        "live": true
+      },
+      {
+        "hash": "sha256:5ac8daff7f1671a892d9bf6839d566546ba9655f713157852cdce56f49839cc5",
+        "alt": "Video",
+        "words": "",
+        "video": true,
+        "duration_ms": 2000,
+        "live": false
+      }
+    ],
+    "source": {
+      "records": [],
+      "more": 0,
+      "units": [
+        {
+          "family": "photos",
+          "unit": "phone-aa01/1930359000000/e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2"
+        }
+      ],
+      "atoms": 3,
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000
+    },
+    "view": {
+      "lines": [],
+      "view": "photos"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "required": [
+    "timeline",
+    "actions",
+    "life",
+    "summary"
+  ],
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "3-6 plain sentences: how this stretch was spent, in the order it happened."
+    },
+    "timeline": {
+      "type": "array",
+      "description": "Consecutive, non-overlapping stretches covering the whole window from its start to its end. Every second belongs to exactly one stretch.",
+      "items": {
+        "type": "object",
+        "required": [
+          "start",
+          "end",
+          "present",
+          "present_why",
+          "doing",
+          "task",
+          "where"
+        ],
+        "properties": {
+          "start": {
+            "type": "string",
+            "pattern": "^\\d\\d:\\d\\d:\\d\\d$"
+          },
+          "end": {
+            "type": "string",
+            "pattern": "^\\d\\d:\\d\\d:\\d\\d$"
+          },
+          "present": {
+            "enum": [
+              "yes",
+              "no",
+              "unsure"
+            ],
+            "description": "Was the person at the Mac?"
+          },
+          "present_why": {
+            "type": "string",
+            "description": "The evidence for present, in a few words."
+          },
+          "doing": {
+            "type": "string",
+            "description": "What the person was doing, in plain words, specific: the thing, not the app."
+          },
+          "task": {
+            "type": "string",
+            "description": "A short label for the task this stretch belongs to. Reuse the exact same label for stretches of the same task, so switches can be counted."
+          },
+          "where": {
+            "type": "string",
+            "description": "App, and site or document when known."
+          }
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "description": "Things the person did (sent, typed, searched, clicked to decide, created, joined, shared). Not things that merely appeared on screen.",
+      "items": {
+        "type": "object",
+        "required": [
+          "at",
+          "what"
+        ],
+        "properties": {
+          "at": {
+            "type": "string",
+            "pattern": "^\\d\\d:\\d\\d:\\d\\d$"
+          },
+          "what": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "life": {
+      "type": "object",
+      "required": [
+        "people",
+        "projects",
+        "other"
+      ],
+      "properties": {
+        "people": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "People the person dealt with (talked to, messaged, worked with, discussed)."
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Projects or pieces of work advanced."
+        },
+        "other": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other things going on: shows watched, purchases, errands, news followed."
+        }
+      }
+    }
+  }
+}

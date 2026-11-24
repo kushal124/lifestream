@@ -1,0 +1,32 @@
+{
+  "day": "2031-06-12",
+  "zone": "Australia/Adelaide",
+  "day_start_hour": 4,
+  "window": {"start_ms":1938969000000,"end_ms":1939055400000},
+  "renderer": "5/2-d9f8a5b4946e/2",
+  "inputs": "sha256:0000000000000000000000000000000000000000000000000000000000000612",
+  "counts": {"total":15,"per_family":{"physical":15}},
+  "coverage": [{"family":"physical","sources":[{"source":"apple-photos:person-a@example.com:macbook-pro-0001","read":"through"},{"source":"google-timeline:person-a@example.com:export","read":"through"},{"source":"location:local:phone-aa01","read":"through"}]}],
+  "atoms": [
+    {"n":1,"family":"physical","unit":"stay/location:local:phone-aa01/1938943800000","start_ms":1938969000000,"end_ms":1938981600000,"local_start":"04:00","local_end":"07:30","flags":["continues_from_previous_day"],"text":"At Synthetic Home"},
+    {"n":2,"family":"physical","unit":"trip/location:local:phone-aa01/1938981600000","start_ms":1938981600000,"end_ms":1938982800000,"local_start":"07:30","local_end":"07:50","flags":[],"text":"Walk, Synthetic Home → an unnamed place 1.8 km from Synthetic Home, 1.9 km"},
+    {"n":3,"family":"physical","unit":"stay/location:local:phone-aa01/1938982800000","start_ms":1938982800000,"end_ms":1938985800000,"local_start":"07:50","local_end":"08:40","flags":[],"text":"At an unnamed place 1.8 km from Synthetic Home"},
+    {"n":4,"family":"physical","unit":"trip/location:local:phone-aa01/1938985800000","start_ms":1938985800000,"end_ms":1938987000000,"local_start":"08:40","local_end":"09:00","flags":[],"text":"Road vehicle, an unnamed place 1.8 km from Synthetic Home → Fresh from Synthetic Farm, 6.1 km"},
+    {"n":5,"family":"physical","unit":"stay/location:local:phone-aa01/1938987000000","start_ms":1938987000000,"end_ms":1938990600000,"local_start":"09:00","local_end":"10:00","flags":[],"text":"At Fresh from Synthetic Farm"},
+    {"n":6,"family":"physical","unit":"trip/google-timeline:person-a@example.com:export/activity-1","start_ms":1938990600000,"end_ms":1938993000000,"local_start":"10:00","local_end":"10:40","flags":[],"text":"Passenger vehicle (stated by Timeline), Fresh from Synthetic Farm → an unnamed place 12 km from Fresh from Synthetic Farm, 13.4 km in 40 m"},
+    {"n":7,"family":"physical","unit":"stay/google-timeline:person-a@example.com:export/visit-1","start_ms":1938993000000,"end_ms":1938997800000,"local_start":"10:40","local_end":"12:00","flags":[],"text":"At an unnamed place 12 km from Fresh from Synthetic Farm (stated by Timeline)"},
+    {"n":8,"family":"physical","unit":"trip/location:local:phone-aa01/1938997800000","start_ms":1938997800000,"end_ms":1939001400000,"local_start":"12:00","local_end":"13:00","flags":[],"text":"Road vehicle, an unnamed place 12 km from Fresh from Synthetic Farm → an unnamed place in Synthetic Port Town, 41.0 km"},
+    {"n":9,"family":"physical","unit":"stay/location:local:phone-aa01/1939001400000","start_ms":1939001400000,"end_ms":1939006800000,"local_start":"13:00","local_end":"14:30","flags":[],"text":"At an unnamed place in Synthetic Port Town"},
+    {"n":10,"family":"physical","unit":"trip/location:local:phone-aa01/1939006800000","start_ms":1939006800000,"end_ms":1939012200000,"local_start":"14:30","local_end":"16:00","flags":[],"text":"Ferry, an unnamed place in Synthetic Port Town → an unnamed place, 38.0 km"},
+    {"n":11,"family":"physical","unit":"stay/location:local:phone-aa01/1939012200000","start_ms":1939012200000,"end_ms":1939015800000,"local_start":"16:00","local_end":"17:00","flags":[],"text":"At an unnamed place"},
+    {"n":12,"family":"physical","unit":"trip/location:local:phone-aa01/1939015800000","start_ms":1939015800000,"end_ms":1939017600000,"local_start":"17:00","local_end":"17:30","flags":[],"text":"Ferry, an unnamed place → a hidden place, 30.5 km"},
+    {"n":13,"family":"physical","unit":"seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-06-12","start_ms":1939017600000,"end_ms":1939021200000,"local_start":"17:30","local_end":"18:30","flags":[],"text":"At a hidden place (from photos)"},
+    {"n":14,"family":"physical","unit":"trip/location:local:phone-aa01/1939021200000","start_ms":1939021200000,"end_ms":1939023000000,"local_start":"18:30","local_end":"19:00","flags":[],"text":"Road vehicle, a hidden place → Synthetic Home, 9.8 km"},
+    {"n":15,"family":"physical","unit":"stay/location:local:phone-aa01/1939023000000","start_ms":1939023000000,"end_ms":1939055400000,"local_start":"19:00","local_end":"2031-06-13 04:00","flags":["continues_into_next_day"],"text":"At Synthetic Home (still there at the last fix)"}
+  ],
+  "products": {
+    "apple-photos": {"name":"Photos","row":"Photos","vendor":"apple","icon":"photos","type":"photos","connector":"apple-photos"},
+    "google-timeline": {"name":"Timeline","row":"Timeline","vendor":"google","icon":"places","type":"places","connector":"google-timeline"},
+    "location": {"name":"Location","row":"Location","vendor":"lifestream","icon":"places","type":"places","connector":"location"}
+  }
+}

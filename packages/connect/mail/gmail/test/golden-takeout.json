@@ -1,0 +1,106 @@
+[
+  {
+    "kind": "chat",
+    "key": "1790000000000000201",
+    "content": {
+      "type": "gmail.thread",
+      "thread_id": "1790000000000000201",
+      "messages": [
+        "1790000000000000201",
+        "1790000000000000202"
+      ]
+    },
+    "time": {
+      "start_ms": 1788595200000,
+      "end_ms": 1788599730000,
+      "offset_min": 0,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "chat",
+    "key": "1790000000000000203",
+    "content": {
+      "type": "gmail.thread",
+      "thread_id": "1790000000000000203",
+      "messages": [
+        "1790000000000000203"
+      ]
+    },
+    "time": {
+      "start_ms": 1788739199000,
+      "end_ms": 1788739199000,
+      "offset_min": 0,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000201",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "from_line": "From 1790000000000000201@xxx Sat Sep 05 08:00:00 +0000 2026"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:a789aed3f418b0671cb3e2c36a7b69caebe0a592614204b07c179eda51017db4",
+          "bytes": 281,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788595200000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000202",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "from_line": "From 1790000000000000202@xxx Sat Sep 05 09:15:30 +0000 2026"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:ac306661e09b179711b7149809f96f57154db3798aac26ebb63caead4b51410f",
+          "bytes": 174,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788599730000,
+      "offset_min": 0,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000203",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "from_line": "From 1790000000000000203@xxx Sun Sep  6 23:59:59 +0000 2026"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:76088a27bd0e46d296c12bb59d71101da6c8f52681601cb64ef7a610ef3702eb",
+          "bytes": 210,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788739199000,
+      "offset_min": 0,
+      "precision": "s"
+    }
+  }
+]

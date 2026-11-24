@@ -1,0 +1,134 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "mail"
+          },
+          "until_ms" : 1794654000000,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "account" : "whoop:person-a@example.com",
+            "but" : [
+
+            ]
+          },
+          "until_ms" : 1794650400000,
+          "window" : {
+            "past_ms" : 86400000
+          }
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+        {
+          "handles" : [
+            "+15550000003"
+          ],
+          "id" : "person-alex"
+        }
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "act" : "agent-access",
+    "expect" : 3,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-later-refused.json",
+  "reply" : {
+    "refused" : {
+      "code" : "BAD_REQUEST",
+      "message" : "Couldn’t save this access. Try again."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "mail"
+          },
+          "until_ms" : 1794654000000,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "account" : "whoop:person-a@example.com",
+            "but" : [
+
+            ]
+          },
+          "until_ms" : 1794650400000,
+          "window" : {
+            "past_ms" : 86400000
+          }
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+        {
+          "handles" : [
+            "+15550000003"
+          ],
+          "id" : "person-alex"
+        }
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "expect" : 3
+  }
+}

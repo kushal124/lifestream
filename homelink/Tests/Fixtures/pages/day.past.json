@@ -1,0 +1,240 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "day": "2026-10-04",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa01/1791081000000@1791081000000",
+      "kind": "stay",
+      "episode": "e1",
+      "head": {
+        "title": "Bengaluru",
+        "line": null,
+        "place": "spot:12.9716,77.5946",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "3h"
+      },
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": true,
+      "names": [
+        {
+          "text": "unknown …00301",
+          "first_row": "e2",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1791081000000@1791081000000#run",
+          "kind": "run",
+          "start_ms": 1791968400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e2",
+              "kind": "conversation",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …00301",
+              "note": "",
+              "words": [
+                {
+                  "text": "synthetic line p1",
+                  "type": "quote"
+                },
+                {
+                  "text": "synthetic line p3",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 2,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000301@s.whatsapp.net:p1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1791091800000@1791091800000",
+      "kind": "move",
+      "episode": "e5",
+      "head": {
+        "title": "Drive 5.2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.2 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "30m"
+      },
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1791093600000@1791093600000",
+      "kind": "stay",
+      "episode": "e7",
+      "head": {
+        "title": "Bengaluru",
+        "line": null,
+        "place": "spot:12.9352,77.6245",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "6h 28m"
+      },
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1791116880000@1791116880000",
+      "kind": "move",
+      "episode": "e8",
+      "head": {
+        "title": "Move 5.2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "10h 2m"
+      },
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1791968400000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "2",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "1",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "spot:12.9352,77.6245",
+        "slug": null,
+        "name": "Bengaluru",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 23280000,
+        "length": "6h 28m",
+        "spoken": "Bengaluru, 6 hours 28 minutes",
+        "point": {
+          "latitude": 12.9352,
+          "longitude": 77.6245,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e7"
+        ]
+      },
+      {
+        "key": "spot:12.9716,77.5946",
+        "slug": null,
+        "name": "Bengaluru",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 10800000,
+        "length": "3h",
+        "spoken": "Bengaluru, 3 hours",
+        "point": {
+          "latitude": 12.9716,
+          "longitude": 77.5946,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e1"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "whatsapp:15550000301@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …00301",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "2",
+            "quiet": false
+          }
+        ],
+        "spoken": "unknown …00301, 2 messages sent",
+        "rows": [
+          "e2"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

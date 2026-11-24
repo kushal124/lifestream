@@ -1,0 +1,29 @@
+[
+  {
+    "kind": "contact",
+    "key": "800a46e091b35bf16a96bcd19747ce74624c8842b5c17adc8b05459f1adfc987",
+    "content": {
+      "type": "contacts.card",
+      "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:B;Person;;;\r\nFN:Person B\r\nTEL;type=CELL;type=VOICE;type=pref:+15550000002\r\nEMAIL;type=INTERNET;type=HOME;type=pref:person-b@example.com\r\nEND:VCARD\r\n"
+    },
+    "time": null
+  },
+  {
+    "kind": "contact",
+    "key": "979906ce3dac0e0e67a730f1c30a92845419260d180d47d50893ef0a2722b55d",
+    "content": {
+      "type": "contacts.card",
+      "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:C;Person;;;\r\nFN:Person Ç\r\nNOTE:a folded note that runs\r\n on to the next line\r\nEND:VCARD\r\n"
+    },
+    "time": null
+  },
+  {
+    "kind": "contact",
+    "key": "fd70e080f3caedeb66d2571e5981455523c9b0290b8f34c54a86d75d7c441469",
+    "content": {
+      "type": "contacts.card",
+      "card": "BEGIN:VCARD\nVERSION:3.0\nFN:Person D\nTEL:+15550000004\nEND:VCARD\n"
+    },
+    "time": null
+  }
+]

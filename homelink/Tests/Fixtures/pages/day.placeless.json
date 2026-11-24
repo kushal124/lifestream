@@ -1,0 +1,370 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-04-13",
+  "day": "2031-04-05",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [
+    {
+      "key": "e17",
+      "kind": "event",
+      "at_ms": null,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Synthetic errand",
+      "note": "",
+      "words": [
+        {
+          "text": "Calendar · all day · due · in Synthetic list · flagged",
+          "tone": "secondary",
+          "title": false,
+          "type": "text"
+        }
+      ],
+      "count": null,
+      "quiet": false,
+      "focus": "rec:apple-calendar:person-a@example.com:macbook-pro-0001 reminder SYNTH-UID-0011",
+      "divider": null
+    }
+  ],
+  "chapters": [
+    {
+      "key": "day@1933090200000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1933090200000#run",
+          "kind": "run",
+          "start_ms": 1791968400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e4",
+              "kind": "conversation",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person D",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 4,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:imessage:person-a@example.com:macbook-pro-0001 msg GUID-0101",
+              "divider": null
+            },
+            {
+              "key": "e8",
+              "kind": "sitting",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "work-mac",
+              "name": "Mac",
+              "note": "",
+              "words": [
+                {
+                  "items": [
+                    "Mail 41m",
+                    "Chrome 19m"
+                  ],
+                  "type": "list"
+                },
+                {
+                  "items": [
+                    "Replying to synthetic mail in Mail"
+                  ],
+                  "type": "titles"
+                }
+              ],
+              "count": {
+                "text": "1h",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "u:macbook-pro-0001/1933108200000@1933108200000-1933111800000",
+              "divider": null
+            },
+            {
+              "key": "e21",
+              "kind": "listening",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "listening",
+              "name": "Podcasts",
+              "note": "",
+              "words": [
+                {
+                  "items": [
+                    "Synthetic Show"
+                  ],
+                  "type": "list"
+                }
+              ],
+              "count": {
+                "text": "1 episode",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:podcasts:local:macbook-pro-0001 play p-20",
+              "divider": null
+            },
+            {
+              "key": "e22",
+              "kind": "voice_note",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "voice-note",
+              "name": "Voice note",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "42s",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:voice-memos:person-a@example.com:macbook-pro-0001 memo VM-21",
+              "divider": null
+            },
+            {
+              "key": "e11",
+              "kind": "photos",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "photo",
+              "name": "Photo",
+              "note": "",
+              "words": [
+                {
+                  "photos": [
+                    {
+                      "item": "photo:ec7fae5939a8137c44004188a2c8a5c7b83f570dc65b8aaa15b129e3a482d194",
+                      "hash": "sha256:ec7fae5939a8137c44004188a2c8a5c7b83f570dc65b8aaa15b129e3a482d194",
+                      "at_ms": 1791968400000,
+                      "video": false,
+                      "duration_ms": null,
+                      "live": false
+                    }
+                  ],
+                  "more": 0,
+                  "type": "tiles"
+                }
+              ],
+              "count": {
+                "text": "1 photo",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "u:phone-aa01/1933119000000/ec7fae5939a8137c44004188a2c8a5c7b83f570dc65b8aaa15b129e3a482d194@1933119000000-1933119000001",
+              "divider": null
+            },
+            {
+              "key": "e12",
+              "kind": "call",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "An unknown number",
+              "note": "",
+              "words": [
+                {
+                  "text": "Missed call",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0011",
+              "divider": null
+            },
+            {
+              "key": "e13",
+              "kind": "conversation",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Beta",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg 120363000000000002@g.us:CCC1",
+              "divider": null
+            },
+            {
+              "key": "e14",
+              "kind": "mail_received",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "mail",
+              "name": "2 mails",
+              "note": "",
+              "words": [
+                {
+                  "items": [
+                    "Synthetic News",
+                    "Synthetic Shop"
+                  ],
+                  "type": "list"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:gmail:person-a@example.com:cloud mailmsg m-11",
+              "divider": "2031-04-06"
+            },
+            {
+              "key": "e16",
+              "kind": "mail_received",
+              "at_ms": 1791968400000,
+              "end_ms": null,
+              "icon": "mail",
+              "name": "1 mail",
+              "note": "",
+              "words": [
+                {
+                  "items": [
+                    "Person D"
+                  ],
+                  "type": "list"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:gmail:person-a@example.com:cloud mailmsg m-13",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": {
+    "folded": false,
+    "names": [
+      {
+        "text": "Payment",
+        "first_row": "e18",
+        "at_ms": null
+      },
+      {
+        "text": "Dictated",
+        "first_row": "e19",
+        "at_ms": null
+      }
+    ],
+    "rows": [
+      {
+        "key": "e18",
+        "kind": "payment",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "money",
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "text": "+1200.00 USD",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          },
+          {
+            "text": "SALARY SYNTHETIC EMPLOYER",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:synthbank:acct-aa11:export txn b-11",
+        "divider": null
+      },
+      {
+        "key": "e19",
+        "kind": "dictation",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "voice-note",
+        "name": "Dictated",
+        "note": "to Editor",
+        "words": [
+          {
+            "text": "A dictation that states no time.",
+            "type": "quote"
+          }
+        ],
+        "count": {
+          "text": "1 dictation",
+          "kind": "words"
+        },
+        "quiet": false,
+        "focus": "rec:superwhisper:local:macbook-pro-0001 dictation d-11",
+        "divider": null
+      }
+    ]
+  },
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1791968400000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "0",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "5",
+        "words": "to you"
+      }
+    ],
+    "located": false,
+    "places": [],
+    "people": [
+      {
+        "key": "imessage:+15550000007",
+        "person": null,
+        "name": "Person D",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "4",
+            "quiet": true
+          }
+        ],
+        "spoken": "Person D, 4 messages received",
+        "rows": [
+          "e4"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

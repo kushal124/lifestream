@@ -1,0 +1,168 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "here": "home",
+  "frame": {
+    "north": 48.86473223140496,
+    "south": 48.851928781890045,
+    "east": 2.3592996998186018,
+    "west": 2.3313189944085058
+  },
+  "cities": [
+    {
+      "key": "city:Paris",
+      "title": "Paris",
+      "here": true,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 48.858599999999996,
+        "longitude": 2.3449
+      },
+      "places": [
+        {
+          "slug": "home",
+          "name": "Synthetic Home",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Home",
+            "Paris",
+            "Île-de-France",
+            "France"
+          ],
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "radius_m": 120,
+          "also": [],
+          "hours": 396.74
+        },
+        {
+          "slug": "cafe-0c0c0c",
+          "name": "Synthetic Cafe",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Cafe",
+            "Paris",
+            "Île-de-France",
+            "France"
+          ],
+          "latitude": 48.8606,
+          "longitude": 2.3376,
+          "radius_m": 60,
+          "also": [],
+          "hours": 14.78
+        }
+      ],
+      "once": []
+    },
+    {
+      "key": "city:New York City",
+      "title": "New York City",
+      "here": false,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "places": [
+        {
+          "slug": "hotel-0e0e0e",
+          "name": "Synthetic Hotel",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Hotel",
+            "New York City",
+            "New York",
+            "United States"
+          ],
+          "latitude": 40.7128,
+          "longitude": -74.006,
+          "radius_m": 100,
+          "also": [],
+          "hours": 46
+        }
+      ],
+      "once": []
+    },
+    {
+      "key": "elsewhere",
+      "title": "Elsewhere",
+      "here": false,
+      "when": null,
+      "since": null,
+      "point": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "places": [
+        {
+          "slug": "buoy-0f0f0f",
+          "name": "Synthetic Buoy",
+          "line": "Not yet",
+          "when": null,
+          "spent": null,
+          "find": [
+            "Synthetic Buoy"
+          ],
+          "latitude": 0,
+          "longitude": 0,
+          "radius_m": 100,
+          "also": [],
+          "hours": 0
+        }
+      ],
+      "once": []
+    }
+  ],
+  "to_name": [
+    {
+      "key": "spot:48.853004,2.369981",
+      "latitude": 48.853004,
+      "longitude": 2.369981,
+      "line": "3 days · 3 stays",
+      "find": [
+        "Paris",
+        "Île-de-France",
+        "France"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [],
+      "photos_total": 0,
+      "ask": null,
+      "city": "Paris"
+    }
+  ],
+  "hidden": [],
+  "counting": false
+}

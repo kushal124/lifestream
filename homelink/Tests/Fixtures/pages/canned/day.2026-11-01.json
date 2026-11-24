@@ -1,0 +1,450 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-01",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa01/1793430000000@1793485800000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "6h 28m"
+      },
+      "start_ms": 1793485800000,
+      "end_ms": 1793509080000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1793509080000@1793509080000",
+      "kind": "move",
+      "episode": "e6",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1793509080000,
+      "end_ms": 1793510280000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1793510280000@1793510280000",
+      "kind": "stay",
+      "episode": "e8",
+      "head": {
+        "title": "Near Home",
+        "line": "1.8 km away",
+        "place": "spot:37.3187,-122.009",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 22m"
+      },
+      "start_ms": 1793510280000,
+      "end_ms": 1793515200000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Traditional strength training 45m",
+          "first_row": "e9",
+          "at_ms": null
+        },
+        {
+          "text": "Yoga 20m",
+          "first_row": "e10",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1793510280000@1793510280000#run",
+          "kind": "run",
+          "start_ms": 1793510280000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e9",
+              "kind": "workout",
+              "at_ms": 1793510460000,
+              "end_ms": null,
+              "icon": "workout",
+              "name": "Traditional strength training",
+              "note": "",
+              "words": [
+                {
+                  "text": "Health",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "45m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:cloud workout workout-2026-11-01",
+              "divider": null
+            },
+            {
+              "key": "e10",
+              "kind": "workout",
+              "at_ms": 1793513232000,
+              "end_ms": null,
+              "icon": "workout",
+              "name": "Yoga",
+              "note": "",
+              "words": [
+                {
+                  "text": "Health",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "20m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:cloud workout yoga-2026-11-01",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1793515200000@1793515200000",
+      "kind": "move",
+      "episode": "e11",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1793515200000,
+      "end_ms": 1793516400000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1793516400000@1793516400000",
+      "kind": "stay",
+      "episode": "e13",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "15h 30m"
+      },
+      "start_ms": 1793516400000,
+      "end_ms": 1793572200000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person C",
+          "first_row": "e14",
+          "at_ms": null
+        },
+        {
+          "text": "Group Alpha",
+          "first_row": "e16",
+          "at_ms": null
+        },
+        {
+          "text": "Person A",
+          "first_row": "e18",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1793516400000@1793516400000#run",
+          "kind": "run",
+          "start_ms": 1793516400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e14",
+              "kind": "conversation",
+              "at_ms": 1793518800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "text": "yes please",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:imessage:+15550000090:iphone-aa01 msg c-2026-11-01-7900",
+              "divider": null
+            },
+            {
+              "key": "e16",
+              "kind": "conversation",
+              "at_ms": 1793525400000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 2,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-11-01-9000",
+              "divider": null
+            },
+            {
+              "key": "e18",
+              "kind": "call",
+              "at_ms": 1793536200000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "You called",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "18m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:sam.2014@example.com:iphone-aa01 call CALL-2026-11-01",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": {
+    "folded": false,
+    "names": [
+      {
+        "text": "Payment",
+        "first_row": "e19",
+        "at_ms": null
+      }
+    ],
+    "rows": [
+      {
+        "key": "e19",
+        "kind": "payment",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "money",
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "text": "−48.00 USD",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          },
+          {
+            "text": "SYNTHETIC GROCER",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:synthetic-bank:acct-aa11:export txn txn-2026-11-01",
+        "divider": null
+      }
+    ]
+  },
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1793572200000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "steps",
+        "value": "1,460",
+        "words": "steps"
+      },
+      {
+        "key": "sent",
+        "value": "1",
+        "words": "message sent"
+      },
+      {
+        "key": "received",
+        "value": "3",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 79080000,
+        "length": "21h 58m",
+        "spoken": "Home, 21 hours 58 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e3",
+          "e13"
+        ]
+      },
+      {
+        "key": "spot:37.3187,-122.009",
+        "slug": null,
+        "name": "Near Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4920000,
+        "length": "1h 22m",
+        "spoken": "Near Home, 1 hour 22 minutes",
+        "point": {
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e8"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "email:person-c@example.com",
+        "person": "email:person-c@example.com",
+        "name": "Person C",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 message sent",
+        "rows": [
+          "e14"
+        ]
+      },
+      {
+        "key": "phone:+15550000001",
+        "person": "phone:+15550000001",
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "call",
+            "value": "18m",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 call, 18 minutes",
+        "rows": [
+          "e18"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

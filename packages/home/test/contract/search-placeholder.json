@@ -1,0 +1,56 @@
+{
+  "record": {
+    "as_of": "2026-11-14T22:10+00:00",
+    "total": 40,
+    "capped": true,
+    "reached": {
+      "side": "newest",
+      "at": "2026-11-09T08:00+00:00",
+      "whole": "2026-11-10"
+    },
+    "held": {
+      "first": "2019-02-01",
+      "last": "2026-11-12"
+    },
+    "hits": [
+      {
+        "ref": "record.WyJyZWNvcmQiLCJpbWVzc2FnZTpsb2NhbDptYWNib29rLXByby1hYTQyIiwibWVzc2FnZSIsIm00MCJd",
+        "at": "2026-11-12T20:01+00:00",
+        "day": "2026-11-12",
+        "family": "messages",
+        "product": "imessage",
+        "title": "Person A",
+        "from": "Person A",
+        "snippet": "«Person A»: see you at eight",
+        "chat": "chat.WyJjaGF0IiwiaW1lc3NhZ2U6KzE1NTUwMDAwMDAxIl0",
+        "chat_title": "Person A"
+      },
+      {
+        "ref": "record.WyJyZWNvcmQiLCJwaG9uZTpsb2NhbDppcGhvbmUtYWEwMSIsImNhbGwiLCJjOSJd",
+        "at": "2026-11-10T08:45+00:00",
+        "day": "2026-11-10",
+        "family": "calls",
+        "product": "phone",
+        "title": "Call with Person A"
+      },
+      {
+        "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6cGVyc29uLWFAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImUxMiJd",
+        "day": "2026-11-09",
+        "family": "calendar",
+        "title": "Lunch with Person A"
+      }
+    ],
+    "unproven": 2,
+    "spread": {
+      "families": {
+        "messages": 30,
+        "calls": 6,
+        "calendar": 4
+      },
+      "months": {
+        "2026-11": 40
+      }
+    },
+    "next": "cursor:record:k2"
+  }
+}

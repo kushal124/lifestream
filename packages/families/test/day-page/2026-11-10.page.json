@@ -1,0 +1,212 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "day@1794301200000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1794301200000,
+      "end_ms": 1794387600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1794301200000#run",
+          "kind": "run",
+          "start_ms": 1794301200000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e2",
+              "kind": "other",
+              "at_ms": 1794309540000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 66",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s303",
+              "divider": null
+            },
+            {
+              "key": "e3",
+              "kind": "other",
+              "at_ms": 1794311820000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 69",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s304",
+              "divider": null
+            },
+            {
+              "key": "e4",
+              "kind": "other",
+              "at_ms": 1794326280000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "9h 44m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg m300",
+              "divider": null
+            },
+            {
+              "key": "e5",
+              "kind": "other",
+              "at_ms": 1794330780000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Person A",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "12h 28m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:mac-0001 msg m296",
+              "divider": null
+            },
+            {
+              "key": "e8",
+              "kind": "other",
+              "at_ms": 1794351300000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 77",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s302",
+              "divider": null
+            },
+            {
+              "key": "e11",
+              "kind": "other",
+              "at_ms": 1794370020000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 52",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s305",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": {
+    "folded": false,
+    "names": [
+      {
+        "text": "Ledger",
+        "firstRowId": "e14",
+        "at_ms": null
+      }
+    ],
+    "rows": [
+      {
+        "key": "e14",
+        "kind": "other",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "info",
+        "name": "Ledger",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "-821.00 USD to shop 306",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:example-bank:acct-aa11:export line b306",
+        "divider": null
+      },
+      {
+        "key": "e15",
+        "kind": "other",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "info",
+        "name": "Ledger",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "A note that states no time",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:apple-notes:local:mac-0001 note note-1",
+        "divider": null
+      }
+    ]
+  },
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1794387600000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": false,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

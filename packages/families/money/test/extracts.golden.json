@@ -1,0 +1,197 @@
+[
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-01",
+    "reading": "sha256:bc10d4ce6a24d1e884d328a1c5c10c88f4c998b3e9e873cc6d4088d23d8ccd13",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null,
+        null
+      ],
+      "date": "2026-09-01",
+      "lines": [
+        {
+          "amount": "5000.00",
+          "balance": "15000.00",
+          "currency": "INR",
+          "direction": "credit",
+          "key": "84ce32ca3822",
+          "narration": "SALARY SYNTHETIC EMPLOYER"
+        },
+        {
+          "amount": "250.00",
+          "balance": "14750.00",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "d12e4cc5a05d",
+          "narration": "UPI-SHOP ONE-shop1@fakebank-PAYMENT"
+        }
+      ],
+      "opening": null
+    },
+    "start_ms": 1788220800000,
+    "end_ms": 1788307200000,
+    "days": [
+      "2026-09-01"
+    ]
+  },
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-03",
+    "reading": "sha256:ca0db785bfcf2bf6671942949fb85a13a71061ff33e9be434e3626c1587c63fc",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null,
+        null,
+        null
+      ],
+      "date": "2026-09-03",
+      "lines": [
+        {
+          "amount": "1200.50",
+          "balance": "13549.50",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "c061d7bded41",
+          "narration": "POS 0000XXXXXX0001 SYNTHETIC GROCER"
+        },
+        {
+          "amount": "99.00",
+          "balance": "13450.50",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "9d60c83034e9",
+          "narration": "UPI-STREAMING-stream@fakebank-SUBSCRIPTION"
+        },
+        {
+          "amount": "99.00",
+          "balance": "13549.50",
+          "currency": "INR",
+          "direction": "credit",
+          "key": "51295a07ee91",
+          "narration": "REFUND STREAMING"
+        }
+      ],
+      "opening": "14750.00"
+    },
+    "start_ms": 1788393600000,
+    "end_ms": 1788480000000,
+    "days": [
+      "2026-09-03"
+    ]
+  },
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-12",
+    "reading": "sha256:818ac55f26a5f2f017a05021049e15be2d5caeeda2a27bf5d9e8b0e1cc0e4210",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null
+      ],
+      "date": "2026-09-12",
+      "lines": [
+        {
+          "amount": "2000.00",
+          "balance": "11549.50",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "e0f2d60486a9",
+          "narration": "ATW-0000XXXXXX0001-SYNTHETIC ATM"
+        }
+      ],
+      "opening": "13549.50"
+    },
+    "start_ms": 1789171200000,
+    "end_ms": 1789257600000,
+    "days": [
+      "2026-09-12"
+    ]
+  },
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-14",
+    "reading": "sha256:e5d18434b75c49e747d34fab52ec0d2612ba319957de199ca48d72f49b601e9e",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null
+      ],
+      "date": "2026-09-14",
+      "lines": [
+        {
+          "amount": "75.25",
+          "balance": "11474.25",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "a558a0c3f7cf",
+          "narration": "UPI-CAFE-cafe@fakebank-COFFEE"
+        }
+      ],
+      "opening": "11549.50"
+    },
+    "start_ms": 1789344000000,
+    "end_ms": 1789430400000,
+    "days": [
+      "2026-09-14"
+    ]
+  },
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-20",
+    "reading": "sha256:5c7313f313bbfbc06d4144eaaf8512d7a68176f74826f43165e36177961ffae8",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null
+      ],
+      "date": "2026-09-20",
+      "lines": [
+        {
+          "amount": "300.00",
+          "balance": "11774.25",
+          "currency": "INR",
+          "direction": "credit",
+          "key": "7f1deb3a3aa1",
+          "narration": "NEFT CR-PERSON B-SYNTHETIC"
+        }
+      ],
+      "opening": "11474.25"
+    },
+    "start_ms": 1789862400000,
+    "end_ms": 1789948800000,
+    "days": [
+      "2026-09-20"
+    ]
+  },
+  {
+    "family": "money",
+    "unit": "example-bank:00000000001234:export/2026-09-28",
+    "reading": "sha256:86460af7433135d3faa47b525127f97a1a6b225411e0c7f86e65a7822dfb28c7",
+    "code": "1",
+    "content": {
+      "breaks": [
+        null
+      ],
+      "date": "2026-09-28",
+      "lines": [
+        {
+          "amount": "600.00",
+          "balance": "11174.25",
+          "currency": "INR",
+          "direction": "debit",
+          "key": "7a90e5da46a6",
+          "narration": "AUTO DEBIT SYNTHETIC INSURANCE"
+        }
+      ],
+      "opening": "11774.25"
+    },
+    "start_ms": 1790553600000,
+    "end_ms": 1790640000000,
+    "days": [
+      "2026-09-28"
+    ]
+  }
+]

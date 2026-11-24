@@ -1,0 +1,2 @@
+{"timestamp":"2026-10-01T10:20:00.000Z","type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Also update the docs."}]},"ordinal":11}
+{"timestamp":"2026-10-01T10:20:30.000Z","type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"Docs updated."}],"phase":"final"},"ordinal":12}

@@ -1,0 +1,197 @@
+{
+  "route": "GET /v1/agents/<id>/history",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": {
+      "today": 4,
+      "words": "reads today",
+      "days": [
+        {
+          "day": "2026-11-08",
+          "words": "Sun",
+          "n": 0
+        },
+        {
+          "day": "2026-11-09",
+          "words": "Mon",
+          "n": 0
+        },
+        {
+          "day": "2026-11-10",
+          "words": "Tue",
+          "n": 0
+        },
+        {
+          "day": "2026-11-11",
+          "words": "Wed",
+          "n": 0
+        },
+        {
+          "day": "2026-11-12",
+          "words": "Thu",
+          "n": 0
+        },
+        {
+          "day": "2026-11-13",
+          "words": "Fri",
+          "n": 0
+        },
+        {
+          "day": "2026-11-14",
+          "words": "Sat",
+          "n": 4
+        }
+      ],
+      "said": [
+        {
+          "text": "Mostly your "
+        },
+        {
+          "text": "calendar",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "messages",
+          "bold": true
+        },
+        {
+          "text": ". Nothing from "
+        },
+        {
+          "text": "Health",
+          "bold": true
+        },
+        {
+          "text": ": Hourly can’t see it."
+        }
+      ]
+    },
+    "chips": [
+      {
+        "kind": "plans",
+        "name": "Calendar",
+        "icon": "calendar-event",
+        "n": 4
+      },
+      {
+        "kind": "messages",
+        "name": "Messages",
+        "icon": "message",
+        "n": 4
+      }
+    ],
+    "kind": null,
+    "empty": null,
+    "sessions": [
+      {
+        "key": "s-4",
+        "from_ms": 1794660360000,
+        "to_ms": 1794671160000,
+        "calls": 4,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "4 reads"
+        },
+        "reads": "4 reads",
+        "lines": [
+          {
+            "kind": "fold",
+            "at_ms": 1794671160000,
+            "n": 4,
+            "words": "Read your day, every hour",
+            "line": "4 times, 12:46 – 15:46 · 17 things each: events, messages",
+            "icon": "sync",
+            "lines": [
+              {
+                "kind": "call",
+                "id": "call-0000000000000001",
+                "at_ms": 1794671160000,
+                "words": "Read your day, 14 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "17 things: 9 events, 8 messages",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000002",
+                "at_ms": 1794667560000,
+                "words": "Read your day, 14 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "17 things: 9 events, 8 messages",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000003",
+                "at_ms": 1794663960000,
+                "words": "Read your day, 14 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "17 things: 9 events, 8 messages",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000004",
+                "at_ms": 1794660360000,
+                "words": "Read your day, 14 Nov",
+                "kept": null,
+                "tone": "plain",
+                "icon": "days",
+                "opens": true,
+                "line": "17 things: 9 events, 8 messages",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              }
+            ],
+            "continues": false
+          }
+        ]
+      },
+      {
+        "key": "c-51",
+        "from_ms": 1794660360000,
+        "to_ms": 1794660360000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "4 reads"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794660360000,
+            "icon": "private",
+            "words": "You allowed Hourly",
+            "line": "You · Everything but Health and Money · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

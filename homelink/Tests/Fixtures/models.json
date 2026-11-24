@@ -1,0 +1,127 @@
+{
+  "defaults": {
+    "pictures": {
+      "value": "openrouter:vendor-a/vision-1",
+      "words": "Vision One · OpenRouter",
+      "steps": [
+        {
+          "value": "none",
+          "words": "Off",
+          "note": null
+        },
+        {
+          "value": "openrouter:vendor-a/vision-1",
+          "words": "Vision One",
+          "note": "Sent to OpenRouter"
+        },
+        {
+          "value": "claude:plan-model-1",
+          "words": "Plan Model One",
+          "note": "Your Claude plan is used up · resets 14:00"
+        },
+        {
+          "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+          "words": "Qwen 3.5",
+          "note": "Stays on MacBook Pro"
+        }
+      ]
+    },
+    "audio": {
+      "value": "none",
+      "words": "Off",
+      "steps": [
+        {
+          "value": "none",
+          "words": "Off",
+          "note": null
+        },
+        {
+          "value": "claude:plan-model-1",
+          "words": "Plan Model One",
+          "note": "Your Claude plan is used up · resets 14:00"
+        },
+        {
+          "value": "runner:runner-macbook-pro-0001/parakeet-unified-en-0.6b",
+          "words": "Parakeet",
+          "note": "Downloading, 0.3 of 0.7 GB"
+        },
+        {
+          "value": "runner:runner-macbook-pro-0001/nemotron-3.5-asr-0.6b",
+          "words": "Nemotron Speech",
+          "note": "Not downloaded"
+        }
+      ]
+    },
+    "text": {
+      "value": null,
+      "words": "No model yet",
+      "steps": [
+        {
+          "value": "openrouter:vendor-a/vision-1",
+          "words": "Vision One",
+          "note": "Sent to OpenRouter"
+        },
+        {
+          "value": "claude:plan-model-1",
+          "words": "Plan Model One",
+          "note": "Your Claude plan is used up · resets 14:00"
+        },
+        {
+          "value": "runner:runner-macbook-pro-0001/qwen3.5-4b",
+          "words": "Qwen 3.5",
+          "note": "Stays on MacBook Pro"
+        }
+      ]
+    }
+  },
+  "runners": [
+    {
+      "unit": "runner-macbook-pro-0001",
+      "name": "MacBook Pro",
+      "line": null,
+      "paused": null,
+      "battery": {
+        "on": true,
+        "held": null
+      },
+      "files": [
+        {
+          "id": "qwen3.5-4b",
+          "name": "Qwen 3.5",
+          "about": "Describes photos and sums up text · 4 GB",
+          "state": "ready",
+          "line": null,
+          "suggested": false,
+          "fits": true
+        },
+        {
+          "id": "parakeet-unified-en-0.6b",
+          "name": "Parakeet",
+          "about": "Transcribes voice notes in English · 0.7 GB",
+          "state": "fetching",
+          "line": "Downloading, 0.3 of 0.7 GB",
+          "suggested": true,
+          "fits": true
+        },
+        {
+          "id": "nemotron-3.5-asr-0.6b",
+          "name": "Nemotron Speech",
+          "about": "Transcribes voice notes in English, Hindi and 26 more languages · 0.8 GB",
+          "state": "absent",
+          "line": "Not downloaded",
+          "suggested": false,
+          "fits": true
+        }
+      ]
+    }
+  ],
+  "openrouter": {
+    "connected": true
+  },
+  "address": {
+    "url": "http://127.0.0.1:8080/v1",
+    "model": "local-model-1",
+    "words": "local-model-1 at http://127.0.0.1:8080/v1",
+    "takes": "Takes pictures and text"
+  }
+}

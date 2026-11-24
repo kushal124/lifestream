@@ -1,0 +1,22 @@
+{
+  "what": "record",
+  "ref": "record.WyJyZWNvcmQiLCJnbWFpbDptZUBleGFtcGxlLmNvbTpjbG91ZCIsIm1haWwiLCJtNyJd",
+  "day": "2026-10-02",
+  "at": "2026-10-02T18:40+01:00",
+  "family": "mail",
+  "product": "gmail",
+  "title": "Your example receipt",
+  "from": "receipts@example.com",
+  "to": [
+    "person-a@example.com"
+  ],
+  "link": "https://example.com/orders/1",
+  "text": "Thank you for your example order. Total: 40.00 EUR.",
+  "history": [
+    {
+      "at": "2026-10-02T18:40+01:00",
+      "text": "Thank you for your example order."
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00"
+}

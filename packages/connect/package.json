@@ -1,0 +1,31 @@
+{
+  "name": "@lifestreamprotocol/connect",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Acquirers, connectors and labelers.",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./sdk": "./sdk.ts"
+  },
+  "packageManager": "npm@10.9.7",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "vitest run --root ../.. --project connect"
+  },
+  "dependencies": {
+    "@lifestreamprotocol/core": "file:../core",
+    "@types/better-sqlite3": "7.6.13",
+    "better-sqlite3": "13.0.3",
+    "imapflow": "1.7.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

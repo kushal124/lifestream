@@ -1,0 +1,94 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-03-12",
+  "day": "2031-03-04",
+  "state": "found",
+  "moment": {
+    "key": "e47",
+    "row": "e47",
+    "kind": "call",
+    "icon": "call",
+    "title": "Person A",
+    "name": "Person A",
+    "near": null,
+    "start_ms": 1791968400000,
+    "end_ms": 1791968400000,
+    "untimed": null,
+    "length_ms": null,
+    "products": [
+      "Phone call"
+    ],
+    "people": [
+      {
+        "name": "Person A",
+        "person": "person-a",
+        "chat": null,
+        "call": {
+          "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+          "kind": "call",
+          "key": "CALL-0001"
+        }
+      }
+    ],
+    "place": null,
+    "out": null,
+    "record": {
+      "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+      "kind": "call",
+      "key": "CALL-0001"
+    },
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "apple-calls:person-a@example.com:macbook-pro-0001",
+          "kind": "call",
+          "key": "CALL-0001",
+          "at_ms": 1791968400000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "calls",
+          "unit": "apple:CALL-0001"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1791968400000,
+      "end_ms": 1791968400000
+    },
+    "view": {
+      "figure": {
+        "length_ms": 720000,
+        "words": null,
+        "label": "You called"
+      },
+      "group": "",
+      "name": "Person A",
+      "others": [
+        {
+          "at_ms": 1791968400000,
+          "way": "They called",
+          "length_ms": 300000
+        }
+      ],
+      "week": {
+        "current": false,
+        "calls": [
+          {
+            "day": "2031-03-04",
+            "at_ms": 1791968400000,
+            "title": "Phone call",
+            "icon": "call",
+            "length_ms": 300000,
+            "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0003"
+          }
+        ]
+      },
+      "view": "call"
+    }
+  }
+}

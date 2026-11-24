@@ -1,0 +1,9 @@
+{
+  "route": "GET /v1/agents/address",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "state": "off",
+    "url": "https://macbook-pro-0001.tail0000.ts.net/mcp"
+  }
+}

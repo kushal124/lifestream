@@ -1,0 +1,27 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMw",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-sign-in-wrong.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Wrong number, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."
+        }
+      ],
+      "reader" : null,
+      "state" : "wrong",
+      "version" : null
+    }
+  },
+  "sent" : {
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMw"
+  }
+}

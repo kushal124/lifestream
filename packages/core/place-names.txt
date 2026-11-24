@@ -1,0 +1,12559 @@
+# Places and their peoples, lower case: Wikidata (https://www.wikidata.org), whose data is in the
+# public domain (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Read 12 Nov 2026
+# through QLever (https://qlever.dev/api/wikidata), each by its English label, of one to four words:
+# every country (Q6256, Q3624078) and continent (Q5107), with its other English names of four
+# letters or more written as a name ("America") and its people's name (P1549, "Indian"); every
+# first-level subdivision of a country (Q10864048: a state, a province); every city (Q515) of
+# 100,000 people or more (P1082); every language (Q34770) of a million speakers or more (P1098),
+# and its people's name. Also spelled without their accents. The queries' patterns:
+#   ?x wdt:P31 ?c . VALUES ?c { wd:Q6256 wd:Q3624078 wd:Q5107 } { ?x rdfs:label ?name } UNION
+#     { ?x skos:altLabel ?name } UNION { ?x wdt:P1549 ?name }
+#   ?x wdt:P31/wdt:P279* wd:Q10864048 . ?x rdfs:label ?name
+#   ?x wdt:P31/wdt:P279* wd:Q515 . ?x wdt:P1082 ?pop . FILTER(?pop >= 100000) ?x rdfs:label ?name
+#   ?x wdt:P31/wdt:P279* wd:Q34770 . ?x wdt:P1098 ?n . FILTER(?n >= 1000000) { ?x rdfs:label ?name }
+#     UNION { ?x wdt:P1549 ?name }
+#   each FILTER(LANG(?name) = "en")
+a'ana
+aachen
+aalborg
+aarhus
+aarhus county
+aba
+abadan
+abaetetuba
+abai region
+abakan
+abbasid caliphate of cairo
+abbey of reichenau
+abbotsford
+abbottabad
+abengourou
+abeokuta
+aberdeen
+abha
+abia state
+abidjan
+abidjan autonomous district
+abiko
+abilene
+aboisso
+abra
+abruzzo
+abruzzo citeriore
+absheron district
+abu dhabi
+abu kabir
+abuja
+abyan governorate
+abyei
+acailandia
+acapulco de juarez
+acapulco de juárez
+acarigua
+accra
+aceh
+acehnese
+acholi
+acklins
+acquaviva
+acre
+acre territory
+ad dakhiliyah governorate
+ad dhahirah governorate
+ad-dawhah
+adama
+adamawa
+adamawa state
+adana
+adana eyalet
+adana metropolitan municipality
+adana province
+adana sanjak
+adana vilayet
+adapazarı
+adata
+adazi municipality
+adda
+adda and oglio department
+addis ababa
+addu atoll
+adelaide
+aden
+aden governorate
+adja
+adlersky city district
+ado ekiti
+adrar
+adrar province
+adrianople eyalet
+adrianople vilayet
+adygea
+adzope
+adzopé
+adıyaman
+adıyaman province
+aegean sea
+aerodrom municipality
+afar
+afar region
+affghanistan
+affghanisthan
+affghaunistan
+afghan
+afghania
+afghanistan
+afghanisthan
+afghaunistan
+afghaunistaun
+aflou province
+afrasia
+africa
+african
+african continent
+afrikaans
+afro-eurasia
+afroasiatic
+afroeurasia
+afyonkarahisar
+afyonkarahisar province
+agadez region
+agadir
+agalega
+agaléga
+agartala
+agawej
+agboville
+agder
+ageo
+aghdam
+aghdara district
+aghdash district
+aghdznik
+aghjabadi district
+aghstafa district
+aglona municipality
+agogna
+agra
+agrı
+agrı province
+agsu district
+aguas lindas de goias
+aguascalientes
+aguascalientes city
+ahafo region
+ahal region
+ahar
+ahilyanagar
+ahmedabad
+ahmedpur east
+ahuachapan
+ahuachapan department
+ahuachapán
+ahuachapán department
+ahvaz
+aichi prefecture
+aiga-i-le-tai
+aikawa prefecture
+aileu municipality
+aimeliik
+ain beida
+ain defla province
+ain oussera province
+ain temouchent province
+ainaro municipality
+aintab sanjak
+airai
+ait melloul
+aiwo district
+aix-en-provence
+aizawl
+aizkraukle municipality
+aizpute municipality
+aizuwakamatsu
+ajdabiya district
+ajdovscina municipality
+ajdovščina municipality
+ajloun
+ajloun governorate
+ajman
+ajmer
+ajmer state
+akan
+akashi
+akcakale
+akershus
+aketi territory
+akhisar
+akhmim
+akishima
+akita
+akita prefecture
+akkar governorate
+aklan
+akmene district municipality
+akmenė district municipality
+akmola region
+akniste municipality
+aknīste municipality
+akola
+akron
+akrotiri and dhekelia
+aksaray
+aksaray province
+aktau
+aktobe
+aktobe region
+aktöbe region
+akure
+akwa ibom state
+akçakale
+al ahmadi governorate
+al ain
+al anbar governorate
+al batinah north governorate
+al batinah south governorate
+al bayda
+al buraimi governorate
+al daayen
+al diwaniyah
+al hawiyah
+al hind
+al hudaydah
+al hudaydah governorate
+al jahra governorate
+al jawf governorate
+al khor
+al mahrah governorate
+al mahwit governorate
+al mokattam
+al muthanna governorate
+al qadarif
+al rayyan municipality
+al shamal
+al wahat district
+al wakrah
+al wusta governorate
+al-bab
+al-fashir
+al-faw
+al-hajar al-aswad
+al-kharj
+al-muharraq
+al-qadisiyyah governorate
+al-qādisiyyah governorate
+al-safira
+al-shahaniya
+alabama
+alagoas
+alagoas province
+alagoinhas
+alajuela province
+alaminos
+aland
+alaotra-mangoro
+alasehir
+alaska
+alaya sanjak
+alaşehir
+alba county
+albacete city
+albania
+albania sanjak
+albania vilayet
+albanian
+albanians
+alberta
+alberton
+alborz province
+albuquerque
+alcala de henares
+alcalá de henares
+alchevsk
+alcobendas
+alderney
+alemannic
+aleppo
+aleppo eyalet
+aleppo governorate
+aleppo sanjak
+aleppo vilayet
+alexandretta sanjak
+alexandria
+alexandria governorate
+algeria
+algerian
+algerian arabic
+algiers
+algiers province
+ali sabieh region
+alibori department
+alicante
+alif alif atoll
+alif dhaal atoll
+aligarh
+allen
+almaty
+almaty region
+almere
+almeria city
+almería city
+almetyevsk
+almirante tamandare
+almirante tamandaré
+aloja municipality
+alor setar
+alpes
+alphen aan den rijn
+alpi apuane department
+alsatian
+alsunga municipality
+alta padusa department
+alta verapaz department
+altai krai
+altai republic
+altamira
+alto paraguay department
+alto parana department
+alto paraná department
+aluksne municipality
+alvorada
+alvsborg county
+alvsborgs slottslan
+alwar
+alytus city municipality
+alytus district municipality
+alūksne municipality
+amadi state
+amagasaki
+amagasaki prefecture
+amakusa prefecture
+amambay department
+amanat al-asimah governorate
+amapa
+amapa territory
+amapá
+amapá territory
+amara sanjak
+amarah
+amaravati
+amarillo
+amasya
+amasya province
+amata municipality
+amatitlan department
+amatitlán department
+amazonas
+amazonas department
+amazonas province
+ambala
+ambato
+ambatosoa
+ambikapur
+ambon
+america
+american
+american continent
+american english
+american samoa
+americana
+americans
+americas
+amerique du nord
+amhara region
+amharic
+amman
+amman governorate
+amnat charoen
+amol
+amoron'i mania
+amravati
+amritsar
+amroha
+amstel department
+amsterdam
+amur oblast
+amérique du nord
+an der etsch
+an giang
+an xuyen
+an xuyên
+anaa
+anabar district
+anaco
+anaheim
+analamanga
+analanjirofo
+anambra state
+anand
+ananindeua
+ananthapuram
+anapolis
+anatolic theme
+ancash department
+anchialou
+anchorage
+ancient carthage
+andalusia
+andaman and nicobar islands
+anderlecht
+andhra pradesh
+andhra state
+andijan
+andijan region
+andimeshk
+andong
+andong province
+andorra
+andorra la vella
+andorran
+andrijevica municipality
+andros
+androy
+anemur sanjak
+anenii noi district
+anetan district
+ang thong
+angaur
+angers
+ango
+ango territory
+angola
+angolan
+angra do heroismo
+angra do heroísmo
+angren
+anguilla
+anhui
+anhui province
+ani
+anibare district
+anjo
+anjouan
+anju
+anjō
+ankang
+ankara
+ankara eyalet
+ankara metropolitan municipality
+ankara province
+ankara vilayet
+ankaran municipality
+ann arbor
+annaba
+annaba province
+annecy
+annobon province
+annobón province
+anosy
+anqing
+ansan
+anse boileau
+anse etoile
+anse la raye quarter
+anse royale
+anse-aux-pins
+anseba region
+anseong
+anshan
+anshun
+antakya
+antalya
+antalya metropolitan municipality
+antalya province
+antananarivo
+antananarivo province
+antarctica
+antarctican
+antigua and barbuda
+antigua-barbuda
+antiguan
+antioch
+antioquia
+antique
+antisuyu
+antofagasta
+antofagasta region
+antsirabe
+antsiranana province
+antwerp
+anyang
+anyksciai district municipality
+anykščiai district municipality
+anzoategui
+anzoátegui
+anápolis
+anôsy
+aomori
+aomori prefecture
+aosta valley
+aotearoa new zealand
+apapa
+aparecida de goiania
+aparecida de goiânia
+apayao
+ape municipality
+apeldoorn
+apostolic delegation of ancona
+apostolic delegation of ascoli
+apostolic delegation of benevento
+apostolic delegation of camerino
+apostolic delegation of civitavecchia
+apostolic delegation of fermo
+apostolic delegation of frosinone
+apostolic delegation of macerata
+apostolic delegation of orvieto
+apostolic delegation of perugia
+apostolic delegation of rieti
+apostolic delegation of spoleto
+apostolic delegation of velletri
+apostolic delegation of viterbo
+apostolic legation of bologna
+apostolic legation of ferrara
+apostolic legation of forli
+apostolic legation of forlì
+apostolic legation of ravenna
+apucarana
+apulia
+apure
+apurimac department
+apurímac department
+aqaba
+aqaba governorate
+aquitaine
+ar ramtha
+arab republic of egypt
+arabic
+aracaju
+aracatuba
+aracinovo municipality
+aracruz
+arad
+arad county
+aragatsotn province
+aragon
+aragua
+araguaina
+araguari
+araguaína
+arak
+aral
+arapiraca
+arapongas
+arar
+araraquara
+araras
+ararat province
+araruama
+arauca department
+araucania region
+araucanía region
+araucaria
+araucária
+araure
+araxa
+araxá
+araçatuba
+aračinovo municipality
+archbishopric of magdeburg
+archbishopric of riga
+archipelago eyalet
+archipelago vilayet
+ardabil province
+ardahan province
+ardahan sanjak
+arequipa
+arequipa department
+argentina
+argentine
+argentine republic
+argentinian
+arges county
+argeș county
+ariana governorate
+arica
+arica y parinacota region
+arima
+ariquemes
+arish
+arizona
+arkansas
+arkhangai province
+arkhangelsk oblast
+arkhangelsk viceroyalty
+arlington
+armavir
+armavir province
+armenia
+armeniac theme
+armenian
+arnhem
+arrah
+arta region
+artemisa province
+artibonite
+artigas department
+artsakh
+artuklu
+artvin province
+aru territory
+arua
+aruba
+aruban
+arue
+arunachal pradesh
+arusha
+arusha region
+arutua
+arvada
+asaba
+asahikawa
+asaka
+asan
+asansol
+ascension
+ash sharqiyah north governorate
+ash sharqiyah south governorate
+ashanti region
+ashdod
+ashgabat
+ashigara prefecture
+ashikaga
+ashkelon
+ashmore and cartier islands
+ashokenagar kalyangarh
+asia
+asian
+asian continent
+askeran province
+asmara
+asmosatou
+assaba
+assam
+assamese
+assela
+assis
+astana
+astara district
+astrakhan
+astrakhan oblast
+asturias
+asuncion
+asunción
+asuwa prefecture
+aswan
+aswan governorate
+asyut
+asyut governorate
+atacama region
+atakora department
+atauro
+atbarah
+atfih
+athens
+atibaia
+atlanta
+atlantico department
+atlantida department
+atlantique department
+atlántico department
+atlántida department
+atsimo-andrefana
+atsimo-atsinanana
+atsinanana
+atsugi
+attapeu province
+attica region
+attock
+atua
+atyrau
+atyrau region
+au cap
+auce municipality
+auckland
+auckland region
+augsburg
+augsdaugava municipality
+augustow voivodeship
+augustów voivodeship
+augšdaugava municipality
+aurangabad
+aurora
+aussie
+aussieland
+aussies
+aust-agder
+austin
+australia
+australia and oceania
+australian
+australian antarctic territory
+australian capital territory
+australian continent
+australian indian ocean territories
+australians
+australinea
+austria
+austrian
+austrian german
+austrian netherlands
+autonomous land of slovakia
+autonomous region of bougainville
+autonomous republic of abkhazia
+autonomous republic of crimea
+auvergne
+auvergne-rhone-alpes
+auvergne-rhône-alpes
+avannaata
+aveiro
+avellaneda
+avlona sanjak
+awadhi
+aweil east state
+aweil state
+awka
+ayacucho
+ayacucho department
+aydin metropolitan municipality
+aydin vilayet
+aydın
+aydın province
+ayeyarwady region
+ayiti
+aymara
+ayrarat
+ayre
+aysen region
+aysén region
+az zubayr
+azad kashmir
+azerbaijan
+azerbaijani
+azerbaijanis
+azeri
+azeris
+azores
+azua province
+azuay province
+açailândia
+aïn beïda
+aïn defla province
+aïn oussera province
+aïn témouchent province
+ağrı
+ağrı province
+ba ria
+ba ria-vung tau
+ba xuyen
+ba xuyên
+baa atoll
+baalbek-hermel governorate
+babek district
+babite municipality
+babol
+babruysk
+babylon
+babylon governorate
+babīte municipality
+bac giang
+bac kan
+bac lieu
+bac ninh
+bac thai
+bacabal
+bacau
+bacau county
+bacoor
+bacs-kiskun county
+bacău
+bacău county
+badajoz
+badajoz city
+badakhshan province
+badalona
+baden-wurttemberg
+baden-württemberg
+badghis province
+badin
+bafoussam
+bafwasende
+bafwasende territory
+bagata territory
+bage
+baghdad
+baghdad eyalet
+baghdad governorate
+baghdad sanjak
+baghdad vilayet
+bagheli
+baghlan province
+bagmati province
+bago
+bago region
+bagri
+bagé
+bahama islands
+bahamas
+bahamian
+bahawalnagar
+bahawalpur
+bahia
+bahia blanca
+bahia province
+bahir dar
+bahr el gazel
+bahraich
+bahrain
+bahraini
+bahrein islands
+bahía blanca
+baia county
+baia farta
+baia mare
+baicheng
+baidyabati
+baie lazare
+baie sainte anne
+baikonur
+bailundo
+baise
+baishan
+baiti district
+baiyin
+baja
+baja california
+baja california sur
+baja verapaz department
+bakassi
+baker island
+bakersfield
+bakool
+baku
+bal-bo
+bal-po'i yul
+bal-yul
+balakan district
+balakovo
+balanga
+balbo
+baldone municipality
+balearic islands
+bali
+balikpapan
+balinese
+balis sanjak
+baliwag
+balkan province
+balkanabat
+balkh province
+ballarat
+ballari
+bally
+balneario camboriu
+balneário camboriú
+balochi
+balochistan
+balpo
+balpo-yul
+balqa governorate
+balsas
+balti
+balti county
+balti municipality
+baltimore
+baltinava municipality
+balvi municipality
+balzers
+balıkesir
+balıkesir metropolitan municipality
+balıkesir province
+bam
+bamako
+bamako capital district
+bambara
+bambesa
+bamenda
+bamingui-bangoran prefecture
+bamyan province
+ban de la roche
+banalia
+banda aceh
+bandar abbas
+bandar lampung
+bandel
+bandiagara region
+bandundu province
+bandung
+bandırma
+banfora
+bangaon
+bangka belitung islands
+bangkok
+bangla
+bangla desh
+bangladesh
+bangladeshi
+bangsamoro
+bangui
+bani walid district
+banja luka
+banjar
+banjarbaru
+banjarmasin
+banjul
+bankui
+bansberia
+banska bystrica region
+banská bystrica region
+banteay meanchey province
+banten
+banyumasan
+banyuwangi
+baoding
+baoji
+baoruco province
+baoshan
+baotou
+baoule
+baoulé
+baqubah
+bar municipality
+barahona province
+barakaldo
+baranagar
+baranavichy
+baranya county
+barasat
+barbacena
+barbadian
+barbadoes
+barbados
+barbuda
+barbudan
+barcarena
+barcelona
+barda district
+bardare
+bardhaman
+bareilly
+bariadi
+barika province
+bariloche
+barima-waini
+barinas
+baringo county
+barisal division
+barishal
+barlavento islands
+barnaul
+barquisimeto
+barra mansa
+barrackpore
+barranquilla
+barreiras
+barretos
+barrie
+bartın province
+barueri
+barysaw
+bas-po department
+bas-pô department
+bas-sassandra district
+bas-uele
+basankusu territory
+basarabeasca district
+basel
+bashkir
+bashkortostan
+basilicata
+basingstoke
+basirhat
+basoko territory
+basotho
+basque country
+basra
+basra eyalet
+basra governorate
+basra sanjak
+basra vilayet
+basse-kotto prefecture
+basyoun
+bat yam
+bata
+bataan
+batala
+batam
+batangas city
+bataysk
+batha region
+bathinda
+batken region
+batman
+batman province
+batna
+batna province
+baton rouge
+batswana
+battambang
+battambang province
+batu
+batumi
+baturaja
+bau bau
+baucau municipality
+bauchi
+bauchi state
+baure
+bauru
+bauska municipality
+bavaria
+bavaria-ingolstadt
+bavarian
+bay islands department
+bay of plenty region
+bayamo
+bayan-olgii province
+bayan-ölgii province
+bayankhongor province
+bayannur
+bayawan
+baybay
+bayburt province
+baye
+bayelsa state
+bayugan
+bazhong
+baía farta
+beau bassin-rose hill
+beau vallon
+beaumont
+beawar
+bechar
+bechar province
+beed
+beersheba
+begusarai
+behbahan
+beheira governorate
+beihai
+beijing
+beiliu
+beimen
+beinanzhuang
+beipuzhuang
+beira
+beirut
+beirut governorate
+beirut vilayet
+beit shemesh
+beja
+beja governorate
+bejaia
+bejaia province
+bekasi
+bekes county
+bekescsaba
+bel air
+bel ombre
+belait district
+belarus
+belarus governorate-general
+belarusian
+belas
+belau
+belbis
+belem
+belfast
+belford roxo
+belgaum
+belgian
+belgium
+belgorod
+belgorod oblast
+belgrade
+belize
+belize district
+belizean
+bellevue
+belo horizonte
+belorussia
+belz voivodeship
+belém
+bemba
+ben arous governorate
+ben guerir
+ben tre
+benaco department
+bendel state
+bender
+bender municipality
+bendigo
+bengaluru
+bengbu
+benghazi
+benghazi district
+benghazi sanjak
+bengkulu
+bengo province
+benguela
+benguela province
+benguet
+benha
+beni
+beni abbes province
+beni department
+beni mellal-khenifra
+beni suef
+beni suef governorate
+beni territory
+benin
+benin city
+beninese
+benishangul-gumuz region
+benoni
+bento goncalves
+bento gonçalves
+benue state
+benxi
+beppu
+beqaa governorate
+berane municipality
+berat county
+berat district
+berazategui
+berbera
+berbice-corentyne
+berdiansk
+berdsk
+berea district
+berezniki
+bergama
+bergamo
+bergen
+bergen county
+bergisch gladbach
+berhampore
+berkeley
+berlin
+bermuda
+bern
+bernal
+beroias
+berovo municipality
+berrechid
+berry islands
+bertoua
+besancon
+besançon
+besiktas
+betawi
+bethlehem governorate
+betim
+betsiboka
+beverina municipality
+beverīna municipality
+beykoz
+beylagan district
+bezigrad
+beşiktaş
+bežigrad
+bhadreswar
+bhagalpur
+bharat ganarajya
+bharata
+bharatpur
+bharatvarsh
+bharuch
+bhatpara
+bhawana
+bhilai
+bhili
+bhilwara
+bhimdatta
+bhiwandi
+bhiwani
+bhojpuri
+bhopal
+bhubaneswar
+bhuj
+bhutan
+bhutanese
+biakato
+biała podlaska voivodeship
+białystok
+białystok voivodeship
+bicol region
+bidar
+bidhannagar
+bie province
+bieh state
+bielarus
+bielaruś
+bielefeld
+bielorussia
+bielsk land
+bielsko-biała
+bielsko-biała voivodeship
+bien hoa
+biga sanjak
+bihar
+bihor county
+bijelo polje municipality
+bijie
+bikaner
+bikol
+bikoro territory
+bila tserkva
+bilaspur
+bilaspur state
+bilasuvar district
+bilecik province
+bilingual brussels-capital area
+biliran
+billings
+bima
+bimbo
+bimini
+binan
+bing province
+bingerville
+bingol
+bingol province
+bingöl
+bingöl province
+binh duong
+binh long
+binh phu
+binh phuoc
+binh thuan
+binh tri thien
+binh tuy
+binh đinh
+binhai new area
+binjai
+binzhou
+biobio region
+biobío region
+bioko norte
+bioko sur
+bir el ater province
+biratnagar
+bircna vas
+birgunj
+birigui
+birjand
+birkenhead
+birmingham
+birnin kebbi
+birstonas municipality
+birzai district municipality
+birčna vas
+birštonas municipality
+biržai district municipality
+bishkek
+bishoftu
+bishopric of courland
+bishopric of dorpat
+biskra
+biskra province
+bissau
+bissau autonomous sector
+bissau-guinean
+bistrita-nasaud county
+bistrița-năsăud county
+bithynia
+bitlis province
+bitlis vilayet
+bitola municipality
+bitung
+biysk
+bizerte
+bizerte governorate
+bié province
+biên hòa
+biñan
+bjelovar-bilogora county
+black point
+blagoevgrad
+blantyre
+blekinge county
+blida
+blida province
+blitar
+bloemfontein
+blolequin
+bloléquin
+blue nile state
+blumenau
+bnei brak
+bo
+boa vista
+boaco department
+bobo-dioulasso
+bobonaro municipality
+bocas del toro province
+bochum
+bocono
+boconó
+bodo
+boe district
+boende territory
+boeny
+bogdanci municipality
+bogomila municipality
+bogor
+bogota
+bogotá
+bogovinje municipality
+bogura
+bohinj municipality
+bohol
+boise
+bojnord
+boke region
+bokeo province
+bokhtar
+bokmal
+bokmål
+bokungo
+boké region
+boleron
+bolikhamsai province
+bolivar
+bolivar department
+bolivar province
+bolivarian republic of venezuela
+bolivia
+bolivian
+bolobo territory
+bolomba territory
+bolton
+bolu
+bolu province
+bolu sanjak
+bolzano
+bolívar
+bolívar department
+bolívar province
+boma state
+bombay state
+bomet county
+bomi county
+bomongo
+bondo
+bondo territory
+bondoukou
+bong county
+bongandanga
+bongolava
+bonn
+bono
+bono east region
+bono region
+bonon
+bonoua
+bontang
+boqueron department
+boquerón department
+bor
+bor district
+bora-bora
+bordeaux
+bordeaux metropole
+bordeaux métropole
+bordj baji mokhtar province
+bordj bou arreridj province
+bordj bou arréridj province
+borgo maggiore
+borgou department
+borkou
+borkou-ennedi-tibesti region
+bornholm county
+borno state
+borsod-abauj-zemplen county
+borsod-abaúj-zemplén county
+borujerd
+boryeong
+boryo-sho
+bosilovo municipality
+bosnia
+bosnia and hercegovina
+bosnia and herzegovina
+bosnia eyalet
+bosnia vilayet
+bosnia-herzegovina
+bosnian
+boston
+botosani county
+botoșani county
+botswana
+botswanan
+botswanans
+bottrop
+botucatu
+bou saada province
+bou saâda province
+bouafle
+bouaflé
+bouake
+bouaké
+bouenza department
+bougouni region
+bouira province
+boulder
+boulogne-billancourt
+boumerdes province
+boumerdès province
+bounaines
+bourgogne-franche-comte
+bourgogne-franche-comté
+bouskoura
+bouyei
+boyaca department
+boyacá department
+bozhou
+br venezuela
+bracław voivodeship
+braga
+braganca
+braganca paulista
+bragança
+bragança paulista
+brahmanbaria
+brahui
+braila
+braila county
+brakna
+brampton
+brandenburg
+brandenburg-prussia
+branicevo district
+braničevo district
+brantford
+brasilia
+brasov
+brasov county
+brasília
+bratislava
+bratislava region
+bratslav viceroyalty
+brazil
+brazilian
+brazilian sign language
+brazilians
+brazzaville
+brașov
+brașov county
+brcko district
+brebes
+breda
+bremen
+bremerhaven
+brest
+brest region
+brest voivodeship
+breves
+brezje-dogose-zrkovci district
+brezje-dogoše-zrkovci district
+briceni district
+bridgeport
+brighton and hove
+brisbane
+bristol
+british
+british antarctic territory
+british columbia
+british indian ocean territory
+british virgin islands
+briton
+brittany
+brno
+brno region
+broceni municipality
+brocēni municipality
+brod-posavina county
+brokopondo district
+brong-ahafo region
+brovary
+brownsville
+brsljin
+bruges
+brunei
+brunei-muara district
+brunswick
+brunswick-luneburg
+brunswick-lüneburg
+brusque
+brussels
+brussels-capital region
+brvenica municipality
+bryansk
+bryansk oblast
+brzesc kujawski voivodeship
+brześć kujawski voivodeship
+brăila
+brăila county
+brčko district
+bršljin
+buada district
+bubanza province
+bucaramanga
+bucellarian theme
+bucharest
+bucheon
+buchhorn
+bucna vas
+budapest
+budin eyalet
+budjala
+budva municipality
+buea
+bueng kan
+buenos aires
+buenos aires province
+buffalo
+buffalo city metropolitan municipality
+bugis
+bujumbura
+bujumbura mairie
+bujumbura province
+bujumbura rural province
+bukama territory
+bukan
+bukavu
+bukhara
+bukhara region
+bukidnon
+bukit merah
+bukittinggi
+bukoba
+bulacan
+bulawayo
+bulawayo province
+bulgan province
+bulgaria
+bulgarian
+bulgarian republic
+bulqize district
+bulqizë district
+bulungu
+bumba
+bumba territory
+bumthang district
+bundi
+bungoma
+bungoma county
+bunia
+bunsan gun
+buon ma thuot
+burao
+burayda
+burbank
+burdur province
+burewala
+burgas
+burgas oblast
+burgenland
+burgos city
+burgundy
+buriram
+burkina faso
+burkinabe
+burkinabè
+burkinabé
+burlington
+burmese
+burnaby
+bursa
+bursa metropolitan municipality
+bursa province
+burtnieki municipality
+burundi
+burundian
+burunga
+bururi province
+burutu
+buryatia
+busan
+bushehr
+bushehr province
+busia county
+businga
+busk land
+buskerud
+buta territory
+butare province
+butel municipality
+butembo
+butha-buthe district
+butnan district
+butuan
+butwal
+buzau
+buzau county
+buzău
+buzău county
+buôn ma thuột
+bučna vas
+bydgoszcz
+bydgoszcz department
+bydgoszcz voivodeship
+byeloruss
+byelorussia
+byoritsu-gai
+byoritsu-gun
+bytom
+byumba prefecture
+byōritsu-gai
+byōritsu-gun
+bà rịa
+bà rịa-vũng tàu
+bács-kiskun county
+béchar
+béchar province
+béja governorate
+béjaïa
+béjaïa province
+békés county
+békéscsaba
+béni mellal-khénifra
+bình dương
+bình long
+bình phú
+bình phước
+bình thuận
+bình trị thiên
+bình tuy
+bình định
+bălți
+bălți county
+bălți municipality
+bōryō-shō
+bạc liêu
+bắc giang
+bắc kạn
+bắc ninh
+bắc thái
+bến tre
+ca mau
+caaguazu department
+caaguazu district
+caaguazú department
+caaguazú district
+caazapa department
+caazapá department
+cabanas department
+cabanatuan
+cabañas department
+cabimas
+cabinda
+cabinda province
+cabo de santo agostinho
+cabo delgado province
+cabo frio
+cabo san lucas
+cabo verdean
+cabuyao
+cachoeirinha
+cadiz
+cadiz city
+caen
+cagados carajos
+cagayan
+cagayan de oro
+cagayan valley
+cagua
+caguas
+cahul
+cahul county
+cahul district
+cair municipality
+cairns
+cairo
+cairo governorate
+cajamarca
+cajamarca department
+calabar
+calabozo
+calabria
+calabria citeriore
+calabria theme
+calabria ulteriore prima
+calabria ulteriore seconda
+calama
+calamba
+calapan
+calarasi county
+calarasi district
+calbayog
+caldas department
+calgary
+cali
+caliacra county
+california
+callao
+callao region
+caloocan
+cam pha
+camacari
+camaguey
+camaguey province
+camagüey
+camagüey province
+camaragibe
+camarines sur
+camaçari
+cambe
+cambodia
+cambodian
+camboya
+cambresis
+cambridge
+cambé
+cameroon
+cameroon pidgin
+cameroonian
+cameta
+cametá
+campania
+campeche
+campina grande
+campinas
+campo grande
+campo largo
+campos dos goytacazes
+campuchia
+campulung county
+can tho
+canad sanjak
+canada
+canadian
+canadians
+canakkale
+canakkale province
+canar province
+canary islands
+canberra
+cancun
+canelones department
+cangzhou
+canillo
+canindeyu department
+canindeyú department
+cankuzo province
+cankırı province
+canoas
+cantabria
+cantemir district
+canterbury region
+canton of aargau
+canton of appenzell ausserrhoden
+canton of appenzell innerrhoden
+canton of baden
+canton of basel-landschaft
+canton of basel-stadt
+canton of bellinzona
+canton of berne
+canton of capellen
+canton of clervaux
+canton of diekirch
+canton of echternach
+canton of esch-sur-alzette
+canton of fribourg
+canton of fricktal
+canton of geneva
+canton of glarus
+canton of grevenmacher
+canton of jura
+canton of leman
+canton of linth
+canton of lucerne
+canton of lugano
+canton of luxembourg
+canton of léman
+canton of mersch
+canton of neuchatel
+canton of neuchâtel
+canton of nidwalden
+canton of oberland
+canton of obwalden
+canton of raetia
+canton of redange
+canton of remich
+canton of schaffhausen
+canton of schwyz
+canton of solothurn
+canton of the grisons
+canton of thurgau
+canton of ticino
+canton of uri
+canton of valais
+canton of vaud
+canton of vianden
+canton of waldstatten
+canton of waldstätten
+canton of wiltz
+canton of zug
+canton of zurich
+cantonese
+cao bang
+cao bằng
+cap saint jacques
+cap-haitien
+cap-haïtien
+capas
+cape coast
+cape coral
+cape province
+cape town
+cape verde
+cape verde islands
+cape verdean
+capital governorate
+capital region
+capital region of denmark
+capiz
+cappadocia
+caqueta department
+caquetá department
+carabobo
+caracas
+caraga
+caraguatatuba
+carapicuiba
+carapicuíba
+caras county
+caras-severin county
+carazo department
+caraș county
+caraș-severin county
+carcar
+carchi province
+cardiff
+cargados carajos
+cariacica
+carinthia
+carlos manuel de cespedes
+carlos manuel de céspedes
+carlsbad
+carmona
+carnikava municipality
+carora
+carrefour
+carriacou and petite martinique
+carrollton
+cartagena
+cartago province
+caruaru
+carupano
+carúpano
+casablanca
+casablanca-settat
+casanare department
+cascade
+cascavel
+caska municipality
+castanhal
+castel
+castelar
+castellon de la plana
+castellón de la plana
+castelo branco
+castile and leon
+castile and león
+castilla
+castilla novisima
+castilla novísima
+castries quarter
+cat island
+catalan
+catalao
+catalonia
+catalão
+catamarca province
+catanduanes
+catanduva
+catania
+catbalogan
+catia la mar
+cauayan
+cauca department
+caucaia
+caucasus viceroyalty
+causeni district
+cavite
+caxias
+caxias do sul
+cayman islands
+cayo district
+cayırova
+cazenga
+cañar province
+ceadir-lunga
+ceadîr-lunga
+ceara
+ceara province
+ceará
+ceará province
+cebelisemaan sanjak
+cebu city
+cebuano
+cedar rapids
+centar municipality
+centar zupa municipality
+centar župa municipality
+centennial
+center
+central abaco
+central africa
+central african
+central african republic
+central andros
+central atlas tamazight
+central banat district
+central bikol
+central bohemia
+central bohemian region
+central cikarang
+central darfur
+central denmark
+central department
+central development region
+central district
+central division
+central eleuthera
+central equatoria
+central ethiopia regional state
+central finland
+central forest reserve
+central governorate
+central greece region
+central java
+central kalimantan
+central kanuri
+central luzon
+central macedonia region
+central ostrobothnia
+central papua
+central pashto
+central poland
+central province
+central region
+central river division
+central slovakia
+central sulawesi
+central visayas
+central zone
+centrale region
+centre
+centre-val de loire
+centro sur
+centurion
+cephallenia
+cerkezkoy
+cernauti county
+cernăuți county
+cerro largo department
+cesar department
+cesinovo-oblesevo municipality
+cesis municipality
+cesvaine municipality
+cetatea-alba county
+cetatea-albă county
+ceuta
+ceyhan
+ceylan
+ch'ing-tao
+chachoengsao
+chaco department
+chaco province
+chad
+chadian
+chagang province
+chaguanas
+chahar
+chaharmahal and bakhtiari province
+chai nat
+chaiyaphum
+chakradharpur
+chakwal
+chalatenango department
+chaldia
+chaman
+chamdo
+champagne-ardenne
+champasak province
+champdani
+chandannagar
+chandigarh
+chandler
+changchun
+changde
+changhua
+changhua city
+changhua county
+changsha
+changwon
+changzhi
+changzhou
+chanthaburi
+chaophraya surasak
+chaoyang
+chaozhou
+chapeco
+chapecó
+charallave
+chari-baguirmi region
+charleston
+charlotte
+charlotte parish
+charsadda
+charsianon
+chatham-kent
+chattanooga
+chattogram division
+chau doc
+chau đoc
+cheboksary
+chechen
+chechnya
+chekiang
+chelmsford
+cheltenham
+chelyabinsk oblast
+chemnitz
+chengde
+chengdu
+chennai
+chenzhou
+cheonan
+cheongju
+cherkasy
+cherkasy oblast
+cherkessk
+chernigov viceroyalty
+chernihiv
+chernihiv oblast
+chernihiv voivodeship
+chernivtsi
+chernivtsi oblast
+cherson
+chesapeake
+chetumal
+chewa
+chełm land
+chełm voivodeship
+chełmno voivodeship
+chha-siaⁿ-chng
+chhattisgarh
+chhattisgarhi
+chhâ-siâⁿ-chng
+chiang mai
+chiang rai
+chiapas
+chiayi city
+chiayi county
+chiba
+chiba prefecture
+chicago
+chiclayo
+chiesanuova
+chifeng
+chigasaki
+chihuahua
+chihuahua city
+chikuma prefecture
+chikushino
+chile
+chilean
+chililabombwe
+chillan
+chillán
+chilpancingo de los bravo
+chimaltenango department
+chimborazo province
+chimbote
+chimbu province
+chimoio
+chin state
+china pr
+chinandega department
+chinchay suyu
+chinese
+chinese republic
+chinese taipei
+chingola
+chiniot
+chiquimula department
+chirchiq
+chiriqui province
+chiriquí province
+chishtian
+chisinau
+chisinau county
+chisinau municipality
+chita
+chittagong
+chittagonian
+chittoor
+chittorgarh
+chizhou
+chișinău
+chișinău county
+chișinău municipality
+chlef
+chlef province
+cho lon
+chobe district
+choco department
+chocó department
+chofu
+choiseul province
+choiseul quarter
+cholon
+choluteca department
+chon buri
+chongjin
+chongju
+chongqing
+chongzuo
+chontales department
+chorzow
+chorzów
+choson
+chowmuhani
+christ church
+christchurch
+christmas island
+chuanbian
+chuanbian circuit
+chubut province
+chukha district
+chukotka autonomous district
+chula vista
+chumphon
+chuncheon
+chunghwa minkuo
+chunghwa minkwo
+chungju
+chuong thien
+chuquisaca department
+chureki county
+chureki town
+chuuk
+chuvashia
+chuy region
+chuzhou
+châu đốc
+chōfu
+chūreki county
+chūreki town
+chương thiện
+chợ lớn
+ciamis sundanese
+cianjur
+cibinong
+cibitoke province
+cibla municipality
+cibyrrhaeot
+ciechanow land
+ciechanow voivodeship
+ciechanów land
+ciechanów voivodeship
+ciego de avila
+ciego de avila province
+ciego de ávila
+ciego de ávila province
+cienfuegos
+cienfuegos province
+cilegon
+cimahi
+cimislia district
+cimișlia district
+cincinnati
+cipolletti
+cirebon
+cirmen sanjak
+cisplatina province
+citta del vaticano
+città del vaticano
+city municipality of celje
+city municipality of koper
+city municipality of kranj
+city municipality of krsko
+city municipality of krško
+city municipality of velenje
+city of belgrade
+city of cape town
+city of francistown
+city of san marino
+city of valencia
+city of westminster
+ciuc county
+ciudad acuna
+ciudad acuña
+ciudad bolivar
+ciudad bolívar
+ciudad de la costa
+ciudad del carmen
+ciudad del este
+ciudad guayana
+ciudad juarez
+ciudad juárez
+ciudad madero
+ciudad obregon
+ciudad obregón
+ciudad ojeda
+cizre
+clarendon parish
+clarksville
+clearwater
+clermont-ferrand
+cleveland
+cluj county
+cluj-napoca
+co-operative republic of guyana
+coahuila
+coahuila y tejas
+cochabamba
+cochabamba department
+cocle province
+coclé province
+codo
+codó
+coimbatore
+coimbra
+cojedes
+colatina
+colchester
+colima
+colina
+collasuyo
+college station
+collines department
+cologne
+colombia
+colombian
+colombiá
+colombo
+colon city
+colon department
+colon province
+colonia department
+colorado
+colorado springs
+columbia
+columbus
+colón city
+colón department
+colón province
+comarca of rome
+comayagua
+comayagua department
+comitan de dominguez
+comitán de domínguez
+commewijne district
+commonwealth of australia
+commonwealth of dominica
+commonwealth of jamaica
+commonwealth of poland
+commonwealth of the bahamas
+communist china
+community of madrid
+comodoro rivadavia
+comoe district
+comoran
+comorans
+comorian
+comorians
+comoros
+comoé district
+comrat
+conakry
+conakry region
+concepcion
+concepcion department
+concepción
+concepción department
+concord
+concordia
+confoederatio helvetica
+congo
+congo republic
+congo swahili
+congo-brazzaville
+congo-oubangui department
+congolese
+connecticut
+conselheiro lafaiete
+constanta
+constanta county
+constantine
+constantine province
+constanța
+constanța county
+contado di molise
+contagem
+continental asia
+contisuyu
+cook group
+cook islander
+cook islands
+coorg state
+copan department
+copenhagen
+copenhagen county
+copiapo
+copiapó
+copperbelt province
+copán department
+coquimbo
+coquimbo region
+coquitlam
+coral sea islands
+coral springs
+cordillera administrative region
+cordillera department
+cordoba
+cordoba department
+cordoba province
+cork
+corlu
+coro
+corona
+coronel
+coronel fabriciano
+coronie district
+corozal district
+corporacio metropolitana de barcelona
+corporació metropolitana de barcelona
+corpus christi
+corrientes
+corrientes province
+corsica
+cortes department
+cortés department
+corum
+corum province
+costa mesa
+costa rica
+costa rican
+costa ricans
+cotabato
+cotabato city
+cote d'ivoire
+cote d'lvoire
+cote ivoire
+cote-d'ivoire
+cotia
+cotonou
+cotopaxi province
+cottbus district
+cottica
+country of aruba
+country of bengal
+country of curacao
+country of curaçao
+countship erbach
+county of berg
+county of burgundy
+county of dagsburg
+county of diepholz
+county of diez
+county of geneva
+county of greenland
+county of hainaut
+county of hanau
+county of henneberg
+county of hohenzollern-haigerloch
+county of holland
+county of isenburg
+county of luxembourg
+county of mark
+county of metz
+county of nassau
+county of ravensberg
+county of rietberg
+county of sponheim
+county of stolberg
+county of tecklenburg
+county of vianden
+county of waldeck
+county of wurttemberg
+county of württemberg
+county of zeeland
+county pyrmont
+courland viceroyalty
+couva-tabaquite-talparo
+cova lima municipality
+covasna county
+coventry
+covurlui county
+cox's bazar
+craiova
+crato
+crete eyalet
+crete region
+crete theme
+crete vilayet
+criciuma
+criciúma
+criuleni district
+crnomelj municipality
+crnuce district
+croatia
+croatian
+crooked island
+cross river state
+crostolo department
+csongrad-csanad county
+csongrád-csanád county
+ctesiphon
+cua
+cuando cubango province
+cuando province
+cuanza norte province
+cuanza sul province
+cuauhtemoc
+cuauhtémoc
+cuba
+cuban
+cubango province
+cubatao
+cubatão
+cucer-sandevo municipality
+cuddalore
+cuenca
+cuiaba
+cuiabá
+culiacan
+culiacán
+cumana
+cumaná
+cumilla
+cundinamarca department
+cunene province
+curacao
+curacaoan
+curacau
+curacoa
+curazao
+curaçao
+curaçaoan
+curaçoa
+curaςao
+curepipe
+curico
+curicó
+curitiba
+curocao
+cuscatlan department
+cuscatlán department
+cusco
+cusco department
+cusco quechua
+cutch state
+cuttack
+cuu long
+cuvette department
+cuvette-ouest department
+cuyuni-mazaruni
+cyangugu province
+cypriot
+cyprus
+cyprus eyalet
+czech
+czech republic
+czechia
+czersk land
+czestochowa
+czestochowa voivodeship
+częstochowa
+częstochowa voivodeship
+cà mau
+cádiz city
+câmpulung county
+córdoba
+córdoba department
+córdoba province
+côte-d'ivoire
+cúa
+călărași county
+călărași district
+căușeni district
+cēsis municipality
+cıldır eyalet
+cần thơ
+cẩm phả
+cửu long
+da nang
+dabgram
+dabou
+dabrowa gornicza
+dacheng
+dadu
+daegu
+daehan minguk
+daehanminguk
+daejeon
+dagaare
+dagana district
+dagbanli
+dagda municipality
+dagestan
+dairut
+daito-shi
+daitō-shi
+dajabon province
+dajabón province
+dakahlia governorate
+dakar
+dakhani
+dakhanī
+dakhla
+dakhla-oued ed-dahab
+dakhlet nouadhibou
+dalarna county
+dalian
+dallas
+dalmatia
+daly city
+damanhur
+damascus
+damascus eyalet
+damascus governorate
+damascus sanjak
+damaturu
+dambovita county
+damietta
+damietta governorate
+dammam
+danane
+danané
+danao
+dandong
+dane
+danemark
+danes
+dangjin
+dania
+danilovgrad municipality
+danish
+danish commonwealth
+danish realm
+danmark
+danmarkar riki
+danmarkar ríki
+danmarkip naalagaaffik
+danmarks rige
+danube vilayet
+danzhou
+daoukro
+daqing
+dar el salam
+dar es salaam
+dar es salaam region
+daraa
+daraa governorate
+dari
+darien province
+darién province
+darjeeling
+darkhan-uul province
+darmstadt
+darwin
+dashkasan district
+daska
+dasmarinas
+dasmariñas
+dasoguz
+dasoguz region
+datong
+daugavpils
+daugavpils municipality
+daule
+dauphin quarter
+daura
+davao city
+davao del norte
+davao region
+davenport
+dawei
+dawlat al-bahrain
+dawuzhuang
+daykundi province
+dayton
+dazhou
+daşoguz
+daşoguz region
+debar municipality
+debar sanjak
+debarca municipality
+debrecen
+debub region
+decentralized administration of attica
+decentralized administration of crete
+dehradun
+deir al-balah governorate
+deir ez-zor
+deir ez-zor governorate
+dekese territory
+delaware
+delcevo municipality
+delf department
+delft
+delhi
+delmas
+delta
+delta amacuro
+delta state
+delvine district
+delvine sanjak
+delvinë district
+delčevo municipality
+demba territory
+demerara-mahaica
+demir hisar municipality
+demir kapija municipality
+democratic republic of congo
+democratic republic of timor-leste
+denguele district
+denguélé district
+denigomodu district
+denizli
+denizli metropolitan municipality
+denizli province
+denmark
+denmark proper
+dennery quarter
+denpasar
+denton
+denver
+deo town
+deoghar
+department of corozal
+department of el carmen
+department of panama
+depok
+dera ghazi khan
+dera ismail khan
+derbent
+derby
+derna district
+dersim sanjak
+des moines
+desouk
+dessie
+detroit
+devoll district
+deyang
+dezful
+dezhou
+dhaalu atoll
+dhahran
+dhaka
+dhaka division
+dhale governorate
+dhamar
+dhamar governorate
+dhangadhi
+dharan
+dharashiv
+dhi qar governorate
+dhofar governorate
+dholuo
+dhule
+dhundari
+diadema
+diana region
+dibaya territory
+diber district
+dibra county
+dibrugarh
+dibër district
+diego martin regional corporation
+diekirch district
+diffa region
+digos
+dijon
+dikhil region
+dili
+dili municipality
+dilolo territory
+dimbelenge territory
+dimitrovgrad
+dinaburg provisional military governorate
+dinagat islands
+dinajpur
+dindigul
+dingxi
+dinka
+dioila region
+dioula
+diourbel
+diourbel region
+dipolog
+dire dawa
+dispur
+district of columbia
+district of keewatin
+distrito do funchal
+distrito nacional
+divaniye sanjak
+divinopolis
+divinópolis
+divo
+diyala governorate
+diyarbakır
+diyarbakır metropolitan municipality
+diyarbakır province
+diyarbekir eyalet
+diyarbekir sanjak
+diyarbekir vilayet
+djanet province
+djazair
+djazaïr
+djelfa
+djelfa province
+djibloho
+djibouti
+djibouti region
+djiboutian
+djolu territory
+djoro
+djoue-lefini department
+djoué-léfini department
+djugu territory
+djôrô
+dnipro
+dnipropetrovsk oblast
+dobele municipality
+dobrich
+dodoma
+dodoma region
+dogbo-tota
+dogri
+dogubayazıt
+doha
+dojran municipality
+dokogai
+dolisie
+dolj county
+dolneni municipality
+dolz
+dolž
+domagnano
+domari
+dominica
+dominican
+dominican republic
+dominicana
+dominion of new zealand
+dommel department
+domrep
+don soviet republic
+doncaster
+donduseni district
+dondușeni district
+donetsk
+donetsk oblast
+donetsk people's republic
+donga department
+dongguan
+dongying
+dordrecht
+dornod province
+dornogovi province
+dorohoi county
+dorpat voivodeship
+dortmund
+dorud
+dosso region
+douala
+douentza region
+douliou city
+douma
+dourados
+down under
+downey
+doğubayazıt
+dpr korea
+dr congo
+draa-tafilalet
+drama sanjak
+dravlje
+drenthe
+dresden
+dresden district
+drochia district
+drohiczyn land
+drottningholm and svartsjo county
+drottningholm and svartsjö county
+drougoubiteias
+drska
+drugovo municipality
+druskininkai municipality
+drâa-tafilalet
+duarte province
+dubai
+dubasari county
+dubasari district
+dublin
+dublin city
+dubrovnik-neretva county
+dubăsari county
+dubăsari district
+duchy of antioch
+duchy of austria
+duchy of berg
+duchy of brabant
+duchy of carinthia
+duchy of cleves
+duchy of gifhorn
+duchy of guelders
+duchy of holstein
+duchy of julich
+duchy of jülich
+duchy of limburg
+duchy of luxembourg
+duchy of pomerania
+duchy of rome
+duchy of saxe-altenburg
+duchy of saxe-eisenach
+duchy of saxe-gotha-altenburg
+duchy of saxe-hildburghausen
+duchy of saxe-meiningen
+duchy of saxe-weimar
+duchy of saxe-weimar-eisenach
+duchy of westphalia
+duchy of wurttemberg
+duchy of württemberg
+duekoue
+duhok
+duhok governorate
+duisburg
+dulkadir eyalet
+dum dum
+dumai
+dunaujvaros
+dunaújváros
+dundaga municipality
+dundee
+dundgovi province
+dundo
+dunedin
+dungu territory
+duque de caxias
+duran
+durango
+durazno department
+durban
+durbe municipality
+durg
+durgapur
+durham
+durostor
+durres
+durres county
+durres district
+durres sanjak
+durrës
+durrës county
+durrës district
+durán
+dushanbe
+dusseldorf
+dutch
+dutch cultural community
+dutch guiana
+dutch language area
+dutse
+duzce
+duzce province
+duékoué
+dyrrhachium
+dzayer
+dâmbovița county
+düsseldorf
+düzce
+düzce province
+dąbrowa górnicza
+east
+east azarbaijan province
+east berbice-corentyne
+east berlin
+east bohemian region
+east central state
+east darfur
+east grand bahama
+east java
+east kalimantan
+east kazakhstan region
+east london
+east new britain province
+east nusa tenggara
+east punjab
+east sepik province
+east siberia governorate-general
+east timor
+east timorese
+eastbourne
+eastern cape
+eastern denmark
+eastern development region
+eastern division
+eastern dzongdey
+eastern equatoria
+eastern highlands province
+eastern hongshuihe zhuang
+eastern lakes state
+eastern min
+eastern nile state
+eastern province
+eastern region
+eastern republic of uruguay
+eastern samar
+eastern slovakia
+eastern tamang
+eastern uusimaa
+eastern visayas
+ebetsu
+ebina
+ebonyi state
+echigo prefecture
+ecuador
+ecuadoran
+ecuadorian
+edfu
+edinburgh
+edinet county
+edinet district
+edineț county
+edineț district
+edirne
+edirne province
+edmonton
+edo
+edo state
+edremit
+eesti vabariik
+efik
+eger
+eger eyalet
+egypt
+egypt eyalet
+egyptian
+egyptian arabic
+egyptian district
+ehime prefecture
+eindhoven
+ejido
+ekibastuz
+ekiti state
+el alto
+el bayadh province
+el jadida
+el kantara province
+el limon
+el limón
+el m'ghair province
+el mahalla el kubra
+el meniaa province
+el monte
+el oro province
+el oued
+el oued province
+el paraiso department
+el paraíso department
+el paso
+el progreso department
+el quseyya
+el rosario de soapire
+el salvador
+el seibo province
+el tarf province
+el tigre
+el-obeid
+elazıg
+elazıg province
+elazığ
+elazığ province
+elbasan county
+elbasan district
+elbasan sanjak
+elblag
+elblag voivodeship
+elbląg
+elbląg voivodeship
+elche
+eldoret
+electorate of bavaria
+electorate of cologne
+electorate of hanover
+electorate of hesse
+electorate of saxony
+electorate of trier
+electorate of wurttemberg
+electorate of württemberg
+electricity areas in sweden
+elektrenai municipality
+elektrėnai municipality
+elgeyo-marakwet county
+elias pina province
+elis
+elista
+elk grove
+ellada
+ellice islands
+eluru
+elías piña province
+emaswati
+embera-wounaan comarca
+emberá-wounaan comarca
+embu county
+embu das artes
+emilia-romagna
+emilian
+emirate of abu dhabi
+emirate of ajman
+emirate of al qawasim
+emirate of dubai
+emirate of fujairah
+emirate of lengeh
+emirate of sharjah
+emirates
+emirati
+emiri
+emirian
+empire of russia
+ems department
+encamp
+encarnacion
+encarnación
+enga province
+engels
+england
+english
+engure municipality
+ennedi region
+ennedi-est
+ennedi-ouest
+enschede
+ensenada
+ensui town
+entre rios province
+entre ríos province
+enugu
+enugu state
+epirus region
+equateur
+equatoguinean
+equatorial guinea
+equatorial guinean
+erbil
+erbil governorate
+erd
+erdenet
+erechim
+eregli
+ereğli
+erfurt
+erfurt district
+erfurt state
+ergani
+ergli municipality
+eritrea
+eritrean
+erlangen
+ermera municipality
+erode
+erongo region
+ertra
+ertrā
+erzincan
+erzincan province
+erzurum
+erzurum eyalet
+erzurum metropolitan municipality
+erzurum province
+erzurum vilayet
+esashi prefecture
+escaldes-engordany
+eschen
+escondido
+escuintla
+escuintla department
+eskilstunahus county
+eskisehir
+eskisehir metropolitan municipality
+eskisehir province
+eskişehir
+eskişehir metropolitan municipality
+eskişehir province
+eslamshahr
+esmeraldas
+esmeraldas province
+esna
+espaillat province
+espanol
+español
+esperanto
+espirito santo
+espirito santo province
+espoo
+espírito santo
+espírito santo province
+essen
+essequibo islands-west demerara
+estado de occidente
+esteli department
+estelí department
+estland
+estonia
+estonian
+estuaire province
+eswatini
+esztergom
+etah
+ethekwini metropolitan municipality
+ethiopia
+ethiopian
+euboea sanjak
+eunapolis
+eunápolis
+eurafrasia
+europe
+european
+european continent
+european peninsula
+evansville
+everett
+evora
+ewa district
+ewe
+exakomias
+exeter
+extremadura
+exuma
+eyalet of aidin
+eyalet of anatolia
+ezeiza
+ezhou
+fa'asaleleaga
+faafu atoll
+faetano
+fagaras county
+fairfield
+faisalabad
+faiyum
+faiyum governorate
+faizabad
+fakarava
+falciu county
+falcon
+falcón
+falesti district
+falkland islands
+fallujah
+famagusta district
+fangak state
+fangatau
+fangchenggang
+fante
+far eastern viceroyalty
+far north
+faradje territory
+farah province
+faranah region
+fargo
+faridabad
+faridpur
+faro
+farooqabad
+farrukhabad
+fars province
+farwaniya governorate
+faryab province
+fasa
+fashoda state
+fatick
+fatu-hiva
+fayetteville
+fazenda rio grande
+faʻaʻa
+faʻaʻā
+federal capital territory
+federal district
+federal republic of germany
+federal republic of nigeria
+federal republic of somalia
+federal territory of malaysia
+federated states of micronesia
+federation of malaysia
+federative republic of brazil
+fejer county
+fejér county
+fengtian
+feni
+fergana
+fergana region
+ferizaj
+ferizaj district
+ferkessedougou
+ferkessédougou
+fernando de noronha territory
+ferrara
+ferraz de vasconcelos
+fes-meknes
+feshi territory
+fez
+fianarantsoa province
+fief of viborg
+fier county
+fier district
+fiji
+fiji ganarajya
+fijian
+fijī
+fijī gaṇarājya
+filipina
+filipino
+fingal
+finland
+finn
+finnia
+finnish
+finnmark
+fiorentino
+first republic of poland
+fitovinany
+fizi territory
+flacq district
+flemish community
+flemish region
+flevoland
+florence
+florencia
+florencio varela
+flores department
+floresti district
+florești district
+florianopolis
+florianópolis
+florida
+florida department
+floridablanca
+foggia
+fon
+fontana
+forest
+forli
+forlì
+formosa
+formosa province
+fort collins
+fort portal
+fort wayne
+fort worth
+fort-hercule
+foshan
+foz do iguacu
+foz do iguaçu
+franca
+france
+franceville
+franche-comte
+franche-comté
+francisco morato
+francisco morazan department
+francisco morazán department
+franco da rocha
+frankfurt
+frederiksberg
+frederiksborg county
+free china
+free city of colmar
+free city of haguenau
+free city of kaysersberg
+free city of landau
+free city of mainz
+free city of munster
+free city of obernai
+free city of riga
+free city of rosheim
+free city of seltz
+free city of turckheim
+free city of wissembourg
+free state
+free state of waldeck
+free territory of trieste
+freeport
+freetown
+freiburg im breisgau
+fremont
+french
+french community
+french guiana
+french language area
+french polynesia
+french republic
+fresno
+friendly islands
+friesland
+friesland department
+frisco
+friuli venezia giulia
+fuchien
+fuchu
+fuchu prefecture
+fuchū
+fuchū prefecture
+fuji
+fujian
+fujian-taiwan province
+fujieda
+fujimi
+fujimino
+fujinomiya
+fujisawa
+fukaya
+fukien
+fukui
+fukui prefecture
+fukuoka
+fukuoka prefecture
+fukushima
+fukushima prefecture
+fukuyama
+fula
+fullerton
+funabashi
+funafuti
+funen county
+furth
+further austria
+fushun
+fuxin
+fuyang
+fuzhou
+fuzuli district
+fyr macedonia
+fès-meknès
+fürth
+făgăraș county
+fălciu county
+fălești district
+gaafu alif atoll
+gaafu dhaalu atoll
+gabela
+gabes governorate
+gabiadji
+gabon
+gabonese
+gabonese republic
+gaborone
+gabrje
+gabrovo
+gabuuti
+gabès governorate
+gadabay district
+gafsa governorate
+gaga'emauga
+gaga'ifomauga
+gagauzia
+gagnoa
+gagra district
+gainesville
+galapagos province
+galati
+galati county
+galați
+galați county
+gali district
+galicia
+galician
+gallipoli sanjak
+galway city
+galápagos province
+gambela region
+gambia
+gambian
+gambier
+gamo-gofa-dawro
+gampaha
+gamprin
+gan chinese
+gandajika territory
+gandaki province
+gandhinagar
+gangneung
+gangtok
+gangwon province
+ganja
+gannaar
+gansu
+ganzhou
+gao region
+gaozhou
+gapan
+garanhuns
+garden city
+garden grove
+garff
+garhwali
+garissa county
+garkalne municipality
+garland
+garm vilayat
+garo
+garoua
+gasa district
+gash-barka region
+gatineau
+gauteng
+gavleborg county
+gaya
+gaza city
+gaza governorate
+gaza province
+gaza sanjak
+gazakh district
+gazi baba municipality
+gaziantep
+gaziantep metropolitan municipality
+gaziantep province
+gazipur
+gbarpolu county
+gbudwe state
+gdansk
+gdansk voivodeship
+gdańsk
+gdańsk voivodeship
+gdynia
+geelong
+gegharkunik province
+geita
+geita region
+gelderland
+gelsenkirchen
+gemen
+gemena territory
+gemlik
+general roca
+general santos
+general trias
+geneva
+gengenbach abbey
+genoa
+geoje
+george
+george town
+georgetown
+georgia
+georgian
+gera district
+german
+german language area
+german-speaking community
+germanic theme
+germany
+getafe
+gevgelija municipality
+gezira
+ghadames district
+ghana
+ghanaian
+ghanaian pidgin english
+ghanzi district
+gharbia governorate
+ghardaia
+ghardaia province
+ghardaïa province
+gharyan
+gharyan district
+ghat district
+ghaziabad
+ghazipur
+ghazni
+ghazni province
+ghent
+ghor province
+ghorahi
+ghoriwala
+ghotki
+gia lai
+gia đinh
+gia định
+gibraltar
+gifu
+gifu prefecture
+gikongoro province
+gikuyu
+gilaki
+gilan province
+gilbert islands
+gilgit
+gilgit-baltistan
+gimcheon
+gimhae
+gimpo
+gingoog
+giordania
+girankai
+giresun
+giresun province
+girga
+girona
+gisborne district
+gisenyi province
+gitarama province
+gitega
+gitega province
+giugliano in campania
+giurgiu county
+giza
+giza governorate
+gjakova district
+gjilan district
+gjirokaster county
+gjirokaster district
+gjirokastër county
+gjirokastër district
+glacis
+glasgow
+glendale
+glenfaba
+gliwice
+glodeni district
+gloucester
+gnaviyani atoll
+gniezno voivodeship
+go cong
+goa
+goan konkani
+gobustan district
+godavarikhani
+godhra
+godoy cruz
+gogrial state
+goh-djiboua district
+goiania
+goias
+goias province
+goiás
+goiás province
+goiânia
+gojo prefecture
+gojra
+gojō prefecture
+gok state
+gokarneshwor
+goketsu village
+golcuk
+gold coast
+golestan province
+golmud
+golovec district
+golta
+goma
+gombe state
+gomel
+gomel region
+gomez palacio
+gonaives
+gonaïves
+gonbad-e kavus
+gondar
+gondi
+gondia
+gongju
+gongola state
+gongyi
+gongzhuling
+gonzalez catan
+gonzález catán
+gorakhpur
+goranboy district
+gorce petrov municipality
+gorgan
+gorgol
+gorj county
+gorkhaland
+gorno-badakhshan autonomous region
+gorno-badakhshan vilayat
+gorontalo
+gorzow voivodeship
+gorzow wielkopolski
+gorzów voivodeship
+gorzów wielkopolski
+gostivar municipality
+gothenburg
+gothenburg and bohus county
+gotland county
+gotna vas
+gottingen
+goulmou
+gouvernement du burundi
+governador valadares
+govi-altai province
+govisumber province
+govisümber province
+goyang
+goychay district
+goygol district
+gqeberha
+gracias a dios department
+gradsko municipality
+gramsh district
+granada department
+grand bassa county
+grand cape mount county
+grand cay
+grand duchy of baden
+grand duchy of finland
+grand duchy of frankfurt
+grand duchy of hesse
+grand duchy of luxembourg
+grand duchy of oldenburg
+grand est
+grand gedeh county
+grand kru county
+grand port district
+grand prairie
+grand rapids
+grand'anse
+grand'anse mahe
+grand'anse mahé
+grand'anse praslin
+grand-bassam
+grand-zattry
+grande comore
+granma province
+gravatai
+gravataí
+graz
+great britain
+great parish of baranja
+great parish of bilogora
+great parish of cetina
+great parish of dubrava
+great parish of gora
+great parish of hum
+great parish of krbava-psat
+great parish of lasva-glaz
+great parish of lašva-glaž
+great parish of livac-zapolje
+great parish of modrus
+great parish of modruš
+great parish of pokupje
+great parish of prigorje
+great parish of sana-luka
+great parish of usora-soli
+great parish of vinodol-podgorje
+great parish of vrhbosna
+great parish of vuka
+great parish of zagorje
+greater accra region
+greater banjul area
+greater buenos aires
+greater mexico city
+greater noida
+greater poland voivodeship
+greater rio de janeiro
+greater sudbury
+greece
+greek
+greek cypriot state
+greek republic
+green turtle cay
+greensboro
+gregorio de laferrere
+grenada
+grenadian
+grenadines parish
+grenoble
+gresham
+grevenmacher district
+gripsholm county
+grobina municipality
+grobiņa municipality
+groningen
+gros islet quarter
+grouville
+grozny
+guacara
+guadalajara
+guadalcanal province
+guadalupe
+guadeloupe
+guainia department
+guainía department
+guaira department
+guairá department
+gualeguaychu
+gualeguaychú
+guam
+guanacaste province
+guanajuato
+guanare
+guang'an
+guangdong
+guangxi
+guangyuan
+guangzhou
+guangzhou direct-controlled municipality
+guantanamo
+guantanamo province
+guantánamo
+guantánamo province
+guapore territory
+guaporé territory
+guarani
+guarapari
+guarapuava
+guaratingueta
+guaratinguetá
+guarda
+guarenas
+guarico
+guaruja
+guarujá
+guarulhos
+guasdualito
+guatemala
+guatemala city
+guatemala department
+guatemalan
+guatire
+guaviare department
+guayana esequiba state
+guayaquil
+guayas province
+guba district
+gubadly district
+gudauta district
+gueckedougou
+guelma province
+guelmim
+guelmim-oued noun
+guelph
+guera region
+guerrero
+gugark
+guidimakha
+guigang
+guiglo
+guihulngan
+guilin
+guimaras
+guinea
+guinea-bissau
+guinea-bissauan
+guinea-conakry
+guinean
+guiping
+guiping county
+guiriko
+guiyang
+guizhou
+gujar khan
+gujarat
+gujarati
+gujranwala
+gujrat
+gulbene municipality
+gulf province
+gulripsh district
+gulu city
+gumi
+gumushane province
+gun
+guna yala
+gungu territory
+gunma prefecture
+gunpo
+gunsan
+guntur
+gunungsitoli
+gurgaon
+guri
+guria
+gurjistan eyalet
+gusau
+gusinje municipality
+guwahati
+guyana
+guyanese
+guyuan
+guárico
+guéckédougou
+guéra region
+gwalior
+gwangju
+gwangmyeong
+gwangyang
+gweru
+gyeonggi province
+gyeongju
+gyeongsan
+gyochi village
+gyor
+gyor-moson-sopron county
+gyumri
+győr
+győr-moson-sopron county
+gànnaar
+gävleborg county
+gò công
+gómez palacio
+gôh-djiboua district
+gölcük
+göttingen
+gümüşhane province
+ha bac
+ha giang
+ha nam
+ha nam ninh
+ha son binh
+ha tay
+ha tien province
+ha tinh
+ha đong
+ha'il
+ha-erh-pin
+haa alif atoll
+haa dhaalu atoll
+haa district
+haarlem
+habesh eyalet
+habikino
+habra
+habsburg monarchy
+hachinohe
+hachioji-shi
+hachiōji-shi
+hadano
+hadejia
+hadhramaut governorate
+hadhrami arabic
+hadjer-lamis
+hadrut province
+haeju
+hafar al-batin
+hafizabad
+hagen
+hai duong
+hai hung
+hai-khau village
+haidong
+haifa
+haifa district
+haikou
+hainan
+hainanese
+haiphong
+haiti
+haitian
+haitian creole
+haitian republic
+hajdu-bihar county
+hajdú-bihar county
+hajigabul district
+hajjah governorate
+hakka chinese
+hakkari province
+hakkari vilayet
+hakkâri province
+hakodate
+hakodate prefecture
+hakusan
+hakusasho
+hakusashō
+halabja governorate
+haldia
+halicz land
+halisahar
+halland county
+halle district
+halmstad county
+hama
+hama governorate
+hama sanjak
+hamad town
+hamada prefecture
+hamadan
+hamadan province
+hamamatsu
+hamamatsu prefecture
+hamburg
+hamhung
+hami
+hamilton
+hamm
+hampton
+han-k'ou
+hanam
+hanau-munzenberg
+hanau-münzenberg
+hancheng
+handa
+handan
+handwara
+hangchow
+hanguk
+hangzhou
+hanoi
+hanoi province
+hanover
+hanover parish
+hanumangarh
+hanzhong
+hao
+harar
+harare
+harare province
+harari region
+harbin
+harbour island
+hardap region
+hargeisa
+harghita county
+harju county
+harnosand county
+harran sanjak
+hartford
+haryana
+haryanvi
+has district
+hasakah
+hasakah governorate
+hashemite kingdom of jordan
+haskovo
+haskovo oblast
+hassan
+hassaniya arabic
+hat yai
+hatay metropolitan municipality
+hatay province
+hato mayor province
+hatohobei
+hatsukaichi
+hau giang
+hau nghia province
+hausa
+haut-katanga province
+haut-lomami province
+haut-mbomou prefecture
+haut-ogooue province
+haut-ogooué province
+haut-po department
+haut-pô department
+haut-uele
+haute matsiatra
+haute-kotto prefecture
+hauts-de-france
+havana
+havana province
+hawaasa
+hawaii
+hawalli
+hawke's bay region
+hayastan
+hayastani hanrapetut'yun
+hayti
+hayward
+hazaragi
+hazaribagh
+haʻapai district
+heart of south america
+hebei
+hebi
+hebrew
+hebron
+hebron governorate
+hechi
+hedmark
+hefei
+hegang
+heidelberg
+heihe
+heilbronn
+heilongjiang
+heilungkiang
+heirin-shou
+heito district
+heito-gai
+heitō district
+heitō-gai
+hejaz vilayet
+hela province
+hellas
+hellenic republic
+helmand province
+helsingborg
+helsingborg county
+helsinki
+helwan
+henan
+henan jiangbei province
+henderson
+hengshui
+hengyang
+heraklion
+herat
+herat province
+herceg novi municipality
+heredia province
+hermanas mirabal province
+hermosillo
+herne
+heroica matamoros
+heroica nogales
+herrera province
+herrschaft homburg
+hervey islands
+herzegovina eyalet
+herzegovina sanjak
+herzegovina vilayet
+herzegovinian
+hesse
+heves county
+hewanorra
+hexi province
+heyuan
+heze
+hezhou
+hhohho region
+hialeah
+hidalgo
+higashihiroshima
+higashikurume
+higashimurayama
+higashiomi-shi
+higashiosaka-shi
+higashiōmi-shi
+higashiōsaka-shi
+high point
+highland papua
+higuey
+higüey
+hiiu county
+hikone
+hikueru
+hiligaynon
+hillah
+himachal pradesh
+himeji
+hincesti district
+hindi
+hindko
+hindoostan
+hindustan
+hindustani
+hino
+hirakata
+hiratsuka
+hirosaki
+hiroshima
+hiroshima prefecture
+hisar
+hishult county
+hita prefecture
+hitachi
+hitachinaka
+hitiaa o te ra
+hiva-oa
+hizam al akhdar district
+hmong
+ho
+ho chi minh city
+hoa binh
+hobart
+hodh ech chargui
+hodh el gharbi
+hodmezovasarhely
+hoeryong
+hofu-shi
+hohhot
+hohnstein
+hoi an
+hoi quoc
+hoihow
+hoima
+hokkaido
+hokkogai
+hokkōgai
+hokuto
+hokutou syo
+hokutou syō
+holguin
+holguin province
+holguín province
+holland
+holland department
+hollywood
+holon
+holy see
+homa bay county
+homs
+homs governorate
+homs sanjak
+honan
+honbo prefecture
+honduran
+honduran republic
+honduras
+hong kong
+honolulu
+hope town
+hopeh
+hordaland
+horin district
+horlivka
+hormozgan province
+horta
+hortolandia
+hortolândia
+hotei village
+hotin county
+house of reuss-schleiz
+houston
+howland island
+hpa-an
+hradec kralove region
+hradec králové region
+hrastnik municipality
+hrodna
+hrodna region
+hsi-an
+hsinchu city
+hsinchu county
+hsingan
+huacho
+huahine
+huai'an
+huaibei
+huaihua
+huainan
+hualien county
+huambo
+huambo province
+huancavelica department
+huancayo
+huanggang
+huangshan
+huangshi
+huanuco department
+huaphan
+huaraz
+hub
+hubei
+hudavendigar eyalet
+hudavendigar vilayet
+huddersfield
+hudiksvall county
+hue
+huehuetenango
+huehuetenango department
+hugli-chuchura
+huguang
+huichon
+huila department
+huila province
+huizhou
+huizhou chinese
+hujujan sanjak
+huludao
+hulunbuir
+hunan
+hunchun
+hunedoara county
+hung hoa province
+hung yen
+hungarian
+hungary
+huntington beach
+huntsville
+hupeh
+hurghada
+huzhou
+huíla province
+huế
+hwanghae
+hwaseong
+hyderabad
+hyesan
+hyogo prefecture
+hyōgo prefecture
+hà bắc
+hà giang
+hà nam
+hà nam ninh
+hà sơn bình
+hà tiên province
+hà tây
+hà tĩnh
+hà đông
+hái-kháu village
+härnösand county
+hîncești district
+hòa bình
+hódmezővásárhely
+hınıs
+hōfu-shi
+hōrin district
+hūaphan
+hưng hóa province
+hưng yên
+hải dương
+hải hưng
+hậu giang
+hậu nghĩa province
+hồi quốc
+hội an
+i-kiribati
+ialomita county
+ialomița county
+ialoveni district
+iapan
+iapon
+iasi
+iasi county
+iași
+iași county
+ibadan
+ibague
+ibagué
+iban
+ibaraki
+ibaraki prefecture
+ibarra
+ibb
+ibb governorate
+iberia
+ibirite
+ibirité
+ica
+ica department
+icel sanjak
+iceland
+icelandic republic
+ichalkaranji
+icheon
+ichihara
+ichikawa
+ichikawa prefecture
+ichil sanjak
+ichinomiya
+ichinoseki
+icolo e bengo province
+ida-viru county
+idaho
+idanre
+idiofa territory
+idjwi territory
+idku
+idlib
+idlib governorate
+iecava municipality
+ifugao
+ig municipality
+igala
+igarassu
+igbo
+igdır
+igdır province
+ignalina district municipality
+iguacu territory
+iguaçu territory
+ihorombe
+iizuka
+ijuw district
+ikeda
+ikegami sho
+ikegami shō
+ikeja
+ikela territory
+ikere
+ikoma
+ikot ekpene
+iksan
+ikskile municipality
+ikuno prefecture
+ikšķile municipality
+ilam
+ilam province
+ile ife
+ile perseverance i
+ile perseverance ii
+ile-de-france
+ilebo territory
+ilesa
+ilfov county
+ilheus
+ilhéus
+iligan
+ilinden municipality
+illinois
+illizi province
+ilocano
+ilocos norte
+ilocos region
+ilocos sur
+iloilo city
+ilorin
+ilukste municipality
+ilūkste municipality
+imabari
+imatong state
+imbabura province
+imereti
+imishli district
+imo state
+imperatriz
+imperial abbey of wissembourg
+imperial city of dinkelsbuhl
+imperial city of dinkelsbühl
+imperial city of regensburg
+imperial city of rothenburg
+imperial city of schweinfurt
+imperial city of wetzlar
+imperial iran
+imperial russia
+imperial state of iran
+imphal
+in guezzam province
+in salah province
+ina prefecture
+inage-ku
+inagua
+inazawa
+inba prefecture
+incheon
+inchiri
+incukalns municipality
+indaiatuba
+independence
+independencia
+independent state of samoa
+india
+indian
+indiana
+indianapolis
+indonesia
+indonesian
+indore
+indostan
+indramayu
+inebahti sanjak
+inegol
+inflanty voivodeship
+ingende territory
+inglewood
+ingolstadt
+ingushetia
+inhambane province
+inner mongolia
+innlandet
+innsbruck
+inongo territory
+inowrocław voivodeship
+inrin
+insular india
+insular region
+intibuca department
+intibucá department
+inukami prefecture
+inzai
+inčukalns municipality
+ioannina eyalet
+ioannina sanjak
+ioannina vilayet
+ionian islands region
+iowa
+ipatinga
+ipiales
+ipoh
+ipokia
+ipswich
+iquique
+iquitos
+iran
+iranian
+iranian persian
+irapuato
+iraq
+iraqi
+iraqi arabic
+irbid
+irbid governorate
+ireland
+irenopolis
+iriga
+iringa
+iringa region
+irish
+irish republic
+iritriya
+iritriyā
+irkutsk
+irkutsk governorate-general
+irkutsk oblast
+irkutsk viceroyalty
+iruma
+iruma prefecture
+irumu
+irvine
+irving
+isabel province
+isabela
+isahaya
+isan
+isawa prefecture
+ise
+isehara
+isenburg-wachtersbach
+isenburg-wächtersbach
+isesaki
+iseyin
+isfahan
+isfahan province
+ishikawa prefecture
+ishinomaki
+ishinomaki prefecture
+ishizuchi prefecture
+isidro casanova
+isiolo county
+iskenderun
+isla de la juventud
+islamabad
+islamabad capital territory
+islamic republic of iran
+islamic republic of mauritania
+islamic republic of pakistan
+island of aruba
+island of dominica
+island territory of curacao
+island territory of curaçao
+ismail county
+ismailia
+ismailia governorate
+ismayilli district
+isparta
+isparta province
+israel
+israeli
+israelis
+issia
+issyk-kul region
+istanbul
+istanbul eyalet
+istanbul metropolitan municipality
+istanbul province
+istanbul vilayet
+istria county
+itabira
+itaborai
+itaboraí
+itabuna
+itaguai
+itaguaí
+itaituba
+itajai
+itajaí
+italian
+italian republic
+italy
+itami
+itapecerica da serra
+itaperuna
+itapetininga
+itapevi
+itapipoca
+itapua department
+itapúa department
+itaquaquecetuba
+itasy
+itatiba
+itu
+ituiutaba
+itumbiara
+ituri province
+ituzaingo
+ituzaingó
+ivano-frankivsk
+ivano-frankivsk oblast
+ivanovo oblast
+ivoirian
+ivorian
+ivory coast
+iwahana prefecture
+iwai prefecture
+iwaki
+iwakuni
+iwasaki prefecture
+iwata
+iwate prefecture
+iyonola
+izabal department
+izeh
+izhevsk
+izmir
+izmir metropolitan municipality
+izmir province
+izmit
+izumi
+izumo
+izvor municipality
+izvornik sanjak
+izyaslav viceroyalty
+iğdır
+iğdır province
+i̇negöl
+i̇skenderun
+i̇zmir
+i̇zmir metropolitan municipality
+i̇zmir province
+i̇zmit
+i̇çel sanjak
+jabal al akhdar
+jabal al gharbi district
+jabalpur
+jablanica district
+jaboatao dos guararapes
+jaboatão dos guararapes
+jabrayil district
+jabuuti
+jacarei
+jacareí
+jackson
+jacobabad
+jaen
+jafara
+jagdalpur
+jahrom
+jaipur
+jakarta
+jalal-abad region
+jalalabad
+jalandhar
+jalapa
+jalapa department
+jalgaon
+jalilabad district
+jalingo
+jalisco
+jalna
+jalpaiguri
+jamaica
+jamaican
+jamaican patois
+jamalpur
+jambi
+jambyl region
+jammu
+jammu and kashmir
+jamnagar
+jamshedpur
+jamtland county
+jan mayen
+jandira
+japan
+japanese
+jaragua do sul
+jaraguá do sul
+jaramana
+jaranwala
+jarle county
+jarse
+jarva county
+jarvis island
+jarše
+jashore
+jasz-nagykun-szolnok county
+jau
+jaunjelgava municipality
+jaunpiebalga municipality
+jaunpils municipality
+jaunpur
+javanese
+jayapura
+jaén
+jaú
+jecheon
+jeddah
+jegunovce municipality
+jehol
+jeju
+jeju province
+jekabpils
+jekabpils municipality
+jelenia gora voivodeship
+jelenia góra voivodeship
+jelgava
+jelgava municipality
+jena
+jendouba governorate
+jenin governorate
+jeongeup
+jeonju
+jeonnam-gwangju
+jequie
+jequié
+jerash governorate
+jericho governorate
+jerusalem
+jerusalem district
+jerusalem sanjak
+jervis bay territory
+jewish autonomous oblast
+jhang
+jhansi
+jharkhand
+jhelum
+jhenaidah
+ji province
+ji'an
+ji-parana
+ji-paraná
+jiamusi
+jiangmen
+jiangnan
+jiangsu
+jiangxi
+jiangzhe province
+jiaozhi province
+jiaozuo
+jiaxing
+jiayuguan city
+jibuti
+jieyang
+jigawa state
+jijel province
+jijiga
+jilin
+jilin city
+jimma
+jin
+jinan
+jinchang
+jincheng
+jing province
+jingdezhen
+jingmen
+jingzhou
+jinhua
+jining
+jinja
+jinju
+jinotega department
+jinzhong
+jinzhou
+jisr ash-shughur
+jiujiang
+jiuquan
+jiwaka province
+jixi
+jiyuan
+jizan
+jizzakh
+jizzakh region
+joao pessoa
+jodhpur
+joetsu-shi
+jogeva county
+johannesburg
+johnston atoll
+johor
+johor bahru
+joinville
+joliet
+jonava district municipality
+jonglei
+joniskis district municipality
+joniškis district municipality
+jonkoping and kronoberg county
+jonkoping county
+jordan
+jordanian
+jos
+jounieh
+jowzjan province
+joão pessoa
+juazeiro
+juazeiro do norte
+juba
+jubail
+jubek state
+judea and samaria area
+jufra
+juiz de fora
+jujuy province
+julfa district
+juliaca
+junagadh
+jundiai
+jundiaí
+junin department
+junín department
+jurbarkas district municipality
+jurmala
+jutiapa department
+juzur al-qamar
+juzur al-qumur
+jyvaskyla
+jyväskylä
+jász-nagykun-szolnok county
+jämtland county
+järle county
+järva county
+jõgeva county
+jönköping and kronoberg county
+jönköping county
+jēkabpils
+jēkabpils municipality
+jībūtī
+jōetsu-shi
+jūrmala
+kaafu atoll
+kabalo
+kabambare territory
+kabankalan
+kabardian
+kabardino-balkaria
+kabare territory
+kabeya-kamwanga territory
+kabin buri
+kabinda
+kabinda territory
+kabiye
+kabongo territory
+kabul
+kabul province
+kabwe
+kabyle
+kachin state
+kadapa
+kadiogo
+kadirli
+kadoma
+kaduna
+kaduna state
+kadıkoy
+kadıköy
+kaechon
+kaei village
+kaesoun
+kafa
+kaffa eyalet
+kaffa sanjak
+kaffrine
+kafr el-dawwar
+kafr el-sheikh
+kafr el-sheikh governorate
+kagawa prefecture
+kagera region
+kaghizman sanjak
+kagi-gai
+kagi-gun
+kagoshima
+kagoshima prefecture
+kahama
+kahemba territory
+kahramanmaras
+kahramanmaras metropolitan municipality
+kahramanmaras province
+kahramanmaraş
+kahramanmaraş metropolitan municipality
+kahramanmaraş province
+kaifeng
+kailo territory
+kainuu
+kairouan governorate
+kaiserslautern
+kaisiadorys district municipality
+kaizan gun
+kaišiadorys district municipality
+kajiado county
+kakamega county
+kakamigahara
+kakegawa
+kakheti
+kakinada
+kakogawa
+kakuda prefecture
+kalasin
+kalbajar district
+kalehe
+kalemie
+kalemie territory
+kaliakair
+kaliningrad
+kaliningrad oblast
+kalisz department
+kalisz voivodeship
+kalmar county
+kalmykia
+kaloudion
+kaluga
+kaluga oblast
+kaluga viceroyalty
+kalvarija municipality
+kalyani
+kam
+kamagaya
+kamakura
+kamalia
+kamarhati
+kamba
+kambodzha
+kamboja
+kamchatka krai
+kamensk-uralsky
+kamiji territory
+kamina territory
+kamiyama prefecture
+kamonia territory
+kampala
+kamphaeng phet
+kampong cham
+kampong cham province
+kampong chhnang province
+kampong speu province
+kampong thom province
+kampot province
+kampuchea
+kamsar
+kamyanske
+kamyshin
+kanagawa prefecture
+kananga
+kanazawa
+kanchanaburi
+kanchipuram
+kanchosiyou
+kanchrapara
+kanchōsiyou
+kandahar
+kandahar province
+kandal province
+kandava municipality
+kandensho
+kandenshō
+kandhkot
+kandy
+kanem region
+kangar union
+kangarli district
+kanggye
+kangwon province
+kanije eyalet
+kankan region
+kannada
+kano
+kano state
+kanpur
+kansas
+kansas city
+kanta-hame
+kanta-häme
+kanuri
+kanyama territory
+kaohsiung
+kaohsiung city
+kaohsiung county
+kaolack
+kapampangan
+kapanga territory
+kapisa province
+kapoeta state
+kaposvar
+kaposvár
+kapurthala
+kara region
+karabisianoi
+karabuk
+karabuk province
+karabük
+karabük province
+karachay-cherkessia
+karachi
+karadeniz eregli
+karadeniz ereğli
+karafuto prefecture
+karaganda
+karaganda region
+karai-karai
+karaikudi
+karak governorate
+karakalpakstan
+karakopru
+karaköprü
+karaman
+karaman eyalet
+karaman province
+karamay
+karas region
+karatsu
+karay-a
+karbala
+karbala governorate
+karbinci municipality
+kardzhali
+karelia
+karelo-finnish soviet socialist republic
+karen district
+karenic
+karesi sanjak
+karesi vilayet
+karimnagar
+kariya
+karl-marx-stadt district
+karli-ili sanjak
+karlovac county
+karlovarsky kraj
+karlovarský kraj
+karlovy vary region
+karlsruhe
+karnali province
+karnataka
+karpos municipality
+karpoš municipality
+kars eyalet
+kars province
+kars sanjak
+kars-i maras sanjak
+kars-i maraş sanjak
+karsava municipality
+kartepe
+karuzi province
+kasai
+kasai province
+kasai-central
+kasai-occidental
+kasai-oriental
+kasama
+kasamatsu prefecture
+kasangulu territory
+kasaï
+kasaï-central
+kasaï-occidental
+kasaï-oriental
+kasenga territory
+kashan
+kashatagh province
+kashgar
+kashihara
+kashiwa
+kashiwazaki prefecture
+kashmar
+kashmir sultanate
+kashmiri
+kasiotidos
+kasongo lunda territory
+kasongo territory
+kaspiysk
+kassala
+kassel
+kasserine governorate
+kastamonu
+kastamonu eyalet
+kastamonu province
+kastamonu vilayet
+kastelholms lan
+kastelholms län
+kastorias
+kasuga
+kasugai
+kasukabe
+kasulu
+kasur
+katako-kombe territory
+katanda territory
+katavi region
+kathmandu
+katni
+katowice
+katowice urban area
+katowice voivodeship
+katowickie voivodeship
+katsina
+katsina state
+katsushika prefecture
+kaufbeuren
+kaunas
+kaunas city municipality
+kaunas district municipality
+kavadarci municipality
+kavaje district
+kavajë district
+kavango east region
+kavango region
+kavango west region
+kawachi prefecture
+kawagoe
+kawaguchi
+kawanishi
+kawasaki
+kaya
+kayah state
+kayangel
+kayanza province
+kayes region
+kayin state
+kayseri
+kayseri metropolitan municipality
+kayseri province
+kazakh
+kazakhstan
+kazakhstani
+kazan
+kazan vicegerency
+kazlu ruda municipality
+kazlų rūda municipality
+kazo
+kazumba territory
+kebbi state
+kebili governorate
+kebumen
+kechran sanjak
+kecskemet
+kecskemét
+kedah
+kedainiai district municipality
+kediri
+kedougou region
+keelung
+kef governorate
+kegums municipality
+keishu village
+keishū village
+kekava municipality
+kelantan
+kelantan-pattani malay
+kelme district municipality
+kelmė district municipality
+kelowna
+kemerovo
+kemerovo oblast
+kemo prefecture
+kendari
+kenema
+kenge territory
+kenitra
+kenkaisho
+kenkaishō
+kentucky
+kenya
+kenyan
+kep province
+kepanjen
+kerala
+kerbela sanjak
+kerch
+keren
+kericho county
+kerkuk sanjak
+kerkük sanjak
+kerman
+kerman province
+kermanshah
+kermanshah province
+keserwan-jbeil governorate
+keur massar nord
+keur massar sud
+kexholm county
+kfar saba
+kgalagadi district
+kgatleng district
+khabarovsk
+khabarovsk krai
+khachmaz district
+khairpur
+khakassia
+khalkha mongolian
+khamis mushait
+khammouane province
+khams tibetan
+khan yunis
+khan yunis governorate
+khandeshi
+khanewal
+khanh hoa
+khankendi
+khanty-mansi autonomous okrug
+kharagpur
+khardah
+kharkiv
+kharkiv oblast
+kharkov viceroyalty
+khartoum
+khartoum north
+khasavyurt
+khatlon province
+khemisset
+khenchela
+khenchela province
+khenifra
+khentii province
+kherson
+kherson oblast
+khiva
+khizi district
+khmelnytskyi
+khmelnytskyi oblast
+khmer
+khobar
+khojaly district
+khojavend district
+khomas region
+khomeyni shahr
+khon kaen
+khorasan province
+khorramabad
+khost
+khost province
+khovd province
+khovsgol province
+khoy
+khu khan
+khujand
+khulna
+khulna division
+khushab
+khuzdar
+khuzestan province
+khyber pakhtunkhwa
+khyrdalan
+khánh hòa
+khövsgöl province
+kiambu county
+kiangsi
+kiangsu
+kibombo
+kicevo municipality
+kidal region
+kidapawan
+kie-ntem
+kiel
+kielce
+kielce voivodeship
+kien an
+kien giang
+kien hoa
+kien phong
+kien tuong
+kiev viceroyalty
+kiga
+kigali
+kigali-rural province
+kigoma
+kigoma region
+kikwit
+kilifi
+kilifi county
+kilimanjaro region
+kilis
+kilis province
+killeen
+kimchaek
+kimvula territory
+kindia region
+kindu
+kingdom of bahrain
+kingdom of bavaria
+kingdom of belgium
+kingdom of bhutan
+kingdom of cambodia
+kingdom of denmark
+kingdom of eswatini
+kingdom of italy
+kingdom of jordan
+kingdom of lesotho
+kingdom of morocco
+kingdom of netherlands
+kingdom of norway
+kingdom of romania
+kingdom of rumania
+kingdom of saudi arabia
+kingdom of siam
+kingdom of spain
+kingdom of swaziland
+kingdom of sweden
+kingdom of thailand
+kingdom of the netherlands
+kingdom of tonga
+kingman reef
+kingston
+kingston parish
+kingston upon hull
+kinmen county
+kinshasa
+kinyarwanda
+kinzan sho
+kinzan shō
+kipushi territory
+kira town
+kirghiz soviet socialist republic
+kiri territory
+kiribati
+kirin
+kirinyaga county
+kirishima
+kirkuk
+kirkuk governorate
+kirov
+kirov oblast
+kirovohrad oblast
+kirun district
+kirundi
+kirundo province
+kisangani
+kisarazu
+kisarazu prefecture
+kisela voda municipality
+kishiwada
+kishoreganj
+kisii
+kisii county
+kismayo
+kisumu
+kisumu county
+kiswahili
+kita region
+kitakyushu
+kitakyūshū
+kitale
+kitami
+kitchener
+kittitian
+kitts and nevis
+kitui county
+kitwe
+kivu province
+kizansho
+kizanshō
+kiên giang
+kičevo municipality
+kiến an
+kiến hòa
+kiến phong
+kiến tường
+klagenfurt am worthersee
+klagenfurt am wörthersee
+klaipeda
+klaipeda city municipality
+klaipeda district municipality
+klaipėda
+klaipėda district municipality
+klang
+knoxville
+kobarid municipality
+kobe
+koblenz
+kobu-gun
+kocaeli
+kocaeli province
+kocaeli sanjak
+kocani municipality
+koceni municipality
+kochi
+kochi prefecture
+kochi-shi
+kocēni municipality
+kodaira
+koforidua
+kofu
+koga
+koganei
+kogi state
+koguchi village
+koh kong province
+kohat
+kohgiluyeh and boyer-ahmad province
+koknese municipality
+kokosiyou
+kokshetau
+kokubunji
+kokura prefecture
+kolasin municipality
+kolašin municipality
+kolda
+kole territory
+kolkata
+kollam
+koloneia
+kolonje district
+kolonjë district
+kolubara district
+kolwezi
+kom ombo
+komaki
+komarom-esztergom county
+komatsu
+komen municipality
+komenda municipality
+komi republic
+komotini sanjak
+komárom-esztergom county
+kon tum
+konce municipality
+kongeriget danmark
+kongo
+kongo central
+kongolo territory
+kongsriki danmarkar
+kongsríki danmarkar
+kongu tamil
+konin voivodeship
+konkani
+konosu-shi
+konya
+konya metropolitan municipality
+konya province
+konya vilayet
+konče municipality
+kopeysk
+koprivnica-krizevci county
+koprivnica-križevci county
+korce county
+korce district
+korchayk
+korea republic
+korean
+korfez
+korhogo
+koriyama
+koronadal
+koror
+koryo-sho
+koryusyo
+korçë county
+korçë district
+kosal state movement
+koshi province
+koshigaya
+koshun gai
+koshun-gun
+kosice
+kosice region
+kosova
+kosovan
+kosovar
+kosovo
+kosovo and metohija
+kosovo district
+kosovo vilayet
+kosovo-pomoravlje district
+kosovska mitrovica district
+kosrae state
+kostanay
+kostanay region
+kostel municipality
+kosti
+kostroma oblast
+kostroma viceroyalty
+kosuge prefecture
+koszalin
+koszalin voivodeship
+kot addu
+kot radha kishan
+kota
+kota bharu
+kota kinabalu
+kota madiun
+kota magelang
+kota malang
+kota mojokerto
+kota pasuruan
+kota probolinggo
+kota semarang
+kotamobagu
+kotayk province
+kotobuki village
+kotor municipality
+kotri
+koudougou
+kouffo department
+kouilou department
+koulikoro region
+kousseri
+kousséri
+koutiala region
+kozan
+kozhikode
+kočani municipality
+košice
+košice region
+krabi
+kragujevac
+krakow
+krakow department
+krakow land
+krakow voivodeship
+kraków
+kraków department
+kraków land
+kraków voivodeship
+kramatorsk
+krapina-zagorje county
+kraslava municipality
+krasnodar
+krasnodar krai
+krasnoyarsk
+krasnoyarsk krai
+kratie province
+kratié province
+kratovo municipality
+krefeld
+kremenchuk
+kretinga municipality
+krimulda municipality
+krishnanagar
+kristianstad county
+kriva palanka municipality
+krivogastani municipality
+krivogaštani municipality
+krolewiec voivodeship
+kronoberg county
+kropyvnytskyi
+krosno voivodeship
+kruje district
+krujë district
+krusevac sanjak
+krusevo municipality
+krustpils municipality
+kruševac sanjak
+kruševo municipality
+kryvyi rih
+królewiec voivodeship
+krāslava municipality
+ksar chellala province
+ksar el boukhari province
+ksar el-kebir
+kuala lumpur
+kuala terengganu
+kuang-chou
+kuangtung
+kuantan
+kuching
+kucove district
+kufa
+kufra district
+kuilse
+kuilsé
+kujalleq
+kukes county
+kukes district
+kuki
+kukës county
+kukës district
+kuldiga municipality
+kuldīga municipality
+kulim
+kulob
+kulyab vilayat
+kumagaya
+kumagaya prefecture
+kumamoto
+kumamoto prefecture
+kumanovo municipality
+kumaoni
+kumasi
+kumba
+kumihama prefecture
+kunar province
+kunduz
+kunduz province
+kunene region
+kunming
+kunngeqarfik danmarki
+kuopio
+kupang
+kupiskis district municipality
+kupiškis district municipality
+kurashiki
+kurashiki prefecture
+kurbin district
+kurdamir district
+kurdish language
+kurdistan eyalet
+kurdistan province
+kure
+kurgan
+kurgan oblast
+kurgan-tyube vilayat
+kurmanji
+kurmuk
+kurnool
+kursk
+kursk oblast
+kursk viceroyalty
+kurukh
+kurume
+kusadası
+kusatsu
+kushiro
+kushtia
+kusong
+kut
+kutahya
+kutahya province
+kutaisi
+kutu territory
+kuwait
+kuwait city
+kuwait governorate
+kuwaiti
+kuwana
+kuyavian-pomeranian voivodeship
+kuçovë district
+kuşadası
+kvemo kartli
+kwale
+kwale county
+kwamouth territory
+kwango province
+kwangsi
+kwantung leased territory
+kwara state
+kwazulu-natal
+kweichow
+kweneng district
+kwilu
+kyiv
+kyiv city state administration
+kyiv oblast
+kyiv voivodship
+kymenlaakso
+kymmenegard and nyslott county
+kymmenegard county
+kymmenegård and nyslott county
+kymmenegård county
+kyoto
+kyoto prefecture
+kyrenia district
+kyrgyz
+kyrgyz republic
+kyrgyzstan
+kyrgyzstani
+kyustendil
+kyustendil sanjak
+kyzylorda
+kyzylorda region
+kémo prefecture
+körfez
+kütahya
+kütahya province
+kārsava municipality
+kėdainiai district municipality
+kīrun district
+kırklareli province
+kırsehir
+kırsehir province
+kırıkkale
+kırıkkale province
+kırşehir
+kırşehir province
+kızıltepe
+kōchi prefecture
+kōchi-shi
+kōkosiyou
+kōnosu-shi
+kōriyama
+kōryō-shō
+kōryūsyō
+kōshun gai
+kōshun-gun
+l'hospitalet de llobregat
+la altagracia province
+la asuncion
+la asunción
+la banda
+la condamine
+la guaira
+la guaira state
+la guajira department
+la libertad
+la libertad department
+la massana
+la mosquitia department
+la pampa province
+la paz
+la paz department
+la plata
+la rioja
+la rioja province
+la riviere anglaise
+la rivière anglaise
+la romana
+la serena
+la tablada
+la union
+la union department
+la unión department
+la vega
+la vega province
+la victoria
+laamu atoll
+laane county
+laane-viru county
+laayoune
+laayoune-sakia el hamra
+labe
+labe region
+laborie quarter
+labunista municipality
+labé
+labé region
+lac region
+lachin district
+lacs district
+ladakh
+lae
+lafayette
+lafia
+lagarto
+lages
+laghman province
+laghouat province
+lagos
+lagos state
+lagunes district
+lahad datu
+lahij governorate
+laholm county
+lahore
+lahsa eyalet
+lahti
+lai chau
+lai châu
+laibin
+laikipia county
+laiyang
+lajjun sanjak
+lakeland
+lakes
+lakewood
+laki
+lakota
+lakshadweep
+lalitpur
+lam đong
+lambadi
+lambayeque department
+lamego
+lamitan
+lamone department
+lampa
+lampang
+lamphun
+lampung
+lamu county
+lan chang
+lanao del norte
+lanao del sur
+lancaster
+land of bengal
+land of moravia
+land of rising sun
+land of thousand lakes
+landgraviate of brabant
+landgraviate of hesse-darmstadt
+landgraviate of hesse-homburg
+landgraviate of hesse-kassel
+landgraviate of hesse-rotenburg
+landgraviate of lower alsace
+landgraviate of thuringia
+landgraviate of upper alsace
+landskrona county
+landvogtei ortenau
+lang son
+lang suan
+langfang
+lango
+langsa
+languedoc-roussillon
+lankaran
+lankaran district
+lanna
+lansing
+lanus
+lanzhou
+lanús
+lao
+lao cai
+lao pdr
+lao people's democratic republic
+laoag
+laos
+laotian
+laotians
+laparas
+lapland
+lapu-lapu
+lapusna county
+lara
+larache
+laredo
+lario department
+larissa
+larkana
+larnaca district
+las condes
+las cruces
+las cumbres
+las pinas
+las piñas
+las tunas
+las tunas province
+las vegas
+las villas province
+lashio
+lashkar gah
+lasko municipality
+latakia
+latakia governorate
+latakia sanjak
+latina
+latjoor state
+latur
+latveja
+latvejas republika
+latvia
+latvian
+latvian republic
+latvian soviet socialist republic
+latvians
+latvija
+latvijas republika
+lauenburg and butow land
+lauenburg and bütow land
+lauro de freitas
+lausanne
+lautem municipality
+lautém municipality
+laval
+lavalleja department
+lavras
+lazdijai district municipality
+lazio
+laâyoune-sakia el hamra
+laško municipality
+le havre
+le mans
+lebanese
+lebanese republic
+lebanon
+lebap region
+leeds
+lefatshe la botswana
+leganes
+leganés
+legation of bologna
+legation of ferrara
+legation of romagna
+legation of the marche
+legation of umbria
+legation of urbino
+legazpi
+legnica voivodeship
+leicester
+leiden
+leipzig
+leipzig district
+leiria
+leiyang
+lekki
+lekoumou department
+leme
+lempira department
+leningrad oblast
+leon
+leon de los aldama
+leon department
+leova district
+leribe district
+lerik district
+les cayes
+les mamelles
+leshan
+lesotho
+lesser poland voivodeship
+leste province
+leszno voivodeship
+letopolis
+leuven
+levantine arabic
+leverkusen
+levis
+lexington
+lezhe county
+lezhe district
+lezhë county
+lezhë district
+león
+león de los aldama
+león department
+lhasa
+lhaviyani atoll
+lhoka
+lhokseumawe
+lhuntse district
+liang province
+lianyungang
+lianzhou
+liaocheng
+liaoning
+liaopeh
+liaoyang
+liaoyuan
+libenge
+liber
+liberec
+liberec region
+liberecky kraj
+liberecký kraj
+liberia
+liberian
+libertad
+librazhd district
+libreville
+libya
+libyan
+libyan arabic
+lichinga
+liechtenstein
+liechtensteiner
+liege
+lielvarde municipality
+lielvārde municipality
+lienchiang county
+liepaja
+liepāja
+ligao
+ligatne municipality
+liguria
+lijiang
+lika-senj county
+likasi
+likouala department
+lille
+lilongwe
+lim-pende
+lim-pendé
+lima
+lima department
+limassol
+limassol district
+limbazi municipality
+limbaži municipality
+limburg
+limburgish
+limeira
+limerick
+limoges
+limon province
+limpopo
+limón province
+lincang
+lincoln
+lindi region
+line islands
+linfen
+lingala
+linhares
+linjiang
+linkoping
+linköping
+linyi
+linz
+lion city
+lipa
+lipetsk oblast
+lipkovo municipality
+lippe-alverdissen
+liptako
+liquica municipality
+liquiçá municipality
+lira
+lira city
+lisala territory
+lisbon
+lishui
+liswati
+lithuania
+lithuanian
+lithuanian soviet socialist republic
+litoral
+little erdehan sanjak
+little rock
+little russia governorate-general
+littoral
+liupanshui
+liuzhou
+livani municipality
+liverpool
+livingstone
+livorno
+liw land
+liège
+ljubljana
+ljubljana city municipality
+ljutomer municipality
+lmagrib
+lmaġrib
+lobamba
+lobaye prefecture
+lobito
+lodhran
+lodja territory
+loei
+lofa county
+logar province
+logone occidental region
+logone oriental region
+logrono
+logroño
+loja
+loja province
+lokoja
+lol state
+lom sak
+lomami province
+lomas de zamora
+lombard
+lombardy
+lome
+lomela territory
+lomé
+london
+londrina
+long an
+long beach
+long island district
+long khanh
+long khánh
+long xuyen
+long xuyên
+longnan
+longobardia
+longtanzhuang
+longyan
+lopburi
+lordship of echery
+lordship of hanau
+lordship of heinsberg
+lordship of lichtenberg
+lordship of rappoltstein
+lordship of échéry
+lorestan province
+loreto department
+lori province
+lorraine
+los angeles
+los guayos
+los lagos region
+los rios province
+los rios region
+los ríos province
+los ríos region
+los santos province
+los teques
+los ángeles
+loska dolina municipality
+loudi
+louga
+louisiana
+louisville
+lovech
+lovech oblast
+low german
+low saxon
+lowell
+lower austria
+lower hutt
+lower lotharingia
+lower normandy
+lower river division
+lower saxony
+lower silesian voivodeship
+lozovo municipality
+loška dolina municipality
+lqliaa
+lqliâa
+lu'an
+lualaba province
+luanda
+luanda province
+luang namtha
+luang prabang province
+luanshya
+luapula province
+luba-kasai
+lubana municipality
+lubango
+lubao territory
+lubbock
+lubeck
+lubefu territory
+lubelskie voivodeship
+lubero territory
+lublin
+lublin department
+lublin voivodeship
+lubnan
+lubombo region
+lubudi territory
+lubuk linggau
+lubumbashi
+lubusz voivodeship
+lubutu territory
+lubāna municipality
+luc nam
+lucania
+lucknow
+ludhiana
+ludwigshafen
+ludza municipality
+luebo territory
+luena
+lufeng
+luganda
+luhansk
+luhansk oblast
+luhansk people's republic
+luhatahata territory
+luilu territory
+luiza territory
+lukolela
+lukovo municipality
+lukula territory
+luleburgaz
+luliang
+lumbini province
+lunda norte province
+lunda sul province
+lunga lunga
+luoding
+luohe
+luoyang
+luozi territory
+luri
+lusaka
+lusaka province
+lusambo territory
+lushnje district
+lushnjë district
+lutsk
+luxembourg
+luxembourg district
+luxembourgian
+luxembourgish
+luxor
+luxor governorate
+luzhou
+luziania
+luziânia
+lviv
+lviv oblast
+lwow land
+lwow voivodeship
+lwów land
+lwów voivodeship
+lykandos
+lyon
+lào cai
+lâm đồng
+lääne county
+lääne-viru county
+lékoumou department
+lévis
+lübeck
+lüleburgaz
+lüliang
+lăpușna county
+līgatne municipality
+līvāni municipality
+lūang namthā
+lạng sơn
+lục nam
+m'banza-kongo
+m'bour
+m'sila province
+ma'an governorate
+ma'anshan
+ma'arrah sanjak
+maastricht
+mabalacat
+macae
+macapa
+macapá
+macau
+macaé
+macedonia
+macedonia theme
+macedonian
+machakos
+machakos county
+machala
+machida
+machilipatnam
+machiques
+macon
+mactan
+macva district
+madaba governorate
+madagascar
+madang province
+madeira
+madhesh province
+madhya bharat
+madhya pradesh
+madhyamgram
+madimba territory
+madison
+madona municipality
+madras presidency
+madras state
+madre de dios department
+madrid city
+madriz department
+madurai
+madurese
+mae hong son
+maebashi
+maekel region
+mafeteng district
+mafraq governorate
+magadan oblast
+magahi
+magdalena department
+magdeburg
+magdeburg district
+mage
+magelang
+magnitogorsk
+maguindanao
+maguindanao del norte
+maguindanao del sur
+magway region
+magé
+maha sarakham
+mahabubnagar
+mahagi
+mahaica-berbice
+mahajanga province
+maharashtra
+mahdia governorate
+maheshtala
+mahilyow
+mahilyow region
+mahina
+mai'adua
+mai-ndombe province
+maiandrou
+maidan wardak province
+maiduguri
+maijdee
+maine
+mainz
+maipu
+maipú
+mairipora
+mairiporã
+maithili
+majuro atoll
+makamba province
+makanza territory
+makassar
+makedonia
+makedonska kamenica municipality
+makedonski brod municipality
+makemo
+makeni
+makhachkala
+makhuwa
+makiivka
+makira-ulawa province
+makonde
+makueni county
+makurdi
+malabo
+malabon
+malacca
+malaga
+malaga city
+malagascar
+malagaskar
+malagasy
+malaita province
+malakal
+malakwal
+malampa
+malang
+malanje
+malanje province
+malanville
+malatya
+malatya metropolitan municipality
+malatya province
+malatya sanjak
+malawi
+malawian
+malay
+malayalam
+malaybalay
+malayer
+malaysia
+malaysia federation
+malaysian
+malbork voivodeship
+malda
+maldives
+maldivian
+maldonado department
+male
+malegaon
+malemba-nkulu territory
+malesi e madhe district
+mali
+mali slatnik
+malian
+mallakaster district
+mallakastër district
+mallawi
+malmo
+malmohus county
+malmö
+malmöhus county
+malolos
+malpils municipality
+malta
+maltese
+maluku
+malvi
+malé
+malësi e madhe district
+mambasa territory
+mambere
+mambere-kadei
+mambéré
+mambéré-kadéï
+mamlakat al-bahrayn
+mamlakat al-baḥrayn
+mamou region
+mamuju
+mamuret-ul-aziz sanjak
+mamuret-ul-aziz vilayet
+man
+manabi province
+manabí province
+manado
+managua department
+manama
+manatuto municipality
+manaus
+manawatu-whanganui region
+manawatū-whanganui region
+mancherial
+manchester
+manchester parish
+manchuria under yuan rule
+mandailing batak
+mandalay
+mandalay region
+mandaluyong
+mandarin
+mandaue
+mandera county
+mandi bahauddin
+mandinka
+mandoul region
+mandsaur
+mandya
+manfalut
+mangaluru
+mangaung metropolitan municipality
+mangrove cay
+mangystau region
+manica province
+manicaland province
+maniema
+manihi
+manila
+maninka
+manipur
+manisa
+manisa metropolitan municipality
+manisa province
+manitoba
+manizales
+mannheim
+manokwari
+manono
+manouba governorate
+manpo
+mansoura
+manta
+manufahi municipality
+manus province
+manyara region
+manzanillo
+manzhouli
+manzini
+manzini region
+maoming
+maputo
+maputo province
+mar del plata
+mara region
+maraba
+marabá
+maracaibo
+maracanau
+maracanaú
+maracay
+maradi
+maradi region
+maragheh khanate
+maramures county
+maramureș county
+maranguape
+maranhao
+maranhao province
+maranhão
+maranhão province
+maras sanjak
+marathi
+marawi
+march of turin
+march of tuscany
+march of verona
+marche
+mardan
+mardin
+mardin metropolitan municipality
+mardin province
+margibi county
+margilan
+margravate of mantua
+margraviate of austria
+margraviate of baden
+margraviate of baden-baden
+margraviate of baden-durlach
+margraviate of baden-hachberg
+margraviate of brandenburg-kustrin
+margraviate of brandenburg-küstrin
+margraviate of meissen
+margraviate of moravia
+mari el
+maria trinidad sanchez province
+marib governorate
+maribor
+maribor city municipality
+marica
+maricá
+maridi state
+marijampole district municipality
+marijampole municipality
+marijampolė district municipality
+marijampolė municipality
+marikina
+marilia
+maringa
+maringá
+marisobou and morobisdou
+maritime
+marituba
+mariupol
+marivan
+marj district
+markazi province
+markham
+marlborough district
+maroc
+marocco
+maroodi jeeh
+maroua
+marowijne district
+marrakech
+marrakesh-safi
+marsa matruh
+marsabit county
+marshall islands
+marshallese
+martakert province
+martinique
+martuni province
+marugame
+marupe municipality
+marwari
+mary
+mary region
+maryland
+maryland county
+maría trinidad sánchez province
+marília
+masaka
+masally district
+masan
+masaya department
+masbate
+masbate city
+mascara
+mascara province
+maseru
+maseru district
+mashonaland central province
+mashonaland east province
+mashonaland west province
+masi-manimba territory
+masisi territory
+masjed soleyman
+masovian voivodeship
+massachusetts
+massarah
+massiwa ya komori
+masvingo
+masvingo province
+mat district
+matabeleland north province
+matabeleland south province
+matadi
+matagalpa department
+matam
+matanitu tugalala o viti
+matanzas
+matanzas province
+mataram
+matarieh
+mati
+mato grosso
+mato grosso do sul
+mato grosso province
+mato town
+matola
+matruh governorate
+matsubara
+matsudo
+matsue
+matsumoto
+matsusaka
+matsuyama
+maturin
+maturín
+matō town
+maua
+maule region
+maule región
+maupiti
+mauren
+mauretania
+maurice
+mauritania
+mauritanian
+mauritian
+mauritius
+mauá
+mavrovo i rostuse municipality
+mavrovo i rostuše municipality
+mawlamyine
+maxixe
+mayabeque province
+mayaguana district
+mayari
+mayaro-rio claro
+mayarí
+maykop
+mayo-kebbi est region
+mayo-kebbi ouest region
+mayotte
+maysan governorate
+mazandaran province
+mazanderani
+mazar-i-sharif
+mazatlan
+mazatlán
+mazeikiai district municipality
+mazsalaca municipality
+mazyr
+mačva district
+mažeikiai district municipality
+mbale city
+mbandaka
+mbanza-ngungu
+mbarara city
+mbeya
+mbeya region
+mbomou prefecture
+mbuji-mayi
+mcallen
+mckinney
+meagui
+mecklenburg
+mecklenburg-vorpommern
+medan
+medea
+medea province
+medellin
+medellín
+medenine governorate
+medina
+medinipur
+meemu atoll
+meerut
+meganesia
+meghalaya
+mehedinti county
+mehedinți county
+mehsana
+meihekou
+meishan
+meitei
+meizhou
+mekele
+meknes
+melaginon
+melaky
+melbourne
+melekeok
+melilla
+melipilla
+melitenes
+melitopol
+mella department
+memphis
+menabe
+menaka region
+mendoza
+mendoza province
+menemen
+meneng district
+menouf
+menteshe sanjak
+merca
+merecz voivodeship
+merica
+merida
+merkezefendi
+merlo
+mersch district
+mersin
+mersin metropolitan municipality
+mersin province
+mersrags municipality
+meru county
+merwari
+mesa
+mesebrias
+mesopotamia
+mesquita
+mesquite
+messaad province
+messina
+meta
+metro
+metro manila
+metropolis of lyon
+metz
+mewari
+mewati
+mexicali
+mexican
+mexican republic
+mexican united states
+mexicans
+mexico
+mexico city
+meycauayan
+međimurje county
+miabi territory
+miami gardens
+mianwali
+mianyang
+miao
+miaoli county
+michael
+michałow land
+michałów land
+michigan
+michoacan
+michoacán
+micoud quarter
+micronesia
+micronesian
+mid-western development region
+mid-western region
+mid-western state
+middle
+middle pomerania
+middlesbrough
+midi-pyrenees
+midi-pyrénées
+midland
+midlands province
+midway atoll
+midyat
+mie prefecture
+mielnik land
+migori county
+mihama-ku
+mikawa prefecture
+mila province
+milagro
+milan
+milne bay province
+milton keynes
+milwaukee
+mimitsu prefecture
+min buri
+minangkabau
+minas gerais
+minas gerais province
+mincio department
+mingachevir
+mingora
+minh hai
+minh hải
+minna
+minneapolis
+minnesota
+minoh
+minsk
+minsk military governorate
+minsk region
+minsk viceroyalty
+minya
+minya governorate
+mira-bhayandar
+miramar
+miranda
+miravci municipality
+mirdasid dynasty
+mirdite district
+mirditë district
+miri
+mirna municipality
+mirna pec municipality
+mirna peč municipality
+mirpur
+mirpur khas
+misamis occidental
+misato
+mishima
+misiones department
+misiones province
+miskolc
+mislinja municipality
+misr
+mississauga
+mississippi
+missouri
+misurata municipality
+mit ghamr
+mitaka
+mito
+mitrovica district
+mitwaba territory
+mixco
+miyagi prefecture
+miyakonojo
+miyakonojo prefecture
+miyakonojō
+miyakonojō prefecture
+miyazaki
+miyazaki prefecture
+miyazaku prefecture
+mizda
+mizoram
+mizuma prefecture
+mjini magharibi region
+moan-sho
+moana oceania
+mobayi-mbongo
+mobile
+mocambique
+mocamedes
+modena
+modern greek
+modern standard arabic
+modesto
+moers
+moga
+mogadishu
+mogaung
+mogi das cruzes
+mogi guacu
+mogi guaçu
+mogila municipality
+mogilyov viceroyalty
+moglenon
+mohale's hoek district
+mohali
+mohammedia
+moheli
+mohéli
+mojkovac municipality
+mojokerto
+moka district
+mokhotlong district
+mokpo
+mokronog-trebelno municipality
+moldavia
+moldavian
+moldavian soviet socialist republic
+moldova
+moldovan
+moletai district municipality
+molise
+molėtai district municipality
+mombasa
+mombasa county
+mon state
+monacan
+monaco
+monagas
+monastir
+monastir eyalet
+monastir governorate
+monastir vilayet
+monchengladbach
+mondulkiri province
+monegasque
+mong cai
+mongala
+mongar district
+mongol
+mongol state
+mongolia
+mongolian
+mongu
+monkoto
+mono department
+monrovia
+monsenor nouel province
+monseñor nouel province
+mont buxton
+mont fleuri
+montagna department
+montagnes district
+montana
+montana oblast
+monte cristi province
+monte grande
+monte plata province
+montegiardino
+montego bay
+montenegrin
+montenegro
+montenegro sanjak
+montenegro vilayet
+monteria
+montero
+monterrey
+montería
+montes claros
+montevideo
+montevideo department
+montgomery
+montpellier
+montreal
+montserrado county
+montserrat
+monufia governorate
+monywa
+monza
+monégasque
+moore
+moore's island district
+moorea-maiao
+mooré
+mopti region
+moquegua department
+moradabad
+moravian-silesian country
+moravian-silesian region
+moravica district
+morazan department
+morazán department
+mordovia
+morea eyalet
+morelos
+moreno
+moreno valley
+moriguchi
+morioka
+moris
+moritani
+morobe province
+moroccan
+moroccan arabic
+morocco
+morogoro
+morogoro region
+moron
+morona-santiago province
+moscovy
+moscovy or russia
+moscow
+moscow oblast
+moshi
+mosotho
+mossoro
+mossoró
+mostaganem
+mostaganem province
+moste
+mostoles
+mosul
+mosul eyalet
+mosul vilayet
+motihari
+motswana
+moundou
+mount lebanon governorate
+mountain province
+moxico leste
+moxico province
+moxoene
+moyen-chari region
+moyen-ogooue province
+moyen-ogooué province
+mozambican
+mozambique
+moçambique
+moçâmedes
+mpanda
+mpumalanga
+mtskheta-mtianeti
+mtwara
+mtwara region
+muanda territory
+muar
+mubarak al-kabeer governorate
+muchinga province
+mudanjiang
+mufulira
+mugla
+mugla metropolitan municipality
+mugla province
+muhanga
+muharraq governorate
+mukalla
+mukdahan
+mulheim an der ruhr
+mulhouse
+multan
+mumbai
+munchon
+mundari
+munegu
+munger
+munich
+municipality of apace
+municipality of apače
+municipality of beltinci
+municipality of benedikt
+municipality of bled
+municipality of bloke
+municipality of borovnica
+municipality of bovec
+municipality of braslovce
+municipality of braslovče
+municipality of brda
+municipality of brezice
+municipality of brezovica
+municipality of brežice
+municipality of cankova
+municipality of cerknica
+municipality of cerkno
+municipality of cerkvenjak
+municipality of cirkulane
+municipality of crensovci
+municipality of destrnik
+municipality of divaca
+municipality of divača
+municipality of dobje
+municipality of dobrepolje
+municipality of dobrna
+municipality of dobrovnik
+municipality of dolenjske toplice
+municipality of domzale
+municipality of domžale
+municipality of dornava
+municipality of dravograd
+municipality of duplek
+municipality of gorenja vas-poljane
+municipality of gorisnica
+municipality of gorišnica
+municipality of gorje
+municipality of gornja radgona
+municipality of gornji grad
+municipality of gornji petrovci
+municipality of grad
+municipality of grosuplje
+municipality of hajdina
+municipality of hoce-slivnica
+municipality of hodos
+municipality of hodoš
+municipality of horjul
+municipality of hoče-slivnica
+municipality of hrpelje-kozina
+municipality of idrija
+municipality of ilirska bistrica
+municipality of ivancna gorica
+municipality of ivančna gorica
+municipality of izola
+municipality of jesenice
+municipality of jezersko
+municipality of jursinci
+municipality of juršinci
+municipality of kamnik
+municipality of kidricevo
+municipality of kidričevo
+municipality of kobilje
+municipality of kocevje
+municipality of kozje
+municipality of kočevje
+municipality of kranjska gora
+municipality of krizevci
+municipality of križevci
+municipality of kungota
+municipality of kuzma
+municipality of lenart
+municipality of lendava
+municipality of litija
+municipality of ljubno
+municipality of logatec
+municipality of loski potok
+municipality of loški potok
+municipality of luce
+municipality of lukovica
+municipality of luče
+municipality of majsperk
+municipality of majšperk
+municipality of makole
+municipality of markovci
+municipality of medvode
+municipality of menges
+municipality of mengeš
+municipality of metlika
+municipality of mezica
+municipality of mežica
+municipality of moravce
+municipality of moravske toplice
+municipality of moravče
+municipality of mozirje
+municipality of muta
+municipality of naklo
+municipality of nazarje
+municipality of odranci
+municipality of oplotnica
+municipality of osilnica
+municipality of pesnica
+municipality of phnom penh
+municipality of pivka
+municipality of podcetrtek
+municipality of podlehnik
+municipality of podvelka
+municipality of podčetrtek
+municipality of poljcane
+municipality of poljčane
+municipality of polzela
+municipality of postojna
+municipality of prebold
+municipality of preddvor
+municipality of prevalje
+municipality of puconci
+municipality of radenci
+municipality of radovljica
+municipality of razkrizje
+municipality of razkrižje
+municipality of ribnica
+municipality of rogaska slatina
+municipality of rogasovci
+municipality of rogatec
+municipality of rogaška slatina
+municipality of rogašovci
+municipality of salovci
+municipality of semic
+municipality of semič
+municipality of sencur
+municipality of sentilj
+municipality of sentjernej
+municipality of sentrupert
+municipality of sezana
+municipality of sežana
+municipality of skocjan
+municipality of skofja loka
+municipality of skofljica
+municipality of slovenska bistrica
+municipality of smarjeske toplice
+municipality of sodrazica
+municipality of sodražica
+municipality of sostanj
+municipality of starse
+municipality of starše
+municipality of store
+municipality of straza
+municipality of straža
+municipality of sveti tomaz
+municipality of sveti tomaž
+municipality of tabor
+municipality of tisina
+municipality of tišina
+municipality of tolmin
+municipality of trbovlje
+municipality of trnovska vas
+municipality of trzic
+municipality of trzin
+municipality of tržič
+municipality of turnisce
+municipality of turnišče
+municipality of velika polana
+municipality of velike lasce
+municipality of velike lašče
+municipality of verzej
+municipality of veržej
+municipality of videm
+municipality of vipava
+municipality of vitanje
+municipality of vodice
+municipality of vojnik
+municipality of vransko
+municipality of vrhnika
+municipality of vuzenica
+municipality of zalec
+municipality of zavrc
+municipality of zavrč
+municipality of zetale
+municipality of ziri
+municipality of zirovnica
+municipality of zuzemberk
+municipality of črenšovci
+municipality of šalovci
+municipality of šentilj
+municipality of šentjernej
+municipality of šentrupert
+municipality of šenčur
+municipality of škocjan
+municipality of škofja loka
+municipality of škofljica
+municipality of šmarješke toplice
+municipality of šoštanj
+municipality of štore
+municipality of žalec
+municipality of žetale
+municipality of žiri
+municipality of žirovnica
+municipality of žužemberk
+munster
+muntafiq sanjak
+muntinlupa
+muong
+muramvya province
+muranga county
+murcia city
+mures county
+mureș county
+murfreesboro
+muriae
+muriaé
+murica
+muridke
+murino
+muritanya
+murmansk oblast
+murom
+murqub
+murrieta
+murutaane
+murzuq district
+mus
+mus province
+musandam governorate
+musashino
+muscat
+muscat and oman
+muscat governorate
+muscel county
+mushie
+musoma
+musturud
+mutare
+mutasarrifate of jerusalem
+mutshatsha
+mutshatsha territory
+muttrah
+muyinga province
+muzaffarabad
+muzaffargarh
+muzaffarnagar
+muzaffarpur
+muğla
+muğla metropolitan municipality
+muğla province
+muş
+muş province
+mwanza
+mwanza region
+mwaro province
+mweka territory
+mwenga territory
+my tho
+myanma
+myanmar
+myawaddy
+myeik
+myitkyina
+mykolaiv
+mykolaiv oblast
+mylasa and melanoudion
+mymensingh
+mymensingh division
+myodo prefecture
+mysore
+mysore state
+mytishchi
+myōdō prefecture
+mzuzu
+málaga
+málaga city
+méagui
+médéa
+médéa province
+ménaka region
+mérida
+móng cái
+móstoles
+mönchengladbach
+mörön
+møre og romsdal
+mùnegu
+mülheim an der ruhr
+münster
+mālpils municipality
+mārupe municipality
+mērsrags municipality
+mōan-shō
+mỹ tho
+n am
+n america
+n'dalatando
+n'djamena
+n'ko
+naama province
+nabadwip
+nabatieh
+nabatieh governorate
+naberezhnye chelny
+nabeul governorate
+nablus
+nablus governorate
+nablus sanjak
+nacala
+nadiad
+nador
+naftalan
+nagahama
+nagaland
+nagano
+nagano prefecture
+nagaoka
+nagaon
+nagareyama
+nagasaki prefecture
+nagoya
+nagoya prefecture
+nagpur
+nagpuri
+nagqu
+nagykanizsa
+naha
+nahuatl
+naihati
+naija
+naipal
+naipala
+naipál
+naipála
+nairobi
+nairobi city county
+najaf
+najaf governorate
+najafabad
+najran
+nakhchivan
+nakhchivan eyalet
+nakhon champasak
+nakhon nayok
+nakhon pathom
+nakhon phanom
+nakhon ratchasima
+nakhon sawan
+nakhon si thammarat
+nakuru county
+nalut district
+nam đinh
+nam định
+namangan
+namangan region
+namibe province
+namibia
+namibian
+nampo
+nampula
+nampula province
+namur
+namyangju
+nan
+nan'yodo
+nan'yōdō
+nan-ching
+nana-grebizi economic prefecture
+nana-grébizi economic prefecture
+nana-mambere prefecture
+nana-mambéré prefecture
+nanao prefecture
+nanchang
+nanchong
+nancy
+nandi
+nandi county
+nando
+nangarhar province
+nanjing
+nanning
+nanping
+nanshi-sho
+nanshi-shō
+nantong
+nantou county
+nanumanga
+nanumea
+nanyang
+naoero
+naogaon
+naples
+napo province
+napuka
+nara
+nara prefecture
+nara region
+narashino
+narathiwat
+narayanganj
+narino department
+narita
+nariño department
+narke and varmland county
+narmadapuram
+narnaul
+narok county
+narsingdi
+naryn region
+nasarawa state
+nasaud county
+nashik
+nashville
+nasiriyah
+nassau
+nassau-dillenburg
+nassau-siegen
+nasushiobara
+natal
+natal province
+national capital district
+nationalist china
+naukseni municipality
+naukšēni municipality
+nauru
+nauruan
+navarre
+navassa island
+navi mumbai
+navoiy
+navoiy region
+navojoa
+navotas
+nawa
+nawabshah
+naxos sanjak
+nayarit
+naypyidaw
+nazarabad
+nazilli
+nazinon
+ndola
+ne-pel
+neamt county
+neamț county
+neapolitan
+nebraska
+necbal
+nederland
+nederlanden
+neembucu department
+neftchala district
+neftekamsk
+nefteyugansk
+negara brunei darussalam
+negeri sembilan
+negeri sembilan malay
+negombo
+negotino municipality
+negros island region
+negros oriental
+nehpal
+nei-pal
+neijiang
+neiva
+nekbal
+nekpal
+nellore
+nelson region
+nelson-marlborough region
+nemuro prefecture
+nenets autonomous district
+neokastra
+nepaal
+nepal
+nepalese
+nepali
+nepall
+nepaul
+nepál
+nercerri
+nereta municipality
+neringa municipality
+netanya
+netherlands
+neubrandenburg district
+neuquen
+neuquen province
+neuquén
+neuquén province
+neuss
+neutral municipality
+nevada
+nevinnomyssk
+nevis
+nevisian
+nevsehir
+nevsehir province
+nevşehir
+nevşehir province
+new beni suef city
+new borg el arab
+new brunswick
+new cairo
+new caledonia
+new castile
+new delhi
+new hampshire
+new haven
+new holland
+new hollandia
+new ireland province
+new jersey
+new mexico
+new orleans
+new persian
+new south wales
+new taipei city
+new valley governorate
+new york
+new york city
+new york metropolitan area
+new zealand
+new zealander
+newar
+newark
+newcastle
+newcastle upon tyne
+newfoundland and labrador
+newport
+newport news
+neyagawa
+ngamiland
+ngamprah
+ngaoundere
+ngaoundéré
+ngaraard
+ngarchelong
+ngardmau
+ngatpang
+ngchesar
+ngeremlengui
+nghe an
+nghe tinh
+nghia binh
+nghĩa bình
+nghệ an
+nghệ tĩnh
+ngiwal
+ngobe-bugle comarca
+ngola
+ngounie province
+ngounié province
+ngozi province
+ngöbe-buglé comarca
+nha trang
+ni-po-lo
+ni-po-louo
+ni-vanuatu
+niamey
+niamey region
+niangara territory
+niari department
+niassa province
+nibok district
+nica municipality
+nicaragua
+nicaraguan
+nice
+nickerie district
+nicopolis
+nicosia district
+nicosia district south
+niepal
+nigali valley
+nigde
+nigde province
+niger
+niger state
+nigeria
+nigerian
+nigerian fulfulde
+nigerian pidgin
+nigerians
+nigerien
+nihon-koku
+niigata
+niigata prefecture
+niihama
+niihari prefecture
+niikawa prefecture
+niitaka
+niiza
+nikko prefecture
+nikkō prefecture
+nikopol
+nikopolis sanjak
+niksic municipality
+nikšić municipality
+nilopolis
+nilópolis
+nimadi
+nimba
+nimes
+nimruz province
+nineveh governorate
+ningbo
+ningde
+ningsia
+ningxia
+ninh binh
+ninh bình
+ninh thuan
+ninh thuận
+nioro region
+nipal
+nippes
+nippon-koku
+nirayama prefecture
+nis
+nis eyalet
+nis sanjak
+nisava district
+nishapur
+nishinomiya
+nishio
+nishitokyo-shi
+nishitōkyō-shi
+nisporeni district
+nisui village
+niteroi
+niterói
+nitra region
+niuas
+niue
+niuean
+niutao island council
+nizamabad
+nizhnekamsk
+nizhnevartovsk
+nizhny novgorod
+nizhny novgorod oblast
+nizhny novgorod viceroyalty
+nizhny tagil
+nizip
+niğde
+niğde province
+niš
+niš eyalet
+niš sanjak
+nišava district
+njombe region
+nkayi
+nkeni-alima department
+nkongsamba
+nkéni-alima department
+noakhali
+noam
+nobeoka
+noda
+nograd county
+noida
+nong bua lamphu
+nong khai
+nonsan
+nonthaburi
+noonu atoll
+nord
+nord-est
+nord-ouest
+nord-pas-de-calais
+nord-trøndelag
+nordland
+norfolk
+norfolk island
+norman
+normandy
+norrbotten county
+norrland county
+norte de santander department
+norte province
+north
+north abaco
+north aegean region
+north am
+north amer
+north america
+north american continent
+north and central america
+north and south america
+north andros
+north australia
+north azerbaijani
+north backa district
+north banat district
+north bank division
+north barrackpore
+north bačka district
+north brabant
+north carolina
+north central province
+north chungcheong
+north cyprus
+north cyprus turkish republic
+north dakota
+north darfur
+north denmark region
+north dum dum
+north east region
+north eastern province
+north eleuthera
+north gaza governorate
+north governorate
+north gyeongsang
+north hamgyeong
+north hamgyong province
+north holland
+north hwanghae province
+north jeolla
+north jutland county
+north kalimantan
+north karelia
+north kazakhstan region
+north khorasan province
+north kivu
+north kordofan
+north korea
+north korean
+north las vegas
+north levantine arabic
+north macedonia
+north maluku
+north moravia region
+north ostrobothnia
+north pemba region
+north province
+north pyeongan
+north pyongan province
+north rhine-westphalia
+north savo
+north sinai governorate
+north solomons
+north sudan
+north sulawesi
+north sumatra
+north ubangi
+north west
+north west province
+north western province
+north-america
+north-central state
+north-east district
+north-west district
+northeastern region
+northern bahr el ghazal
+northern bohemia
+northern cape
+northern cyprus
+northern district
+northern division
+northern governorate
+northern ireland
+northern khmer
+northern liech state
+northern luri
+northern mariana islands
+northern min
+northern mindanao
+northern ndebele
+northern pashto
+northern province
+northern red sea region
+northern region
+northern samar
+northern sotho
+northern state
+northern territory
+northland region
+northwest
+northwest territories
+northwestern province
+northwestern region
+norwalk
+norway
+norwegian
+norwich
+nossa senhora do socorro
+nottingham
+nouadhibou
+nouakchott
+nouakchott south
+nouakchott west
+nouakchott-nord
+noukou district
+nouvelle-aquitaine
+nova friburgo
+nova hollandia
+nova iguacu
+nova iguaçu
+nova scotia
+nova serrana
+novaci municipality
+novara
+novgorod oblast
+novgorod viceroyalty
+novgorod-seversky viceroyalty
+novi sad
+novo hamburgo
+novo mesto
+novo selo municipality
+novocheboksarsk
+novocherkassk
+novomoskovsk
+novorossiysk
+novorossiysk-bessarabia governorate-general
+novoshakhtinsk
+novosibirsk
+novosibirsk oblast
+novy urengoy
+nowogrodek voivodeship
+nowogródek voivodeship
+nowshera
+nowy sacz voivodeship
+nowy sącz voivodeship
+noyabrsk
+nuble region
+nueva ecija
+nueva esparta
+nueva segovia department
+nueva vizcaya
+nuevo asuncion department
+nuevo asunción department
+nuevo laredo
+nuevo leon
+nuevo leon-coahuila
+nuevo león
+nuevo león-coahuila
+nui
+nukata prefecture
+nuku-hiva
+nukufetau
+nukulaelae
+nukus
+nukutavake
+numazu
+nunavut
+nunkiang
+nuosu
+nuqat al khams district
+nur land
+nuremberg
+nuristan province
+nusaybin
+nyala
+nyamira county
+nyandarua county
+nyanga province
+nyeri county
+nyingchi
+nyiragongo territory
+nyiregyhaza
+nyland and tavastehus county
+nyunzu territory
+nyíregyháza
+nzerekore region
+nzérékoré region
+närke and värmland county
+népaal
+népál
+nîmes
+nógrád county
+năsăud county
+nīca municipality
+o'higgins region
+oakland
+oaxaca
+oberhausen
+obihiro
+obninsk
+obock region
+obuasi
+occidental mindoro
+occitan
+occitania
+oceania
+oceania and australia
+oceanian
+oceanians
+oceanside
+ochamchira district
+ocnita district
+ocnița district
+ocotepeque department
+oda prefecture
+odawara
+oddar meanchey province
+odemis district
+odense
+odesa
+odesa oblast
+odia
+odisha
+odorhei county
+oe-cusse ambeno
+offa
+offenbach am main
+offenburg
+ogaki-shi
+ogbomosho
+oghuz district
+ogooue-ivindo province
+ogooue-lolo province
+ogooue-maritime province
+ogooué-ivindo province
+ogooué-lolo province
+ogooué-maritime province
+ogre
+ogre municipality
+ogun state
+ohangwena region
+ohio
+ohri sanjak
+ohrid municipality
+oita prefecture
+oita-shi
+okara
+okayama
+okayama prefecture
+okayama town
+okazaki
+okene
+okinawa
+okinawa prefecture
+okitama prefecture
+oklahoma
+oklahoma city
+oktyabrsky
+olaine municipality
+olancho department
+oland county
+olathe
+old castile
+old continent
+old royal capital cetinje
+oldenburg
+olinda
+olmaliq
+olomouc
+olomouc region
+olona department
+olonets viceroyalty
+olongapo
+olsztyn
+olsztyn voivodeship
+olt county
+omaha
+omaheke region
+oman
+omani
+ombella-m'poko prefecture
+omdurman
+ome
+omsk
+omsk oblast
+omusati region
+omuta-shi
+ondjiva
+ondo
+ondo state
+ongole
+onitsha
+onojo-shi
+onomichi
+onsong county
+ontario
+opala
+opala territory
+opole
+opole voivodeship
+oporto
+oppland
+opsikion
+optimatoi
+oradea
+oral
+oran
+oran province
+orange
+orange free state province
+orange walk district
+ordino
+ordos city
+ordu
+ordu metropolitan municipality
+ordu province
+ordubad district
+orebro
+orebro county
+oregon
+orellana province
+orenburg
+orenburg and samara governorate-general
+orenburg governorate-general
+orenburg oblast
+orhei
+orhei county
+orhei district
+oriental
+oriental mindoro
+oriental republic of uruguay
+orientale province
+oriente province
+orkhon province
+orlando
+orleans
+orléans
+ormoc
+ormoz municipality
+ormož municipality
+oro province
+oromia region
+oromo
+orsk
+ortahisar
+oruro
+oruro department
+oryol oblast
+oryol viceroyalty
+osaka
+osaka prefecture
+osaki
+osan
+osato-sho
+osh
+osh city
+osh region
+oshana region
+oshawa
+oshikoto region
+oshu
+oshwe
+osijek-baranja county
+oskemen
+oslo
+oslo municipality
+oslomej municipality
+osmaniye
+osmaniye province
+osnabruck
+osnabrück
+osogbo
+osonosho
+osorno
+ostergotland county
+ostmark
+ostrava
+ostrava region
+ostrobothnia
+ostrobothnia county
+ostrołeka voivodeship
+ostrołęka voivodeship
+osun state
+ota-shi
+otago region
+otaru
+oti region
+otjozondjupa region
+otocec
+otočec
+otsu
+otsu prefecture
+ottawa
+ouaddai region
+ouaddaï region
+ouagadougou
+ouahigouya
+ouaka prefecture
+ouargla
+ouargla province
+oubri
+oude ijssel department
+oueme department
+ouest
+ouganda
+ouham prefecture
+ouham-fafa
+ouham-pende prefecture
+ouham-pendé prefecture
+ouidah
+oujda
+oulad teima
+ouled djellal province
+oulu
+oulu province
+oum el bouaghi province
+oume
+oumé
+ourinhos
+outer islands
+ouémé department
+ovalle
+overijssel
+overland park
+oviedo city
+ovorkhangai province
+owerri
+owo
+oxford
+oxnard
+oyama
+oyo
+oyo state
+ozamiz
+ozolnieki municipality
+pa-eul-pou
+pa-le-pou
+pa-lo-pou
+paarl
+pabna
+paco do lumiar
+padang
+padangsidimpuan
+paderborn
+padua
+paea
+pagadian
+pagar alam
+pagegiai municipality
+pagėgiai municipality
+pahang
+pahlavi iran
+pahlavi regime
+pai-pou
+paijat-hame
+pailin province
+paju
+pak kret
+pakistan
+pakistani
+pakpattan
+pakruojis district municipality
+pakse
+paktia province
+paktika province
+palakkad
+palanga city municipality
+palangka raya
+palatinate german
+palatinate-zweibrucken
+palatinate-zweibrücken
+palau
+palauan
+palauli
+palawan
+palembang
+palermo
+palestine
+palestinian
+palhoca
+palhoça
+pali
+palm bay
+palma
+palma soriano
+palmas
+palmdale
+palmyra atoll
+palo negro
+palopo
+palpa
+palpou
+palu
+pamplemousses district
+panabo
+panama
+panama city
+panama oeste province
+panama province
+panamanian
+panamá oeste province
+panamá province
+panaro department
+pando department
+panevezys city municipality
+panevezys district municipality
+panevėžys city municipality
+panevėžys district municipality
+pang-soaⁿ
+pangasinan
+pangi territory
+pangkal pinang
+panihati
+panjin
+panjshir province
+panzhihua
+papal state
+papara
+papeete
+paphlagonia
+paphos district
+papua
+papua new guinea
+papua new guinean
+para
+para district
+para province
+parachinar
+paraguari department
+paraguarí department
+paraguay
+paraguayan
+paraguayan guarani
+paraguayan guaraní
+paraiba
+paraiba province
+paramaribo
+paramaribo district
+parana
+parana province
+paranagua
+paranaguá
+paraná
+paraná province
+parauapebas
+paraíba
+paraíba province
+pardubice region
+parepare
+pargauja municipality
+paris
+paristrion
+parma
+parnaiba
+parnamirim
+parnawa voivodeship
+parnaíba
+parnu county
+paro district
+parwan province
+pará
+pará province
+pasadena
+pasay
+pasco department
+pashto
+pasig
+passo fundo
+passos
+pastaza province
+pasto
+pasuruan
+pasvalys district municipality
+patan
+pathankot
+pathein
+pathum thani
+patiala
+patna
+patnos
+patos
+patos de minas
+patras
+patria del friuli
+pattani
+pattaya
+pattoki
+paulista
+paulo afonso
+pavilosta municipality
+pavlodar
+pavlodar region
+pavlohrad
+payakumbuh
+pays de la loire
+paysandu department
+paysandú department
+paytakaran
+pazardzhik
+paço do lumiar
+paï-pou
+pcinja district
+pearl of africa
+pearland
+pec district
+pecs
+pedernales province
+pedro juan caballero
+peeloo
+pehcevo municipality
+pehčevo municipality
+pei-p'ing
+peja district
+pekalongan
+pekanbaru
+pelabuhan belawan
+peleliu
+pelew
+pelew islands
+pellew
+peloponnese
+peloponnese region
+pelotas
+pemagatshel district
+pematangsiantar
+pemba
+pembroke pines
+penal-debe regional corporation
+penama
+penang
+penghu county
+penjikent vilayat
+pennsylvania
+penza
+penza oblast
+penza viceroyalty
+people's republic of albania
+people's republic of bangladesh
+people's republic of china
+peoria
+peqin district
+perak
+peravia province
+pereira
+pergamino
+peristeri
+perlis
+perm
+perm krai
+perm viceroyalty
+permet district
+pernambuco province
+pernik
+perpignan
+persarmenia
+persian
+perth
+peru
+perugia
+peruvian
+pervouralsk
+pescara
+peshawar
+pest county
+petah tikva
+petaling jaya
+peten department
+peterborough
+petion-ville
+petnjica municipality
+petrolina
+petropavl
+petropolis
+petrovec municipality
+petrozavodsk
+petrzalka
+petrópolis
+petržalka
+petén department
+peć district
+pforzheim
+phan thiet
+phan thiết
+phang nga
+phatthalung
+phayao
+phetchabun
+phetchaburi
+phibun songkhram
+phichit
+philippine
+philippine islands
+philippines
+phitsanulok
+phnom penh
+phoenix
+phoenix islands
+phong dinh
+phongsaly province
+phra nakhon province
+phra nakhon si ayutthaya
+phra pra daeng
+phra tabong province
+phrae
+phu bon
+phu khanh
+phu tho
+phu yen
+phuket
+phuoc long
+phuoc thanh
+phuoc tuy
+phú bổn
+phú thọ
+phước long
+phước thành
+phước tuy
+piacenza
+piaui
+piaui province
+piauí
+piauí province
+pibor administrative area
+picardy
+pichincha province
+piedmont
+piedmontese
+piedras negras
+pikine
+pinar del rio
+pinar del rio province
+pinar del río
+pinar del río province
+pindamonhangaba
+pingdingshan
+pingliang
+pingtung city
+pingtung county
+pingxiang
+pinhais
+pinsk
+piotrkow voivodeship
+piotrków voivodeship
+piracicaba
+pirae
+piraeus
+piran municipality
+piraquara
+pirkanmaa
+pirot district
+pisco
+pitcairn islands
+pitesti
+pitești
+pittsburgh
+piura
+piura department
+piyas sanjak
+piła voivodeship
+plaines wilhems district
+plaisance
+planken
+plano
+plasnica municipality
+plateau department
+plateau state
+plateaux department
+plateaux region
+plav municipality
+plavinas municipality
+pleasant island
+pleiku
+pleven
+pljevlja municipality
+ploiesti
+ploiești
+plovdiv
+plovdiv oblast
+plunge district municipality
+plungė district municipality
+plurinational state of bolivia
+pluzine municipality
+plužine municipality
+plymouth
+plzen
+plzen region
+plzeň
+plzeň region
+po-tau-ke
+poa
+pocheon
+pocos de caldas
+podgorica
+podgorica capital city
+podgrad
+podkarpackie voivodeship
+podlasie voivodeship
+podlaskie voivodeship
+podole voivodeship
+podolia eyalet
+podolia viceroyalty
+podunavlje district
+pogradec district
+pohang
+pohnpei state
+pointe la rue
+pointe-noire
+pointe-noire department
+poitou-charentes
+pojega sanjak
+pokhara
+poko
+poland
+poland-lithuania
+polaskie voivodeship
+polatlı
+polesie voivodeship
+polish
+polish-lithuanian commonwealth
+polje
+polotsk viceroyalty
+poltava
+poltava oblast
+polva county
+pomerania-barth
+pomeranian voivodeship
+pomeroon-supenaam
+pomona
+pomoravlje district
+pompano beach
+ponta delgada
+ponta grossa
+ponta pora territory
+ponta porá territory
+pontianak
+pool department
+popayan
+popayán
+popokabaka territory
+porac
+porlamar
+port glaud
+port harcourt
+port louis
+port louis district
+port moresby
+port of spain
+port region
+port said
+port said governorate
+port sudan
+port-au-prince
+port-de-paix
+port-gentil
+portalegre
+portland
+portland parish
+portmore
+porto
+porto alegre
+porto amboim
+porto seguro
+porto velho
+porto-novo
+portoviejo
+portsmouth
+portugal
+portuguesa
+portuguese
+portuguese republic
+posadas
+posavje
+posof
+potaro-siparuni
+potchefstroom
+potosi
+potosi department
+potosí
+potosí department
+potsdam
+potsdam district
+pouso alegre
+pozega-slavonia county
+poznan
+poznan department
+poznan voivodeship
+poznań
+poznań department
+poznań voivodeship
+poá
+poços de caldas
+požega-slavonia county
+pr china
+prabumulih
+prachin buri
+prachuap khiri khan
+prague
+prahova county
+praia
+praia grande
+praslin quarter
+prathet thai
+prato
+prayagraj
+preah vihear province
+precna
+preili municipality
+preiļi municipality
+presidencia roque saenz pena
+presidencia roque sáenz peña
+presidente hayes department
+presidente prudente
+presov region
+preston
+pretoria
+prey veng province
+prečna
+prešov region
+priamursk governorate-general
+priekule municipality
+priekuli municipality
+priekuļi municipality
+prienai district municipality
+prilep municipality
+primorje-gorski kotar county
+primorsky krai
+prince edward island
+prince-archbishopric of bremen
+prince-archbishopric of salzburg
+prince-bishopric of augsburg
+prince-bishopric of bamberg
+prince-bishopric of basel
+prince-bishopric of brandenburg
+prince-bishopric of brixen
+prince-bishopric of cammin
+prince-bishopric of chur
+prince-bishopric of eichstatt
+prince-bishopric of eichstätt
+prince-bishopric of freising
+prince-bishopric of fulda
+prince-bishopric of geneva
+prince-bishopric of halberstadt
+prince-bishopric of hildesheim
+prince-bishopric of konstanz
+prince-bishopric of lausanne
+prince-bishopric of liege
+prince-bishopric of liège
+prince-bishopric of meissen
+prince-bishopric of merseburg
+prince-bishopric of metz
+prince-bishopric of minden
+prince-bishopric of munster
+prince-bishopric of murbach
+prince-bishopric of münster
+prince-bishopric of naumburg
+prince-bishopric of osnabruck
+prince-bishopric of osnabrück
+prince-bishopric of paderborn
+prince-bishopric of passau
+prince-bishopric of ratzeburg
+prince-bishopric of regensburg
+prince-bishopric of sion
+prince-bishopric of strasbourg
+prince-bishopric of toul
+prince-bishopric of trent
+prince-bishopric of utrecht
+prince-bishopric of verdun
+prince-bishopric of warmia
+prince-bishopric of worms
+prince-bishopric of wrocław
+prince-bishopric of wurzburg
+prince-bishopric of würzburg
+princes town
+principality of andorra
+principality of anhalt-zerbst
+principality of bayreuth
+principality of brunswick-wolfenbuttel
+principality of brunswick-wolfenbüttel
+principality of calenberg
+principality of furstenberg
+principality of fürstenberg
+principality of gottingen
+principality of göttingen
+principality of leiningen
+principality of liechtenstein
+principality of lippe
+principality of luneburg
+principality of lüneburg
+principality of monaco
+principality of nassau-orange-fulda
+principality of orange-nassau
+principality of salm-salm
+principality of schwarzburg-rudolstadt
+principality of waldeck
+principato citra
+principato di monaco
+principato ultra
+principatu de munegu
+principaute de monaco
+principauté de monaco
+prinçipatu de mùnegu
+pristina
+pristina district
+prizren
+prizren district
+prizren sanjak
+prizren vilayet
+probistip municipality
+probištip municipality
+probolinggo
+provence-alpes-cote d'azur
+provence-alpes-côte d'azur
+provence-cote d'azur-corse
+provence-côte d'azur-corse
+providence
+province of basilicata
+province of caltanissetta
+province of capitanata
+province of catania
+province of east punjab
+province of girgenti
+province of messina
+province of naples
+province of noto
+province of palermo
+province of trapani
+province of umnugobi
+provincia oriental
+provo
+przemysl land
+przemysl voivodeship
+przemyśl land
+przemyśl voivodeship
+pskov
+pskov oblast
+pskov viceroyalty
+pu'er city
+pu-xian min
+pucallpa
+pudong
+puducherry
+puebla
+pueblo
+puente alto
+puerto barrios
+puerto cabello
+puerto la cruz
+puerto madryn
+puerto montt
+puerto plata province
+puerto princesa
+puerto rico
+puerto vallarta
+pukapuka
+puke district
+pukë district
+pul-e khomri
+pulaar
+punaauia
+punakha district
+pune
+punia territory
+puning
+punjab
+punjabi
+puno
+puno department
+punta arenas
+punta de mata
+puntarenas province
+punto fijo
+puri
+purnia
+pursat province
+purwakarta
+purwokerto
+putian
+putna county
+putrajaya
+putumayo department
+puyang
+pwani region
+pweto territory
+pyeongtaek
+pyongsong
+pyongyang
+päijät-häme
+pärnu county
+pécs
+pétion-ville
+përmet district
+pó-táu-ke
+põlva county
+pāksē
+pārgauja municipality
+pāvilosta municipality
+pčinja district
+pļaviņas municipality
+płock
+płock department
+płock land
+płock voivodeship
+qabala district
+qacha's nek district
+qaem shahr
+qakh district
+qalqilya governorate
+qalyub
+qalyubia governorate
+qamishli
+qarshi
+qashqadaryo region
+qatar
+qatari
+qatif
+qazaqstan
+qazvin
+qazvin province
+qena
+qena governorate
+qeqertalik
+qeqqata
+qift
+qing province
+qingdao
+qinghai
+qingyang
+qingyuan
+qinhuangdao
+qinzhou
+qiqihar
+qitaihe
+qom province
+qoʻqon
+quang binh
+quang nam
+quang ngai
+quang ninh
+quang tin
+quang tri
+quang đa special zone
+quanzhou
+quatre bornes
+quba district
+quds governorate
+quebec
+quebec city
+quechua
+queensland
+queimados
+quelimane
+queretaro
+querétaro
+quetta
+quetzaltenango
+quetzaltenango department
+quevedo
+quezon city
+quibdo
+quibdó
+quibor
+quiche department
+quiché department
+quilamba quiaxi
+quillacollo
+quilmes
+quilpue
+quilpué
+quindio department
+quindío department
+quintana roo
+quito
+qujing
+quneitra governorate
+qurayyat
+qusar district
+quthing district
+quzhou
+quíbor
+quảng bình
+quảng nam
+quảng ngãi
+quảng ninh
+quảng trị
+quảng tín
+quảng đà special zone
+raa atoll
+rabat
+rabat-sale-kenitra
+rabat-salé-kénitra
+rach gia province
+racha-lechkhumi and kvemo svaneti
+radauti county
+radece municipality
+radeče municipality
+radom
+radom department
+radom voivodeship
+radovis municipality
+radoviš municipality
+radviliskis district municipality
+radviliškis district municipality
+rafael castillo
+rafah
+rafah governorate
+ragged island
+rahim yar khan
+raiganj
+raipur
+raivavae
+rajahmundry
+rajasthan
+rajasthani
+rajkot
+rajpur sonarpur
+rajshahi
+rajshahi division
+rakhine state
+rakka eyalet
+raleigh
+ralik chain
+ramadi
+ramallah and al-bireh governorate
+ramat gan
+ramnicu-sarat county
+ramos mejia
+ramos mejía
+rancagua
+ranchi
+rancho cucamonga
+randburg
+rangiroa
+rangpur
+rangpur division
+rankovce municipality
+ranong
+rapa
+rapla county
+raqqa
+raqqa governorate
+ras al khaimah
+ras al-khaimah
+ras gharib
+raseiniai district municipality
+rasht
+rasina district
+raska district
+rason
+ratak chain
+ratanakiri province
+ratcha-anachak thai
+ratchaburi
+ratlam
+rato commandery
+ratō commandery
+rauna municipality
+ravenna
+rawa voivodeship
+rawalpindi
+ray
+raymah governorate
+rayong
+razavi khorasan province
+razgrad
+raška district
+realm of denmark
+reao
+recife
+recklinghausen
+red china
+red deer
+red sea
+red sea governorate
+redonda
+regensburg
+reggio calabria
+reggio emilia
+regina
+region of galicia
+region of murcia
+region zealand
+regrca vas
+regrča vas
+rehovot
+reichsgau danzig-west prussia
+reichsgau flandern
+reichsgau karnten
+reichsgau kärnten
+reichsgau niederdonau
+reichsgau oberdonau
+reichsgau salzburg
+reichsgau steiermark
+reichsgau sudetenland
+reichsgau tirol-vorarlberg
+reichsgau wallonien
+reichsgau wartheland
+reichsgau wien
+reims
+relizane province
+remscheid
+renala khurd
+rennell and bellona province
+reno
+reno department
+republic niger
+republic of albania
+republic of angola
+republic of argentina
+republic of armenia
+republic of austria
+republic of azerbaijan
+republic of belarus
+republic of belau
+republic of benin
+republic of bolivia
+republic of both nations
+republic of botswana
+republic of bulgaria
+republic of burkina faso
+republic of burundi
+republic of cabo verde
+republic of cameroon
+republic of cape verde
+republic of chad
+republic of chile
+republic of china
+republic of colombia
+republic of congo
+republic of costa rica
+republic of cote d'ivoire
+republic of crimea
+republic of croatia
+republic of cuba
+republic of cyprus
+republic of côte d'ivoire
+republic of djibouti
+republic of ecuador
+republic of egypt
+republic of el salvador
+republic of equator
+republic of equatorial guinea
+republic of estonia
+republic of fiji
+republic of finland
+republic of georgia
+republic of guatemala
+republic of guinea
+republic of guinea-bissau
+republic of guyana
+republic of haiti
+republic of honduras
+republic of iceland
+republic of india
+republic of indonesia
+republic of iraq
+republic of ireland
+republic of italy
+republic of ivory coast
+republic of kazakhstan
+republic of kenya
+republic of kiribati
+republic of korea
+republic of kosovo
+republic of latvia
+republic of lebanon
+republic of liberia
+republic of lithuania
+republic of macedonia
+republic of madagascar
+republic of malawi
+republic of maldives
+republic of mali
+republic of malta
+republic of mauritius
+republic of metz
+republic of moldova
+republic of montenegro
+republic of mozambique
+republic of mulhouse
+republic of namibia
+republic of naoero
+republic of nauru
+republic of nicaragua
+republic of niger
+republic of north macedonia
+republic of northern cyprus
+republic of pakistan
+republic of palau
+republic of panama
+republic of paraguay
+republic of peru
+republic of poland
+republic of qazaqstan
+republic of rwanda
+republic of senegal
+republic of serbia
+republic of seychelles
+republic of sierra leone
+republic of singapore
+republic of slovenia
+republic of somaliland
+republic of south africa
+republic of south sudan
+republic of sudan
+republic of surinam
+republic of suriname
+republic of tajikistan
+republic of the congo
+republic of the equator
+republic of the gambia
+republic of the niger
+republic of the philippines
+republic of the sudan
+republic of tunisia
+republic of turkey
+republic of turkiye
+republic of türkiye
+republic of uganda
+republic of uzbekistan
+republic of vanuatu
+republic of venezuela
+republic of yemen
+republic of zambia
+republic of zimbabwe
+republica argentina
+republica de mocambique
+republica del peru
+republica dominicana
+republica moldova
+republika popullore e shqiperise
+republika srpska
+republika y'uburundi
+republiken finland
+republique du congo
+republique gabonaise
+república de moçambique
+república dominicana
+resen municipality
+resende
+resistencia
+respublika bielarus
+respublika bielaruś
+retalhuleu
+retalhuleu department
+reunion
+reunion island department
+reutlingen
+reval viceroyalty
+reykjavik
+reykjavík
+reynosa
+rezekne
+rezekne municipality
+rezina district
+rhamu
+rhine department
+rhineland-palatinate
+rhode island
+rhodes
+rhodes sanjak
+rhodesia
+rhone
+rhone-alpes
+rhône
+rhône-alpes
+riau
+riau islands
+ribe county
+ribeirao das neves
+ribeirao pires
+ribeirao preto
+ribeirão das neves
+ribeirão pires
+ribeirão preto
+richmond
+richmond hill
+riebini municipality
+riebiņi municipality
+rietavas municipality
+rif dimashq governorate
+riffa
+riga
+riga viceroyalty
+rijeka
+rimatara
+rimini
+ringkjøbing county
+ringstaholm county
+rio branco
+rio branco territory
+rio claro
+rio cuarto
+rio das ostras
+rio de janeiro
+rio de janeiro province
+rio gallegos
+rio grande
+rio grande do norte
+rio grande do sul
+rio muni
+rio negro department
+rio negro province
+rio san juan department
+rio verde
+riobamba
+riohacha
+risaralda department
+riscani district
+rishon lezion
+rishra
+rivas department
+river cess county
+river gee county
+river nile
+rivera department
+rivers state
+riverside
+riviere du rempart district
+riviere noire district
+rivière du rempart district
+rivière noire district
+rivne
+rivne oblast
+riyadh
+rizal
+rize
+rize province
+rizhao
+roanoke
+robat karim
+rocha department
+roche caiman
+rochester
+rodrigues
+rogaland
+rohingya
+rohtak
+roi et
+roja municipality
+rokiskis district municipality
+rokiškis district municipality
+rokko town
+rokkō town
+romagnol
+roman county
+romanati county
+romanați county
+romani
+romania
+romanian
+romanian kingdom
+romblon
+rome
+rondonia
+rondonia territory
+rondonopolis
+rondonópolis
+rondônia
+rondônia territory
+roodepoort
+ropazi municipality
+ropaži municipality
+roraima
+roraima territory
+rosario
+rosarito
+rosetta
+roseville
+roskilde county
+rosoman municipality
+rossia
+rostock
+rostock district
+rostov oblast
+rostov-on-don
+rotherham
+rotterdam
+rotuma
+rouen
+roumania
+rourkela
+roxas city
+rozaje municipality
+rozan land
+roznik district
+rožaje municipality
+rožnik district
+rubicon department
+rubtsovsk
+rucava municipality
+ruda slaska
+ruda śląska
+rudnik
+rudny
+rudrapur
+rufisque
+rugaji municipality
+ruggell
+rugāji municipality
+ruhengeri
+rui'an
+ruili
+rujiena municipality
+rukwa region
+rum cay district
+rum eyalet
+rumania
+rumanian kingdom
+rumelia eyalet
+rumonge province
+rundale municipality
+rundu
+rundāle municipality
+rungu
+runyankole
+rurutu
+ruse
+ruse municipality
+ruse oblast
+rushen
+rusia
+russeifa
+russia
+russia or moscovy
+russian
+russian empire
+russian federation
+russian turkestan
+rustavi
+rutana province
+ruthenian voivodeship
+rutshuru territory
+ruvuma region
+ruweng administrative area
+ruyigi province
+ruzhou
+ruše municipality
+rwanda
+rwandan
+rwandese
+ryanggang province
+ryazan
+ryazan oblast
+ryazan viceroyalty
+rybinsk
+rybnik
+rzeszow
+rzeszow voivodeship
+rzeszów
+rzeszów voivodeship
+râmnicu-sărat county
+république du congo
+république gabonaise
+réunion
+río cuarto
+río gallegos
+río muni
+río negro department
+río negro province
+río san juan department
+rîșcani district
+różan land
+rădăuți county
+rēzekne
+rēzekne municipality
+rūjiena municipality
+rạch giá province
+s america
+s'gaw karen
+s'pore
+sa kaeo
+sa đec
+sa đec province
+sa đéc
+sa đéc province
+saada governorate
+saarbrucken
+saarbrücken
+saare county
+saarland
+saatly district
+sabadell
+sabah
+sabah malay
+sabara
+sabaragamuwa province
+sabará
+sabha district
+sabile municipality
+sabirabad district
+sabratha
+sabratha wa sorman district
+sabzevar
+sacaba
+sacatepequez department
+sacatepéquez department
+sacheon
+sacramento
+sadarak district
+safed sanjak
+saga
+saga prefecture
+sagaing region
+sagamihara
+sagay
+saguenay
+saharanpur
+saharsa
+sahil
+sahiwal
+sahul
+sai buri
+saida province
+saigon
+saijo
+saint andrew
+saint andrew parish
+saint ann parish
+saint barthelemy
+saint barthélemy
+saint brelade
+saint catherine parish
+saint christopher and nevis
+saint clement
+saint david parish
+saint elizabeth parish
+saint george
+saint george basseterre parish
+saint george gingerland parish
+saint george parish
+saint helena
+saint helier
+saint james
+saint james parish
+saint james windward parish
+saint john
+saint john capisterre parish
+saint john figtree parish
+saint john parish
+saint joseph
+saint joseph parish
+saint kitts
+saint kitts and nevis
+saint lawrence
+saint louis
+saint lucia
+saint lucian
+saint lucy
+saint luke parish
+saint mark parish
+saint martin
+saint mary
+saint mary cayon parish
+saint mary parish
+saint michael
+saint ouen
+saint patrick parish
+saint paul
+saint paul capisterre parish
+saint paul charlestown parish
+saint paul parish
+saint peter
+saint peter basseterre parish
+saint peter parish
+saint peter's
+saint petersburg
+saint philip
+saint pierre and miquelon
+saint sampson
+saint saviour
+saint thomas
+saint thomas lowland parish
+saint thomas parish
+saint vincent
+saint vincentian
+saint vincentians
+saint-denis
+saint-etienne
+saint-louis
+saint-marc
+saint-martin
+saint-paul
+saint-étienne
+sainyabuli
+sainyabūlī
+saitama
+saitama prefecture
+saka municipality
+sakai
+sakai prefecture
+sakakah
+sakania territory
+sakartvelo
+sakarya
+sakarya province
+sakha
+sakhalin oblast
+sakiai district municipality
+sakiz sanjak
+sakon nakhon
+sakura
+sala municipality
+salacgriva municipality
+salacgrīva municipality
+saladin governorate
+salaj county
+salal
+salalah
+salamanca city
+salamat region
+salamiyah
+salaspils municipality
+salatiga
+salavan province
+salavat
+salcininkai district municipality
+saldus municipality
+sale
+salem
+salerno
+salfit governorate
+salford
+salgotarjan
+salgótarján
+salihli
+salinas
+salonica eyalet
+salonica sanjak
+salonica vilayet
+salta
+salta province
+saltillo
+salto
+salto department
+salvador
+salvadoran
+salyan district
+salzburg
+salzgitter
+salé
+sam-kiap-ke
+samal
+samana province
+samandag
+samandağ
+samangan province
+samannud
+samaná province
+samar
+samara
+samara oblast
+samarinda
+samarkand
+samarqand region
+samarra
+samawah
+sambalpuri
+sambhal
+samburu county
+samdrup jongkhar district
+samegrelo-zemo svaneti
+sammarinese
+samoa
+samoan
+samos
+samosata theme
+samseng
+samsun
+samsun metropolitan municipality
+samsun province
+samtse district
+samukh district
+samundri
+samut prakan
+samut sakhon
+samut songkhram
+san bernardino
+san bernardo
+san carlos
+san cristobal
+san cristobal province
+san cristóbal
+san cristóbal province
+san diego
+san felipe
+san fernando
+san fernando de apure
+san francisco
+san francisco de campeche
+san francisco de macoris
+san francisco de macorís
+san jose
+san jose del cabo
+san jose department
+san jose province
+san josé
+san josé del cabo
+san josé department
+san josé province
+san juan
+san juan province
+san justo
+san lorenzo
+san luis
+san luis potosi
+san luis potosí
+san luis province
+san luis rio colorado
+san luis río colorado
+san marcos department
+san marino
+san martin department
+san miguel
+san miguel de tucuman
+san miguel de tucumán
+san miguel department
+san miguelito district
+san pablo
+san pedro de macoris
+san pedro de macorís
+san pedro department
+san pedro sula
+san rafael
+san region
+san salvador
+san salvador de jujuy
+san salvador department
+san salvador island
+san vicente department
+san-pedro
+san-pédro
+sanaa
+sanaa governorate
+sanandaj
+sanchazhuang
+sanchez ramirez province
+sancti spiritus
+sancti spiritus province
+sancti spíritus
+sancti spíritus province
+sanda
+sanda prefecture
+sandakan
+sandaun province
+sandoa territory
+sandomierz voivodeship
+sandvika
+sangalkam
+sangatta
+sangha department
+sangha-mbaere
+sangha-mbaéré
+sangju
+sangli
+sango
+sangre grande regional corporation
+sanjak of abrumaz
+sanjak of acre
+sanjak of adil djevaz
+sanjak of aghakis
+sanjak of aidin
+sanjak of aiwen
+sanjak of ajlun
+sanjak of ajub
+sanjak of akkerman
+sanjak of aksaray
+sanjak of aksehir
+sanjak of akşehir
+sanjak of al-sah
+sanjak of alaiye
+sanjak of albak
+sanjak of alhuran
+sanjak of alâiye
+sanjak of amasya
+sanjak of anabolu
+sanjak of anavarin
+sanjak of andıra
+sanjak of ane sancagı
+sanjak of ane sancağı
+sanjak of ankara
+sanjak of antalya
+sanjak of arabgir
+sanjak of arad
+sanjak of ardinj
+sanjak of arghiri
+sanjak of arkadya
+sanjak of asir
+sanjak of atshu castle
+sanjak of aushni
+sanjak of ayvalık
+sanjak of baboca
+sanjak of baboça
+sanjak of badiye
+sanjak of bajwanli
+sanjak of balatin
+sanjak of ballibadra
+sanjak of banja luka
+sanjak of bar
+sanjak of bargeri
+sanjak of batumi
+sanjak of bayezid
+sanjak of beckerek
+sanjak of beirut
+sanjak of bender
+sanjak of benderazir
+sanjak of beni rebia
+sanjak of beqaa
+sanjak of beybazarı
+sanjak of beysehir
+sanjak of beyşehir
+sanjak of beçkerek
+sanjak of biat
+sanjak of bihac
+sanjak of bihać
+sanjak of bihke
+sanjak of bilecik
+sanjak of bilkas
+sanjak of birecik
+sanjak of bitlis
+sanjak of bosnia
+sanjak of boyak
+sanjak of bozok
+sanjak of budin
+sanjak of burdur
+sanjak of bursa
+sanjak of buyukcekmece
+sanjak of büyükçekmece
+sanjak of cakova
+sanjak of candia
+sanjak of catalca
+sanjak of cebel-i bereket
+sanjak of cebrin
+sanjak of celebi-i-garbi
+sanjak of cemiskeze
+sanjak of cermik
+sanjak of chania
+sanjak of cisse
+sanjak of constantinople
+sanjak of corum
+sanjak of debar
+sanjak of debrecin
+sanjak of debreçin
+sanjak of dedeagac
+sanjak of dedeağaç
+sanjak of deh-balad
+sanjak of deir rahba
+sanjak of demir-kapu
+sanjak of denizli
+sanjak of derneh
+sanjak of deyr
+sanjak of dimyad
+sanjak of diwriji
+sanjak of diyadin
+sanjak of djebel
+sanjak of edirne
+sanjak of egri
+sanjak of eharish
+sanjak of erbil
+sanjak of erdek
+sanjak of erdjish
+sanjak of ergani
+sanjak of ertugrul
+sanjak of erzincan
+sanjak of erzurum
+sanjak of eski mosul
+sanjak of estergon
+sanjak of evset
+sanjak of eğri
+sanjak of famagusta
+sanjak of fenlak
+sanjak of fezzan
+sanjak of filek
+sanjak of filibe
+sanjak of galata
+sanjak of gastuni
+sanjak of genc
+sanjak of genç
+sanjak of gharbi
+sanjak of giresun
+sanjak of giriz
+sanjak of gonio
+sanjak of gorice
+sanjak of great ardehan
+sanjak of gumushane
+sanjak of görice
+sanjak of gümüşhane
+sanjak of hajrek
+sanjak of hakkari
+sanjak of halmas
+sanjak of halmaş
+sanjak of hamid
+sanjak of hamidabad
+sanjak of harbus
+sanjak of hargigo
+sanjak of harput
+sanjak of haru
+sanjak of harun
+sanjak of harú
+sanjak of hatvan
+sanjak of hazar mardud
+sanjak of hazir
+sanjak of hilla
+sanjak of hipovo
+sanjak of hit
+sanjak of holok
+sanjak of hudavendigar
+sanjak of hudeyde
+sanjak of hüdavendigâr
+sanjak of ibrim
+sanjak of ijareh penbek
+sanjak of ipek
+sanjak of irsora
+sanjak of iskenderiyye
+sanjak of islimiye
+sanjak of ispaghird
+sanjak of ispir
+sanjak of istolni belgrad
+sanjak of i̇pek
+sanjak of i̇rşora
+sanjak of i̇skenderiyye
+sanjak of i̇stolni belgrad
+sanjak of jangula
+sanjak of janik
+sanjak of jankha
+sanjak of javazar
+sanjak of jebel hamrin
+sanjak of jebella
+sanjak of jeddah
+sanjak of jemasa
+sanjak of jenguleh
+sanjak of kala-ghazi
+sanjak of kamakh
+sanjak of kamanice
+sanjak of kamaniçe
+sanjak of kangırı
+sanjak of kanije
+sanjak of kara-hisar
+sanjak of karahisar-i sahib
+sanjak of karahisar-i-sarip
+sanjak of karahisar-ı sarki
+sanjak of karahisar-ı şarki
+sanjak of karak
+sanjak of karanieh
+sanjak of karkar
+sanjak of kastamonu
+sanjak of kavala
+sanjak of kayseri
+sanjak of kayseriyye
+sanjak of kefe
+sanjak of keifi
+sanjak of kengiri
+sanjak of kerneh-deh
+sanjak of keshan
+sanjak of kesnan
+sanjak of khanis
+sanjak of kiangri
+sanjak of kigı
+sanjak of kilan
+sanjak of kinburn
+sanjak of kirklareli
+sanjak of kirsehir
+sanjak of kiğı
+sanjak of klis
+sanjak of konya
+sanjak of kopan
+sanjak of kordos
+sanjak of koron
+sanjak of kozan
+sanjak of krka
+sanjak of kule
+sanjak of kutahya
+sanjak of kuzudjan
+sanjak of kyrenia
+sanjak of küle
+sanjak of kütahya
+sanjak of kıbrıs
+sanjak of kırk kilise
+sanjak of lasithi
+sanjak of lawaneh
+sanjak of lazistan
+sanjak of lejengerd
+sanjak of leve
+sanjak of limni
+sanjak of lipva
+sanjak of litra
+sanjak of lom
+sanjak of maden
+sanjak of mahjil
+sanjak of malazgir
+sanjak of mamar
+sanjak of mardin
+sanjak of massawa
+sanjak of massu
+sanjak of medine-i-munevvere
+sanjak of medine-i-münevvere
+sanjak of mejibuji
+sanjak of mekke-i-mukerreme
+sanjak of mekke-i-mükerreme
+sanjak of merkareh
+sanjak of mersin
+sanjak of messalonghi
+sanjak of mezistre
+sanjak of midilli
+sanjak of modava
+sanjak of mohac
+sanjak of mohaç
+sanjak of mokha
+sanjak of monastir
+sanjak of mora
+sanjak of mosul
+sanjak of moton
+sanjak of mubarraz
+sanjak of mukus
+sanjak of mus
+sanjak of musul
+sanjak of muş
+sanjak of müküs
+sanjak of nadaj
+sanjak of najd
+sanjak of narda
+sanjak of nazareth
+sanjak of negniie
+sanjak of netif
+sanjak of nevahi-i erbaa
+sanjak of nigde
+sanjak of novi pazar
+sanjak of novigrad
+sanjak of nusuf awan
+sanjak of orsova
+sanjak of orşova
+sanjak of oulti
+sanjak of ozi
+sanjak of pak
+sanjak of pakrac
+sanjak of pancova
+sanjak of pançova
+sanjak of paphos
+sanjak of pasha
+sanjak of pasin
+sanjak of pecuy
+sanjak of pera
+sanjak of perteli
+sanjak of pespirim
+sanjak of peçuy
+sanjak of pirgos
+sanjak of pljevlja
+sanjak of postkhu
+sanjak of preveza
+sanjak of prishtina
+sanjak of purtekrek
+sanjak of pyce
+sanjak of rackeve
+sanjak of rahbe
+sanjak of rethymno
+sanjak of rika
+sanjak of roha
+sanjak of rudin
+sanjak of ruha
+sanjak of rumahia
+sanjak of ruse
+sanjak of ráckeve
+sanjak of sakul
+sanjak of salamieh
+sanjak of salanta
+sanjak of samokov
+sanjak of samwat
+sanjak of sana'a
+sanjak of sarajevo
+sanjak of saruj
+sanjak of sarujek
+sanjak of sasvar
+sanjak of sawakin
+sanjak of sebeh
+sanjak of sebinkarahisar
+sanjak of secen
+sanjak of secuy
+sanjak of segedin
+sanjak of sekcay
+sanjak of sekçay
+sanjak of senkoy
+sanjak of senturin
+sanjak of serfige
+sanjak of serfiğe
+sanjak of seçen
+sanjak of seçuy
+sanjak of sfakia
+sanjak of sheher bazar
+sanjak of sheherzul
+sanjak of shushad
+sanjak of sidon
+sanjak of siget
+sanjak of siirt
+sanjak of siklos
+sanjak of simontorna
+sanjak of sincar
+sanjak of sinob
+sanjak of sis
+sanjak of sivas
+sanjak of siverek
+sanjak of sjenica
+sanjak of slimia
+sanjak of smederevo
+sanjak of sofia
+sanjak of sokolofja
+sanjak of somay
+sanjak of sonluk
+sanjak of sultanonu
+sanjak of sultanönü
+sanjak of syrmia
+sanjak of sırvi
+sanjak of sıtak
+sanjak of ta'izz
+sanjak of tabariah
+sanjak of tadmur
+sanjak of tagan gecidi
+sanjak of tarnovo
+sanjak of tarsus
+sanjak of tasoz
+sanjak of tağan geçidi
+sanjak of taşoz
+sanjak of teke
+sanjak of tekirdag
+sanjak of tekman
+sanjak of tekrit
+sanjak of terteng
+sanjak of tiltari
+sanjak of tokad
+sanjak of trabzon
+sanjak of travnik
+sanjak of tuhaymiyah
+sanjak of tulcea
+sanjak of turtum
+sanjak of tyre
+sanjak of tărnovo
+sanjak of tımısvar
+sanjak of tımışvar
+sanjak of uyun
+sanjak of valiova
+sanjak of valpuva
+sanjak of van
+sanjak of varat
+sanjak of varna
+sanjak of vidin
+sanjak of virantsehir
+sanjak of vitze
+sanjak of yanova
+sanjak of yazlofca
+sanjak of yazlofça
+sanjak of zane
+sanjak of zayla
+sanjak of zeng abad
+sanjak of zenjir
+sanjak of zeriki
+sanjak of zigetvar
+sanjak of zulkadriye
+sanjak of zülkadriye
+sanjak of çakova
+sanjak of çatalca
+sanjak of çemişkeze
+sanjak of çermik
+sanjak of çorum
+sanjak of özi
+sanjak of şaşvar
+sanjak of şebinkarahisar
+sanjak of şenköy
+sanjak of şikloş
+sanjak of şimontorna
+sanjak of şırvî
+sanjak of şıtak
+sankuru
+sanlıurfa
+sanlıurfa metropolitan municipality
+sanlıurfa province
+sanma
+sanmenxia
+sanming
+sannohe prefecture
+sano
+sanok land
+sanshi village
+sant julia de loria
+sant julià de lòria
+santa ana
+santa ana department
+santa barbara d'oeste
+santa barbara department
+santa bárbara d'oeste
+santa bárbara department
+santa catarina
+santa catarina province
+santa clara
+santa clara province
+santa clarita
+santa cruz de tenerife
+santa cruz department
+santa cruz do sul
+santa cruz province
+santa elena province
+santa fe
+santa fe province
+santa luzia
+santa maria
+santa marta
+santa rita
+santa rosa
+santa rosa department
+santa tecla
+santa teresa del tuy
+santali
+santana
+santana de parnaiba
+santana de parnaíba
+santander city
+santander department
+santarem
+santarém
+santiago
+santiago de cuba
+santiago de cuba province
+santiago de queretaro
+santiago de querétaro
+santiago de veraguas
+santiago del estero
+santiago del estero province
+santiago metropolitan region
+santiago province
+santiago rodriguez province
+santiago rodríguez province
+santipur
+santo andre
+santo andré
+santo antonio de jesus
+santo antônio de jesus
+santo domingo
+santo domingo province
+santomean
+santos
+sanya
+sanʽani arabic
+sao bernardo do campo
+sao caetano do sul
+sao carlos
+sao goncalo
+sao joao de meriti
+sao jose
+sao jose de ribamar
+sao jose dos campos
+sao jose dos pinhais
+sao leopoldo
+sao lourenco da mata
+sao luis
+sao mateus
+sao paulo
+sao paulo province
+sao pedro da aldeia
+sao tome and principe
+sao tome og principe
+sao tome province
+sao tomean
+sao tomeans
+sao vicente
+sapporo
+sapporo prefecture
+sapucaia do sul
+saqqez
+sar-e pol province
+saraburi
+saraiki
+saraj municipality
+sarajevo
+saramacca district
+sarande district
+sarandë district
+sarangani
+saransk
+saratov
+saratov oblast
+saratov viceroyalty
+sarawak
+sardinia
+sardinian
+sargodha
+sarh
+sari
+sariwon
+sarpang district
+sarrebourg
+saruhan sanjak
+sary-assia vilayat
+sarıyer
+sasak
+sasebo
+saskatchewan
+saskatoon
+sassandra-marahoue district
+sassandra-marahoué district
+sassari
+satakunta
+satara
+satkhira
+satna
+satu mare county
+satu-mare county
+satun
+satupa'itea
+saudi
+saudi arabia
+saulkrasti municipality
+saurashtra state
+sava region
+savanes district
+savanes region
+savannah
+savannah region
+savannakhet province
+savanne district
+savar
+savnik municipality
+savolax and karelia county
+savolax and kymmenegard county
+savolax and kymmenegård county
+sawankhalok
+saxe-coburg-eisenach
+saxe-coburg-saalfeld
+saxe-gotha
+saxe-jena
+saxe-weissenfels
+saxe-zeitz
+saxony
+saxony-anhalt
+sayama
+saïda province
+saʽidi arabic
+schaan
+schaumburg-lippe
+schelde en maas department
+schellenberg
+schleswig-holstein
+schloss bonndorf
+schwerin district
+scotland
+scots
+scottsdale
+scutari sanjak
+scutari vilayet
+seattle
+sebasteia
+sebat bet gurage
+sedhiou
+seeb
+segou
+segou region
+seguela
+seiyun
+seja municipality
+sejong
+seke-banza territory
+sekitei-shou
+sekondi-takoradi
+sekong province
+selangor
+selefkeh sanjak
+selenge province
+seleucia
+semarang
+semey
+semnan
+semnan province
+sendai
+sendai prefecture
+senegal
+senegalese
+sennar
+sentjur municipality
+sentvid district
+seogwipo
+seongnam
+seosan
+seoul
+serampore
+serang
+serbia
+serbian
+serbo-croatian
+seremban
+serendib
+serer
+sergipe
+sergipe province
+serio department
+sermersooq
+serra
+serravalle
+serres sanjak
+sertaozinho
+sertãozinho
+servia sanjak
+sesotho
+sete lagoas
+setif
+setif province
+seto
+settat
+setubal
+setúbal
+sevastopol
+sevastopol city state administration
+severin county
+seversk
+seville city
+sevnica municipality
+seychelles
+seychellois
+seychelloise
+sfax governorate
+shaanxi
+shaanxi and sichuan
+shabran district
+shabunda territory
+shabwah governorate
+shah alam
+shah faisal town
+shahbuz district
+shahdadpur
+shahin shahr
+shahr-e kord
+shahreza
+shahrisabz
+shahrizor eyalet
+shahumyan province
+shakhty
+shaki
+shaki district
+shamakhi district
+shamkir district
+shan
+shan state
+shandong
+shang-hai
+shanghai
+shangluo
+shangqiu
+shangrao
+shansi
+shantou
+shantung
+shanwei
+shanxi
+shaoguan
+shaoxing
+shaoyang
+sharjah
+sharqia governorate
+sharur district
+shaviyani atoll
+shawiya
+sheberghan
+shefa
+sheffield
+sheikh othman
+sheikhupura
+shensi
+shenyang
+shenzhen
+sherbrooke
+shibin al kawm
+shibin el-qanater
+shichisei county
+shida kartli
+shiga prefecture
+shigatse
+shihezi
+shijiazhuang
+shikama prefecture
+shikosiyou
+shilin
+shillong
+shilluk
+shimane prefecture
+shimla
+shimonoseki
+shin'ei
+shinagawa prefecture
+shinchiku prefecture
+shinchiku town
+shinka
+shinkou-shou
+shinten-gai
+shinyanga
+shinyanga region
+shiodome
+shirak province
+shirakawa prefecture
+shirvan
+shiselweni region
+shiyan
+shizuishan
+shizuoka
+shizuoka prefecture
+shkoder county
+shkoder district
+shkodër county
+shkodër district
+shobra elkhema
+shoka county
+shona
+shorouk city
+shqiperise
+shqipërisë
+shreveport
+shuangyashan
+shuiji county
+shumen
+shunan-shi
+shuofang province
+shuozhou
+shusha district
+shushi province
+shushtar
+shuwa
+shymkent
+shōka county
+shūnan-shi
+si sa ket
+siak malay
+sialkot
+siauliai
+siauliai city municipality
+siauliai district municipality
+siaya county
+sibenik-knin county
+siberian governorate-general
+sibiu
+sibiu county
+sibu
+sichuan
+sicilian
+sicily
+sicily theme
+sidama region
+sidamo
+siddhirganj
+sidi bel abbes
+sidi bel abbes province
+sidi bel abbès
+sidi bel abbès province
+sidi bouzid governorate
+sidoarjo
+sidon
+sidon eyalet
+sidon sanjak
+siedlce department
+siedlce voivodeship
+siegen
+siem reap
+siem reap province
+sieradz voivodeship
+sierra leone
+sierra leonean
+siguiri
+sigulda municipality
+sihanoukville province
+siheung
+siirt
+siirt province
+sikasso
+sikasso region
+sikkim
+sila region
+silale district municipality
+silay
+silesian voivodeship
+siliana governorate
+siliguri
+silistra
+silistra eyalet
+silistra sanjak
+silla
+silopi
+silute district municipality
+simbirsk viceroyalty
+simferopol
+simi valley
+simiyu region
+simoes filho
+simões filho
+sinai
+sinaloa
+sincelejo
+sindh
+sindhi
+sine-saloum
+sinfra
+sing buri
+singapore
+singapore city
+singaporean
+singaraja
+singerei district
+singida
+singida region
+singkawang
+sinhala
+sinnuris
+sinoe county
+sinop
+sinop province
+sinpo
+sint maarten
+sint martin
+sinuiju
+sioux falls
+sipaliwini district
+siparia regional corporation
+siping
+sirajganj
+sirdaryo region
+sirjan
+sirmium
+sirte district
+sirvintos district municipality
+sisak-moslavina county
+siska
+sisophon province
+sistan and baluchestan province
+sittwe
+sivas
+sivas province
+sivas vilayet
+siverek
+siyazan district
+skane county
+skaraborg county
+skardu
+skhirat
+skierniewice voivodeship
+skikda
+skikda province
+skopje
+skrapar district
+skriveri municipality
+skrunda municipality
+skrīveri municipality
+skuodas district municipality
+skåne county
+sliven
+slonim viceroyalty
+slottslan of porvoo
+slottslän of porvoo
+slough
+slovak
+slovak republic
+slovakia
+slovene
+slovenia
+slovenian
+slovenija
+slovenske konjice municipality
+sloviansk
+smalands county
+smarna gora district
+smiltene municipality
+smolensk
+smolensk oblast
+smolensk viceroyalty
+smolyan
+smålands county
+sobral
+sobun
+soc trang
+soccsksargen
+sochaczew land
+socialist republic of vietnam
+socopo
+socopó
+socotra archipelago governorate
+sodermanland county
+sofala
+sofia
+sofia city
+sofia oblast
+sogn og fjordane
+sohag
+sohag governorate
+sohar
+soka-shi
+sokode
+sokodé
+sokoto
+sokoto state
+solapur
+solcava municipality
+soldanesti district
+solihull
+solingen
+solms-hohensolms-lich
+solola department
+sololá department
+solomon islander
+solomon islands
+solčava municipality
+soma
+somali
+somali region
+somalia
+somalian
+somaliland
+somalilander
+somes county
+someș county
+somogy county
+son la
+son tay
+song be
+songea
+songkhla
+songololo territory
+songrim
+songwe region
+songyuan
+soninke
+sonora
+sonsonate department
+sonsorol
+sophene
+sopiste municipality
+sopište municipality
+sopore
+sopotnica municipality
+sopron
+sorani
+soreang
+soriano department
+soroca
+soroca county
+soroca district
+sorocaba
+sorong
+soroti city
+sorsogon
+sorsogon city
+sosnowiec
+sostro district
+sotavento islands
+soubre
+soubré
+soudan
+souk ahras province
+souss-massa
+sousse governorate
+south
+south abaco
+south aegean region
+south africa
+south african
+south america
+south american
+south american continent
+south andros
+south australia
+south azerbaijani
+south backa district
+south banat district
+south bačka district
+south bend
+south bohemian region
+south bolivian quechua
+south brabant
+south carolina
+south central province
+south chungcheong
+south cotabato
+south dakota
+south darfur
+south dublin
+south dum dum
+south eastern state
+south eleuthera
+south ethiopia regional state
+south governorate
+south gyeongsang
+south hamgyeong
+south hamgyong province
+south holland
+south hwanghae province
+south jeolla
+south jutland county
+south kalimantan
+south karelia
+south khorasan province
+south kivu
+south kordofan
+south korea
+south korean
+south kurzeme municipality
+south levantine arabic
+south male atoll
+south malé atoll
+south moravia
+south moravian region
+south ostrobothnia
+south papua
+south pemba region
+south province
+south pyeongan
+south pyongan province
+south savo
+south sinai governorate
+south sudan
+south sudanese
+south sulawesi
+south sumatra
+south tangerang
+south ubangi
+south-east district
+southampton
+southeast sulawesi
+southend-on-sea
+southern bohemia
+southern denmark
+southern district
+southern dzongdey
+southern governorate
+southern highlands province
+southern ireland
+southern kurdish
+southern leyte
+southern liech state
+southern luri
+southern min
+southern pashto
+southern peninsula region
+southern province
+southern red sea region
+southern region
+southern rhodesia
+southern sudan
+southern thai
+southern uzbek
+southland region
+southwest
+southwest ethiopia regional state
+southwest finland
+southwest papua
+southwestern krai
+soweto
+spain
+spaniard
+spanish
+spanish netherlands
+spanish town
+spanish wells
+split
+split-dalmatia county
+spokane
+spotsylvania county
+springfield
+sreepur
+srem district
+sri ganganagar
+sri jayawardenepura kotte
+sri lanka
+sri lankan
+srikakulam
+srilanka
+srinagar
+srivijayapuram
+st helens
+st kitts and nevis
+st lucia
+st martin
+st vincent
+stakes county
+stamford
+standard arabic
+standard chinese
+standard estonian
+standard indonesian
+standard malay
+standard moroccan tamazight
+standard persian
+standard taiwanese mandarin
+stanisławow voivodeship
+stanisławów voivodeship
+stann creek district
+stara zagora
+staro nagoricane municipality
+staro nagoričane municipality
+staropolskie voivodeship
+stary oskol
+state of brandenburg
+state of costa rica
+state of eritrea
+state of guatemala
+state of honduras
+state of israel
+state of japan
+state of jordan
+state of kuwait
+state of lebanon
+state of libya
+state of mexico
+state of mongolia
+state of nicaragua
+state of palestine
+state of qatar
+state of saxony-anhalt
+state of vatican city
+status civitatis vaticanae
+stavanger
+stavropol
+stavropol krai
+stefan voda district
+steppes general governorate
+sterling heights
+sterlitamak
+stezyca land
+stift corvey
+stip municipality
+stockholm
+stockholm county
+stockton
+stoke-on-trent
+stolberg-rossla
+stopice
+stopini municipality
+stopiče
+stopiņi municipality
+storojinet county
+storojineț county
+storstrøm county
+stralia
+strasbourg
+straseni
+straseni district
+straya
+strenci municipality
+strenči municipality
+stria
+stromsholm county
+struga municipality
+strumica municipality
+strymon
+strömsholm county
+strășeni
+strășeni district
+studenicani municipality
+studeničani municipality
+stung treng province
+stuttgart
+styria
+stäkes county
+stężyca land
+subang jaya
+subotica
+suceava
+suceava county
+suchitepequez department
+suchitepéquez department
+sucre
+sucre department
+sucumbios province
+sucumbíos province
+sud
+sud-est
+sudan
+sudanese
+sudanese arabic
+sudurpashchim province
+suez
+suez governorate
+sughd province
+sugla sanjak
+suhl district
+suibara prefecture
+suifenhe
+suihua
+suining
+suirinsiyou
+suita
+suiyuan province
+suizhou
+sukabumi
+sukhbaatar province
+sukhothai
+sukhumi district
+sukkur
+sukuma
+sul province
+sulawesi selatan-tenggara
+sulawesi utara-tengah
+sulaymaniyah
+sulaymaniyah governorate
+sulaymaniyah sanjak
+suleymanpasa
+sullana
+sultan kudarat
+sultanate of muscat
+sultanate of oman
+sumadija district
+sumare
+sumaré
+sumbawanga
+sumbe
+sumgait
+sumy
+sumy oblast
+suncheon
+sunchon
+sundanese
+sunderland
+sungai penuh
+sungkiang
+sunnyvale
+suomen tasavalta
+suphan buri
+suqian
+sur
+surabaya
+surakarta
+surat
+surat thani
+surgut
+surigao city
+surin
+surinam
+suriname
+surinamese
+surman
+surprise
+surrey
+surrinam
+surxondaryo region
+surya
+susu
+suto orizari municipality
+suwayda governorate
+suwałki voivodeship
+suwon
+suzano
+suzhou
+suzuka
+suğla sanjak
+svalbard
+svartsjo county
+svartsjö county
+svay rieng province
+svencionys district municipality
+sverdlovsk oblast
+sveta ana municipality
+sveti nikole municipality
+swabi
+swahili
+swansea
+swazi
+swaziland
+swazis
+sweden
+swedish
+swedish kingdom
+swietokrzyskie voivodeship
+swindon
+swiss
+swiss confederation
+swiss german
+switzerland
+syburi
+sydney
+syktyvkar
+sylhet
+sylhet division
+sylheti
+syracuse
+syria
+syria vilayet
+syrian
+syrian arab republic
+syrian district
+syunik province
+szabolcs-szatmar-bereg county
+szabolcs-szatmár-bereg county
+szczecin
+szczecin voivodeship
+szeged
+szekesfehervar
+szekszard
+szekszárd
+szigetvar vilayet
+szigetvár vilayet
+szolnok
+szombathely
+székesfehérvár
+sánchez ramírez province
+são bernardo do campo
+são caetano do sul
+são carlos
+são gonçalo
+são josé
+são josé de ribamar
+são josé dos campos
+são josé dos pinhais
+são joão de meriti
+são leopoldo
+são lourenço da mata
+são luís
+são mateus
+são paulo
+são paulo province
+são pedro da aldeia
+são tomé and príncipe
+são tomé og príncipe
+são tomé province
+são toméan
+são toméans
+são vicente
+sédhiou
+ségou
+ségou region
+séguéla
+sétif
+sétif province
+sîngerei district
+sóc trăng
+sông bé
+södermanland county
+sør-trøndelag
+sükhbaatar province
+süleymanpaşa
+sălaj county
+sēja municipality
+sırnak province
+słupsk voivodeship
+sōka-shi
+sơn la
+sơn tây
+t'ien-ching
+ta'if
+ta'izz
+ta'izz governorate
+ta-lien
+tabaco
+tabasco
+taboao da serra
+tabora
+tabora region
+tabou
+taboão da serra
+tabuk
+tacheng
+tachikawa
+tachira
+tacloban
+tacna
+tacna department
+tacoma
+tacuarembo department
+tacuarembó department
+tacurong
+tadjourah region
+tafea
+tafilah governorate
+tagalog
+taganrog
+tagant
+tagbilaran
+taguig
+tagum
+tahaa
+tahoua
+tahoua region
+tahuata
+tai'an
+taiarapu-est
+taiarapu-ouest
+taibaozhuang
+taichu prefecture
+taichung
+taichung county
+taichū prefecture
+taihoku prefecture
+tainan
+tainan city
+tainan county
+tainan prefecture
+taipei
+taipei county
+tairyo sho
+tairyō shō
+taitung city
+taitung county
+taiwan
+taiwan roc
+taiwanese
+taiwanese hokkien
+taiyuan
+taizhou
+tajik
+tajik soviet socialist republic
+tajikistan
+tajikistani
+tajimi
+tak
+takamaka
+takamatsu
+takao district
+takao prefecture
+takao-gai
+takaoka
+takarazuka
+takaroa
+takasaki
+takatsuki
+takayama prefecture
+takeo province
+takhar province
+takua pa
+takuransho
+takuranshō
+takéo province
+talas region
+talca
+talcahuano
+taldyqorgan
+taldyqorğan
+talisay
+talkha
+tallahassee
+tallinn
+taloqan
+talsi municipality
+tama
+tamale
+tamanrasset province
+tamaulipas
+tambacounda region
+tambov
+tambov oblast
+tambov viceroyalty
+tamil
+tamil nadu
+tampere
+tan an
+tana river county
+tanauan
+tanchon
+tandil
+tandjile region
+tandjilé region
+tando allahyar
+tando muhammad khan
+tanga
+tanga region
+tangail
+tanganyika
+tangerang
+tangier
+tangier-tetouan-al hoceima
+tangshan
+tanintharyi region
+tanjungbalai
+tanjungpinang
+tannounyan
+tansui-gun
+tanta
+tanzania
+tanzanian
+tao village
+taoudenit region
+taoudénit region
+taourirt
+taoyuan
+taoyuan county
+taoyuan district
+tapoa province
+taprobane
+taputapuatea
+taraba state
+tarabo
+taraclia county
+taraclia district
+tarakan
+taranaki region
+taranto
+tarapaca region
+tarapacá region
+tarapoto
+taraz
+targovishte
+targu mures
+tarhuna wa msalata district
+tariba
+tarifit
+tarija
+tarija department
+tarim
+tarlac city
+tarnava-mare county
+tarnava-mica county
+tarnobrzeg voivodeship
+tarnopol voivodeship
+tarnow
+tarnow voivodeship
+tarnów
+tarnów voivodeship
+tarsus
+tartar district
+tartu county
+tartus governorate
+tashelhit
+tashkent
+tashkent region
+tasikmalaya
+tasman district
+tasmania
+tatabanya
+tatabánya
+tatakoto
+tataouine governorate
+tatar
+tatarstan
+tatui
+tatuí
+taubate
+taubaté
+taunggyi
+taurage district municipality
+tauragė district municipality
+tauranga
+tausug
+tavush province
+tawau
+tawi-tawi
+tay
+tay hoi
+tay ninh
+tayabas
+tayk
+taza
+taʽizzi-adeni arabic
+tbilisi
+tbong khmum province
+tearce municipality
+tebessa
+tebessa province
+tebing tinggi
+tecuci county
+tegal
+tegucigalpa
+tehran
+tehran province
+teixeira de freitas
+tekirdag
+tekirdag metropolitan municipality
+tekirdag province
+tekirdağ
+tekirdağ metropolitan municipality
+tekirdağ province
+tel aviv
+tel aviv district
+telangana
+telemark
+telenesti district
+telenești district
+teleorman county
+telford
+telgehus county
+telsiai district municipality
+telugu
+telšiai district municipality
+tema
+temara
+temburong district
+temecula
+temesvar eyalet
+temesvár eyalet
+temirtau
+temotu province
+tempe
+temperley
+temuco
+tenjiku
+tennessee
+tenochtitlan
+teofilo otoni
+tepelene district
+tepelenë district
+tepexpan
+tepic
+terekeka state
+terengganu
+teresina
+teresopolis
+teresópolis
+termez
+ternate
+terni
+ternopil
+ternopil oblast
+terra d'otranto
+terra di bari
+terra di lavoro
+terra mariana
+terrassa
+terrebonne
+territoire de banalia
+territory of new guinea
+tervete municipality
+tete
+tete province
+tetouan
+tetovo municipality
+teva i uta
+texas
+texel department
+tezpur
+teófilo otoni
+thaa atoll
+thaba-tseka district
+thai
+thai binh
+thai nguyen
+thailand
+thane
+thanh hoa
+thanh hóa
+thanjavur
+thanyaburi
+tharaka nithi county
+thatta
+the bahamas
+the commonwealth of australia
+the commonwealth of dominica
+the ecuadorian state
+the gambia
+the hague
+the ivory coast
+the kingdom of siam
+the kingdom of thailand
+the mountain kingdom
+the niger
+the old continent
+the philippines
+the prc
+the republic of colombia
+the republic of uganda
+the roc
+the vatican
+theme of ohrid
+theme of philadelphia
+theme of serbia
+theodosiopolis
+thessalonica
+thessaloniki
+thessaly region
+thies
+thies region
+thimphu
+thimphu district
+thiruvananthapuram
+thiès
+thiès region
+thonburi province
+thornton
+thousand oaks
+thrace
+thracesian theme
+thracia and macedonia
+thrissur
+thu dau mot
+thu đuc
+thua thien hue
+thunder bay
+thuringia
+thái bình
+thái nguyên
+thủ dầu một
+thủ đức
+thừa thiên huế
+tianchang
+tianjin
+tianshui
+tianzhu
+tiaret
+tiaret province
+tibesti region
+tibet autonomous region
+tibetan
+ticino department
+tidore islands
+tieli
+tieling
+tien giang
+tiflet
+tiflis əyaləti
+tigaraksa
+tighina county
+tigray region
+tigrinya
+tijuana
+tikrit
+tilburg
+tillaberi region
+tillabéri region
+timbuktu region
+timimoun province
+timis county
+timis-torontal county
+timisoara
+timiș county
+timiș-torontal county
+timișoara
+timon
+timor-leste
+tinaquillo
+tindouf province
+tipasa province
+tirana
+tirana county
+tirana district
+tiraspol
+tiraspol county
+tiraspol municipality
+tiris al-gharbiyya
+tiris zemmour
+tiruchirappalli
+tirunelveli
+tirupati
+tiruvannamalai
+tissemsilt province
+titagarh
+tivaouane
+tivat municipality
+tizi ouzou province
+tiền giang
+tkvarcheli district
+tlaquepaque
+tlaxcala
+tlemcen
+tlemcen province
+toamasina
+toamasina province
+toba batak
+toba tek singh
+tobolsk viceroyalty
+tobruk
+tochigi
+tochigi prefecture
+tocuyito
+toda
+toen district
+toen town
+togdheer region
+togo
+togolese
+togolese republic
+tok pisin
+tokai-shi
+tokat
+tokat province
+tokchon
+toko town
+tokorozawa
+tokushima
+tokushima prefecture
+tokyo
+tokyo prefecture
+toledo
+toledo district
+toliara province
+tolima department
+tolna county
+toluca de lerdo
+tolyatti
+tomakomai
+tome prefecture
+tomsk
+tomsk oblast
+tonala
+tonalá
+tondabayashi
+tonga
+tonga islands
+tongan
+tongatapu
+tongchuan
+tonghua
+tongi
+tongliao
+tongling
+tongren
+tongyeong
+tonj state
+toowoomba
+topeka
+toplica district
+torba
+torbat-e heydarieh
+torbat-e jam
+toride
+toroko district
+toronto
+torrance
+torreon
+torreón
+torteval
+toruku-gai
+torun
+torun voivodeship
+toruń
+toruń voivodeship
+toseki
+toseki village
+tosk
+totonicapan
+totonicapan department
+totonicapán
+totonicapán department
+tottori
+tottori prefecture
+touba
+toufen city
+touggourt
+touggourt province
+toulouse
+tours
+tov province
+tovuz district
+townsville
+toyama
+toyama prefecture
+toyohashi
+toyokawa
+toyonaka
+toyooka prefecture
+toyosaki prefecture
+toyota
+tozeur governorate
+tra vinh
+trabzon
+trabzon metropolitan municipality
+trabzon province
+trakai district municipality
+traki voivodeship
+trang
+trans-nzoia county
+transvaal province
+trarza
+trashigang district
+trashiyangtse district
+trat
+travancore-cochin
+trebizond eyalet
+trebizond vilayet
+trebnje municipality
+trece martires
+treinta y tres department
+trelawny parish
+trelew
+trencin region
+trentino-south tyrol
+trenčín region
+tres lagoas
+trier
+triesen
+triesenberg
+trieste
+trikala sanjak
+trindade
+trinidad
+trinidad and tobago
+trinidadian
+trinity
+trinity palmetto point parish
+tripoli
+tripoli district
+tripoli eyalet
+tripolitania eyalet
+tripolitania sanjak
+tripolitania vilayet
+tripura
+tristan da cunha
+trnava region
+trnovo
+trois-rivieres
+trois-rivières
+troms
+troms og finnmark
+trondheim
+trongsa district
+tropoje district
+tropojë district
+trujillo
+trà vinh
+três lagoas
+trøndelag
+tsarist russia
+tshikapa
+tshilenge territory
+tshopo
+tshuapa
+tsirang district
+tsonga
+tsu
+tsuchiura
+tsukuba
+tsuruga prefecture
+tsuruoka
+tsuruoka prefecture
+tsusho village
+tswa
+tswana
+tsūshō village
+tuamasaga
+tuareg
+tubarao
+tubarão
+tubas governorate
+tubuai
+tucson
+tucuman province
+tucumán province
+tuguegarao
+tukums municipality
+tula
+tula oblast
+tula viceroyalty
+tulcea county
+tulkarm governorate
+tulsa
+tulu
+tumaraa
+tumbes department
+tumbuka
+tumxuk
+tunceli province
+tungurahua province
+tunis
+tunis eyalet
+tunis governorate
+tunis vilayet
+tunisia
+tunisian
+tunisian arabic
+tunisian republic
+tunja
+turbat
+turda county
+tureia
+turgay oblast
+turgutlu
+turin
+turkana county
+turkey
+turkish
+turkish cypriot
+turkish cypriot constituent state
+turkish cypriot state
+turkish cyprus
+turkish occupied cyprus
+turkish republic of cyprus
+turkistan
+turkistan region
+turkmen
+turkmen soviet socialist republic
+turkmenabat
+turkmenia
+turkmenistan
+turkmenistani
+turks and caicos islands
+turku
+turku and pori province
+turmero
+turpan
+turtle island
+turuberan
+tuscan
+tuscany
+tutong district
+tutova county
+tuva
+tuvalu
+tuvaluan
+tuxtla gutierrez
+tuxtla gutiérrez
+tuy hoa
+tuy hòa
+tuyen quang
+tuyen đuc
+tuyên quang
+tuyên đức
+tuzi municipality
+tuzla
+tver
+tver oblast
+tver viceroyalty
+twi
+twic
+tychy
+tyre
+tyrol
+tyumen oblast
+tày
+táchira
+táriba
+tân an
+târgu mureș
+târnava-mare county
+târnava-mică county
+tây hồi
+tây ninh
+tébessa
+tébessa province
+tétouan
+töv province
+türkmenabat
+tērvete municipality
+tōen district
+tōen town
+tōkai-shi
+tōkō town
+tōseki
+tōseki village
+ua-huka
+ua-pou
+uaboe district
+uasin gishu county
+uba
+ube
+uberaba
+uberlandia
+uberlândia
+ubon ratchathani
+ubundu territory
+ubá
+ucayali department
+udaipur
+udmurtia
+udomsai
+udon thani
+udu
+udupi
+udzima wa komori
+ueda
+ufa and simbirsk governorate-general
+ufa viceroyalty
+uganda
+ugandah
+ugandan
+uige province
+uijeongbu
+uitenhage
+uiwang
+ujar district
+uji
+ujjain
+ukmerge district municipality
+ukmergė district municipality
+ukraina
+ukraine
+ukrainia
+ukrainian
+ukraïna
+ulaanbaatar
+ulan-ude
+ulanhot
+ulanqab
+ulcinj municipality
+ulhasnagar
+ulm
+ulsan
+uluberia
+ulyanovsk
+ulyanovsk oblast
+ulytau region
+uman
+umbria
+umbundu
+umbuso weswatini
+umerkot
+umm qasr
+umm salal municipality
+umuahia
+umuarama
+umutara province
+unaizah
+undivided assam
+ungheni
+ungheni county
+ungheni district
+unguja north region
+unguja south region
+union des comores
+union of burma
+union of the comoros
+union territory of mizoram
+united arab emirates
+united kingdom
+united mexican states
+united republic of tanzania
+united states
+united states of america
+united states of mexico
+united states virgin islands
+unity
+unterwalden
+unye
+upington
+upper armenia
+upper austria
+upper demerara-berbice
+upper east region
+upper nile
+upper normandy
+upper north province
+upper river division
+upper saxon
+upper south province
+upper takutu-upper essequibo
+upper west region
+uppland county
+uppsala
+uppsala county
+ura-tyube vilayat
+urasoe
+urawa prefecture
+urayasu
+urban municipality of ptuj
+urdaneta
+urdu
+urfa sanjak
+urgench
+urhobo
+urmia
+ursna sela
+uruguaiana
+uruguay
+uruguayan
+uruma
+urumqi
+uruzgan province
+uršna sela
+us of a
+us of america
+us of m
+usak
+usak province
+uskup sanjak
+usti nad labem region
+usulutan department
+usulután department
+utah
+utena district municipality
+uthai thani
+utik
+utrecht
+utsunomiya
+utsunomiya prefecture
+uttar pradesh
+uttaradit
+uttarakhand
+uttarpara kotrung
+uturoa
+uusimaa
+uva province
+uvira territory
+uvs province
+uyghur
+uyo
+uyvar eyalet
+uzbek
+uzbekistan
+uzbekistani
+uzeyr sanjak
+uzhhorod
+uíge province
+uşak
+uşak province
+va'a-o-fonoti
+vaasa province
+vaavu atoll
+vacoas-phoenix
+vadodara
+vadstena county
+vaduz
+vainode municipality
+vaisigano
+vaitupu
+vaiņode municipality
+vakaga prefecture
+vakinankaratra
+valandovo municipality
+valcea county
+valdivia
+vale
+valencia
+valencian
+valencian community
+valera
+valga county
+valinhos
+valka municipality
+valladolid city
+valle de la pascua
+valle del cauca department
+valle department
+valledupar
+vallee du bandama district
+vallejo
+vallée du bandama district
+valmiera
+valmiera municipality
+valparaiso
+valparaiso de goias
+valparaiso region
+valparaíso
+valparaíso de goiás
+valparaíso region
+valverde province
+van
+van eyalet
+van metropolitan municipality
+van province
+van vilayet
+vancouver
+vantaa
+vanuatu
+vanuatuan
+vanuatuans
+varaklani municipality
+varakļāni municipality
+varanasi
+varat eyalet
+varazdin county
+varaždin county
+varberg county
+varena district municipality
+varginha
+varkava municipality
+varmland county
+varna
+varna oblast
+varzea grande
+varzea paulista
+varėna district municipality
+vas county
+vasai-virar
+vasilevo municipality
+vaslui county
+vaspurakan
+vasteras
+vasteras county
+vasterbotten county
+vasternorrland county
+vastmanland county
+vastra gotaland county
+vatican
+vatican city
+vatican city state
+vatovavy
+vatovavy-fitovinany
+vaughan
+vaupes department
+vaupés department
+vavoua
+vayots dzor province
+vecpiebalga municipality
+vecumnieki municipality
+vehari
+vejle county
+veles municipality
+veliko tarnovo
+veliky novgorod
+vellore
+venda
+venetian
+veneto
+venezuela
+venezuelan
+venezuelans
+venice
+ventspils
+ventspils municipality
+ventura
+veracruz
+veraguas province
+veraval
+verbano department
+verdun
+vere parish
+vermont
+verona
+vespasiano
+vest-agder
+vestfold
+vestfold og telemark
+vestland
+veszprem
+veszprem county
+veszprém
+veszprém county
+vevcani municipality
+vevčani municipality
+viamao
+viamão
+viana
+viana do castelo
+viborg county
+vic district
+vicenza
+vichada department
+victoria
+victoria de durango
+victorville
+vidin
+vidin eyalet
+vidisha
+vienna
+vientiane
+vientiane province
+viesite municipality
+viesīte municipality
+viet nam
+vietnam
+vietnamese
+vihiga county
+vijayapura
+vijayawada
+viken
+vila real
+vila velha
+vilaka municipality
+vilani municipality
+vilayet of tajik assr
+viljandi county
+vilkaviskis district municipality
+vilkaviškis district municipality
+villa alemana
+villa canales
+villa clara province
+villa de alvarez
+villa de álvarez
+villa mercedes
+villa nueva
+villahermosa
+villavicencio
+villeurbanne
+vilna governorate-general
+vilnius
+vilnius city municipality
+vilnius district municipality
+vina del mar
+vincentian
+vincentians
+vincy
+vindhya pradesh
+vinh
+vinh binh
+vinh long
+vinh phu
+vinh phuc
+vinica municipality
+vinnytsia
+vinnytsia oblast
+viqueque municipality
+viransehir
+viranşehir
+virginia
+virginia beach
+virovitica-podravina county
+virrey del pino
+visaginas municipality
+visakhapatnam
+visalia
+viseu
+vitarte
+vitebsk
+vitebsk region
+viti
+vitoria
+vitoria da conquista
+vitoria de santo antao
+vitória
+vitória da conquista
+vitória de santo antão
+vize sanjak
+vizianagaram
+viña del mar
+vič district
+viļaka municipality
+viļāni municipality
+việt nam
+vladimir
+vladimir oblast
+vladimir viceroyalty
+vladivostok
+vlasca county
+vlașca county
+vlore county
+vlore district
+vlorë county
+vlorë district
+vojvodina
+volgograd
+volgograd oblast
+volhynian viceroyalty
+volhynian voivodeship
+vologda oblast
+vologda viceroyalty
+volta redonda
+volta region
+volyn oblast
+volzhsky
+vorarlberg
+voronezh
+voronezh oblast
+voronezh viceroyalty
+voru county
+votorantim
+voznesensk viceroyalty
+vrancea county
+vranestica municipality
+vraneštica municipality
+vrapciste municipality
+vrapčište municipality
+vratsa
+vukovar-srijem county
+vung tau
+vushtrri sanjak
+vyatka viceroyalty
+vyborg viceroyalty
+vysocina region
+vysočina region
+várzea grande
+várzea paulista
+vâlcea county
+värmland county
+västerbotten county
+västernorrland county
+västerås
+västerås county
+västmanland county
+västra götaland county
+võru county
+vārkava municipality
+vĩnh bình
+vĩnh long
+vĩnh phú
+vĩnh phúc
+vũng tàu
+wa
+waco
+wadi al hayaa district
+wadi al shatii district
+wadi al-seer
+wadi fira region
+wah cantonment
+wai'tu kubuli
+waikato region
+wajir county
+wakamatsu prefecture
+wakayama
+wakayama prefecture
+wake island
+waldeck
+waldeck-eisenberg
+waldeck-wildungen
+wales
+walikale territory
+wallis and futuna
+wallonia
+walungu territory
+walvis bay
+wamba territory
+wangdue phodrang district
+wanica district
+warangal
+waray
+warmian-masurian voivodeship
+warnes
+warrap
+warren
+warri
+warrington
+warsaw
+warsaw department
+warsaw governorate-general
+warsaw voivodeship
+warszawa land
+washington
+wasit governorate
+watarai prefecture
+waterbury
+waterford
+waterloo
+watsa territory
+wau
+wau state
+wazirabad
+wałbrzych
+wałbrzych voivodeship
+weifang
+weihai
+weinan
+wele-nzas
+wellington
+wellington region
+wenden voivodeship
+wenling
+wenzhou
+west
+west azarbaijan province
+west backa district
+west bačka district
+west bengal
+west bohemia
+west bromwich
+west coast division
+west coast region
+west covina
+west darfur
+west flemish
+west grand bahama
+west greece region
+west java
+west jordan
+west kalimantan
+west kazakhstan region
+west kordofan
+west new britain province
+west nusa tenggara
+west papua
+west pokot county
+west pomeranian voivodeship
+west siberia governorate-general
+west sulawesi
+west sumatra
+west valley city
+west virginia
+west zealand county
+western area
+western armenian
+western australia
+western bahr el ghazal
+western cape
+western development region
+western division
+western dzongdey
+western equatoria
+western highlands province
+western lakes state
+western macedonia region
+western mesopotamia
+western north region
+western province
+western region
+western samoa
+western slovakia
+western state
+western visayas
+westfjords
+westminster
+westmoreland parish
+white nile
+white russia
+white ruthenia
+wichita
+wichita falls
+wielun land
+wieluń land
+wiesbaden
+wigan
+willemstad
+wilno voivodeship
+windhoek
+windsor
+windward islands
+winnipeg
+winston-salem
+winterthur
+wippergau
+wisconsin
+wismar
+wizna land
+wolaita sodo
+wolayttattuwa
+woleu-ntem province
+wolfsburg
+wollongong
+wolof
+wolverhampton
+wolyn voivodeship
+wonju
+wonsan
+worcester
+world island
+woroba district
+wołyn voivodeship
+wołyń voivodeship
+wrexham county borough
+wrocław
+wrocław voivodeship
+wschowa land
+wu chinese
+wuchang city
+wuhai
+wuhan
+wuhu
+wujiaqu
+wuppertal
+wurttemberg
+wurzburg
+wuwei
+wuxi
+wuzhong
+wuzhou
+wyoming
+wyszogrod land
+wyszogród land
+württemberg
+würzburg
+włocławek
+włocławek voivodeship
+włodzimierz voivodeship
+xai-xai
+xaisomboun province
+xalapa
+xhosa
+xi'an
+xiamen
+xiang chinese
+xiangkhouang province
+xiangtan
+xiangyang
+xianning
+xianyang
+xiaogan
+xikang
+xingning
+xingtai
+xining
+xinji
+xinjiang
+xinjiang province
+xinxiang
+xinyang
+xinyu
+xinzhou
+xixon city
+xixón city
+xorazm region
+xu province
+xuancheng
+xuchang
+xuzhou
+ya'an
+yaadga
+yachiyo
+yafran district
+yahuma
+yaizu
+yakoma
+yala
+yalova
+yalova province
+yamagata
+yamagata prefecture
+yamaguchi
+yamaguchi prefecture
+yamalo-nenets autonomous district
+yamanashi prefecture
+yamato
+yambol
+yamoussoukro
+yamoussoukro autonomous district
+yan province
+yan'an
+yanbu
+yancheng
+yang province
+yangchun
+yangjiang
+yangju
+yangon
+yangon region
+yangquan
+yangsan
+yangzhou
+yantai
+yao
+yaounde
+yaoundé
+yap state
+yaracuy
+yarden
+yardimli district
+yaren district
+yaritagua
+yaroslavl
+yaroslavl oblast
+yaroslavl viceroyalty
+yasothon
+yasuj
+yatsushiro
+yatsushiro prefecture
+yavatmal
+yazd
+yazd province
+yei river state
+yei zhuang
+yekaterinburg
+yekaterinoslav viceroyalty
+yemen
+yemen eyalet
+yemen vilayet
+yemeni
+yen bai
+yenegoa
+yeoju
+yeongju
+yeosu
+yerevan
+yeumbeul nord
+yeumbeul sud
+yevlakh
+yevlakh district
+yevpatoriya
+yewa north
+yi province
+yibin
+yichang
+yichun
+yiddish
+yidu
+yilan county
+yinchuan
+yingde
+yingkou
+yingtan
+yisrael
+yiyang
+yobe state
+yogyakarta
+yokkaichi
+yokohama
+yokosuka
+yola
+yonago
+yongbei zhuang
+yongcheng
+yongin
+yongzhou
+york
+yoro department
+yoruba
+yoshino sho
+yoshino shō
+yoshkar-ola
+you province
+yozgat
+yozgat province
+ysland
+yuanlin city
+yucatan
+yucatán
+yue chinese
+yueqing
+yueyang
+yukon
+yuksekova district
+yulin
+yumbi
+yuncheng
+yunfu
+yunlin county
+yunnan
+yuxi
+yuyao city
+yuzhno-sakhalinsk
+yuzhou
+yên bái
+yüksekova district
+zabaykalsky krai
+zabja vas
+zabljak municipality
+zabrze
+zabul province
+zacapa department
+zacatecas
+zadar county
+zadar-knin county
+zagazig
+zaghouan governorate
+zagorion
+zagorje ob savi municipality
+zagreb
+zagreb county
+zahedan
+zahle
+zahlé
+zaire province
+zajas municipality
+zajecar district
+zaječar district
+zakarpattia oblast
+zakho
+zakroczym land
+zala county
+zalaegerszeg
+zama
+zambezi region
+zambezia province
+zambia
+zambian
+zambians
+zamboanga
+zamboanga peninsula
+zamfara state
+zamora chinchipe
+zamora de hidalgo
+zamosc voivodeship
+zamość voivodeship
+zangilan district
+zango
+zanjan
+zanjan province
+zanzan district
+zanzibar city
+zaozhuang
+zapopan
+zaporizhzhia
+zaporizhzhia oblast
+zaporozhye oblast
+zaqatala district
+zaragoza
+zarasai district municipality
+zarate
+zardab district
+zaria
+zarqa
+zarqa governorate
+zarshad sanjak
+zastavna county
+zavkhan province
+zawiya district
+zazaki
+zeeland
+zefta
+zelenikovo municipality
+zelezniki municipality
+zelino municipality
+zell am harmersbach
+zeme ceska
+zeme slezska
+zemun
+země slezská
+země česká
+zeta municipality
+zhangjiajie
+zhangjiakou
+zhangye
+zhangzhou
+zhanjiang
+zhaoqing
+zhaotong
+zhejiang
+zhemgang district
+zhengzhou
+zhenjiang
+zhetisu region
+zhongshan
+zhongwei
+zhoudun county
+zhoukou
+zhoushan
+zhuang
+zhubei city
+zhuhai
+zhumadian
+zhuzhou
+zhytomyr
+zhytomyr oblast
+zibo
+zielona gora
+zielona gora voivodeship
+zielona góra
+zielona góra voivodeship
+zigong
+ziguinchor
+ziguinchor region
+zilina region
+zilupe municipality
+zimbabwe
+zimbabwe rhodesia
+zimbabwean
+zimbabweans
+zinder
+zinder region
+ziyang
+zlatibor district
+zlatoust
+zlin region
+zlín region
+zoetermeer
+zomba
+zonguldak
+zonguldak province
+zor sanjak
+zou department
+zrece municipality
+zreče municipality
+zrnovci municipality
+zulia
+zulu
+zunyi
+zurich
+zwiefalten abbey
+zwolle
+zárate
+águas lindas de goiás
+áncash department
+älvsborg county
+älvsborgs slottslän
+åland
+çanad sanjak
+çanakkale
+çanakkale province
+çankırı province
+çayırova
+çerkezköy
+çirmen sanjak
+çorlu
+çorum
+çorum province
+çıldır eyalet
+équateur
+érd
+évora
+île-de-france
+ñeembucú department
+ñuble region
+ödemiş district
+öland county
+örebro
+örebro county
+östergötland county
+övörkhangai province
+østfold
+ústí nad labem region
+ünye
+ürümqi
+üsküp sanjak
+ādaži municipality
+čair municipality
+čaška municipality
+češinovo-obleševo municipality
+črnomelj municipality
+črnuče district
+čučer-sandevo municipality
+đa lat
+đak lak
+đak nong
+đien bien
+đinh tuong
+điện biên
+đong hoi
+đong nai
+đong thap
+đà lạt
+đắk lắk
+đắk nông
+định tường
+đồng hới
+đồng nai
+đồng tháp
+ērgļi municipality
+ķegums municipality
+ķekava municipality
+łeczyca voivodeship
+łodz
+łodz voivodeship
+łodzkie voivodeship
+łomza department
+łomza land
+łomza voivodeship
+łomża department
+łomża land
+łomża voivodeship
+łódzkie voivodeship
+łódź
+łódź voivodeship
+łęczyca voivodeship
+ōgaki-shi
+ōita prefecture
+ōita-shi
+ōme
+ōmuta-shi
+ōnojō-shi
+ōsato-shō
+ōsonoshō
+ōta-shi
+ōtsu prefecture
+świętokrzyskie voivodeship
+şanlıurfa
+şanlıurfa metropolitan municipality
+şanlıurfa province
+şırnak province
+šakiai district municipality
+šalčininkai district municipality
+šavnik municipality
+šentjur municipality
+šentvid district
+šiauliai
+šiauliai city municipality
+šiauliai district municipality
+šibenik-knin county
+šilalė district municipality
+šilutė district municipality
+širvintos district municipality
+šiška
+šmarna gora district
+štip municipality
+šumadija district
+šuto orizari municipality
+švenčionys district municipality
+žabja vas
+žabljak municipality
+železniki municipality
+želino municipality
+žilina region
+ǵorče petrov municipality
+șoldănești district
+ștefan vodă district
+ʻeua district
+հայաստան
+البيضاء

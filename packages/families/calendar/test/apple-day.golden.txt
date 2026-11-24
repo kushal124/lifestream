@@ -1,0 +1,18 @@
+Day 2026-10-07 (Wednesday) in America/New_York, 04:00 to 2026-10-08 04:00 (24 h)
+10 atoms: calendar 10
+
+08:30 Reminder “Fake call” due, in Fake list, completed
+08:36 Reminder “Fake call” completed, in Fake list
+09:30–10:30 Event “Fake review”, organised by Person B, 2 attendees, you accepted, video call, Fake Room 1
+11:00–11:30 Event “Fake weekly”, in Europe/London time, repeats weekly
+13:00–13:30 Event “Fake sync”
+16:00 Reminder “Fake someday” completed, in Fake list
+17:00 Reminder “Fake task” due, in Fake tasks
+18:15 Reminder “Fake late one” completed, in Fake list
+
+On 2026-10-07, time unknown
+Event “Fake holiday”
+Reminder “Fake errand” due, in Fake list, flagged
+
+Coverage
+calendar: apple-calendar:person-a@example.com:macbook-air-bb01 read into the day; apple-calendar:person-a@example.com:macbook-pro-0001 read into the day; apple-reminders:person-a@example.com:macbook-pro-0001 read into the day; google-calendar:person-a@example.com:export read into the day

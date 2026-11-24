@@ -1,0 +1,141 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "day@1940716800000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1940716800000,
+      "end_ms": 1940803200000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1940716800000#run",
+          "kind": "run",
+          "start_ms": 1940716800000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e1",
+              "kind": "conversation",
+              "at_ms": 1940749200000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Yes, at noon"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:example-chat:person-z@example.com:cloud msg c-1",
+              "divider": null
+            },
+            {
+              "key": "e3",
+              "kind": "other",
+              "at_ms": 1940752800000,
+              "end_ms": null,
+              "icon": "recording",
+              "name": "Example Log",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Synthetic entry one: the first line",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "15m"
+              },
+              "quiet": false,
+              "focus": "rec:example-log:local:test line l-1",
+              "divider": null
+            },
+            {
+              "key": "e5",
+              "kind": "other",
+              "at_ms": 1940767200000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "example-gone",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "A line of a stream since removed",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:example-gone:local:test line g-1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1940803200000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "1",
+        "words": "message sent"
+      },
+      {
+        "key": "received",
+        "value": "1",
+        "words": "to you"
+      }
+    ],
+    "located": false,
+    "places": [],
+    "people": [
+      {
+        "key": "example-chat:12345",
+        "person": null,
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 message sent",
+        "rows": [
+          "e1"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

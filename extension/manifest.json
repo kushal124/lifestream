@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Lifestream",
+  "version": "0.10.0",
+  "description": "Lets Lifestream on your Mac read your own data from sites you are signed in to, without getting in your way.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp8D/UwDLT/K48lzMeloN+u1T/ge6Lo/E7pIAJZoTpVvXzXbOQo1LZcOISgxa8oI3PoId8pGyXvq5s7/4dV5d3HOyXSaNQd/PA3KxqfuFbQK86yfBaEyV7HM8Mba6D6fImxN4E8O7LdDiU2S6+YQJgVKKghU77UbAit8MITiCaVMKe+OQ9uir41aKF737Xi1/MkKCIl/wB2w13qJGVSGaYkDq9PkhsSCvyhygf9jv9on9nbV2KAPbeJqspVqTUUXSy3u0WMYmIrVVPELGmJz05V7r8tcCUMd61ZJnnXRrEmQ91xy4LNY/iqi1fEgUvCpyQ/qlZfmWAZyw6BvSU9jdQwIDAQAB",
+  "minimum_chrome_version": "120",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "scripting",
+    "storage",
+    "alarms",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://claude.ai/*",
+    "https://chatgpt.com/*",
+    "https://app.whoop.com/*",
+    "https://id.whoop.com/*",
+    "https://api.prod.whoop.com/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_title": "Lifestream",
+    "default_popup": "popup.html"
+  }
+}

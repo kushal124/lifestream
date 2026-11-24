@@ -1,0 +1,71 @@
+{
+  "note": "two contacts go by this name: p1 in touch 2019-02-01 → 2021-06-30, p2 2024-03-04 → 2026-11-13",
+  "matches": [
+    {
+      "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDEiXQ",
+      "kind": "person",
+      "name": "Person A",
+      "also": [
+        "Per"
+      ],
+      "tied": [
+        "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDIiXQ"
+      ],
+      "same": [
+        {
+          "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDMiXQ",
+          "why": "the same full name, as a sender or a chat gave it"
+        }
+      ],
+      "handles": [
+        "+15550000001",
+        "person-a@example.com"
+      ],
+      "chats": [
+        {
+          "chat": "chat.WyJjaGF0Iiwid2hhdHNhcHA6MTU1NTAwMDAwMDFAcy53aGF0c2FwcC5uZXQiXQ",
+          "title": "Person A",
+          "messages": 4500
+        }
+      ],
+      "reach": {
+        "messages": [
+          4800,
+          "2019-02-01",
+          "2021-06-30"
+        ],
+        "calls": [
+          280,
+          "2019-02-09",
+          "2021-06-12"
+        ]
+      }
+    },
+    {
+      "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDIiXQ",
+      "kind": "person",
+      "name": "Person A",
+      "tied": [
+        "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDEiXQ"
+      ],
+      "handles": [
+        "+15550000002"
+      ],
+      "chats": [
+        {
+          "chat": "chat.WyJjaGF0IiwiaW1lc3NhZ2U6KzE1NTUwMDAwMDAyIl0",
+          "title": "Person A",
+          "messages": 900
+        }
+      ],
+      "reach": {
+        "messages": [
+          900,
+          "2024-03-04",
+          "2026-11-13"
+        ]
+      }
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00"
+}

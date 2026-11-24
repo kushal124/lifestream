@@ -1,0 +1,45 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "reminders-mac",
+  name: "reminders",
+  held: "~/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores/",
+  account: "apple-id",
+  engine: {
+    kind: "sqlite",
+    stores: [
+      {
+        identity: "core-data",
+        match: "^Data-[-0-9A-Za-z]+\\.sqlite$",
+        member: "<name>",
+        path: "~/Library/Group Containers/group.com.apple.reminders/Container_v1/Stores",
+        tables: [
+          {
+            keep: "Z_PK IN (WITH RECURSIVE up(k) AS (SELECT ZPARENTREMINDER FROM ZREMCDREMINDER WHERE Z_PK IN (SELECT t_key FROM temp.selected WHERE t_name = 'ZREMCDREMINDER') UNION SELECT row.ZPARENTREMINDER FROM ZREMCDREMINDER AS row JOIN up ON row.Z_PK = up.k) SELECT k FROM up)",
+            key: "Z_PK",
+            name: "ZREMCDREMINDER",
+            role: "changes",
+            touched_by: [
+              [
+                "ZREMCDBASELIST",
+                "SELECT Z_PK AS k FROM ZREMCDREMINDER WHERE ZLIST IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZREMCDBASELIST') OR ZLIST IN (SELECT Z_PK FROM ZREMCDBASELIST WHERE ZPARENTLIST IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZREMCDBASELIST'))",
+              ],
+              ["ZREMCDOBJECT", "SELECT Z_PK AS k FROM ZREMCDREMINDER"],
+              ["ZREMCDHASHTAGLABEL", "SELECT Z_PK AS k FROM ZREMCDREMINDER"],
+              ["ZREMCDDUEDATEDELTAALERT", "SELECT Z_PK AS k FROM ZREMCDREMINDER"],
+              [
+                "ZREMCDREMINDER",
+                "SELECT Z_PK AS k FROM ZREMCDREMINDER WHERE ZPARENTREMINDER IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZREMCDREMINDER')",
+              ],
+            ],
+          },
+          { key: "Z_PK", name: "ZREMCDBASELIST", role: "whole" },
+          { key: "Z_PK", name: "ZREMCDOBJECT", role: "whole" },
+          { key: "Z_PK", name: "ZREMCDHASHTAGLABEL", role: "whole", when_declared: true },
+          { key: "Z_PK", name: "ZREMCDDUEDATEDELTAALERT", role: "whole", when_declared: true },
+          { name: "Z_PRIMARYKEY", role: "whole" },
+        ],
+      },
+    ],
+  },
+} satisfies MacStore;

@@ -1,0 +1,1139 @@
+{
+  "mac-snapshot": [
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:SMS;-;XX-TESTBRAND(smsfp)",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "SMS;-;XX-TESTBRAND(smsfp)",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-12",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": "800000100000000000",
+          "properties": {
+            "$bytes64": "YnAM"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-10",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": "700000000000000001",
+          "properties": {
+            "$bytes64": "YnAK"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:iMessage;+;chat000000000000000001",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "iMessage;+;chat000000000000000001",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "Synthetic Group",
+          "group_id": "SYNTH-GROUP-11",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": 0,
+          "properties": {
+            "$bytes64": "YnAL"
+          },
+          "room_name": "chat000000000000000001",
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:iMessage;-;person-e@example.com",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "iMessage;-;person-e@example.com",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-13",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": 0,
+          "properties": {
+            "$bytes64": "YnAN"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat",
+      "key": "SMS;-;XX-TESTBRAND(smsfp)",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "SMS;-;XX-TESTBRAND(smsfp)",
+        "style": 45,
+        "service": "SMS",
+        "participants": [
+          {
+            "raw": "55555",
+            "canonical": "55555",
+            "kind": "raw"
+          },
+          {
+            "raw": "XX-TESTBRAND(smsfp)",
+            "canonical": "XX-TESTBRAND(smsfp)",
+            "kind": "raw"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307207123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "style": 45,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307203123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "iMessage;+;chat000000000000000001",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "iMessage;+;chat000000000000000001",
+        "style": 43,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307207123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "iMessage;-;person-e@example.com",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "iMessage;-;person-e@example.com",
+        "style": 45,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          }
+        ]
+      },
+      "time": null
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-ATTACH",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-ATTACH",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ],
+        "text": "synthetic message 104",
+        "attributedBody": null,
+        "date": "800000004124456788",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 1,
+          "is_prepared": 0,
+          "is_sent": 1,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": [
+          {
+            "hash": "sha256:ee1939ca0f55437478a864621c179b40e6c366ee8c0672944f2b1c888a2f2e2d",
+            "bytes": 27,
+            "mime_type": "image/heic",
+            "transfer_name": "synthetic.heic"
+          },
+          {
+            "hash": "sha256:ee1939ca0f55437478a864621c179b40e6c366ee8c0672944f2b1c888a2f2e2d",
+            "bytes": 27,
+            "mime_type": null,
+            "transfer_name": "synthetic.heic"
+          },
+          {
+            "hash": null,
+            "bytes": null,
+            "mime_type": "image/heic",
+            "transfer_name": "outside.mov"
+          },
+          {
+            "hash": null,
+            "bytes": null,
+            "mime_type": null,
+            "transfer_name": "purged.bin"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307204124,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-EDIT",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-EDIT",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ],
+        "text": "synthetic message 102",
+        "attributedBody": {
+          "$bytes64": "BAv/"
+        },
+        "date": "800000002123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 1,
+          "is_prepared": 0,
+          "is_sent": 1,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": {
+          "$bytes64": "c3ludGhldGljIGVkaXQgc3VtbWFyeQ=="
+        },
+        "date_edited": "800000002623456789",
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307202123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-GROUP",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-GROUP",
+        "sender": {
+          "raw": "PERSON-B@EXAMPLE.COM",
+          "canonical": "person-b@example.com",
+          "kind": "email"
+        },
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ],
+        "text": "synthetic message 106",
+        "attributedBody": null,
+        "date": "800000006123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307206123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-ORPHAN-HANDLE",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-ORPHAN-HANDLE",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "55555",
+            "canonical": "55555",
+            "kind": "raw"
+          },
+          {
+            "raw": "XX-TESTBRAND(smsfp)",
+            "canonical": "XX-TESTBRAND(smsfp)",
+            "kind": "raw"
+          },
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ],
+        "text": "synthetic café 😀",
+        "attributedBody": null,
+        "date": "800000007123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307207123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-PLAIN",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-PLAIN",
+        "sender": {
+          "raw": "+1 (555) 000-0002",
+          "canonical": "+15550000002",
+          "kind": "phone"
+        },
+        "recipients": [],
+        "text": "synthetic message 100",
+        "attributedBody": null,
+        "date": "800000000123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307200123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-RAW",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-RAW",
+        "sender": {
+          "raw": "XX-TESTBRAND(smsfp)",
+          "canonical": "XX-TESTBRAND(smsfp)",
+          "kind": "raw"
+        },
+        "recipients": [
+          {
+            "raw": "55555",
+            "canonical": "55555",
+            "kind": "raw"
+          }
+        ],
+        "text": "synthetic sender-name line",
+        "attributedBody": null,
+        "date": "800000005123456789",
+        "service": "SMS",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307205123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-TAP",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-TAP",
+        "sender": {
+          "raw": "+1 (555) 000-0002",
+          "canonical": "+15550000002",
+          "kind": "phone"
+        },
+        "recipients": [],
+        "text": "synthetic message 101",
+        "attributedBody": null,
+        "date": "800000001123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 2001,
+        "associated_message_guid": "p:0/SYNTH-MSG-PLAIN",
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307201123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-UNSEND",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-UNSEND",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ],
+        "text": null,
+        "attributedBody": null,
+        "date": "800000003123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 1,
+          "is_prepared": 0,
+          "is_sent": 1,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": "800000003123456790",
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307203123,
+        "precision": "ms"
+      }
+    }
+  ],
+  "mac-delta": [
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-10",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": "800000100123456789",
+          "properties": {
+            "$bytes64": "YnAK"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:iMessage;+;chat000000000000000001",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "iMessage;+;chat000000000000000001",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "Synthetic Group",
+          "group_id": "SYNTH-GROUP-11",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": 0,
+          "properties": {
+            "$bytes64": "YnAL"
+          },
+          "room_name": "chat000000000000000001",
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat-state",
+      "key": "macbook-pro-0001:iMessage;-;+15550000009",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "iMessage;-;+15550000009",
+        "unit_id": "macbook-pro-0001",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-14",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": 0,
+          "properties": {
+            "$bytes64": "YnAO"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat",
+      "key": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "style": 45,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307300123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "iMessage;+;chat000000000000000001",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "iMessage;+;chat000000000000000001",
+        "style": 43,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307301123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "chat",
+      "key": "iMessage;-;+15550000009",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "iMessage;-;+15550000009",
+        "style": 45,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+15550000009",
+            "canonical": "+15550000009",
+            "kind": "phone"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307302123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-LATER-1",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-LATER-1",
+        "sender": {
+          "raw": "+1 (555) 000-0002",
+          "canonical": "+15550000002",
+          "kind": "phone"
+        },
+        "recipients": [],
+        "text": "synthetic message 108",
+        "attributedBody": null,
+        "date": "800000100123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307300123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-LATER-2",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-LATER-2",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+1 (555) 000-0002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          },
+          {
+            "raw": "+15550000003",
+            "canonical": "+15550000003",
+            "kind": "phone"
+          },
+          {
+            "raw": "PERSON-B@EXAMPLE.COM",
+            "canonical": "person-b@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "mailto:Person-C@Example.com",
+            "canonical": "person-c@example.com",
+            "kind": "email"
+          },
+          {
+            "raw": "person-d@",
+            "canonical": "person-d@",
+            "kind": "raw"
+          }
+        ],
+        "text": "synthetic message 109",
+        "attributedBody": null,
+        "date": "800000101123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 1,
+          "is_prepared": 0,
+          "is_sent": 1,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": [
+          {
+            "hash": "sha256:cefbe519ddb2041acc14eb3707833c2285e163f8fecae9827d81afed2c196e35",
+            "bytes": 27,
+            "mime_type": "image/heic",
+            "transfer_name": "later.jpg"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307301123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-LATER-3",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-LATER-3",
+        "sender": {
+          "raw": "+15550000009",
+          "canonical": "+15550000009",
+          "kind": "phone"
+        },
+        "recipients": [],
+        "text": "synthetic message 110",
+        "attributedBody": null,
+        "date": "800000102123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307302123,
+        "precision": "ms"
+      }
+    }
+  ],
+  "phone-backup": [
+    {
+      "kind": "chat-state",
+      "key": "iphone-aa01:any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat-state",
+        "chat_guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "unit_id": "iphone-aa01",
+        "state": {
+          "account_id": "SYNTH-ACCOUNT",
+          "account_login": "E:person-a@example.com",
+          "display_name": "",
+          "group_id": "SYNTH-GROUP-41",
+          "is_archived": 0,
+          "is_filtered": 0,
+          "last_read_message_timestamp": 0,
+          "properties": {
+            "$bytes64": "YnAp"
+          },
+          "room_name": null,
+          "state": 3,
+          "successful_query": 1
+        }
+      },
+      "time": null
+    },
+    {
+      "kind": "chat",
+      "key": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+      "content": {
+        "type": "imessage.chat",
+        "guid": "any;-;urn:biz:00000000-0000-0000-0000-000000000000",
+        "style": 45,
+        "service": "iMessage",
+        "participants": [
+          {
+            "raw": "+15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ]
+      },
+      "time": {
+        "start_ms": 1778307202123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-EDIT",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-EDIT",
+        "sender": null,
+        "recipients": [
+          {
+            "raw": "+15550000002",
+            "canonical": "+15550000002",
+            "kind": "phone"
+          }
+        ],
+        "text": "synthetic edited row, as the phone holds it",
+        "attributedBody": null,
+        "date": "800000002123456789",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 1,
+          "is_prepared": 0,
+          "is_sent": 1,
+          "is_system_message": 0,
+          "was_downgraded": 1
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307202123,
+        "precision": "ms"
+      }
+    },
+    {
+      "kind": "msg",
+      "key": "SYNTH-MSG-PLAIN",
+      "content": {
+        "type": "imessage.msg",
+        "guid": "SYNTH-MSG-PLAIN",
+        "sender": {
+          "raw": "+15550000002",
+          "canonical": "+15550000002",
+          "kind": "phone"
+        },
+        "recipients": [],
+        "text": "synthetic message 500",
+        "attributedBody": null,
+        "date": "800000000123456000",
+        "service": "iMessage",
+        "flags": {
+          "flags": 5,
+          "did_notify_recipient": 0,
+          "is_auto_reply": 0,
+          "is_delayed": 0,
+          "is_delivered": 1,
+          "is_emote": 0,
+          "is_empty": 0,
+          "is_from_me": 0,
+          "is_prepared": 0,
+          "is_sent": 0,
+          "is_system_message": 0,
+          "was_downgraded": 0
+        },
+        "associated_message_type": 0,
+        "associated_message_guid": null,
+        "message_summary_info": null,
+        "date_edited": 0,
+        "date_retracted": 0,
+        "attachments": []
+      },
+      "time": {
+        "start_ms": 1778307200123,
+        "precision": "ms"
+      }
+    }
+  ]
+}

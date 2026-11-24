@@ -1,0 +1,21 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : "always",
+    "expect" : 3,
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-erased.json",
+  "reply" : {
+    "refused" : {
+      "code" : "AGENT_REQUEST_ERASED",
+      "message" : "What this asked for was erased."
+    }
+  },
+  "sent" : {
+    "answer" : "always",
+    "expect" : 3,
+    "id" : "rq-0000000000000001"
+  }
+}

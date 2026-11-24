@@ -1,0 +1,69 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "callhistory-mac",
+  name: "calls",
+  held: "~/Library/Application Support/CallHistoryDB/CallHistory.storedata",
+  account: "apple-id",
+  engine: {
+    kind: "sqlite",
+    stores: [
+      {
+        identity: "core-data",
+        member: "callhistory.sqlite",
+        path: "~/Library/Application Support/CallHistoryDB/CallHistory.storedata",
+        tables: [
+          {
+            key: "Z_PK",
+            name: "ZCALLRECORD",
+            role: { main: { rows: "call rows", time: "NULLIF(ZDATE, 0) + 978307200" } },
+            touched_by: [
+              [
+                "Z_2REMOTEPARTICIPANTHANDLES",
+                "SELECT Z_2REMOTEPARTICIPANTCALLS AS k FROM Z_2REMOTEPARTICIPANTHANDLES WHERE rowid IN (SELECT t_key FROM temp.touched WHERE t_name = 'Z_2REMOTEPARTICIPANTHANDLES')",
+              ],
+              [
+                "ZEMERGENCYMEDIAITEM",
+                "SELECT ZUPLOADEDFORCALL AS k FROM ZEMERGENCYMEDIAITEM WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZEMERGENCYMEDIAITEM')",
+              ],
+              [
+                "ZHANDLE",
+                "SELECT Z_2REMOTEPARTICIPANTCALLS AS k FROM Z_2REMOTEPARTICIPANTHANDLES WHERE Z_4REMOTEPARTICIPANTHANDLES IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZHANDLE')",
+              ],
+              [
+                "ZHANDLE",
+                "SELECT Z_PK AS k FROM ZCALLRECORD WHERE ZINITIATOR IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZHANDLE')",
+                "ZCALLRECORD.ZINITIATOR",
+              ],
+            ],
+          },
+          {
+            keep: "Z_2REMOTEPARTICIPANTCALLS IN (SELECT Z_PK FROM ZCALLRECORD)",
+            key: "rowid",
+            name: "Z_2REMOTEPARTICIPANTHANDLES",
+            role: "follows",
+          },
+          {
+            keep: [
+              {
+                sql: "Z_PK IN (SELECT Z_4REMOTEPARTICIPANTHANDLES FROM Z_2REMOTEPARTICIPANTHANDLES UNION SELECT ZINITIATOR FROM ZCALLRECORD)",
+                when: "ZCALLRECORD.ZINITIATOR",
+              },
+              { sql: "Z_PK IN (SELECT Z_4REMOTEPARTICIPANTHANDLES FROM Z_2REMOTEPARTICIPANTHANDLES)" },
+            ],
+            key: "Z_PK",
+            name: "ZHANDLE",
+            role: "follows",
+          },
+          {
+            keep: "ZUPLOADEDFORCALL IN (SELECT Z_PK FROM ZCALLRECORD)",
+            key: "Z_PK",
+            name: "ZEMERGENCYMEDIAITEM",
+            role: "follows",
+            when_declared: true,
+          },
+        ],
+      },
+    ],
+  },
+} satisfies MacStore;

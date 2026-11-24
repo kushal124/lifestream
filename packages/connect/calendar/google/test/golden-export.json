@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "event",
+    "key": "bday0001@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260920\r\nDTEND;VALUE=DATE:20260921\r\nRRULE:FREQ=YEARLY\r\nUID:bday0001@google.com\r\nSUMMARY:Synthetic birthday\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1789862400000,
+      "end_ms": 1789948800000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "bday0001@google.com:20260920",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260922\r\nDTEND;VALUE=DATE:20260923\r\nRECURRENCE-ID;VALUE=DATE:20260920\r\nUID:bday0001@google.com\r\nSUMMARY:Synthetic birthday (moved)\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1790035200000,
+      "end_ms": 1790121600000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "evt0001@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART:20260908T043000Z\r\nDTEND:20260908T053000Z\r\nDTSTAMP:20260907T040000Z\r\nUID:evt0001@google.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=person-a@exa\r\n mple.com;X-NUM-GUESTS=0:mailto:person-a@example.com\r\nCREATED:20260801T100000Z\r\nDESCRIPTION:Line one\\nLine two\\; with a comma\\, and a backslash \\\\ here\r\nLAST-MODIFIED:20260802T113015Z\r\nLOCATION:Room 1\\, Example Building\r\nSEQUENCE:2\r\nSTATUS:CONFIRMED\r\nSUMMARY:Synthetic planning\r\nTRANSP:OPAQUE\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788841800000,
+      "end_ms": 1788845400000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "evt0002@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260910\r\nDTEND;VALUE=DATE:20260913\r\nDTSTAMP:20260907T040000Z\r\nUID:evt0002@google.com\r\nSUMMARY:Synthetic trip\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788998400000,
+      "end_ms": 1789257600000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "ny0001@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;TZID=America/New_York:20260715T090000\r\nDTEND;TZID=America/New_York:20260715T100000\r\nDTSTAMP:20260907T040000Z\r\nUID:ny0001@google.com\r\nSUMMARY:Summer synthetic call\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1784120400000,
+      "end_ms": 1784124000000,
+      "offset_min": -240,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "ny0002@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;TZID=America/New_York:20261215T090000\r\nDTEND;TZID=America/New_York:20261215T100000\r\nDTSTAMP:20260907T040000Z\r\nUID:ny0002@google.com\r\nSUMMARY:Winter synthetic call\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1797343200000,
+      "end_ms": 1797346800000,
+      "offset_min": -300,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "series01@google.com",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;TZID=Asia/Kolkata:20260907T090000\r\nDTEND;TZID=Asia/Kolkata:20260907T093000\r\nRRULE:FREQ=WEEKLY;BYDAY=MO\r\nDTSTAMP:20260907T040000Z\r\nUID:series01@google.com\r\nSUMMARY:Weekly synthetic sync\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1788751800000,
+      "end_ms": 1788753600000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "event",
+    "key": "series01@google.com:20260914T033000Z",
+    "content": {
+      "type": "calendar.event",
+      "content": "BEGIN:VEVENT\r\nDTSTART;TZID=Asia/Kolkata:20260914T110000\r\nDTEND;TZID=Asia/Kolkata:20260914T113000\r\nDTSTAMP:20260907T040000Z\r\nUID:series01@google.com\r\nRECURRENCE-ID;TZID=Asia/Kolkata:20260914T090000\r\nSUMMARY:Weekly synthetic sync (moved)\r\nEND:VEVENT\r\n"
+    },
+    "time": {
+      "start_ms": 1789363800000,
+      "end_ms": 1789365600000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  }
+]

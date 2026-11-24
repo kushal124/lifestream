@@ -1,0 +1,335 @@
+{
+  "chapters": [
+    {
+      "kind": "day",
+      "episode": null,
+      "start_ms": 1794301200000,
+      "end_ms": 1794387600000,
+      "rows": [
+        "gap:1794301200000",
+        "e2",
+        "gap:1794309540000",
+        "e3",
+        "gap:1794311820000",
+        "e4",
+        "e5",
+        "e8",
+        "e11",
+        "gap:1794375660000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1794301200000",
+          "start_ms": 1794301200000,
+          "end_ms": 1794309540000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "2h 19m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1794309540000",
+          "start_ms": 1794309540000,
+          "end_ms": 1794311820000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "38m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1794311820000",
+          "start_ms": 1794311820000,
+          "end_ms": 1794326280000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "4h 1m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1794375660000",
+          "start_ms": 1794375660000,
+          "end_ms": 1794387600000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "3h 19m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Vitals",
+          "firstRowId": "e2"
+        },
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e4"
+        },
+        {
+          "text": "Person A",
+          "firstRowId": "e5"
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e2",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 66",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 66",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1794309540000,
+      "end_ms": null,
+      "at_ms": 1794309540000,
+      "atoms": [
+        2
+      ]
+    },
+    {
+      "id": "e3",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 69",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 69",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1794311820000,
+      "end_ms": null,
+      "at_ms": 1794311820000,
+      "atoms": [
+        3
+      ]
+    },
+    {
+      "id": "e4",
+      "kind": "other",
+      "family": "chat",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "9h 44m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1794326280000,
+      "end_ms": 1794361320000,
+      "at_ms": 1794326280000,
+      "atoms": [
+        4,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "e5",
+      "kind": "other",
+      "family": "chat",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "12h 28m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1794330780000,
+      "end_ms": 1794375660000,
+      "at_ms": 1794330780000,
+      "atoms": [
+        5,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "e8",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 77",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 77",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1794351300000,
+      "end_ms": null,
+      "at_ms": 1794351300000,
+      "atoms": [
+        8
+      ]
+    },
+    {
+      "id": "e11",
+      "kind": "other",
+      "family": "vitals",
+      "title": "Heart rate 52",
+      "row": {
+        "name": "Vitals",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Heart rate 52",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1794370020000,
+      "end_ms": null,
+      "at_ms": 1794370020000,
+      "atoms": [
+        11
+      ]
+    },
+    {
+      "id": "e14",
+      "kind": "other",
+      "family": "ledger",
+      "title": "-821.00 USD to shop 306",
+      "row": {
+        "name": "Ledger",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "-821.00 USD to shop 306",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        14
+      ]
+    },
+    {
+      "id": "e15",
+      "kind": "other",
+      "family": "ledger",
+      "title": "A note that states no time",
+      "row": {
+        "name": "Ledger",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "A note that states no time",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        15
+      ]
+    }
+  ],
+  "also": [
+    "e14",
+    "e15"
+  ],
+  "all_day": [],
+  "untimed": {
+    "rows": [
+      "e14",
+      "e15"
+    ],
+    "names": [
+      {
+        "text": "Ledger",
+        "firstRowId": "e14"
+      }
+    ]
+  },
+  "plan": [],
+  "headings": [
+    1
+  ],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": null,
+    "people": null,
+    "mac_ms": null,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": null,
+    "received": null
+  },
+  "people": {
+    "contacts": [],
+    "groups": []
+  },
+  "updated": 1794387600000
+}

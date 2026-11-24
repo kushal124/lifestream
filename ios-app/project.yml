@@ -1,0 +1,302 @@
+name: LifestreamCapture
+options:
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+configs:
+  Debug: debug
+  Release: release
+  AppStore: release
+  Onboarding: release
+  Speed: release
+  PersonalTeam: release
+configFiles:
+  Debug: Signing/Signing.xcconfig
+  Release: Signing/Signing.xcconfig
+  AppStore: Signing/Signing.xcconfig
+  Onboarding: Signing/Signing.xcconfig
+  Speed: Signing/Signing.xcconfig
+  PersonalTeam: Signing/Signing.xcconfig
+packages:
+  LifestreamCaptureCore:
+    path: .
+  HomeLink:
+    path: ../homelink
+  PhotoLibrary:
+    path: ../photolibrary
+  Cockpit:
+    path: ../design/swift
+settings:
+  base:
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: 6.0
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    CURRENT_PROJECT_VERSION: "1"
+    LIFESTREAM_COMMIT: unknown
+    LIFESTREAM_HOME_FLOOR: ""
+    LIFESTREAM_APP_GROUP: group.$(LIFESTREAM_BUNDLE_PREFIX).phone
+  configs:
+    Onboarding:
+      LIFESTREAM_APP_GROUP: group.$(LIFESTREAM_BUNDLE_PREFIX).phone.onboarding
+targets:
+  LifestreamCapture:
+    type: application
+    platform: iOS
+    sources:
+      - path: LifestreamCapture
+      - path: ../homelink/Tests/Fixtures/report.json
+        group: Fixtures
+        buildPhase: resources
+      - path: ../homelink/Tests/Fixtures/proof-report.json
+        group: Fixtures
+        buildPhase: resources
+      # The contract files of agent access, a folder per producer; the canned home serves the door's (`agents/door/`, `agents/guide-door/`).
+      - path: ../homelink/Tests/Fixtures/agents
+        type: folder
+        group: Fixtures
+        buildPhase: resources
+      - path: ../homelink/Tests/Fixtures/pages
+        type: folder
+        group: Fixtures
+        buildPhase: resources
+      - path: ../homelink/Tests/Fixtures/feedback
+        type: folder
+        group: Fixtures
+        buildPhase: resources
+    dependencies:
+      - package: LifestreamCaptureCore
+        product: LifestreamCaptureCore
+      - package: HomeLink
+        product: HomeLink
+      - package: PhotoLibrary
+        product: PhotoLibrary
+      - package: Cockpit
+        product: Cockpit
+      - target: UsageMonitorExtension
+        embed: true
+      - target: ShareExtension
+        embed: true
+    info:
+      path: LifestreamCapture/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: $(LIFESTREAM_DISPLAY_NAME)
+        CFBundleShortVersionString: "0.4.0"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LifestreamCommit: $(LIFESTREAM_COMMIT)
+        LifestreamHomeFloor: $(LIFESTREAM_HOME_FLOOR)
+        LifestreamAppGroup: $(LIFESTREAM_APP_GROUP)
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen: { UIColorName: LaunchBackground }
+        CADisableMinimumFrameDurationOnPhone: true
+        NSLocationWhenInUseUsageDescription: Lifestream records where you go, so each day on your Mac has its places and the way between them.
+        NSLocationAlwaysAndWhenInUseUsageDescription: Allow Always so Lifestream records where you go while it's closed too, and your days on your Mac have no gaps.
+        NSMotionUsageDescription: Lifestream records when you walk, run, drive or stay still, and your steps, so your days on your Mac show how you moved.
+        NSHealthShareUsageDescription: Lifestream reads the Health data you allow, so your days on your Mac show how you slept and how you felt; your sleep also times your check-ins.
+        NSHealthUpdateUsageDescription: Lifestream never writes to Health. It only reads the Health data you allow.
+        NSCameraUsageDescription: Lifestream uses the camera to scan your Mac's pairing code, and for the photos you take in it, which go to your Mac.
+        NSFaceIDUsageDescription: Lifestream asks for Face ID before it shows your days, people, places and searches, so only you can open them. Recording and capturing never ask.
+        NSMicrophoneUsageDescription: Lifestream records the voice notes you start, and sends them to your Mac.
+        NSContactsUsageDescription: Lifestream keeps a copy of your contacts and their photos on your Mac, so it knows who's who in your messages, calls and photos.
+        NSPhotoLibraryUsageDescription: Lifestream reads your photo library, with when and where each photo was taken, so your days on your Mac have their pictures.
+        PHPhotoLibraryPreventAutomaticLimitedAccessAlert: true
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        NSLocalNetworkUsageDescription: So it can find your Mac and send it what this iPhone records.
+        NSBonjourServices:
+          - _lifestream._tcp
+        CFBundleURLTypes:
+          - CFBundleURLName: $(PRODUCT_BUNDLE_IDENTIFIER).pair
+            CFBundleURLSchemes:
+              - $(LIFESTREAM_URL_SCHEME)
+        UIBackgroundModes:
+          - location
+          - fetch
+          - processing
+        BGTaskSchedulerPermittedIdentifiers:
+          - org.lifestreamprotocol.phone.refresh
+          - org.lifestreamprotocol.phone.processing
+          - $(PRODUCT_BUNDLE_IDENTIFIER).continued.*
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+        NSSupportsLiveActivities: false
+    settings:
+      base:
+        CODE_SIGN_ENTITLEMENTS: LifestreamCapture/Resources/LifestreamCapture.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone
+        PRODUCT_NAME: Lifestream
+        LIFESTREAM_DISPLAY_NAME: Lifestream
+        LIFESTREAM_URL_SCHEME: lifestream
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: true
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) SCREEN_TIME
+      configs:
+        AppStore:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) APP_STORE
+          CODE_SIGN_ENTITLEMENTS: LifestreamCapture/Resources/LifestreamCapture-AppStore.entitlements
+          EXCLUDED_SOURCE_FILE_NAMES: UsageMonitorExtension.appex
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Lifestream App Store
+        Onboarding:
+          PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.onboarding
+          CODE_SIGN_ENTITLEMENTS: LifestreamCapture/Resources/LifestreamCapture-Onboarding.entitlements
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) SCREEN_TIME ONBOARDING
+          LIFESTREAM_DISPLAY_NAME: Lifestream Test
+          LIFESTREAM_URL_SCHEME: lifestream-test
+          ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon-Test
+        Speed:
+          PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.speed
+          CODE_SIGN_ENTITLEMENTS: ""
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) SCREEN_TIME SPEED
+          EXCLUDED_SOURCE_FILE_NAMES: UsageMonitorExtension.appex ShareExtension.appex
+        PersonalTeam:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited)
+          CODE_SIGN_ENTITLEMENTS: LifestreamCapture/Resources/LifestreamCapture-AppStore.entitlements
+          EXCLUDED_SOURCE_FILE_NAMES: UsageMonitorExtension.appex
+  UsageMonitorExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: UsageMonitorExtension
+    dependencies:
+      - package: LifestreamCaptureCore
+        product: LifestreamCaptureCore
+    info:
+      path: UsageMonitorExtension/Info.plist
+      properties:
+        CFBundleDisplayName: Usage monitor
+        CFBundleShortVersionString: "0.4.0"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LifestreamAppGroup: $(LIFESTREAM_APP_GROUP)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).UsageMonitorExtension"
+    settings:
+      base:
+        CODE_SIGN_ENTITLEMENTS: UsageMonitorExtension/UsageMonitorExtension.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.usage-monitor
+        APPLICATION_EXTENSION_API_ONLY: YES
+      configs:
+        AppStore:
+          CODE_SIGNING_ALLOWED: NO
+        Onboarding:
+          PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.onboarding.usage-monitor
+          CODE_SIGN_ENTITLEMENTS: UsageMonitorExtension/UsageMonitorExtension-Onboarding.entitlements
+        Speed:
+          CODE_SIGNING_ALLOWED: NO
+        PersonalTeam:
+          CODE_SIGNING_ALLOWED: NO
+  ShareExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: ShareExtension
+    dependencies:
+      - package: LifestreamCaptureCore
+        product: LifestreamCaptureCore
+      - package: Cockpit
+        product: Cockpit
+    info:
+      path: ShareExtension/Info.plist
+      properties:
+        CFBundleDisplayName: $(LIFESTREAM_SHARE_NAME)
+        CFBundleShortVersionString: "0.4.0"
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LifestreamAppGroup: $(LIFESTREAM_APP_GROUP)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.share-services
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).ShareViewController"
+          NSExtensionAttributes:
+            NSExtensionActivationRule: SUBQUERY (extensionItems, $extensionItem, SUBQUERY ($extensionItem.attachments, $attachment, SUBQUERY ($attachment.registeredTypeIdentifiers, $type, $type UTI-CONFORMS-TO "public.data" AND NOT ($type UTI-CONFORMS-TO "public.url")).@count >= 1).@count >= 1).@count >= 1
+    settings:
+      base:
+        CODE_SIGN_ENTITLEMENTS: ShareExtension/ShareExtension.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.share
+        APPLICATION_EXTENSION_API_ONLY: YES
+        LIFESTREAM_SHARE_NAME: Send to Lifestream
+      configs:
+        AppStore:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: Apple Distribution
+          PROVISIONING_PROFILE_SPECIFIER: Lifestream Share App Store
+        Onboarding:
+          PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.onboarding.share
+          CODE_SIGN_ENTITLEMENTS: ShareExtension/ShareExtension-Onboarding.entitlements
+          LIFESTREAM_SHARE_NAME: Send to Lifestream Test
+        Speed:
+          CODE_SIGNING_ALLOWED: NO
+  LifestreamCaptureTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: LifestreamCaptureTests
+      - path: ../packages/core/test/audio
+        type: folder
+        group: Fixtures
+        buildPhase: resources
+    dependencies:
+      - target: LifestreamCapture
+      - package: LifestreamCaptureCore
+        product: LifestreamCaptureCore
+      - package: HomeLink
+        product: HomeLink
+      - package: PhotoLibrary
+        product: PhotoLibrary
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.tests
+        GENERATE_INFOPLIST_FILE: true
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Lifestream.app/Lifestream"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  LifestreamCaptureUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: LifestreamCaptureUITests
+    dependencies:
+      - target: LifestreamCapture
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIFESTREAM_BUNDLE_PREFIX).phone.uitests
+        GENERATE_INFOPLIST_FILE: true
+        TEST_TARGET_NAME: LifestreamCapture
+schemes:
+  LifestreamCapture:
+    build:
+      targets:
+        LifestreamCapture: all
+        LifestreamCaptureTests: [test]
+    test:
+      targets:
+        - LifestreamCaptureTests
+        - name: LifestreamCaptureUITests
+          skippedTests: [SpeedUITests]
+  Onboarding:
+    build:
+      targets:
+        LifestreamCapture: all
+    run:
+      config: Onboarding
+  PersonalTeam:
+    build:
+      targets:
+        LifestreamCapture: all
+    run:
+      config: PersonalTeam
+  Speed:
+    build:
+      targets:
+        LifestreamCapture: all
+        LifestreamCaptureUITests: [test]
+    test:
+      config: Speed
+      disableMainThreadChecker: true
+      targets:
+        - LifestreamCaptureUITests
+    run:
+      disableMainThreadChecker: true

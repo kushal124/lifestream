@@ -1,0 +1,25 @@
+{
+  "what": "row",
+  "ref": "row.WyJyb3ciLHsiYnkiOlsiaXRlbSJdLCJmcm9tIjoiMjAyNi0wMy0wMSIsIm1hdGNoIjp7InBheWVlIjoiYWNtZSJ9LCJtZWFzdXJlIjoiYW1vdW50Iiwib2YiOiJwYXltZW50cyIsInRvIjoiMjAyNi0wMy0zMSJ9LHsidmFsdWVzIjp7InBheWVlIjp7ImluIjpbIkFDTUUgQ0FCUyBMSU1JVEVEIiwiQUNNRSBDQUJTIl0sIm91dCI6W119fX0seyJ0IjoiRVVSIn0sN10",
+  "asked": "sum of amount over payments, by item",
+  "n": 7,
+  "now": 8,
+  "columns": [
+    "day",
+    "payee",
+    "direction",
+    "amount",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-03-02",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "record.WyJyZWNvcmQiLCJleGFtcGxlLWJhbms6YWNjb3VudC0xOnVwbG9hZCIsImxpbmUiLCIxIl0"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

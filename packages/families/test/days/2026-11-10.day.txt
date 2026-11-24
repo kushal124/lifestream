@@ -1,0 +1,30 @@
+Day 2026-11-10 (Tuesday) in America/New_York, 04:00 to 2026-11-11 04:00 (24 h)
+15 atoms: chat 8, ledger 2, vitals 5
+Heart rate 66 today against 66 over the 3 days before
+
+06:19 Heart rate 66
+06:57 Heart rate 69
+10:58 Group Alpha · Person B: message 300
+12:13 Person A · the user: message 296 [photo: a synthetic picture 296]
+13:11–16:31 Group Alpha (2)
+  13:11 +15550000003: message 299 [photo: a synthetic picture 299]
+  16:31 Person B: message 297 [photo: a synthetic picture 297]
+17:55 Heart rate 77
+19:48–20:42 Group Alpha (2)
+  19:48 Person B: message 298
+  20:42 Person B: message 301 [photo: a synthetic picture 301]
+23:07 Heart rate 52
+2026-11-11 00:07–00:41 Person A (2)
+  2026-11-11 00:07 Person A: message 294
+  2026-11-11 00:41 the user: message 295 [photo: a synthetic picture 295]
+
+On 2026-11-10, time unknown
+-821.00 USD to shop 306
+
+No time stated
+A note that states no time
+
+Coverage
+chat: whatsapp:15550000000:mac-0001 read through the day; whatsapp:15550000000:phone-aa01 read through the day
+ledger: apple-notes:local:mac-0001 not read into the day; example-bank:acct-aa11:export not read into the day
+vitals: apple-health:person-a@example.com:watch-aa07 read through the day

@@ -1,0 +1,7 @@
+{
+  "text_chars": 5000,
+  "email_chars": 254,
+  "attachment_bytes": 65536,
+  "screenshot_bytes": 4194304,
+  "body_bytes": 5242880
+}

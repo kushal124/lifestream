@@ -1,0 +1,192 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "plans",
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "plans"
+          },
+          "until_ms" : null,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "mail"
+          },
+          "until_ms" : 1794654000000,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "account" : "whoop:person-a@example.com",
+            "but" : [
+
+            ]
+          },
+          "until_ms" : 1794650400000,
+          "window" : {
+            "past_ms" : 86400000
+          }
+        },
+        {
+          "lasts_ms" : 10800000,
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "plans"
+          },
+          "window" : {
+            "past_ms" : 604800000
+          }
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "act" : "agent-answer",
+    "answer" : "always",
+    "expect" : 3,
+    "id" : "rq-0000000000000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-edited.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Allowed until"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794657600000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "allowed",
+      "version" : 4
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+              "plans",
+              "health",
+              "money"
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "plans"
+          },
+          "until_ms" : null,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "mail"
+          },
+          "until_ms" : 1794654000000,
+          "window" : {
+            "past_ms" : 604800000
+          }
+        },
+        {
+          "reach" : {
+            "account" : "whoop:person-a@example.com",
+            "but" : [
+
+            ]
+          },
+          "until_ms" : 1794650400000,
+          "window" : {
+            "past_ms" : 86400000
+          }
+        },
+        {
+          "lasts_ms" : 10800000,
+          "reach" : {
+            "but" : [
+
+            ],
+            "type" : "plans"
+          },
+          "window" : {
+            "past_ms" : 604800000
+          }
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : null
+    },
+    "answer" : "always",
+    "expect" : 3,
+    "id" : "rq-0000000000000001"
+  }
+}

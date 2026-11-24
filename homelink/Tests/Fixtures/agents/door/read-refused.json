@@ -1,0 +1,36 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "call-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Orbit",
+    "title": "Tried to search “salary”",
+    "line": "Today, 12:45",
+    "figure": null,
+    "kinds": [],
+    "kept": null,
+    "why": [
+      {
+        "text": "At 12:45 Orbit could see "
+      },
+      {
+        "text": "everything but Health and Money",
+        "bold": true
+      },
+      {
+        "text": ", from the "
+      },
+      {
+        "text": "past 24 hours",
+        "bold": true
+      },
+      {
+        "text": ", with details hidden."
+      }
+    ],
+    "refused": "Stopped: Orbit can’t see Money",
+    "show": null
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "route": "POST /v1/agents/<id>/propose",
+  "request": {
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": 0
+  },
+  "status": 200,
+  "answer": {
+    "id": "rq-0000000000000001",
+    "kind": "asked",
+    "snapshot": {
+      "id": "rq-0000000000000001",
+      "reader": "p-00000001",
+      "name": "ChatGPT",
+      "by": "chat",
+      "head": "Let ChatGPT also read everything?",
+      "line": "Chat proposes Everything",
+      "asked_line": [
+        {
+          "kind": "words",
+          "words": "Asked"
+        },
+        {
+          "kind": "time",
+          "time": {
+            "kind": "clock",
+            "at_ms": 1794646800000
+          }
+        },
+        {
+          "kind": "words",
+          "words": "· the ask ends"
+        },
+        {
+          "kind": "time",
+          "time": {
+            "kind": "clock",
+            "at_ms": 1794733200000
+          }
+        }
+      ],
+      "under_line": [
+        {
+          "kind": "words",
+          "words": "Asked"
+        },
+        {
+          "kind": "time",
+          "time": {
+            "kind": "clock",
+            "at_ms": 1794646800000
+          }
+        }
+      ],
+      "says_title": "ChatGPT says",
+      "wants": "Everything",
+      "today": [
+        {
+          "text": "Today ChatGPT sees nothing."
+        }
+      ],
+      "under": null,
+      "reason": null,
+      "screen": "Screen shows almost everything you did.",
+      "adds": [
+        "Everything"
+      ],
+      "keeps": "Details stay hidden.",
+      "choices": [
+        {
+          "answer": "always",
+          "words": "Allow"
+        },
+        {
+          "answer": "no",
+          "words": "Don’t allow"
+        }
+      ],
+      "editable": true,
+      "default": "always",
+      "version": 0,
+      "proposed": {
+        "allow": [
+          {
+            "reach": {
+              "all": true,
+              "but": []
+            },
+            "window": null,
+            "until_ms": null
+          }
+        ],
+        "items": [],
+        "not": [],
+        "only": [],
+        "window": null,
+        "hide": "names",
+        "shown": []
+      },
+      "at_ms": 1794646800000,
+      "until_ms": 1794733200000,
+      "state": "open",
+      "outcome": null
+    }
+  }
+}

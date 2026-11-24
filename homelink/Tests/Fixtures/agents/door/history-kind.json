@@ -1,0 +1,391 @@
+{
+  "route": "GET /v1/agents/<id>/history?kind=",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": {
+      "today": 60,
+      "words": "reads today",
+      "days": [
+        {
+          "day": "2026-11-08",
+          "words": "Sun",
+          "n": 0
+        },
+        {
+          "day": "2026-11-09",
+          "words": "Mon",
+          "n": 0
+        },
+        {
+          "day": "2026-11-10",
+          "words": "Tue",
+          "n": 0
+        },
+        {
+          "day": "2026-11-11",
+          "words": "Wed",
+          "n": 0
+        },
+        {
+          "day": "2026-11-12",
+          "words": "Thu",
+          "n": 0
+        },
+        {
+          "day": "2026-11-13",
+          "words": "Fri",
+          "n": 0
+        },
+        {
+          "day": "2026-11-14",
+          "words": "Sat",
+          "n": 60
+        }
+      ],
+      "said": [
+        {
+          "text": "Mostly your "
+        },
+        {
+          "text": "notes",
+          "bold": true
+        },
+        {
+          "text": ". Nothing from "
+        },
+        {
+          "text": "Health",
+          "bold": true
+        },
+        {
+          "text": ": Sorter can’t see it."
+        }
+      ]
+    },
+    "chips": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 60
+      },
+      {
+        "kind": "messages",
+        "name": "Messages",
+        "icon": "message",
+        "n": 20
+      }
+    ],
+    "kind": "messages",
+    "empty": null,
+    "sessions": [
+      {
+        "key": "s-1",
+        "from_ms": 1794660300000,
+        "to_ms": 1794660357000,
+        "calls": 20,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "20 reads"
+        },
+        "reads": "20 reads",
+        "lines": [
+          {
+            "kind": "call",
+            "id": "call-0000000000000001",
+            "at_ms": 1794660357000,
+            "words": "Searched for “sort 57”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 things: 1 message, 1 note",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          },
+          {
+            "kind": "call",
+            "id": "call-0000000000000002",
+            "at_ms": 1794660354000,
+            "words": "Searched for “sort 54”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 things: 1 message, 1 note",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          },
+          {
+            "kind": "call",
+            "id": "call-0000000000000003",
+            "at_ms": 1794660351000,
+            "words": "Searched for “sort 51”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 things: 1 message, 1 note",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          },
+          {
+            "kind": "call",
+            "id": "call-0000000000000004",
+            "at_ms": 1794660348000,
+            "words": "Searched for “sort 48”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 things: 1 message, 1 note",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          },
+          {
+            "kind": "call",
+            "id": "call-0000000000000005",
+            "at_ms": 1794660345000,
+            "words": "Searched for “sort 45”",
+            "kept": null,
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "2 things: 1 message, 1 note",
+            "more": 0,
+            "took_ms": 9,
+            "told": null
+          },
+          {
+            "kind": "fold",
+            "at_ms": 1794660342000,
+            "n": 15,
+            "icon": "more",
+            "words": "15 more reads",
+            "line": "Searched for 15",
+            "lines": [
+              {
+                "kind": "call",
+                "id": "call-0000000000000006",
+                "at_ms": 1794660342000,
+                "words": "Searched for “sort 42”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000007",
+                "at_ms": 1794660339000,
+                "words": "Searched for “sort 39”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000008",
+                "at_ms": 1794660336000,
+                "words": "Searched for “sort 36”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000009",
+                "at_ms": 1794660333000,
+                "words": "Searched for “sort 33”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000a",
+                "at_ms": 1794660330000,
+                "words": "Searched for “sort 30”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000b",
+                "at_ms": 1794660327000,
+                "words": "Searched for “sort 27”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000c",
+                "at_ms": 1794660324000,
+                "words": "Searched for “sort 24”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000d",
+                "at_ms": 1794660321000,
+                "words": "Searched for “sort 21”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000e",
+                "at_ms": 1794660318000,
+                "words": "Searched for “sort 18”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-000000000000000f",
+                "at_ms": 1794660315000,
+                "words": "Searched for “sort 15”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000010",
+                "at_ms": 1794660312000,
+                "words": "Searched for “sort 12”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000011",
+                "at_ms": 1794660309000,
+                "words": "Searched for “sort 9”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000012",
+                "at_ms": 1794660306000,
+                "words": "Searched for “sort 6”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000013",
+                "at_ms": 1794660303000,
+                "words": "Searched for “sort 3”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              },
+              {
+                "kind": "call",
+                "id": "call-0000000000000014",
+                "at_ms": 1794660300000,
+                "words": "Searched for “sort 0”",
+                "kept": null,
+                "tone": "plain",
+                "icon": "search",
+                "opens": true,
+                "line": "2 things: 1 message, 1 note",
+                "more": 0,
+                "took_ms": 9,
+                "told": null
+              }
+            ],
+            "continues": false
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

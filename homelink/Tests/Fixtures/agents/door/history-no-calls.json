@@ -1,0 +1,201 @@
+{
+  "route": "GET /v1/agents/<id>/history",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": null,
+    "chips": [],
+    "kind": null,
+    "empty": {
+      "title": "Instinct hasn’t read anything yet",
+      "line": "Connected today. When it reads, each read shows here: what it searched for, what it saw, and what was kept from it."
+    },
+    "sessions": [
+      {
+        "key": "c-33",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You didn’t allow it",
+            "line": "You, on your iPhone",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-32",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "needs-you",
+            "words": "Asked to see more",
+            "line": "“Your sleep, to plan the week.”",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-30",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You didn’t allow it",
+            "line": "You, on your iPhone",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-29",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "needs-you",
+            "words": "Asked to see Money for 1 hour",
+            "line": "“Your spending, to plan the month.”",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-28",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You allowed more",
+            "line": "You, on your Mac",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-15",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "needs-you",
+            "words": "Chat asked to see more",
+            "line": null,
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-14",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "Chat narrowed it",
+            "line": "In a conversation · Everything but Health and Money · past 24 hours · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      },
+      {
+        "key": "c-3",
+        "from_ms": 1794646800000,
+        "to_ms": 1794646800000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": null
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794646800000,
+            "icon": "private",
+            "words": "You allowed Instinct",
+            "line": "You · Everything but Health and Money · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

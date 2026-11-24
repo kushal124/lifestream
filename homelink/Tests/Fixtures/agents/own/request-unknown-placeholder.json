@@ -1,0 +1,16 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "account": "gmail:[[Email 9]]"
+      }
+    },
+    "reason": "That mailbox."
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "[[Email 9]]: not a placeholder you were given: pass each exactly as an answer gave it."
+  }
+}

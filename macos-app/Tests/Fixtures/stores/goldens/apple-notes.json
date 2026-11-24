@@ -1,0 +1,76 @@
+{
+  "connector" : "apple-notes",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "notes-mac",
+          "indexes" : {
+            "media.json" : {
+
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "notes.sqlite",
+            "media.json"
+          ],
+          "source_id" : "apple-notes:local:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-notes:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-notes:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "notes-mac",
+          "indexes" : {
+            "media.json" : {
+              "Accounts/SYNTH-ACCOUNT-0001/Media/SYNTH-MEDIA-0001/1_SYNTH-GENERATION-0001/Pasted Graphic.png" : {
+                "bytes" : 20,
+                "sha256" : "aa5ee9680be9de678f54de3787c5083d6197c092b69dbc3cfc11f51ba27d5cfd"
+              }
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "notes.sqlite",
+            "media.json",
+            "blobs/aa5ee9680be9de678f54de3787c5083d6197c092b69dbc3cfc11f51ba27d5cfd"
+          ],
+          "source_id" : "apple-notes:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-notes:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-notes:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "notes",
+  "wake" : "com.apple.Notes"
+}

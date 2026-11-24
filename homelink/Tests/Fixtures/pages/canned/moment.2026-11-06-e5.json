@@ -1,0 +1,59 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-06",
+  "state": "found",
+  "moment": {
+    "key": "e5",
+    "row": "e5",
+    "kind": "phone",
+    "icon": "phone-screen",
+    "title": "Social, Utilities",
+    "name": "Social, Utilities",
+    "near": null,
+    "start_ms": 1793928600000,
+    "end_ms": 1793932200000,
+    "untimed": null,
+    "length_ms": 3600000,
+    "products": [],
+    "people": [],
+    "place": {
+      "name": "Home",
+      "unit": "stay/location:local:iphone-aa01/1793886840000",
+      "slug": "home-place"
+    },
+    "out": null,
+    "record": null,
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [],
+      "more": 0,
+      "units": [
+        {
+          "family": "health",
+          "unit": "phone/screen-time:local:iphone-aa01/1793928600000"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1793928600000,
+      "end_ms": 1793932200000
+    },
+    "view": {
+      "total_ms": 840000,
+      "apps": [
+        {
+          "name": "Social",
+          "minutes": 9
+        },
+        {
+          "name": "Utilities",
+          "minutes": 5
+        }
+      ],
+      "sites": [],
+      "view": "apps"
+    }
+  }
+}

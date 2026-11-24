@@ -1,0 +1,27 @@
+{
+  "name": "@lifestreamprotocol/privacy",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Who marks what in a text that leaves, and the one function that hides it.",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "packageManager": "npm@10.9.7",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "vitest run --root ../.. --project privacy"
+  },
+  "dependencies": {
+    "@lifestreamprotocol/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

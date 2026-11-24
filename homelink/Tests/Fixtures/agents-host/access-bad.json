@@ -1,0 +1,24 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : "everything"
+    },
+    "act" : "agent-access",
+    "expect" : 3,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-bad.json",
+  "reply" : {
+    "refused" : {
+      "code" : "BAD_REQUEST",
+      "message" : "Couldn’t save this access. Try again."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : "everything"
+    },
+    "expect" : 3
+  }
+}

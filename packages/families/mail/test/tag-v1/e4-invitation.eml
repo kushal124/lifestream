@@ -1,0 +1,25 @@
+From: Person B <person-b@example.com>
+To: person-a@example.com, Person F <person-f@example.com>
+Subject: Invitation: Synthetic review @ Mon 5 Oct
+Content-Type: multipart/alternative; boundary="cal"
+
+--cal
+Content-Type: text/plain; charset=utf-8
+
+You have been invited to a synthetic review.
+--cal
+Content-Type: text/calendar; charset=utf-8; method=REQUEST
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6LS8vU3ludGhldGljLy9FTg0KTUVUSE9EOlJFUVVFU1QN
+CkJFR0lOOlZFVkVOVA0KRFRTVEFSVDtUWklEPUFzaWEvS29sa2F0YToyMDI2MTAwNVQxMDAwMDAN
+CkRURU5EO1RaSUQ9QXNpYS9Lb2xrYXRhOjIwMjYxMDA1VDExMDAwMA0KVUlEOnN5bnRoZXRpYy1l
+dmVudC0xQGV4YW1wbGUuY29tDQpPUkdBTklaRVI7Q049UGVyc29uIEI6bWFpbHRvOlBlcnNvbi1C
+QEV4YW1wbGUuY29tDQpBVFRFTkRFRTtDTj1QZXJzb24gQTtQQVJUU1RBVD1ORUVEUy1BQ1RJT046
+bWFpbHRvOnBlcnNvbi1hQGV4YW1wbGUuY29tDQpBVFRFTkRFRTtDTj0iUGVyc29uIEY7IE9wcyI7
+UEFSVFNUQVQ9QUNDRVBURUQ6bWFpbHRvOnBlcnNvbi1mQGV4YW1wbGUuY29tDQpTVU1NQVJZOlN5
+bnRoZXRpYyByZXZpZXdcLCBwYXJ0IG9uZVw7IHdpdGggYSB2ZXJ5IGxvbmcgdGl0bGUgdGhhdCBm
+b2xkcyBhY3INCiBvc3MgdHdvIGxpbmVzDQpCRUdJTjpWQUxBUk0NCkFDVElPTjpESVNQTEFZDQpT
+VU1NQVJZOmFsYXJtIHN1bW1hcnkgaXMgbm90IHRoZSBldmVudCdzDQpFTkQ6VkFMQVJNDQpFTkQ6
+VkVWRU5UDQpFTkQ6VkNBTEVOREFSDQo=
+--cal--

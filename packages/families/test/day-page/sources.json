@@ -1,0 +1,10 @@
+{
+  "sources": [
+    {"id":"chrome:profile-1:macbook-pro-0001","read_through_ms":1930409400000},
+    {"id":"example-chat:person-z@example.com:cloud","read_through_ms":1940684400000},
+    {"id":"example-gone:local:test","read_through_ms":1940688055000},
+    {"id":"example-log:local:test","read_through_ms":1940688000000},
+    {"id":"screen-time:local:phone-aa01","read_through_ms":1930410600000},
+    {"id":"whoop:1:cloud","read_through_ms":1930410000000}
+  ]
+}

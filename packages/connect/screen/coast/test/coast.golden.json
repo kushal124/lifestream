@@ -1,0 +1,921 @@
+[
+  {
+    "kind": "ax",
+    "key": "1790000001000:1",
+    "content": {
+      "type": "screen.ax",
+      "frame_identity": "1790000001000:1",
+      "root_hash": "d64e3a4a89af485d5147b4b7bbba84af7764f2abef1dded061e2dd0254f98cb8",
+      "timestamp_ms": 1790000001123,
+      "application_name": "Example Browser",
+      "bundle_id": "com.example.browser",
+      "process_identifier": 4242,
+      "extraction_mode": "synthetic-complete",
+      "is_partial_tree": 0,
+      "tree": {
+        "hash": "d64e3a4a89af485d5147b4b7bbba84af7764f2abef1dded061e2dd0254f98cb8",
+        "node": {
+          "version": 2,
+          "flags": 3,
+          "child_hashes": [
+            "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "df05d019723934d6504df516ad5606027cd1ec18a6140b32466b9c66f4bf6b29"
+          ],
+          "attributes": [],
+          "role": "AXWindow",
+          "title": "Synthetic Window"
+        },
+        "children": [
+          {
+            "hash": "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "node": {
+              "version": 2,
+              "flags": 25,
+              "child_hashes": [],
+              "attributes": [],
+              "role": "AXStaticText",
+              "value": "SYNTHETIC SHARED TEXT",
+              "position": {
+                "x": 0.25,
+                "y": 10
+              }
+            },
+            "children": []
+          },
+          {
+            "hash": "df05d019723934d6504df516ad5606027cd1ec18a6140b32466b9c66f4bf6b29",
+            "node": {
+              "version": 2,
+              "flags": 99,
+              "child_hashes": [],
+              "attributes": [
+                {
+                  "name": "AXIdentifier",
+                  "value": "button-3"
+                }
+              ],
+              "role": "AXButton",
+              "title": "Synthetic button 3",
+              "size": {
+                "width": 80,
+                "height": 24.5
+              },
+              "enabled": true
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1790000001123,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "ax",
+    "key": "1790000003000",
+    "content": {
+      "type": "screen.ax",
+      "frame_identity": "1790000003000",
+      "root_hash": "dc6438accc1b429d18bf826ef8fbe80c1fdd56168a494f81cb59cbd110a1301f",
+      "timestamp_ms": 1790000003123,
+      "application_name": "Example Browser",
+      "bundle_id": "com.example.browser",
+      "process_identifier": 4242,
+      "extraction_mode": "synthetic-complete",
+      "is_partial_tree": 0,
+      "tree": {
+        "hash": "dc6438accc1b429d18bf826ef8fbe80c1fdd56168a494f81cb59cbd110a1301f",
+        "node": {
+          "version": 2,
+          "flags": 3,
+          "child_hashes": [
+            "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "26712d6eb9b78af55318a16970a440b9129efe114080e257a2ccf098d5c7f951"
+          ],
+          "attributes": [],
+          "role": "AXWindow",
+          "title": "Synthetic Window"
+        },
+        "children": [
+          {
+            "hash": "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "node": {
+              "version": 2,
+              "flags": 25,
+              "child_hashes": [],
+              "attributes": [],
+              "role": "AXStaticText",
+              "value": "SYNTHETIC SHARED TEXT",
+              "position": {
+                "x": 0.25,
+                "y": 10
+              }
+            },
+            "children": []
+          },
+          {
+            "hash": "26712d6eb9b78af55318a16970a440b9129efe114080e257a2ccf098d5c7f951",
+            "node": {
+              "version": 2,
+              "flags": 99,
+              "child_hashes": [],
+              "attributes": [
+                {
+                  "name": "AXIdentifier",
+                  "value": "button-5"
+                }
+              ],
+              "role": "AXButton",
+              "title": "Synthetic button 5",
+              "size": {
+                "width": 80,
+                "height": 24.5
+              },
+              "enabled": true
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1790000003123,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "ax",
+    "key": "1790000006000",
+    "content": {
+      "type": "screen.ax",
+      "frame_identity": "1790000006000",
+      "root_hash": "9a2252600b84666b698f3b81a101674de8dffcfc411d6dfffaf4ab887411b8e6",
+      "timestamp_ms": 1790000006123,
+      "application_name": "Example Browser",
+      "bundle_id": "com.example.browser",
+      "process_identifier": 4242,
+      "extraction_mode": "synthetic-complete",
+      "is_partial_tree": 0,
+      "tree": {
+        "hash": "9a2252600b84666b698f3b81a101674de8dffcfc411d6dfffaf4ab887411b8e6",
+        "node": {
+          "version": 2,
+          "flags": 3,
+          "child_hashes": [
+            "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "82f305c186020384c6a46cae929bcdc1844f209fc7143c58295900c6b908e320"
+          ],
+          "attributes": [],
+          "role": "AXWindow",
+          "title": "Synthetic Window"
+        },
+        "children": [
+          {
+            "hash": "13c74f4e8ecd94fbbf5d3e3c9242bd8837b60f913d94dc2251a75364bb9bb18f",
+            "node": {
+              "version": 2,
+              "flags": 25,
+              "child_hashes": [],
+              "attributes": [],
+              "role": "AXStaticText",
+              "value": "SYNTHETIC SHARED TEXT",
+              "position": {
+                "x": 0.25,
+                "y": 10
+              }
+            },
+            "children": []
+          },
+          {
+            "hash": "82f305c186020384c6a46cae929bcdc1844f209fc7143c58295900c6b908e320",
+            "node": {
+              "version": 2,
+              "flags": 99,
+              "child_hashes": [],
+              "attributes": [
+                {
+                  "name": "AXIdentifier",
+                  "value": "button-7"
+                }
+              ],
+              "role": "AXButton",
+              "title": "Synthetic button 7",
+              "enabled": true
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1790000006123,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000000000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 1,
+      "timestamp_ms": 1790000000000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 1",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "index": 0
+      },
+      "session_start_frame_identity": "1790000000000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-1",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000000000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000001000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 2,
+      "timestamp_ms": 1790000001000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 2",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "index": 1
+      },
+      "session_start_frame_identity": null,
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-2",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000001000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000001000:1",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 3,
+      "timestamp_ms": 1790000001000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 3",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "index": 2
+      },
+      "session_start_frame_identity": "1790000000000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-3",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000001000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000002000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 4,
+      "timestamp_ms": 1790000002000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 4",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": null,
+      "session_start_frame_identity": null,
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-4",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000002000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000003000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 5,
+      "timestamp_ms": 1790000003000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 5",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "index": 4
+      },
+      "session_start_frame_identity": "1790000003000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-5",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000003000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000004000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 6,
+      "timestamp_ms": 1790000004000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 6",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "index": 0
+      },
+      "session_start_frame_identity": "1790000003000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-6",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000004000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000006000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 7,
+      "timestamp_ms": 1790000006000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 7",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "index": 1
+      },
+      "session_start_frame_identity": "1790000000000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-7",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000006000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000007000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 8,
+      "timestamp_ms": 1790000007000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 8",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "index": 2
+      },
+      "session_start_frame_identity": null,
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-8",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000007000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000008000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 9,
+      "timestamp_ms": 1790000008000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 9",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "index": 3
+      },
+      "session_start_frame_identity": "1790000008000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-9",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000008000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "1790000009000",
+    "content": {
+      "type": "screen.frame",
+      "frame_id": 10,
+      "timestamp_ms": 1790000009000,
+      "width": 1200,
+      "height": 800,
+      "is_inactive": 0,
+      "image_path": null,
+      "foreground": "synthetic frame 10",
+      "background": null,
+      "title": "Synthetic Window",
+      "capture_display": {
+        "x": 0,
+        "y": 0,
+        "width": 1200.5,
+        "height": 800
+      },
+      "video": {
+        "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "index": 4
+      },
+      "session_start_frame_identity": "1790000008000",
+      "windows": [
+        {
+          "application": {
+            "bundle_id": "com.example.browser",
+            "version": "1.0",
+            "display_name": "Example Browser"
+          },
+          "window_title": "Synthetic Window",
+          "url": "https://example.com/frame-10",
+          "x": 0,
+          "y": 25,
+          "width": 1200,
+          "height": 775,
+          "window_layer": 0,
+          "z_order": 0
+        },
+        {
+          "application": {
+            "bundle_id": "com.example.dock",
+            "version": "",
+            "display_name": null
+          },
+          "window_title": null,
+          "url": null,
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 25,
+          "window_layer": 25,
+          "z_order": 0
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790000009000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "session",
+    "key": "1790000000000",
+    "content": {
+      "type": "screen.session",
+      "start_frame_identity": "1790000000000",
+      "application": {
+        "bundle_id": "com.example.browser",
+        "version": "1.0",
+        "display_name": "Example Browser"
+      },
+      "domain": {
+        "normalized_domain": "example.com",
+        "common_name": "Example"
+      },
+      "url": "https://example.com/session",
+      "frames": [
+        "1790000000000",
+        "1790000001000:1",
+        "1790000006000"
+      ]
+    },
+    "time": {
+      "start_ms": 1790000000000,
+      "end_ms": 1790000006000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "session",
+    "key": "1790000003000",
+    "content": {
+      "type": "screen.session",
+      "start_frame_identity": "1790000003000",
+      "application": {
+        "bundle_id": "com.example.editor",
+        "version": "2.3",
+        "display_name": "Example Editor"
+      },
+      "frames": [
+        "1790000003000",
+        "1790000004000"
+      ]
+    },
+    "time": {
+      "start_ms": 1790000003000,
+      "end_ms": 1790000004000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "session",
+    "key": "1790000008000",
+    "content": {
+      "type": "screen.session",
+      "start_frame_identity": "1790000008000",
+      "application": {
+        "bundle_id": "com.example.browser",
+        "version": "1.0",
+        "display_name": "Example Browser"
+      },
+      "domain": {
+        "normalized_domain": "example.org",
+        "common_name": null
+      },
+      "url": "https://example.org/",
+      "frames": [
+        "1790000008000",
+        "1790000009000"
+      ]
+    },
+    "time": {
+      "start_ms": 1790000008000,
+      "end_ms": 1790000009000,
+      "precision": "ms"
+    }
+  }
+]

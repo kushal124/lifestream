@@ -1,0 +1,60 @@
+{
+  "position": "1:1791968400000",
+  "today": "2031-03-12",
+  "day": "2031-03-04",
+  "state": "found",
+  "moment": {
+    "key": "e74",
+    "row": "e74",
+    "kind": "event",
+    "icon": "calendar-event",
+    "title": "Synthetic holiday",
+    "name": "Synthetic holiday",
+    "near": null,
+    "start_ms": null,
+    "end_ms": null,
+    "untimed": "All day",
+    "length_ms": null,
+    "products": [
+      "Google Calendar"
+    ],
+    "people": [],
+    "place": null,
+    "out": null,
+    "record": {
+      "source": "google-calendar:person-a@example.com:cloud",
+      "kind": "event",
+      "key": "synthetic-uid-0002"
+    },
+    "letter": null,
+    "marks": [],
+    "pictures": [],
+    "source": {
+      "records": [
+        {
+          "source": "google-calendar:person-a@example.com:cloud",
+          "kind": "event",
+          "key": "synthetic-uid-0002",
+          "at_ms": 1791968400000
+        }
+      ],
+      "more": 0,
+      "units": [
+        {
+          "family": "calendar",
+          "unit": "person-a@example.com/synthetic-uid-0002"
+        }
+      ],
+      "atoms": 1,
+      "start_ms": 1791968400000,
+      "end_ms": null
+    },
+    "view": {
+      "plan": false,
+      "where": null,
+      "with": null,
+      "words": "",
+      "view": "event"
+    }
+  }
+}

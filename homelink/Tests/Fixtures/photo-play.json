@@ -1,0 +1,144 @@
+{
+  "video": {
+    "photo": {
+      "hash": "sha256:4ccd151d22fd0305f68d85738dc665fda482996882620dc6e33390a765e681b4",
+      "kind": "video",
+      "play": {
+        "hash": "sha256:4ccd151d22fd0305f68d85738dc665fda482996882620dc6e33390a765e681b4",
+        "media_type": "video/quicktime",
+        "live": false
+      },
+      "at_ms": 1791969600000,
+      "unit": "burst/1791969600000",
+      "day": "2026-10-14",
+      "focus": "u:burst/1791969600000",
+      "caption": null,
+      "described": {
+        "by": null,
+        "at_ms": null,
+        "state": "off",
+        "line": null,
+        "ask": null,
+        "choose": []
+      },
+      "people": [],
+      "size": null,
+      "place": null,
+      "area": null,
+      "camera": null,
+      "from": "phone",
+      "chat": null
+    },
+    "position": "1:1791968400000"
+  },
+  "live": {
+    "photo": {
+      "hash": "sha256:f867f77fd6351ccf0fea557b299fad3aa1398327dadffed5cef72a56643ef09c",
+      "kind": "image",
+      "play": {
+        "hash": "sha256:7a4e07d86c111514c30b7c6dd248d38e3645743edbf511d99046807250943c7d",
+        "media_type": "video/quicktime",
+        "live": true
+      },
+      "at_ms": 1791969000000,
+      "unit": "burst/1791969000000",
+      "day": "2026-10-14",
+      "focus": "u:burst/1791969000000",
+      "caption": null,
+      "described": {
+        "by": null,
+        "at_ms": null,
+        "state": "off",
+        "line": null,
+        "ask": null,
+        "choose": []
+      },
+      "people": [],
+      "size": null,
+      "place": null,
+      "area": null,
+      "camera": null,
+      "from": "phone",
+      "chat": null
+    },
+    "position": "1:1791968400000"
+  },
+  "chat": {
+    "photo": {
+      "hash": "sha256:e12c816a15d730fb90cdb117e419c158ba18133282e447b85b3225dc27c6cf59",
+      "kind": "video",
+      "play": {
+        "hash": "sha256:e12c816a15d730fb90cdb117e419c158ba18133282e447b85b3225dc27c6cf59",
+        "media_type": "video/mp4",
+        "live": false
+      },
+      "at_ms": 1791970200000,
+      "unit": null,
+      "day": "2026-10-14",
+      "focus": "rec:whatsapp:+15550000001:iphone-aa01 msg 15550000002@s.whatsapp.net:STANZA-1",
+      "caption": null,
+      "described": {
+        "by": null,
+        "at_ms": null,
+        "state": "off",
+        "line": null,
+        "ask": null,
+        "choose": []
+      },
+      "people": [],
+      "size": null,
+      "place": null,
+      "area": null,
+      "camera": null,
+      "from": null,
+      "chat": {
+        "network": "whatsapp",
+        "chat": "15550000002@s.whatsapp.net",
+        "title": "unknown …00002",
+        "group": false,
+        "sender": {
+          "id": "15550000002@s.whatsapp.net",
+          "name": "unknown …00002"
+        },
+        "mine": false,
+        "at_ms": 1791970200000,
+        "day": "2026-10-14",
+        "record": {
+          "source": "whatsapp:+15550000001:iphone-aa01",
+          "kind": "msg",
+          "key": "15550000002@s.whatsapp.net:STANZA-1"
+        },
+        "focus": "rec:whatsapp:+15550000001:iphone-aa01 msg 15550000002@s.whatsapp.net:STANZA-1"
+      }
+    },
+    "position": "1:1791968400000"
+  },
+  "still": {
+    "photo": {
+      "hash": "sha256:dcf659539eaab18e9ad211adf33acdc8a8bb53aa1336903ac8ab3f1c0291c489",
+      "kind": "image",
+      "play": null,
+      "at_ms": 1791968400000,
+      "unit": "burst/1791968400000",
+      "day": "2026-10-14",
+      "focus": "u:burst/1791968400000",
+      "caption": null,
+      "described": {
+        "by": null,
+        "at_ms": null,
+        "state": "off",
+        "line": null,
+        "ask": null,
+        "choose": []
+      },
+      "people": [],
+      "size": null,
+      "place": null,
+      "area": null,
+      "camera": null,
+      "from": "phone",
+      "chat": null
+    },
+    "position": "1:1791968400000"
+  }
+}

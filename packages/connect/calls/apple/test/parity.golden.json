@@ -1,0 +1,224 @@
+[
+  {
+    "kind": "call",
+    "key": "SYNTH-CALL-0001",
+    "content": {
+      "type": "apple.call",
+      "call": {
+        "ZANSWERED": 1,
+        "ZAUTOANSWEREDREASON": 0,
+        "ZCALLDIRECTORYIDENTITYTYPE": 0,
+        "ZCALL_CATEGORY": 1,
+        "ZCALLTYPE": 1,
+        "ZDISCONNECTED_CAUSE": null,
+        "ZFACE_TIME_DATA": null,
+        "ZFILTERED_OUT_REASON": null,
+        "ZHANDLE_TYPE": 2,
+        "ZHASMESSAGE": null,
+        "ZJUNKCONFIDENCE": 0,
+        "ZNUMBER_AVAILABILITY": 0,
+        "ZORIGINATED": 0,
+        "ZREAD": 1,
+        "ZSCREENSHARINGTYPE": 0,
+        "ZUSEDEMERGENCYVIDEOSTREAMING": 0,
+        "ZVERIFICATIONSTATUS": 4,
+        "ZWASEMERGENCYCALL": 0,
+        "ZCOMMUNICATIONTRUSTSCORE": 4,
+        "ZNEEDEDSCANNOUNCEMENT": null,
+        "ZORIGINATINGUITYPE": 0,
+        "ZDATE": 811584000.25,
+        "ZDURATION": 61.5,
+        "ZADDRESS": "+15550000001",
+        "ZBLOCKEDBYEXTENSION": null,
+        "ZBLOCKEDBYEXTENSIONNAME": null,
+        "ZIDENTITYEXTENSION": null,
+        "ZISO_COUNTRY_CODE": "us",
+        "ZJUNKIDENTIFICATIONCATEGORY": null,
+        "ZLOCATION": "Synthetic Region",
+        "ZNAME": null,
+        "ZSERVICE_PROVIDER": "com.example.Telephony",
+        "ZUNIQUE_ID": "SYNTH-CALL-0001",
+        "ZIMAGEURL": null,
+        "ZORIGINATINGDEVICENAME": null,
+        "ZCONVERSATIONID": null,
+        "ZLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZOUTGOINGLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZPARTICIPANTGROUPUUID": null,
+        "ZREMINDERUUID": null
+      },
+      "initiator": {
+        "ZTYPE": 2,
+        "ZNORMALIZEDVALUE": "+15550000001",
+        "ZVALUE": "+15550000001"
+      },
+      "handles": [
+        {
+          "ZTYPE": 2,
+          "ZNORMALIZEDVALUE": "+15550000001",
+          "ZVALUE": "+15550000001"
+        }
+      ],
+      "emergency_media": []
+    },
+    "time": {
+      "start_ms": 1789891200250,
+      "end_ms": 1789891261750,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "call",
+    "key": "SYNTH-CALL-0002",
+    "content": {
+      "type": "apple.call",
+      "call": {
+        "ZANSWERED": 0,
+        "ZAUTOANSWEREDREASON": 0,
+        "ZCALLDIRECTORYIDENTITYTYPE": 0,
+        "ZCALL_CATEGORY": 1,
+        "ZCALLTYPE": 1,
+        "ZDISCONNECTED_CAUSE": null,
+        "ZFACE_TIME_DATA": null,
+        "ZFILTERED_OUT_REASON": null,
+        "ZHANDLE_TYPE": 2,
+        "ZHASMESSAGE": null,
+        "ZJUNKCONFIDENCE": 0,
+        "ZNUMBER_AVAILABILITY": 0,
+        "ZORIGINATED": 0,
+        "ZREAD": 0,
+        "ZSCREENSHARINGTYPE": 0,
+        "ZUSEDEMERGENCYVIDEOSTREAMING": 0,
+        "ZVERIFICATIONSTATUS": 4,
+        "ZWASEMERGENCYCALL": 0,
+        "ZCOMMUNICATIONTRUSTSCORE": 4,
+        "ZNEEDEDSCANNOUNCEMENT": null,
+        "ZORIGINATINGUITYPE": 0,
+        "ZDATE": 811584600,
+        "ZDURATION": 0,
+        "ZADDRESS": "+15550000002",
+        "ZBLOCKEDBYEXTENSION": null,
+        "ZBLOCKEDBYEXTENSIONNAME": null,
+        "ZIDENTITYEXTENSION": null,
+        "ZISO_COUNTRY_CODE": "us",
+        "ZJUNKIDENTIFICATIONCATEGORY": null,
+        "ZLOCATION": "Synthetic Region",
+        "ZNAME": null,
+        "ZSERVICE_PROVIDER": "com.example.Telephony",
+        "ZUNIQUE_ID": "SYNTH-CALL-0002",
+        "ZIMAGEURL": null,
+        "ZORIGINATINGDEVICENAME": null,
+        "ZCONVERSATIONID": null,
+        "ZLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZOUTGOINGLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZPARTICIPANTGROUPUUID": null,
+        "ZREMINDERUUID": null
+      },
+      "initiator": {
+        "ZTYPE": 2,
+        "ZNORMALIZEDVALUE": "+15550000002",
+        "ZVALUE": "+15550000002"
+      },
+      "handles": [
+        {
+          "ZTYPE": 2,
+          "ZNORMALIZEDVALUE": "+15550000002",
+          "ZVALUE": "+15550000002"
+        }
+      ],
+      "emergency_media": []
+    },
+    "time": {
+      "start_ms": 1789891800000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "call",
+    "key": "SYNTH-CALL-0003",
+    "content": {
+      "type": "apple.call",
+      "call": {
+        "ZANSWERED": 0,
+        "ZAUTOANSWEREDREASON": 0,
+        "ZCALLDIRECTORYIDENTITYTYPE": 0,
+        "ZCALL_CATEGORY": 1,
+        "ZCALLTYPE": 1,
+        "ZDISCONNECTED_CAUSE": null,
+        "ZFACE_TIME_DATA": null,
+        "ZFILTERED_OUT_REASON": null,
+        "ZHANDLE_TYPE": 2,
+        "ZHASMESSAGE": null,
+        "ZJUNKCONFIDENCE": 0,
+        "ZNUMBER_AVAILABILITY": 0,
+        "ZORIGINATED": 1,
+        "ZREAD": 1,
+        "ZSCREENSHARINGTYPE": 0,
+        "ZUSEDEMERGENCYVIDEOSTREAMING": 0,
+        "ZVERIFICATIONSTATUS": 4,
+        "ZWASEMERGENCYCALL": 0,
+        "ZCOMMUNICATIONTRUSTSCORE": 4,
+        "ZNEEDEDSCANNOUNCEMENT": null,
+        "ZORIGINATINGUITYPE": 0,
+        "ZDATE": 811585200,
+        "ZDURATION": 300,
+        "ZADDRESS": "+15550000002",
+        "ZBLOCKEDBYEXTENSION": null,
+        "ZBLOCKEDBYEXTENSIONNAME": null,
+        "ZIDENTITYEXTENSION": null,
+        "ZISO_COUNTRY_CODE": "us",
+        "ZJUNKIDENTIFICATIONCATEGORY": null,
+        "ZLOCATION": "Synthetic Region",
+        "ZNAME": null,
+        "ZSERVICE_PROVIDER": "com.example.FaceTime",
+        "ZUNIQUE_ID": "SYNTH-CALL-0003",
+        "ZIMAGEURL": null,
+        "ZORIGINATINGDEVICENAME": null,
+        "ZCONVERSATIONID": null,
+        "ZLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZOUTGOINGLOCALPARTICIPANTUUID": {
+          "$bytes64": "c3ludGhldGljLWxpbmUtYQ=="
+        },
+        "ZPARTICIPANTGROUPUUID": null,
+        "ZREMINDERUUID": null
+      },
+      "initiator": null,
+      "handles": [
+        {
+          "ZTYPE": 2,
+          "ZNORMALIZEDVALUE": "+15550000002",
+          "ZVALUE": "+15550000002"
+        },
+        {
+          "ZTYPE": 3,
+          "ZNORMALIZEDVALUE": "person-b@example.com",
+          "ZVALUE": "person-b@example.com"
+        }
+      ],
+      "emergency_media": [
+        {
+          "ZEMERGENCYMEDIATYPE": 1,
+          "ZASSETID": "SYNTH-ASSET-1"
+        },
+        {
+          "ZEMERGENCYMEDIATYPE": 2,
+          "ZASSETID": "SYNTH-ASSET-2"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1789892400000,
+      "end_ms": 1789892700000,
+      "precision": "s"
+    }
+  }
+]

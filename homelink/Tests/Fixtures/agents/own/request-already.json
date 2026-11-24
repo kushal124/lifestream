@@ -1,0 +1,17 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "category": "health"
+      }
+    },
+    "reason": "Your sleep this week."
+  },
+  "status": 200,
+  "answer": {
+    "state": "already",
+    "words": "Your access already allows this: nothing was asked.",
+    "request": null
+  }
+}

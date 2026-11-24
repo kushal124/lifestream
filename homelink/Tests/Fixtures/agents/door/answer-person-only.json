@@ -1,0 +1,12 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMQ",
+    "answer": 42
+  },
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Allow this in Lifestream on your Mac or iPhone."
+  }
+}

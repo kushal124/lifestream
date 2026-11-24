@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "type": {
+    "type": "object",
+    "properties": {
+      "from": { "type": "string", "enum": ["person", "machine"] },
+      "kind": {
+        "type": "string",
+        "enum": ["transaction", "order", "travel", "bill", "subscription", "security", "invite", "notice", "newsletter", "promotion", "document", "other"]
+      },
+      "topic": { "type": "string" },
+      "provider": { "type": ["string", "null"] },
+      "amount": { "type": ["string", "null"] },
+      "reference": { "type": ["string", "null"] },
+      "gist": { "type": "string" }
+    },
+    "required": ["from", "kind", "topic", "provider", "amount", "reference", "gist"],
+    "additionalProperties": false
+  },
+  "keeps": []
+}

@@ -1,0 +1,47 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "family": "messages",
+  "title": "Messages",
+  "upcoming": false,
+  "rows": [
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDQwMUBzLndoYXRzYXBwLm5ldDphMiJd",
+      "family": "messages",
+      "title": "Person A",
+      "line": "a «lighthouse» keeper waved",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "picture": null,
+      "opens": {
+        "day": "2026-10-04",
+        "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000401@s.whatsapp.net:a2",
+        "page": "days"
+      },
+      "kind": "hit"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDQwMUBzLndoYXRzYXBwLm5ldDphMSJd",
+      "family": "messages",
+      "title": "Person A",
+      "line": "You: the «lighthouse» at dusk",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "picture": null,
+      "opens": {
+        "day": "2026-10-04",
+        "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000401@s.whatsapp.net:a1",
+        "page": "days"
+      },
+      "kind": "hit"
+    }
+  ],
+  "next": null,
+  "unread": null,
+  "reading": null,
+  "nothing": null
+}

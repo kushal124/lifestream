@@ -1,0 +1,120 @@
+{
+  "families": [
+    {
+      "family": "messages",
+      "products": [
+        "whatsapp",
+        "imessage"
+      ],
+      "held": {
+        "first": "2019-02-01",
+        "last": "2026-11-14"
+      }
+    },
+    {
+      "family": "money",
+      "products": [
+        "example-bank"
+      ],
+      "held": {
+        "first": "2022-01-01",
+        "last": "2026-11-06"
+      }
+    },
+    {
+      "family": "voice",
+      "products": [],
+      "held": null
+    }
+  ],
+  "collections": [
+    {
+      "of": "payments",
+      "keys": [
+        "payee",
+        "account",
+        "direction",
+        "channel"
+      ],
+      "measures": [
+        {
+          "measure": "amount",
+          "unit": "EUR",
+          "sums": true
+        }
+      ],
+      "held": {
+        "first": "2022-01-01",
+        "last": "2026-11-06"
+      }
+    },
+    {
+      "of": "stays",
+      "keys": [
+        "place",
+        "city",
+        "country",
+        "how"
+      ],
+      "measures": [
+        {
+          "measure": "minutes",
+          "unit": "min",
+          "sums": true
+        }
+      ],
+      "held": {
+        "first": "2026-09-21",
+        "last": "2026-11-13"
+      },
+      "about": "a stay is time at a place, not where the person slept"
+    },
+    {
+      "of": "days",
+      "keys": [
+        "city",
+        "country",
+        "weekday"
+      ],
+      "measures": [
+        {
+          "measure": "sleep",
+          "unit": "min",
+          "sums": true,
+          "readings": [
+            "asleep",
+            "in bed"
+          ],
+          "held": {
+            "first": "2024-03-01",
+            "last": "2026-11-14"
+          },
+          "stated": 900
+        },
+        {
+          "measure": "steps",
+          "unit": "steps",
+          "sums": true,
+          "held": null
+        }
+      ],
+      "held": {
+        "first": "2019-01-01",
+        "last": "2026-11-14"
+      },
+      "about": "a day is a civil day, from its day start to the next"
+    }
+  ],
+  "screen": {
+    "held": {
+      "first": "2026-05-01",
+      "last": "2026-11-14"
+    },
+    "shows": [
+      "Example Browser",
+      "example.com",
+      "Example Notes"
+    ]
+  },
+  "as_of": "2026-11-14T22:10+00:00"
+}

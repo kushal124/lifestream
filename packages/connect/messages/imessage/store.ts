@@ -1,0 +1,109 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "imessage-mac",
+  name: "imessage",
+  held: "~/Library/Messages/chat.db",
+  account: "apple-id",
+  engine: {
+    kind: "sqlite",
+    stores: [
+      {
+        attachments: {
+          member: "attachments.json",
+          select: "SELECT DISTINCT substr(replace(filename, '\\', '/'), instr(replace(filename, '\\', '/'), 'Attachments/')) FROM attachment WHERE typeof(filename) = 'text' AND instr(replace(filename, '\\', '/'), 'Attachments/') > 0",
+        },
+        file_root: "~/Library/Messages",
+        identity: "file",
+        member: "messages.db",
+        path: "~/Library/Messages/chat.db",
+        tables: [
+          {
+            key: "ROWID",
+            name: "message",
+            role: {
+              main: {
+                rows: "message rows",
+                time: "(CASE WHEN abs(date) >= 1000000000000 THEN date / 1000000000 ELSE NULLIF(date, 0) END) + 978307200",
+              },
+            },
+            touched_by: [
+              [
+                "chat_message_join",
+                "SELECT message_id AS k FROM chat_message_join WHERE rowid IN (SELECT t_key FROM temp.touched WHERE t_name = 'chat_message_join')",
+              ],
+              [
+                "chat_handle_join",
+                "SELECT message_id AS k FROM chat_message_join WHERE chat_id IN (SELECT chat_id FROM chat_handle_join WHERE rowid IN (SELECT t_key FROM temp.touched WHERE t_name = 'chat_handle_join'))",
+              ],
+              [
+                "handle",
+                "SELECT ROWID AS k FROM message WHERE handle_id IN (SELECT t_key FROM temp.touched WHERE t_name = 'handle')",
+              ],
+              [
+                "message_attachment_join",
+                "SELECT message_id AS k FROM message_attachment_join WHERE rowid IN (SELECT t_key FROM temp.touched WHERE t_name = 'message_attachment_join')",
+              ],
+            ],
+          },
+          {
+            keep: "message_id IN (SELECT ROWID FROM message)",
+            key: "rowid",
+            name: "chat_message_join",
+            role: "follows",
+          },
+          {
+            keep: "message_id IN (SELECT ROWID FROM message)",
+            key: "rowid",
+            name: "message_attachment_join",
+            role: "follows",
+            touched_by: [
+              [
+                "attachment",
+                "SELECT rowid AS k FROM message_attachment_join WHERE attachment_id IN (SELECT t_key FROM temp.touched WHERE t_name = 'attachment')",
+              ],
+            ],
+          },
+          {
+            files: ["substr(replace(filename, '\\', '/'), nullif(instr(replace(filename, '\\', '/'), 'Attachments/'), 0))"],
+            keep: "ROWID IN (SELECT attachment_id FROM message_attachment_join)",
+            key: "ROWID",
+            name: "attachment",
+            role: "follows",
+          },
+          {
+            keep: "ROWID IN (SELECT chat_id FROM chat_message_join)",
+            key: "ROWID",
+            name: "chat",
+            role: "changes",
+            touched_by: [
+              [
+                "chat_handle_join",
+                "SELECT chat_id AS k FROM chat_handle_join WHERE rowid IN (SELECT t_key FROM temp.touched WHERE t_name = 'chat_handle_join')",
+              ],
+            ],
+          },
+          {
+            keep: "chat_id IN (SELECT ROWID FROM chat)",
+            key: "rowid",
+            name: "chat_handle_join",
+            role: "follows",
+            touched_by: [
+              [
+                "handle",
+                "SELECT rowid AS k FROM chat_handle_join WHERE handle_id IN (SELECT t_key FROM temp.touched WHERE t_name = 'handle')",
+              ],
+            ],
+          },
+          {
+            keep: "ROWID IN (SELECT handle_id FROM chat_handle_join UNION SELECT handle_id FROM message)",
+            key: "ROWID",
+            name: "handle",
+            role: "follows",
+          },
+          { name: "_SqliteDatabaseProperties", role: "whole" },
+        ],
+      },
+    ],
+  },
+} satisfies MacStore;

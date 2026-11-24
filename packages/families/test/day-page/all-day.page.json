@@ -1,0 +1,43 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [
+    {
+      "key": "e17",
+      "kind": "event",
+      "at_ms": null,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Synthetic errand",
+      "note": "",
+      "words": [
+        {
+          "type": "text",
+          "text": "Calendar · all day · due · in Synthetic list · flagged",
+          "tone": "secondary"
+        }
+      ],
+      "count": null,
+      "quiet": false,
+      "focus": "rec:apple-calendar:person-a@example.com:macbook-pro-0001 reminder SYNTH-UID-0011",
+      "divider": null
+    }
+  ],
+  "chapters": [],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": null,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": false,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "kind": "frame",
+    "key": "20261001T094919.403Z",
+    "content": {
+      "type": "screen.lifestream.frame",
+      "accessibility": {
+        "capturedAt": 1790848159444.101,
+        "capturedUntil": 1790848159494.6013,
+        "limitReasons": [],
+        "nodes": [
+          {
+            "bounds": {
+              "height": 455,
+              "width": 640,
+              "x": 0,
+              "y": 25
+            },
+            "depth": 0,
+            "enabled": true,
+            "focused": true,
+            "role": "AXWindow",
+            "selected": false,
+            "subrole": "AXStandardWindow",
+            "text": "Synthetic window",
+            "title": "Synthetic window",
+            "visible": true
+          },
+          {
+            "bounds": {
+              "height": 420,
+              "width": 640,
+              "x": 0,
+              "y": 60
+            },
+            "depth": 1,
+            "role": "AXWebArea",
+            "text": "Synthetic page",
+            "title": "Synthetic page",
+            "url": "https://example.com/synthetic"
+          }
+        ],
+        "status": "complete-scoped-app-reported",
+        "targetWindowBounds": {
+          "height": 455,
+          "width": 640,
+          "x": 0,
+          "y": 25
+        },
+        "targetWindowID": 11,
+        "visitedElements": 1,
+        "windowCorrelation": "unique-pid-and-window-geometry"
+      },
+      "acquisition": {
+        "backend": "screenshot",
+        "freshness": "screenshot-request-completed",
+        "receivedAt": 1790848159433.8013
+      },
+      "application": {
+        "bundleID": "com.example.editor",
+        "name": "Example Editor",
+        "pid": 4242
+      },
+      "capturedAt": 1790848159403.9011,
+      "capturedUntil": 1790848159435.1511,
+      "displayBounds": {
+        "height": 480,
+        "width": 640,
+        "x": 0,
+        "y": 0
+      },
+      "displayID": 1,
+      "displaySelection": {
+        "availableCount": 2,
+        "policy": "relevant-display",
+        "reason": "foreground-window-midpoint"
+      },
+      "frontWindow": {
+        "windowID": 11
+      },
+      "height": 48,
+      "inputIdleSeconds": 1.5,
+      "ocr": [
+        {
+          "bounds": {
+            "height": 0.125,
+            "width": 0.25,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "confidence": 0.5,
+          "text": "SYNTHETIC TEXT"
+        }
+      ],
+      "ocrScope": {
+        "effective": "display",
+        "focusedPID": 4242,
+        "requested": "display"
+      },
+      "ocrStatus": "reused-exact-image",
+      "reason": "foreground-pid-matched-around-image-acquisition; non-atomic-observation",
+      "scaling": {
+        "maximumDimension": 4096,
+        "maximumHeight": 1440,
+        "nativeHeight": 960,
+        "nativeWidth": 1280,
+        "requestedHeight": 960,
+        "requestedWidth": 1280
+      },
+      "site": "video.example",
+      "status": "captured",
+      "width": 64,
+      "windows": [
+        {
+          "application": {
+            "bundleID": "com.example.editor",
+            "name": "Example Editor",
+            "pid": 4242
+          },
+          "bounds": {
+            "height": 455,
+            "width": 640,
+            "x": 0,
+            "y": 25
+          },
+          "title": "Synthetic window",
+          "windowID": 11
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790848159403,
+      "end_ms": 1790848159435,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "frame",
+    "key": "20261001T094919.403Z:1",
+    "content": {
+      "type": "screen.lifestream.frame",
+      "accessibility": {
+        "capturedAt": 1790848159444.1812,
+        "capturedUntil": 1790848159494.6814,
+        "limitReasons": [],
+        "nodes": [
+          {
+            "bounds": {
+              "height": 455,
+              "width": 640,
+              "x": 0,
+              "y": 25
+            },
+            "depth": 0,
+            "enabled": true,
+            "focused": true,
+            "role": "AXWindow",
+            "selected": false,
+            "subrole": "AXStandardWindow",
+            "text": "Synthetic window",
+            "title": "Synthetic window",
+            "visible": true
+          },
+          {
+            "bounds": {
+              "height": 420,
+              "width": 640,
+              "x": 0,
+              "y": 60
+            },
+            "depth": 1,
+            "role": "AXWebArea",
+            "text": "Synthetic page",
+            "title": "Synthetic page",
+            "url": "https://example.com/synthetic"
+          }
+        ],
+        "status": "complete-scoped-app-reported",
+        "targetWindowBounds": {
+          "height": 455,
+          "width": 640,
+          "x": 0,
+          "y": 25
+        },
+        "targetWindowID": 11,
+        "visitedElements": 1,
+        "windowCorrelation": "unique-pid-and-window-geometry"
+      },
+      "acquisition": {
+        "backend": "screenshot",
+        "freshness": "screenshot-request-completed",
+        "receivedAt": 1790848159433.8813
+      },
+      "application": {
+        "bundleID": "com.example.editor",
+        "name": "Example Editor",
+        "pid": 4242
+      },
+      "capturedAt": 1790848159403.9812,
+      "capturedUntil": 1790848159435.2312,
+      "displayBounds": {
+        "height": 480,
+        "width": 640,
+        "x": 0,
+        "y": 0
+      },
+      "displayID": 2,
+      "displaySelection": {
+        "availableCount": 2,
+        "policy": "relevant-display",
+        "reason": "foreground-window-midpoint"
+      },
+      "frontWindow": {
+        "windowID": 11
+      },
+      "height": 48,
+      "inputIdleSeconds": 1.5,
+      "ocr": [
+        {
+          "bounds": {
+            "height": 0.125,
+            "width": 0.25,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "confidence": 0.5,
+          "text": "SYNTHETIC TEXT"
+        }
+      ],
+      "ocrScope": {
+        "effective": "display",
+        "focusedPID": 4242,
+        "requested": "display"
+      },
+      "ocrStatus": "reused-exact-image",
+      "reason": "foreground-pid-matched-around-image-acquisition; non-atomic-observation",
+      "scaling": {
+        "maximumDimension": 4096,
+        "maximumHeight": 1440,
+        "nativeHeight": 960,
+        "nativeWidth": 1280,
+        "requestedHeight": 960,
+        "requestedWidth": 1280
+      },
+      "site": "video.example",
+      "status": "captured",
+      "width": 64,
+      "windows": [
+        {
+          "application": {
+            "bundleID": "com.example.editor",
+            "name": "Example Editor",
+            "pid": 4242
+          },
+          "bounds": {
+            "height": 455,
+            "width": 640,
+            "x": 0,
+            "y": 25
+          },
+          "title": "Synthetic window",
+          "windowID": 11
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1790848159403,
+      "end_ms": 1790848159435,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "recorder",
+    "key": "20261001T094917.303Z",
+    "content": {
+      "type": "screen.lifestream.gap",
+      "capturedAt": 1790848157303.8909,
+      "capturedUntil": 1790848159304.6223,
+      "displayID": 0,
+      "height": 0,
+      "ocr": [],
+      "ocrStatus": "not-run",
+      "reason": "capture-deadline-missed; count=1",
+      "status": "gap",
+      "timings": {
+        "attemptMs": 3514,
+        "captureMs": 3500,
+        "enrichMs": 3100,
+        "ocrMs": 3000,
+        "ocrTiles": 4,
+        "pageCheckMs": 33,
+        "prepareMs": 11,
+        "publishMs": 10,
+        "screenshotMs": 22,
+        "statusMs": 4,
+        "wakeLateMs": 0
+      },
+      "width": 0,
+      "windows": []
+    },
+    "time": {
+      "start_ms": 1790848157303,
+      "end_ms": 1790848159304,
+      "precision": "ms"
+    }
+  }
+]

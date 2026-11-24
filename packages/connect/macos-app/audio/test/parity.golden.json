@@ -1,0 +1,317 @@
+[
+  {
+    "kind": "mic-recording",
+    "key": "20260930T100000.12Z",
+    "content": {
+      "type": "audio.recording",
+      "audio": {
+        "bit_rate": 32000,
+        "bytes": 40,
+        "channels": 1,
+        "codec": "aac",
+        "duration_ms": 300000,
+        "file": "20260930T100000.120Z.mic.m4a",
+        "media_type": "audio/mp4",
+        "sample_rate": 16000,
+        "sha256": "eeb7bd698b08c87817814eb07b8d98539a262a0bcb6592276c2dbca68e4608f9"
+      },
+      "camera": [],
+      "detected_at": "2026-09-30T10:00:00.120Z",
+      "device": {
+        "chosen": "holder",
+        "name": "Synthetic Microphone",
+        "transport": "built_in",
+        "uid": "synthetic-input-uid"
+      },
+      "ended_by": "holders_gone",
+      "latency_ms": 180,
+      "loudness": {
+        "every_ms": 1000,
+        "peak_dbfs": [
+          -6,
+          -9,
+          -96
+        ],
+        "rms_dbfs": [
+          -21,
+          -24,
+          -96
+        ]
+      },
+      "part": 1,
+      "room": [
+        {
+          "at": "2026-09-30T10:00:00.120Z",
+          "holders": [
+            "com.example.meetings"
+          ],
+          "input": {
+            "device": {
+              "name": "Synthetic Microphone",
+              "transport": "built_in",
+              "uid": "synthetic-input-uid"
+            },
+            "muted": false,
+            "volume": 0.24
+          },
+          "output": {
+            "device": {
+              "name": "Synthetic Speakers",
+              "transport": "built_in",
+              "uid": "synthetic-output-uid"
+            },
+            "muted": false,
+            "volume": 0.5
+          },
+          "players": [
+            "com.example.meetings"
+          ]
+        }
+      ],
+      "session": "20260930T100000.120Z.mic",
+      "track": "mic",
+      "until": "2026-09-30T10:05:00.120Z"
+    },
+    "time": {
+      "start_ms": 1790762400120,
+      "end_ms": 1790762700120,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "mic-recording",
+    "key": "20260930T100000.12Z:1",
+    "content": {
+      "type": "audio.recording",
+      "audio": {
+        "bit_rate": 32000,
+        "bytes": 42,
+        "channels": 1,
+        "codec": "aac",
+        "duration_ms": 1880,
+        "file": "20260930T100000.120Z.mic-2.m4a",
+        "media_type": "audio/mp4",
+        "sample_rate": 16000,
+        "sha256": "b7390ea816cbcbcdb5c8e7b7f8476b0e4168abf0b7713fc2b2b5c042becf39c0"
+      },
+      "camera": [
+        {
+          "at": "2026-09-30T10:00:00.500Z",
+          "device": "Synthetic Camera",
+          "until": "2026-09-30T10:00:01.500Z"
+        }
+      ],
+      "detected_at": "2026-09-30T10:00:00.120Z",
+      "device": {
+        "chosen": "holder",
+        "name": "Synthetic Microphone",
+        "transport": "built_in",
+        "uid": "synthetic-input-uid"
+      },
+      "ended_by": "device_changed",
+      "latency_ms": 180,
+      "loudness": {
+        "every_ms": 1000,
+        "peak_dbfs": [
+          -6,
+          -9,
+          -96
+        ],
+        "rms_dbfs": [
+          -21,
+          -24,
+          -96
+        ]
+      },
+      "part": 1,
+      "room": [
+        {
+          "at": "2026-09-30T10:00:00.120Z",
+          "holders": [
+            "com.example.meetings"
+          ],
+          "input": {
+            "device": {
+              "name": "Synthetic Microphone",
+              "transport": "built_in",
+              "uid": "synthetic-input-uid"
+            },
+            "muted": false,
+            "volume": 0.24
+          },
+          "output": {
+            "device": {
+              "name": "Synthetic Speakers",
+              "transport": "built_in",
+              "uid": "synthetic-output-uid"
+            },
+            "muted": false,
+            "volume": 0.5
+          },
+          "players": [
+            "com.example.meetings"
+          ]
+        }
+      ],
+      "session": "20260930T100000.120Z.mic-2",
+      "track": "mic",
+      "until": "2026-09-30T10:00:02.000Z"
+    },
+    "time": {
+      "start_ms": 1790762400120,
+      "end_ms": 1790762402000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "mic-recording",
+    "key": "20260930T100500.12Z",
+    "content": {
+      "type": "audio.recording",
+      "audio": {
+        "bit_rate": 32000,
+        "bytes": 40,
+        "channels": 1,
+        "codec": "aac",
+        "duration_ms": 149880,
+        "file": "20260930T100500.120Z.mic.m4a",
+        "media_type": "audio/mp4",
+        "sample_rate": 16000,
+        "sha256": "321c952daff6e22ce74a8f1ce833db50c25804f3341b89859993b53f6aec54dd"
+      },
+      "camera": [],
+      "detected_at": "2026-09-30T10:05:00.120Z",
+      "device": {
+        "chosen": "holder",
+        "name": "Synthetic Microphone",
+        "transport": "built_in",
+        "uid": "synthetic-input-uid"
+      },
+      "ended_by": "part_limit",
+      "loudness": {
+        "every_ms": 1000,
+        "peak_dbfs": [
+          -6,
+          -9,
+          -96
+        ],
+        "rms_dbfs": [
+          -21,
+          -24,
+          -96
+        ]
+      },
+      "part": 2,
+      "room": [
+        {
+          "at": "2026-09-30T10:05:00.120Z",
+          "holders": [
+            "com.example.meetings"
+          ],
+          "input": {
+            "device": {
+              "name": "Synthetic Microphone",
+              "transport": "built_in",
+              "uid": "synthetic-input-uid"
+            },
+            "muted": false,
+            "volume": 0.24
+          },
+          "output": {
+            "device": {
+              "name": "Synthetic Speakers",
+              "transport": "built_in",
+              "uid": "synthetic-output-uid"
+            },
+            "muted": false,
+            "volume": 0.5
+          },
+          "players": [
+            "com.example.meetings"
+          ]
+        }
+      ],
+      "session": "20260930T100000.120Z.mic",
+      "track": "mic",
+      "until": "2026-09-30T10:07:30.000Z"
+    },
+    "time": {
+      "start_ms": 1790762700120,
+      "end_ms": 1790762850000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "sound-recording",
+    "key": "20260930T100001Z",
+    "content": {
+      "type": "audio.recording",
+      "audio": {
+        "bit_rate": 32000,
+        "bytes": 42,
+        "channels": 1,
+        "codec": "aac",
+        "duration_ms": 448500,
+        "file": "20260930T100001.000Z.sound.m4a",
+        "media_type": "audio/mp4",
+        "sample_rate": 16000,
+        "sha256": "1625015bb61443fc5711e1a8faecec2f1d1f67b361ea31e81082a032398ec043"
+      },
+      "camera": [],
+      "detected_at": "2026-09-30T10:00:01.000Z",
+      "ended_by": "holders_gone",
+      "latency_ms": 180,
+      "loudness": {
+        "every_ms": 1000,
+        "peak_dbfs": [
+          -6,
+          -9,
+          -96
+        ],
+        "rms_dbfs": [
+          -21,
+          -24,
+          -96
+        ]
+      },
+      "part": 1,
+      "room": [
+        {
+          "at": "2026-09-30T10:00:01.000Z",
+          "holders": [
+            "com.example.meetings"
+          ],
+          "input": {
+            "device": {
+              "name": "Synthetic Microphone",
+              "transport": "built_in",
+              "uid": "synthetic-input-uid"
+            },
+            "muted": false,
+            "volume": 0.24
+          },
+          "output": {
+            "device": {
+              "name": "Synthetic Speakers",
+              "transport": "built_in",
+              "uid": "synthetic-output-uid"
+            },
+            "muted": false,
+            "volume": 0.5
+          },
+          "players": [
+            "com.example.meetings"
+          ]
+        }
+      ],
+      "session": "20260930T100001.000Z.sound",
+      "track": "sound",
+      "until": "2026-09-30T10:07:29.500Z"
+    },
+    "time": {
+      "start_ms": 1790762401000,
+      "end_ms": 1790762849500,
+      "precision": "ms"
+    }
+  }
+]

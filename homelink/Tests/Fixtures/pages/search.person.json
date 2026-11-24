@@ -1,0 +1,124 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "top": [
+    {
+      "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDA0MDEiXQ",
+      "name": "Person A",
+      "line": "4 messages",
+      "picture": "sha256:619d7b77af9a748080472beff7061c459deb273308fae5f305c664b81b0428aa",
+      "opens": {
+        "id": "phone:+15550000401",
+        "person": "phone:+15550000401",
+        "group": null,
+        "page": "people"
+      },
+      "kind": "person"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDQwMUBzLndoYXRzYXBwLm5ldDphMiJd",
+      "family": "messages",
+      "title": "Person A",
+      "line": "«a» lighthouse keeper waved",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "picture": null,
+      "opens": {
+        "day": "2026-10-04",
+        "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000401@s.whatsapp.net:a2",
+        "page": "days"
+      },
+      "kind": "hit"
+    },
+    {
+      "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDQwMUBzLndoYXRzYXBwLm5ldDphMyJd",
+      "family": "messages",
+      "title": "Person A",
+      "line": "synthetic reply",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "picture": null,
+      "opens": {
+        "day": "2026-10-04",
+        "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000401@s.whatsapp.net:a3",
+        "page": "days"
+      },
+      "kind": "hit"
+    }
+  ],
+  "kinds": [
+    {
+      "family": "messages",
+      "title": "Messages",
+      "count": {
+        "n": 5,
+        "partial": false
+      },
+      "upcoming": null,
+      "see": true,
+      "unread": null,
+      "rows": [
+        {
+          "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxMjAzNjMwMDAwMDAwMDAwNDFAZy51czpmMiJd",
+          "family": "messages",
+          "title": "Group Friends",
+          "line": "Person A: synthetic group answer",
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "picture": null,
+          "opens": {
+            "day": "2026-10-03",
+            "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 120363000000000041@g.us:f2",
+            "page": "days"
+          },
+          "kind": "hit"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1jb250YWN0czpsb2NhbDppcGhvbmUtYWEwMSIsImNvbnRhY3QiLCJiMjE0ZDhkMWE4ZmRmYjUzMWIwMWMzYWUxMTcxMzFlZjkxMDVhM2MyNjBiYzZhZDVhMjI0ZmU4NWQxN2M3NTJhIl0",
+          "family": "messages",
+          "title": "Person A",
+          "line": "Person A",
+          "when": null,
+          "picture": null,
+          "opens": {
+            "page": "read"
+          },
+          "kind": "hit"
+        },
+        {
+          "ref": "record.WyJyZWNvcmQiLCJ3aGF0c2FwcDo5MTkwMDAwMDAwMDk6aXBob25lLWFhMDEiLCJtc2ciLCIxNTU1MDAwMDQwMUBzLndoYXRzYXBwLm5ldDphMSJd",
+          "family": "messages",
+          "title": "Person A",
+          "line": "You: the lighthouse at dusk",
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "picture": null,
+          "opens": {
+            "day": "2026-10-04",
+            "focus": "rec:whatsapp:919000000009:iphone-aa01 msg 15550000401@s.whatsapp.net:a1",
+            "page": "days"
+          },
+          "kind": "hit"
+        }
+      ]
+    }
+  ],
+  "total": {
+    "n": 5,
+    "partial": false
+  },
+  "held": {
+    "first": "2026-10-03",
+    "last": "2026-10-04"
+  },
+  "reading": null,
+  "nothing": null
+}

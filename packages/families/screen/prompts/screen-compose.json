@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "type": {
+    "type": "object",
+    "properties": {
+      "summary": {
+        "type": "string",
+        "description": "3-6 plain sentences: how this stretch was spent, in the order it happened."
+      },
+      "timeline": {
+        "type": "array",
+        "description": "Consecutive, non-overlapping stretches covering the whole window from its start to its end. Every second belongs to exactly one stretch.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "description": "A wall-clock time, HH:MM:SS."
+            },
+            "end": {
+              "type": "string",
+              "description": "A wall-clock time, HH:MM:SS."
+            },
+            "present": {
+              "type": "string",
+              "description": "Was the person at the Mac?",
+              "enum": [
+                "yes",
+                "no",
+                "unsure"
+              ]
+            },
+            "present_why": {
+              "type": "string",
+              "description": "The evidence for present, in a few words."
+            },
+            "doing": {
+              "type": "string",
+              "description": "What the person was doing, in plain words, specific: the thing, not the app."
+            },
+            "task": {
+              "type": "string",
+              "description": "A short label for the task this stretch belongs to. Reuse the exact same label for stretches of the same task, so switches can be counted."
+            },
+            "where": {
+              "type": "string",
+              "description": "App, and site or document when known."
+            }
+          },
+          "required": [
+            "start",
+            "end",
+            "present",
+            "present_why",
+            "doing",
+            "task",
+            "where"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "actions": {
+        "type": "array",
+        "description": "Things the person did (sent, typed, searched, clicked to decide, created, joined, shared). Not things that merely appeared on screen.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "at": {
+              "type": "string",
+              "description": "A wall-clock time, HH:MM:SS."
+            },
+            "what": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "at",
+            "what"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "life": {
+        "type": "object",
+        "properties": {
+          "people": {
+            "type": "array",
+            "description": "People the person dealt with (talked to, messaged, worked with, discussed).",
+            "items": {
+              "type": "string"
+            }
+          },
+          "projects": {
+            "type": "array",
+            "description": "Projects or pieces of work advanced.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "other": {
+            "type": "array",
+            "description": "Other things going on: shows watched, purchases, errands, news followed.",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "people",
+          "projects",
+          "other"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "summary",
+      "timeline",
+      "actions",
+      "life"
+    ],
+    "additionalProperties": false
+  },
+  "keeps": []
+}

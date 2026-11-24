@@ -1,0 +1,318 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person F",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "email:person-f@example.com",
+      "kind": "email",
+      "network": null,
+      "words": "person-f@example.com",
+      "from": null,
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 0
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 0,
+    "calls": null,
+    "line": "None in the last 30 days",
+    "before": {
+      "day": "2025-08-01",
+      "joiner": " · last, "
+    }
+  },
+  "history": {
+    "years": [
+      {
+        "year": "2024",
+        "count": 20,
+        "day": "2024-07-27"
+      },
+      {
+        "year": "2025",
+        "count": 35,
+        "day": "2025-08-01"
+      },
+      {
+        "year": "2026",
+        "count": 0,
+        "day": null
+      }
+    ],
+    "total": 55,
+    "marked": 1,
+    "kind": "years"
+  },
+  "talk": {
+    "day": "2025-08-01",
+    "chat": "imessage:person-f@example.com",
+    "title": "Person F",
+    "group": false,
+    "network": "iMessage",
+    "lines": [
+      {
+        "who": "email:person-f@example.com",
+        "name": "Person F",
+        "text": "synthetic imessage f-mail-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic imessage f-mail-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 2
+      },
+      {
+        "who": "email:person-f@example.com",
+        "name": "Person F",
+        "text": "synthetic imessage f-mail-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 3
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic imessage f-mail-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "email:person-f@example.com",
+        "name": "Person F",
+        "text": "synthetic imessage f-mail-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic imessage f-mail-out-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 6
+      }
+    ],
+    "folded": [],
+    "focus": "a6"
+  },
+  "where": [
+    {
+      "chat": "imessage:person-f@example.com",
+      "title": "iMessage",
+      "group": false,
+      "network": "iMessage",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 30,
+      "line": "30 messages",
+      "quiet": false
+    }
+  ],
+  "suggestions_line": "1 suggestion",
+  "edit": {
+    "call": "Person F",
+    "full_name": null,
+    "name_from": null,
+    "record_id": null,
+    "face": false,
+    "reach": "iMessage",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "55 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": null,
+    "details": null,
+    "suggestions": [
+      {
+        "id": "4f2571f3d2380118",
+        "kind": "same",
+        "value": "phone:+15550000008",
+        "reasons": [
+          {
+            "reason": "linked",
+            "count": 0
+          },
+          {
+            "reason": "named",
+            "count": 1
+          },
+          {
+            "reason": "seen",
+            "count": 0
+          }
+        ],
+        "ticked": false,
+        "other": {
+          "id": "phone:+15550000008",
+          "name": "Person F",
+          "photo": null,
+          "named": true,
+          "face": false
+        }
+      }
+    ],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

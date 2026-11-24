@@ -1,0 +1,205 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-12",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa00/1790603640000@1791757800000",
+      "kind": "stay",
+      "episode": "e2",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "4h 58m"
+      },
+      "start_ms": 1791757800000,
+      "end_ms": 1791775680000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1791775680000@1791775680000",
+      "kind": "move",
+      "episode": "e3",
+      "head": {
+        "title": "Move 82.3 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "3h 2m"
+      },
+      "start_ms": 1791775680000,
+      "end_ms": 1791786600000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Group Alpha",
+          "first_row": "e5",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "trip/location:local:iphone-aa00/1791775680000@1791775680000#run",
+          "kind": "run",
+          "start_ms": 1791775680000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e5",
+              "kind": "conversation",
+              "at_ms": 1791776160000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [
+                {
+                  "text": "on the road",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-10-12-5460",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1791786600000@1791786600000",
+      "kind": "stay",
+      "episode": "e7",
+      "head": {
+        "title": "Salinas",
+        "line": null,
+        "place": "spot:36.6002,-121.8947",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "16h"
+      },
+      "start_ms": 1791786600000,
+      "end_ms": 1791844200000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1791844200000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "1",
+        "words": "message sent"
+      },
+      {
+        "key": "received",
+        "value": "1",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "spot:36.6002,-121.8947",
+        "slug": null,
+        "name": "Salinas",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 57600000,
+        "length": "16h",
+        "spoken": "Salinas, 16 hours",
+        "point": {
+          "latitude": 36.6002,
+          "longitude": -121.8947,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e7"
+        ]
+      },
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 17880000,
+        "length": "4h 58m",
+        "spoken": "Home, 4 hours 58 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e2"
+        ]
+      }
+    ],
+    "people": [],
+    "groups": [
+      {
+        "chat": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha",
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Alpha, 1 message sent",
+        "quiet": false,
+        "rows": [
+          "e5"
+        ]
+      }
+    ],
+    "unreturned": []
+  }
+}

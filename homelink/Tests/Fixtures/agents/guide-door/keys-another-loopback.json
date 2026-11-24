@@ -1,0 +1,51 @@
+{
+  "route": "POST /v1/agents/keys",
+  "request": {
+    "app": "another",
+    "name": "Example tool",
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    }
+  },
+  "status": 200,
+  "answer": {
+    "reader": "p-0000cccc",
+    "name": "Example tool",
+    "rows": [
+      {
+        "label": "Address",
+        "text": "http://127.0.0.1:4681/mcp"
+      },
+      {
+        "label": "Key",
+        "text": "synthetic-pass-0001"
+      },
+      {
+        "label": "Claude Code",
+        "text": "printf 'Paste your Lifestream pass: ' && read -rs LIFESTREAM_PASS && echo && claude mcp add --transport http lifestream http://127.0.0.1:4681/mcp --header \"Authorization: Bearer $LIFESTREAM_PASS\"; unset LIFESTREAM_PASS"
+      }
+    ],
+    "connected": {
+      "reader": "p-0000cccc",
+      "line": "It sees everything but Health and Money. Change it any time in Agents."
+    }
+  }
+}

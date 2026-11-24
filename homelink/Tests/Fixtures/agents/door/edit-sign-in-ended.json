@@ -1,0 +1,36 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": {
+    "target": {
+      "request": "c2lnbi1pbi0wMDAwMDAwMw"
+    },
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "expect": null,
+    "edit": null
+  },
+  "status": 404,
+  "answer": {
+    "code": "AGENT_REQUEST_GONE",
+    "message": "This sign-in is over. Start it again in the app."
+  }
+}

@@ -1,0 +1,51 @@
+-- A synthetic store written by the home connector's own fixture builder
+-- (packages/connect/browser/chrome/test/fixture.ts), dumped, read by the Mac domain's tests and sealed
+-- into the connector's changes fixture (packages/connect/browser/chrome/test/changes-bundle.zip).
+-- Every value is fake.
+CREATE TABLE meta(key LONGVARCHAR NOT NULL UNIQUE PRIMARY KEY, value LONGVARCHAR);
+INSERT INTO meta VALUES('version','70');
+INSERT INTO meta VALUES('last_compatible_version','69');
+CREATE TABLE urls(id INTEGER PRIMARY KEY AUTOINCREMENT,url LONGVARCHAR,title LONGVARCHAR,visit_count INTEGER DEFAULT 0 NOT NULL,typed_count INTEGER DEFAULT 0 NOT NULL,last_visit_time INTEGER NOT NULL,hidden INTEGER DEFAULT 0 NOT NULL);
+INSERT INTO urls VALUES(1,'https://example.com/a','Page A',1,0,13434364800000000,0);
+INSERT INTO urls VALUES(2,'https://search.example.com/?q=synthetic+one','synthetic one - Search',2,0,13434365040000000,0);
+INSERT INTO urls VALUES(3,'https://example.com/b','Page B',1,0,13434364980000000,0);
+INSERT INTO urls VALUES(4,'https://search.example.com/?q=synthetic+two','synthetic two - Search',1,0,13434364920000000,0);
+CREATE TABLE visits(id INTEGER PRIMARY KEY AUTOINCREMENT,url INTEGER NOT NULL,visit_time INTEGER NOT NULL,from_visit INTEGER,external_referrer_url TEXT,transition INTEGER DEFAULT 0 NOT NULL,segment_id INTEGER,visit_duration INTEGER DEFAULT 0 NOT NULL,incremented_omnibox_typed_score BOOLEAN DEFAULT FALSE NOT NULL,opener_visit INTEGER,originator_cache_guid TEXT,originator_visit_id INTEGER,originator_from_visit INTEGER,originator_opener_visit INTEGER,is_known_to_sync BOOLEAN DEFAULT FALSE NOT NULL,consider_for_ntp_most_visited BOOLEAN DEFAULT FALSE NOT NULL,visited_link_id INTEGER DEFAULT 0 NOT NULL,app_id TEXT);
+INSERT INTO visits VALUES(1,1,13434364800000123,0,'',805306368,0,2500000,0,0,'',0,0,0,0,1,0,NULL);
+INSERT INTO visits VALUES(2,2,13434364860000000,0,'',805306369,0,0,0,0,'',0,0,0,0,1,0,NULL);
+INSERT INTO visits VALUES(3,4,13434364920000000,0,'',805306368,0,0,0,0,'',0,0,0,0,1,0,NULL);
+INSERT INTO visits VALUES(4,3,13434364980000000,0,'',805306368,0,900,0,0,'',0,0,0,0,1,0,NULL);
+INSERT INTO visits VALUES(5,2,13434365040000000,0,'',805306368,0,0,0,0,'',0,0,0,0,1,0,NULL);
+CREATE TABLE visit_source(id INTEGER PRIMARY KEY,source INTEGER NOT NULL);
+INSERT INTO visit_source VALUES(1,0);
+INSERT INTO visit_source VALUES(5,0);
+CREATE TABLE keyword_search_terms (keyword_id INTEGER NOT NULL,url_id INTEGER NOT NULL,term LONGVARCHAR NOT NULL,normalized_term LONGVARCHAR NOT NULL);
+INSERT INTO keyword_search_terms VALUES(7,2,'synthetic one','synthetic one');
+INSERT INTO keyword_search_terms VALUES(7,4,'synthetic two','synthetic two');
+CREATE TABLE downloads (id INTEGER PRIMARY KEY,guid VARCHAR NOT NULL,current_path LONGVARCHAR NOT NULL,target_path LONGVARCHAR NOT NULL,start_time INTEGER NOT NULL,received_bytes INTEGER NOT NULL,total_bytes INTEGER NOT NULL,state INTEGER NOT NULL,danger_type INTEGER NOT NULL,interrupt_reason INTEGER NOT NULL,hash BLOB NOT NULL,end_time INTEGER NOT NULL,opened INTEGER NOT NULL,last_access_time INTEGER NOT NULL,transient INTEGER NOT NULL,referrer VARCHAR NOT NULL,site_url VARCHAR NOT NULL,embedder_download_data VARCHAR NOT NULL,tab_url VARCHAR NOT NULL,tab_referrer_url VARCHAR NOT NULL,http_method VARCHAR NOT NULL,by_ext_id VARCHAR NOT NULL,by_ext_name VARCHAR NOT NULL,by_web_app_id VARCHAR NOT NULL,etag VARCHAR NOT NULL,last_modified VARCHAR NOT NULL,mime_type VARCHAR(255) NOT NULL,original_mime_type VARCHAR(255) NOT NULL);
+INSERT INTO downloads VALUES(1,'SYNTH-0000-0000-0000-DOWNLOAD0001','/tmp/synthetic','/tmp/synthetic',13434364830000000,1024,1024,1,0,0,X'',13434364831000000,0,0,0,'https://example.com/a','','','https://example.com/a','','GET','','','','','','application/octet-stream','application/octet-stream');
+INSERT INTO downloads VALUES(2,'SYNTH-0000-0000-0000-DOWNLOAD0002','/tmp/synthetic','/tmp/synthetic',13434365100000000,10,1024,0,0,0,X'',0,0,0,0,'https://example.com/a','','','https://example.com/a','','GET','','','','','','application/octet-stream','application/octet-stream');
+CREATE TABLE downloads_url_chains (id INTEGER NOT NULL,chain_index INTEGER NOT NULL,url LONGVARCHAR NOT NULL, PRIMARY KEY (id, chain_index) );
+INSERT INTO downloads_url_chains VALUES(1,0,'https://example.com/redirect');
+INSERT INTO downloads_url_chains VALUES(1,1,'https://example.com/synthetic.pdf');
+INSERT INTO downloads_url_chains VALUES(2,0,'https://example.com/large.zip');
+CREATE TABLE downloads_slices (download_id INTEGER NOT NULL,offset INTEGER NOT NULL,received_bytes INTEGER NOT NULL,finished INTEGER NOT NULL DEFAULT 0,PRIMARY KEY (download_id, offset) );
+INSERT INTO downloads_slices VALUES(1,0,1024,1);
+INSERT INTO downloads_slices VALUES(2,0,10,0);
+CREATE TABLE segments (id INTEGER PRIMARY KEY,name VARCHAR,url_id INTEGER NON NULL);
+INSERT INTO segments VALUES(1,'http://example.com/',1);
+CREATE TABLE content_annotations(visit_id INTEGER PRIMARY KEY,visibility_score NUMERIC,floc_protected_score NUMERIC,categories VARCHAR,page_topics_model_version INTEGER,annotation_flags INTEGER NOT NULL,entities VARCHAR,related_searches VARCHAR,search_normalized_url VARCHAR,search_terms LONGVARCHAR,alternative_title VARCHAR,page_language VARCHAR,password_state INTEGER DEFAULT 0 NOT NULL,has_url_keyed_image BOOLEAN NOT NULL);
+INSERT INTO content_annotations VALUES(1,0,0,'',0,0,'','','','','','en',0,0);
+CREATE TABLE context_annotations(visit_id INTEGER PRIMARY KEY,context_annotation_flags INTEGER NOT NULL,duration_since_last_visit INTEGER,page_end_reason INTEGER,total_foreground_duration INTEGER,browser_type INTEGER DEFAULT 0 NOT NULL,window_id INTEGER DEFAULT -1 NOT NULL,tab_id INTEGER DEFAULT -1 NOT NULL,task_id INTEGER DEFAULT -1 NOT NULL,root_task_id INTEGER DEFAULT -1 NOT NULL,parent_task_id INTEGER DEFAULT -1 NOT NULL,response_code INTEGER DEFAULT 0 NOT NULL);
+INSERT INTO context_annotations VALUES(1,0,0,1,2500000,1,9,11,0,0,0,200);
+INSERT INTO context_annotations VALUES(5,0,0,1,2500000,1,9,15,0,0,0,200);
+CREATE TABLE visited_links(id INTEGER PRIMARY KEY AUTOINCREMENT,link_url_id INTEGER NOT NULL,top_level_url LONGVARCHAR NOT NULL,frame_url LONGVARCHAR NOT NULL,visit_count INTEGER DEFAULT 0 NOT NULL);
+INSERT INTO visited_links VALUES(1,1,'https://example.com/','',1);
+INSERT INTO sqlite_sequence VALUES('visited_links',1);
+INSERT INTO sqlite_sequence VALUES('urls',4);
+INSERT INTO sqlite_sequence VALUES('visits',5);
+CREATE INDEX visits_url_index ON visits (url);
+CREATE INDEX visits_time_index ON visits (visit_time);
+CREATE INDEX keyword_search_terms_index1 ON keyword_search_terms (keyword_id, normalized_term);
+CREATE INDEX keyword_search_terms_index2 ON keyword_search_terms (url_id);
+CREATE INDEX urls_url_index ON urls (url);

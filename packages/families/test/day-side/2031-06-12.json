@@ -1,0 +1,205 @@
+{
+  "where": [
+    {
+      "kind": "stay",
+      "start_ms": 1938943800000,
+      "end_ms": 1938981600000,
+      "point": {
+        "latitude": 10.0001,
+        "longitude": 20.0001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1938943800000"
+      ],
+      "place": {
+        "slug": "synthetic-home",
+        "name": "Synthetic Home"
+      }
+    },
+    {
+      "kind": "move",
+      "start_ms": 1938981600000,
+      "end_ms": 1938982800000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1938982800000,
+      "end_ms": 1938985800000,
+      "point": {
+        "latitude": 10.0161,
+        "longitude": 20.0001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1938982800000"
+      ],
+      "names": {
+        "point": {
+          "words": null,
+          "area": {
+            "city": "Synthetic City"
+          }
+        }
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1938985800000,
+      "end_ms": 1938987000000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1938987000000,
+      "end_ms": 1938990600000,
+      "point": {
+        "latitude": 10.0501,
+        "longitude": 20.0501
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1938987000000"
+      ],
+      "place": {
+        "slug": "synthetic-farm",
+        "name": "Fresh from Synthetic Farm"
+      }
+    },
+    {
+      "kind": "move",
+      "start_ms": 1938990600000,
+      "end_ms": 1938993000000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1938993000000,
+      "end_ms": 1938997800000,
+      "point": {
+        "latitude": 10.1501,
+        "longitude": 20.0501
+      },
+      "units": [
+        "stay/google-timeline:person-a@example.com:export/visit-1"
+      ],
+      "names": {
+        "point": {
+          "words": null,
+          "area": null
+        }
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1938997800000,
+      "end_ms": 1939001400000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1939001400000,
+      "end_ms": 1939006800000,
+      "point": {
+        "latitude": 10.2001,
+        "longitude": 20.2001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1939001400000"
+      ],
+      "names": {
+        "point": {
+          "words": null,
+          "area": {
+            "city": "Synthetic Port Town"
+          }
+        }
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1939006800000,
+      "end_ms": 1939012200000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1939012200000,
+      "end_ms": 1939015800000,
+      "point": {
+        "latitude": 10.3001,
+        "longitude": 20.3001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1939012200000"
+      ],
+      "names": {
+        "point": null
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1939015800000,
+      "end_ms": 1939017600000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1939017600000,
+      "end_ms": 1939021200000,
+      "point": {
+        "latitude": 10.3501,
+        "longitude": 20.3501
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1939017600000"
+      ],
+      "names": {
+        "point": null
+      },
+      "place": null
+    },
+    {
+      "kind": "move",
+      "start_ms": 1939021200000,
+      "end_ms": 1939023000000,
+      "point": null,
+      "units": []
+    },
+    {
+      "kind": "stay",
+      "start_ms": 1939023000000,
+      "end_ms": 1939055400000,
+      "point": {
+        "latitude": 10.0001,
+        "longitude": 20.0001
+      },
+      "units": [
+        "stay/location:local:phone-aa01/1939023000000"
+      ],
+      "place": {
+        "slug": "synthetic-home",
+        "name": "Synthetic Home"
+      }
+    }
+  ],
+  "places": [
+    {
+      "slug": "synthetic-home",
+      "home": true
+    },
+    {
+      "slug": "synthetic-farm"
+    }
+  ],
+  "people": [],
+  "calls": []
+}

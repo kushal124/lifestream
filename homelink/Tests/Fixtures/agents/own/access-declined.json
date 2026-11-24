@@ -1,0 +1,32 @@
+{
+  "route": "GET /v1/access",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "version": 5,
+    "access": {
+      "allow": [],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    },
+    "lines": [
+      "1. details hidden"
+    ],
+    "text": "Your access to this Lifestream:\nNothing yet: ask for it with `access`.\n1. details hidden\nAlso in this Lifestream, outside your access: Gmail, WHOOP.\nYour request (your Gmail for 1 hour) was declined.\nAsk for more, or drop a line, with `access`.",
+    "request": null,
+    "answer": {
+      "id": "rq-0000000000000001",
+      "wants": "your Gmail for 1 hour",
+      "state": "declined",
+      "outcome": "Not allowed, 05:00"
+    },
+    "outside": [
+      "Gmail",
+      "WHOOP"
+    ]
+  }
+}

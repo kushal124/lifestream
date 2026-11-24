@@ -1,0 +1,98 @@
+[
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000001",
+    "text": {
+      "title": "Re: synthetic plans",
+      "text": "Sounds good, see you at the synthetic place at six. It’s on me. Bring the synthetic notes.",
+      "who": [
+        "person-b@example.com",
+        "person-a@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000002",
+    "text": {
+      "title": "Weekly digest — issue 42",
+      "text": "Weekly digest\n\nItem one & item two\n\nDouble &amp; encoded &lt;tag&gt; and — dash — hex\n\nCell A\n\nCell B",
+      "who": [
+        "news@example.com",
+        "person-a@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000003",
+    "text": {
+      "title": "Synthetic résumé attached",
+      "text": "Hi both,\n\nAttached is the synthetic document.",
+      "who": [
+        "person-a@example.com",
+        "person-c@example.com",
+        "person-d@example.com",
+        "person-e@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000004",
+    "text": {
+      "title": "Invitation: Synthetic review @ Mon 5 Oct",
+      "text": "You have been invited to a synthetic review.",
+      "who": [
+        "person-b@example.com",
+        "person-a@example.com",
+        "person-f@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000005",
+    "text": {
+      "title": "A long synthetic message",
+      "text": "Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a te 😀 tail after the cap. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test. Synthetic paragraph about nothing in particular, written for a test.",
+      "who": [
+        "no-reply@example.com",
+        "person-b@example.com",
+        "person-c@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000101",
+    "text": {
+      "title": "Spam offer",
+      "text": "Synthetic spam offer body.",
+      "who": [
+        "alerts@example.com",
+        "person-a@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000102",
+    "text": {
+      "title": "Old notice",
+      "text": "Synthetic old notice body.",
+      "who": [
+        "alerts@example.com",
+        "person-a@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000103",
+    "text": {
+      "title": "Takeout spam",
+      "text": "Synthetic takeout spam body.",
+      "who": [
+        "alerts@example.com",
+        "person-a@example.com"
+      ]
+    }
+  },
+  {
+    "record": "gmail:person-a@example.com:cloud mailmsg 1790000000000000201",
+    "text": null
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "day@1792915200000",
+      "kind": "day",
+      "episode": null,
+      "head": null,
+      "start_ms": 1792915200000,
+      "end_ms": 1793001600000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "day@1792915200000#run",
+          "kind": "run",
+          "start_ms": 1792915200000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e2",
+              "kind": "other",
+              "at_ms": 1792915200000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Asleep",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "2h 30m"
+              },
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample sleep-1",
+              "divider": null
+            },
+            {
+              "key": "e3",
+              "kind": "other",
+              "at_ms": 1792923360000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Person A",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "21h 9m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg m81",
+              "divider": null
+            },
+            {
+              "key": "e5",
+              "kind": "other",
+              "at_ms": 1792940100000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 64",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s88",
+              "divider": null
+            },
+            {
+              "key": "e6",
+              "kind": "other",
+              "at_ms": 1792942800000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 75",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s91",
+              "divider": null
+            },
+            {
+              "key": "e7",
+              "kind": "other",
+              "at_ms": 1792943160000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "text": "12h 56m"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:mac-0001 msg m85",
+              "divider": null
+            },
+            {
+              "key": "e10",
+              "kind": "other",
+              "at_ms": 1792974720000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 79",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s90",
+              "divider": null
+            },
+            {
+              "key": "e12",
+              "kind": "other",
+              "at_ms": 1792979160000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Vitals",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Heart rate 67",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:watch-aa07 sample s89",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1793001600000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": false,
+    "places": [],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

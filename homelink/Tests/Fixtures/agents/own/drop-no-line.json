@@ -1,0 +1,12 @@
+{
+  "route": "POST /v1/access/drop",
+  "request": {
+    "drop": 5,
+    "version": 4
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Your access has no line 5: its lines are 1 to 3."
+  }
+}

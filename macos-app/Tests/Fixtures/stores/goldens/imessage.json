@@ -1,0 +1,107 @@
+{
+  "connector" : "imessage",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "imessage-mac",
+          "indexes" : {
+            "attachments.json" : {
+
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "messages.db",
+            "attachments.json"
+          ],
+          "source_id" : "imessage:local:macbook-pro-0001"
+        },
+        {
+          "feeder" : "imessage-mac",
+          "indexes" : {
+            "attachments.json" : {
+
+            }
+          },
+          "kind" : "history",
+          "members" : [
+            "messages.db",
+            "attachments.json"
+          ],
+          "source_id" : "imessage:local:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "imessage:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "imessage:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "imessage-mac",
+          "indexes" : {
+            "attachments.json" : {
+              "Attachments/bb/02/new.jpg" : {
+                "bytes" : 9,
+                "sha256" : "11e2defd59f47c7f2aac84d6a5d6747e98e785afffb72c8bb7b05ec74e1d663c"
+              }
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "messages.db",
+            "attachments.json",
+            "blobs/11e2defd59f47c7f2aac84d6a5d6747e98e785afffb72c8bb7b05ec74e1d663c"
+          ],
+          "source_id" : "imessage:person-a@example.com:macbook-pro-0001"
+        },
+        {
+          "feeder" : "imessage-mac",
+          "indexes" : {
+            "attachments.json" : {
+              "Attachments/aa/01/old.jpg" : {
+                "bytes" : 9,
+                "sha256" : "b4dddecf813201f4a83f2ae71f6fa1a03ea961c3738e3da7fff94859c5ad1c17"
+              }
+            }
+          },
+          "kind" : "history",
+          "members" : [
+            "messages.db",
+            "attachments.json",
+            "blobs/b4dddecf813201f4a83f2ae71f6fa1a03ea961c3738e3da7fff94859c5ad1c17"
+          ],
+          "source_id" : "imessage:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "imessage:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "imessage:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "imessage"
+}

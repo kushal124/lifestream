@@ -1,0 +1,295 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "name": "Home",
+    "line": "San Jose",
+    "since": null
+  },
+  "here": true,
+  "rhythm": "20 days here since Sep 2026",
+  "stays": 29,
+  "visits": {
+    "count": 29,
+    "rows": [
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1791090900000@1791090900000-1791143700000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1791090900000",
+        "day": "2026-10-04",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1791090900000@1791090900000-1791143700000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1791004500000@1791004500000-1791074100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1791004500000",
+        "day": "2026-10-03",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1791004500000@1791004500000-1791074100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790952300000@1790952300000-1790987700000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790952300000",
+        "day": "2026-10-02",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790952300000@1790952300000-1790987700000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790918100000@1790918100000-1790940900000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790918100000",
+        "day": "2026-10-02",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790918100000@1790918100000-1790940900000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790891100000@1790891100000-1790901300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790891100000",
+        "day": "2026-10-01",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790891100000@1790891100000-1790901300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790775300000@1790775300000-1790876100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790775300000",
+        "day": "2026-09-30",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790775300000@1790775300000-1790876100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790770500000@1790770500000-1790771700000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790770500000",
+        "day": "2026-09-30",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790770500000@1790770500000-1790771700000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790718300000@1790718300000-1790757300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790718300000",
+        "day": "2026-09-29",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790718300000@1790718300000-1790757300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790684100000@1790684100000-1790703300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790684100000",
+        "day": "2026-09-29",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790684100000@1790684100000-1790703300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790597700000@1790597700000-1790670900000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790597700000",
+        "day": "2026-09-28",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790597700000@1790597700000-1790670900000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790545500000@1790545500000-1790584500000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790545500000",
+        "day": "2026-09-27",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790545500000@1790545500000-1790584500000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790525700000@1790525700000-1790530500000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790525700000",
+        "day": "2026-09-27",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790525700000@1790525700000-1790530500000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790459100000@1790459100000-1790516100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790459100000",
+        "day": "2026-09-26",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790459100000@1790459100000-1790516100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790353500000@1790353500000-1790444100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790353500000",
+        "day": "2026-09-25",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790353500000@1790353500000-1790444100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790338500000@1790338500000-1790346900000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790338500000",
+        "day": "2026-09-25",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790338500000@1790338500000-1790346900000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790286300000@1790286300000-1790325300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790286300000",
+        "day": "2026-09-24",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790286300000@1790286300000-1790325300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790252100000@1790252100000-1790271300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790252100000",
+        "day": "2026-09-24",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790252100000@1790252100000-1790271300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790170500000@1790170500000-1790238900000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790170500000",
+        "day": "2026-09-23",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790170500000@1790170500000-1790238900000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790165700000@1790165700000-1790166900000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790165700000",
+        "day": "2026-09-23",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790165700000@1790165700000-1790166900000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790113500000@1790113500000-1790152500000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790113500000",
+        "day": "2026-09-22",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790113500000@1790113500000-1790152500000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1790079300000@1790079300000-1790098500000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1790079300000",
+        "day": "2026-09-22",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1790079300000@1790079300000-1790098500000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789992900000@1789992900000-1790066100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789992900000",
+        "day": "2026-09-21",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789992900000@1789992900000-1790066100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789920900000@1789920900000-1789979700000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789920900000",
+        "day": "2026-09-20",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789920900000@1789920900000-1789979700000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789854300000@1789854300000-1789911300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789854300000",
+        "day": "2026-09-19",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789854300000@1789854300000-1789911300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789681500000@1789681500000-1789839300000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789681500000",
+        "day": "2026-09-17",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789681500000@1789681500000-1789839300000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789647300000@1789647300000-1789666500000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789647300000",
+        "day": "2026-09-17",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789647300000@1789647300000-1789666500000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789548900000@1789548900000-1789637700000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789548900000",
+        "day": "2026-09-16",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789548900000@1789548900000-1789637700000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789474500000@1789474500000-1789544100000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789474500000",
+        "day": "2026-09-15",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789474500000@1789474500000-1789544100000",
+        "people": []
+      },
+      {
+        "key": "stay/location:local:iphone-fixes-aa01/1789416000000@1789416000000-1789465200000",
+        "unit": "stay/location:local:iphone-fixes-aa01/1789416000000",
+        "day": "2026-09-14",
+        "start_ms": 1791968400000,
+        "end_ms": 1791968400000,
+        "focus": "u:stay/location:local:iphone-fixes-aa01/1789416000000@1789416000000-1789465200000",
+        "people": []
+      }
+    ]
+  },
+  "people": [],
+  "photos": {
+    "first": [],
+    "total": 0,
+    "line": null
+  },
+  "part_of": null,
+  "inside": [],
+  "ask_home": {
+    "line": "You've slept here 3 nights",
+    "since": {
+      "day": "2026-09-28",
+      "kind": "day"
+    }
+  },
+  "clashes": [],
+  "counting": false
+}

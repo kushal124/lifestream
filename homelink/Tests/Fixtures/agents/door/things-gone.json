@@ -1,0 +1,46 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>/things",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "title": "The 3 things",
+    "gone": "1 of them is no longer in Lifestream.",
+    "groups": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 3,
+        "things": [
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTQiXQ",
+            "title": "history 4",
+            "line": null,
+            "when": "14 Nov, 08:41",
+            "day": "2026-11-14",
+            "at_ms": 1794645660000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-4"
+            }
+          },
+          {
+            "ref": "record.WyJyZWNvcmQiLCJhcHBsZS1ub3Rlczpsb2NhbDpwb2xsIiwibm90ZSIsInRoaW5nLTAiXQ",
+            "title": "history 0",
+            "line": null,
+            "when": "14 Nov, 04:41",
+            "day": "2026-11-14",
+            "at_ms": 1794631260000,
+            "opens": {
+              "page": "days",
+              "day": "2026-11-14",
+              "focus": "rec:apple-notes:local:poll note thing-0"
+            }
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "what": "photo",
+  "ref": "r1",
+  "day": "2026-10-04",
+  "at": "2026-10-04T12:30+01:00",
+  "title": "A cafe table with two cups",
+  "the_user_was_at": "[[Place 1]]",
+  "image": "data:image/jpeg;base64,/9j/2Q==",
+  "facts": [
+    "taken with the iPhone",
+    "2 faces, not named"
+  ]
+}

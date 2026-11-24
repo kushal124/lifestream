@@ -1,0 +1,78 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "act" : "agent-access",
+    "expect" : 2,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-person-only.json",
+  "reply" : {
+    "refused" : {
+      "code" : "PERSON_ONLY",
+      "message" : "Allow this in Lifestream on your Mac or iPhone."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "expect" : 2
+  }
+}

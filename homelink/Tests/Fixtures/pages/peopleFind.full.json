@@ -1,0 +1,83 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "rows": [
+    {
+      "id": "phone:+15550000401",
+      "name": "Person K",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": null,
+      "find": [
+        "Person K",
+        "person",
+        "k",
+        "+15550000401",
+        "15550000401",
+        "person-k@example.com"
+      ]
+    },
+    {
+      "id": "phone:+15550000402",
+      "name": "Person L",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": null,
+      "find": [
+        "Person L",
+        "person",
+        "l",
+        "+15550000402",
+        "15550000402"
+      ]
+    },
+    {
+      "id": "phone:+15550000408",
+      "name": "Person M",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": null,
+      "find": [
+        "Person M",
+        "person",
+        "m",
+        "+15550000408",
+        "15550000408"
+      ]
+    },
+    {
+      "id": "person:person-x",
+      "name": "Person X",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": null,
+      "line": "+15550000404",
+      "find": [
+        "Person X",
+        "person",
+        "x",
+        "+15550000404",
+        "15550000404",
+        "+15550000405",
+        "15550000405"
+      ]
+    }
+  ],
+  "profiles": []
+}

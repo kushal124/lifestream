@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "fixture": "practical-recall",
+  "questions": [
+    {
+      "id": "article-change",
+      "question": "Which filter material replaces which material?",
+      "evidence": [
+        {
+          "phase": "article",
+          "answers": [
+            "copper filter",
+            "ceramic filter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "article-schedule",
+      "question": "When does the trial begin and how many days does it last?",
+      "evidence": [
+        {
+          "phase": "article",
+          "answers": [
+            "2031-04-17",
+            "12 days"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "article-success",
+      "question": "What is the maximum acceptable rejection condition per batch?",
+      "evidence": [
+        {
+          "phase": "article",
+          "answers": [
+            "fewer than 3 rejected samples per batch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receipt-reference",
+      "question": "What is the exact receipt reference, preserving zero versus letter O?",
+      "evidence": [
+        {
+          "phase": "receipt",
+          "answers": [
+            "RCPT-0O10-O001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receipt-total",
+      "question": "What is the total paid and payment state?",
+      "evidence": [
+        {
+          "phase": "receipt",
+          "answers": [
+            "89.40 credits",
+            "SETTLED"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "document-change",
+      "question": "What storage quota changed, from what value to what value?",
+      "evidence": [
+        {
+          "phase": "document-before",
+          "answers": [
+            "Storage quota 2400 MB"
+          ]
+        },
+        {
+          "phase": "document-after",
+          "answers": [
+            "Storage quota 3600 MB"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "document-unchanged",
+      "question": "Which retry limit and retention period remained unchanged?",
+      "evidence": [
+        {
+          "phase": "document-before",
+          "answers": [
+            "Retry limit 6",
+            "Retention period 28 days"
+          ]
+        },
+        {
+          "phase": "document-after",
+          "answers": [
+            "Retry limit 6",
+            "Retention period 28 days"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brief-notice",
+      "question": "What time did the build review move to, and which exact report should be brought?",
+      "evidence": [
+        {
+          "phase": "notification",
+          "answers": [
+            "18:45",
+            "REV-0O7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canvas-state",
+      "question": "What pressure and valve state were shown on the instrument panel?",
+      "evidence": [
+        {
+          "phase": "canvas",
+          "answers": [
+            "17.6 bar",
+            "CLOSED"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canvas-key",
+      "question": "What is the exact calibration key and time until next inspection?",
+      "evidence": [
+        {
+          "phase": "canvas",
+          "answers": [
+            "GAUGE-0O8",
+            "9 hours"
+          ]
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "method": "Each evidence requirement needs all literal answers within the same eligible observation of its phase. Every requirement is needed for question success; missing phases or samples are misses.",
+    "identifierPolicy": "Exact case-sensitive spelling and punctuation; never equate digit 0 with letter O.",
+    "numericPolicy": "Literal numeric spelling and stated units; separate before and after requirements must both pass.",
+    "prosePolicy": "Declared literal evidence strings are matched; this is retrieval-evidence coverage, not a model comprehension or paraphrase evaluation.",
+    "noClaim": "Question truth is predeclared. No model run, retrieval success, or combined AX/OCR score is implied."
+  }
+}

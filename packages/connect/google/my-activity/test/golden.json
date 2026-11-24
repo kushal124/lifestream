@@ -1,0 +1,46 @@
+{
+  "google-search": [
+    ["activity","sha256:10c9125ad013823772e83a3a8f7af490397b77c6f0fffe579e2ac5f1006c5784",1788250200000,"ms","Viewed Example Cafe"],
+    ["activity","sha256:a2161a2486eb1c3d572dbbadf950b1532a0e5ab9fcf19271eb91f90e9cdc1f9e",1788255000000,"ms","3 notifications"],
+    ["activity","sha256:a6eda1c65c615a8f18bdb12827a66f61d4b17a575b533cac9bdef339d74194b9",1788253200000,"s","Used Search"],
+    ["page-visit","sha256:f707b8bdbf3fc32a5722a04cca0521f20308e669a88ffa77b773332093d2df0e",1788249605456,"ms","Visited Example page"],
+    ["search","sha256:45ffec67657b6c270a0850342ef835c9a64b4b044c9c70a8a174d8a5657fc4e2",1788251400000,"ms","Searched for example question"],
+    ["search","sha256:7296d1353f7603a89335833f9090ff6f298854c9b116bf6283ad39001094f7c8",1788249600123,"ms","Searched for example query"],
+    ["search","sha256:9f3d04ac954d54d72f80e05895924b5e93978254d7516d02ecbb89f1a86178be",1788250800000,"ms","Searched for example image"],
+    ["search","sha256:c739a1922eda73a5ba06e4f5aa184924c0f94594058dfd244dcac41db575304c",1788251700000,"s","Searched with Google Lens"],
+    ["watch","sha256:6827fc2a28fec9db9b1a894fcb2754488ba4b68734e7a5a835ea46047a6c817b",1788251100000,"ms","Watched Example clip"]
+  ],
+  "youtube": [
+    ["activity","sha256:eed9d2f8e3b635f7fafd276628c23f8ca27bdfbbbfc36e3bcf288dd3da213038",1788376200000,"ms","Disliked Example video two"],
+    ["follow","sha256:0f459e67604ee923aa3e2e0638ea3ae3056ff9037299b24aa351b45b8709268b",1788375600000,"s","Subscribed to Example Channel"],
+    ["like","sha256:5af0073169daaee8635697215b36ab90e1c16104f7395d9230976e7a530ecc21",1788375900000,"ms","Liked Example video one"],
+    ["search","sha256:1d1cfccac015952a7fc7391b1643f82bfa2bd4edb787741cd6fef8b178839156",1788374700000,"ms","Searched for example song"],
+    ["watch","sha256:21b9c7008ac21cd9889174296f4be024bd883e4b7cd49807f37ed45cca1f955d",1788373800250,"ms","Watched Example video one"],
+    ["watch","sha256:8375bac4cdd1dc4746431744242a29261f3b1e70ec10ee289a3d6ee6b4b10386",1788246000000,"ms","Watched Example video one"]
+  ],
+  "google-maps": [
+    ["activity","sha256:1a2f64de7a4b717209b4c51c28b1e281ff9abc1325d51264617ba617f6e73ff7",1788514800000,"ms","Explored on Google Maps"],
+    ["activity","sha256:82aaf68b77cdf9832e65e6786dc8d5ca76551e588110c5ddab5cafedbc6fa042",1788514200000,"ms","Example Cafe"],
+    ["directions","sha256:0950729bd5dc0ce97a54134b7a3de1d5c1c21c6812682693f89edcdfbcf06e5a",1788513600000,"ms","Directions to Example Station"],
+    ["place-view","sha256:ce08b0b778d64e360dcaf7719a910085e7cd4c0616321aff25c8b8d997a5d31d",1788512400000,"ms","Viewed area around Example Town"],
+    ["search","sha256:8c515a330cd1eaed61bf48eee98d15c0b4aef824a154b2262f92942bc9778134",1788513000000,"ms","Searched for example cafe"]
+  ],
+  "chrome": [
+    ["activity","sha256:9b1d494a57b78cab2f00d26ab78becd68c0c4e37f62e0a8d101567e9da98ddc4",1788602700000,"ms","Used Chrome"],
+    ["page-visit","sha256:1865c02652b06aca9b69118fdb62a8d3717fe1a2fb36b226770ea0ad0f2073d7",1788602400000,"ms","Visited Example Domain"]
+  ],
+  "gemini": [
+    ["activity","sha256:be7bfb547537cf84136df67e15d9c6152bfd903b4e3250dddc3fedb43734c42b",1788693000000,"ms","Created Gem Example helper"],
+    ["msg","sha256:672e5e4884a440c4d5afbf01d82b48d384b961f1a6705a7b5c3a8d038b3618dd",1788692400000,"ms","Prompted What is in these pictures?"],
+    ["msg","sha256:841f8089998fc48b6e3950ab2fae9d7fb98850f42d3b4e633d7b0ad5ab20bf3f",1788692700000,"ms","Prompted Describe this photo"]
+  ],
+  "google-ads": [
+    ["page-visit","sha256:85eaa12499fbbee78aa8798391ae623f7229bf5eaed0f9c8e4cc9f4307eaa38c",1788429600000,"ms","Visited Example shop"]
+  ],
+  "google-analytics": [
+    ["page-visit","sha256:85eaa12499fbbee78aa8798391ae623f7229bf5eaed0f9c8e4cc9f4307eaa38c",1788429600000,"ms","Visited Example shop"]
+  ],
+  "google-voice-match": [
+    ["activity","sha256:5484bb6ba26e1f5109fe1f3763f037ab254d0844b2393442c2c306cfd4d04392",1788760800000,"ms","Trained voice model"]
+  ]
+}

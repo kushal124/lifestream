@@ -1,0 +1,143 @@
+[
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000101",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "gm_msgid": "1790000000000000101",
+        "gm_thrid": "1790000000000000101",
+        "folder": "[Gmail]/All Mail",
+        "labels": [
+          "\\Inbox",
+          "\\Important"
+        ],
+        "internaldate": "2026-09-06T12:01:00.000Z"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:fc7281a930717375de7c50128357c9332e307dc9cb7c3a8cfac1abe9960df3d3",
+          "bytes": 181,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788696060000,
+      "offset_min": 330,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000102",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "gm_msgid": "1790000000000000102",
+        "gm_thrid": "1790000000000000101",
+        "folder": "[Gmail]/All Mail",
+        "labels": [],
+        "internaldate": "2026-09-06T12:02:00.000Z"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:f044524e75e86acecce1bdf61e84843b9c1d6941bff8023da4733c0a7cc46492",
+          "bytes": 155,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788696150000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000103",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "gm_msgid": "1790000000000000103",
+        "gm_thrid": "1790000000000000103",
+        "folder": "[Gmail]/All Mail",
+        "labels": [
+          "\\Inbox"
+        ],
+        "internaldate": "2026-09-06T12:03:00.000Z"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:ac11bb4f827f4937b97ce7c63b823a586a4e3bb6084a42d8574e8059cd04dba9",
+          "bytes": 133,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788696180000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000104",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "gm_msgid": "1790000000000000104",
+        "gm_thrid": "1790000000000000104",
+        "folder": "[Gmail]/Spam",
+        "labels": [
+          "\\Spam"
+        ],
+        "internaldate": "2026-09-06T12:04:00.000Z"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:1817e50d5328046ac88265542b74b52a5ab6ca5466ace2d508615f86a5cc1a85",
+          "bytes": 88,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788696240000,
+      "precision": "ms"
+    }
+  },
+  {
+    "kind": "mailmsg",
+    "key": "1790000000000000105",
+    "content": {
+      "type": "gmail.msg",
+      "content": {
+        "gm_msgid": "1790000000000000105",
+        "gm_thrid": "1790000000000000104",
+        "folder": "[Gmail]/Spam",
+        "labels": [
+          "\\Spam",
+          "Receipts"
+        ],
+        "internaldate": "2026-09-06T12:05:00.000Z"
+      },
+      "blobs": [
+        {
+          "hash": "sha256:2aa6c915ee34c5f045703375e8799633a2a6c8d9c6790481f2fae1e3bed48d89",
+          "bytes": 113,
+          "media_type": "message/rfc822",
+          "role": "original"
+        }
+      ]
+    },
+    "time": {
+      "start_ms": 1788696300000,
+      "precision": "ms"
+    }
+  }
+]

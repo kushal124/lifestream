@@ -1,0 +1,16 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "product": "whatsapp"
+      }
+    },
+    "reason": "Chats."
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "No whatsapp account is connected on this home."
+  }
+}

@@ -1,0 +1,13 @@
+Day 2026-09-20 (Sunday) in America/New_York, 04:00 to 2026-09-21 04:00 (24 h)
+7 atoms: calls 7
+
+10:05–10:08 Phone call with Person A, the user called, 3 min
+10:20–10:23 WhatsApp voice call with Person A, the user called, 3 min
+11:30 Missed phone call from Person B
+11:40 Missed WhatsApp voice call from Person B
+12:10 WhatsApp video call from Person A, not answered
+13:30 WhatsApp video call with unknown …00007, the user called, 42 s
+15:00–15:25 WhatsApp voice call with Person A, Person B in Group Alpha, they called, 25 min
+
+Coverage
+calls: apple-calls:person-a@example.com:macbook-pro-0001 read into the day; whatsapp:15550000000:macbook-pro-0001 read into the day

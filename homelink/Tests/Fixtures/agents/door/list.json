@@ -1,0 +1,513 @@
+{
+  "route": "GET /v1/agents",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "readers": [
+      {
+        "id": "ask",
+        "name": "Chat",
+        "kind": "chat",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Lifestream",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "chat"
+      },
+      {
+        "id": "p-00000001",
+        "name": "ChatGPT",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": true,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000002",
+        "name": "Gemini",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": true,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000003",
+        "name": "Hermes",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000004",
+        "name": "Instinct",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000005",
+        "name": "Claude",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "claude.ai",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "claude"
+      },
+      {
+        "id": "p-00000006",
+        "name": "Editor",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000007",
+        "name": "Probe",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "Hasn’t read yet",
+        "place": "Key",
+        "reads": {
+          "last_ms": null,
+          "last": null,
+          "line": "Hasn’t read yet",
+          "short": "Hasn’t read yet",
+          "today": 0,
+          "total": 0,
+          "since": null,
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 0
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "ai-apps"
+      },
+      {
+        "id": "p-00000008",
+        "name": "Pager",
+        "kind": "agent",
+        "state": "connected",
+        "summary": "55 reads today",
+        "place": "Key",
+        "reads": {
+          "last_ms": 1794652800000,
+          "last": "10:40",
+          "line": "Read 10:40 · 55 reads today",
+          "short": "Read 10:40 · 55 today",
+          "today": 55,
+          "total": 55,
+          "since": "55 reads since 14 Nov",
+          "days": [
+            {
+              "day": "2026-11-08",
+              "words": "Sun",
+              "n": 0
+            },
+            {
+              "day": "2026-11-09",
+              "words": "Mon",
+              "n": 0
+            },
+            {
+              "day": "2026-11-10",
+              "words": "Tue",
+              "n": 0
+            },
+            {
+              "day": "2026-11-11",
+              "words": "Wed",
+              "n": 0
+            },
+            {
+              "day": "2026-11-12",
+              "words": "Thu",
+              "n": 0
+            },
+            {
+              "day": "2026-11-13",
+              "words": "Fri",
+              "n": 0
+            },
+            {
+              "day": "2026-11-14",
+              "words": "Sat",
+              "n": 55
+            }
+          ]
+        },
+        "has_ask": false,
+        "mark": "ai-apps"
+      }
+    ]
+  }
+}

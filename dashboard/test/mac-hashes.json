@@ -1,0 +1,6 @@
+[
+  "dialog=settings",
+  "dialog=settings/mac",
+  "dialog=settings/chrome&flow=browser",
+  "dialog=settings/privacy"
+]

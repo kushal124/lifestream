@@ -1,0 +1,304 @@
+{
+  "/v1/search": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string"
+      },
+      "from": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "to": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "families": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "messages",
+            "mail",
+            "calls",
+            "calendar",
+            "notes",
+            "ai",
+            "web",
+            "screen",
+            "photos",
+            "health",
+            "money",
+            "physical",
+            "listening",
+            "voice",
+            "phone"
+          ]
+        },
+        "minItems": 1
+      },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "person": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "maxItems": 10
+      },
+      "chat": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a ref or a handle"
+      },
+      "place": {
+        "type": "string"
+      },
+      "order": {
+        "enum": [
+          "relevance",
+          "newest",
+          "oldest"
+        ]
+      },
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 50
+      },
+      "lists": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "record",
+            "screen",
+            "goto"
+          ]
+        },
+        "minItems": 1,
+        "maxItems": 3
+      },
+      "typing": {
+        "enum": [
+          1
+        ]
+      },
+      "cursor": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a cursor"
+      }
+    },
+    "additionalProperties": false
+  },
+  "/v1/count": {
+    "type": "object",
+    "properties": {
+      "of": {
+        "type": "string"
+      },
+      "measure": {
+        "type": "string"
+      },
+      "op": {
+        "enum": [
+          "sum",
+          "avg",
+          "min",
+          "max",
+          "first",
+          "last"
+        ]
+      },
+      "by": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "maxItems": 2
+      },
+      "from": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "to": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "person": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "maxItems": 10
+      },
+      "chat": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a ref or a handle"
+      },
+      "place": {
+        "type": "string"
+      },
+      "words": {
+        "type": "string"
+      },
+      "match": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        },
+        "propertyNames": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "a key a collection has, a lower-case name"
+        }
+      },
+      "at_least": {
+        "type": "number"
+      },
+      "at_most": {
+        "type": "number"
+      },
+      "order": {
+        "enum": [
+          "value",
+          "time"
+        ]
+      },
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 100
+      },
+      "cursor": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a cursor"
+      }
+    },
+    "additionalProperties": false
+  },
+  "/v1/people/search": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a ref or a handle"
+      },
+      "cursor": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a cursor"
+      }
+    },
+    "additionalProperties": false
+  },
+  "/v1/read": {
+    "type": "object",
+    "properties": {
+      "ref": {
+        "anyOf": [
+          {
+            "type": "string",
+            "pattern": "^\\S",
+            "description": "a ref or a handle"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\S",
+              "description": "a ref or a handle"
+            },
+            "minItems": 1,
+            "maxItems": 20
+          }
+        ]
+      },
+      "history": {
+        "enum": [
+          1
+        ]
+      },
+      "chat": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a ref or a handle"
+      },
+      "from": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "to": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})?)?$",
+        "description": "a day, a local time or an instant"
+      },
+      "last": {
+        "type": "string",
+        "pattern": "^[1-9][0-9]{0,3}[mh]$",
+        "description": "a duration: 45m, 3h"
+      },
+      "families": {
+        "type": "array",
+        "items": {
+          "enum": [
+            "messages",
+            "mail",
+            "calls",
+            "calendar",
+            "notes",
+            "ai",
+            "web",
+            "screen",
+            "photos",
+            "health",
+            "money",
+            "physical",
+            "listening",
+            "voice",
+            "phone"
+          ]
+        },
+        "minItems": 1
+      },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "detail": {
+        "enum": [
+          "lines",
+          "brief",
+          "raw"
+        ]
+      },
+      "cursor": {
+        "type": "string",
+        "pattern": "^\\S",
+        "description": "a cursor"
+      }
+    },
+    "additionalProperties": false
+  }
+}

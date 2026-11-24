@@ -1,0 +1,144 @@
+[
+  {
+    "status": 422,
+    "body": {
+      "code": "BAD_PARAMETER",
+      "message": "payments has no key sport; its keys: payee, account, direction, channel",
+      "keys": [
+        "payee",
+        "account",
+        "direction",
+        "channel"
+      ]
+    }
+  },
+  {
+    "status": 422,
+    "body": {
+      "code": "BAD_PARAMETER",
+      "message": "recovery does not add up: use avg, min or max",
+      "ops": [
+        "avg",
+        "min",
+        "max"
+      ]
+    }
+  },
+  {
+    "status": 404,
+    "body": {
+      "code": "PERSON_UNKNOWN",
+      "message": "No such person: Person Z. Find them with `search_people`."
+    }
+  },
+  {
+    "status": 404,
+    "body": {
+      "code": "PERSON_UNKNOWN",
+      "message": "Several people go by Per: ask by one of their refs. Find them with `search_people`.",
+      "matches": [
+        {
+          "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDEiXQ",
+          "kind": "person",
+          "name": "Person A"
+        },
+        {
+          "ref": "person.WyJwZXJzb24iLCJwaG9uZTorMTU1NTAwMDAwMDIiXQ",
+          "kind": "person",
+          "name": "Person B"
+        }
+      ]
+    }
+  },
+  {
+    "status": 422,
+    "body": {
+      "code": "TOO_BROAD",
+      "message": "this count would read past its budget: ask the range that fits, then the rest",
+      "fits": {
+        "from": "2024-03-01",
+        "to": "2026-11-14"
+      }
+    }
+  },
+  {
+    "status": 422,
+    "body": {
+      "code": "TOO_BROAD",
+      "message": "one day of this is too much to count in one call: narrow by a filter, a chat or more words"
+    }
+  },
+  {
+    "status": 422,
+    "body": {
+      "code": "TOO_BROAD",
+      "message": "these words are too common to count",
+      "instead": "messages"
+    }
+  },
+  {
+    "status": 409,
+    "body": {
+      "code": "CURSOR_EXPIRED",
+      "message": "the index was built again since this page was given"
+    }
+  },
+  {
+    "status": 404,
+    "body": {
+      "code": "HANDLE_UNKNOWN",
+      "message": "r42 is not a handle of this conversation"
+    }
+  },
+  {
+    "status": 409,
+    "body": {
+      "code": "LINE_MOVED",
+      "message": "the day was written again and the line is no one line now"
+    }
+  },
+  {
+    "status": 503,
+    "retry_after": 5,
+    "body": {
+      "code": "INDEX_BUILDING",
+      "message": "the record's index is being built",
+      "building": [
+        "words"
+      ]
+    }
+  },
+  {
+    "status": 503,
+    "retry_after": 5,
+    "body": {
+      "code": "NOT_NOW",
+      "message": "the index is busy"
+    }
+  },
+  {
+    "status": 422,
+    "body": {
+      "code": "WITHHELD",
+      "message": "This search is withheld: each word it must find could tell where a hidden detail is, so none was searched.",
+      "not_searched": [
+        "+15550000001"
+      ]
+    }
+  },
+  {
+    "status": 503,
+    "retry_after": 5,
+    "body": {
+      "code": "HIDE_NOT_READY",
+      "message": "Lifestream cannot hide personal details yet. Ask again in a few minutes."
+    }
+  },
+  {
+    "status": 403,
+    "body": {
+      "code": "OUTSIDE_ACCESS",
+      "message": "Outside your access."
+    }
+  }
+]

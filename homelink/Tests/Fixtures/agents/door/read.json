@@ -1,0 +1,58 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "call-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Orbit",
+    "title": "Searched for “dinner”",
+    "line": "Today, 12:44",
+    "figure": {
+      "n": 3,
+      "words": "things it saw"
+    },
+    "kinds": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 3,
+        "words": "3 notes"
+      }
+    ],
+    "kept": {
+      "about": "Orbit got these back as blanks.",
+      "rows": [
+        {
+          "type": "names",
+          "name": "Names",
+          "value": "Shown as “a person”"
+        },
+        {
+          "type": "email",
+          "name": "Email addresses",
+          "value": "2"
+        }
+      ],
+      "held": null
+    },
+    "why": [
+      {
+        "text": "At 12:44 Orbit could see "
+      },
+      {
+        "text": "everything but Health and Money",
+        "bold": true
+      },
+      {
+        "text": ", with details hidden."
+      }
+    ],
+    "refused": null,
+    "show": {
+      "words": "Show the 3 things",
+      "n": 3
+    }
+  }
+}

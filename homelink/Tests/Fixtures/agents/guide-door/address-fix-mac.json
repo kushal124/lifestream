@@ -1,0 +1,15 @@
+{
+  "route": "GET /v1/agents/address",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "state": "fix",
+    "url": null,
+    "words": "Your address needs Tailscale on this Mac.",
+    "act": {
+      "label": "Get Tailscale",
+      "to": "web",
+      "url": "https://tailscale.com/download/mac"
+    }
+  }
+}

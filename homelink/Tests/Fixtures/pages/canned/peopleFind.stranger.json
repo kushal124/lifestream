@@ -1,0 +1,26 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "rows": [
+    {
+      "id": "phone:+15550000009",
+      "name": "Stranger G",
+      "named": true,
+      "face": false,
+      "photo": null,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": null,
+      "find": [
+        "Stranger G",
+        "stranger",
+        "g",
+        "+15550000009",
+        "15550000009"
+      ]
+    }
+  ],
+  "profiles": []
+}

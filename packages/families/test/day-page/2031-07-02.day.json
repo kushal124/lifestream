@@ -1,0 +1,21 @@
+{
+  "day": "2031-07-02",
+  "zone": "UTC",
+  "day_start_hour": 0,
+  "window": {"start_ms":1940716800000,"end_ms":1940803200000},
+  "renderer": "5/2-d9f8a5b4946e/2",
+  "inputs": "sha256:0000000000000000000000000000000000000000000000000000000000000702",
+  "counts": {"total":5,"per_family":{"messages":2,"plain":3}},
+  "coverage": [{"family":"messages","sources":[{"source":"example-chat:person-z@example.com:cloud","read_ms":1940770800000}]},{"family":"plain","sources":[{"source":"example-log:local:test","read_ms":1940774400000},{"source":"example-gone:local:test","read_ms":1940767200000}]}],
+  "atoms": [
+    {"n":1,"family":"messages","unit":"2031-07-02:example-chat:12345","start_ms":1940749200000,"end_ms":null,"local_start":"09:00","local_end":null,"flags":[],"text":"Person A: Are we still on for lunch?","record":{"source":"example-chat:person-z@example.com:cloud","kind":"msg","key":"c-1"},"block":{"key":"example-chat:12345","title":"Person A"}},
+    {"n":2,"family":"messages","unit":"2031-07-02:example-chat:12345","start_ms":1940749320000,"end_ms":null,"local_start":"09:02","local_end":null,"flags":[],"text":"the user: Yes, at noon","record":{"source":"example-chat:person-z@example.com:cloud","kind":"msg","key":"c-2"},"block":{"key":"example-chat:12345","title":"Person A"}},
+    {"n":3,"family":"plain","unit":"example-log:local:test/2031-07-02","start_ms":1940752800000,"end_ms":null,"local_start":"10:00","local_end":null,"flags":[],"text":"Synthetic entry one: the first line","record":{"source":"example-log:local:test","kind":"line","key":"l-1"},"block":{"key":"example-log:local:test","title":"Example Log"},"type":"notes"},
+    {"n":4,"family":"plain","unit":"example-log:local:test/2031-07-02","start_ms":1940753400000,"end_ms":1940753700000,"local_start":"10:10","local_end":"10:15","flags":[],"text":"the second line","record":{"source":"example-log:local:test","kind":"line","key":"l-2"},"block":{"key":"example-log:local:test","title":"Example Log"},"type":"notes"},
+    {"n":5,"family":"plain","unit":"example-gone:local:test/2031-07-02","start_ms":1940767200000,"end_ms":null,"local_start":"14:00","local_end":null,"flags":[],"text":"A line of a stream since removed","record":{"source":"example-gone:local:test","kind":"line","key":"g-1"},"block":{"key":"example-gone:local:test","title":"Example Gone"}}
+  ],
+  "products": {
+    "example-chat": {"name":"Example Chat","row":"Example Chat","vendor":"example","icon":"message","type":"messages","connector":"example-chat"},
+    "example-log": {"name":"Example Log","row":"Example Log","vendor":"example","icon":"recording","type":"notes","connector":"example-log"}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>/things",
+  "request": null,
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Allow this in Lifestream on your Mac or iPhone."
+  }
+}

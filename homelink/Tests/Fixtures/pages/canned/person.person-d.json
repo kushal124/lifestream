@@ -1,0 +1,790 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "became": null,
+  "me": false,
+  "head": {
+    "name": "Person D",
+    "named": true,
+    "full_name": null,
+    "photo": null,
+    "chips": [],
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "relationship": null,
+    "work": null,
+    "entity": "person",
+    "entity_by": null
+  },
+  "handles": [
+    {
+      "id": "phone:+15550000004",
+      "kind": "phone",
+      "network": null,
+      "words": "+15550000004",
+      "from": "You added",
+      "own": false
+    }
+  ],
+  "month": {
+    "days": [
+      {
+        "day": "2026-09-06",
+        "count": 0
+      },
+      {
+        "day": "2026-09-07",
+        "count": 0
+      },
+      {
+        "day": "2026-09-08",
+        "count": 0
+      },
+      {
+        "day": "2026-09-09",
+        "count": 0
+      },
+      {
+        "day": "2026-09-10",
+        "count": 0
+      },
+      {
+        "day": "2026-09-11",
+        "count": 0
+      },
+      {
+        "day": "2026-09-12",
+        "count": 67
+      },
+      {
+        "day": "2026-09-13",
+        "count": 0
+      },
+      {
+        "day": "2026-09-14",
+        "count": 0
+      },
+      {
+        "day": "2026-09-15",
+        "count": 0
+      },
+      {
+        "day": "2026-09-16",
+        "count": 0
+      },
+      {
+        "day": "2026-09-17",
+        "count": 0
+      },
+      {
+        "day": "2026-09-18",
+        "count": 0
+      },
+      {
+        "day": "2026-09-19",
+        "count": 0
+      },
+      {
+        "day": "2026-09-20",
+        "count": 0
+      },
+      {
+        "day": "2026-09-21",
+        "count": 0
+      },
+      {
+        "day": "2026-09-22",
+        "count": 0
+      },
+      {
+        "day": "2026-09-23",
+        "count": 0
+      },
+      {
+        "day": "2026-09-24",
+        "count": 0
+      },
+      {
+        "day": "2026-09-25",
+        "count": 0
+      },
+      {
+        "day": "2026-09-26",
+        "count": 0
+      },
+      {
+        "day": "2026-09-27",
+        "count": 0
+      },
+      {
+        "day": "2026-09-28",
+        "count": 0
+      },
+      {
+        "day": "2026-09-29",
+        "count": 0
+      },
+      {
+        "day": "2026-09-30",
+        "count": 0
+      },
+      {
+        "day": "2026-10-01",
+        "count": 0
+      },
+      {
+        "day": "2026-10-02",
+        "count": 0
+      },
+      {
+        "day": "2026-10-03",
+        "count": 0
+      },
+      {
+        "day": "2026-10-04",
+        "count": 0
+      },
+      {
+        "day": "2026-10-05",
+        "count": 0
+      }
+    ],
+    "count": 67,
+    "calls": null,
+    "line": "67 messages in the last 30 days",
+    "before": {
+      "day": "2026-07-12",
+      "joiner": " · before that, "
+    }
+  },
+  "history": {
+    "years": [
+      {
+        "year": "2024",
+        "count": 64,
+        "day": "2024-11-04"
+      },
+      {
+        "year": "2025",
+        "count": 393,
+        "day": "2025-09-08"
+      },
+      {
+        "year": "2026",
+        "count": 335,
+        "day": "2026-01-09"
+      }
+    ],
+    "total": 792,
+    "marked": 1,
+    "kind": "years"
+  },
+  "talk": {
+    "day": "2026-09-12",
+    "chat": "whatsapp:15550000004@s.whatsapp.net",
+    "title": "Person D",
+    "group": false,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 3
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 4
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 7
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 8
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 11
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 12
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 15
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 16
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 19
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 20
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 23
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 24
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 27
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 28
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 31
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 32
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 35
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 36
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 38
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 39
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-120",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 41
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-120",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 42
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-132",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 44
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-132",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 45
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-144",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 47
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-144",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 48
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-156",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 50
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-156",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 51
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-168",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 53
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-168",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 54
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-180",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 56
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-180",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 57
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-192",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 59
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-192",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 60
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-204",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 62
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-204",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 63
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-216",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 64
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-216",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 65
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-228",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 66
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-228",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 67
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-240",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 68
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-240",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 69
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-252",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 70
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-252",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 71
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-264",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 72
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-264",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 73
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-276",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 74
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-276",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 75
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-288",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 76
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-288",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 77
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line former-D-in-300",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 78
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-300",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 79
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-312",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 80
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-324",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 81
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-336",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 82
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-348",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 83
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-360",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 84
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line former-D-out-372",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 85
+      }
+    ],
+    "folded": [],
+    "focus": "a85"
+  },
+  "where": [
+    {
+      "chat": "whatsapp:15550000004@s.whatsapp.net",
+      "title": "WhatsApp",
+      "group": false,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 309,
+      "line": "309 messages",
+      "quiet": false
+    },
+    {
+      "chat": "whatsapp:120363000000000002@g.us",
+      "title": "Group Beta",
+      "group": true,
+      "network": "WhatsApp",
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "count": 103,
+      "line": "103 messages",
+      "quiet": false
+    }
+  ],
+  "suggestions_line": null,
+  "edit": {
+    "call": "Person D",
+    "full_name": null,
+    "name_from": null,
+    "record_id": "person-d",
+    "face": false,
+    "reach": "WhatsApp",
+    "last": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "much": "792 messages",
+    "mails": {
+      "from": 0,
+      "to": 0,
+      "newest": []
+    },
+    "record": {
+      "type": "people.person",
+      "slug": "person-d",
+      "name": "Person D",
+      "full_name": null,
+      "show": "name",
+      "entity": "person",
+      "relationship": null,
+      "hidden": false,
+      "me": false,
+      "anchor": {
+        "kind": "phone",
+        "value": "+15550000004"
+      },
+      "handles": [],
+      "excluded": [],
+      "dismissed": [],
+      "also_called": [],
+      "merged_into": null
+    },
+    "details": null,
+    "suggestions": [],
+    "also_called": [],
+    "names_seen": [],
+    "joined": []
+  },
+  "counting": false
+}

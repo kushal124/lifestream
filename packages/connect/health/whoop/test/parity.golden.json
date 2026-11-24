@@ -1,0 +1,1328 @@
+[
+  {
+    "name": "paired",
+    "rows": [
+      {
+        "kind": "physio-day",
+        "key": "2000",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2000,
+            "user_id": 10000001,
+            "created_at": "2026-07-31T00:00:00.000Z",
+            "updated_at": "2026-07-31T19:00:00.000Z",
+            "start": "2026-07-30T18:30:00.000Z",
+            "end": "2026-07-31T18:30:00.000Z",
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 11.5,
+              "kilojoule": 9000.125
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785436200000,
+          "end_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[0]"
+      },
+      {
+        "kind": "physio-day",
+        "key": "2001",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:00:00.000Z",
+            "updated_at": "2026-08-01T01:00:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": null,
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 4.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[1]"
+      },
+      {
+        "kind": "recovery",
+        "key": "2001",
+        "content": {
+          "type": "whoop.recovery",
+          "content": {
+            "cycle_id": 2001,
+            "sleep_id": "11111111-1111-4111-8111-111111111111",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "score_state": "SCORED",
+            "score": {
+              "recovery_score": 50,
+              "hrv_rmssd_milli": 50.5
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785542760000,
+          "precision": "ms"
+        },
+        "locator": "recoveries-00001.json#records[0]"
+      },
+      {
+        "kind": "sleep",
+        "key": "11111111-1111-4111-8111-111111111111",
+        "content": {
+          "type": "whoop.sleep",
+          "content": {
+            "id": "11111111-1111-4111-8111-111111111111",
+            "cycle_id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": "2026-08-01T00:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "nap": false,
+            "score_state": "SCORED",
+            "score": {
+              "respiratory_rate": 15.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "end_ms": 1785542400000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "sleeps-00001.json#records[0]"
+      },
+      {
+        "kind": "workout",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "whoop.workout",
+          "content": {
+            "id": "22222222-2222-4222-8222-222222222222",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T03:00:00.000Z",
+            "updated_at": "2026-08-01T03:01:00.000Z",
+            "start": "2026-08-01T02:00:00.000Z",
+            "end": "2026-08-01T03:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "sport_name": "synthetic-activity",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 3
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785549600000,
+          "end_ms": 1785553200000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "workouts-00001.json#records[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP",
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522660000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522720000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[1].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.375,
+            "display": "1.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[2]"
+      }
+    ]
+  },
+  {
+    "name": "hand-official",
+    "rows": [
+      {
+        "kind": "physio-day",
+        "key": "2000",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2000,
+            "user_id": 10000001,
+            "created_at": "2026-07-31T00:00:00.000Z",
+            "updated_at": "2026-07-31T19:00:00.000Z",
+            "start": "2026-07-30T18:30:00.000Z",
+            "end": "2026-07-31T18:30:00.000Z",
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 11.5,
+              "kilojoule": 9000.125
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785436200000,
+          "end_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles/page-00001.raw.json#records[0]"
+      },
+      {
+        "kind": "physio-day",
+        "key": "2001",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:00:00.000Z",
+            "updated_at": "2026-08-01T01:00:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": null,
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 4.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles/page-00001.raw.json#records[1]"
+      },
+      {
+        "kind": "recovery",
+        "key": "2001",
+        "content": {
+          "type": "whoop.recovery",
+          "content": {
+            "cycle_id": 2001,
+            "sleep_id": "11111111-1111-4111-8111-111111111111",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "score_state": "SCORED",
+            "score": {
+              "recovery_score": 50,
+              "hrv_rmssd_milli": 50.5
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785542760000,
+          "precision": "ms"
+        },
+        "locator": "recoveries/page-00001.raw.json#records[0]"
+      },
+      {
+        "kind": "sleep",
+        "key": "11111111-1111-4111-8111-111111111111",
+        "content": {
+          "type": "whoop.sleep",
+          "content": {
+            "id": "11111111-1111-4111-8111-111111111111",
+            "cycle_id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": "2026-08-01T00:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "nap": false,
+            "score_state": "SCORED",
+            "score": {
+              "respiratory_rate": 15.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "end_ms": 1785542400000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "sleeps/page-00001.raw.json#records[0]"
+      },
+      {
+        "kind": "workout",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "whoop.workout",
+          "content": {
+            "id": "22222222-2222-4222-8222-222222222222",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T03:00:00.000Z",
+            "updated_at": "2026-08-01T03:01:00.000Z",
+            "start": "2026-08-01T02:00:00.000Z",
+            "end": "2026-08-01T03:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "sport_name": "synthetic-activity",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 3
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785549600000,
+          "end_ms": 1785553200000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "workouts/page-00001.raw.json#records[0]"
+      }
+    ]
+  },
+  {
+    "name": "private-two-days",
+    "rows": [
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP",
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522660000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522720000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[1].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260801T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 62,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785609000000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-02.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260801T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 63,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785609060000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-02.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260801T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 64,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785609120000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-02.json#segment[0].points[2]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.525,
+            "display": "2.1",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-02.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000640.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.25,
+            "display": "1.0",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542800000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-02.json#segment[0].points[2]"
+      }
+    ]
+  },
+  {
+    "name": "private-unplaced",
+    "rows": [
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.375,
+            "display": "1.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[2]"
+      }
+    ]
+  },
+  {
+    "name": "empty-private-day",
+    "rows": [
+      {
+        "kind": "physio-day",
+        "key": "2000",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2000,
+            "user_id": 10000001,
+            "created_at": "2026-07-31T00:00:00.000Z",
+            "updated_at": "2026-07-31T19:00:00.000Z",
+            "start": "2026-07-30T18:30:00.000Z",
+            "end": "2026-07-31T18:30:00.000Z",
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 11.5,
+              "kilojoule": 9000.125
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785436200000,
+          "end_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[0]"
+      },
+      {
+        "kind": "physio-day",
+        "key": "2001",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:00:00.000Z",
+            "updated_at": "2026-08-01T01:00:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": null,
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 4.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[1]"
+      },
+      {
+        "kind": "recovery",
+        "key": "2001",
+        "content": {
+          "type": "whoop.recovery",
+          "content": {
+            "cycle_id": 2001,
+            "sleep_id": "11111111-1111-4111-8111-111111111111",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "score_state": "SCORED",
+            "score": {
+              "recovery_score": 50,
+              "hrv_rmssd_milli": 50.5
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785542760000,
+          "precision": "ms"
+        },
+        "locator": "recoveries-00001.json#records[0]"
+      },
+      {
+        "kind": "sleep",
+        "key": "11111111-1111-4111-8111-111111111111",
+        "content": {
+          "type": "whoop.sleep",
+          "content": {
+            "id": "11111111-1111-4111-8111-111111111111",
+            "cycle_id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": "2026-08-01T00:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "nap": false,
+            "score_state": "SCORED",
+            "score": {
+              "respiratory_rate": 15.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "end_ms": 1785542400000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "sleeps-00001.json#records[0]"
+      },
+      {
+        "kind": "workout",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "whoop.workout",
+          "content": {
+            "id": "22222222-2222-4222-8222-222222222222",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T03:00:00.000Z",
+            "updated_at": "2026-08-01T03:01:00.000Z",
+            "start": "2026-08-01T02:00:00.000Z",
+            "end": "2026-08-01T03:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "sport_name": "synthetic-activity",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 3
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785549600000,
+          "end_ms": 1785553200000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "workouts-00001.json#records[0]"
+      }
+    ]
+  },
+  {
+    "name": "rescored",
+    "rows": [
+      {
+        "kind": "physio-day",
+        "key": "2000",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2000,
+            "user_id": 10000001,
+            "created_at": "2026-07-31T00:00:00.000Z",
+            "updated_at": "2026-07-31T19:00:00.000Z",
+            "start": "2026-07-30T18:30:00.000Z",
+            "end": "2026-07-31T18:30:00.000Z",
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 11.5,
+              "kilojoule": 9000.125
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785436200000,
+          "end_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[0]"
+      },
+      {
+        "kind": "physio-day",
+        "key": "2001",
+        "content": {
+          "type": "whoop.cycle",
+          "content": {
+            "id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:00:00.000Z",
+            "updated_at": "2026-08-01T01:00:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": null,
+            "timezone_offset": "+05:30",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 4.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "cycles-00001.json#records[1]"
+      },
+      {
+        "kind": "recovery",
+        "key": "2001",
+        "content": {
+          "type": "whoop.recovery",
+          "content": {
+            "cycle_id": 2001,
+            "sleep_id": "11111111-1111-4111-8111-111111111111",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-02T00:10:00.000Z",
+            "score_state": "SCORED",
+            "score": {
+              "recovery_score": 55,
+              "hrv_rmssd_milli": 50.5
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785629400000,
+          "precision": "ms"
+        },
+        "locator": "recoveries-00001.json#records[0]"
+      },
+      {
+        "kind": "sleep",
+        "key": "11111111-1111-4111-8111-111111111111",
+        "content": {
+          "type": "whoop.sleep",
+          "content": {
+            "id": "11111111-1111-4111-8111-111111111111",
+            "cycle_id": 2001,
+            "user_id": 10000001,
+            "created_at": "2026-08-01T00:05:00.000Z",
+            "updated_at": "2026-08-01T00:06:00.000Z",
+            "start": "2026-07-31T18:30:00.000Z",
+            "end": "2026-08-01T00:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "nap": false,
+            "score_state": "SCORED",
+            "score": {
+              "respiratory_rate": 15.25
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "end_ms": 1785542400000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "sleeps-00001.json#records[0]"
+      },
+      {
+        "kind": "workout",
+        "key": "22222222-2222-4222-8222-222222222222",
+        "content": {
+          "type": "whoop.workout",
+          "content": {
+            "id": "22222222-2222-4222-8222-222222222222",
+            "user_id": 10000001,
+            "created_at": "2026-08-01T03:00:00.000Z",
+            "updated_at": "2026-08-01T03:01:00.000Z",
+            "start": "2026-08-01T02:00:00.000Z",
+            "end": "2026-08-01T03:00:00.000Z",
+            "timezone_offset": "+05:30",
+            "sport_name": "synthetic-activity",
+            "score_state": "SCORED",
+            "score": {
+              "strain": 3
+            }
+          }
+        },
+        "time": {
+          "start_ms": 1785549600000,
+          "end_ms": 1785553200000,
+          "offset_min": 330,
+          "precision": "ms"
+        },
+        "locator": "workouts-00001.json#records[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP",
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522660000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522720000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[1].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.375,
+            "display": "1.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[2]"
+      }
+    ]
+  },
+  {
+    "name": "restyled",
+    "rows": [
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_NAP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_NAP",
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522660000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522720000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[1].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.375,
+            "display": "1.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[2]"
+      }
+    ]
+  },
+  {
+    "name": "positions-moved",
+    "rows": [
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183000.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522600000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183100.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_SLEEP",
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522660000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "hr:20260731T183200.000Z",
+        "content": {
+          "type": "whoop.hr",
+          "content": {
+            "bpm": 60,
+            "segment_styles": [
+              "TILT_MODE_STRAIN"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785522720000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "daily-graph-2026-08-01.json#segment[1].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260731T235700.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.05,
+            "display": "0.2",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542220000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[0]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000100.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.125,
+            "display": "0.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542460000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[1]"
+      },
+      {
+        "kind": "sample",
+        "key": "stress:20260801T000240.000Z",
+        "content": {
+          "type": "whoop.stress",
+          "content": {
+            "value": 0.375,
+            "display": "1.5",
+            "level": "SYNTHETIC",
+            "segment_styles": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "time": {
+          "start_ms": 1785542560000,
+          "offset_min": 330,
+          "precision": "s"
+        },
+        "locator": "stress-2026-08-01.json#segment[0].points[2]"
+      }
+    ]
+  }
+]

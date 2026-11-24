@@ -1,0 +1,51 @@
+{
+  "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "associatedData": "lifestream-mac:1:file",
+  "segment": 65536,
+  "header": "28404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f60616263646566",
+  "files": [
+    {
+      "file": "mac-file-0.bin",
+      "plainLength": 0
+    },
+    {
+      "file": "mac-file-1.bin",
+      "plainLength": 1
+    },
+    {
+      "file": "mac-file-65479.bin",
+      "plainLength": 65479
+    },
+    {
+      "file": "mac-file-65480.bin",
+      "plainLength": 65480
+    },
+    {
+      "file": "mac-file-65481.bin",
+      "plainLength": 65481
+    },
+    {
+      "file": "mac-file-132000.bin",
+      "plainLength": 132000
+    }
+  ],
+  "log": {
+    "file": "mac-log.bin",
+    "info": "lifestream-mac:1:log",
+    "salt": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+    "records": [
+      {
+        "text": "{\"at\":\"2026-01-01T00:00:00Z\",\"what\":\"one\"}\n",
+        "nonce": "a0a1a2a3a4a5a6a7a8a9aaab"
+      },
+      {
+        "text": "{\"at\":\"2026-01-01T00:00:01Z\",\"what\":\"two\"}\n",
+        "nonce": "b0b1b2b3b4b5b6b7b8b9babb"
+      },
+      {
+        "text": "{\"at\":\"2026-01-01T00:00:02Z\",\"what\":\"three\"}\n",
+        "nonce": "c0c1c2c3c4c5c6c7c8c9cacb"
+      }
+    ]
+  }
+}

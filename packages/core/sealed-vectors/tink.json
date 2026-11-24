@@ -1,0 +1,142 @@
+{
+  "tink": "tink-py 1.16.1",
+  "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "vectors": [
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 0,
+      "sealedLength": 56,
+      "header": "281926d7f53705880250ad31a2e9c36b0b1c0ee62633b7444a3a93d10c2611f3cc683aee3149e409",
+      "sha256": "d2410886bd3f1dc77940857723599f5cb4d7c35c42568b887dd8b2b0fed1e11e",
+      "file": "tink-64k-blob-0.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 1,
+      "sealedLength": 57,
+      "header": "28c0048a44de90ba80c15b45995e92ea76d572538ba60cd7c397cc5abea9c7a8a3eb4ddad2393af2",
+      "sha256": "1c34f96672bc22a0c70226f6bd65aa7da44aea3b08ebf3bc2e80e01ea2d0146d",
+      "file": "tink-64k-blob-1.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 65479,
+      "sealedLength": 65535,
+      "header": "28c34caa17eec3ae604161c2dbb3d9865940070a481e271d409ddd06404168dccf5e76a843288e29",
+      "sha256": "57564b750b368b28abd7d441276663dea09d5cbb2a082663ffa0b89238152bec",
+      "file": "tink-64k-blob-65479.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 65480,
+      "sealedLength": 65536,
+      "header": "28bb95dabd46a5963baa8f3528cabd4e29846e3e49a88e4fcd71b1d7557faa05e78ef9b739972f9f",
+      "sha256": "ef0f0f206116ff6a9bc513f3ecce9cad841b0412c8844fc67cab483b7bd8f3b3",
+      "file": "tink-64k-blob-65480.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 65481,
+      "sealedLength": 65553,
+      "header": "28848f573d88711f00f92aa64825900693e85d0f822c997901b26f982f0c83cc57570773775c82e7",
+      "sha256": "1baec50d9c3d483be09d419a69655e76769eac39b11b9f82ceef8a36e339bc2c",
+      "file": "tink-64k-blob-65481.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 132000,
+      "sealedLength": 132088,
+      "header": "2881ea3647f22459b30999c268d007a64534e00550ed4d8168144523735e9c417ed888b7474b0b5b",
+      "sha256": "1d1bb2b45c762470b4bb1a7ae358a77adef9ade12b83964bacfc37238f649040",
+      "file": "tink-64k-blob-132000.bin"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 196520,
+      "sealedLength": 196608,
+      "header": "28c984e80aef9412bb8225e4473b92189090f6bea15f3388baef5e609e7cc7adec0fdca26630d22b",
+      "sha256": "fd21f9b02820cff006f74c7c25974d526860de9c213ed6a9ee71cb208c49bfbf",
+      "file": "tink-64k-blob-196520.bin"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 0,
+      "sealedLength": 56,
+      "header": "28a445045dabb8cdf8cee79d9ee0466ddc4a0900e6a3b1ded4c2e5330340fa9e57df64d28b615ae3",
+      "sha256": "4442e841290c34e06b4ccdba58f67d21d45ab8e8ab3f058f35ba23968d11e882"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 1,
+      "sealedLength": 57,
+      "header": "2822f0848649824fafdcf86a4db3ef8aa667f7b2151f9b930e8bf319a861cec4cc654b75bc42cf83",
+      "sha256": "ed6e099c9c09f082ce942320b0a1f4d03b81bb632ad910ad03d87ef46afd9bf4"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 1048519,
+      "sealedLength": 1048575,
+      "header": "28d34d62cfb149e5cfc7f35f0b9c3f1b1fe67f624762d20c4ed1f1a7abd24d6541d7fd4d6c9817ed",
+      "sha256": "95dd456354c2e989f014020ef5cac2f1b1c0c6336aff26597c2d9a5d564192ec"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 1048520,
+      "sealedLength": 1048576,
+      "header": "2895eb5531ee65850583662f5f023236143919f5ec2eb7f5bc7f51eaebfc7898530c187fa71fc94a",
+      "sha256": "4c4a78457bb0f76b410600cab4804049f17d40e27650f1513c1ede28f6769e4b"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 1048521,
+      "sealedLength": 1048593,
+      "header": "28562c6dc77fd690cc339e6edfc149eedd01b3a479f25f52439a7ecd51e91fade62c486d77047b49",
+      "sha256": "7225604a7515d22cd32506667fe9bd47ddb0f33e29986bb06e9e14df199d0281"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 2098080,
+      "sealedLength": 2098168,
+      "header": "285c44782e2eacd09d11a9422e5166adc6c024bb9dded5f2477bac827a7d45f296d7a8513e32a2ea",
+      "sha256": "7c845dbc8de33ded4041d11f5e5f66404a77a0d51c300371314d52c21ddadf28"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:blob",
+      "plainLength": 3145640,
+      "sealedLength": 3145728,
+      "header": "2808cbd7038c2d1bdb774ae0da8298693ca1e36fc5245df5ec8f1cd07d598f598f82e96e0faf2106",
+      "sha256": "f1bc602b2f7bd556fd2300f63224d9ccdb27655e23157702574a7056a3694d59"
+    },
+    {
+      "segment": 65536,
+      "associatedData": "lifestream:1:day:2026-11-14",
+      "plainLength": 65481,
+      "sealedLength": 65553,
+      "header": "2823fb4059990b16bd487fc27f1ed3adddff033584b1fe742e191312aea5dda22fec3c866ed6e3d2",
+      "sha256": "445b8177b1a32e6481d42ac433a2c6b9423064e99d36c22b6ac14b06118e03ca",
+      "file": "tink-64k-day-65481.bin"
+    },
+    {
+      "segment": 1048576,
+      "associatedData": "lifestream:1:day:2026-11-14",
+      "plainLength": 1048521,
+      "sealedLength": 1048593,
+      "header": "28dc75de578afeef8f30f997f794647781079f3056515089e6a9edc65e343785a129473e76313eb7",
+      "sha256": "7ac33c42adfcea2ed007458556aa6dd059b150a9ea751291ea1bb0f309fc6b8a"
+    }
+  ]
+}

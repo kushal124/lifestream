@@ -1,0 +1,11 @@
+{
+  "route": "POST /v1/access/drop",
+  "request": {
+    "drop": 3
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "dropping a line names the version you read: drop and version, as `access` gave them"
+  }
+}

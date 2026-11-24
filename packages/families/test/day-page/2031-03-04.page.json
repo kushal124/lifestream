@@ -1,0 +1,2011 @@
+{
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [
+    {
+      "key": "e74",
+      "kind": "event",
+      "at_ms": null,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Synthetic holiday",
+      "note": "",
+      "words": [
+        {
+          "type": "text",
+          "text": "Calendar · all day",
+          "tone": "secondary"
+        }
+      ],
+      "count": null,
+      "quiet": false,
+      "focus": "rec:google-calendar:person-a@example.com:cloud event synthetic-uid-0002",
+      "divider": null
+    }
+  ],
+  "chapters": [
+    {
+      "key": "stay/location:local:phone-aa01/1930303800000@1930325400000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "4h 10m"
+      },
+      "start_ms": 1930325400000,
+      "end_ms": 1930340400000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Woke",
+          "firstRowId": "e1",
+          "at_ms": 1930334400000
+        },
+        {
+          "text": "Strain",
+          "firstRowId": "e4",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:phone-aa01/1930303800000@1930325400000#run",
+          "kind": "run",
+          "start_ms": 1930325400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e1",
+              "kind": "sleep",
+              "at_ms": 1930334400000,
+              "end_ms": null,
+              "icon": "sleep",
+              "name": "Woke",
+              "note": "",
+              "words": [
+                {
+                  "type": "span",
+                  "text": "asleep",
+                  "tone": "secondary",
+                  "start_ms": 1930309800000,
+                  "end_ms": 1930334400000
+                },
+                {
+                  "type": "text",
+                  "text": "WHOOP",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "6h 50m"
+              },
+              "quiet": false,
+              "focus": "rec:whoop:1:cloud sleep 00000000-0000-4000-8000-000000000101",
+              "divider": null
+            },
+            {
+              "key": "e4",
+              "kind": "other",
+              "at_ms": 1930334400000,
+              "end_ms": null,
+              "icon": "info",
+              "name": "Strain",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "9.4 · average heart rate 71 · max 168 · 9,120 kJ · WHOOP",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:whoop:1:cloud physio-day 2000",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1930340400000@1930340400000",
+      "kind": "move",
+      "episode": "e9",
+      "head": {
+        "title": "Move 6.3 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "move",
+        "quiet": false,
+        "words": [],
+        "length": "30m"
+      },
+      "start_ms": 1930340400000,
+      "end_ms": 1930342200000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Spotify 26m",
+          "firstRowId": "e10",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "trip/location:local:phone-aa01/1930340400000@1930340400000#run",
+          "kind": "run",
+          "start_ms": 1930340400000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e10",
+              "kind": "listening",
+              "at_ms": 1930340520000,
+              "end_ms": null,
+              "icon": "listening",
+              "name": "Spotify",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Artist P",
+                    "Artist Q"
+                  ]
+                }
+              ],
+              "count": {
+                "text": "2 tracks"
+              },
+              "quiet": false,
+              "focus": "rec:spotify:person-a@example.com:export spotify.play play-1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1930342200000@1930342200000",
+      "kind": "stay",
+      "episode": "e12",
+      "head": {
+        "title": "Synthetic Office",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "4h 18m"
+      },
+      "start_ms": 1930342200000,
+      "end_ms": 1930357680000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e13",
+          "at_ms": null
+        },
+        {
+          "text": "Mac 2h 30m",
+          "firstRowId": "e15",
+          "at_ms": null
+        },
+        {
+          "text": "Claude Code",
+          "firstRowId": "e19",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic standup, daily",
+          "firstRowId": "e24",
+          "at_ms": null
+        },
+        {
+          "text": "Searched",
+          "firstRowId": "e27",
+          "at_ms": null
+        },
+        {
+          "text": "shop.example",
+          "firstRowId": "e29",
+          "at_ms": null
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e31",
+          "at_ms": null
+        },
+        {
+          "text": "Dictated",
+          "firstRowId": "e33",
+          "at_ms": null
+        },
+        {
+          "text": "Groceries",
+          "firstRowId": "e35",
+          "at_ms": null
+        },
+        {
+          "text": "Phone",
+          "firstRowId": "e36",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:phone-aa01/1930342200000@1930342200000#1930339800000",
+          "kind": "hour",
+          "start_ms": 1930342200000,
+          "title": null,
+          "line": "Person A",
+          "count": {
+            "sent": 1
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e13",
+              "kind": "conversation",
+              "at_ms": 1930342800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic reply"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg 15550000001@s.whatsapp.net:AAA1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930342200000@1930342200000#1930343400000",
+          "kind": "hour",
+          "start_ms": 1930343400000,
+          "title": null,
+          "line": "Mac 2h 30m, Person A, Claude Code",
+          "count": {
+            "sent": 2
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e15",
+              "kind": "sitting",
+              "at_ms": 1930343400000,
+              "end_ms": null,
+              "icon": "work-mac",
+              "name": "Mac",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Xcode 1h 22m",
+                    "Safari 40m",
+                    "Terminal 12m"
+                  ]
+                },
+                {
+                  "type": "titles",
+                  "items": [
+                    "Editing the synthetic module in Xcode",
+                    "Reading synthetic docs in Safari"
+                  ]
+                }
+              ],
+              "count": {
+                "text": "2h 30m"
+              },
+              "quiet": false,
+              "focus": "u:macbook-pro-0001/1930343400000@1930343400000-1930352400000",
+              "divider": null
+            },
+            {
+              "key": "e18",
+              "kind": "conversation",
+              "at_ms": 1930344900000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic answer"
+                }
+              ],
+              "count": {
+                "sent": 2
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg 15550000001@s.whatsapp.net:AAA3",
+              "divider": null
+            },
+            {
+              "key": "e19",
+              "kind": "ai",
+              "at_ms": 1930345200000,
+              "end_ms": null,
+              "icon": "ai",
+              "name": "Claude Code",
+              "note": "project",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Fix the synthetic test."
+                }
+              ],
+              "count": {
+                "text": "2 prompts"
+              },
+              "quiet": false,
+              "focus": "u:claude-code:local:macbook-pro-0001/session-1/2031-03-03T23@1930345200000-1930347000000",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930342200000@1930342200000#1930347000000",
+          "kind": "hour",
+          "start_ms": 1930347000000,
+          "title": null,
+          "line": "Synthetic standup, daily, Searched, shop.example and 1 other",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e24",
+              "kind": "event",
+              "at_ms": 1930347000000,
+              "end_ms": null,
+              "icon": "calendar-event",
+              "name": "Synthetic standup, daily",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Calendar · organised by Person B · 3 attendees · accepted · video call",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "30m"
+              },
+              "quiet": false,
+              "focus": "rec:google-calendar:person-a@example.com:cloud event synthetic-uid-0001",
+              "divider": null
+            },
+            {
+              "key": "e27",
+              "kind": "search",
+              "at_ms": 1930348200000,
+              "end_ms": null,
+              "icon": "search",
+              "name": "Searched",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "synthetic query"
+                },
+                {
+                  "type": "quote",
+                  "text": "synthetic query two"
+                },
+                {
+                  "type": "quote",
+                  "text": "a third synthetic query"
+                }
+              ],
+              "count": {
+                "text": "3 searches"
+              },
+              "quiet": false,
+              "focus": "rec:safari:local:macbook-pro-0001 search v-2",
+              "divider": null
+            },
+            {
+              "key": "e29",
+              "kind": "browsing",
+              "at_ms": 1930349400000,
+              "end_ms": null,
+              "icon": "web",
+              "name": "shop.example",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "A synthetic item"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:chrome:local:macbook-pro-0001 visit v-3",
+              "divider": null
+            },
+            {
+              "key": "e31",
+              "kind": "call",
+              "at_ms": 1930350000000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Called you",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "5m"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0003",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930342200000@1930342200000#1930350600000",
+          "kind": "hour",
+          "start_ms": 1930350600000,
+          "title": null,
+          "line": "Dictated, Searched, Groceries",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e33",
+              "kind": "dictation",
+              "at_ms": 1930350900000,
+              "end_ms": null,
+              "icon": "voice-note",
+              "name": "Dictated",
+              "note": "to Editor",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic dictated words."
+                }
+              ],
+              "count": {
+                "text": "1 dictation"
+              },
+              "quiet": false,
+              "focus": "rec:superwhisper:local:macbook-pro-0001 dictation d-1",
+              "divider": null
+            },
+            {
+              "key": "e34",
+              "kind": "search",
+              "at_ms": 1930351500000,
+              "end_ms": null,
+              "icon": "search",
+              "name": "Searched",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "a later synthetic query"
+                }
+              ],
+              "count": {
+                "text": "1 search"
+              },
+              "quiet": false,
+              "focus": "rec:safari:local:macbook-pro-0001 search s-4",
+              "divider": null
+            },
+            {
+              "key": "e35",
+              "kind": "note",
+              "at_ms": 1930353000000,
+              "end_ms": null,
+              "icon": "note",
+              "name": "Groceries",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "[x] milk"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-notes:person-a@example.com:macbook-pro-0001 note NOTE-0001",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930342200000@1930342200000#1930354200000",
+          "kind": "hour",
+          "start_ms": 1930354200000,
+          "title": null,
+          "line": "Phone",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e36",
+              "kind": "phone",
+              "at_ms": 1930354200000,
+              "end_ms": null,
+              "icon": "phone-screen",
+              "name": "Phone",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Social",
+                    "Chat",
+                    "Notes"
+                  ]
+                }
+              ],
+              "count": {
+                "text": "20m"
+              },
+              "quiet": false,
+              "focus": "rec:screen-time:person-a@example.com:macbook-pro-0001 app-focus 0000BBBB-0000-4000-8000-000000000001:f-1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:phone-aa01/1930357800000@1930357800000",
+      "kind": "move",
+      "episode": "e37",
+      "head": {
+        "title": "Walk 0.9 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [],
+        "length": "12m"
+      },
+      "start_ms": 1930357800000,
+      "end_ms": 1930358520000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-03-04@1930358520000",
+      "kind": "stay",
+      "episode": "e38",
+      "head": {
+        "title": "Synthetic Cafe",
+        "line": null,
+        "place": null,
+        "stated_by": "from photos",
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "43m"
+      },
+      "start_ms": 1930358520000,
+      "end_ms": 1930361100000,
+      "folded": true,
+      "names": [],
+      "photos": [
+        {
+          "hash": "sha256:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+          "at_ms": 1930359000000,
+          "video": false,
+          "duration_ms": null,
+          "alt": "a synthetic cafe table"
+        },
+        {
+          "hash": "sha256:9b73ce2e5c72e9c8eb35ae3f509ef901b26ed3e9811f0782f3633cceab140918",
+          "at_ms": 1930359030000,
+          "video": false,
+          "duration_ms": null,
+          "alt": "Photo"
+        },
+        {
+          "hash": "sha256:73fb47247808eefa92140859d5aeee8955cca452b9f6873e67ecbeba9276a3f4",
+          "at_ms": 1930359060000,
+          "video": false,
+          "duration_ms": null,
+          "alt": "Photo"
+        }
+      ],
+      "blocks": [
+        {
+          "key": "seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-03-04@1930358520000#run",
+          "kind": "run",
+          "start_ms": 1930358520000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e39",
+              "kind": "photos",
+              "at_ms": 1930359000000,
+              "end_ms": null,
+              "icon": "photos",
+              "name": "Photos",
+              "note": "",
+              "words": [
+                {
+                  "type": "tiles",
+                  "photos": [
+                    {
+                      "item": "photo:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+                      "hash": "sha256:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+                      "at_ms": 1930359000000,
+                      "video": false,
+                      "duration_ms": null
+                    },
+                    {
+                      "item": "photo:9b73ce2e5c72e9c8eb35ae3f509ef901b26ed3e9811f0782f3633cceab140918",
+                      "hash": "sha256:9b73ce2e5c72e9c8eb35ae3f509ef901b26ed3e9811f0782f3633cceab140918",
+                      "at_ms": 1930359030000,
+                      "video": false,
+                      "duration_ms": null
+                    },
+                    {
+                      "item": "photo:73fb47247808eefa92140859d5aeee8955cca452b9f6873e67ecbeba9276a3f4",
+                      "hash": "sha256:73fb47247808eefa92140859d5aeee8955cca452b9f6873e67ecbeba9276a3f4",
+                      "at_ms": 1930359060000,
+                      "video": false,
+                      "duration_ms": null
+                    }
+                  ],
+                  "more": 0
+                }
+              ],
+              "count": {
+                "text": "3 photos"
+              },
+              "quiet": false,
+              "focus": "u:phone-aa01/1930359000000/e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2@1930359000000-1930359000001",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "stay/google-timeline:person-a@example.com:export/visit-1@1930362600000",
+      "kind": "stay",
+      "episode": "e42",
+      "head": {
+        "title": "Synthetic City",
+        "line": null,
+        "place": "spot:10.0201,20.0201",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "40m"
+      },
+      "start_ms": 1930362600000,
+      "end_ms": 1930365000000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e43",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/google-timeline:person-a@example.com:export/visit-1@1930362600000#run",
+          "kind": "run",
+          "start_ms": 1930362600000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e43",
+              "kind": "conversation",
+              "at_ms": 1930363200000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Sent 1 photo",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg 120363000000000001@g.us:BBB1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "seen/apple-photos:person-a@example.com:macbook-pro-0001/2031-03-04/2@1930365000000",
+      "kind": "stay",
+      "episode": "e80",
+      "head": {
+        "title": "Synthetic Kiosk",
+        "line": null,
+        "place": null,
+        "stated_by": "from photos",
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": null
+      },
+      "start_ms": 1930365000000,
+      "end_ms": 1930365000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "none@1930365000000",
+      "kind": "none",
+      "episode": null,
+      "head": {
+        "title": "No place recorded",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "",
+        "quiet": false,
+        "words": [],
+        "length": "30m"
+      },
+      "start_ms": 1930365000000,
+      "end_ms": 1930366800000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e47",
+          "at_ms": null
+        },
+        {
+          "text": "Mail",
+          "firstRowId": "e48",
+          "at_ms": null
+        },
+        {
+          "text": "+15550000006",
+          "firstRowId": "e50",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "none@1930365000000#run",
+          "kind": "run",
+          "start_ms": 1930365000000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e47",
+              "kind": "call",
+              "at_ms": 1930365300000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "You called",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "12m"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0001",
+              "divider": null
+            },
+            {
+              "key": "e48",
+              "kind": "mail_sent",
+              "at_ms": 1930365600000,
+              "end_ms": null,
+              "icon": "mail",
+              "name": "Mail",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Sent",
+                  "tone": "secondary"
+                },
+                {
+                  "type": "quote",
+                  "text": "Synthetic plan"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:gmail:person-a@example.com:cloud mailmsg m-1",
+              "divider": null
+            },
+            {
+              "key": "e49",
+              "kind": "mail_received",
+              "at_ms": 1930365720000,
+              "end_ms": null,
+              "icon": "mail",
+              "name": "2 mails",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Synthetic Bank",
+                    "Synthetic Shop"
+                  ]
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:gmail:person-a@example.com:cloud mailmsg m-2",
+              "divider": null
+            },
+            {
+              "key": "e50",
+              "kind": "call",
+              "at_ms": 1930366200000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "+15550000006",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Missed call",
+                  "tone": "secondary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0002",
+              "divider": null
+            },
+            {
+              "key": "e51",
+              "kind": "call",
+              "at_ms": 1930366500000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "+15550000006",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "You called",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "2m"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0004",
+              "divider": null
+            },
+            {
+              "key": "e52",
+              "kind": "call",
+              "at_ms": 1930366680000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Missed call",
+                  "tone": "secondary"
+                },
+                {
+                  "type": "text",
+                  "text": "not returned yet",
+                  "tone": "tertiary"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-calls:person-a@example.com:macbook-pro-0001 call CALL-0005",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/google-timeline:person-a@example.com:export/activity-1@1930366800000",
+      "kind": "move",
+      "episode": "e53",
+      "head": {
+        "title": "Drive 7.2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "drive",
+        "quiet": false,
+        "words": [],
+        "length": "20m"
+      },
+      "start_ms": 1930366800000,
+      "end_ms": 1930368000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:phone-aa01/1930368000000@1930368000000",
+      "kind": "stay",
+      "episode": "e56",
+      "head": {
+        "title": "Synthetic Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "12h 10m"
+      },
+      "start_ms": 1930368000000,
+      "end_ms": 1930411800000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Nap 20m",
+          "firstRowId": "e54",
+          "at_ms": null
+        },
+        {
+          "text": "Mail",
+          "firstRowId": "e57",
+          "at_ms": null
+        },
+        {
+          "text": "Voice note",
+          "firstRowId": "e58",
+          "at_ms": null
+        },
+        {
+          "text": "Running 45m",
+          "firstRowId": "e59",
+          "at_ms": null
+        },
+        {
+          "text": "Mac 40m",
+          "firstRowId": "e61",
+          "at_ms": null
+        },
+        {
+          "text": "Phone",
+          "firstRowId": "e62",
+          "at_ms": null
+        },
+        {
+          "text": "ChatGPT",
+          "firstRowId": "e63",
+          "at_ms": null
+        },
+        {
+          "text": "Dictated",
+          "firstRowId": "e65",
+          "at_ms": null
+        },
+        {
+          "text": "Claude Code",
+          "firstRowId": "e81",
+          "at_ms": null
+        },
+        {
+          "text": "Codex",
+          "firstRowId": "e82",
+          "at_ms": null
+        },
+        {
+          "text": "Check-in",
+          "firstRowId": "e67",
+          "at_ms": null
+        },
+        {
+          "text": "Plan",
+          "firstRowId": "e68",
+          "at_ms": null
+        },
+        {
+          "text": "Vigilance test",
+          "firstRowId": "e69",
+          "at_ms": null
+        },
+        {
+          "text": "news.example",
+          "firstRowId": "e70",
+          "at_ms": null
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e71",
+          "at_ms": null
+        },
+        {
+          "text": "Listening 43m",
+          "firstRowId": "e72",
+          "at_ms": null
+        },
+        {
+          "text": "Person A",
+          "firstRowId": "e73",
+          "at_ms": null
+        }
+      ],
+      "photos": [
+        {
+          "hash": "sha256:e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1",
+          "at_ms": 1930378800000,
+          "video": false,
+          "duration_ms": null,
+          "alt": "a synthetic sunset"
+        }
+      ],
+      "blocks": [
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930365000000",
+          "kind": "hour",
+          "start_ms": 1930368000000,
+          "title": null,
+          "line": "Nap 20m",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e54",
+              "kind": "sleep",
+              "at_ms": 1930368300000,
+              "end_ms": null,
+              "icon": "sleep",
+              "name": "Nap",
+              "note": "",
+              "words": [
+                {
+                  "type": "span",
+                  "text": "",
+                  "tone": "secondary",
+                  "start_ms": 1930367100000,
+                  "end_ms": 1930368300000
+                }
+              ],
+              "count": {
+                "text": "20m"
+              },
+              "quiet": false,
+              "focus": "rec:whoop:1:cloud sleep 00000000-0000-4000-8000-000000000102",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930368600000",
+          "kind": "hour",
+          "start_ms": 1930368600000,
+          "title": null,
+          "line": "Mail",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e57",
+              "kind": "mail_received",
+              "at_ms": 1930368900000,
+              "end_ms": null,
+              "icon": "mail",
+              "name": "1 mail",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Person B"
+                  ]
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:gmail:person-a@example.com:cloud mailmsg m-4",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930372200000",
+          "kind": "hour",
+          "start_ms": 1930372200000,
+          "title": null,
+          "line": "Voice note",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e58",
+              "kind": "voice_note",
+              "at_ms": 1930372200000,
+              "end_ms": null,
+              "icon": "voice-note",
+              "name": "Voice note",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Remember to buy synthetic bread for tomorrow."
+                }
+              ],
+              "count": {
+                "text": "1m"
+              },
+              "quiet": false,
+              "focus": "rec:voice-memos:person-a@example.com:macbook-pro-0001 voice rec-1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930375800000",
+          "kind": "hour",
+          "start_ms": 1930375800000,
+          "title": null,
+          "line": "Running 45m",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e59",
+              "kind": "workout",
+              "at_ms": 1930375800000,
+              "end_ms": null,
+              "icon": "workout",
+              "name": "Running",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "strain 11.2 · WHOOP",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "45m"
+              },
+              "quiet": false,
+              "focus": "rec:whoop:1:cloud workout w-1",
+              "divider": null
+            },
+            {
+              "key": "e60",
+              "kind": "photos",
+              "at_ms": 1930378800000,
+              "end_ms": null,
+              "icon": "photo",
+              "name": "Photo",
+              "note": "",
+              "words": [
+                {
+                  "type": "tiles",
+                  "photos": [
+                    {
+                      "item": "photo:e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1",
+                      "hash": "sha256:e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1",
+                      "at_ms": 1930378800000,
+                      "video": false,
+                      "duration_ms": null
+                    }
+                  ],
+                  "more": 0
+                }
+              ],
+              "count": {
+                "text": "1 photo"
+              },
+              "quiet": false,
+              "focus": "u:phone-aa01/1930378800000/e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1@1930378800000-1930378800001",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930379400000",
+          "kind": "hour",
+          "start_ms": 1930379400000,
+          "title": null,
+          "line": "Mac 40m",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e61",
+              "kind": "sitting",
+              "at_ms": 1930381200000,
+              "end_ms": null,
+              "icon": "work-mac",
+              "name": "Mac",
+              "note": "",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Apps not counted yet",
+                  "tone": "secondary"
+                }
+              ],
+              "count": {
+                "text": "40m"
+              },
+              "quiet": false,
+              "focus": "u:macbook-pro-0001/1930381200000@1930381200000-1930383600000",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930383000000",
+          "kind": "hour",
+          "start_ms": 1930383000000,
+          "title": null,
+          "line": "Phone, ChatGPT, Dictated and 2 others",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e62",
+              "kind": "phone",
+              "at_ms": 1930383000000,
+              "end_ms": null,
+              "icon": "phone-screen",
+              "name": "Phone",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Social",
+                    "Reading"
+                  ]
+                }
+              ],
+              "count": {
+                "text": "18m"
+              },
+              "quiet": false,
+              "focus": "u:phone/screen-time:local:phone-aa01/1930383000000@1930383000000-1930386600000",
+              "divider": null
+            },
+            {
+              "key": "e63",
+              "kind": "ai",
+              "at_ms": 1930384800000,
+              "end_ms": null,
+              "icon": "ai",
+              "name": "ChatGPT",
+              "note": "Synthetic weekend",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Synthetic weekend",
+                  "tone": "tertiary",
+                  "title": true
+                },
+                {
+                  "type": "quote",
+                  "text": "Plan a synthetic weekend."
+                }
+              ],
+              "count": {
+                "text": "1 prompt"
+              },
+              "quiet": false,
+              "focus": "rec:chatgpt:person-a@example.com:export msg turn-a",
+              "divider": null
+            },
+            {
+              "key": "e83",
+              "kind": "ai",
+              "at_ms": 1930385100000,
+              "end_ms": null,
+              "icon": "ai",
+              "name": "ChatGPT",
+              "note": "Synthetic recap",
+              "words": [
+                {
+                  "type": "text",
+                  "text": "Synthetic recap",
+                  "tone": "tertiary",
+                  "title": true
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:chatgpt:person-a@example.com:export msg turn-c",
+              "divider": null
+            },
+            {
+              "key": "e65",
+              "kind": "dictation",
+              "at_ms": 1930385400000,
+              "end_ms": null,
+              "icon": "voice-note",
+              "name": "Dictated",
+              "note": "to Claude Code",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic words for the agent."
+                },
+                {
+                  "type": "quote",
+                  "text": "And a second synthetic thought."
+                }
+              ],
+              "count": {
+                "text": "2 dictations"
+              },
+              "quiet": false,
+              "focus": "rec:wispr-flow:local:macbook-pro-0001 dictation d-2",
+              "divider": null
+            },
+            {
+              "key": "e81",
+              "kind": "ai",
+              "at_ms": 1930385700000,
+              "end_ms": null,
+              "icon": "ai",
+              "name": "Claude Code",
+              "note": "~",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Tidy the synthetic notes."
+                }
+              ],
+              "count": {
+                "text": "1 prompt"
+              },
+              "quiet": false,
+              "focus": "rec:claude-code:local:macbook-pro-0001 agent-turn turn-9",
+              "divider": null
+            },
+            {
+              "key": "e82",
+              "kind": "ai",
+              "at_ms": 1930385760000,
+              "end_ms": null,
+              "icon": "ai",
+              "name": "Codex",
+              "note": "example",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Rename the synthetic module."
+                }
+              ],
+              "count": {
+                "text": "1 prompt"
+              },
+              "quiet": false,
+              "focus": "rec:codex:local:macbook-pro-0001 agent-turn turn-10",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930386600000",
+          "kind": "hour",
+          "start_ms": 1930386600000,
+          "title": null,
+          "line": "Check-in, Plan, Vigilance test and 1 other",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e67",
+              "kind": "check_in",
+              "at_ms": 1930386600000,
+              "end_ms": null,
+              "icon": "check-in",
+              "name": "Check-in",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "mood 4/5",
+                    "energy 3/5"
+                  ]
+                },
+                {
+                  "type": "quote",
+                  "text": "a synthetic note"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:checkin:local:phone-aa01 report ck-1",
+              "divider": null
+            },
+            {
+              "key": "e68",
+              "kind": "note",
+              "at_ms": 1930387200000,
+              "end_ms": null,
+              "icon": "note",
+              "name": "Plan",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "1. first step 2. second step"
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:apple-notes:person-a@example.com:macbook-pro-0001 note NOTE-0002",
+              "divider": null
+            },
+            {
+              "key": "e69",
+              "kind": "check_in",
+              "at_ms": 1930387500000,
+              "end_ms": null,
+              "icon": "check-in",
+              "name": "Vigilance test",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "20 responses",
+                    "median 312 ms",
+                    "1 lapse",
+                    "0 false starts"
+                  ]
+                }
+              ],
+              "count": null,
+              "quiet": false,
+              "focus": "rec:checkin:local:phone-aa01 vigilance ck-2",
+              "divider": null
+            },
+            {
+              "key": "e70",
+              "kind": "browsing",
+              "at_ms": 1930388400000,
+              "end_ms": null,
+              "icon": "web",
+              "name": "news.example",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Synthetic story"
+                }
+              ],
+              "count": {
+                "text": "10m"
+              },
+              "quiet": false,
+              "focus": "rec:chrome:local:macbook-pro-0001 visit v-4",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930390200000",
+          "kind": "hour",
+          "start_ms": 1930390200000,
+          "title": null,
+          "line": "Person C, Listening 43m",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e71",
+              "kind": "conversation",
+              "at_ms": 1930390200000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [],
+              "count": {
+                "received": 1
+              },
+              "quiet": true,
+              "focus": "rec:imessage:person-a@example.com:macbook-pro-0001 msg GUID-0001",
+              "divider": null
+            },
+            {
+              "key": "e72",
+              "kind": "listening",
+              "at_ms": 1930393800000,
+              "end_ms": null,
+              "icon": "listening",
+              "name": "Listening",
+              "note": "",
+              "words": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Endel"
+                  ]
+                }
+              ],
+              "count": {
+                "text": "3 tracks"
+              },
+              "quiet": false,
+              "focus": "rec:now-playing:local:macbook-pro-0001 now-playing np-1",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:phone-aa01/1930368000000@1930368000000#1930401000000",
+          "kind": "hour",
+          "start_ms": 1930401000000,
+          "title": null,
+          "line": "Person A",
+          "count": {
+            "sent": 1
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e73",
+              "kind": "conversation",
+              "at_ms": 1930402800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "type": "quote",
+                  "text": "Use [name] in the template"
+                }
+              ],
+              "count": {
+                "sent": 1
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:phone-aa01 msg 15550000001@s.whatsapp.net:AAA5",
+              "divider": null
+            }
+          ],
+          "divider": "2031-03-05"
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": {
+    "folded": false,
+    "names": [
+      {
+        "text": "Activity",
+        "firstRowId": "e75",
+        "at_ms": null
+      },
+      {
+        "text": "Payment",
+        "firstRowId": "e76",
+        "at_ms": null
+      },
+      {
+        "text": "Undated",
+        "firstRowId": "e77",
+        "at_ms": null
+      }
+    ],
+    "rows": [
+      {
+        "key": "e75",
+        "kind": "other",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "info",
+        "name": "Activity",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "move 420 of 500 kcal · exercise 25 of 30 min · stand 10 of 12 h · Health",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:apple-health:person-a@example.com:watch-aa07 activity-summary 20310304",
+        "divider": null
+      },
+      {
+        "key": "e76",
+        "kind": "payment",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "money",
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "−450.00 USD",
+            "tone": "secondary"
+          },
+          {
+            "type": "text",
+            "text": "SYNTHETIC CAFE",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:synthbank:acct-aa11:export txn b-1",
+        "divider": null
+      },
+      {
+        "key": "e77",
+        "kind": "note",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "note",
+        "name": "Undated",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "a synthetic note with no time"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:apple-notes:person-a@example.com:macbook-pro-0001 note NOTE-0003",
+        "divider": null
+      }
+    ]
+  },
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1930411800000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "asleep",
+        "value": "6h 50m",
+        "words": "asleep"
+      },
+      {
+        "key": "steps",
+        "value": "0",
+        "words": "steps"
+      },
+      {
+        "key": "recovery",
+        "value": "64",
+        "words": "recovery"
+      },
+      {
+        "key": "sent",
+        "value": "5",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "6",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "synthetic-home",
+        "slug": "synthetic-home",
+        "name": "Synthetic Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 58800000,
+        "length": "16h 20m",
+        "spoken": "Synthetic Home, 16 hours 20 minutes",
+        "point": {
+          "latitude": 10.0001,
+          "longitude": 20.0001
+        },
+        "radius_m": 80,
+        "rows": [
+          "e3",
+          "e56"
+        ]
+      },
+      {
+        "key": "spot:10.0101,20.0101",
+        "slug": null,
+        "name": "Synthetic Office",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 15480000,
+        "length": "4h 18m",
+        "spoken": "Synthetic Office, 4 hours 18 minutes",
+        "point": {
+          "latitude": 10.0101,
+          "longitude": 20.0101
+        },
+        "radius_m": null,
+        "rows": [
+          "e12"
+        ]
+      },
+      {
+        "key": "spot:10.0151,20.0151",
+        "slug": null,
+        "name": "Synthetic Cafe",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 2580000,
+        "length": "43m",
+        "spoken": "Synthetic Cafe, 43 minutes",
+        "point": {
+          "latitude": 10.0151,
+          "longitude": 20.0151
+        },
+        "radius_m": null,
+        "rows": [
+          "e38"
+        ]
+      },
+      {
+        "key": "spot:10.0201,20.0201",
+        "slug": null,
+        "name": "Synthetic City",
+        "line": null,
+        "home": false,
+        "quiet": true,
+        "ms": 2400000,
+        "length": "40m",
+        "spoken": "Synthetic City, 40 minutes",
+        "point": {
+          "latitude": 10.0201,
+          "longitude": 20.0201
+        },
+        "radius_m": null,
+        "rows": [
+          "e42"
+        ]
+      },
+      {
+        "key": "spot:10.0401,20.0401",
+        "slug": null,
+        "name": "Synthetic Port Town",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 1200000,
+        "length": "20m",
+        "spoken": "Synthetic Port Town, 20 minutes",
+        "point": {
+          "latitude": 10.0401,
+          "longitude": 20.0401
+        },
+        "radius_m": null,
+        "rows": []
+      }
+    ],
+    "people": [
+      {
+        "key": "person-a",
+        "person": "person-a",
+        "name": "Person A",
+        "photo": "crop-person-a",
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "4",
+            "quiet": false
+          },
+          {
+            "glyph": "call",
+            "value": "12m",
+            "quiet": false
+          },
+          {
+            "glyph": "call-missed",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 4 messages sent, 1 call, 12 minutes, 1 missed call",
+        "rows": [
+          "e13",
+          "e18",
+          "e73",
+          "e47",
+          "e52"
+        ]
+      },
+      {
+        "key": "person-c",
+        "person": "person-c",
+        "name": "Person C",
+        "photo": "card-person-c",
+        "runs": [
+          {
+            "glyph": "call",
+            "value": "5m",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 call, 5 minutes",
+        "rows": [
+          "e71",
+          "e31"
+        ]
+      },
+      {
+        "key": "call:+15550000006",
+        "person": null,
+        "name": "+15550000006",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "call",
+            "value": "2m",
+            "quiet": false
+          }
+        ],
+        "spoken": "+15550000006, 1 call, 2 minutes",
+        "rows": [
+          "e50",
+          "e51"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "chat": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha",
+        "quiet": false,
+        "rows": [
+          "e43"
+        ],
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Group Alpha, 1 message sent"
+      },
+      {
+        "chat": "whatsapp:120363000000000009@g.us",
+        "title": "Group Gamma",
+        "quiet": true,
+        "rows": [
+          "e78"
+        ],
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "4",
+            "quiet": true
+          }
+        ],
+        "spoken": "Group Gamma, 4 messages received"
+      }
+    ],
+    "unreturned": [
+      {
+        "key": "e52",
+        "at_ms": 1930366680000,
+        "person": "person-a",
+        "name": "Person A"
+      }
+    ]
+  }
+}

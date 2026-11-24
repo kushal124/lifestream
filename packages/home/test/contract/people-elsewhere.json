@@ -1,0 +1,26 @@
+{
+  "matches": [],
+  "elsewhere": [
+    {
+      "as": "words",
+      "family": "messages",
+      "n": 14,
+      "first": "2020-01-05",
+      "last": "2020-08-17"
+    },
+    {
+      "as": "place",
+      "n": 3,
+      "first": "2025-06-01",
+      "last": "2025-06-03",
+      "ref": "place.WyJwbGFjZSIsImV4YW1wbGUtdG93biJd"
+    },
+    {
+      "as": "payee",
+      "family": "money",
+      "n": 1200,
+      "capped": true
+    }
+  ],
+  "as_of": "2026-11-14T22:10+00:00"
+}

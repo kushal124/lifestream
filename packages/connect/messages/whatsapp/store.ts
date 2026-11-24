@@ -1,0 +1,156 @@
+import type { MacStore } from "@lifestreamprotocol/connect/sdk";
+
+export const store = {
+  feeder: "whatsapp-mac",
+  name: "whatsapp",
+  held: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/ChatStorage.sqlite",
+  account: {
+    before: "@s.whatsapp.net",
+    digits: true,
+    key: "OwnJabberID",
+    plist: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Library/Preferences/group.net.whatsapp.WhatsApp.shared.plist",
+  },
+  spelled: false,
+  engine: {
+    kind: "sqlite",
+    stores: [
+      {
+        attachments: {
+          member: "media.json",
+          select: [
+            {
+              sql: "SELECT ZMEDIALOCALPATH FROM ZWAMEDIAITEM WHERE ZMEDIALOCALPATH IS NOT NULL AND ZMEDIALOCALPATH != ''",
+              when: "ZWAMEDIAITEM.ZMEDIALOCALPATH",
+            },
+            {
+              sql: "SELECT ZXMPPTHUMBPATH FROM ZWAMEDIAITEM WHERE ZXMPPTHUMBPATH IS NOT NULL AND ZXMPPTHUMBPATH != ''",
+              when: "ZWAMEDIAITEM.ZXMPPTHUMBPATH",
+            },
+            {
+              sql: "SELECT ZTHUMBNAILLOCALPATH FROM ZWAMEDIAITEM WHERE ZTHUMBNAILLOCALPATH IS NOT NULL AND ZTHUMBNAILLOCALPATH != ''",
+              when: "ZWAMEDIAITEM.ZTHUMBNAILLOCALPATH",
+            },
+          ],
+        },
+        file_root: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Message",
+        identity: "core-data",
+        member: "chats.sqlite",
+        path: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/ChatStorage.sqlite",
+        tables: [
+          {
+            keep: "Z_PK IN (WITH RECURSIVE up(k) AS (SELECT ZPARENTMESSAGE FROM ZWAMESSAGE WHERE Z_PK IN (SELECT t_key FROM temp.selected WHERE t_name = 'ZWAMESSAGE') UNION SELECT row.ZPARENTMESSAGE FROM ZWAMESSAGE AS row JOIN up ON row.Z_PK = up.k) SELECT k FROM up)",
+            key: "Z_PK",
+            name: "ZWAMESSAGE",
+            role: { main: { rows: "message rows", time: "NULLIF(ZMESSAGEDATE, 0) + 978307200" } },
+            touched_by: [
+              [
+                "ZWAMEDIAITEM",
+                "SELECT Z_PK AS k FROM ZWAMESSAGE WHERE ZMEDIAITEM IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAMEDIAITEM')",
+              ],
+              [
+                "ZWAGROUPMEMBER",
+                "SELECT Z_PK AS k FROM ZWAMESSAGE WHERE ZGROUPMEMBER IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAGROUPMEMBER')",
+              ],
+              [
+                "ZWAMESSAGEINFO",
+                "SELECT ZMESSAGE AS k FROM ZWAMESSAGEINFO WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAMESSAGEINFO')",
+              ],
+              [
+                "ZWAMESSAGEDATAITEM",
+                "SELECT ZMESSAGE AS k FROM ZWAMESSAGEDATAITEM WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAMESSAGEDATAITEM')",
+              ],
+            ],
+          },
+          {
+            files: ["ZMEDIALOCALPATH", "ZXMPPTHUMBPATH", "ZTHUMBNAILLOCALPATH"],
+            keep: "Z_PK IN (SELECT ZMEDIAITEM FROM ZWAMESSAGE)",
+            key: "Z_PK",
+            name: "ZWAMEDIAITEM",
+            role: "follows",
+          },
+          {
+            keep: "ZMESSAGE IN (SELECT Z_PK FROM ZWAMESSAGE)",
+            key: "Z_PK",
+            name: "ZWAMESSAGEINFO",
+            role: "follows",
+            when_declared: true,
+          },
+          {
+            keep: "ZMESSAGE IN (SELECT Z_PK FROM ZWAMESSAGE)",
+            key: "Z_PK",
+            name: "ZWAMESSAGEDATAITEM",
+            role: "follows",
+            when_declared: true,
+          },
+          {
+            keep: "Z_PK IN (SELECT ZCHATSESSION FROM ZWAMESSAGE)",
+            key: "Z_PK",
+            name: "ZWACHATSESSION",
+            role: "changes",
+            touched_by: [
+              [
+                "ZWAGROUPINFO",
+                "SELECT Z_PK AS k FROM ZWACHATSESSION WHERE ZGROUPINFO IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAGROUPINFO')",
+              ],
+            ],
+          },
+          {
+            keep: "Z_PK IN (SELECT ZGROUPINFO FROM ZWACHATSESSION)",
+            key: "Z_PK",
+            name: "ZWAGROUPINFO",
+            role: "changes",
+          },
+          {
+            keep: "Z_PK IN (SELECT ZGROUPMEMBER FROM ZWAMESSAGE)",
+            key: "Z_PK",
+            name: "ZWAGROUPMEMBER",
+            role: "follows",
+          },
+          { key: "Z_PK", name: "ZWAPROFILEPUSHNAME", role: "changes" },
+        ],
+      },
+      {
+        identity: "core-data",
+        member: "calls.sqlite",
+        optional: true,
+        path: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/CallHistory.sqlite",
+        tables: [
+          {
+            key: "Z_PK",
+            name: "ZWACDCALLEVENT",
+            role: "changes",
+            touched_by: [
+              [
+                "ZWAAGGREGATECALLEVENT",
+                "SELECT Z_PK AS k FROM ZWACDCALLEVENT WHERE Z1CALLEVENTS IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWAAGGREGATECALLEVENT')",
+              ],
+              [
+                "ZWACDCALLEVENTPARTICIPANT",
+                "SELECT Z_PK AS k FROM ZWACDCALLEVENT WHERE Z1CALLEVENTS IN (SELECT Z1PARTICIPANTS FROM ZWACDCALLEVENTPARTICIPANT WHERE Z_PK IN (SELECT t_key FROM temp.touched WHERE t_name = 'ZWACDCALLEVENTPARTICIPANT'))",
+              ],
+            ],
+          },
+          {
+            keep: "Z_PK IN (SELECT Z1CALLEVENTS FROM ZWACDCALLEVENT)",
+            key: "Z_PK",
+            name: "ZWAAGGREGATECALLEVENT",
+            role: "follows",
+          },
+          {
+            keep: "Z1PARTICIPANTS IN (SELECT Z1CALLEVENTS FROM ZWACDCALLEVENT)",
+            key: "Z_PK",
+            name: "ZWACDCALLEVENTPARTICIPANT",
+            role: "follows",
+          },
+        ],
+      },
+      {
+        identity: "core-data",
+        member: "business.sqlite",
+        optional: true,
+        path: "~/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Biz/Biz.sqlite",
+        tables: [{ key: "Z_PK", name: "ZWABIZVERIFIEDNAMEDATA", role: "changes" }],
+      },
+    ],
+  },
+} satisfies MacStore;

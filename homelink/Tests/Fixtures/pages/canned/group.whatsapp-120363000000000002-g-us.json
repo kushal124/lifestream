@@ -1,0 +1,289 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "head": {
+    "title": "Group Beta",
+    "photo": null,
+    "line": "WhatsApp group · 2 people",
+    "since": {
+      "at_ms": 1791968400000,
+      "kind": "at"
+    },
+    "word": "rule",
+    "quiet": false,
+    "why": null
+  },
+  "total": 369,
+  "writers": [
+    {
+      "id": "person:person-d",
+      "name": "Person D",
+      "named": true,
+      "photo": null,
+      "share": "103 messages"
+    },
+    {
+      "id": "phone:+15550000008",
+      "name": "Person F",
+      "named": true,
+      "photo": null,
+      "share": "35 messages"
+    }
+  ],
+  "yours": "58%",
+  "talk": {
+    "day": "2026-09-12",
+    "chat": "whatsapp:120363000000000002@g.us",
+    "title": "Group Beta",
+    "group": true,
+    "network": "WhatsApp",
+    "lines": [
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 1
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-0",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 2
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 5
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-12",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 6
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 9
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-24",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 10
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 13
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-36",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 14
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 17
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-48",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 18
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 21
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-60",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 22
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 25
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-72",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 26
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 29
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-84",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 30
+      },
+      {
+        "who": "person:person-d",
+        "name": "Person D",
+        "text": "synthetic line beta-D-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": false,
+        "n": 33
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-96",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 34
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-108",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 37
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-120",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 40
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-132",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 43
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-144",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 46
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-156",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 49
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-168",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 52
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-180",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 55
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-192",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 58
+      },
+      {
+        "who": "person:sam-example",
+        "name": "You",
+        "text": "synthetic line beta-me-204",
+        "forwarded": false,
+        "at_ms": 1791968400000,
+        "mine": true,
+        "n": 61
+      }
+    ],
+    "folded": [],
+    "focus": "a61"
+  },
+  "counting": false
+}

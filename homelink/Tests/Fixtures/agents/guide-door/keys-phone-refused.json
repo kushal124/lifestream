@@ -1,0 +1,32 @@
+{
+  "route": "POST /v1/agents/keys",
+  "request": {
+    "app": "grok-bot",
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "names",
+      "shown": []
+    }
+  },
+  "status": 403,
+  "answer": {
+    "code": "PERSON_ONLY",
+    "message": "Grok Bot runs on your Mac. Make its key in Lifestream there."
+  }
+}

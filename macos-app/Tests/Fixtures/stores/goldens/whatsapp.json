@@ -1,0 +1,115 @@
+{
+  "connector" : "whatsapp",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "whatsapp-mac",
+          "indexes" : {
+            "media.json" : {
+
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "chats.sqlite",
+            "media.json"
+          ],
+          "source_id" : "whatsapp:15550000002:macbook-pro-0001"
+        },
+        {
+          "feeder" : "whatsapp-mac",
+          "indexes" : {
+            "media.json" : {
+
+            }
+          },
+          "kind" : "history",
+          "members" : [
+            "chats.sqlite",
+            "media.json"
+          ],
+          "source_id" : "whatsapp:15550000002:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "whatsapp:15550000002:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "whatsapp:15550000002:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "whatsapp-mac",
+          "indexes" : {
+            "media.json" : {
+              "Media/15550000001-1700000000/new-small.jpg" : {
+                "bytes" : 15,
+                "sha256" : "41c04354ae220cad15f8241c3a3ee6c2e470b3c088582f1233df39bd8c279d52"
+              },
+              "Media/15550000001-1700000000/new.jpg" : {
+                "bytes" : 15,
+                "sha256" : "690758e29609deeb256114e268bd1ede8c4e77eb2406044e4943433a52a8598d"
+              },
+              "Media/15550000001-1700000000/new.thumb" : {
+                "bytes" : 15,
+                "sha256" : "e7d0b6b1e75a02f1b5af6f505d576194c9255b4bb804e556ba7ba7a20e4fca59"
+              }
+            }
+          },
+          "kind" : "changes",
+          "members" : [
+            "chats.sqlite",
+            "media.json",
+            "calls.sqlite",
+            "business.sqlite",
+            "blobs/41c04354ae220cad15f8241c3a3ee6c2e470b3c088582f1233df39bd8c279d52",
+            "blobs/690758e29609deeb256114e268bd1ede8c4e77eb2406044e4943433a52a8598d",
+            "blobs/e7d0b6b1e75a02f1b5af6f505d576194c9255b4bb804e556ba7ba7a20e4fca59"
+          ],
+          "source_id" : "whatsapp:15550000001:macbook-pro-0001"
+        },
+        {
+          "feeder" : "whatsapp-mac",
+          "indexes" : {
+            "media.json" : {
+
+            }
+          },
+          "kind" : "history",
+          "members" : [
+            "chats.sqlite",
+            "media.json"
+          ],
+          "source_id" : "whatsapp:15550000001:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "whatsapp:15550000001:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "whatsapp:15550000001:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "whatsapp"
+}

@@ -1,0 +1,50 @@
+{
+  "route": "POST /v1/agents/answer",
+  "request": {
+    "id": "c2lnbi1pbi0wMDAwMDAwMQ",
+    "answer": 42,
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": [
+              "health",
+              "money"
+            ]
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": {
+        "past_ms": 86400000
+      },
+      "hide": "names",
+      "shown": []
+    }
+  },
+  "status": 200,
+  "answer": {
+    "state": "approved",
+    "version": null,
+    "outcome": [
+      {
+        "kind": "words",
+        "words": "Allowed on iPhone,"
+      },
+      {
+        "kind": "time",
+        "time": {
+          "kind": "clock",
+          "at_ms": 1794646800000
+        }
+      }
+    ],
+    "reader": null,
+    "connected": null
+  }
+}

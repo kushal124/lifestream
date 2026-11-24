@@ -1,0 +1,319 @@
+{
+  "you": {
+    "also_called": [
+      {
+        "from": "You added",
+        "name": "Sammy"
+      }
+    ],
+    "by": "registry",
+    "call_name": "Sam",
+    "card": false,
+    "chats": [],
+    "days_count": 0,
+    "entity": "person",
+    "entity_by": "you",
+    "first_ms": null,
+    "full_name": "Sam Example",
+    "handles": [
+      {
+        "from": "Your iMessage and WhatsApp",
+        "id": "phone:+15550000001",
+        "kind": "phone",
+        "network": null,
+        "own": true,
+        "words": "+15550000001"
+      },
+      {
+        "from": "Your Gmail",
+        "id": "email:sam@example.com",
+        "kind": "email",
+        "network": null,
+        "own": true,
+        "words": "sam@example.com"
+      }
+    ],
+    "hidden": false,
+    "id": "person:sam-example",
+    "last_30": 0,
+    "last_day": 0,
+    "last_ms": null,
+    "mails_from": 0,
+    "mails_to": 0,
+    "me": true,
+    "name": "Sam",
+    "networks": [],
+    "organised": true,
+    "person": "sam-example",
+    "photo": null,
+    "received": 0,
+    "relationship": null,
+    "score": 0,
+    "sent": 0,
+    "show": "name",
+    "suggested": 2
+  },
+  "me": {
+    "also_called": [
+      {
+        "from": "You added",
+        "name": "Sammy"
+      }
+    ],
+    "by": "registry",
+    "call_name": "Sam",
+    "card": false,
+    "chats": [],
+    "days": {},
+    "days_count": 0,
+    "entity": "person",
+    "entity_by": "you",
+    "first_ms": null,
+    "full_name": "Sam Example",
+    "handles": [
+      {
+        "from": "Your iMessage and WhatsApp",
+        "id": "phone:+15550000001",
+        "kind": "phone",
+        "network": null,
+        "own": true,
+        "words": "+15550000001"
+      },
+      {
+        "from": "Your Gmail",
+        "id": "email:sam@example.com",
+        "kind": "email",
+        "network": null,
+        "own": true,
+        "words": "sam@example.com"
+      }
+    ],
+    "hidden": false,
+    "id": "person:sam-example",
+    "joined": [],
+    "last_30": 0,
+    "last_day": 0,
+    "last_ms": null,
+    "mails_from": 0,
+    "mails_to": 0,
+    "me": true,
+    "name": "Sam",
+    "names_seen": [],
+    "networks": [],
+    "organised": true,
+    "person": "sam-example",
+    "photo": null,
+    "received": 0,
+    "record": {
+      "also_called": [
+        "Sammy"
+      ],
+      "anchor": null,
+      "dismissed": [],
+      "entity": "person",
+      "excluded": [],
+      "full_name": "Sam Example",
+      "handles": [],
+      "hidden": false,
+      "me": true,
+      "merged_into": null,
+      "name": "Sam",
+      "relationship": null,
+      "show": "name",
+      "slug": "sam-example",
+      "type": "people.person"
+    },
+    "relationship": null,
+    "score": 0,
+    "sent": 0,
+    "show": "name",
+    "suggestions": [
+      {
+        "id": "e3d23a3dff0badb5",
+        "kind": "handle",
+        "reasons": {
+          "mails_from": 1,
+          "mails_to": 0
+        },
+        "ticked": true,
+        "value": "email:sam.example@example.org"
+      },
+      {
+        "id": "0d39aad5934e50b3",
+        "kind": "same",
+        "reasons": {
+          "linked": 0,
+          "named": 1,
+          "seen": 0
+        },
+        "ticked": false,
+        "value": "sam-b"
+      }
+    ]
+  },
+  "person": {
+    "also_called": [
+      {
+        "from": "You added",
+        "name": "Big Riley"
+      },
+      {
+        "from": "Contacts",
+        "name": "Bear"
+      }
+    ],
+    "by": "registry",
+    "call_name": "Riley",
+    "card": true,
+    "chats": [
+      {
+        "count": 2,
+        "key": "whatsapp:15550000021@s.whatsapp.net"
+      },
+      {
+        "count": 1,
+        "key": "imessage:+15550000021"
+      }
+    ],
+    "days": {
+      "2026-10-01": 4
+    },
+    "days_count": 1,
+    "details": {
+      "birthday": {
+        "day": 3,
+        "month": 2,
+        "year": null
+      },
+      "profiles": [],
+      "work": "Synthetic Works"
+    },
+    "entity": "person",
+    "entity_by": "you",
+    "first_ms": 1790848800000,
+    "full_name": "Riley Example",
+    "handles": [
+      {
+        "from": "You added",
+        "id": "phone:+15550000021",
+        "kind": "phone",
+        "network": null,
+        "own": false,
+        "words": "+15550000021"
+      },
+      {
+        "from": "You added",
+        "id": "phone:+15550000023",
+        "kind": "phone",
+        "network": null,
+        "own": false,
+        "words": "+15550000023"
+      },
+      {
+        "from": "Contacts",
+        "id": "phone:+15550000024",
+        "kind": "phone",
+        "network": null,
+        "own": false,
+        "words": "+15550000024"
+      },
+      {
+        "from": "You added",
+        "id": "email:riley@work.example",
+        "kind": "email",
+        "network": null,
+        "own": false,
+        "words": "riley@work.example"
+      }
+    ],
+    "hidden": false,
+    "id": "person:riley",
+    "joined": [
+      {
+        "handles": [
+          "phone:+15550000022",
+          "phone:+15550000023",
+          "email:riley@work.example"
+        ],
+        "id": "person:riley-work",
+        "name": "Riley Work",
+        "photo": null,
+        "with": [
+          "Riley Old"
+        ]
+      },
+      {
+        "handles": [
+          "phone:+15550000023"
+        ],
+        "id": "person:riley-old",
+        "name": "Riley Old",
+        "photo": null,
+        "with": []
+      }
+    ],
+    "last_30": 4,
+    "last_day": 4,
+    "last_ms": 1790848980000,
+    "mails_from": 0,
+    "mails_to": 0,
+    "me": false,
+    "name": "Riley",
+    "names_seen": [
+      "Riley Work"
+    ],
+    "networks": [
+      "imessage",
+      "whatsapp"
+    ],
+    "organised": true,
+    "person": "riley",
+    "photo": null,
+    "received": 3,
+    "record": {
+      "also_called": [
+        "Big Riley"
+      ],
+      "anchor": {
+        "kind": "phone",
+        "value": "+15550000021"
+      },
+      "dismissed": [],
+      "entity": "person",
+      "excluded": [
+        {
+          "kind": "phone",
+          "value": "+15550000022"
+        }
+      ],
+      "full_name": "Riley Example",
+      "handles": [],
+      "hidden": false,
+      "me": false,
+      "merged_into": null,
+      "name": "Riley",
+      "relationship": null,
+      "show": "name",
+      "slug": "riley",
+      "type": "people.person"
+    },
+    "relationship": null,
+    "score": 5,
+    "sent": 1,
+    "show": "name",
+    "suggestions": [
+      {
+        "id": "892dcaac9ee75093",
+        "kind": "same",
+        "reasons": {
+          "linked": 0,
+          "named": 1,
+          "seen": 0
+        },
+        "ticked": false,
+        "value": "phone:+15550000022"
+      }
+    ],
+    "work": "Synthetic Works"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "route": "GET /v1/agents/<id>/history",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "figure": {
+      "today": 4,
+      "words": "reads today",
+      "days": [
+        {
+          "day": "2026-11-08",
+          "words": "Sun",
+          "n": 0
+        },
+        {
+          "day": "2026-11-09",
+          "words": "Mon",
+          "n": 0
+        },
+        {
+          "day": "2026-11-10",
+          "words": "Tue",
+          "n": 0
+        },
+        {
+          "day": "2026-11-11",
+          "words": "Wed",
+          "n": 0
+        },
+        {
+          "day": "2026-11-12",
+          "words": "Thu",
+          "n": 0
+        },
+        {
+          "day": "2026-11-13",
+          "words": "Fri",
+          "n": 0
+        },
+        {
+          "day": "2026-11-14",
+          "words": "Sat",
+          "n": 4
+        }
+      ],
+      "said": [
+        {
+          "text": "Mostly your "
+        },
+        {
+          "text": "notes",
+          "bold": true
+        },
+        {
+          "text": ". Nothing from "
+        },
+        {
+          "text": "Health",
+          "bold": true
+        },
+        {
+          "text": ": Orbit can’t see it."
+        }
+      ]
+    },
+    "chips": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 4
+      }
+    ],
+    "kind": null,
+    "empty": null,
+    "sessions": [
+      {
+        "key": "s-1",
+        "from_ms": 1794652860000,
+        "to_ms": 1794653040000,
+        "calls": 1,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "1 read"
+        },
+        "reads": "1 read",
+        "lines": [
+          {
+            "kind": "call",
+            "id": "call-0000000000000001",
+            "at_ms": 1794652860000,
+            "words": "Searched for “running shoes”",
+            "kept": "18 details kept from it",
+            "tone": "plain",
+            "icon": "search",
+            "opens": true,
+            "line": "4 notes",
+            "more": 3,
+            "took_ms": 9,
+            "told": null
+          }
+        ]
+      },
+      {
+        "key": "c-48",
+        "from_ms": 1794652860000,
+        "to_ms": 1794652860000,
+        "calls": 0,
+        "day": {
+          "day": "2026-11-14",
+          "words": "Today",
+          "reads": "1 read"
+        },
+        "reads": null,
+        "lines": [
+          {
+            "kind": "change",
+            "at_ms": 1794652860000,
+            "icon": "private",
+            "words": "You allowed Orbit",
+            "line": "You · Everything but Health and Money · details hidden",
+            "ask": null,
+            "tone": "plain"
+          }
+        ]
+      }
+    ],
+    "next": null
+  }
+}

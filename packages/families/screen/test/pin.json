@@ -1,0 +1,14 @@
+{
+  "family": "screen",
+  "key": {
+    "code": "3",
+    "adapters": {
+      "screen/coast": "1",
+      "screen/input": "1",
+      "screen/machine": "1",
+      "screen/screen": "1"
+    }
+  },
+  "rows": 1,
+  "digest": "sha256:7d80efd0651f3d2481705cff2fc3c93feb0490e8132b74cf64abf653851b7613"
+}

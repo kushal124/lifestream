@@ -1,0 +1,15 @@
+{
+  "family": "ai",
+  "key": {
+    "code": "5",
+    "adapters": {
+      "ai/ask": "2",
+      "ai/chatgpt": "1",
+      "ai/claude": "1",
+      "ai/claude-code": "1",
+      "ai/codex": "1"
+    }
+  },
+  "rows": 4,
+  "digest": "sha256:304cca85f9cefc8f670f1be2ff9217bd45de4a673c44599c3fe8623d3d1677db"
+}

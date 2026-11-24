@@ -1,0 +1,2388 @@
+{
+  "chapters": [
+    {
+      "kind": "stay",
+      "episode": "e3",
+      "start_ms": 1930325400000,
+      "end_ms": 1930340400000,
+      "rows": [
+        "e1",
+        "e4",
+        "gap:1930334400000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930334400000",
+          "start_ms": 1930334400000,
+          "end_ms": 1930340400000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "1h 40m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Woke 06:30",
+          "firstRowId": "e1"
+        },
+        {
+          "text": "Strain",
+          "firstRowId": "e4"
+        }
+      ]
+    },
+    {
+      "kind": "move",
+      "episode": "e9",
+      "start_ms": 1930340400000,
+      "end_ms": 1930342200000,
+      "rows": [
+        "e10"
+      ],
+      "gaps": [],
+      "names": [
+        {
+          "text": "Spotify 26m",
+          "firstRowId": "e10"
+        }
+      ]
+    },
+    {
+      "kind": "stay",
+      "episode": "e12",
+      "start_ms": 1930342200000,
+      "end_ms": 1930357680000,
+      "rows": [
+        "e13",
+        "e15",
+        "e18",
+        "e19",
+        "e24",
+        "e27",
+        "e29",
+        "e31",
+        "e33",
+        "e34",
+        "e35",
+        "e36",
+        "gap:1930355400000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930355400000",
+          "start_ms": 1930355400000,
+          "end_ms": 1930357680000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "38m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e13"
+        },
+        {
+          "text": "Mac 2h 30m",
+          "firstRowId": "e15"
+        },
+        {
+          "text": "Claude Code",
+          "firstRowId": "e19"
+        },
+        {
+          "text": "Synthetic standup, daily",
+          "firstRowId": "e24"
+        },
+        {
+          "text": "Searched",
+          "firstRowId": "e27"
+        },
+        {
+          "text": "shop.example",
+          "firstRowId": "e29"
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e31"
+        },
+        {
+          "text": "Dictated",
+          "firstRowId": "e33"
+        },
+        {
+          "text": "Groceries",
+          "firstRowId": "e35"
+        },
+        {
+          "text": "Phone",
+          "firstRowId": "e36"
+        }
+      ],
+      "hours": [
+        {
+          "start_ms": 1930339800000,
+          "rows": [
+            "e13"
+          ],
+          "sent": 1,
+          "names": [
+            {
+              "text": "Person A",
+              "firstRowId": "e13"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930343400000,
+          "rows": [
+            "e15",
+            "e18",
+            "e19"
+          ],
+          "sent": 2,
+          "names": [
+            {
+              "text": "Mac 2h 30m",
+              "firstRowId": "e15"
+            },
+            {
+              "text": "Person A",
+              "firstRowId": "e18"
+            },
+            {
+              "text": "Claude Code",
+              "firstRowId": "e19"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930347000000,
+          "rows": [
+            "e24",
+            "e27",
+            "e29",
+            "e31"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Synthetic standup, daily",
+              "firstRowId": "e24"
+            },
+            {
+              "text": "Searched",
+              "firstRowId": "e27"
+            },
+            {
+              "text": "shop.example",
+              "firstRowId": "e29"
+            },
+            {
+              "text": "Person C",
+              "firstRowId": "e31"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930350600000,
+          "rows": [
+            "e33",
+            "e34",
+            "e35"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Dictated",
+              "firstRowId": "e33"
+            },
+            {
+              "text": "Searched",
+              "firstRowId": "e34"
+            },
+            {
+              "text": "Groceries",
+              "firstRowId": "e35"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930354200000,
+          "rows": [
+            "e36",
+            "gap:1930355400000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Phone",
+              "firstRowId": "e36"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "move",
+      "episode": "e37",
+      "start_ms": 1930357800000,
+      "end_ms": 1930358520000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e38",
+      "start_ms": 1930358520000,
+      "end_ms": 1930361100000,
+      "rows": [
+        "e39",
+        "gap:1930359000000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930359000000",
+          "start_ms": 1930359000000,
+          "end_ms": 1930361100000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "35m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": []
+    },
+    {
+      "kind": "none",
+      "episode": null,
+      "start_ms": 1930361100000,
+      "end_ms": 1930362600000,
+      "rows": [
+        "gap:1930361100000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930361100000",
+          "start_ms": 1930361100000,
+          "end_ms": 1930362600000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "25m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e42",
+      "start_ms": 1930362600000,
+      "end_ms": 1930365000000,
+      "rows": [
+        "e43",
+        "gap:1930363680000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930363680000",
+          "start_ms": 1930363680000,
+          "end_ms": 1930365000000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "22m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e43"
+        }
+      ]
+    },
+    {
+      "kind": "stay",
+      "episode": "e80",
+      "start_ms": 1930365000000,
+      "end_ms": 1930365000000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "none",
+      "episode": null,
+      "start_ms": 1930365000000,
+      "end_ms": 1930366800000,
+      "rows": [
+        "e47",
+        "e48",
+        "e49",
+        "e50",
+        "e51",
+        "e52"
+      ],
+      "gaps": [],
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e47"
+        },
+        {
+          "text": "Mail",
+          "firstRowId": "e48"
+        },
+        {
+          "text": "+15550000006",
+          "firstRowId": "e50"
+        }
+      ]
+    },
+    {
+      "kind": "move",
+      "episode": "e53",
+      "start_ms": 1930366800000,
+      "end_ms": 1930368000000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e56",
+      "start_ms": 1930368000000,
+      "end_ms": 1930411800000,
+      "rows": [
+        "e54",
+        "e57",
+        "gap:1930368900000",
+        "e58",
+        "gap:1930372260000",
+        "e59",
+        "e60",
+        "gap:1930378800000",
+        "e61",
+        "e62",
+        "e63",
+        "e83",
+        "e65",
+        "e81",
+        "e82",
+        "e67",
+        "e68",
+        "e69",
+        "e70",
+        "gap:1930389000000",
+        "e71",
+        "gap:1930390200000",
+        "e73",
+        "gap:1930403100000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1930368900000",
+          "start_ms": 1930368900000,
+          "end_ms": 1930372200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "55m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1930372260000",
+          "start_ms": 1930372260000,
+          "end_ms": 1930375800000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "59m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1930378800000",
+          "start_ms": 1930378800000,
+          "end_ms": 1930381200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "40m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1930389000000",
+          "start_ms": 1930389000000,
+          "end_ms": 1930390200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "20m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1930390200000",
+          "start_ms": 1930390200000,
+          "end_ms": 1930402800000,
+          "played": [
+            "e72"
+          ],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [
+              {
+                "type": "text",
+                "text": "Endel",
+                "tone": "secondary"
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Fall Asleep",
+                  "Settle In",
+                  "Nap"
+                ]
+              }
+            ],
+            "count": {
+              "text": "3h 30m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1930403100000",
+          "start_ms": 1930403100000,
+          "end_ms": 1930411800000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "2h 25m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Nap 20m",
+          "firstRowId": "e54"
+        },
+        {
+          "text": "Mail",
+          "firstRowId": "e57"
+        },
+        {
+          "text": "Voice note",
+          "firstRowId": "e58"
+        },
+        {
+          "text": "Running 45m",
+          "firstRowId": "e59"
+        },
+        {
+          "text": "Mac 40m",
+          "firstRowId": "e61"
+        },
+        {
+          "text": "Phone",
+          "firstRowId": "e62"
+        },
+        {
+          "text": "ChatGPT",
+          "firstRowId": "e63"
+        },
+        {
+          "text": "Dictated",
+          "firstRowId": "e65"
+        },
+        {
+          "text": "Claude Code",
+          "firstRowId": "e81"
+        },
+        {
+          "text": "Codex",
+          "firstRowId": "e82"
+        },
+        {
+          "text": "Check-in",
+          "firstRowId": "e67"
+        },
+        {
+          "text": "Plan",
+          "firstRowId": "e68"
+        },
+        {
+          "text": "Vigilance test",
+          "firstRowId": "e69"
+        },
+        {
+          "text": "news.example",
+          "firstRowId": "e70"
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e71"
+        },
+        {
+          "text": "Listening 43m",
+          "firstRowId": "e72"
+        },
+        {
+          "text": "Person A",
+          "firstRowId": "e73"
+        }
+      ],
+      "hours": [
+        {
+          "start_ms": 1930365000000,
+          "rows": [
+            "e54"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Nap 20m",
+              "firstRowId": "e54"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930368600000,
+          "rows": [
+            "e57",
+            "gap:1930368900000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Mail",
+              "firstRowId": "e57"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930372200000,
+          "rows": [
+            "e58",
+            "gap:1930372260000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Voice note",
+              "firstRowId": "e58"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930375800000,
+          "rows": [
+            "e59",
+            "e60",
+            "gap:1930378800000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Running 45m",
+              "firstRowId": "e59"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930379400000,
+          "rows": [
+            "e61"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Mac 40m",
+              "firstRowId": "e61"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930383000000,
+          "rows": [
+            "e62",
+            "e63",
+            "e83",
+            "e65",
+            "e81",
+            "e82"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Phone",
+              "firstRowId": "e62"
+            },
+            {
+              "text": "ChatGPT",
+              "firstRowId": "e63"
+            },
+            {
+              "text": "Dictated",
+              "firstRowId": "e65"
+            },
+            {
+              "text": "Claude Code",
+              "firstRowId": "e81"
+            },
+            {
+              "text": "Codex",
+              "firstRowId": "e82"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930386600000,
+          "rows": [
+            "e67",
+            "e68",
+            "e69",
+            "e70",
+            "gap:1930389000000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Check-in",
+              "firstRowId": "e67"
+            },
+            {
+              "text": "Plan",
+              "firstRowId": "e68"
+            },
+            {
+              "text": "Vigilance test",
+              "firstRowId": "e69"
+            },
+            {
+              "text": "news.example",
+              "firstRowId": "e70"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930390200000,
+          "rows": [
+            "e71",
+            "gap:1930390200000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Person C",
+              "firstRowId": "e71"
+            },
+            {
+              "text": "Listening 43m",
+              "firstRowId": "e72"
+            }
+          ]
+        },
+        {
+          "start_ms": 1930401000000,
+          "rows": [
+            "e73",
+            "gap:1930403100000"
+          ],
+          "sent": 1,
+          "names": [
+            {
+              "text": "Person A",
+              "firstRowId": "e73"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e1",
+      "kind": "sleep",
+      "family": "health",
+      "title": null,
+      "row": {
+        "name": "Woke",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "asleep 23:40–06:30 · WHOOP",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "6h 50m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930309800000,
+      "end_ms": 1930334400000,
+      "at_ms": 1930334400000,
+      "atoms": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "e3",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Home",
+      "row": {
+        "name": "Synthetic Home",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930325400000,
+      "end_ms": 1930340400000,
+      "at_ms": 1930325400000,
+      "atoms": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "e4",
+      "kind": "other",
+      "family": "health",
+      "title": "day strain 9.4, average heart rate 71, max 168, 9,120 kJ",
+      "row": {
+        "name": "Strain",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "9.4 · average heart rate 71 · max 168 · 9,120 kJ · WHOOP",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930334400000,
+      "end_ms": null,
+      "at_ms": 1930334400000,
+      "atoms": [
+        4
+      ]
+    },
+    {
+      "id": "e9",
+      "kind": "move",
+      "family": "physical",
+      "title": "Synthetic Home → Synthetic Office",
+      "row": {
+        "name": "Move 6.3 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930340400000,
+      "end_ms": 1930342200000,
+      "at_ms": 1930340400000,
+      "atoms": [
+        9,
+        11
+      ],
+      "mode": null
+    },
+    {
+      "id": "e10",
+      "kind": "listening",
+      "family": "listening",
+      "title": "Synthetic Song 1 by Artist P, Synthetic Song 2 by Artist Q",
+      "row": {
+        "name": "Spotify",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Artist P",
+              "Artist Q"
+            ]
+          }
+        ],
+        "count": {
+          "text": "2 tracks"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930340520000,
+      "end_ms": 1930342080000,
+      "at_ms": 1930340520000,
+      "atoms": [
+        10
+      ]
+    },
+    {
+      "id": "e12",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Office",
+      "row": {
+        "name": "Synthetic Office",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930342200000,
+      "end_ms": 1930357680000,
+      "at_ms": 1930342200000,
+      "atoms": [
+        12,
+        17
+      ]
+    },
+    {
+      "id": "e13",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1930342800000,
+      "end_ms": 1930343100000,
+      "at_ms": 1930342800000,
+      "atoms": [
+        13,
+        14
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e15",
+      "kind": "sitting",
+      "family": "screen",
+      "title": "Xcode 82 min, Safari 40 min, Terminal 12 min",
+      "row": {
+        "name": "Mac",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Xcode 1h 22m",
+              "Safari 40m",
+              "Terminal 12m"
+            ]
+          },
+          {
+            "type": "titles",
+            "items": [
+              "Editing the synthetic module in Xcode",
+              "Reading synthetic docs in Safari"
+            ]
+          }
+        ],
+        "count": {
+          "text": "2h 30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930343400000,
+      "end_ms": 1930352400000,
+      "at_ms": 1930343400000,
+      "atoms": [
+        15,
+        16,
+        25,
+        32
+      ]
+    },
+    {
+      "id": "e18",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic answer"
+          }
+        ],
+        "count": {
+          "sent": 2
+        },
+        "quiet": false
+      },
+      "start_ms": 1930344900000,
+      "end_ms": 1930345860000,
+      "at_ms": 1930344900000,
+      "atoms": [
+        18,
+        21,
+        22
+      ],
+      "count": 3,
+      "sent": 2,
+      "group": false
+    },
+    {
+      "id": "e19",
+      "kind": "ai",
+      "family": "ai",
+      "title": "Claude Code in project",
+      "row": {
+        "name": "Claude Code",
+        "note": "project",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Fix the synthetic test."
+          }
+        ],
+        "count": {
+          "text": "2 prompts"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930345200000,
+      "end_ms": 1930347000000,
+      "at_ms": 1930345200000,
+      "atoms": [
+        19,
+        20,
+        23
+      ],
+      "count": 2,
+      "folder": "project"
+    },
+    {
+      "id": "e24",
+      "kind": "event",
+      "family": "calendar",
+      "title": "Synthetic standup, daily",
+      "row": {
+        "name": "Synthetic standup, daily",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Calendar · organised by Person B · 3 attendees · accepted · video call",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "30m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930347000000,
+      "end_ms": 1930348800000,
+      "at_ms": 1930347000000,
+      "atoms": [
+        24
+      ]
+    },
+    {
+      "id": "e26",
+      "kind": "browsing",
+      "family": "web",
+      "title": "docs.example",
+      "row": {
+        "name": "docs.example",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic doc A"
+          },
+          {
+            "type": "quote",
+            "text": "Synthetic doc B"
+          }
+        ],
+        "count": {
+          "text": "1h 4m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930347960000,
+      "end_ms": 1930351800000,
+      "at_ms": 1930347960000,
+      "atoms": [
+        26
+      ],
+      "within": "e15"
+    },
+    {
+      "id": "e27",
+      "kind": "search",
+      "family": "web",
+      "title": "synthetic query",
+      "row": {
+        "name": "Searched",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "synthetic query"
+          },
+          {
+            "type": "quote",
+            "text": "synthetic query two"
+          },
+          {
+            "type": "quote",
+            "text": "a third synthetic query"
+          }
+        ],
+        "count": {
+          "text": "3 searches"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930348200000,
+      "end_ms": 1930349700000,
+      "at_ms": 1930348200000,
+      "atoms": [
+        27,
+        28,
+        30
+      ],
+      "count": 3
+    },
+    {
+      "id": "e29",
+      "kind": "browsing",
+      "family": "web",
+      "title": "shop.example",
+      "row": {
+        "name": "shop.example",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "A synthetic item"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930349400000,
+      "end_ms": null,
+      "at_ms": 1930349400000,
+      "atoms": [
+        29
+      ]
+    },
+    {
+      "id": "e31",
+      "kind": "call",
+      "family": "calls",
+      "title": "Person C",
+      "row": {
+        "name": "Person C",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Called you",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "5m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930350000000,
+      "end_ms": 1930350300000,
+      "at_ms": 1930350000000,
+      "atoms": [
+        31
+      ]
+    },
+    {
+      "id": "e33",
+      "kind": "dictation",
+      "family": "voice",
+      "title": "Synthetic dictated words.",
+      "row": {
+        "name": "Dictated",
+        "note": "to Editor",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic dictated words."
+          }
+        ],
+        "count": {
+          "text": "1 dictation"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930350900000,
+      "end_ms": null,
+      "at_ms": 1930350900000,
+      "atoms": [
+        33
+      ],
+      "count": 1
+    },
+    {
+      "id": "e34",
+      "kind": "search",
+      "family": "web",
+      "title": "a later synthetic query",
+      "row": {
+        "name": "Searched",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "a later synthetic query"
+          }
+        ],
+        "count": {
+          "text": "1 search"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930351500000,
+      "end_ms": null,
+      "at_ms": 1930351500000,
+      "atoms": [
+        34
+      ],
+      "count": 1
+    },
+    {
+      "id": "e35",
+      "kind": "note",
+      "family": "notes",
+      "title": "Groceries",
+      "row": {
+        "name": "Groceries",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "[x] milk"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930353000000,
+      "end_ms": 1930353900000,
+      "at_ms": 1930353000000,
+      "atoms": [
+        35
+      ]
+    },
+    {
+      "id": "e36",
+      "kind": "phone",
+      "family": "phone",
+      "title": "com.example.social 9 min, com.example.chat 6 min, com.example.notes <1 min",
+      "row": {
+        "name": "Phone",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Social",
+              "Chat",
+              "Notes"
+            ]
+          }
+        ],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930354200000,
+      "end_ms": 1930355400000,
+      "at_ms": 1930354200000,
+      "atoms": [
+        36
+      ]
+    },
+    {
+      "id": "e37",
+      "kind": "move",
+      "family": "physical",
+      "title": "Synthetic Office → Synthetic Cafe",
+      "row": {
+        "name": "Walk 0.9 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "12m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930357800000,
+      "end_ms": 1930358520000,
+      "at_ms": 1930357800000,
+      "atoms": [
+        37
+      ],
+      "mode": "walk"
+    },
+    {
+      "id": "e38",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Cafe",
+      "row": {
+        "name": "Synthetic Cafe",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930358520000,
+      "end_ms": 1930361100000,
+      "at_ms": 1930358520000,
+      "atoms": [
+        38
+      ]
+    },
+    {
+      "id": "e39",
+      "kind": "photos",
+      "family": "photos",
+      "title": null,
+      "row": {
+        "name": "Photos",
+        "note": "",
+        "words": [
+          {
+            "type": "tiles",
+            "photos": [
+              {
+                "item": "photo:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+                "hash": "sha256:e5a5555d73bc0e1568d65563abf327bd6c0b9b9dc3336e86e0b17e865e9ee6d2",
+                "at_ms": 1930359000000,
+                "video": false,
+                "duration_ms": null
+              },
+              {
+                "item": "photo:9b73ce2e5c72e9c8eb35ae3f509ef901b26ed3e9811f0782f3633cceab140918",
+                "hash": "sha256:9b73ce2e5c72e9c8eb35ae3f509ef901b26ed3e9811f0782f3633cceab140918",
+                "at_ms": 1930359030000,
+                "video": false,
+                "duration_ms": null
+              },
+              {
+                "item": "photo:73fb47247808eefa92140859d5aeee8955cca452b9f6873e67ecbeba9276a3f4",
+                "hash": "sha256:73fb47247808eefa92140859d5aeee8955cca452b9f6873e67ecbeba9276a3f4",
+                "at_ms": 1930359060000,
+                "video": false,
+                "duration_ms": null
+              }
+            ],
+            "more": 0
+          }
+        ],
+        "count": {
+          "text": "3 photos"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930359000000,
+      "end_ms": null,
+      "at_ms": 1930359000000,
+      "atoms": [
+        39,
+        40,
+        41
+      ],
+      "count": 3
+    },
+    {
+      "id": "e42",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic City",
+      "row": {
+        "name": "Synthetic City",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": true
+      },
+      "start_ms": 1930362600000,
+      "end_ms": 1930365000000,
+      "at_ms": 1930362600000,
+      "atoms": [
+        42
+      ]
+    },
+    {
+      "id": "e43",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Sent 1 photo",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1930363200000,
+      "end_ms": 1930363680000,
+      "at_ms": 1930363200000,
+      "atoms": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "count": 4,
+      "sent": 1,
+      "group": true
+    },
+    {
+      "id": "e47",
+      "kind": "call",
+      "family": "calls",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "You called",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "12m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930365300000,
+      "end_ms": 1930366020000,
+      "at_ms": 1930365300000,
+      "atoms": [
+        47
+      ]
+    },
+    {
+      "id": "e48",
+      "kind": "mail_sent",
+      "family": "mail",
+      "title": "Synthetic plan",
+      "row": {
+        "name": "Mail",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Sent",
+            "tone": "secondary"
+          },
+          {
+            "type": "quote",
+            "text": "Synthetic plan"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930365600000,
+      "end_ms": null,
+      "at_ms": 1930365600000,
+      "atoms": [
+        48
+      ]
+    },
+    {
+      "id": "e49",
+      "kind": "mail_received",
+      "family": "mail",
+      "title": null,
+      "row": {
+        "name": "2 mails",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Synthetic Bank",
+              "Synthetic Shop"
+            ]
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930365720000,
+      "end_ms": null,
+      "at_ms": 1930365720000,
+      "atoms": [
+        49,
+        55
+      ],
+      "count": 2
+    },
+    {
+      "id": "e50",
+      "kind": "call",
+      "family": "calls",
+      "title": "+15550000006",
+      "row": {
+        "name": "+15550000006",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Missed call",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930366200000,
+      "end_ms": null,
+      "at_ms": 1930366200000,
+      "atoms": [
+        50
+      ]
+    },
+    {
+      "id": "e51",
+      "kind": "call",
+      "family": "calls",
+      "title": "+15550000006",
+      "row": {
+        "name": "+15550000006",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "You called",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "2m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930366500000,
+      "end_ms": 1930366620000,
+      "at_ms": 1930366500000,
+      "atoms": [
+        51
+      ]
+    },
+    {
+      "id": "e52",
+      "kind": "call",
+      "family": "calls",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Missed call",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930366680000,
+      "end_ms": null,
+      "at_ms": 1930366680000,
+      "atoms": [
+        52
+      ]
+    },
+    {
+      "id": "e53",
+      "kind": "move",
+      "family": "physical",
+      "title": "Synthetic City → Synthetic Home",
+      "row": {
+        "name": "Drive 7.2 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930366800000,
+      "end_ms": 1930368000000,
+      "at_ms": 1930366800000,
+      "atoms": [
+        53
+      ],
+      "mode": "drive"
+    },
+    {
+      "id": "e54",
+      "kind": "sleep",
+      "family": "health",
+      "title": null,
+      "row": {
+        "name": "Nap",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "15:35–15:55",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930367100000,
+      "end_ms": 1930368300000,
+      "at_ms": 1930368300000,
+      "atoms": [
+        54
+      ]
+    },
+    {
+      "id": "e56",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Home",
+      "row": {
+        "name": "Synthetic Home",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930368000000,
+      "end_ms": 1930411800000,
+      "at_ms": 1930368000000,
+      "atoms": [
+        56
+      ]
+    },
+    {
+      "id": "e57",
+      "kind": "mail_received",
+      "family": "mail",
+      "title": null,
+      "row": {
+        "name": "1 mail",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Person B"
+            ]
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930368900000,
+      "end_ms": null,
+      "at_ms": 1930368900000,
+      "atoms": [
+        57
+      ],
+      "count": 1
+    },
+    {
+      "id": "e58",
+      "kind": "voice_note",
+      "family": "voice",
+      "title": "Remember to buy synthetic bread for tomorrow.",
+      "row": {
+        "name": "Voice note",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Remember to buy synthetic bread for tomorrow."
+          }
+        ],
+        "count": {
+          "text": "1m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930372200000,
+      "end_ms": 1930372260000,
+      "at_ms": 1930372200000,
+      "atoms": [
+        58
+      ]
+    },
+    {
+      "id": "e59",
+      "kind": "workout",
+      "family": "health",
+      "title": "running",
+      "row": {
+        "name": "Running",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "strain 11.2 · WHOOP",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "45m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930375800000,
+      "end_ms": 1930378500000,
+      "at_ms": 1930375800000,
+      "atoms": [
+        59
+      ]
+    },
+    {
+      "id": "e60",
+      "kind": "photos",
+      "family": "photos",
+      "title": null,
+      "row": {
+        "name": "Photo",
+        "note": "",
+        "words": [
+          {
+            "type": "tiles",
+            "photos": [
+              {
+                "item": "photo:e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1",
+                "hash": "sha256:e92d4919f74cf9d832a17364db8f1618988e54d676cc054b2b32d812dd256bc1",
+                "at_ms": 1930378800000,
+                "video": false,
+                "duration_ms": null
+              }
+            ],
+            "more": 0
+          }
+        ],
+        "count": {
+          "text": "1 photo"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930378800000,
+      "end_ms": null,
+      "at_ms": 1930378800000,
+      "atoms": [
+        60
+      ],
+      "count": 1
+    },
+    {
+      "id": "e61",
+      "kind": "sitting",
+      "family": "screen",
+      "title": "Mail 25 min, Notes 10 min",
+      "row": {
+        "name": "Mac",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Apps not counted yet",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "40m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930381200000,
+      "end_ms": 1930383600000,
+      "at_ms": 1930381200000,
+      "atoms": [
+        61
+      ]
+    },
+    {
+      "id": "e62",
+      "kind": "phone",
+      "family": "health",
+      "title": "Social 11 min, Reading 7 min",
+      "row": {
+        "name": "Phone",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Social",
+              "Reading"
+            ]
+          }
+        ],
+        "count": {
+          "text": "18m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930383000000,
+      "end_ms": 1930386600000,
+      "at_ms": 1930383000000,
+      "atoms": [
+        62
+      ]
+    },
+    {
+      "id": "e63",
+      "kind": "ai",
+      "family": "ai",
+      "title": "ChatGPT · Synthetic weekend",
+      "row": {
+        "name": "ChatGPT",
+        "note": "Synthetic weekend",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Plan a synthetic weekend."
+          }
+        ],
+        "count": {
+          "text": "1 prompt"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930384800000,
+      "end_ms": 1930384860000,
+      "at_ms": 1930384800000,
+      "atoms": [
+        63,
+        64
+      ],
+      "count": 2
+    },
+    {
+      "id": "e65",
+      "kind": "dictation",
+      "family": "voice",
+      "title": "Synthetic words for the agent.",
+      "row": {
+        "name": "Dictated",
+        "note": "to Claude Code",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic words for the agent."
+          },
+          {
+            "type": "quote",
+            "text": "And a second synthetic thought."
+          }
+        ],
+        "count": {
+          "text": "2 dictations"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930385400000,
+      "end_ms": 1930385580000,
+      "at_ms": 1930385400000,
+      "atoms": [
+        65,
+        66
+      ],
+      "count": 2
+    },
+    {
+      "id": "e67",
+      "kind": "check_in",
+      "family": "physical",
+      "title": null,
+      "row": {
+        "name": "Check-in",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "mood 4/5",
+              "energy 3/5"
+            ]
+          },
+          {
+            "type": "quote",
+            "text": "a synthetic note"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930386600000,
+      "end_ms": null,
+      "at_ms": 1930386600000,
+      "atoms": [
+        67
+      ]
+    },
+    {
+      "id": "e68",
+      "kind": "note",
+      "family": "notes",
+      "title": "Plan",
+      "row": {
+        "name": "Plan",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "1. first step 2. second step"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930387200000,
+      "end_ms": null,
+      "at_ms": 1930387200000,
+      "atoms": [
+        68
+      ]
+    },
+    {
+      "id": "e69",
+      "kind": "check_in",
+      "family": "physical",
+      "title": null,
+      "row": {
+        "name": "Vigilance test",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "20 responses",
+              "median 312 ms",
+              "1 lapse",
+              "0 false starts"
+            ]
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930387500000,
+      "end_ms": null,
+      "at_ms": 1930387500000,
+      "atoms": [
+        69
+      ]
+    },
+    {
+      "id": "e70",
+      "kind": "browsing",
+      "family": "web",
+      "title": "news.example",
+      "row": {
+        "name": "news.example",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic story"
+          }
+        ],
+        "count": {
+          "text": "10m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930388400000,
+      "end_ms": 1930389000000,
+      "at_ms": 1930388400000,
+      "atoms": [
+        70
+      ]
+    },
+    {
+      "id": "e71",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person C",
+      "row": {
+        "name": "Person C",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1930390200000,
+      "end_ms": null,
+      "at_ms": 1930390200000,
+      "atoms": [
+        71
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e72",
+      "kind": "listening",
+      "family": "listening",
+      "title": "Fall Asleep by Endel, Settle In by Endel, Nap by Endel in Endel",
+      "row": {
+        "name": "Listening",
+        "note": "",
+        "words": [
+          {
+            "type": "list",
+            "items": [
+              "Endel"
+            ]
+          }
+        ],
+        "count": {
+          "text": "3 tracks"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930393800000,
+      "end_ms": 1930396380000,
+      "at_ms": 1930393800000,
+      "atoms": [
+        72
+      ]
+    },
+    {
+      "id": "e73",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Use [name] in the template"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1930402800000,
+      "end_ms": 1930403100000,
+      "at_ms": 1930402800000,
+      "atoms": [
+        73,
+        79
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e74",
+      "kind": "event",
+      "family": "calendar",
+      "title": "Synthetic holiday",
+      "row": {
+        "name": "Synthetic holiday",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Calendar · all day",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        74
+      ]
+    },
+    {
+      "id": "e75",
+      "kind": "other",
+      "family": "health",
+      "title": "Activity: move 420 of 500 kcal, exercise 25 of 30 min, stand 10 of 12 h",
+      "row": {
+        "name": "Activity",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "move 420 of 500 kcal · exercise 25 of 30 min · stand 10 of 12 h · Health",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        75
+      ]
+    },
+    {
+      "id": "e76",
+      "kind": "payment",
+      "family": "money",
+      "title": "SYNTHETIC CAFE",
+      "row": {
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "−450.00 USD",
+            "tone": "secondary"
+          },
+          {
+            "type": "text",
+            "text": "SYNTHETIC CAFE",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        76
+      ]
+    },
+    {
+      "id": "e77",
+      "kind": "note",
+      "family": "notes",
+      "title": "Undated",
+      "row": {
+        "name": "Undated",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "a synthetic note with no time"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        77
+      ]
+    },
+    {
+      "id": "e78",
+      "kind": "other",
+      "family": "messages",
+      "title": "You were quiet in",
+      "row": {
+        "name": "Group Gamma",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 4
+        },
+        "quiet": true
+      },
+      "start_ms": null,
+      "end_ms": null,
+      "at_ms": null,
+      "atoms": [
+        78
+      ]
+    },
+    {
+      "id": "e80",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Kiosk",
+      "row": {
+        "name": "Synthetic Kiosk",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930365000000,
+      "end_ms": null,
+      "at_ms": 1930365000000,
+      "atoms": [
+        80
+      ]
+    },
+    {
+      "id": "e81",
+      "kind": "ai",
+      "family": "ai",
+      "title": "Claude Code in ~",
+      "row": {
+        "name": "Claude Code",
+        "note": "~",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Tidy the synthetic notes."
+          }
+        ],
+        "count": {
+          "text": "1 prompt"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930385700000,
+      "end_ms": null,
+      "at_ms": 1930385700000,
+      "atoms": [
+        81
+      ],
+      "count": 1,
+      "folder": "~"
+    },
+    {
+      "id": "e82",
+      "kind": "ai",
+      "family": "ai",
+      "title": "Codex in ~/Projects/example/.worktrees/blue-river-ab12",
+      "row": {
+        "name": "Codex",
+        "note": "example",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Rename the synthetic module."
+          }
+        ],
+        "count": {
+          "text": "1 prompt"
+        },
+        "quiet": false
+      },
+      "start_ms": 1930385760000,
+      "end_ms": null,
+      "at_ms": 1930385760000,
+      "atoms": [
+        82
+      ],
+      "count": 1,
+      "folder": "example"
+    },
+    {
+      "id": "e83",
+      "kind": "ai",
+      "family": "ai",
+      "title": "ChatGPT · Synthetic recap",
+      "row": {
+        "name": "ChatGPT",
+        "note": "Synthetic recap",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1930385100000,
+      "end_ms": null,
+      "at_ms": 1930385100000,
+      "atoms": [
+        83
+      ],
+      "count": 1
+    }
+  ],
+  "also": [
+    "e74",
+    "e75",
+    "e76",
+    "e77",
+    "e78"
+  ],
+  "all_day": [
+    "e74"
+  ],
+  "untimed": {
+    "rows": [
+      "e75",
+      "e76",
+      "e77",
+      "e78"
+    ],
+    "names": [
+      {
+        "text": "Activity",
+        "firstRowId": "e75"
+      },
+      {
+        "text": "Payment",
+        "firstRowId": "e76"
+      },
+      {
+        "text": "Undated",
+        "firstRowId": "e77"
+      },
+      {
+        "text": "Group Gamma",
+        "firstRowId": "e78"
+      }
+    ]
+  },
+  "plan": [],
+  "headings": [
+    2
+  ],
+  "figures": {
+    "asleep_ms": 24600000,
+    "steps": 0,
+    "places": 5,
+    "people": 4,
+    "mac_ms": 11400000,
+    "phone_ms": 1080000,
+    "recovery": 64,
+    "sent": 5,
+    "received": 6
+  },
+  "people": {
+    "contacts": [
+      {
+        "key": "whatsapp:15550000001@s.whatsapp.net",
+        "title": "Person A",
+        "sent": 4,
+        "received": 3,
+        "first_ms": 1930342800000
+      },
+      {
+        "key": "imessage:+15550000005",
+        "title": "Person C",
+        "sent": 0,
+        "received": 1,
+        "first_ms": 1930390200000
+      }
+    ],
+    "groups": [
+      {
+        "key": "whatsapp:120363000000000001@g.us",
+        "title": "Group Alpha"
+      }
+    ]
+  },
+  "updated": 1930411800000
+}

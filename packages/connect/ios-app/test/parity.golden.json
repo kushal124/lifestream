@@ -1,0 +1,1734 @@
+{
+  "sources": {
+    "camera:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "img",
+          "key": "00000000-0000-4000-8000-0000000000a1:1",
+          "content": {
+            "type": "camera.photo",
+            "content": {
+              "schema_version": 1,
+              "domain": "camera",
+              "kind": "photo",
+              "sequence": 1,
+              "observed_at": "2026-10-03T03:06:00.5Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "blob": {
+                  "hash": "sha256:69ccc5414a0097999c2dea368b457ff1080bc3306b81b881106796c041372889",
+                  "bytes": 43,
+                  "type": "image/heic",
+                  "role": "photo"
+                },
+                "orientation": 1
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996760500,
+            "precision": "s"
+          }
+        }
+      ],
+      "second": [
+        {
+          "kind": "img",
+          "key": "00000000-0000-4000-8000-0000000000a1:2",
+          "content": {
+            "type": "camera.photo",
+            "content": {
+              "schema_version": 1,
+              "domain": "camera",
+              "kind": "photo",
+              "sequence": 2,
+              "observed_at": "2026-10-03T04:06:00.5Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "blob": {
+                  "hash": "sha256:f6b1e7a8d9d4b222896b9ff43f00b97c963fa89ea9fddf43f6edd4f6fe6d98ee",
+                  "bytes": 43,
+                  "type": "image/heic",
+                  "role": "photo"
+                },
+                "orientation": 6
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1791000360500,
+            "precision": "s"
+          }
+        }
+      ]
+    },
+    "checkin:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "report",
+          "key": "00000000-0000-4000-8000-0000000000a1:2",
+          "content": {
+            "type": "checkin.report",
+            "content": {
+              "schema_version": 1,
+              "domain": "checkin",
+              "kind": "report",
+              "sequence": 2,
+              "observed_at": "2026-10-03T03:31:10Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T09:00:00.5+05:30",
+                "wall_unix_seconds": 1790998200.5,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "form": "moment",
+                "form_version": 1,
+                "prompt_id": "20000000-0000-4000-8000-000000000001",
+                "trigger": "random",
+                "opened_at": "2026-10-03T03:31:00Z",
+                "answered_at": "2026-10-03T03:31:10Z",
+                "local_zone": "Etc/GMT-3",
+                "response_ms": 10000,
+                "changes": 1,
+                "awake_for_s": 3600,
+                "wake_source": "default",
+                "block_id": null,
+                "items": [
+                  {
+                    "id": "energy",
+                    "question": "How much energy?",
+                    "scale": 5,
+                    "anchors": [
+                      "none",
+                      "plenty"
+                    ],
+                    "value": 3
+                  },
+                  {
+                    "id": "satisfaction",
+                    "question": "How satisfied?",
+                    "scale": 10,
+                    "anchors": [
+                      "not",
+                      "very"
+                    ],
+                    "value": 0
+                  }
+                ],
+                "note": "a synthetic note"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790998270000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "vigilance",
+          "key": "00000000-0000-4000-8000-0000000000a1:3",
+          "content": {
+            "type": "checkin.vigilance",
+            "content": {
+              "schema_version": 1,
+              "domain": "checkin",
+              "kind": "vigilance",
+              "sequence": 3,
+              "observed_at": "2026-10-03T03:35:00Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T09:00:00.5+05:30",
+                "wall_unix_seconds": 1790998200.5,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "protocol": "pvt-b-3min-v1",
+                "duration_ms": 180000,
+                "isi_ms": [
+                  2000,
+                  10000
+                ],
+                "lapse_threshold_ms": 500,
+                "false_start_under_ms": 100,
+                "timeout_ms": 30000,
+                "prompt_id": null,
+                "trigger": "manual",
+                "started_at": "2026-10-03T03:35:00Z",
+                "ended_at": "2026-10-03T03:38:00Z",
+                "completed": true,
+                "session_number": 1,
+                "awake_for_s": null,
+                "wake_source": null,
+                "device": {
+                  "model": "iPhoneSynthetic,1",
+                  "os": "SyntheticOS 1.0",
+                  "refresh_hz": 120,
+                  "low_power": false
+                },
+                "trials": [
+                  {
+                    "n": 1,
+                    "isi_ms": 3500,
+                    "stimulus_ms": 3500,
+                    "response_ms": 3790.25,
+                    "rt_ms": 290.25,
+                    "class": "response"
+                  },
+                  {
+                    "n": 2,
+                    "isi_ms": 2100,
+                    "stimulus_ms": null,
+                    "response_ms": null,
+                    "rt_ms": null,
+                    "class": null
+                  }
+                ],
+                "interruptions": [
+                  {
+                    "at_ms": 1200,
+                    "reason": "background"
+                  }
+                ]
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790998500000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "prompt",
+          "key": "00000000-0000-4000-8000-0000000000a1:4",
+          "content": {
+            "type": "checkin.prompt",
+            "content": {
+              "schema_version": 1,
+              "domain": "checkin",
+              "kind": "prompt",
+              "sequence": 4,
+              "observed_at": "2026-10-03T03:40:00Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T09:00:00.5+05:30",
+                "wall_unix_seconds": 1790998200.5,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "prompt_id": "20000000-0000-4000-8000-000000000001",
+                "form": "moment",
+                "trigger": "random",
+                "scheduled_for": "2026-10-03T03:40:00Z",
+                "window_start": "2026-10-03T03:40:00Z",
+                "window_end": "2026-10-03T04:10:00Z",
+                "event": "delivered"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790998800000,
+            "precision": "s"
+          }
+        }
+      ]
+    },
+    "apple-contacts:synthetic-account:iphone-aa01": {
+      "first": [
+        {
+          "kind": "contact",
+          "key": "C0000000-0000-4000-8000-00000000000A:ABPerson",
+          "content": {
+            "type": "contacts.card",
+            "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:-//Synthetic Inc.//Synthetic OS 1.0//EN\r\nN:A;Person;;;\r\nFN:Person A\r\nTEL;type=CELL:+15550000001\r\nEMAIL;type=INTERNET:person-a@example.com\r\nEND:VCARD\r\n",
+            "photo": {
+              "hash": "sha256:d300d4a7bd9e1fad97bfa6cc5447e033de6a58fa11f1e457f254bce99eadcf85",
+              "bytes": 41,
+              "media_type": "image/heic"
+            }
+          },
+          "time": null
+        },
+        {
+          "kind": "contact",
+          "key": "C0000000-0000-4000-8000-00000000000B:ABPerson",
+          "content": {
+            "type": "contacts.card",
+            "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:-//Synthetic Inc.//Synthetic OS 1.0//EN\r\nN:B;Person;;;\r\nFN:Person B\r\nTEL;type=CELL:+15550000002\r\nEND:VCARD\r\n"
+          },
+          "time": null
+        },
+        {
+          "kind": "contact",
+          "key": "C0000000-0000-4000-8000-00000000000C:ABPerson",
+          "content": {
+            "type": "contacts.card",
+            "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:-//Synthetic Inc.//Synthetic OS 1.0//EN\r\nN:C;Person;;;\r\nFN:Person C\r\nTEL;type=CELL:+15550000003\r\nEND:VCARD\r\n"
+          },
+          "time": null
+        }
+      ],
+      "second": [
+        {
+          "kind": "contact",
+          "key": "C0000000-0000-4000-8000-00000000000A:ABPerson",
+          "content": {
+            "type": "contacts.card",
+            "card": "BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:-//Synthetic Inc.//Synthetic OS 1.0//EN\r\nN:A;Person;;;\r\nFN:Person A Edited\r\nTEL;type=CELL:+15550000001\r\nEMAIL;type=INTERNET:person-a@example.com\r\nEND:VCARD\r\n",
+            "photo": {
+              "hash": "sha256:d300d4a7bd9e1fad97bfa6cc5447e033de6a58fa11f1e457f254bce99eadcf85",
+              "bytes": 41,
+              "media_type": "image/heic"
+            }
+          },
+          "time": null
+        },
+        {
+          "kind": "contact",
+          "key": "C0000000-0000-4000-8000-00000000000C:ABPerson",
+          "gone": true
+        }
+      ]
+    },
+    "apple-health:synthetic-account:cloud": {
+      "first": [
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000001",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000001",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:00:00Z",
+            "value": "72",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996400000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "416268519e4c",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:00:00Z",
+            "value": "72",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996400000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000002",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000002",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:09:59Z",
+            "value": "120",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996999000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "e60860f5bab9",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:09:59Z",
+            "value": "120",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996999000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000003",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000003",
+            "sample_type": "HKCategoryTypeIdentifierSleepAnalysis",
+            "start": "2026-10-02T20:00:00Z",
+            "end": "2026-10-02T21:30:00Z",
+            "value": "HKCategoryValueSleepAnalysisAsleepCore",
+            "unit": "",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790971200000,
+            "end_ms": 1790976600000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "3baa65df1d13",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKCategoryTypeIdentifierSleepAnalysis",
+            "start": "2026-10-02T20:00:00Z",
+            "end": "2026-10-02T21:30:00Z",
+            "value": "HKCategoryValueSleepAnalysisAsleepCore",
+            "unit": "",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {}
+          },
+          "time": {
+            "start_ms": 1790971200000,
+            "end_ms": 1790976600000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000004",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000004",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:02:00Z",
+            "end": "2026-10-03T03:02:00Z",
+            "value": "79",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996520000,
+            "end_ms": 1790996520000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "bd813c80f44c",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:02:00Z",
+            "end": "2026-10-03T03:02:00Z",
+            "value": "79",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKMetadataKeyHeartRateMotionContext": 0
+            }
+          },
+          "time": {
+            "start_ms": 1790996520000,
+            "end_ms": 1790996520000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000303",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000303",
+            "sample_type": "HKQuantityTypeIdentifierWalkingSpeed",
+            "start": "2026-10-03T03:01:00Z",
+            "end": "2026-10-03T03:01:09Z",
+            "value": "1.1176",
+            "unit": "m/s",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996460000,
+            "end_ms": 1790996469000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000305",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000305",
+            "sample_type": "HKQuantityTypeIdentifierWalkingSpeed",
+            "start": "2026-10-03T03:01:00Z",
+            "end": "2026-10-03T03:01:09Z",
+            "value": "1.1176",
+            "unit": "m/s",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996460000,
+            "end_ms": 1790996469000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "9b3e5d0ed945",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierWalkingSpeed",
+            "start": "2026-10-03T03:01:00Z",
+            "end": "2026-10-03T03:01:09Z",
+            "value": "1.1176",
+            "unit": "m/s",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKMetadataKeySyncVersion": 2
+            }
+          },
+          "time": {
+            "start_ms": 1790996460000,
+            "end_ms": 1790996469000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000404",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000404",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:05:00Z",
+            "end": "2026-10-03T03:06:00Z",
+            "value": "33",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996700000,
+            "end_ms": 1790996760000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:13",
+          "content": {
+            "type": "health.recorder",
+            "content": {
+              "domain": "health",
+              "kind": "recorder_event",
+              "sequence": 13,
+              "captured": {
+                "wall_rfc3339": "2026-10-03T03:27:00.125Z"
+              },
+              "payload": {
+                "event": "synthetic_sweep_completed",
+                "detail": {
+                  "samples": 9,
+                  "deletions": 3
+                }
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790998020125,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000601",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000601",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:10:00Z",
+            "end": "2026-10-03T03:11:00Z",
+            "value": "40",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790997000000,
+            "end_ms": 1790997060000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "208e9b5c9528",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:10:00Z",
+            "end": "2026-10-03T03:11:00Z",
+            "value": "40",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790997000000,
+            "end_ms": 1790997060000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000602",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000602",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:10:00Z",
+            "end": "2026-10-03T03:11:00Z",
+            "value": "40",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790997000000,
+            "end_ms": 1790997060000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "208e9b5c9528",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierStepCount",
+            "start": "2026-10-03T03:10:00Z",
+            "end": "2026-10-03T03:11:00Z",
+            "value": "40",
+            "unit": "count",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790997000000,
+            "end_ms": 1790997060000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000303",
+          "gone": true
+        },
+        {
+          "kind": "sample",
+          "key": "689d93b5f3f6",
+          "gone": true
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000404",
+          "gone": true
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000999",
+          "gone": true
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000777",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000777",
+            "sample_type": "HKWorkoutTypeIdentifier",
+            "start": "2026-10-03T02:00:00Z",
+            "end": "2026-10-03T02:30:00Z",
+            "value": "HKWorkoutActivityTypeRunning",
+            "unit": "",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790992800000,
+            "end_ms": 1790994600000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "workout",
+          "key": "1ce45280fce7",
+          "content": {
+            "type": "health.workout",
+            "sample_type": "HKWorkoutTypeIdentifier",
+            "start": "2026-10-03T02:00:00Z",
+            "end": "2026-10-03T02:30:00Z",
+            "value": "HKWorkoutActivityTypeRunning",
+            "unit": "",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            },
+            "detail": {
+              "duration_s": "1795.5",
+              "distance": "4012.5 m",
+              "energy": "251.25 kcal",
+              "statistics": [
+                {
+                  "type": "HKQuantityTypeIdentifierHeartRate",
+                  "start": "2026-10-03T02:00:00Z",
+                  "end": "2026-10-03T02:30:00Z",
+                  "sum": null,
+                  "average": "144",
+                  "minimum": "90",
+                  "maximum": "171",
+                  "unit": "count/min"
+                }
+              ],
+              "events": [
+                {
+                  "type": "HKWorkoutEventTypePause",
+                  "start": "2026-10-03T02:10:00Z",
+                  "duration_s": "0",
+                  "metadata": {}
+                },
+                {
+                  "type": "HKWorkoutEventTypeSegment",
+                  "start": "2026-10-03T02:00:00Z",
+                  "duration_s": "900",
+                  "metadata": {
+                    "HKMetadataKeySyncVersion": 1
+                  }
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1790992800000,
+            "end_ms": 1790994600000,
+            "precision": "s"
+          }
+        }
+      ],
+      "second": [
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000001",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000001",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:00:00Z",
+            "value": "72",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996400000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "416268519e4c",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierHeartRate",
+            "start": "2026-10-03T03:00:00Z",
+            "end": "2026-10-03T03:00:00Z",
+            "value": "72",
+            "unit": "count/min",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790996400000,
+            "end_ms": 1790996400000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000005",
+          "content": {
+            "type": "health.sample-uuid",
+            "uuid": "10000000-0000-4000-8000-000000000005",
+            "sample_type": "HKQuantityTypeIdentifierHeartRateVariabilitySDNN",
+            "start": "2026-10-02T21:33:00Z",
+            "end": "2026-10-02T21:34:00Z",
+            "value": "41.2346",
+            "unit": "ms",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1"
+          },
+          "time": {
+            "start_ms": 1790976780000,
+            "end_ms": 1790976840000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "ee50e0ffd60e",
+          "content": {
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierHeartRateVariabilitySDNN",
+            "start": "2026-10-02T21:33:00Z",
+            "end": "2026-10-02T21:34:00Z",
+            "value": "41.2346",
+            "unit": "ms",
+            "source_name": "Synthetic Health Source",
+            "source_version": "9.1",
+            "device": {
+              "hardware_model": "SyntheticWatch1,1",
+              "software_version": "9.1"
+            },
+            "metadata": {
+              "HKWasUserEntered": false,
+              "HKMetadataKeyTimeZone": "Etc/GMT-3"
+            }
+          },
+          "time": {
+            "start_ms": 1790976780000,
+            "end_ms": 1790976840000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "e60860f5bab9",
+          "gone": true
+        },
+        {
+          "kind": "sample-uuid",
+          "key": "10000000-0000-4000-8000-000000000002",
+          "gone": true
+        }
+      ]
+    },
+    "location:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "fix",
+          "key": "00000000-0000-4000-8000-0000000000a1:41",
+          "content": {
+            "type": "location.fix",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "fix",
+              "sequence": 41,
+              "observed_at": "2026-10-03T02:01:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:01:07.125+05:30",
+                "wall_unix_seconds": 1791001867.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "latitude": 0.5,
+                "longitude": -0.25,
+                "altitude": 3.5,
+                "horizontal_accuracy": 12.25,
+                "vertical_accuracy": 4,
+                "speed": -1,
+                "course": -1,
+                "timestamp_unix_seconds": 1791001867.125
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994667125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "fix",
+          "key": "00000000-0000-4000-8000-0000000000a1:42",
+          "content": {
+            "type": "location.fix",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "fix",
+              "sequence": 42,
+              "observed_at": "2026-10-03T02:02:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:02:07.125+05:30",
+                "wall_unix_seconds": 1791001927.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "latitude": 0.5001,
+                "longitude": -0.25,
+                "altitude": 3.5,
+                "horizontal_accuracy": 12.25,
+                "vertical_accuracy": 4,
+                "speed": -1,
+                "course": -1,
+                "timestamp_unix_seconds": 1791001927.125
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994727125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "gap",
+          "key": "00000000-0000-4000-8000-0000000000a1:43",
+          "content": {
+            "type": "location.gap",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "gap",
+              "sequence": 43,
+              "observed_at": "2026-10-03T02:03:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:03:07.125+05:30",
+                "wall_unix_seconds": 1791001987.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "start": "2026-10-03T02:02:07.125Z",
+                "end": "2026-10-03T02:03:01.5Z",
+                "reason": "unknown_process_absence",
+                "reason_evidence": "inferred",
+                "expected_coverage": "process_absence"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790992927125,
+            "end_ms": 1790992981500,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:44",
+          "content": {
+            "type": "location.recorder",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "recorder_event",
+              "sequence": 44,
+              "observed_at": "2026-10-03T02:04:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:04:07.125+05:30",
+                "wall_unix_seconds": 1791002047.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "event": "significant_change_started"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994847125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:45",
+          "content": {
+            "type": "location.recorder",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "lifecycle",
+              "sequence": 45,
+              "observed_at": "2026-10-03T02:05:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:05:07.125+05:30",
+                "wall_unix_seconds": 1791002107.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "event": "app_backgrounded"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994907125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "fix",
+          "key": "00000000-0000-4000-8000-0000000000a1:46",
+          "content": {
+            "type": "location.fix",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "fix",
+              "sequence": 46,
+              "observed_at": "2026-10-03T02:06:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:06:07.125+05:30",
+                "wall_unix_seconds": 1791002167.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "latitude": 0.5002,
+                "longitude": -0.25,
+                "altitude": 3.5,
+                "horizontal_accuracy": 12.25,
+                "vertical_accuracy": 4,
+                "speed": -1,
+                "course": -1,
+                "timestamp_unix_seconds": 1791002167.125
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994967125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        }
+      ],
+      "second": [
+        {
+          "kind": "fix",
+          "key": "00000000-0000-4000-8000-0000000000a1:47",
+          "content": {
+            "type": "location.fix",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "fix",
+              "sequence": 47,
+              "observed_at": "2026-10-03T02:07:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:07:07.125+05:30",
+                "wall_unix_seconds": 1791002227.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "latitude": 0.5003,
+                "longitude": -0.25,
+                "altitude": 3.5,
+                "horizontal_accuracy": 12.25,
+                "vertical_accuracy": 4,
+                "speed": -1,
+                "course": -1,
+                "timestamp_unix_seconds": 1791002227.125
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790995027125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "fix",
+          "key": "00000000-0000-4000-8000-0000000000a1:48",
+          "content": {
+            "type": "location.fix",
+            "content": {
+              "schema_version": 1,
+              "domain": "location",
+              "kind": "fix",
+              "sequence": 48,
+              "observed_at": "2026-10-03T02:08:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:08:07.125+05:30",
+                "wall_unix_seconds": 1791002287.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "latitude": 0.5004,
+                "longitude": -0.25,
+                "altitude": 3.5,
+                "horizontal_accuracy": 12.25,
+                "vertical_accuracy": 4,
+                "speed": -1,
+                "course": -1,
+                "timestamp_unix_seconds": 1791002287.125
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790995087125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        }
+      ]
+    },
+    "motion:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "motion",
+          "key": "00000000-0000-4000-8000-0000000000a1:7",
+          "content": {
+            "type": "motion.activity",
+            "content": {
+              "schema_version": 1,
+              "domain": "motion",
+              "kind": "activity",
+              "sequence": 7,
+              "observed_at": "2026-10-03T02:01:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:01:07.125+05:30",
+                "wall_unix_seconds": 1791001867.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "start": "2026-10-03T02:00:00Z",
+                "activity": "walking",
+                "confidence": "high"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994667125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "sample",
+          "key": "00000000-0000-4000-8000-0000000000a1:8",
+          "content": {
+            "type": "motion.pedometer-day",
+            "content": {
+              "schema_version": 1,
+              "domain": "motion",
+              "kind": "pedometer_day",
+              "sequence": 8,
+              "observed_at": "2026-10-03T02:02:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:02:07.125+05:30",
+                "wall_unix_seconds": 1791001927.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "day": "2026-10-02",
+                "steps": 5012,
+                "distance_m": 3810.5,
+                "floors_ascended": 3
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994727125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:9",
+          "content": {
+            "type": "motion.recorder",
+            "content": {
+              "schema_version": 1,
+              "domain": "motion",
+              "kind": "recorder_event",
+              "sequence": 9,
+              "observed_at": "2026-10-03T02:03:07.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:03:07.125+05:30",
+                "wall_unix_seconds": 1791001987.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "event": "history_backfilled",
+                "count": 2
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790994787125,
+            "offset_min": 330,
+            "precision": "ms"
+          }
+        }
+      ]
+    },
+    "apple-photos:synthetic-account:iphone-aa01": {
+      "first": [
+        {
+          "kind": "img",
+          "key": "AAAAAAAA-0000-4000-8000-000000000001/L0/001:20261003T031105.123451Z",
+          "content": {
+            "type": "photos.apple.asset",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000001/L0/001",
+              "modification_date": "2026-10-03T08:41:05.1234510+05:30",
+              "creation_date": "2026-10-03T03:10:00.5Z",
+              "media_type": "image",
+              "media_subtypes": 0,
+              "pixel_width": 4032,
+              "pixel_height": 3024,
+              "location": null,
+              "favorite": false,
+              "hidden": false,
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0001.JPG",
+                  "blob": {
+                    "hash": "sha256:a71f3d0fff2775e8df4c025c10028f0de418a2dfb15ec913f6e3605d0abeb336",
+                    "bytes": 38,
+                    "type": "image/jpeg",
+                    "role": "original"
+                  }
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1790997000500,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "img",
+          "key": "AAAAAAAA-0000-4000-8000-000000000002/L0/001:20261003T031205.123452Z",
+          "content": {
+            "type": "photos.apple.asset",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000002/L0/001",
+              "modification_date": "2026-10-03T08:42:05.1234520+05:30",
+              "creation_date": "2026-10-03T03:11:00Z",
+              "media_type": "video",
+              "media_subtypes": 0,
+              "pixel_width": 4032,
+              "pixel_height": 3024,
+              "location": null,
+              "favorite": false,
+              "hidden": false,
+              "resources": [
+                {
+                  "type": "video",
+                  "type_raw": 2,
+                  "uti": "com.apple.quicktime-movie",
+                  "original_filename": "IMG_0002.MOV",
+                  "blob": null,
+                  "not_local": true
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1790997060000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "img",
+          "key": "AAAAAAAA-0000-4000-8000-000000000003/L0/001:20261003T031305.123453Z",
+          "content": {
+            "type": "photos.apple.asset",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000003/L0/001",
+              "modification_date": "2026-10-03T08:43:05.1234530+05:30",
+              "creation_date": "2026-08-01T03:00:00Z",
+              "media_type": "image",
+              "media_subtypes": 0,
+              "pixel_width": 4032,
+              "pixel_height": 3024,
+              "location": null,
+              "favorite": false,
+              "hidden": false,
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0003.JPG",
+                  "blob": null,
+                  "not_local": true
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1785553200000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "img",
+          "key": "AAAAAAAA-0000-4000-8000-000000000004/L0/001:20261003T031405.123454Z",
+          "content": {
+            "type": "photos.apple.asset",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000004/L0/001",
+              "modification_date": "2026-10-03T08:44:05.1234540+05:30",
+              "creation_date": null,
+              "media_type": "image",
+              "media_subtypes": 0,
+              "pixel_width": 4032,
+              "pixel_height": 3024,
+              "location": null,
+              "favorite": false,
+              "hidden": false,
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0004.JPG",
+                  "blob": null,
+                  "not_local": true
+                }
+              ]
+            }
+          },
+          "time": null
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:5",
+          "content": {
+            "type": "photos.apple.recorder",
+            "content": {
+              "domain": "photos",
+              "kind": "sweep",
+              "sequence": 5,
+              "captured": {
+                "wall_rfc3339": "2026-10-03T09:35:00.5+05:30"
+              },
+              "payload": {
+                "assets_seen": 5,
+                "complete": true
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1791000300500,
+            "offset_min": 330,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "img",
+          "key": "AAAAAAAA-0000-4000-8000-000000000005/L0/001:20261003T031505.123455Z",
+          "content": {
+            "type": "photos.apple.asset",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000005/L0/001",
+              "modification_date": "2026-10-03T08:45:05.1234550+05:30",
+              "creation_date": "2026-10-03T03:15:00Z",
+              "media_type": "image",
+              "media_subtypes": 0,
+              "pixel_width": 4032,
+              "pixel_height": 3024,
+              "location": null,
+              "favorite": false,
+              "hidden": false,
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0005.JPG",
+                  "blob": null,
+                  "not_local": true
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1790997300000,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "img-file",
+          "key": "AAAAAAAA-0000-4000-8000-000000000005/L0/001:20261003T031505.123455Z:sha256:97e96977c9abd68487960138c62b265538c58f548b748f8cbd32afa38d11e073",
+          "content": {
+            "type": "photos.apple.availability",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000005/L0/001",
+              "modification_date": "2026-10-03T08:45:05.1234550+05:30",
+              "snapshot_replay_key": "photos:AAAAAAAA-0000-4000-8000-000000000005/L0/001:2026-10-03T08:45:05.1234550+05:30",
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0005.JPG",
+                  "blob": {
+                    "hash": "sha256:8e1e168304ca025bc7b1f85ba75cd971ded049c0a879f10b0b592469ee302f7f",
+                    "bytes": 50,
+                    "type": "image/jpeg",
+                    "role": "original"
+                  }
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1791000600500,
+            "offset_min": 330,
+            "precision": "s"
+          }
+        }
+      ],
+      "second": [
+        {
+          "kind": "img-file",
+          "key": "AAAAAAAA-0000-4000-8000-000000000001/L0/001:20261003T031105.123451Z:sha256:5978337ec8d040557746e47800e82678f3c313e01b7d0d654a5fa7eefec979c8",
+          "content": {
+            "type": "photos.apple.availability",
+            "content": {
+              "local_identifier": "AAAAAAAA-0000-4000-8000-000000000001/L0/001",
+              "modification_date": "2026-10-03T08:41:05.1234510+05:30",
+              "snapshot_replay_key": "photos:AAAAAAAA-0000-4000-8000-000000000001/L0/001:2026-10-03T08:41:05.1234510+05:30",
+              "resources": [
+                {
+                  "type": "photo",
+                  "type_raw": 1,
+                  "uti": "public.jpeg",
+                  "original_filename": "IMG_0001.JPG",
+                  "blob": {
+                    "hash": "sha256:a71f3d0fff2775e8df4c025c10028f0de418a2dfb15ec913f6e3605d0abeb336",
+                    "bytes": 38,
+                    "type": "image/jpeg",
+                    "role": "original"
+                  }
+                },
+                {
+                  "type": "full_size_photo",
+                  "type_raw": 5,
+                  "uti": "public.jpeg",
+                  "original_filename": "FullSizeRender.jpg",
+                  "blob": {
+                    "hash": "sha256:d80caa157de1d8666023790ab6f6de341400230a15b72997e8a2717f0dcc6a80",
+                    "bytes": 49,
+                    "type": "image/jpeg",
+                    "role": "full_size_photo"
+                  }
+                }
+              ]
+            }
+          },
+          "time": {
+            "start_ms": 1791000600500,
+            "offset_min": 330,
+            "precision": "s"
+          }
+        }
+      ]
+    },
+    "screen-time:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "usage",
+          "key": "00000000-0000-4000-8000-0000000000a1:1",
+          "content": {
+            "type": "usage.segment",
+            "content": {
+              "schema_version": 1,
+              "domain": "usage",
+              "kind": "activity_segment",
+              "sequence": 1,
+              "observed_at": "2026-10-03T03:00:00.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "data": {
+                  "dateInterval": {
+                    "start": {
+                      "rfc3339": "2026-10-03T02:00:00Z",
+                      "unix_seconds": 1790992800
+                    },
+                    "end": {
+                      "rfc3339": "2026-10-03T02:15:00.5Z",
+                      "unix_seconds": 1790993700.5
+                    }
+                  },
+                  "category": "synthetic.productivity"
+                },
+                "segmentInterval": {
+                  "during": {
+                    "start": "2026-10-03T00:00:00Z",
+                    "end": "2026-10-04T00:00:00Z"
+                  }
+                }
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790992800000,
+            "end_ms": 1790993700500,
+            "precision": "s"
+          }
+        },
+        {
+          "kind": "catalog",
+          "key": "00000000-0000-4000-8000-0000000000a1:2",
+          "content": {
+            "type": "usage.catalog",
+            "content": {
+              "schema_version": 1,
+              "domain": "usage",
+              "kind": "activity_catalog",
+              "sequence": 2,
+              "observed_at": "2026-10-03T03:00:01.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "day": "2026-10-02",
+                "tokens": [
+                  "token-a",
+                  "token-b"
+                ]
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996401125,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "usage-event",
+          "key": "00000000-0000-4000-8000-0000000000a1:3",
+          "content": {
+            "type": "usage.event",
+            "content": {
+              "schema_version": 1,
+              "domain": "usage",
+              "kind": "shortcut_marker",
+              "sequence": 3,
+              "observed_at": "2026-10-03T03:00:02.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "capture_replay_key": "shortcut:1",
+              "payload": {
+                "marker": "focus_on"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996402125,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "usage-event",
+          "key": "00000000-0000-4000-8000-0000000000a1:4",
+          "content": {
+            "type": "usage.event",
+            "content": {
+              "schema_version": 1,
+              "domain": "usage",
+              "kind": "monitor_callback",
+              "sequence": 4,
+              "observed_at": "2026-10-03T03:00:03.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "activity": "synthetic.daily",
+                "event": "intervalDidStart"
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996403125,
+            "precision": "ms"
+          }
+        },
+        {
+          "kind": "recorder",
+          "key": "00000000-0000-4000-8000-0000000000a1:5",
+          "content": {
+            "type": "usage.recorder",
+            "content": {
+              "schema_version": 1,
+              "domain": "usage",
+              "kind": "usage_acquisition",
+              "sequence": 5,
+              "observed_at": "2026-10-03T03:00:04.125Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "started": true
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996404125,
+            "precision": "ms"
+          }
+        }
+      ]
+    },
+    "voice-notes:local:iphone-aa01": {
+      "first": [
+        {
+          "kind": "voice",
+          "key": "00000000-0000-4000-8000-0000000000a1:1",
+          "content": {
+            "type": "voice.note",
+            "content": {
+              "schema_version": 1,
+              "domain": "voice",
+              "kind": "voice_note",
+              "sequence": 1,
+              "observed_at": "2026-10-03T03:05:00.5Z",
+              "captured": {
+                "wall_rfc3339": "2026-10-03T08:30:00.125+05:30",
+                "wall_unix_seconds": 1791003600.125,
+                "elapsed_seconds": 1000.5
+              },
+              "process_instance_id": "00000000-0000-4000-8000-0000000000c1",
+              "payload": {
+                "duration_s": 4.5,
+                "blob": {
+                  "hash": "sha256:a4f4e92b254edf82e6e94e5317bfb61f5a08a4509ec1918c3facfbaf834c5c7d",
+                  "bytes": 40,
+                  "type": "audio/mp4",
+                  "role": "voice_note"
+                }
+              }
+            }
+          },
+          "time": {
+            "start_ms": 1790996700500,
+            "precision": "s"
+          }
+        }
+      ]
+    }
+  }
+}

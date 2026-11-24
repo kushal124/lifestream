@@ -1,0 +1,267 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-31",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa01/1793368440000@1793399400000",
+      "kind": "stay",
+      "episode": "e2",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "6h 28m"
+      },
+      "start_ms": 1793399400000,
+      "end_ms": 1793422680000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1793422680000@1793422680000",
+      "kind": "move",
+      "episode": "e3",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1793422680000,
+      "end_ms": 1793423880000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1793423880000@1793423880000",
+      "kind": "stay",
+      "episode": "e5",
+      "head": {
+        "title": "Near Home",
+        "line": "1.8 km away",
+        "place": "spot:37.3187,-122.009",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 22m"
+      },
+      "start_ms": 1793423880000,
+      "end_ms": 1793428800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1793428800000@1793428800000",
+      "kind": "move",
+      "episode": "e6",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1793428800000,
+      "end_ms": 1793430000000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1793430000000@1793430000000",
+      "kind": "stay",
+      "episode": "e8",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "15h 30m"
+      },
+      "start_ms": 1793430000000,
+      "end_ms": 1793485800000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person A",
+          "first_row": "e9",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1793430000000@1793430000000#run",
+          "kind": "run",
+          "start_ms": 1793430000000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e9",
+              "kind": "conversation",
+              "at_ms": 1793446200000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "resting today",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550000001@s.whatsapp.net:a-2026-10-31-10200",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1793485800000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "sent",
+        "value": "1",
+        "words": "message sent"
+      },
+      {
+        "key": "received",
+        "value": "1",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 79080000,
+        "length": "21h 58m",
+        "spoken": "Home, 21 hours 58 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e2",
+          "e8"
+        ]
+      },
+      {
+        "key": "spot:37.3187,-122.009",
+        "slug": null,
+        "name": "Near Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4920000,
+        "length": "1h 22m",
+        "spoken": "Near Home, 1 hour 22 minutes",
+        "point": {
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e5"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "phone:+15550000001",
+        "person": "phone:+15550000001",
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 1 message sent",
+        "rows": [
+          "e9"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

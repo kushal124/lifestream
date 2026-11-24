@@ -1,0 +1,114 @@
+[
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-BLANK-FIRST",
+    "content": {
+      "end_ms": null,
+      "excerpt": "after the blank",
+      "key": "NOTE-BLANK-FIRST",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791039600000,
+      "title": "Blank first",
+      "trashed": false,
+      "words": 5
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-BROKEN",
+    "content": {
+      "end_ms": null,
+      "excerpt": "the preview Notes kept",
+      "key": "NOTE-BROKEN",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791036000000,
+      "title": "Broken synthetic",
+      "trashed": false,
+      "words": 4
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-CUT-TITLE",
+    "content": {
+      "end_ms": null,
+      "excerpt": "A synthetic first line that Notes cut short as its title\nmore",
+      "key": "NOTE-CUT-TITLE",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791043200000,
+      "title": "A synthetic first line that Notes cut…",
+      "trashed": false,
+      "words": 12
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-GROCERIES",
+    "content": {
+      "end_ms": 1791033600000,
+      "excerpt": "😀 fake list\n[x] synthetic milk\n[ ] synthetic eggs\n[ ] synthetic bread",
+      "key": "NOTE-GROCERIES",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791032400000,
+      "title": "Groceries",
+      "trashed": false,
+      "words": 10
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-LOCKED",
+    "content": {
+      "end_ms": 1791061500000,
+      "excerpt": "",
+      "key": "NOTE-LOCKED",
+      "locked": true,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791061200000,
+      "title": "Synthetic secret",
+      "trashed": false,
+      "words": 0
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-PLAN",
+    "content": {
+      "end_ms": 1791052200000,
+      "excerpt": "1. first synthetic step\n2. second synthetic step\n  - nested bullet\n3. third synthetic step",
+      "key": "NOTE-PLAN",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1789916400000,
+      "title": "Plan",
+      "trashed": false,
+      "words": 12
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-SKETCH",
+    "content": {
+      "end_ms": null,
+      "excerpt": "see [image] and [drawing]\nalso [link: https://example.com/synthetic]\n[attachment: synthetic file.bin]",
+      "key": "NOTE-SKETCH",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791057600000,
+      "title": "Sketches",
+      "trashed": false,
+      "words": 11
+    }
+  },
+  {
+    "unit": "apple-notes:person-a@example.com/NOTE-TRASH",
+    "content": {
+      "end_ms": 1791065400000,
+      "excerpt": "draft text",
+      "key": "NOTE-TRASH",
+      "locked": false,
+      "source": "apple-notes:person-a@example.com:macbook-pro-0001",
+      "start_ms": 1791064800000,
+      "title": "Old synthetic draft",
+      "trashed": true,
+      "words": 5
+    }
+  }
+]

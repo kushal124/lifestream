@@ -1,0 +1,364 @@
+[
+  {
+    "kind": "sample",
+    "key": "41c21d13a108",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierHeartRate",
+      "start": "2026-10-03T03:00:00Z",
+      "end": "2026-10-03T03:00:00Z",
+      "value": "72",
+      "unit": "count/min",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "9.1",
+      "device": {
+        "hardware_model": "SyntheticWatch1,1",
+        "software_version": "9.1"
+      },
+      "metadata": {
+        "HKMetadataKeyHeartRateMotionContext": 0
+      }
+    },
+    "time": {
+      "start_ms": 1790996400000,
+      "end_ms": 1790996400000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "2f9a7ae46755",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierStepCount",
+      "start": "2026-10-03T03:00:00Z",
+      "end": "2026-10-03T03:09:59Z",
+      "value": "120",
+      "unit": "count",
+      "source_name": "Synthetic Phone",
+      "source_version": "9.1",
+      "device": {
+        "hardware_model": "SyntheticPhone9,9",
+        "software_version": "9.1"
+      },
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790996400000,
+      "end_ms": 1790996999000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "223e32a2ef3f",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierActiveEnergyBurned",
+      "start": "2026-10-03T03:10:00Z",
+      "end": "2026-10-03T03:11:00Z",
+      "value": "1.23457",
+      "unit": "kcal",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "9.1",
+      "device": {
+        "hardware_model": "SyntheticWatch1,1",
+        "software_version": "9.1"
+      },
+      "metadata": {
+        "HKMetadataKeySyncVersion": 2,
+        "HKWasUserEntered": true
+      }
+    },
+    "time": {
+      "start_ms": 1790997000000,
+      "end_ms": 1790997060000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "9267efbce18f",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierWalkingSpeed",
+      "start": "2026-10-03T03:11:00Z",
+      "end": "2026-10-03T03:11:09Z",
+      "value": "1.1176",
+      "unit": "m/s",
+      "source_name": "Synthetic Phone",
+      "source_version": "9.1",
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790997060000,
+      "end_ms": 1790997069000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "2bb17c5ec3c3",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierWalkingStepLength",
+      "start": "2026-10-03T03:11:00Z",
+      "end": "2026-10-03T03:11:09Z",
+      "value": "0.6985",
+      "unit": "m",
+      "source_name": "Synthetic Phone",
+      "source_version": "9.1",
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790997060000,
+      "end_ms": 1790997069000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "5ae958dced73",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierOxygenSaturation",
+      "start": "2026-10-03T03:00:00Z",
+      "end": "2026-10-03T03:00:00Z",
+      "value": "97",
+      "unit": "percent",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "9.1",
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790996400000,
+      "end_ms": 1790996400000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "63e9d56fdf37",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKCategoryTypeIdentifierSleepAnalysis",
+      "start": "2026-10-02T20:00:00Z",
+      "end": "2026-10-02T21:30:00Z",
+      "value": "HKCategoryValueSleepAnalysisAsleepCore",
+      "unit": "",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "9.1",
+      "metadata": {
+        "HKMetadataKeyTimeZone": "Etc/GMT-3"
+      }
+    },
+    "time": {
+      "start_ms": 1790971200000,
+      "end_ms": 1790976600000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "f85dc8a8467e",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierHeartRateVariabilitySDNN",
+      "start": "2026-10-03T03:19:00Z",
+      "end": "2026-10-03T03:20:00Z",
+      "value": "41.2346",
+      "unit": "ms",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "9.1",
+      "device": {
+        "hardware_model": "SyntheticWatch1,1",
+        "software_version": "9.1"
+      },
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790997540000,
+      "end_ms": 1790997600000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "b9c70d2d117a",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKQuantityTypeIdentifierFlightsClimbed",
+      "start": "2026-10-03T03:25:00Z",
+      "end": "2026-10-03T03:26:00Z",
+      "value": "2",
+      "unit": "count",
+      "source_name": "Synthetic & Co",
+      "source_version": "",
+      "metadata": {}
+    },
+    "time": {
+      "start_ms": 1790997900000,
+      "end_ms": 1790997960000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "day-summary",
+    "key": "20261002",
+    "content": {
+      "type": "health.day-summary",
+      "date": "2026-10-02",
+      "active_energy_burned": "512.25",
+      "active_energy_burned_goal": "600",
+      "active_energy_unit": "kcal",
+      "move_time": "0",
+      "move_time_goal": "0",
+      "exercise_time": "31",
+      "exercise_time_goal": "30",
+      "stand_hours": "10",
+      "stand_hours_goal": "12"
+    },
+    "time": {
+      "start_ms": 1790899200000,
+      "end_ms": 1790985600000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "day-summary",
+    "key": "20261003",
+    "content": {
+      "type": "health.day-summary",
+      "date": "2026-10-03",
+      "active_energy_burned": "101.123",
+      "active_energy_burned_goal": "600",
+      "active_energy_unit": "kcal",
+      "move_time": "0",
+      "move_time_goal": "0",
+      "exercise_time": "5",
+      "exercise_time_goal": "30",
+      "stand_hours": "2",
+      "stand_hours_goal": "12"
+    },
+    "time": {
+      "start_ms": 1790985600000,
+      "end_ms": 1791072000000,
+      "precision": "day"
+    }
+  },
+  {
+    "kind": "sample",
+    "key": "9efec8eda60c",
+    "content": {
+      "type": "health.sample",
+      "sample_type": "HKCorrelationTypeIdentifierBloodPressure",
+      "start": "2026-10-03T03:30:00Z",
+      "end": "2026-10-03T03:30:00Z",
+      "value": "",
+      "unit": "",
+      "source_name": "Synthetic Cuff",
+      "source_version": "",
+      "metadata": {},
+      "detail": {
+        "objects": [
+          {
+            "key": "9be71d1bf011",
+            "type": "health.sample",
+            "sample_type": "HKQuantityTypeIdentifierBloodPressureSystolic",
+            "start": "2026-10-03T03:30:00Z",
+            "end": "2026-10-03T03:30:00Z",
+            "value": "118",
+            "unit": "mmHg",
+            "source_name": "Synthetic Cuff",
+            "source_version": "",
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1790998200000,
+      "end_ms": 1790998200000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "workout",
+    "key": "89a426f3c55c",
+    "content": {
+      "type": "health.workout",
+      "sample_type": "HKWorkoutTypeIdentifier",
+      "start": "2026-10-03T01:30:00Z",
+      "end": "2026-10-03T02:00:00Z",
+      "value": "HKWorkoutActivityTypeWalking",
+      "unit": "",
+      "source_name": "Synthetic Wätch ✓",
+      "source_version": "",
+      "metadata": {},
+      "detail": {
+        "duration_s": "1800",
+        "distance": null,
+        "energy": null,
+        "statistics": [],
+        "events": [
+          {
+            "type": "HKWorkoutEventTypeSegment",
+            "start": "2026-10-03T01:30:00Z",
+            "duration_s": "0",
+            "metadata": {}
+          }
+        ]
+      }
+    },
+    "time": {
+      "start_ms": 1790991000000,
+      "end_ms": 1790992800000,
+      "precision": "s"
+    }
+  },
+  {
+    "kind": "characteristic",
+    "key": "HKCharacteristicTypeIdentifierDateOfBirth",
+    "content": {
+      "type": "health.characteristic",
+      "identifier": "HKCharacteristicTypeIdentifierDateOfBirth",
+      "value": "1990-01-01"
+    }
+  },
+  {
+    "kind": "characteristic",
+    "key": "HKCharacteristicTypeIdentifierBiologicalSex",
+    "content": {
+      "type": "health.characteristic",
+      "identifier": "HKCharacteristicTypeIdentifierBiologicalSex",
+      "value": null
+    }
+  },
+  {
+    "kind": "characteristic",
+    "key": "HKCharacteristicTypeIdentifierBloodType",
+    "content": {
+      "type": "health.characteristic",
+      "identifier": "HKCharacteristicTypeIdentifierBloodType",
+      "value": "HKBloodTypeOPositive"
+    }
+  },
+  {
+    "kind": "characteristic",
+    "key": "HKCharacteristicTypeIdentifierFitzpatrickSkinType",
+    "content": {
+      "type": "health.characteristic",
+      "identifier": "HKCharacteristicTypeIdentifierFitzpatrickSkinType",
+      "value": null
+    }
+  },
+  {
+    "kind": "characteristic",
+    "key": "HKCharacteristicTypeIdentifierCardioFitnessMedicationsUse",
+    "content": {
+      "type": "health.characteristic",
+      "identifier": "HKCharacteristicTypeIdentifierCardioFitnessMedicationsUse",
+      "value": "None"
+    }
+  }
+]

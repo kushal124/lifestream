@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "scenarios": {
+    "native-static": {
+      "marker": "NATIVEPHASE101",
+      "visibleLines": [
+        "NATIVEPHASE101",
+        "Synthetic recorder validation",
+        "Receipt 7100",
+        "Balance 2300 units",
+        "Reference ZETA8100",
+        "Static screen with no document edits."
+      ],
+      "scenarioContentTokens": [
+        "2300",
+        "7100",
+        "balance",
+        "document",
+        "edits",
+        "nativephase101",
+        "no",
+        "receipt",
+        "recorder",
+        "reference",
+        "screen",
+        "static",
+        "synthetic",
+        "units",
+        "validation",
+        "with",
+        "zeta8100"
+      ],
+      "expectedTokenOccurrences": [
+        "NATIVEPHASE101",
+        "Synthetic",
+        "recorder",
+        "validation",
+        "Receipt",
+        "7100",
+        "Balance",
+        "2300",
+        "units",
+        "Reference",
+        "ZETA8100",
+        "Static",
+        "screen",
+        "with",
+        "no",
+        "document",
+        "edits"
+      ],
+      "requiredNumericIdentifierOccurrences": [
+        "NATIVEPHASE101",
+        "7100",
+        "2300",
+        "ZETA8100"
+      ],
+      "expectedPhrases": [
+        "NATIVEPHASE101",
+        "Synthetic recorder validation",
+        "Receipt 7100",
+        "Balance 2300 units",
+        "Reference ZETA8100",
+        "Static screen with no document edits."
+      ],
+      "forbiddenOCRTokens": []
+    }
+  }
+}

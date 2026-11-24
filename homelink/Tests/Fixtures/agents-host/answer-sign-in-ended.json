@@ -1,0 +1,34 @@
+{
+  "act" : {
+    "act" : "agent-answer",
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
+    "type" : "act"
+  },
+  "from" : "agents/door/answer-sign-in-ended.json",
+  "reply" : {
+    "answer" : {
+      "connected" : null,
+      "outcome" : [
+        {
+          "kind" : "words",
+          "words" : "Allowed on iPhone,"
+        },
+        {
+          "kind" : "time",
+          "time" : {
+            "at_ms" : 1794646800000,
+            "kind" : "clock"
+          }
+        }
+      ],
+      "reader" : null,
+      "state" : "approved",
+      "version" : null
+    }
+  },
+  "sent" : {
+    "answer" : 42,
+    "id" : "c2lnbi1pbi0wMDAwMDAwMQ"
+  }
+}

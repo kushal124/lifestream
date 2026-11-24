@@ -1,0 +1,288 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "here": "home-place",
+  "frame": {
+    "north": 37.346087315846205,
+    "south": 37.317598275242545,
+    "east": -121.98507747945102,
+    "west": -122.02242349298703
+  },
+  "cities": [
+    {
+      "key": "city:San Jose",
+      "title": "San Jose",
+      "here": true,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 37.3313,
+        "longitude": -122.00634
+      },
+      "places": [
+        {
+          "slug": "home-place",
+          "name": "Home",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Home",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "radius_m": 120,
+          "also": [],
+          "hours": 384.33
+        },
+        {
+          "slug": "the-office",
+          "name": "The Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "The Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.322,
+          "longitude": -122.001,
+          "radius_m": 90,
+          "also": [],
+          "hours": 23.73
+        },
+        {
+          "slug": "willow-court",
+          "name": "Willow Court",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Willow Court",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.342,
+          "longitude": -122.017,
+          "radius_m": 55,
+          "also": [
+            {
+              "latitude": 37.342,
+              "longitude": -122.01626,
+              "radius_m": 30
+            },
+            {
+              "latitude": 37.34097,
+              "longitude": -122.017,
+              "radius_m": 80
+            }
+          ],
+          "hours": 3.93
+        },
+        {
+          "slug": "old-office",
+          "name": "Old Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Old Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3275,
+          "longitude": -121.9905,
+          "radius_m": 80,
+          "also": [],
+          "hours": 3.93
+        }
+      ],
+      "once": [
+        {
+          "slug": "corner-bakery",
+          "name": "Corner Bakery",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Corner Bakery",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3301,
+          "longitude": -122.0142,
+          "radius_m": 80,
+          "also": [],
+          "hours": 0.63
+        }
+      ]
+    },
+    {
+      "key": "city:Salinas",
+      "title": "Salinas",
+      "here": false,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 36.6031,
+        "longitude": -121.8991
+      },
+      "places": [],
+      "once": [
+        {
+          "slug": "harbour-inn",
+          "name": "Harbour Inn",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Harbour Inn",
+            "Salinas",
+            "California",
+            "United States"
+          ],
+          "latitude": 36.6031,
+          "longitude": -121.8991,
+          "radius_m": 80,
+          "also": [],
+          "hours": 2.47
+        }
+      ]
+    }
+  ],
+  "to_name": [
+    {
+      "key": "spot:37.3187,-122.009",
+      "latitude": 37.3187,
+      "longitude": -122.009,
+      "line": "8 days · 8 stays",
+      "find": [
+        "San Jose",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [
+        "sha256:193556898277665a1060d576b326401c73310d051378c9cc8cdda0c82276ad94",
+        "sha256:36f0647098a45571a2f28b28d85e3d26ba6c17ec268f44b93c5158d5cf4fdcc2",
+        "sha256:605070a99ed0090eaa47f7d8db48997b991b24243d97c7a4723c76173783c7ac",
+        "sha256:44543966743c5dc688c598d5354e2d8184235c0214ac735bf95003b8264f076b",
+        "sha256:079f4b7da7418e775574ae681d941717c7e1306d40c6597d11afedcdb0cb8735",
+        "sha256:8ed593d060a64666a79113d69eeb6089dcd6a67b971d4ba2f31115633d9f3676"
+      ],
+      "photos_total": 9,
+      "ask": null,
+      "city": "San Jose"
+    },
+    {
+      "key": "spot:36.6002,-121.8947",
+      "latitude": 36.6002,
+      "longitude": -121.8947,
+      "line": "4 days · 3 stays",
+      "find": [
+        "Salinas",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [],
+      "photos_total": 0,
+      "ask": {
+        "line": "You've slept here 3 nights",
+        "since": {
+          "day": "2026-10-01",
+          "kind": "day"
+        }
+      },
+      "city": "Salinas"
+    },
+    {
+      "key": "spot:37.3412,-122.0215",
+      "latitude": 37.3412,
+      "longitude": -122.0215,
+      "line": "1 day · 1 stay",
+      "find": [
+        "San Jose",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [
+        "sha256:8df6383fb6436c2a54fa85b62884dfe05ce1ad959ff1caca286334a9ef5a1b9c"
+      ],
+      "photos_total": 1,
+      "ask": null,
+      "city": "San Jose"
+    }
+  ],
+  "hidden": [
+    {
+      "key": "hidden-0a0b0c",
+      "latitude": 37.315,
+      "longitude": -122.03,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "2.2 km from Corner Bakery"
+    },
+    {
+      "key": "hidden-c0ffee",
+      "latitude": 37.3365,
+      "longitude": -122.011,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "251 m from Home"
+    }
+  ],
+  "counting": false
+}

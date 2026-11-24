@@ -1,0 +1,79 @@
+{
+  "asked": "sum of times over plays, by track and artist",
+  "population": {
+    "facts": 315,
+    "valued": 315,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2021-03-14",
+    "last": "2026-11-14"
+  },
+  "counted": "counted from plays as now-playing:person-a@example.com:iphone-aa01 (read to 2026-11-14) and now-playing:person-a@example.com:macbook-pro-0001 (read to 2026-11-14) state them",
+  "total": {
+    "n": 315,
+    "sum": 415,
+    "ref": "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJ0IjpudWxsfSwzMTVd"
+  },
+  "columns": [
+    "track",
+    "artist",
+    "n",
+    "sum",
+    "missing",
+    "ref"
+  ],
+  "rows": [
+    [
+      "Riverside",
+      "The Quiet Hours",
+      140,
+      212,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSIsIlRoZSBRdWlldCBIb3VycyJdLCJwIjpudWxsfSwxNDBd"
+    ],
+    [
+      "Riverside Drive",
+      "The Quiet Hours",
+      52,
+      61,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSBEcml2ZSIsIlRoZSBRdWlldCBIb3VycyJdLCJwIjpudWxsfSw1Ml0"
+    ],
+    [
+      "Riverside Nights",
+      "Mono Coast",
+      40,
+      47,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSBOaWdodHMiLCJNb25vIENvYXN0Il0sInAiOm51bGx9LDQwXQ"
+    ],
+    [
+      "Down by the Riverside",
+      "Harbour Lights",
+      31,
+      38,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIkRvd24gYnkgdGhlIFJpdmVyc2lkZSIsIkhhcmJvdXIgTGlnaHRzIl0sInAiOm51bGx9LDMxXQ"
+    ],
+    [
+      "Riverside Morning",
+      "June Field",
+      30,
+      31,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSBNb3JuaW5nIiwiSnVuZSBGaWVsZCJdLCJwIjpudWxsfSwzMF0"
+    ],
+    [
+      "Riverside (Live)",
+      "The Quiet Hours",
+      22,
+      26,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsidHJhY2siLCJhcnRpc3QiXSwibWVhc3VyZSI6InRpbWVzIiwib2YiOiJwbGF5cyIsIm9wIjoic3VtIiwib3JkZXIiOiJ2YWx1ZSIsIndvcmRzIjoicml2ZXJzaWRlIn0se30seyJnIjpbIlJpdmVyc2lkZSAoTGl2ZSkiLCJUaGUgUXVpZXQgSG91cnMiXSwicCI6bnVsbH0sMjJd"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

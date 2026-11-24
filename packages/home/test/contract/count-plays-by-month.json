@@ -1,0 +1,84 @@
+{
+  "asked": "sum of times over plays, by month",
+  "matched": {
+    "track": {
+      "=Riverside": [
+        "Riverside (140)"
+      ]
+    },
+    "artist": {
+      "=The Quiet Hours": [
+        "The Quiet Hours (140)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 140,
+    "valued": 140,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2026-06-03",
+    "last": "2026-11-14"
+  },
+  "counted": "counted from plays as now-playing:person-a@example.com:iphone-aa01 (read to 2026-11-14) and now-playing:person-a@example.com:macbook-pro-0001 (read to 2026-11-14) state them",
+  "total": {
+    "n": 140,
+    "sum": 212,
+    "ref": "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7InQiOm51bGx9LDE0MF0"
+  },
+  "columns": [
+    "month",
+    "n",
+    "sum",
+    "missing",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-06",
+      12,
+      18,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0wNiJdLCJwIjpudWxsfSwxMl0"
+    ],
+    [
+      "2026-07",
+      28,
+      44,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0wNyJdLCJwIjpudWxsfSwyOF0"
+    ],
+    [
+      "2026-08",
+      41,
+      61,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0wOCJdLCJwIjpudWxsfSw0MV0"
+    ],
+    [
+      "2026-09",
+      26,
+      39,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0wOSJdLCJwIjpudWxsfSwyNl0"
+    ],
+    [
+      "2026-10",
+      20,
+      30,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0xMCJdLCJwIjpudWxsfSwyMF0"
+    ],
+    [
+      "2026-11",
+      13,
+      20,
+      0,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwibWF0Y2giOnsiYXJ0aXN0IjoiPVRoZSBRdWlldCBIb3VycyIsInRyYWNrIjoiPVJpdmVyc2lkZSJ9LCJtZWFzdXJlIjoidGltZXMiLCJvZiI6InBsYXlzIiwib3AiOiJzdW0ifSx7fSx7ImciOlsiMjAyNi0xMSJdLCJwIjpudWxsfSwxM10"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

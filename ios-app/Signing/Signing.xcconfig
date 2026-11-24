@@ -1,0 +1,4 @@
+DEVELOPMENT_TEAM = 4HH63Q6JYM
+LIFESTREAM_BUNDLE_PREFIX = org.lifestreamprotocol
+
+#include? "Local.xcconfig"

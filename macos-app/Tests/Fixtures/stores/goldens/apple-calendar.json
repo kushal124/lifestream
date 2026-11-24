@@ -1,0 +1,65 @@
+{
+  "connector" : "apple-calendar",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+        {
+          "feeder" : "calendar-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "calendar.sqlite"
+          ],
+          "source_id" : "apple-calendar:local:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-calendar:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-calendar:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "calendar-mac",
+          "indexes" : {
+
+          },
+          "kind" : "changes",
+          "members" : [
+            "calendar.sqlite"
+          ],
+          "source_id" : "apple-calendar:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "apple-calendar:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "apple-calendar:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : false,
+      "held" : false,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "calendar"
+}

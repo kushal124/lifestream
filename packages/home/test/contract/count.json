@@ -1,0 +1,57 @@
+{
+  "asked": "sum of amount over payments, by item",
+  "matched": {
+    "from": "2026-03-01",
+    "to": "2026-03-31",
+    "payee": {
+      "acme": [
+        "ACME CABS LIMITED (6)",
+        "ACME CABS (1)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 7,
+    "valued": 7,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2022-01-01",
+    "last": "2026-11-06"
+  },
+  "counted": "counted from payments as Example Bank statement lines state them, read to 2026-11-06",
+  "also": [
+    "the record also holds 2 mail entries the same words reach in the range, 2026-03-04 → 2026-03-29: the same kind of thing, held elsewhere: read it, add what these rows do not already hold, and give the whole first"
+  ],
+  "total": {
+    "n": 7,
+    "sum": "350.00 EUR",
+    "ref": "row.WyJyb3ciLHsiYnkiOlsiaXRlbSJdLCJmcm9tIjoiMjAyNi0wMy0wMSIsIm1hdGNoIjp7InBheWVlIjoiYWNtZSJ9LCJtZWFzdXJlIjoiYW1vdW50Iiwib2YiOiJwYXltZW50cyIsInRvIjoiMjAyNi0wMy0zMSJ9LHsidmFsdWVzIjp7InBheWVlIjp7ImluIjpbIkFDTUUgQ0FCUyBMSU1JVEVEIiwiQUNNRSBDQUJTIl0sIm91dCI6W119fX0seyJ0IjoiRVVSIn0sN10"
+  },
+  "columns": [
+    "day",
+    "payee",
+    "direction",
+    "amount",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-03-02",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "record.WyJyZWNvcmQiLCJleGFtcGxlLWJhbms6YWNjb3VudC0xOnVwbG9hZCIsImxpbmUiLCIxIl0"
+    ],
+    [
+      "2026-03-09",
+      "ACME CABS LIMITED",
+      "debit",
+      "50.00",
+      "record.WyJyZWNvcmQiLCJleGFtcGxlLWJhbms6YWNjb3VudC0xOnVwbG9hZCIsImxpbmUiLCIyIl0"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

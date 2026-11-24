@@ -1,0 +1,263 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-10-16",
+  "state": "ready",
+  "line": null,
+  "now_ms": null,
+  "updated_ms": null,
+  "all_day": [],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa00/1791984600000@1792103400000",
+      "kind": "stay",
+      "episode": "e1",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "4h 28m"
+      },
+      "start_ms": 1792103400000,
+      "end_ms": 1792119480000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792119480000@1792119480000",
+      "kind": "move",
+      "episode": "e2",
+      "head": {
+        "title": "Walk 2.4 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "26m"
+      },
+      "start_ms": 1792119480000,
+      "end_ms": 1792121040000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792121040000@1792121040000",
+      "kind": "stay",
+      "episode": "e4",
+      "head": {
+        "title": "The Office",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": false,
+        "words": [],
+        "length": "8h 40m"
+      },
+      "start_ms": 1792121040000,
+      "end_ms": 1792152240000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792152240000@1792152240000",
+      "kind": "move",
+      "episode": "e5",
+      "head": {
+        "title": "Walk 2 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "17m"
+      },
+      "start_ms": 1792152240000,
+      "end_ms": 1792153260000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792153260000@1792153260000",
+      "kind": "stay",
+      "episode": "e7",
+      "head": {
+        "title": "Near Home",
+        "line": "1.8 km away",
+        "place": "spot:37.3187,-122.009",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 8m"
+      },
+      "start_ms": 1792153260000,
+      "end_ms": 1792157340000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa00/1792157340000@1792157340000",
+      "kind": "move",
+      "episode": "e8",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [],
+        "length": "25m"
+      },
+      "start_ms": 1792157340000,
+      "end_ms": 1792158840000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa00/1792158840000@1792158840000",
+      "kind": "stay",
+      "episode": "e10",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "8h 36m"
+      },
+      "start_ms": 1792158840000,
+      "end_ms": 1792189800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    }
+  ],
+  "also": null,
+  "plans": [],
+  "until_ms": null,
+  "now_divider": null,
+  "end_ms": 1792189800000,
+  "before_home": null,
+  "side": {
+    "figures": [],
+    "located": true,
+    "places": [
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 47040000,
+        "length": "13h 4m",
+        "spoken": "Home, 13 hours 4 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e1",
+          "e10"
+        ]
+      },
+      {
+        "key": "the-office",
+        "slug": "the-office",
+        "name": "The Office",
+        "line": null,
+        "home": false,
+        "quiet": false,
+        "ms": 31200000,
+        "length": "8h 40m",
+        "spoken": "The Office, 8 hours 40 minutes",
+        "point": {
+          "latitude": 37.322,
+          "longitude": -121.987,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e4"
+        ]
+      },
+      {
+        "key": "spot:37.3187,-122.009",
+        "slug": null,
+        "name": "Near Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4080000,
+        "length": "1h 8m",
+        "spoken": "Near Home, 1 hour 8 minutes",
+        "point": {
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e7"
+        ]
+      }
+    ],
+    "people": [],
+    "groups": [],
+    "unreturned": []
+  }
+}

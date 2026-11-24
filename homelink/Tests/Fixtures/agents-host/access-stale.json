@@ -1,0 +1,78 @@
+{
+  "act" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "act" : "agent-access",
+    "expect" : 1,
+    "id" : "p-00000001",
+    "type" : "act"
+  },
+  "from" : "agents/door/access-stale.json",
+  "reply" : {
+    "refused" : {
+      "code" : "ACCESS_CHANGED",
+      "message" : "This access just changed. Look again, then save."
+    }
+  },
+  "sent" : {
+    "access" : {
+      "allow" : [
+        {
+          "reach" : {
+            "all" : true,
+            "but" : [
+
+            ]
+          },
+          "until_ms" : null,
+          "window" : null
+        }
+      ],
+      "hide" : "names",
+      "items" : [
+
+      ],
+      "not" : [
+
+      ],
+      "only" : [
+
+      ],
+      "shown" : [
+
+      ],
+      "window" : {
+        "past_ms" : 86400000
+      }
+    },
+    "expect" : 1
+  }
+}

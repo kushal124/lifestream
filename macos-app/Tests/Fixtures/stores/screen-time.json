@@ -1,0 +1,16 @@
+{
+  "grants": [
+    "fullDiskAccess"
+  ],
+  "product": "screen-time",
+  "store": {
+    "feeder": "biome-app-in-focus",
+    "name": "screen_time",
+    "held": "~/Library/Biome/streams/restricted/App.InFocus/",
+    "account": "apple-id",
+    "engine": {
+      "kind": "biome",
+      "stream": "App.InFocus"
+    }
+  }
+}

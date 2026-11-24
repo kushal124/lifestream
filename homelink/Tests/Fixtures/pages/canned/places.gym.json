@@ -1,0 +1,283 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-05",
+  "here": "home-place",
+  "frame": {
+    "north": 37.346087315846205,
+    "south": 37.31438810636004,
+    "east": -121.98507747945102,
+    "west": -122.02242349298703
+  },
+  "cities": [
+    {
+      "key": "city:San Jose",
+      "title": "San Jose",
+      "here": true,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 37.32920000000001,
+        "longitude": -122.00678333333332
+      },
+      "places": [
+        {
+          "slug": "home-place",
+          "name": "Home",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Home",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "radius_m": 120,
+          "also": [],
+          "hours": 384.33
+        },
+        {
+          "slug": "synthetic-gym-0c0c0c",
+          "name": "Synthetic Gym",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Synthetic Gym",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "radius_m": 80,
+          "also": [],
+          "hours": 27.73
+        },
+        {
+          "slug": "the-office",
+          "name": "The Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "The Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.322,
+          "longitude": -122.001,
+          "radius_m": 90,
+          "also": [],
+          "hours": 23.73
+        },
+        {
+          "slug": "willow-court",
+          "name": "Willow Court",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Willow Court",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.342,
+          "longitude": -122.017,
+          "radius_m": 55,
+          "also": [
+            {
+              "latitude": 37.342,
+              "longitude": -122.01626,
+              "radius_m": 30
+            },
+            {
+              "latitude": 37.34097,
+              "longitude": -122.017,
+              "radius_m": 80
+            }
+          ],
+          "hours": 3.93
+        },
+        {
+          "slug": "old-office",
+          "name": "Old Office",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Old Office",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3275,
+          "longitude": -121.9905,
+          "radius_m": 80,
+          "also": [],
+          "hours": 3.93
+        }
+      ],
+      "once": [
+        {
+          "slug": "corner-bakery",
+          "name": "Corner Bakery",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Corner Bakery",
+            "San Jose",
+            "California",
+            "United States"
+          ],
+          "latitude": 37.3301,
+          "longitude": -122.0142,
+          "radius_m": 80,
+          "also": [],
+          "hours": 0.63
+        }
+      ]
+    },
+    {
+      "key": "city:Salinas",
+      "title": "Salinas",
+      "here": false,
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "since": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "point": {
+        "latitude": 36.6031,
+        "longitude": -121.8991
+      },
+      "places": [],
+      "once": [
+        {
+          "slug": "harbour-inn",
+          "name": "Harbour Inn",
+          "line": null,
+          "when": {
+            "at_ms": 1791968400000,
+            "kind": "at"
+          },
+          "spent": null,
+          "find": [
+            "Harbour Inn",
+            "Salinas",
+            "California",
+            "United States"
+          ],
+          "latitude": 36.6031,
+          "longitude": -121.8991,
+          "radius_m": 80,
+          "also": [],
+          "hours": 2.47
+        }
+      ]
+    }
+  ],
+  "to_name": [
+    {
+      "key": "spot:36.6002,-121.8947",
+      "latitude": 36.6002,
+      "longitude": -121.8947,
+      "line": "4 days · 3 stays",
+      "find": [
+        "Salinas",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [],
+      "photos_total": 0,
+      "ask": {
+        "line": "You've slept here 3 nights",
+        "since": {
+          "day": "2026-10-01",
+          "kind": "day"
+        }
+      },
+      "city": "Salinas"
+    },
+    {
+      "key": "spot:37.3412,-122.0215",
+      "latitude": 37.3412,
+      "longitude": -122.0215,
+      "line": "1 day · 1 stay",
+      "find": [
+        "San Jose",
+        "California",
+        "United States"
+      ],
+      "when": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "photos": [
+        "sha256:8df6383fb6436c2a54fa85b62884dfe05ce1ad959ff1caca286334a9ef5a1b9c"
+      ],
+      "photos_total": 1,
+      "ask": null,
+      "city": "San Jose"
+    }
+  ],
+  "hidden": [
+    {
+      "key": "hidden-0a0b0c",
+      "latitude": 37.315,
+      "longitude": -122.03,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "1.9 km from Synthetic Gym"
+    },
+    {
+      "key": "hidden-c0ffee",
+      "latitude": 37.3365,
+      "longitude": -122.011,
+      "hidden": {
+        "at_ms": 1791968400000,
+        "kind": "at"
+      },
+      "line": "251 m from Home"
+    }
+  ],
+  "counting": false
+}

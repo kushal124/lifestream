@@ -1,0 +1,1430 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-11-07",
+  "day": "2026-11-07",
+  "state": "ready",
+  "line": null,
+  "now_ms": 1794070800000,
+  "updated_ms": 1791968400000,
+  "all_day": [
+    {
+      "key": "e55",
+      "kind": "event",
+      "at_ms": null,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Synthetic Festival (Day Two)",
+      "note": "",
+      "words": [
+        {
+          "text": "Google Calendar · all day",
+          "tone": "secondary",
+          "title": false,
+          "type": "text"
+        }
+      ],
+      "count": null,
+      "quiet": false,
+      "focus": "rec:google-calendar:person-a@example.com:cloud event holiday-2026-11-07@example.com",
+      "divider": null
+    },
+    {
+      "key": "e56",
+      "kind": "event",
+      "at_ms": null,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Stay at Synthetic Harbour Residences @ Northern Coast Bay, Block C",
+      "note": "",
+      "words": [
+        {
+          "text": "Google Calendar · all day",
+          "tone": "secondary",
+          "title": false,
+          "type": "text"
+        }
+      ],
+      "count": null,
+      "quiet": false,
+      "focus": "rec:google-calendar:person-a@example.com:cloud event stay-2026-11-07@example.com",
+      "divider": null
+    }
+  ],
+  "chapters": [
+    {
+      "key": "stay/location:local:iphone-aa01/1793974680000@1794004200000",
+      "kind": "stay",
+      "episode": "e3",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": "6h 28m"
+      },
+      "start_ms": 1794004200000,
+      "end_ms": 1794027480000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1794027480000@1794027480000",
+      "kind": "move",
+      "episode": "e6",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1794027480000,
+      "end_ms": 1794028680000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1794028680000@1794028680000",
+      "kind": "stay",
+      "episode": "e8",
+      "head": {
+        "title": "Near Home",
+        "line": "1.8 km away",
+        "place": "spot:37.3187,-122.009",
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "place",
+        "quiet": true,
+        "words": [],
+        "length": "1h 22m"
+      },
+      "start_ms": 1794028680000,
+      "end_ms": 1794033600000,
+      "folded": true,
+      "names": [
+        {
+          "text": "Traditional strength training 45m",
+          "first_row": "e9",
+          "at_ms": null
+        },
+        {
+          "text": "Yoga 20m",
+          "first_row": "e10",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1794028680000@1794028680000#run",
+          "kind": "run",
+          "start_ms": 1794028680000,
+          "title": null,
+          "line": null,
+          "count": null,
+          "folded": false,
+          "rows": [
+            {
+              "key": "e9",
+              "kind": "workout",
+              "at_ms": 1794028860000,
+              "end_ms": null,
+              "icon": "workout",
+              "name": "Traditional strength training",
+              "note": "",
+              "words": [
+                {
+                  "text": "Health",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "45m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:cloud workout workout-2026-11-07",
+              "divider": null
+            },
+            {
+              "key": "e10",
+              "kind": "workout",
+              "at_ms": 1794031632000,
+              "end_ms": null,
+              "icon": "workout",
+              "name": "Yoga",
+              "note": "",
+              "words": [
+                {
+                  "text": "Health",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "20m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-health:person-a@example.com:cloud workout yoga-2026-11-07",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    },
+    {
+      "key": "trip/location:local:iphone-aa01/1794033600000@1794033600000",
+      "kind": "move",
+      "episode": "e11",
+      "head": {
+        "title": "Walk 1.8 km",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "walk",
+        "quiet": false,
+        "words": [
+          {
+            "text": "0.1 km of it not recorded",
+            "tone": "tertiary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "length": "20m"
+      },
+      "start_ms": 1794033600000,
+      "end_ms": 1794034800000,
+      "folded": false,
+      "names": [],
+      "photos": [],
+      "blocks": [],
+      "divider": null
+    },
+    {
+      "key": "stay/location:local:iphone-aa01/1794034800000@1794034800000",
+      "kind": "stay",
+      "episode": "e13",
+      "head": {
+        "title": "Home",
+        "line": null,
+        "place": null,
+        "stated_by": null,
+        "since_ms": null,
+        "icon": "home",
+        "quiet": false,
+        "words": [],
+        "length": null
+      },
+      "start_ms": 1794034800000,
+      "end_ms": null,
+      "folded": true,
+      "names": [
+        {
+          "text": "Person C",
+          "first_row": "e14",
+          "at_ms": null
+        },
+        {
+          "text": "Group Alpha",
+          "first_row": "e16",
+          "at_ms": null
+        },
+        {
+          "text": "Person A",
+          "first_row": "e18",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01100",
+          "first_row": "e30",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01101",
+          "first_row": "e31",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01102",
+          "first_row": "e32",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 4",
+          "first_row": "e33",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01104",
+          "first_row": "e34",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01105",
+          "first_row": "e35",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01106",
+          "first_row": "e36",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 8",
+          "first_row": "e37",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01108",
+          "first_row": "e38",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01109",
+          "first_row": "e39",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01110",
+          "first_row": "e40",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 12",
+          "first_row": "e41",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01112",
+          "first_row": "e42",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01113",
+          "first_row": "e43",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01114",
+          "first_row": "e44",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 16",
+          "first_row": "e45",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01116",
+          "first_row": "e46",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01117",
+          "first_row": "e47",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01118",
+          "first_row": "e48",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 20",
+          "first_row": "e49",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01120",
+          "first_row": "e50",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01121",
+          "first_row": "e51",
+          "at_ms": null
+        },
+        {
+          "text": "unknown …01122",
+          "first_row": "e52",
+          "at_ms": null
+        },
+        {
+          "text": "Synthetic Group 24",
+          "first_row": "e53",
+          "at_ms": null
+        }
+      ],
+      "photos": [],
+      "blocks": [
+        {
+          "key": "stay/location:local:iphone-aa01/1794034800000@1794034800000#1794036600000",
+          "kind": "hour",
+          "start_ms": 1794036600000,
+          "title": null,
+          "line": "Person C",
+          "count": {
+            "count": 1,
+            "kind": "sent"
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e14",
+              "kind": "conversation",
+              "at_ms": 1794036600000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person C",
+              "note": "",
+              "words": [
+                {
+                  "text": "yes please",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 1,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:imessage:+15550000090:iphone-aa01 msg c-2026-11-07-7800",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:iphone-aa01/1794034800000@1794034800000#1794043800000",
+          "kind": "hour",
+          "start_ms": 1794043800000,
+          "title": null,
+          "line": "Group Alpha, Person A",
+          "count": {
+            "count": 3,
+            "kind": "sent"
+          },
+          "folded": true,
+          "rows": [
+            {
+              "key": "e16",
+              "kind": "conversation",
+              "at_ms": 1794043800000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Group Alpha",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 2,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000000001@g.us:alpha-2026-11-07-9000",
+              "divider": null
+            },
+            {
+              "key": "e18",
+              "kind": "conversation",
+              "at_ms": 1794045420000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "happy festival!",
+                  "type": "quote"
+                },
+                {
+                  "text": "what's the plan tonight",
+                  "type": "quote"
+                },
+                {
+                  "text": "yes, bringing dessert",
+                  "type": "quote"
+                }
+              ],
+              "count": {
+                "count": 3,
+                "kind": "sent"
+              },
+              "quiet": false,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550000001@s.whatsapp.net:a-2026-11-07-9270",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:iphone-aa01/1794034800000@1794034800000#1794054600000",
+          "kind": "hour",
+          "start_ms": 1794054600000,
+          "title": null,
+          "line": "Person A",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e29",
+              "kind": "call",
+              "at_ms": 1794054600000,
+              "end_ms": null,
+              "icon": "call",
+              "name": "Person A",
+              "note": "",
+              "words": [
+                {
+                  "text": "You called",
+                  "tone": "secondary",
+                  "title": false,
+                  "type": "text"
+                }
+              ],
+              "count": {
+                "text": "18m",
+                "kind": "words"
+              },
+              "quiet": false,
+              "focus": "rec:apple-calls:sam.2014@example.com:iphone-aa01 call CALL-2026-11-07",
+              "divider": null
+            }
+          ],
+          "divider": null
+        },
+        {
+          "key": "stay/location:local:iphone-aa01/1794034800000@1794034800000#1794061800000",
+          "kind": "hour",
+          "start_ms": 1794061800000,
+          "title": null,
+          "line": "24 chats wrote to you",
+          "count": null,
+          "folded": true,
+          "rows": [
+            {
+              "key": "e30",
+              "kind": "conversation",
+              "at_ms": 1794061800000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01100",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001100@s.whatsapp.net:crowd-2026-11-07-0",
+              "divider": null
+            },
+            {
+              "key": "e31",
+              "kind": "conversation",
+              "at_ms": 1794061860000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01101",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001101@s.whatsapp.net:crowd-2026-11-07-1",
+              "divider": null
+            },
+            {
+              "key": "e32",
+              "kind": "conversation",
+              "at_ms": 1794061920000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01102",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001102@s.whatsapp.net:crowd-2026-11-07-2",
+              "divider": null
+            },
+            {
+              "key": "e33",
+              "kind": "conversation",
+              "at_ms": 1794061980000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 4",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 12036300000003@g.us:crowd-2026-11-07-3",
+              "divider": null
+            },
+            {
+              "key": "e34",
+              "kind": "conversation",
+              "at_ms": 1794062040000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01104",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001104@s.whatsapp.net:crowd-2026-11-07-4",
+              "divider": null
+            },
+            {
+              "key": "e35",
+              "kind": "conversation",
+              "at_ms": 1794062100000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01105",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001105@s.whatsapp.net:crowd-2026-11-07-5",
+              "divider": null
+            },
+            {
+              "key": "e36",
+              "kind": "conversation",
+              "at_ms": 1794062160000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01106",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001106@s.whatsapp.net:crowd-2026-11-07-6",
+              "divider": null
+            },
+            {
+              "key": "e37",
+              "kind": "conversation",
+              "at_ms": 1794062220000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 8",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 12036300000007@g.us:crowd-2026-11-07-7",
+              "divider": null
+            },
+            {
+              "key": "e38",
+              "kind": "conversation",
+              "at_ms": 1794062280000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01108",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001108@s.whatsapp.net:crowd-2026-11-07-8",
+              "divider": null
+            },
+            {
+              "key": "e39",
+              "kind": "conversation",
+              "at_ms": 1794062340000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01109",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001109@s.whatsapp.net:crowd-2026-11-07-9",
+              "divider": null
+            },
+            {
+              "key": "e40",
+              "kind": "conversation",
+              "at_ms": 1794062400000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01110",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001110@s.whatsapp.net:crowd-2026-11-07-10",
+              "divider": null
+            },
+            {
+              "key": "e41",
+              "kind": "conversation",
+              "at_ms": 1794062460000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 12",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000011@g.us:crowd-2026-11-07-11",
+              "divider": null
+            },
+            {
+              "key": "e42",
+              "kind": "conversation",
+              "at_ms": 1794062520000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01112",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001112@s.whatsapp.net:crowd-2026-11-07-12",
+              "divider": null
+            },
+            {
+              "key": "e43",
+              "kind": "conversation",
+              "at_ms": 1794062580000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01113",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001113@s.whatsapp.net:crowd-2026-11-07-13",
+              "divider": null
+            },
+            {
+              "key": "e44",
+              "kind": "conversation",
+              "at_ms": 1794062640000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01114",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001114@s.whatsapp.net:crowd-2026-11-07-14",
+              "divider": null
+            },
+            {
+              "key": "e45",
+              "kind": "conversation",
+              "at_ms": 1794062700000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 16",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000015@g.us:crowd-2026-11-07-15",
+              "divider": null
+            },
+            {
+              "key": "e46",
+              "kind": "conversation",
+              "at_ms": 1794062760000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01116",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001116@s.whatsapp.net:crowd-2026-11-07-16",
+              "divider": null
+            },
+            {
+              "key": "e47",
+              "kind": "conversation",
+              "at_ms": 1794062820000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01117",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001117@s.whatsapp.net:crowd-2026-11-07-17",
+              "divider": null
+            },
+            {
+              "key": "e48",
+              "kind": "conversation",
+              "at_ms": 1794062880000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01118",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001118@s.whatsapp.net:crowd-2026-11-07-18",
+              "divider": null
+            },
+            {
+              "key": "e49",
+              "kind": "conversation",
+              "at_ms": 1794062940000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 20",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000019@g.us:crowd-2026-11-07-19",
+              "divider": null
+            },
+            {
+              "key": "e50",
+              "kind": "conversation",
+              "at_ms": 1794063000000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01120",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001120@s.whatsapp.net:crowd-2026-11-07-20",
+              "divider": null
+            },
+            {
+              "key": "e51",
+              "kind": "conversation",
+              "at_ms": 1794063060000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01121",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001121@s.whatsapp.net:crowd-2026-11-07-21",
+              "divider": null
+            },
+            {
+              "key": "e52",
+              "kind": "conversation",
+              "at_ms": 1794063120000,
+              "end_ms": null,
+              "icon": "message",
+              "name": "unknown …01122",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 15550001122@s.whatsapp.net:crowd-2026-11-07-22",
+              "divider": null
+            },
+            {
+              "key": "e53",
+              "kind": "conversation",
+              "at_ms": 1794063180000,
+              "end_ms": null,
+              "icon": "meeting",
+              "name": "Synthetic Group 24",
+              "note": "",
+              "words": [],
+              "count": {
+                "count": 1,
+                "kind": "received"
+              },
+              "quiet": true,
+              "focus": "rec:whatsapp:15550000000:iphone-aa01 msg 120363000000023@g.us:crowd-2026-11-07-23",
+              "divider": null
+            }
+          ],
+          "divider": null
+        }
+      ],
+      "divider": null
+    }
+  ],
+  "also": {
+    "folded": false,
+    "names": [
+      {
+        "text": "Payment",
+        "first_row": "e57",
+        "at_ms": null
+      }
+    ],
+    "rows": [
+      {
+        "key": "e57",
+        "kind": "payment",
+        "at_ms": null,
+        "end_ms": null,
+        "icon": "money",
+        "name": "Payment",
+        "note": "",
+        "words": [
+          {
+            "text": "−48.00 USD",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          },
+          {
+            "text": "SYNTHETIC GROCER",
+            "tone": "secondary",
+            "title": false,
+            "type": "text"
+          }
+        ],
+        "count": null,
+        "quiet": false,
+        "focus": "rec:synthetic-bank:acct-aa11:export txn txn-2026-11-07",
+        "divider": null
+      }
+    ]
+  },
+  "plans": [
+    {
+      "key": "e54",
+      "kind": "event",
+      "at_ms": 1794076200000,
+      "end_ms": null,
+      "icon": "calendar-event",
+      "name": "Call with Person A",
+      "note": "",
+      "words": [
+        {
+          "text": "Google Calendar",
+          "tone": "secondary",
+          "title": false,
+          "type": "text"
+        }
+      ],
+      "count": {
+        "text": "30m",
+        "kind": "words"
+      },
+      "quiet": false,
+      "focus": "rec:google-calendar:person-a@example.com:cloud event call-2026-11-07@example.com",
+      "divider": "2026-11-08"
+    }
+  ],
+  "until_ms": 1794076200000,
+  "now_divider": null,
+  "end_ms": 1794090600000,
+  "before_home": null,
+  "side": {
+    "figures": [
+      {
+        "key": "steps",
+        "value": "1,460",
+        "words": "steps so far"
+      },
+      {
+        "key": "sent",
+        "value": "4",
+        "words": "messages sent"
+      },
+      {
+        "key": "received",
+        "value": "35",
+        "words": "to you"
+      }
+    ],
+    "located": true,
+    "places": [
+      {
+        "key": "home-place",
+        "slug": "home-place",
+        "name": "Home",
+        "line": null,
+        "home": true,
+        "quiet": false,
+        "ms": 59280000,
+        "length": "16h 28m",
+        "spoken": "Home, 16 hours 28 minutes",
+        "point": {
+          "latitude": 37.3349,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": 100,
+        "rows": [
+          "e3",
+          "e13"
+        ]
+      },
+      {
+        "key": "spot:37.3187,-122.009",
+        "slug": null,
+        "name": "Near Home",
+        "line": "1.8 km away",
+        "home": false,
+        "quiet": true,
+        "ms": 4920000,
+        "length": "1h 22m",
+        "spoken": "Near Home, 1 hour 22 minutes",
+        "point": {
+          "latitude": 37.3187,
+          "longitude": -122.009,
+          "id": null
+        },
+        "radius_m": null,
+        "rows": [
+          "e8"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "key": "phone:+15550000001",
+        "person": "phone:+15550000001",
+        "name": "Person A",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "3",
+            "quiet": false
+          },
+          {
+            "glyph": "call",
+            "value": "18m",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person A, 3 messages sent, 1 call, 18 minutes",
+        "rows": [
+          "e18",
+          "e29"
+        ]
+      },
+      {
+        "key": "email:person-c@example.com",
+        "person": "email:person-c@example.com",
+        "name": "Person C",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": false
+          }
+        ],
+        "spoken": "Person C, 1 message sent",
+        "rows": [
+          "e14"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001100@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01100",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01100, 1 message received",
+        "rows": [
+          "e30"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001101@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01101",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01101, 1 message received",
+        "rows": [
+          "e31"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001102@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01102",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01102, 1 message received",
+        "rows": [
+          "e32"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001104@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01104",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01104, 1 message received",
+        "rows": [
+          "e34"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001105@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01105",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01105, 1 message received",
+        "rows": [
+          "e35"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001106@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01106",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01106, 1 message received",
+        "rows": [
+          "e36"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001108@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01108",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01108, 1 message received",
+        "rows": [
+          "e38"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001109@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01109",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01109, 1 message received",
+        "rows": [
+          "e39"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001110@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01110",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01110, 1 message received",
+        "rows": [
+          "e40"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001112@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01112",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01112, 1 message received",
+        "rows": [
+          "e42"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001113@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01113",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01113, 1 message received",
+        "rows": [
+          "e43"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001114@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01114",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01114, 1 message received",
+        "rows": [
+          "e44"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001116@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01116",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01116, 1 message received",
+        "rows": [
+          "e46"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001117@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01117",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01117, 1 message received",
+        "rows": [
+          "e47"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001118@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01118",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01118, 1 message received",
+        "rows": [
+          "e48"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001120@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01120",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01120, 1 message received",
+        "rows": [
+          "e50"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001121@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01121",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01121, 1 message received",
+        "rows": [
+          "e51"
+        ]
+      },
+      {
+        "key": "whatsapp:15550001122@s.whatsapp.net",
+        "person": null,
+        "name": "unknown …01122",
+        "photo": null,
+        "runs": [
+          {
+            "glyph": "message",
+            "value": "1",
+            "quiet": true
+          }
+        ],
+        "spoken": "unknown …01122, 1 message received",
+        "rows": [
+          "e52"
+        ]
+      }
+    ],
+    "groups": [],
+    "unreturned": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "cursors": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    100
+  ],
+  "tables": [
+    {
+      "name": "tag"
+    },
+    {
+      "name": "loose"
+    },
+    {
+      "name": "lookup"
+    },
+    {
+      "name": "item",
+      "keep": "id > {after} OR id IN (SELECT reply FROM item WHERE id > {after}) OR parent IN (SELECT id FROM parent WHERE name LIKE 'keep%')"
+    },
+    {
+      "name": "link",
+      "keep": "item IN (SELECT id FROM item) OR tag IN (SELECT id FROM tag WHERE label = 'pinned')"
+    },
+    {
+      "name": "note",
+      "keep": "EXISTS (SELECT 1 FROM item AS kept WHERE kept.id = note.item)"
+    },
+    {
+      "name": "ref",
+      "keep": "item IN (SELECT item FROM link) AND item IN (SELECT id FROM item)"
+    },
+    {
+      "name": "measure",
+      "keep": "twice > 10 AND id IN (SELECT id FROM item)"
+    },
+    {
+      "name": "parent",
+      "keep": "id IN (SELECT parent FROM item) OR id IN (SELECT n FROM left_out)"
+    },
+    {
+      "name": "emptied",
+      "keep": "FALSE"
+    }
+  ]
+}

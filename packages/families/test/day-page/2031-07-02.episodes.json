@@ -1,0 +1,214 @@
+{
+  "chapters": [
+    {
+      "kind": "day",
+      "episode": null,
+      "start_ms": 1940716800000,
+      "end_ms": 1940803200000,
+      "rows": [
+        "gap:1940716800000",
+        "e1",
+        "gap:1940749320000",
+        "e3",
+        "gap:1940753700000",
+        "e5",
+        "gap:1940767200000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1940716800000",
+          "start_ms": 1940716800000,
+          "end_ms": 1940749200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "9h"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1940749320000",
+          "start_ms": 1940749320000,
+          "end_ms": 1940752800000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "58m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1940753700000",
+          "start_ms": 1940753700000,
+          "end_ms": 1940767200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "3h 45m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1940767200000",
+          "start_ms": 1940767200000,
+          "end_ms": 1940803200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "10h"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e1"
+        },
+        {
+          "text": "Example Log",
+          "firstRowId": "e3"
+        },
+        {
+          "text": "example-gone",
+          "firstRowId": "e5"
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e1",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Yes, at noon"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1940749200000,
+      "end_ms": 1940749320000,
+      "at_ms": 1940749200000,
+      "atoms": [
+        1,
+        2
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e3",
+      "kind": "other",
+      "family": "plain",
+      "title": "Synthetic entry one: the first line",
+      "row": {
+        "name": "Example Log",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "Synthetic entry one: the first line",
+            "tone": "secondary"
+          }
+        ],
+        "count": {
+          "text": "15m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1940752800000,
+      "end_ms": 1940753700000,
+      "at_ms": 1940752800000,
+      "atoms": [
+        3,
+        4
+      ],
+      "product": "example-log"
+    },
+    {
+      "id": "e5",
+      "kind": "other",
+      "family": "plain",
+      "title": "A line of a stream since removed",
+      "row": {
+        "name": "example-gone",
+        "note": "",
+        "words": [
+          {
+            "type": "text",
+            "text": "A line of a stream since removed",
+            "tone": "secondary"
+          }
+        ],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1940767200000,
+      "end_ms": null,
+      "at_ms": 1940767200000,
+      "atoms": [
+        5
+      ],
+      "product": "example-gone"
+    }
+  ],
+  "also": [],
+  "all_day": [],
+  "untimed": {
+    "rows": [],
+    "names": []
+  },
+  "plan": [],
+  "headings": [],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": null,
+    "people": 1,
+    "mac_ms": null,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": 1,
+    "received": 1
+  },
+  "people": {
+    "contacts": [
+      {
+        "key": "example-chat:12345",
+        "title": "Person A",
+        "sent": 1,
+        "received": 1,
+        "first_ms": 1940749200000
+      }
+    ],
+    "groups": []
+  },
+  "updated": null
+}

@@ -1,0 +1,57 @@
+{
+  "connector" : "screen-time",
+  "macs" : {
+    "bare" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "screen-time:local:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "screen-time:local:macbook-pro-0001"
+      ]
+    },
+    "full" : {
+      "bundles" : [
+        {
+          "feeder" : "biome-app-in-focus",
+          "indexes" : {
+
+          },
+          "members" : [
+            "local/810000000000000.segb",
+            "local/tombstone/810000050000000.segb",
+            "remote/0000BBBB-0000-4000-8000-000000000002/809990000000000.segb",
+            "remote/0000BBBB-0000-4000-8000-000000000002/tombstone/809990050000000.segb"
+          ],
+          "source_id" : "screen-time:person-a@example.com:macbook-pro-0001"
+        }
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+        "screen-time:person-a@example.com:macbook-pro-0001"
+      ],
+      "sealed" : [
+        "screen-time:person-a@example.com:macbook-pro-0001"
+      ]
+    },
+    "strangers" : {
+      "bundles" : [
+
+      ],
+      "found" : true,
+      "held" : true,
+      "offers" : [
+
+      ],
+      "sealed" : [
+
+      ]
+    }
+  },
+  "name" : "screen_time"
+}

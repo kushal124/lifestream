@@ -1,0 +1,27 @@
+{
+  "what": "line",
+  "ref": "line.WyJsaW5lIiwiMjAyNi0xMC0wMSIsIjBhMGIwYzBkMGUwZjEwMTEiLDAsImNhbGVuZGFyL2UzIixudWxsXQ",
+  "day": "2026-10-01",
+  "rev": "rev9",
+  "lines": [
+    {
+      "at": "2026-10-01T08:00+01:00",
+      "family": "physical",
+      "text": "at home"
+    },
+    {
+      "ref": "line.WyJsaW5lIiwiMjAyNi0xMC0wMSIsIjBhMGIwYzBkMGUwZjEwMTEiLDAsImNhbGVuZGFyL2UzIixudWxsXQ",
+      "family": "calendar",
+      "text": "all day: Example review"
+    }
+  ],
+  "record": {
+    "what": "record",
+    "ref": "record.WyJyZWNvcmQiLCJnb29nbGUtY2FsZW5kYXI6bWVAZXhhbXBsZS5jb206Y2xvdWQiLCJldmVudCIsImUzIl0",
+    "day": "2026-10-01",
+    "family": "calendar",
+    "product": "google-calendar",
+    "title": "Example review",
+    "text": "Example review, all day."
+  }
+}

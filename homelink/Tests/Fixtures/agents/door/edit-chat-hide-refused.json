@@ -1,0 +1,35 @@
+{
+  "route": "POST /v1/agents/edit",
+  "request": {
+    "target": {
+      "reader": "ask"
+    },
+    "access": {
+      "allow": [
+        {
+          "reach": {
+            "all": true,
+            "but": []
+          },
+          "window": null,
+          "until_ms": null
+        }
+      ],
+      "items": [],
+      "not": [],
+      "only": [],
+      "window": null,
+      "hide": "none",
+      "shown": []
+    },
+    "expect": 1,
+    "edit": {
+      "hide": "all"
+    }
+  },
+  "status": 422,
+  "answer": {
+    "code": "BAD_REQUEST",
+    "message": "Each conversation hides what you pick in it."
+  }
+}

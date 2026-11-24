@@ -1,0 +1,11 @@
+{
+  "family": "phone",
+  "key": {
+    "code": "1:sha256:0dbf344e77e73759e3045222892aaeaac5ec83d626b71bba36b4099b0d28bd05",
+    "adapters": {
+      "phone/screen-time": "1"
+    }
+  },
+  "rows": 3,
+  "digest": "sha256:baf2a00d45adfeb1fda497048a2b9a589a68e52eb713b0f0032aeaf4495903b0"
+}

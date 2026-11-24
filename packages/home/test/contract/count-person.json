@@ -1,0 +1,44 @@
+{
+  "asked": "count of calls with Person A, by month",
+  "matched": {
+    "person": {
+      "Person A": [
+        "Person A (42)"
+      ]
+    }
+  },
+  "population": {
+    "facts": 42,
+    "valued": 42,
+    "missing": 0,
+    "excluded": {}
+  },
+  "held": {
+    "first": "2019-02-09",
+    "last": "2026-11-12"
+  },
+  "counted": "counted from calls as the phone's call log states them, read to 2026-11-14",
+  "total": {
+    "n": 42,
+    "ref": "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsidCI6bnVsbH0sNThd"
+  },
+  "columns": [
+    "month",
+    "n",
+    "ref"
+  ],
+  "rows": [
+    [
+      "2026-10",
+      30,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsiZyI6WyIyMDI2LTA5Il0sInAiOm51bGx9LDI5XQ"
+    ],
+    [
+      "2026-11",
+      12,
+      "row.WyJyb3ciLHsiYnkiOlsibW9udGgiXSwiZnJvbSI6IjIwMjYtMDktMDEiLCJtZWFzdXJlIjoic2xlZXAiLCJvZiI6ImRheXMiLCJvcCI6ImF2ZyIsInRvIjoiMjAyNi0xMC0zMSJ9LHt9LHsiZyI6WyIyMDI2LTEwIl0sInAiOm51bGx9LDI5XQ"
+    ]
+  ],
+  "as_of": "2026-11-14T22:10+00:00",
+  "next": null
+}

@@ -1,0 +1,470 @@
+{
+  "fresh": {
+    "epoch": 0,
+    "ready": true,
+    "line": null,
+    "detector": {
+      "runner": "off",
+      "file": "privacy-filter",
+      "state": "off",
+      "line": null
+    },
+    "marking": null,
+    "level": "all",
+    "chat": "all",
+    "levels": {
+      "all": [
+        "person",
+        "account",
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word",
+        "face"
+      ],
+      "names": [
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word"
+      ],
+      "none": []
+    },
+    "types": [
+      {
+        "type": "person",
+        "one": "name",
+        "many": "names",
+        "subtypes": []
+      },
+      {
+        "type": "account",
+        "one": "account",
+        "many": "accounts",
+        "subtypes": []
+      },
+      {
+        "type": "email",
+        "one": "email address",
+        "many": "email addresses",
+        "subtypes": []
+      },
+      {
+        "type": "phone",
+        "one": "phone number",
+        "many": "phone numbers",
+        "subtypes": []
+      },
+      {
+        "type": "address",
+        "one": "address",
+        "many": "addresses",
+        "subtypes": []
+      },
+      {
+        "type": "place",
+        "one": "place",
+        "many": "places",
+        "subtypes": []
+      },
+      {
+        "type": "number",
+        "one": "number",
+        "many": "numbers",
+        "subtypes": [
+          {
+            "type": "number.bank",
+            "one": "bank number",
+            "many": "bank numbers"
+          },
+          {
+            "type": "number.card",
+            "one": "card number",
+            "many": "card numbers"
+          },
+          {
+            "type": "number.government",
+            "one": "government id",
+            "many": "government ids"
+          },
+          {
+            "type": "number.tax",
+            "one": "tax id",
+            "many": "tax ids"
+          },
+          {
+            "type": "number.payment",
+            "one": "payment address",
+            "many": "payment addresses"
+          },
+          {
+            "type": "number.order",
+            "one": "order number",
+            "many": "order numbers"
+          }
+        ]
+      },
+      {
+        "type": "secret",
+        "one": "password or key",
+        "many": "passwords and keys",
+        "subtypes": []
+      },
+      {
+        "type": "link",
+        "one": "link",
+        "many": "links",
+        "subtypes": []
+      },
+      {
+        "type": "word",
+        "one": "listed word",
+        "many": "listed words",
+        "subtypes": []
+      },
+      {
+        "type": "face",
+        "one": "face",
+        "many": "faces",
+        "subtypes": []
+      }
+    ],
+    "links": "tokens",
+    "always": [],
+    "never": [],
+    "today": []
+  },
+  "downloading": {
+    "epoch": 3,
+    "ready": true,
+    "line": null,
+    "detector": {
+      "runner": "runner-macbook-pro-0001",
+      "file": "privacy-filter",
+      "state": "downloading",
+      "line": null,
+      "bytes": 340000000,
+      "total": 900000000
+    },
+    "marking": null,
+    "level": "all",
+    "chat": "names",
+    "levels": {
+      "all": [
+        "person",
+        "account",
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word",
+        "face"
+      ],
+      "names": [
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word"
+      ],
+      "none": []
+    },
+    "types": [
+      {
+        "type": "person",
+        "one": "name",
+        "many": "names",
+        "subtypes": []
+      },
+      {
+        "type": "account",
+        "one": "account",
+        "many": "accounts",
+        "subtypes": []
+      },
+      {
+        "type": "email",
+        "one": "email address",
+        "many": "email addresses",
+        "subtypes": []
+      },
+      {
+        "type": "phone",
+        "one": "phone number",
+        "many": "phone numbers",
+        "subtypes": []
+      },
+      {
+        "type": "address",
+        "one": "address",
+        "many": "addresses",
+        "subtypes": []
+      },
+      {
+        "type": "place",
+        "one": "place",
+        "many": "places",
+        "subtypes": []
+      },
+      {
+        "type": "number",
+        "one": "number",
+        "many": "numbers",
+        "subtypes": [
+          {
+            "type": "number.bank",
+            "one": "bank number",
+            "many": "bank numbers"
+          },
+          {
+            "type": "number.card",
+            "one": "card number",
+            "many": "card numbers"
+          },
+          {
+            "type": "number.government",
+            "one": "government id",
+            "many": "government ids"
+          },
+          {
+            "type": "number.tax",
+            "one": "tax id",
+            "many": "tax ids"
+          },
+          {
+            "type": "number.payment",
+            "one": "payment address",
+            "many": "payment addresses"
+          },
+          {
+            "type": "number.order",
+            "one": "order number",
+            "many": "order numbers"
+          }
+        ]
+      },
+      {
+        "type": "secret",
+        "one": "password or key",
+        "many": "passwords and keys",
+        "subtypes": []
+      },
+      {
+        "type": "link",
+        "one": "link",
+        "many": "links",
+        "subtypes": []
+      },
+      {
+        "type": "word",
+        "one": "listed word",
+        "many": "listed words",
+        "subtypes": []
+      },
+      {
+        "type": "face",
+        "one": "face",
+        "many": "faces",
+        "subtypes": []
+      }
+    ],
+    "links": "path",
+    "always": [
+      "synthetic-word"
+    ],
+    "never": [
+      "Synthetic Cafe"
+    ],
+    "today": [
+      {
+        "receiver": "OpenAI",
+        "day": "2026-11-12",
+        "items": 412,
+        "hidden": 3912,
+        "counts": {
+          "person": 2100,
+          "phone": 812,
+          "face": 1000
+        },
+        "rows": {
+          "ask": 410,
+          "read": 2
+        }
+      },
+      {
+        "receiver": "Google Places",
+        "day": "2026-11-12",
+        "items": 3,
+        "hidden": 0,
+        "counts": {
+          "place": 3
+        },
+        "rows": {
+          "lookup": 3
+        }
+      }
+    ]
+  },
+  "ready": {
+    "epoch": 3,
+    "ready": true,
+    "line": null,
+    "detector": {
+      "runner": "runner-macbook-pro-0001",
+      "file": "privacy-filter",
+      "state": "ready",
+      "line": null,
+      "model": "privacy-filter-1"
+    },
+    "marking": {
+      "marked": 41,
+      "total": 100,
+      "line": "Marked 41% of your record"
+    },
+    "level": "none",
+    "chat": "none",
+    "levels": {
+      "all": [
+        "person",
+        "account",
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word",
+        "face"
+      ],
+      "names": [
+        "email",
+        "phone",
+        "address",
+        "place",
+        "number",
+        "secret",
+        "link",
+        "word"
+      ],
+      "none": []
+    },
+    "types": [
+      {
+        "type": "person",
+        "one": "name",
+        "many": "names",
+        "subtypes": []
+      },
+      {
+        "type": "account",
+        "one": "account",
+        "many": "accounts",
+        "subtypes": []
+      },
+      {
+        "type": "email",
+        "one": "email address",
+        "many": "email addresses",
+        "subtypes": []
+      },
+      {
+        "type": "phone",
+        "one": "phone number",
+        "many": "phone numbers",
+        "subtypes": []
+      },
+      {
+        "type": "address",
+        "one": "address",
+        "many": "addresses",
+        "subtypes": []
+      },
+      {
+        "type": "place",
+        "one": "place",
+        "many": "places",
+        "subtypes": []
+      },
+      {
+        "type": "number",
+        "one": "number",
+        "many": "numbers",
+        "subtypes": [
+          {
+            "type": "number.bank",
+            "one": "bank number",
+            "many": "bank numbers"
+          },
+          {
+            "type": "number.card",
+            "one": "card number",
+            "many": "card numbers"
+          },
+          {
+            "type": "number.government",
+            "one": "government id",
+            "many": "government ids"
+          },
+          {
+            "type": "number.tax",
+            "one": "tax id",
+            "many": "tax ids"
+          },
+          {
+            "type": "number.payment",
+            "one": "payment address",
+            "many": "payment addresses"
+          },
+          {
+            "type": "number.order",
+            "one": "order number",
+            "many": "order numbers"
+          }
+        ]
+      },
+      {
+        "type": "secret",
+        "one": "password or key",
+        "many": "passwords and keys",
+        "subtypes": []
+      },
+      {
+        "type": "link",
+        "one": "link",
+        "many": "links",
+        "subtypes": []
+      },
+      {
+        "type": "word",
+        "one": "listed word",
+        "many": "listed words",
+        "subtypes": []
+      },
+      {
+        "type": "face",
+        "one": "face",
+        "many": "faces",
+        "subtypes": []
+      }
+    ],
+    "links": "none",
+    "always": [],
+    "never": [],
+    "today": []
+  }
+}

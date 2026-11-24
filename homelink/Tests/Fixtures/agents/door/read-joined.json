@@ -1,0 +1,58 @@
+{
+  "route": "GET /v1/agents/<id>/reads/<call>",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "id": "call-0000000000000001",
+    "reader": "p-00000001",
+    "name": "Orbit",
+    "title": "Searched for “running shoes”",
+    "line": "Today, 10:41 – 10:44 · asked for more 3 times",
+    "figure": {
+      "n": 4,
+      "words": "things it saw"
+    },
+    "kinds": [
+      {
+        "kind": "notes",
+        "name": "Notes",
+        "icon": "note",
+        "n": 4,
+        "words": "4 notes"
+      }
+    ],
+    "kept": {
+      "about": "Orbit got these back as blanks.",
+      "rows": [
+        {
+          "type": "names",
+          "name": "Names",
+          "value": "Shown as “a person”"
+        },
+        {
+          "type": "phone",
+          "name": "Phone numbers",
+          "value": "18"
+        }
+      ],
+      "held": null
+    },
+    "why": [
+      {
+        "text": "At 10:41 Orbit could see "
+      },
+      {
+        "text": "everything but Health and Money",
+        "bold": true
+      },
+      {
+        "text": ", with details hidden."
+      }
+    ],
+    "refused": null,
+    "show": {
+      "words": "Show the 4 things",
+      "n": 4
+    }
+  }
+}

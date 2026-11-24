@@ -1,0 +1,2376 @@
+{
+  "chapters": [
+    {
+      "kind": "none",
+      "episode": null,
+      "start_ms": 1936981800000,
+      "end_ms": 1936996200000,
+      "rows": [
+        "gap:1936981800000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1936981800000",
+          "start_ms": 1936981800000,
+          "end_ms": 1936996200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "4h"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": []
+    },
+    {
+      "kind": "stay",
+      "episode": "e1",
+      "start_ms": 1936996200000,
+      "end_ms": 1937039400000,
+      "rows": [
+        "gap:1936996200000",
+        "e2",
+        "e4",
+        "e5",
+        "e6",
+        "e8",
+        "e9",
+        "e10",
+        "e12",
+        "e13",
+        "e14",
+        "e16",
+        "e17",
+        "e18",
+        "e20",
+        "e21",
+        "e22",
+        "e24",
+        "e25",
+        "e26",
+        "e27",
+        "e28",
+        "e29",
+        "e30",
+        "e31",
+        "e32",
+        "e33",
+        "gap:1937009640000",
+        "e34",
+        "e35",
+        "e37",
+        "e38",
+        "e39",
+        "e41",
+        "e42",
+        "e43",
+        "e45",
+        "e46",
+        "e47",
+        "e49",
+        "e50",
+        "e51",
+        "e53",
+        "e54",
+        "e55",
+        "e57",
+        "e58",
+        "e59",
+        "e61",
+        "e62",
+        "e63",
+        "e65",
+        "e66",
+        "e67",
+        "e69",
+        "e70",
+        "e71",
+        "e73",
+        "e74",
+        "e75",
+        "e77",
+        "e78",
+        "gap:1937031240000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1936996200000",
+          "start_ms": 1936996200000,
+          "end_ms": 1936999920000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "1h 2m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1937009640000",
+          "start_ms": 1937009640000,
+          "end_ms": 1937017920000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "2h 18m"
+            },
+            "quiet": true
+          }
+        },
+        {
+          "id": "gap:1937031240000",
+          "start_ms": 1937031240000,
+          "end_ms": 1937039400000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "2h 16m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": [
+        {
+          "text": "Person A",
+          "firstRowId": "e2"
+        },
+        {
+          "text": "Person B",
+          "firstRowId": "e4"
+        },
+        {
+          "text": "Person C",
+          "firstRowId": "e5"
+        },
+        {
+          "text": "Person D",
+          "firstRowId": "e6"
+        },
+        {
+          "text": "Person E",
+          "firstRowId": "e8"
+        },
+        {
+          "text": "Person F",
+          "firstRowId": "e9"
+        },
+        {
+          "text": "Person G",
+          "firstRowId": "e10"
+        },
+        {
+          "text": "Person H",
+          "firstRowId": "e12"
+        },
+        {
+          "text": "Person I",
+          "firstRowId": "e13"
+        },
+        {
+          "text": "Person J",
+          "firstRowId": "e14"
+        },
+        {
+          "text": "Person K",
+          "firstRowId": "e16"
+        },
+        {
+          "text": "Person L",
+          "firstRowId": "e17"
+        },
+        {
+          "text": "Person M",
+          "firstRowId": "e18"
+        },
+        {
+          "text": "Person N",
+          "firstRowId": "e20"
+        },
+        {
+          "text": "Person O",
+          "firstRowId": "e21"
+        },
+        {
+          "text": "Person P",
+          "firstRowId": "e22"
+        },
+        {
+          "text": "Person Q",
+          "firstRowId": "e24"
+        },
+        {
+          "text": "Person R",
+          "firstRowId": "e25"
+        },
+        {
+          "text": "Group Alpha",
+          "firstRowId": "e26"
+        },
+        {
+          "text": "Group Beta",
+          "firstRowId": "e27"
+        }
+      ],
+      "hours": [
+        {
+          "start_ms": 1936996200000,
+          "rows": [
+            "gap:1936996200000"
+          ],
+          "sent": 0,
+          "names": []
+        },
+        {
+          "start_ms": 1936999800000,
+          "rows": [
+            "e2",
+            "e4",
+            "e5",
+            "e6",
+            "e8",
+            "e9",
+            "e10",
+            "e12",
+            "e13"
+          ],
+          "sent": 3,
+          "names": [
+            {
+              "text": "Person A",
+              "firstRowId": "e2"
+            },
+            {
+              "text": "Person B",
+              "firstRowId": "e4"
+            },
+            {
+              "text": "Person C",
+              "firstRowId": "e5"
+            },
+            {
+              "text": "Person D",
+              "firstRowId": "e6"
+            },
+            {
+              "text": "Person E",
+              "firstRowId": "e8"
+            },
+            {
+              "text": "Person F",
+              "firstRowId": "e9"
+            },
+            {
+              "text": "Person G",
+              "firstRowId": "e10"
+            },
+            {
+              "text": "Person H",
+              "firstRowId": "e12"
+            },
+            {
+              "text": "Person I",
+              "firstRowId": "e13"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937003400000,
+          "rows": [
+            "e14",
+            "e16",
+            "e17",
+            "e18",
+            "e20",
+            "e21",
+            "e22",
+            "e24",
+            "e25"
+          ],
+          "sent": 3,
+          "names": [
+            {
+              "text": "Person J",
+              "firstRowId": "e14"
+            },
+            {
+              "text": "Person K",
+              "firstRowId": "e16"
+            },
+            {
+              "text": "Person L",
+              "firstRowId": "e17"
+            },
+            {
+              "text": "Person M",
+              "firstRowId": "e18"
+            },
+            {
+              "text": "Person N",
+              "firstRowId": "e20"
+            },
+            {
+              "text": "Person O",
+              "firstRowId": "e21"
+            },
+            {
+              "text": "Person P",
+              "firstRowId": "e22"
+            },
+            {
+              "text": "Person Q",
+              "firstRowId": "e24"
+            },
+            {
+              "text": "Person R",
+              "firstRowId": "e25"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937007000000,
+          "rows": [
+            "e26",
+            "e27",
+            "e28",
+            "e29",
+            "e30",
+            "e31",
+            "e32",
+            "e33",
+            "gap:1937009640000"
+          ],
+          "sent": 0,
+          "names": [
+            {
+              "text": "Group Alpha",
+              "firstRowId": "e26"
+            },
+            {
+              "text": "Group Beta",
+              "firstRowId": "e27"
+            },
+            {
+              "text": "Person A",
+              "firstRowId": "e28"
+            },
+            {
+              "text": "Person B",
+              "firstRowId": "e29"
+            },
+            {
+              "text": "Person C",
+              "firstRowId": "e30"
+            },
+            {
+              "text": "Person D",
+              "firstRowId": "e31"
+            },
+            {
+              "text": "Person E",
+              "firstRowId": "e32"
+            },
+            {
+              "text": "Person F",
+              "firstRowId": "e33"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937017800000,
+          "rows": [
+            "e34",
+            "e35",
+            "e37",
+            "e38",
+            "e39",
+            "e41",
+            "e42",
+            "e43",
+            "e45"
+          ],
+          "sent": 3,
+          "names": [
+            {
+              "text": "Person G",
+              "firstRowId": "e34"
+            },
+            {
+              "text": "Person H",
+              "firstRowId": "e35"
+            },
+            {
+              "text": "Person I",
+              "firstRowId": "e37"
+            },
+            {
+              "text": "Person J",
+              "firstRowId": "e38"
+            },
+            {
+              "text": "Person K",
+              "firstRowId": "e39"
+            },
+            {
+              "text": "Person L",
+              "firstRowId": "e41"
+            },
+            {
+              "text": "Person M",
+              "firstRowId": "e42"
+            },
+            {
+              "text": "Person N",
+              "firstRowId": "e43"
+            },
+            {
+              "text": "Person O",
+              "firstRowId": "e45"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937021400000,
+          "rows": [
+            "e46",
+            "e47",
+            "e49",
+            "e50",
+            "e51",
+            "e53",
+            "e54",
+            "e55",
+            "e57"
+          ],
+          "sent": 3,
+          "names": [
+            {
+              "text": "Person P",
+              "firstRowId": "e46"
+            },
+            {
+              "text": "Person Q",
+              "firstRowId": "e47"
+            },
+            {
+              "text": "Person R",
+              "firstRowId": "e49"
+            },
+            {
+              "text": "Group Alpha",
+              "firstRowId": "e50"
+            },
+            {
+              "text": "Group Beta",
+              "firstRowId": "e51"
+            },
+            {
+              "text": "Person A",
+              "firstRowId": "e53"
+            },
+            {
+              "text": "Person B",
+              "firstRowId": "e54"
+            },
+            {
+              "text": "Person C",
+              "firstRowId": "e55"
+            },
+            {
+              "text": "Person D",
+              "firstRowId": "e57"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937025000000,
+          "rows": [
+            "e58",
+            "e59",
+            "e61",
+            "e62",
+            "e63",
+            "e65",
+            "e66",
+            "e67"
+          ],
+          "sent": 3,
+          "names": [
+            {
+              "text": "Person E",
+              "firstRowId": "e58"
+            },
+            {
+              "text": "Person F",
+              "firstRowId": "e59"
+            },
+            {
+              "text": "Person G",
+              "firstRowId": "e61"
+            },
+            {
+              "text": "Person H",
+              "firstRowId": "e62"
+            },
+            {
+              "text": "Person I",
+              "firstRowId": "e63"
+            },
+            {
+              "text": "Person J",
+              "firstRowId": "e65"
+            },
+            {
+              "text": "Person K",
+              "firstRowId": "e66"
+            },
+            {
+              "text": "Person L",
+              "firstRowId": "e67"
+            }
+          ]
+        },
+        {
+          "start_ms": 1937028600000,
+          "rows": [
+            "e69",
+            "e70",
+            "e71",
+            "e73",
+            "e74",
+            "e75",
+            "e77",
+            "e78",
+            "gap:1937031240000"
+          ],
+          "sent": 2,
+          "names": [
+            {
+              "text": "Person M",
+              "firstRowId": "e69"
+            },
+            {
+              "text": "Person N",
+              "firstRowId": "e70"
+            },
+            {
+              "text": "Person O",
+              "firstRowId": "e71"
+            },
+            {
+              "text": "Person P",
+              "firstRowId": "e73"
+            },
+            {
+              "text": "Person Q",
+              "firstRowId": "e74"
+            },
+            {
+              "text": "Person R",
+              "firstRowId": "e75"
+            },
+            {
+              "text": "Group Alpha",
+              "firstRowId": "e77"
+            },
+            {
+              "text": "Group Beta",
+              "firstRowId": "e78"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "move",
+      "episode": "e79",
+      "start_ms": 1937039400000,
+      "end_ms": 1937040600000,
+      "rows": [],
+      "gaps": [],
+      "names": []
+    },
+    {
+      "kind": "none",
+      "episode": null,
+      "start_ms": 1937040600000,
+      "end_ms": 1937068200000,
+      "rows": [
+        "gap:1937040600000"
+      ],
+      "gaps": [
+        {
+          "id": "gap:1937040600000",
+          "start_ms": 1937040600000,
+          "end_ms": 1937068200000,
+          "played": [],
+          "row": {
+            "name": "Nothing recorded",
+            "note": "",
+            "words": [],
+            "count": {
+              "text": "7h 40m"
+            },
+            "quiet": true
+          }
+        }
+      ],
+      "names": []
+    }
+  ],
+  "episodes": [
+    {
+      "id": "e1",
+      "kind": "stay",
+      "family": "physical",
+      "title": "Synthetic Studio",
+      "row": {
+        "name": "Synthetic Studio",
+        "note": "",
+        "words": [],
+        "count": null,
+        "quiet": false
+      },
+      "start_ms": 1936996200000,
+      "end_ms": 1937039400000,
+      "at_ms": 1936996200000,
+      "atoms": [
+        1
+      ]
+    },
+    {
+      "id": "e2",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 1"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1936999920000,
+      "end_ms": 1937000040000,
+      "at_ms": 1936999920000,
+      "atoms": [
+        2,
+        3
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e4",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person B",
+      "row": {
+        "name": "Person B",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937000280000,
+      "end_ms": null,
+      "at_ms": 1937000280000,
+      "atoms": [
+        4
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e5",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person C",
+      "row": {
+        "name": "Person C",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937000640000,
+      "end_ms": null,
+      "at_ms": 1937000640000,
+      "atoms": [
+        5
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e6",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person D",
+      "row": {
+        "name": "Person D",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 4"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937001000000,
+      "end_ms": 1937001120000,
+      "at_ms": 1937001000000,
+      "atoms": [
+        6,
+        7
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e8",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person E",
+      "row": {
+        "name": "Person E",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937001360000,
+      "end_ms": null,
+      "at_ms": 1937001360000,
+      "atoms": [
+        8
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e9",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person F",
+      "row": {
+        "name": "Person F",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937001720000,
+      "end_ms": null,
+      "at_ms": 1937001720000,
+      "atoms": [
+        9
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e10",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person G",
+      "row": {
+        "name": "Person G",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 7"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937002080000,
+      "end_ms": 1937002200000,
+      "at_ms": 1937002080000,
+      "atoms": [
+        10,
+        11
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e12",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person H",
+      "row": {
+        "name": "Person H",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937002440000,
+      "end_ms": null,
+      "at_ms": 1937002440000,
+      "atoms": [
+        12
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e13",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person I",
+      "row": {
+        "name": "Person I",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937002800000,
+      "end_ms": null,
+      "at_ms": 1937002800000,
+      "atoms": [
+        13
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e14",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person J",
+      "row": {
+        "name": "Person J",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 10"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937003520000,
+      "end_ms": 1937003640000,
+      "at_ms": 1937003520000,
+      "atoms": [
+        14,
+        15
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e16",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person K",
+      "row": {
+        "name": "Person K",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937003880000,
+      "end_ms": null,
+      "at_ms": 1937003880000,
+      "atoms": [
+        16
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e17",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person L",
+      "row": {
+        "name": "Person L",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937004240000,
+      "end_ms": null,
+      "at_ms": 1937004240000,
+      "atoms": [
+        17
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e18",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person M",
+      "row": {
+        "name": "Person M",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 13"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937004600000,
+      "end_ms": 1937004720000,
+      "at_ms": 1937004600000,
+      "atoms": [
+        18,
+        19
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e20",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person N",
+      "row": {
+        "name": "Person N",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937004960000,
+      "end_ms": null,
+      "at_ms": 1937004960000,
+      "atoms": [
+        20
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e21",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person O",
+      "row": {
+        "name": "Person O",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937005320000,
+      "end_ms": null,
+      "at_ms": 1937005320000,
+      "atoms": [
+        21
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e22",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person P",
+      "row": {
+        "name": "Person P",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 16"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937005680000,
+      "end_ms": 1937005800000,
+      "at_ms": 1937005680000,
+      "atoms": [
+        22,
+        23
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e24",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person Q",
+      "row": {
+        "name": "Person Q",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937006040000,
+      "end_ms": null,
+      "at_ms": 1937006040000,
+      "atoms": [
+        24
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e25",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person R",
+      "row": {
+        "name": "Person R",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937006400000,
+      "end_ms": null,
+      "at_ms": 1937006400000,
+      "atoms": [
+        25
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e26",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937007120000,
+      "end_ms": null,
+      "at_ms": 1937007120000,
+      "atoms": [
+        26
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e27",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Beta",
+      "row": {
+        "name": "Group Beta",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937007480000,
+      "end_ms": null,
+      "at_ms": 1937007480000,
+      "atoms": [
+        27
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e28",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937007840000,
+      "end_ms": null,
+      "at_ms": 1937007840000,
+      "atoms": [
+        28
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e29",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person B",
+      "row": {
+        "name": "Person B",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937008200000,
+      "end_ms": null,
+      "at_ms": 1937008200000,
+      "atoms": [
+        29
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e30",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person C",
+      "row": {
+        "name": "Person C",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937008560000,
+      "end_ms": null,
+      "at_ms": 1937008560000,
+      "atoms": [
+        30
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e31",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person D",
+      "row": {
+        "name": "Person D",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937008920000,
+      "end_ms": null,
+      "at_ms": 1937008920000,
+      "atoms": [
+        31
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e32",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person E",
+      "row": {
+        "name": "Person E",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937009280000,
+      "end_ms": null,
+      "at_ms": 1937009280000,
+      "atoms": [
+        32
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e33",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person F",
+      "row": {
+        "name": "Person F",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937009640000,
+      "end_ms": null,
+      "at_ms": 1937009640000,
+      "atoms": [
+        33
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e34",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person G",
+      "row": {
+        "name": "Person G",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937017920000,
+      "end_ms": null,
+      "at_ms": 1937017920000,
+      "atoms": [
+        34
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e35",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person H",
+      "row": {
+        "name": "Person H",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 28"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937018280000,
+      "end_ms": 1937018400000,
+      "at_ms": 1937018280000,
+      "atoms": [
+        35,
+        36
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e37",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person I",
+      "row": {
+        "name": "Person I",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937018640000,
+      "end_ms": null,
+      "at_ms": 1937018640000,
+      "atoms": [
+        37
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e38",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person J",
+      "row": {
+        "name": "Person J",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937019000000,
+      "end_ms": null,
+      "at_ms": 1937019000000,
+      "atoms": [
+        38
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e39",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person K",
+      "row": {
+        "name": "Person K",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 31"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937019360000,
+      "end_ms": 1937019480000,
+      "at_ms": 1937019360000,
+      "atoms": [
+        39,
+        40
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e41",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person L",
+      "row": {
+        "name": "Person L",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937019720000,
+      "end_ms": null,
+      "at_ms": 1937019720000,
+      "atoms": [
+        41
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e42",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person M",
+      "row": {
+        "name": "Person M",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937020080000,
+      "end_ms": null,
+      "at_ms": 1937020080000,
+      "atoms": [
+        42
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e43",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person N",
+      "row": {
+        "name": "Person N",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 34"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937020440000,
+      "end_ms": 1937020560000,
+      "at_ms": 1937020440000,
+      "atoms": [
+        43,
+        44
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e45",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person O",
+      "row": {
+        "name": "Person O",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937020800000,
+      "end_ms": null,
+      "at_ms": 1937020800000,
+      "atoms": [
+        45
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e46",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person P",
+      "row": {
+        "name": "Person P",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937021520000,
+      "end_ms": null,
+      "at_ms": 1937021520000,
+      "atoms": [
+        46
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e47",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person Q",
+      "row": {
+        "name": "Person Q",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 37"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937021880000,
+      "end_ms": 1937022000000,
+      "at_ms": 1937021880000,
+      "atoms": [
+        47,
+        48
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e49",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person R",
+      "row": {
+        "name": "Person R",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937022240000,
+      "end_ms": null,
+      "at_ms": 1937022240000,
+      "atoms": [
+        49
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e50",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937022600000,
+      "end_ms": null,
+      "at_ms": 1937022600000,
+      "atoms": [
+        50
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e51",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Beta",
+      "row": {
+        "name": "Group Beta",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 40"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937022960000,
+      "end_ms": 1937023080000,
+      "at_ms": 1937022960000,
+      "atoms": [
+        51,
+        52
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": true
+    },
+    {
+      "id": "e53",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person A",
+      "row": {
+        "name": "Person A",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937023320000,
+      "end_ms": null,
+      "at_ms": 1937023320000,
+      "atoms": [
+        53
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e54",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person B",
+      "row": {
+        "name": "Person B",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937023680000,
+      "end_ms": null,
+      "at_ms": 1937023680000,
+      "atoms": [
+        54
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e55",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person C",
+      "row": {
+        "name": "Person C",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 43"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937024040000,
+      "end_ms": 1937024160000,
+      "at_ms": 1937024040000,
+      "atoms": [
+        55,
+        56
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e57",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person D",
+      "row": {
+        "name": "Person D",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937024400000,
+      "end_ms": null,
+      "at_ms": 1937024400000,
+      "atoms": [
+        57
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e58",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person E",
+      "row": {
+        "name": "Person E",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937025120000,
+      "end_ms": null,
+      "at_ms": 1937025120000,
+      "atoms": [
+        58
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e59",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person F",
+      "row": {
+        "name": "Person F",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 46"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937025480000,
+      "end_ms": 1937025600000,
+      "at_ms": 1937025480000,
+      "atoms": [
+        59,
+        60
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e61",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person G",
+      "row": {
+        "name": "Person G",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937025840000,
+      "end_ms": null,
+      "at_ms": 1937025840000,
+      "atoms": [
+        61
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e62",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person H",
+      "row": {
+        "name": "Person H",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937026200000,
+      "end_ms": null,
+      "at_ms": 1937026200000,
+      "atoms": [
+        62
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e63",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person I",
+      "row": {
+        "name": "Person I",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 49"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937026560000,
+      "end_ms": 1937026680000,
+      "at_ms": 1937026560000,
+      "atoms": [
+        63,
+        64
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e65",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person J",
+      "row": {
+        "name": "Person J",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937026920000,
+      "end_ms": null,
+      "at_ms": 1937026920000,
+      "atoms": [
+        65
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e66",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person K",
+      "row": {
+        "name": "Person K",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937027280000,
+      "end_ms": null,
+      "at_ms": 1937027280000,
+      "atoms": [
+        66
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e67",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person L",
+      "row": {
+        "name": "Person L",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 52"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937027640000,
+      "end_ms": 1937027760000,
+      "at_ms": 1937027640000,
+      "atoms": [
+        67,
+        68
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e69",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person M",
+      "row": {
+        "name": "Person M",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937028720000,
+      "end_ms": null,
+      "at_ms": 1937028720000,
+      "atoms": [
+        69
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e70",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person N",
+      "row": {
+        "name": "Person N",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937029080000,
+      "end_ms": null,
+      "at_ms": 1937029080000,
+      "atoms": [
+        70
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e71",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person O",
+      "row": {
+        "name": "Person O",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 55"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937029440000,
+      "end_ms": 1937029560000,
+      "at_ms": 1937029440000,
+      "atoms": [
+        71,
+        72
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e73",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person P",
+      "row": {
+        "name": "Person P",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937029800000,
+      "end_ms": null,
+      "at_ms": 1937029800000,
+      "atoms": [
+        73
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e74",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person Q",
+      "row": {
+        "name": "Person Q",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937030160000,
+      "end_ms": null,
+      "at_ms": 1937030160000,
+      "atoms": [
+        74
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": false
+    },
+    {
+      "id": "e75",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Person R",
+      "row": {
+        "name": "Person R",
+        "note": "",
+        "words": [
+          {
+            "type": "quote",
+            "text": "Synthetic reply 58"
+          }
+        ],
+        "count": {
+          "sent": 1
+        },
+        "quiet": false
+      },
+      "start_ms": 1937030520000,
+      "end_ms": 1937030640000,
+      "at_ms": 1937030520000,
+      "atoms": [
+        75,
+        76
+      ],
+      "count": 2,
+      "sent": 1,
+      "group": false
+    },
+    {
+      "id": "e77",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Alpha",
+      "row": {
+        "name": "Group Alpha",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937030880000,
+      "end_ms": null,
+      "at_ms": 1937030880000,
+      "atoms": [
+        77
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e78",
+      "kind": "conversation",
+      "family": "messages",
+      "title": "Group Beta",
+      "row": {
+        "name": "Group Beta",
+        "note": "",
+        "words": [],
+        "count": {
+          "received": 1
+        },
+        "quiet": true
+      },
+      "start_ms": 1937031240000,
+      "end_ms": null,
+      "at_ms": 1937031240000,
+      "atoms": [
+        78
+      ],
+      "count": 1,
+      "sent": 0,
+      "group": true
+    },
+    {
+      "id": "e79",
+      "kind": "move",
+      "family": "physical",
+      "title": "Synthetic Studio → Synthetic Park",
+      "row": {
+        "name": "Cycle 3.2 km",
+        "note": "",
+        "words": [],
+        "count": {
+          "text": "20m"
+        },
+        "quiet": false
+      },
+      "start_ms": 1937039400000,
+      "end_ms": 1937040600000,
+      "at_ms": 1937039400000,
+      "atoms": [
+        79
+      ],
+      "mode": null
+    }
+  ],
+  "also": [],
+  "all_day": [],
+  "untimed": {
+    "rows": [],
+    "names": []
+  },
+  "plan": [],
+  "headings": [],
+  "figures": {
+    "asleep_ms": null,
+    "steps": null,
+    "places": 1,
+    "people": 18,
+    "mac_ms": null,
+    "phone_ms": null,
+    "recovery": null,
+    "sent": 17,
+    "received": 60
+  },
+  "people": {
+    "contacts": [
+      {
+        "key": "whatsapp:15550001001@s.whatsapp.net",
+        "title": "Person A",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1936999920000
+      },
+      {
+        "key": "whatsapp:15550001003@s.whatsapp.net",
+        "title": "Person C",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937000640000
+      },
+      {
+        "key": "whatsapp:15550001004@s.whatsapp.net",
+        "title": "Person D",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937001000000
+      },
+      {
+        "key": "whatsapp:15550001006@s.whatsapp.net",
+        "title": "Person F",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937001720000
+      },
+      {
+        "key": "whatsapp:15550001007@s.whatsapp.net",
+        "title": "Person G",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937002080000
+      },
+      {
+        "key": "whatsapp:15550001008@s.whatsapp.net",
+        "title": "Person H",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937002440000
+      },
+      {
+        "key": "whatsapp:15550001009@s.whatsapp.net",
+        "title": "Person I",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937002800000
+      },
+      {
+        "key": "whatsapp:15550001010@s.whatsapp.net",
+        "title": "Person J",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937003520000
+      },
+      {
+        "key": "whatsapp:15550001011@s.whatsapp.net",
+        "title": "Person K",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937003880000
+      },
+      {
+        "key": "whatsapp:15550001012@s.whatsapp.net",
+        "title": "Person L",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937004240000
+      },
+      {
+        "key": "whatsapp:15550001013@s.whatsapp.net",
+        "title": "Person M",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937004600000
+      },
+      {
+        "key": "whatsapp:15550001014@s.whatsapp.net",
+        "title": "Person N",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937004960000
+      },
+      {
+        "key": "whatsapp:15550001015@s.whatsapp.net",
+        "title": "Person O",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937005320000
+      },
+      {
+        "key": "whatsapp:15550001016@s.whatsapp.net",
+        "title": "Person P",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937005680000
+      },
+      {
+        "key": "whatsapp:15550001017@s.whatsapp.net",
+        "title": "Person Q",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937006040000
+      },
+      {
+        "key": "whatsapp:15550001018@s.whatsapp.net",
+        "title": "Person R",
+        "sent": 1,
+        "received": 3,
+        "first_ms": 1937006400000
+      },
+      {
+        "key": "whatsapp:15550001002@s.whatsapp.net",
+        "title": "Person B",
+        "sent": 0,
+        "received": 3,
+        "first_ms": 1937000280000
+      },
+      {
+        "key": "whatsapp:15550001005@s.whatsapp.net",
+        "title": "Person E",
+        "sent": 0,
+        "received": 3,
+        "first_ms": 1937001360000
+      }
+    ],
+    "groups": [
+      {
+        "key": "whatsapp:120363000000000022@g.us",
+        "title": "Group Beta"
+      }
+    ]
+  },
+  "updated": 1937068200000
+}

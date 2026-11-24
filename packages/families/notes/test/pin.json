@@ -1,0 +1,12 @@
+{
+  "family": "notes",
+  "key": {
+    "code": "3",
+    "adapters": {
+      "notes/apple-notes": "1",
+      "notes/granola": "1"
+    }
+  },
+  "rows": 8,
+  "digest": "sha256:bafadac610ba15d4d0df9d836db81bd08d5565c73f24fb41291eb9fb81d478bb"
+}

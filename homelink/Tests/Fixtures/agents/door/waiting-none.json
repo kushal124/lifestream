@@ -1,0 +1,11 @@
+{
+  "route": "GET /v1/agents/waiting",
+  "request": null,
+  "status": 200,
+  "answer": {
+    "position": "1:0",
+    "today": "2026-11-14",
+    "requests": [],
+    "asks": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "route": "POST /v1/access/request",
+  "request": {
+    "request": {
+      "read": {
+        "account": "gmail:person-b@example.com"
+      }
+    },
+    "reason": "The home mailbox."
+  },
+  "status": 200,
+  "answer": {
+    "state": "held",
+    "words": "Declined twice. Your person can change your access in Lifestream.",
+    "request": null
+  }
+}

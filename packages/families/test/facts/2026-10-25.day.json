@@ -1,0 +1,23 @@
+{
+  "day": "2026-10-25",
+  "zone": "America/New_York",
+  "day_start_hour": 4,
+  "window": {"start_ms":1792915200000,"end_ms":1793001600000},
+  "renderer": "13/3-7414146adf6d/7",
+  "inputs": "sha256:bc3436dc2b460c15d9a942f1a479c349468918b179497aae78d11f8c5c9e3191",
+  "counts": {"total":4,"per_family":{"tally":4}},
+  "coverage": [{"family":"tally","sources":[{"source":"example-tally:acct-aa01:mac-0001","read":"none"}]}],
+  "atoms": [
+    {"n":1,"family":"tally","unit":"tally/c1","units":["tally/c1"],"start_ms":1792915200000,"end_ms":1792917600000,"local_start":"04:00","local_end":"04:40","flags":["continues_from_previous_day"],"text":"Call to +15550000001","record":{"source":"example-tally:acct-aa01:mac-0001","kind":"call","key":"c1"}},
+    {"n":2,"family":"tally","unit":"tally/s1","units":["tally/s1"],"start_ms":1792933200000,"end_ms":1792936800000,"local_start":"09:00","local_end":"10:00","flags":[],"text":"At the Mac: Mail, Editor, Browser","record":{"source":"example-tally:acct-aa01:mac-0001","kind":"sitting","key":"s1"}},
+    {"n":3,"family":"tally","unit":"tally/c2","units":["tally/c2"],"start_ms":1792951200000,"end_ms":1792953000000,"local_start":"14:00","local_end":"14:30","flags":[],"text":"Call from +15550000002","record":{"source":"example-tally:acct-aa01:mac-0001","kind":"call","key":"c2"}},
+    {"n":4,"family":"tally","unit":"tally/p1","units":["tally/p1"],"start_ms":1792886400000,"end_ms":null,"local_start":null,"local_end":null,"flags":["date_only"],"text":"-12.50 USD to Shop 4","record":{"source":"example-tally:acct-aa01:mac-0001","kind":"payment","key":"p1"}}
+  ],
+  "facts": [
+    {"id":"payments:04281a010a56ffc6efb4ae97","family":"tally","of":"payments","time_ms":1792886400000,"start_ms":1792886400000,"end_ms":1792886400000,"date_only":true,"keys":{"payee":"Shop 4","direction":"out","currency":"USD"},"measures":{"amount":"-12.50","balance":"987.50"},"who":[],"from":{"units":["tally/p1"],"record":{"source":"example-tally:acct-aa01:mac-0001","kind":"payment","key":"p1"},"alone":true},"lines":[4]},
+    {"id":"screen_time:02d0db9b47393b88ce37a51a","family":"tally","of":"screen_time","time_ms":1792933200000,"start_ms":1792933200000,"end_ms":1792936800000,"keys":{"app":"Editor"},"measures":{"minutes":30},"who":[],"from":{"units":["tally/s1"],"accounts":["example-tally:acct-aa01"]},"lines":[2]},
+    {"id":"screen_time:73eaf79aa3fbf1fb15e1fb8f","family":"tally","of":"screen_time","time_ms":1792933200000,"start_ms":1792933200000,"end_ms":1792936800000,"keys":{"app":"Mail"},"measures":{"minutes":25},"who":[],"from":{"units":["tally/s1"],"accounts":["example-tally:acct-aa01"]},"lines":[2]},
+    {"id":"screen_time:e156be5c3a18c8872292914d","family":"tally","of":"screen_time","time_ms":1792933200000,"start_ms":1792933200000,"end_ms":1792936800000,"keys":{"app":"Browser"},"measures":{"minutes":5},"who":[],"from":{"units":["tally/s1"],"accounts":["example-tally:acct-aa01"]},"lines":[2]},
+    {"id":"calls:e0a035484cdeb316ae7f6998","family":"tally","of":"calls","time_ms":1792951200000,"start_ms":1792951200000,"end_ms":1792953000000,"keys":{"service":"whatsapp","direction":"in"},"measures":{"minutes":30},"who":[{"handle":"+15550000002","role":"sender"}],"from":{"units":["tally/c2"],"record":{"source":"example-tally:acct-aa01:mac-0001","kind":"call","key":"c2"},"alone":true},"lines":[3]}
+  ]
+}

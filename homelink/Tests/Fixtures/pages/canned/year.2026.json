@@ -1,0 +1,77 @@
+{
+  "position": "1:1791968400000",
+  "today": "2026-10-25",
+  "year": 2026,
+  "span": {
+    "first": 2025,
+    "last": 2026
+  },
+  "trips": [
+    {
+      "title": "Salinas",
+      "nights": "3 nights",
+      "range": {
+        "first": "2026-10-07",
+        "last": "2026-10-09"
+      },
+      "route": [
+        "Salinas"
+      ],
+      "guessed": false,
+      "days": [
+        {
+          "day": "2026-10-07",
+          "line": "Salinas · Home, an unnamed place 0.5 km from Harbour Inn"
+        },
+        {
+          "day": "2026-10-08",
+          "line": "Salinas · an unnamed place 0.5 km from Harbour Inn"
+        },
+        {
+          "day": "2026-10-09",
+          "line": "Salinas · an unnamed place 0.5 km from Harbour Inn"
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "count": 3,
+      "words": "Nights away"
+    },
+    {
+      "count": 1,
+      "words": "Country"
+    },
+    {
+      "count": 1,
+      "words": "City"
+    }
+  ],
+  "cities": [
+    {
+      "name": "San Jose",
+      "nights": 293,
+      "point": {
+        "latitude": 37.33939,
+        "longitude": -121.89496
+      },
+      "country": "United States",
+      "base": true
+    },
+    {
+      "name": "Salinas",
+      "nights": 3,
+      "point": {
+        "latitude": 36.67774,
+        "longitude": -121.6555
+      },
+      "country": "United States",
+      "base": false
+    }
+  ],
+  "base": {
+    "name": "San Jose",
+    "nights": 294
+  }
+}
