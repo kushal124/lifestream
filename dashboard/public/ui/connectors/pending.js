@@ -5,7 +5,7 @@ import { settingKey } from './view.js';
 
 /** @typedef {{ report: StreamsReport | null, models: ModelsRead | null, hiding: string | null }} Reads */
 
-/** @typedef {{ kind: 'file', runner: string, id: string } | { kind: 'pause', runner: string } | { kind: 'battery', runner: string } | { kind: 'default', of: ModelKind } | { kind: 'address' } | { kind: 'openrouter' }} Thing */
+/** @typedef {{ kind: 'file', runner: string, id: string } | { kind: 'pause', runner: string } | { kind: 'battery', runner: string } | { kind: 'default', of: ModelKind } | { kind: 'address' } | { kind: 'openrouter' } | { kind: 'cloudflare' }} Thing */
 
 /** @typedef {{ key: string, source: 'report', connector: string, member: string, before: StreamsReport | null, landed: string | null }} Settling */
 
@@ -28,6 +28,7 @@ function thingOf(act) {
     return { thing: { kind: 'address' }, sent: canonical('none' in act ? null : { model: act.model, url: act.url }) };
   }
   if (act.act === 'seal' && 'secret' in act && act.secret === 'openrouter') return { thing: { kind: 'openrouter' }, sent: canonical(act.value !== null) };
+  if (act.act === 'seal' && 'secret' in act && act.secret === 'cloudflare') return { thing: { kind: 'cloudflare' }, sent: canonical(act.value !== null) };
   return null;
 }
 
@@ -81,6 +82,7 @@ export const actKey = (act, holds = null) => holds ? settingKey(holds.connector,
 function valueAt(thing, { models }) {
   if (!models) return undefined;
   if (thing.kind === 'openrouter') return canonical(models.openrouter.connected);
+  if (thing.kind === 'cloudflare') return canonical(models.cloudflare.connected);
   if (thing.kind === 'address') return canonical(models.address && { model: models.address.model, url: models.address.url });
   if (thing.kind === 'default') return canonical(models.defaults[thing.of]?.value ?? null);
   const held = models.runners.find(each => each.unit === thing.runner);

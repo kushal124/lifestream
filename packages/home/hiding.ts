@@ -83,7 +83,7 @@ export function within(ms: number): () => Bound {
   };
 }
 const AT_ONCE = 4;
-const RECEIVERS: Readonly<Record<string, string>> = { codex: "OpenAI", claude: "Anthropic", openrouter: "OpenRouter" };
+const RECEIVERS: Readonly<Record<string, string>> = { codex: "OpenAI", claude: "Anthropic", openrouter: "OpenRouter", cloudflare: "Cloudflare" };
 const BLOB = /^sha256:[0-9a-f]{64}$/u;
 const CHAT_TABLE = /^chat:\S{1,200}$/u;
 const refOf = (detail: string): string => continuationOf(detail)?.of ?? detail;

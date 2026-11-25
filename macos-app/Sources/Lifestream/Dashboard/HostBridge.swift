@@ -135,6 +135,7 @@ enum HostAct: Equatable {
     case seal(connector: String, member: String, value: String)
     case refresh(connector: String)
     case openRouterKey(String?)
+    case cloudflareKey(String?)
     case models(ModelsAct)
     case process(family: String, item: String, prompt: String, route: String)
     case general(GeneralAct)
@@ -328,6 +329,13 @@ enum HostAct: Equatable {
 
     static let idLimit = 200
     static let valueLimit = 16_384
+
+    static func isCloudflareKey(_ key: String) -> Bool {
+        let parts = key.split(separator: ":", maxSplits: 1, omittingEmptySubsequences: false)
+        guard parts.count == 2, parts[0].count == 32, !parts[1].isEmpty else { return false }
+        return parts[0].allSatisfy { "0123456789abcdef".contains($0) }
+            && parts[1].unicodeScalars.allSatisfy { (0x21...0x7e).contains($0.value) }
+    }
     static let bodyLimit = 2 * 1024 * 1024
     static let urlLimit = 2048
 
@@ -437,6 +445,13 @@ enum HostAct: Equatable {
             guard let connector = id(body["connector"]), let member = id(body["member"]), let value = settingValue(body["value"]) else { return nil }
             guard let was = body["was"] else { return .setting(connector: connector, member: member, value: value) }
             return json(was).map { .setting(connector: connector, member: member, value: value, was: $0) }
+        case "seal" where body["secret"] as? String == "cloudflare":
+            guard Set(body.keys) == ["type", "act", "secret", "value"] else { return nil }
+            switch body["value"] {
+            case is NSNull: return .cloudflareKey(nil)
+            case let key as String where (1...valueLimit).contains(key.count) && Self.isCloudflareKey(key): return .cloudflareKey(key)
+            default: return nil
+            }
         case "seal" where body["secret"] != nil:
             guard body["secret"] as? String == "openrouter", Set(body.keys) == ["type", "act", "secret", "value"] else { return nil }
             switch body["value"] {

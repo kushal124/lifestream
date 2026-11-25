@@ -160,6 +160,7 @@ const OWN_ACTS = {
   "POST /v1/subscriptions/<name>": { again: true, wait_ms: WAIT_MS },
   "GET /v1/subscriptions": { again: true, wait_ms: WAIT_MS },
   "GET /v1/secrets/openrouter": { again: true, wait_ms: WAIT_MS },
+  "GET /v1/secrets/cloudflare": { again: true, wait_ms: WAIT_MS },
   "POST /v1/ask/words": { again: true, wait_ms: 15_000 },
   "GET /v1/places/suggest": { again: false, wait_ms: 5_000 },
   "GET /v1/agents/waiting": { again: true, wait_ms: WAIT_MS },
@@ -302,6 +303,7 @@ const OUTBOUND_ROW = /^\/v1\/outbound\/([1-9]\d{0,14})$/u;
 const AGENTS_PREFIX = "/v1/agents/";
 const SUBSCRIPTIONS_ROUTE = /^\/v1\/subscriptions(?:\/([^/]+))?$/u;
 const ASK_KEY_ROUTE = "/v1/secrets/openrouter";
+const ASK_CLOUDFLARE_ROUTE = "/v1/secrets/cloudflare";
 const AGENT_STATE_ROUTE = /^request\/([^/]+)$/u;
 const ASK_SERVER = "http://127.0.0.1:4681";
 const ASK_SENT = ["lifestream-device", "content-type", "content-length", "accept"];
@@ -1105,6 +1107,14 @@ function openFolder(intake: Intake, folder: string, settings: DoorAddress, optio
     const own = () => askServerOnly(principal, request, reach, "the OpenRouter key is read by Chat alone, on the home's Mac");
     own();
     const answer = await relay({ verb: "ask-key" }, "GET /v1/secrets/openrouter", request) as JsonObject;
+    own();
+    return [200, answer];
+  };
+
+  const askCloudflare = async (principal: Principal, request: IncomingMessage, reach: Reach): Promise<[number, JsonObject]> => {
+    const own = () => askServerOnly(principal, request, reach, "the Cloudflare token is read by Chat alone, on the home's Mac");
+    own();
+    const answer = await relay({ verb: "ask-key", secret: "cloudflare" }, "GET /v1/secrets/cloudflare", request) as JsonObject;
     own();
     return [200, answer];
   };
@@ -1935,6 +1945,7 @@ function openFolder(intake: Intake, folder: string, settings: DoorAddress, optio
           else if (pathname.startsWith(AGENTS_PREFIX)) result = await agentsRoute(principal, reach, request, pathname);
           else if (SUBSCRIPTIONS_ROUTE.test(pathname)) result = await subscriptions(principal, reach, request, pathname);
           else if (request.method === "GET" && pathname === ASK_KEY_ROUTE) result = await askKey(principal, request, reach);
+          else if (request.method === "GET" && pathname === ASK_CLOUDFLARE_ROUTE) result = await askCloudflare(principal, request, reach);
           else if (request.method === "POST" && pathname === ASK_FILES_ROUTE) result = await askFile(principal, request);
           else if (request.method === "PUT" && ASK_FILE_ROUTE.test(pathname)) result = await stageAskFile(principal, request, reach, decodeSegment(ASK_FILE_ROUTE.exec(pathname)![1]!) ?? "");
           else if (request.method === "DELETE" && ASK_FILE_ROUTE.test(pathname)) result = dropAskFile(principal, request, reach, decodeSegment(ASK_FILE_ROUTE.exec(pathname)![1]!) ?? "");

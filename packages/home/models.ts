@@ -2,7 +2,7 @@ import type { Connector } from "@lifestreamprotocol/connect";
 import { addDays, civilDay, dayBounds, type Ask, type AskRow, type DaySettings, type JsonObject, type ReadTables, type SourceRow, type Tx } from "@lifestreamprotocol/core";
 import type { Family } from "@lifestreamprotocol/families";
 import {
-  CLOUD_VOICE, configured, OPENROUTER_SECRET, restsOf, routeId, transportOf, type CallRoute, type Found, type Ledger, type ModelSettings, type Offer, type Rest, type RoutedAsk,
+  CLOUD_VOICE, CLOUDFLARE_SECRET, configured, OPENROUTER_SECRET, restsOf, routeId, transportOf, type CallRoute, type Found, type Ledger, type ModelSettings, type Offer, type Rest, type RoutedAsk,
   type FileFailure, type RunnerFile, type RunnerListing, type Sampling, type Transport, type Unavailable, type WorkKind,
 } from "@lifestreamprotocol/model";
 import { catalogOf } from "./catalog.js";
@@ -198,6 +198,7 @@ export interface StoredModels {
   routes: ModelRoute[];
   runners: StoredRunner[];
   openrouter: { connected: boolean };
+  cloudflare?: { connected: boolean };
 }
 
 export function storedModels(meta: ReadTables["meta"]): StoredModels {
@@ -379,6 +380,7 @@ export class Models {
   #reads: TransportRead[] = [];
   #runners: readonly RunnerListing[] = [];
   #held = false;
+  #cloudflare = false;
   #read_ms = -Infinity;
   #reading: Promise<void> | null = null;
   readonly #names = new Map<string, string>();
@@ -438,6 +440,7 @@ export class Models {
     }));
     this.#runners = runners;
     this.#held = found.held?.(OPENROUTER_SECRET) === true;
+    this.#cloudflare = found.held?.(CLOUDFLARE_SECRET) === true;
     this.#read_ms = this.options.clock();
     const ready = this.list(new Set()).filter((route) => route.state === "ready");
     const taken: Partial<Record<WorkKind, string>> = {};
@@ -469,7 +472,7 @@ export class Models {
     if (this.#reads.length === 0) return routing;
     for (const route of Object.values(routing.routes)) if (route.offered) this.#names.set(route.id, route.name);
     const runners = this.#runners.map(({ unit, name, present, power, memory_gb, files }): StoredRunner => ({ unit, name, present, power, memory_gb, files }));
-    const stored = JSON.stringify({ routes: Object.values(routing.routes), runners, openrouter: { connected: this.#held } } satisfies StoredModels);
+    const stored = JSON.stringify({ routes: Object.values(routing.routes), runners, openrouter: { connected: this.#held }, cloudflare: { connected: this.#cloudflare } } satisfies StoredModels);
     if (stored !== this.#stored) {
       if (tx.tables.meta.get(MODELS_META) !== stored) tx.tables.meta.set(MODELS_META, stored);
       this.#stored = stored;

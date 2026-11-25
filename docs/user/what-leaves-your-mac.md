@@ -18,8 +18,8 @@ The rest of this page gives each case: who receives it, when, and how to stop it
 
 | What leaves | Who receives it | When | Personal details hidden | To stop it |
 |---|---|---|---|---|
-| Items a connector's AI work reads: photos, emails, voice notes, long messages from AI chats, your screen | OpenAI for your ChatGPT plan, Anthropic for your Claude plan, or OpenRouter and the model's maker for your OpenRouter key | As each item arrives, once a model is ready | Yes, but not voice notes | Set the work's **Model** to **Off**, or to a model on your Mac |
-| Your Chat questions, and what Chat reads to answer them | The same companies: Chat always uses one | Each question | Yes, at Chat's level | Sign out of both plans, and remove the OpenRouter key |
+| Items a connector's AI work reads: photos, emails, voice notes, long messages from AI chats, your screen | OpenAI for your ChatGPT plan, Anthropic for your Claude plan, OpenRouter and the model's maker for your OpenRouter key, or Cloudflare and the model's maker for your Cloudflare account | As each item arrives, once a model is ready | Yes, but not voice notes | Set the work's **Model** to **Off**, or to a model on your Mac |
+| Your Chat questions, and what Chat reads to answer them | The same companies: Chat always uses one | Each question | Yes, at Chat's level | Sign out of both plans, and remove the OpenRouter key and the Cloudflare account |
 | Your voice in Chat, with **Scribe v2** | OpenRouter and ElevenLabs | Each voice message | No: sound can't be hidden | Pick **Parakeet** for **Voice** in Chat's model menu |
 | What an agent reads | The company that runs the agent, such as Anthropic for Claude | Each read | Details yes, names no, unless you change **Hides** | Disconnect the agent |
 | An agent's requests from the internet | Tailscale, which carries them | Each request | Same as the row above | On the **Agents** page, click **Turn off** |
@@ -73,6 +73,7 @@ Who receives an item depends on the model that reads it:
 | Your ChatGPT plan | OpenAI |
 | Your Claude plan | Anthropic |
 | A model through your OpenRouter key | OpenRouter, and the company that makes the model: Google for **Gemini 3.8 Flash**, OpenAI for **GPT-6 Luna**, ElevenLabs for **Scribe v2** |
+| A model through your Cloudflare account | Cloudflare, and the company that makes the model: Google for **Gemini 3.8 Flash**, OpenAI for **GPT-6 Luna** and `openai/` models, Anthropic for `anthropic/` and Claude models. A `workers-ai/` model runs at Cloudflare alone. |
 | A model under **On this Mac** | Nobody. It runs on your Mac. |
 | A model under **On** *another computer's name* | That computer, which runs the model for Lifestream. |
 | **Custom server** | The computer at its address. Nobody, if that address is this Mac. |
@@ -125,7 +126,7 @@ an item, to see **What was sent**, as the model got it.
 ## What Chat sends
 
 Chat always uses a model at a company: your ChatGPT plan, your Claude plan, or a model through your
-OpenRouter key. No model on your Mac can answer Chat. Each question sends the model your question,
+OpenRouter key or your Cloudflare account. No model on your Mac can answer Chat. Each question sends the model your question,
 the conversation so far, and everything Chat reads to answer it. Chat hides personal details in all
 of it. The chip beside the model, under the box, shows how much: a new conversation takes the
 **Chat** setting in **Settings** › **Privacy**. To stop Chat sending anything, open **Settings** › **AI models**, click **Sign out**
@@ -167,8 +168,9 @@ Funnel.
 ## What each company keeps
 
 Each company keeps and uses what it receives under its own terms. Lifestream asks none of them for
-special handling. With OpenRouter, it does not ask for providers that keep nothing, and it does not
-limit which providers may serve a request. Check these settings at each company:
+special handling, apart from Cloudflare. With OpenRouter, it does not ask for providers that keep
+nothing, and it does not limit which providers may serve a request. Check these settings at each
+company:
 
 - **ChatGPT plan:** in ChatGPT, **Settings** › **Data controls** › **Improve the model for
   everyone** decides whether OpenAI trains on your conversations.
@@ -177,6 +179,10 @@ limit which providers may serve a request. Check these settings at each company:
 - **OpenRouter key:** OpenRouter's privacy settings, at `openrouter.ai/settings/privacy`, decide
   which providers may serve your requests, and whether they may keep them or train on them. These
   settings cover Google, OpenAI and ElevenLabs when they serve your key.
+- **Cloudflare account:** each request asks AI Gateway not to log what was sent and answered, and
+  not to cache it. Cloudflare still logs each request's model, size and cost, and the model's
+  company keeps what it receives under its own terms. Your gateway's settings in the Cloudflare
+  dashboard decide the rest.
 - **An agent:** the agent's own app, such as Claude or ChatGPT, under the same settings as above.
 
 What a company already received stays with it. Erasing something in Lifestream does not reach it.

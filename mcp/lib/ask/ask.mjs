@@ -17,6 +17,7 @@ import { CHAT_ERASED, ERASED, openConversations, RESTARTED, serverCall, VOICE_TI
 import { openHandles } from './handles.mjs';
 import { ClaudeError, NoClaude } from './claude.mjs';
 import { CodexError, NoCodex } from './codex.mjs';
+import { CLOUDFLARE } from './cloudflare.mjs';
 import { OPENROUTER } from './openrouter.mjs';
 
 const MODELS_ROUTE = '/v1/models';
@@ -53,7 +54,8 @@ import { textHead } from '../shape.mjs';
  * @typedef {{ maker: Maker, modelId: string, name: string, thinking: string, value: string }} Picked
  * @typedef {ReturnType<typeof import('./codex.mjs').openCodex>} Codex
  * @typedef {ReturnType<typeof import('./claude.mjs').openClaude>} Claude
- * @typedef {'chatgpt' | 'claude' | 'openrouter'} Maker
+ * @typedef {'chatgpt' | 'claude' | 'openrouter' | 'cloudflare'} Maker
+ * @typedef {'openrouter' | 'cloudflare'} KeyMaker
  * @typedef {import('../home-clock.mjs').HomeClock} Home
  * @typedef {{ chat: string, level: string, epoch: number | null, turn: Turn, door: Door, home: Home, today: string, asked: string, question: string, images: Image[], messages: Earlier[], handles: Handles, wrapper: Wrapper, picked: Picked, steps: Taken[], tools: string }} Asking
  * @typedef {ReturnType<typeof openWrapper>} Wrapper
@@ -119,6 +121,7 @@ const IMAGES = /** @type {const} */ ({
   claude: { count: 100, tokens: 3_025, window: 200_000 },
   chatgpt: { count: 1_500, tokens: 2_765, window: 1_050_000 },
   openrouter: { count: 100, tokens: 3_025, window: null },
+  cloudflare: { count: 100, tokens: 3_025, window: null },
 });
 export const LIMITS = /** @type {const} */ ({ photos: 10, photo_bytes: 26_214_400, voice_ms: 600_000 });
 const WORDS_POLL_MS = 1_000;
@@ -132,15 +135,19 @@ const VOICE_FIX = { mac: 'Voice notes need Parakeet: download it in Settings ›
 const UNREAD_VOICE = /** @type {const} */ ({ ready: true, words: '', line: null, caution: null, value: 'default', choices: [] });
 class PhotoUnmade extends Error {}
 
-const TRANSPORT = /** @type {const} */ ({ chatgpt: 'codex', claude: 'claude', openrouter: 'openrouter' });
+const TRANSPORT = /** @type {const} */ ({ chatgpt: 'codex', claude: 'claude', openrouter: 'openrouter', cloudflare: 'cloudflare' });
+const KEY_MAKERS = /** @type {const} */ (['openrouter', 'cloudflare']);
+const CLOUDFLARE_PICK = 'cloudflare/';
+/** @param {string} modelId */
+const piModelOf = modelId => (modelId.startsWith(CLOUDFLARE_PICK) ? modelId.slice(CLOUDFLARE_PICK.length) : modelId);
 const READS = 3;
 const KEEP_TRIES = 3;
 const NOT_KEPT = 'Lifestream couldn\'t keep this conversation\'s privacy level: ask again.';
 const READY_POLL_MS = 2_000;
 const LONGEST_PLACEHOLDER = 32;
 
-/** @param {{ models: Models, otherwise?: Model, codex?: Codex, claude?: Claude, memory: Memory, machine: string, door: string, now?: () => number, liveMs?: number, listedMs?: number | null, putMs?: number, retryMs?: number, log: (line: Record<string, unknown>) => void, conversations?: Conversations, trace?: (trace: import('./trace.mjs').TurnTrace) => void, titles?: boolean, prompt?: typeof askPrompt }} options */
-export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory, machine, door: doorUrl, now = Date.now, liveMs = LIVE_MS, listedMs = LISTED_MS, putMs, retryMs, log,
+/** @param {{ models: Models, otherwise?: Model, keyed?: Model, codex?: Codex, claude?: Claude, memory: Memory, machine: string, door: string, now?: () => number, liveMs?: number, listedMs?: number | null, putMs?: number, retryMs?: number, log: (line: Record<string, unknown>) => void, conversations?: Conversations, trace?: (trace: import('./trace.mjs').TurnTrace) => void, titles?: boolean, prompt?: typeof askPrompt }} options */
+export function openAsk({ models, otherwise = OPENROUTER, keyed = CLOUDFLARE, codex, claude, memory, machine, door: doorUrl, now = Date.now, liveMs = LIVE_MS, listedMs = LISTED_MS, putMs, retryMs, log,
   conversations: given, trace, titles = true, prompt: promptOf = askPrompt }) {
   const conversations = given ?? openConversations({ machine, door: doorUrl, now, log, putMs, retryMs, onLetGo: (conversation, n) => {
     const running = conversation.running;
@@ -228,6 +235,17 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
    * @returns {Promise<Maker[]>}
    */
   const inPlay = async door => {
+    const plans = await plansInPlay(door);
+    if ((await signIn('cloudflare', door)).login === 'missing') return plans;
+    return plans.length === 1 && plans[0] === 'openrouter' && (await signIn('openrouter', door)).login === 'missing'
+      ? ['cloudflare'] : [...plans, 'cloudflare'];
+  };
+
+  /**
+   * @param {Door} door
+   * @returns {Promise<Maker[]>}
+   */
+  const plansInPlay = async door => {
     const makers = /** @type {const} */ (['claude', 'chatgpt']).filter(chosenHere);
     if (makers.length === 0) return ['openrouter'];
     if (makers.some(maker => programOf(machine, PROGRAM_OF[maker]).binary === null)) return makers;
@@ -308,9 +326,9 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
    * @returns {Promise<SignedIn>}
    */
   const signIn = async (maker, door) => {
-    if (maker === 'openrouter') {
+    if (maker === 'openrouter' || maker === 'cloudflare') {
       const read = await door.json(MODELS_ROUTE).catch(() => null);
-      if (read?.openrouter?.connected !== true) return { login: 'missing' };
+      if (read?.[maker]?.connected !== true) return { login: 'missing' };
     } else {
       let held;
       try {
@@ -363,7 +381,9 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
    */
   const asksOf = async (asked, door, waitMs) => {
     let own = null;
-    if (asked.model !== undefined) {
+    if (asked.model?.startsWith(CLOUDFLARE_PICK)) {
+      own = await offered('cloudflare', waitMs, door);
+    } else if (asked.model !== undefined) {
       const plan = asked.model.startsWith('claude/') ? 'claude' : 'chatgpt';
       const named = chosenHere(plan) ? await offered(plan, waitMs, door) : null;
       const key = plan === 'chatgpt' && (named === null || cannot(named.signed)) && (await inPlay(door))[0] === 'openrouter'
@@ -407,11 +427,16 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
    */
   const refusedTurn = (status, message) => alone(status === 503 ? 'restart' : 'door', message);
 
-  /** @type {Way} */
-  const throughPi = {
-    choices: async () => models.getModels(otherwise.provider).map(each => ({ id: each.id, name: each.name, thinking: getSupportedThinkingLevels(each), default: clampThinkingLevel(each, THINKING),
-      photos: each.input.includes('image') })),
-    preferred: async () => otherwise.modelId,
+  /**
+   * @param {KeyMaker} maker
+   * @param {Model} keyedTo
+   * @returns {Way}
+   */
+  const throughPi = (maker, keyedTo) => ({
+    choices: async () => models.getModels(keyedTo.provider).map(each => ({ id: maker === 'cloudflare' ? `${CLOUDFLARE_PICK}${each.id}` : each.id, name: each.name,
+      thinking: getSupportedThinkingLevels(each), default: clampThinkingLevel(each, THINKING), photos: each.input.includes('image'),
+      ...(maker === 'cloudflare' ? { group: NAMED_MAKER.cloudflare } : {}) })),
+    preferred: async () => (maker === 'cloudflare' ? `${CLOUDFLARE_PICK}${keyedTo.modelId}` : keyedTo.modelId),
     said: () => null,
     async open(asking) {
       const { chat, door, messages, picked } = asking;
@@ -434,7 +459,7 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
       registry.install(defineExtension({ name: 'lifestream', tools }));
       registry.install(createCodemodeExtension({ sandbox, models: false }));
       const pi = await Harness.open(new MemoryStorage(), { models, registry, settings: { toolExecution: 'parallel' } }, context);
-      const model = { provider: otherwise.provider, modelId: picked.modelId };
+      const model = { provider: keyedTo.provider, modelId: piModelOf(picked.modelId) };
       const api = models.getModel(model.provider, model.modelId)?.api ?? 'unknown';
       const conversation = await pi.createConversation({
         ownership: { kind: 'ownerless' },
@@ -443,7 +468,7 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
           (await tx.doc(ProviderDoc, id)).sessionId = cacheKeyOf(chat);
           for (const message of messages) {
             if (message.role === 'user') await tx.appendEntry(id, { kind: 'ask.earlier', model: [{ role: 'user', content: piContent(message.text, message.images ?? []), timestamp: message.at_ms }] });
-            else if (tracedText(message) !== '') await tx.appendEntry(id, { kind: 'ask.earlier', model: [earlierAnswer(message, api, { provider: model.provider, modelId: message.model ?? model.modelId })] });
+            else if (tracedText(message) !== '') await tx.appendEntry(id, { kind: 'ask.earlier', model: [earlierAnswer(message, api, { provider: model.provider, modelId: message.model === undefined ? model.modelId : piModelOf(message.model) })] });
           }
         },
       }, context);
@@ -475,8 +500,8 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
           if (settled.status !== 'done') {
             const detail = typeof settled.detail === 'string' ? settled.detail : settled.reason ?? 'unanswered';
             log({ ask: 'model failed', detail: detail.slice(0, 300) });
-            return NO_KEY.test(detail) ? unfinished(follow, { error: 'login', message: needs('openrouter') })
-              : unfinished(follow, { error: 'model', message: modelFailed(otherwise.provider, detail) });
+            return NO_KEY.test(detail) ? unfinished(follow, { error: 'login', message: needs(maker) })
+              : unfinished(follow, { error: 'model', message: modelFailed(keyedTo.provider, detail) });
           }
           const answerId = settled.answer;
           const entry = (await conversation.context(context)).entries.find(each => each.id === answerId);
@@ -486,12 +511,12 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
       };
     },
     async title(asked, _picked, signal) {
-      const info = models.getModel(otherwise.provider, otherwise.modelId);
+      const info = models.getModel(keyedTo.provider, keyedTo.modelId);
       if (info === undefined) return null;
       const reply = await models.completeSimple(info, { systemPrompt: TITLE_PROMPT, messages: [{ role: 'user', content: asked, timestamp: now() }] }, { signal });
       return reply.stopReason === 'error' || reply.stopReason === 'aborted' ? null : textOf(reply);
     },
-  };
+  });
 
   /**
    * @param {Codex} client
@@ -756,7 +781,7 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
   };
 
   /** @type {Record<Maker, Way>} */
-  const ways = { openrouter: throughPi, chatgpt: throughCodex(/** @type {Codex} */ (codex)), claude: throughClaude(/** @type {Claude} */ (claude)) };
+  const ways = { openrouter: throughPi('openrouter', otherwise), cloudflare: throughPi('cloudflare', keyed), chatgpt: throughCodex(/** @type {Codex} */ (codex)), claude: throughClaude(/** @type {Claude} */ (claude)) };
 
   /** @param {{ conversation: Conversation, turn: Turn, door: Door, home: Home, question: string, asked: Message, note: string | null, earlier: import('./conversations.mjs').Read | null, handles: Handles, wrapper: Wrapper, privacy: Privacy, started: number, release: () => void, picked: Picked, moved: string | null, session: Live | null, tools: string, tracer: import('./trace.mjs').Tracer | null }} given */
   const run = async ({ conversation, turn, door: asker, home, question, asked, note, earlier, handles, wrapper, privacy, started, release, picked, moved, session, tools, tracer }) => {
@@ -916,7 +941,8 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
    */
   const earlierOf = async (conversation, messages, picked, door, current, home) => {
     const bound = IMAGES[picked.maker];
-    const window = bound.window ?? (picked.maker === 'openrouter' ? models.getModel(otherwise.provider, picked.modelId)?.contextWindow : undefined) ?? 128_000;
+    const keyedTo = picked.maker === 'openrouter' ? otherwise : picked.maker === 'cloudflare' ? keyed : null;
+    const window = bound.window ?? (keyedTo === null ? undefined : models.getModel(keyedTo.provider, piModelOf(picked.modelId))?.contextWindow) ?? 128_000;
     let room = Math.max(0, Math.min(bound.count, Math.floor(window / 4 / bound.tokens)) - current);
     /** @type {Set<string>} */
     const restated = new Set();
@@ -1319,7 +1345,7 @@ export function openAsk({ models, otherwise = OPENROUTER, codex, claude, memory,
       const unsaved = conversations.unsavedIn();
       return {
         model: picked.modelId, name: picked.name, thinking: picked.thinking,
-        group: maker.maker === 'openrouter' ? null : GROUPS[maker.maker], login: maker.signed.login,
+        group: maker.maker === 'openrouter' ? null : maker.maker === 'cloudflare' ? NAMED_MAKER.cloudflare : GROUPS[maker.maker], login: maker.signed.login,
         ...(said === undefined ? {} : { said }), ...(gone ? { gone: true } : {}),
         models: all.map(({ value: _value, ...each }) => each),
         default: { model: modelId }, starters: offered,
@@ -1575,10 +1601,12 @@ function turnOf(chat, n, asked, title) {
 }
 
 const NO_KEY = /^Provider is not configured\b/u;
-const NAMED_MAKER = /** @type {const} */ ({ chatgpt: 'ChatGPT', claude: 'Claude', openrouter: 'OpenRouter' });
+const NAMED_MAKER = /** @type {const} */ ({ chatgpt: 'ChatGPT', claude: 'Claude', openrouter: 'OpenRouter', cloudflare: 'Cloudflare' });
 
 /** @param {Maker} maker */
-const needs = maker => (maker === 'openrouter' ? 'Chat needs a model.' : `Chat needs your ${NAMED_MAKER[maker]} sign-in on your Mac.`);
+const needs = maker => (maker === 'openrouter' ? 'Chat needs a model.'
+  : maker === 'cloudflare' ? 'Chat needs your Cloudflare account ID and API token: add them in Settings › AI models.'
+    : `Chat needs your ${NAMED_MAKER[maker]} sign-in on your Mac.`);
 
 /** @param {{ maker: Maker, signed: SignedIn }} own */
 function pickNeeds({ maker, signed }) {
@@ -1647,8 +1675,9 @@ const NO_CREDIT = /^402\b|"code":\s*402\b|insufficient credits/iu;
  * @param {string} detail
  */
 function modelFailed(provider, detail) {
-  const name = provider === OPENROUTER.provider ? 'OpenRouter' : 'The model';
+  const name = provider === OPENROUTER.provider ? 'OpenRouter' : provider === CLOUDFLARE.provider ? 'Cloudflare' : 'The model';
   if (provider === OPENROUTER.provider && NO_CREDIT.test(detail)) return 'OpenRouter didn\'t answer: your OpenRouter account is out of credits. Add credits on openrouter.ai, then ask again.';
+  if (provider === CLOUDFLARE.provider && NO_CREDIT.test(detail)) return 'Cloudflare didn\'t answer: your Cloudflare account is out of credits. Add credits in AI Gateway on dash.cloudflare.com, then ask again.';
   if (UNREACHED.test(detail)) return `${name} didn't answer: this Mac can't reach it. Check that it's online.`;
   return `${name} didn't answer: ${detail}`;
 }

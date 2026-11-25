@@ -422,6 +422,7 @@ export interface ModelsRead {
   defaults: Record<ModelKind, Choice>;
   runners: ModelRunner[];
   openrouter: { connected: boolean };
+  cloudflare: { connected: boolean };
   address: { url: string; model: string; words: string; takes: string } | null;
 }
 

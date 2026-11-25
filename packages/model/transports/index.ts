@@ -3,6 +3,7 @@ import type { TransportSettings } from "../settings.js";
 import type { Transport } from "../transport.js";
 import { addressTransport } from "./address.js";
 import { claudeTransport } from "./claude.js";
+import { CLOUDFLARE_SECRET, cloudflareTransport } from "./cloudflare.js";
 import { codexTransport } from "./codex.js";
 import { fakeTransport } from "./fake.js";
 import { OPENROUTER_SECRET, openRouterTransport } from "./openrouter.js";
@@ -20,7 +21,7 @@ export interface Found {
 }
 
 export function configured(transports: TransportSettings | undefined): string[] {
-  return ["runner", "codex", "claude", "openrouter", CLOUD_VOICE.transport, ...transports?.address === undefined ? [] : ["address"], ...transports?.fake === undefined ? [] : ["fake"]];
+  return ["runner", "codex", "claude", "openrouter", CLOUD_VOICE.transport, "cloudflare", ...transports?.address === undefined ? [] : ["address"], ...transports?.fake === undefined ? [] : ["fake"]];
 }
 
 export function priced(transports: TransportSettings | undefined): string[] {
@@ -38,6 +39,8 @@ export function transportOf(name: string, transports: TransportSettings | undefi
       return claudeTransport({ claude: found.programs?.claude });
     case "openrouter":
       return openRouterTransport({ held: () => held(OPENROUTER_SECRET), key: () => value(OPENROUTER_SECRET) });
+    case "cloudflare":
+      return cloudflareTransport({ held: () => held(CLOUDFLARE_SECRET), key: () => value(CLOUDFLARE_SECRET), ...(settings.cloudflare?.models === undefined ? {} : { models: settings.cloudflare.models }) });
     case CLOUD_VOICE.transport:
       return transcriptionsTransport({ held: () => held(OPENROUTER_SECRET), key: () => value(OPENROUTER_SECRET) });
     case "address": {
@@ -57,6 +60,7 @@ export function transportOf(name: string, transports: TransportSettings | undefi
 
 export function transportSecret(name: string, transports: TransportSettings | undefined): string | null {
   if (name === "openrouter" || name === CLOUD_VOICE.transport) return OPENROUTER_SECRET;
+  if (name === "cloudflare") return CLOUDFLARE_SECRET;
   if (name === "runner") return CALL_PASS;
   if (name === "address") return transports?.address?.secret ?? null;
   return null;

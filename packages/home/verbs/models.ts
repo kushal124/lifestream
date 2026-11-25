@@ -133,6 +133,7 @@ function printed(ctx: VerbContext, read: ModelsRead): ModelsRead {
   if (routes.length === 0) ctx.out("no model the home reaches");
   for (const kind of WORK_KINDS) ctx.out(`${kind}: ${read.defaults[kind].words}`);
   ctx.out(`OpenRouter: ${read.openrouter.connected ? "key held" : "no key"}`);
+  ctx.out(`Cloudflare: ${read.cloudflare.connected ? "key held" : "no key"}`);
   if (read.address !== null) ctx.out(`address: ${read.address.words} · ${read.address.takes}`);
   return read;
 }

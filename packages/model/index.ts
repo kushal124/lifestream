@@ -95,6 +95,7 @@ export { checkCodex, codexEnv } from "./transports/codex.js";
 export { fakeTransport, type FakeOptions } from "./transports/fake.js";
 export { configured, priced, transportOf, transportSecret, type Found } from "./transports/index.js";
 export { OPENROUTER_SECRET } from "./transports/openrouter.js";
+export { CLOUDFLARE_SECRET, cloudflareKey } from "./transports/cloudflare.js";
 export { CLOUD_VOICE, transcriptionsTransport } from "./transports/transcriptions.js";
 export { CALL_PASS, listRunners, runnerTransport, warmRunner, type RunnerOptions } from "./transports/runner.js";
 export type { ProgramAt } from "./transports/program.js";

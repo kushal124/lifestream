@@ -470,6 +470,11 @@ import XCTest
         XCTAssertEqual(seals.map { $0["secret"] as? String }, ["openrouter", "openrouter"])
         XCTAssertEqual(seals.first?["value"] as? String, "sk-or-v1-fake0000")
         XCTAssertTrue(seals.last?["value"] is NSNull, "Remove sent something other than null")
+        _ = try await host.perform(.cloudflareKey("0123456789abcdef0123456789abcdef:synthetic-token_0001"))
+        let cloudflare = home.requests.filter { $0["verb"] as? String == "seal" }.dropFirst(seals.count)
+        XCTAssertEqual(cloudflare.map { $0["secret"] as? String }, ["cloudflare"])
+        XCTAssertEqual(cloudflare.first?["value"] as? String, "0123456789abcdef0123456789abcdef:synthetic-token_0001")
+        XCTAssertFalse(try HostBridge.scriptLiteral(host.state).contains("synthetic-token_0001"), "the token reached the state")
         XCTAssertFalse(try HostBridge.scriptLiteral(host.state).contains("sk-or-v1"), "the key reached the state")
     }
 

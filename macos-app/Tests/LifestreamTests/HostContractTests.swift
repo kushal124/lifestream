@@ -230,6 +230,9 @@ final class HostContractTests: XCTestCase {
                        .success(.askLogin(.code(attempt: "0f3a9c2e7b1d4a60", code: "synthetic-code#synthetic-state"))))
         XCTAssertEqual(act(["act": "seal", "secret": "openrouter", "value": "sk-or-v1-fake0000"]), .success(.openRouterKey("sk-or-v1-fake0000")))
         XCTAssertEqual(act(["act": "seal", "secret": "openrouter", "value": NSNull()]), .success(.openRouterKey(nil)))
+        XCTAssertEqual(act(["act": "seal", "secret": "cloudflare", "value": "0123456789abcdef0123456789abcdef:synthetic-token_0001"]),
+                       .success(.cloudflareKey("0123456789abcdef0123456789abcdef:synthetic-token_0001")))
+        XCTAssertEqual(act(["act": "seal", "secret": "cloudflare", "value": NSNull()]), .success(.cloudflareKey(nil)))
         XCTAssertEqual(act(["act": "models", "do": "default", "kind": "pictures", "route": "runner:macbook-pro-0001:qwen3.5-4b"]),
                        .success(.models(.default(kind: .pictures, route: "runner:macbook-pro-0001:qwen3.5-4b"))))
         XCTAssertEqual(act(["act": "models", "do": "file", "runner": "runner-macbook-pro-0001", "id": "qwen3.5-4b", "to": "fetch"]),
@@ -376,6 +379,11 @@ final class HostContractTests: XCTestCase {
             ["type": "act", "act": "seal", "secret": "openrouter", "value": ""],
             ["type": "act", "act": "seal", "secret": "openrouter"],
             ["type": "act", "act": "seal", "secret": "openrouter", "value": "sk-fake", "connector": "whoop"],
+            ["type": "act", "act": "seal", "secret": "cloudflare", "value": "synthetic-token_0001"],
+            ["type": "act", "act": "seal", "secret": "cloudflare", "value": "0123456789ABCDEF0123456789ABCDEF:synthetic-token_0001"],
+            ["type": "act", "act": "seal", "secret": "cloudflare", "value": "0123456789abcdef0123456789abcdef:two words"],
+            ["type": "act", "act": "seal", "secret": "cloudflare", "value": "0123456789abcdef0123456789abcdef:"],
+            ["type": "act", "act": "seal", "secret": "cloudflare", "value": "0123456789abcdef0123456789abcdef:t", "connector": "whoop"],
             ["type": "act", "act": "models", "do": "default", "kind": "video", "route": "openrouter:fake-model"],
             ["type": "act", "act": "models", "do": "default", "kind": "text"],
             ["type": "act", "act": "models", "do": "file", "runner": "runner-macbook-pro-0001", "id": "qwen3.5-4b", "to": "keep"],

@@ -258,6 +258,24 @@ test('L7: API keys: OpenRouter typed and saved, Connected and Remove; the addres
     ['Said by the home', 'Takes it']);
 });
 
+test('L7b: API keys: Cloudflare on its own page, its account ID and token sealed as one key, Connected and Remove', () => {
+  const line = 'Pay per call from your Cloudflare credits, for models from OpenAI, Anthropic, Google and Workers AI.';
+  const bare = rowIn(settings({ models: MODELS_BARE }), 'API keys', 'Cloudflare');
+  assert.deepEqual([bare?.line, /** @type {any} */ (bare?.end).words, endActs(bare)], [line, 'Not set', [['Add account', { page: 'cloudflare' }]]]);
+  const page = settings({ models: MODELS_BARE, opened: { ...OPENED, pages: ['cloudflare'] } });
+  assert.deepEqual([page.name, page.back], ['AI models', { label: 'AI models' }]);
+  assert.deepEqual(part(page, 'Cloudflare')?.acts.map(act => [act.label, act.disabled, act.do]), [['Save', true, { save: 'cloudflare' }]]);
+  const account = '0123456789ABCDEF0123456789ABCDEF';
+  const typed = { ...OPENED, pages: ['cloudflare'], fields: { [TYPED.account]: ` ${account} `, [TYPED.token]: ' synthetic-token_0001 ' } };
+  assert.equal(part(settings({ models: MODELS_BARE, opened: typed }), 'Cloudflare')?.acts[0]?.disabled, false);
+  assert.deepEqual(savedAct('cloudflare', typed), { act: 'seal', secret: 'cloudflare', value: `${account.toLowerCase()}:synthetic-token_0001` });
+  for (const fields of [{}, { [TYPED.account]: 'not-an-account', [TYPED.token]: 't' }, { [TYPED.account]: account }, { [TYPED.account]: account, [TYPED.token]: 'two words' }]) {
+    assert.equal(savedAct('cloudflare', { ...OPENED, fields }), null);
+  }
+  const connected = rowIn(settings({ models: { ...MODELS_BARE, cloudflare: { connected: true } } }), 'API keys', 'Cloudflare');
+  assert.deepEqual([/** @type {any} */ (connected?.end).words, endActs(connected)], ['Connected', [['Remove', { host: { act: 'seal', secret: 'cloudflare', value: null } }]]]);
+});
+
 test('L8: each model file\'s act its state\'s, its progress, size and failure said; a runner away acts on nothing', () => {
   const full = settings({});
   /** @param {import('../public/ui/connectors/dialog.js').DetailPart | undefined} at */

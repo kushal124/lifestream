@@ -14,7 +14,11 @@ const KINDS = [['pictures', 'Pictures'], ['audio', 'Audio'], ['text', 'Text']];
 
 const TAKES = /** @type {const} */ ([['pictures,text', 'Pictures and text'], ['text', 'Text'], ['pictures', 'Pictures']]);
 
-export const MODEL_FIELDS = { key: 'openrouter', url: 'address.url', model: 'address.model', takes: 'address.kinds' };
+export const MODEL_FIELDS = { key: 'openrouter', url: 'address.url', model: 'address.model', takes: 'address.kinds',
+  account: 'cloudflare.account', token: 'cloudflare.token' };
+
+const CLOUDFLARE_ACCOUNT = /^[0-9a-f]{32}$/u;
+const CLOUDFLARE_LINE = 'Pay per call from your Cloudflare credits, for models from OpenAI, Anthropic, Google and Workers AI.';
 
 export const SUBSCRIPTIONS = /** @type {ModelItem[]} */ (['chatgpt', 'claude']);
 
@@ -34,6 +38,16 @@ const typed = (opened, key) => opened.fields?.[key] ?? '';
 export function keyAct(opened) {
   const key = typed(opened, MODEL_FIELDS.key).trim();
   return key ? { act: 'seal', secret: 'openrouter', value: key } : null;
+}
+
+/**
+ * @param {Opened} opened
+ * @returns {HostAct | null}
+ */
+export function cloudflareAct(opened) {
+  const account = typed(opened, MODEL_FIELDS.account).trim().toLowerCase();
+  const token = typed(opened, MODEL_FIELDS.token).trim();
+  return CLOUDFLARE_ACCOUNT.test(account) && /^[\x21-\x7e]+$/u.test(token) ? { act: 'seal', secret: 'cloudflare', value: `${account}:${token}` } : null;
 }
 
 /**
@@ -75,7 +89,25 @@ function keysOf(models, acts, opened) {
       end: acts ? { acts: remove({ act: 'models', do: 'address', none: true }) } : { words: 'Set' } })
     : rowOf('Custom server', { line, end: { words: 'Not set',
       acts: acts ? [{ label: 'Add server', variant: 'secondary', do: { page: 'address' } }] : [] } });
-  return part({ label: 'API keys', rows: [openrouter, custom] });
+  const cloudflare = models.cloudflare.connected
+    ? rowOf('Cloudflare', { line: CLOUDFLARE_LINE, end: { words: 'Connected', done: true,
+      acts: acts ? remove({ act: 'seal', secret: 'cloudflare', value: null }) : [] } })
+    : rowOf('Cloudflare', { line: CLOUDFLARE_LINE, end: { words: 'Not set',
+      acts: acts ? [{ label: 'Add account', variant: 'secondary', do: { page: 'cloudflare' } }] : [] } });
+  return part({ label: 'API keys', rows: [openrouter, cloudflare, custom] });
+}
+
+/**
+ * @param {Opened} opened
+ * @returns {DetailPart}
+ */
+export function cloudflarePage(opened) {
+  const token = typed(opened, MODEL_FIELDS.token);
+  return part({ label: 'Cloudflare', line: `${CLOUDFLARE_LINE} Lifestream asks Cloudflare not to log what it sends, and not to cache it.`,
+    acts: [{ label: 'Save', variant: 'primary', disabled: cloudflareAct(opened) === null, do: { save: 'cloudflare' } }],
+    rows: [rowOf('Account ID', { end: { field: { key: MODEL_FIELDS.account, label: 'Account ID', kind: 'text', value: typed(opened, MODEL_FIELDS.account),
+      placeholder: '32 characters, from your Cloudflare dashboard' } } }),
+    rowOf('API token', { end: { field: { key: MODEL_FIELDS.token, label: 'API token', kind: 'secret', value: token, placeholder: 'A token that can run AI Gateway' } } })] });
 }
 
 /**

@@ -17,6 +17,8 @@ for. In a model menu, each model shows its name and, after it, who receives what
 | **API keys** | An OpenRouter key | Gemini 3.8 Flash | Pictures and audio | OpenRouter, then Google |
 | **API keys** | An OpenRouter key | GPT-6 Luna | Text | OpenRouter, then OpenAI |
 | **API keys** | An OpenRouter key | Scribe v2, ElevenLabs' speech model | Audio | OpenRouter, then ElevenLabs |
+| **API keys** | Your Cloudflare account | Gemini 3.8 Flash, or the models you set | Pictures and text | Cloudflare, then Google |
+| **API keys** | Your Cloudflare account | GPT-6 Luna, or the models you set | Text | Cloudflare, then OpenAI |
 | **API keys** | **Custom server** | The model you name | What you pick | The computer at its address |
 | **On this Mac** | A model on your Mac | Qwen 3.5, Parakeet, Nemotron Speech | See [Use a model on your Mac](#use-a-model-on-your-mac) | Nobody: it stays on your Mac |
 
@@ -49,6 +51,31 @@ the same steps.
 3. Paste the key into **OpenRouter key**, and click **Save**.
 
 The line then says **Connected**. Lifestream keeps the key locked in your vault.
+
+## Use your Cloudflare credits
+
+Cloudflare's AI Gateway sells access to models from OpenAI, Anthropic, Google and others, paid from
+the credits you buy in your Cloudflare account. Workers AI models, which Cloudflare runs itself,
+are paid from the same credits once Workers AI billing is set to **Unified billing**.
+
+1. In your Cloudflare dashboard, buy credits under **AI** › **AI Gateway**, and copy your account
+   ID.
+2. Make an API token that can run AI Gateway and Workers AI.
+3. Open **Settings** › **AI models**, find **Cloudflare** under **API keys**, and click
+   **Add account**.
+4. Paste the account ID and the token, and click **Save**.
+
+The line then says **Connected**. Lifestream keeps the account ID and token locked in your vault.
+Connectors' work goes to Gemini 3.8 Flash for pictures and GPT-6 Luna for text, and Chat lists the
+gateway's models under **Cloudflare**. Lifestream asks Cloudflare not to keep what it sends in the
+gateway's logs and not to cache it. Cloudflare still logs each call's model, size and cost.
+
+To have connectors use other models, name them with the command line, each as its provider and
+model:
+
+```sh
+lifestream settings set model.transports.cloudflare '{"models":[{"model":"anthropic/claude-haiku-5-5","name":"Claude Haiku 5.5","kinds":["pictures","text"]}]}'
+```
 
 ## Use a model on your Mac
 

@@ -8,7 +8,7 @@ import {
   civilDay, damaged, HOME_DB, isObject, LEDGER_DB, makeUnder, writeDurably, openHome, openHomeFolder, outOfRoom, RELEASE, roomAt, SecretError, tryLock, type AttemptRow, type BlobStore, type FileLock, type Form, type HandedFolder, type HomeDb, type HomeFolder, type JobRow, type Json, type JsonObject, type Room, type SourceRow, type Tx, walkPlace,
 } from "@lifestreamprotocol/core";
 import type { Family } from "@lifestreamprotocol/families";
-import { CALL_PASS, callCopiesOf, LEDGER_DAMAGED_EXIT, listRunners, openAsker, openLedger, OPENROUTER_SECRET, warmRunner, WORK_KINDS, type Ledger, type ProgramAt } from "@lifestreamprotocol/model";
+import { CALL_PASS, callCopiesOf, CLOUDFLARE_SECRET, LEDGER_DAMAGED_EXIT, listRunners, openAsker, openLedger, OPENROUTER_SECRET, warmRunner, WORK_KINDS, type Ledger, type ProgramAt } from "@lifestreamprotocol/model";
 import { openHider, openMarks, type Hider, type MarksStore } from "@lifestreamprotocol/privacy";
 import { HIDING_META, hidingWaits, openCopies, sentLevel, type CopyAnswer, type Copies } from "./copies.js";
 import { driveHalf, openDetector } from "./detector.js";
@@ -2046,10 +2046,12 @@ class HomeProcess implements Main {
     }
   }
 
-  #askKey(): { key: string } {
-    const value = this.#vaultRead(OPENROUTER_SECRET);
-    this.#record({ at_ms: this.now(), secret: OPENROUTER_SECRET, op: "get", lane: "door", task: "ask", ok: value !== undefined });
-    if (value === undefined) throw new Refusal(404, "NOT_SET", `the home's vault holds no ${OPENROUTER_SECRET} key it can read`);
+  #askKey(asked: unknown): { key: string } {
+    if (asked !== undefined && asked !== CLOUDFLARE_SECRET) throw new TypeError(`ask-key reads ${OPENROUTER_SECRET} or ${CLOUDFLARE_SECRET}`);
+    const secret = asked === CLOUDFLARE_SECRET ? CLOUDFLARE_SECRET : OPENROUTER_SECRET;
+    const value = this.#vaultRead(secret);
+    this.#record({ at_ms: this.now(), secret, op: "get", lane: "door", task: "ask", ok: value !== undefined });
+    if (value === undefined) throw new Refusal(404, "NOT_SET", `the home's vault holds no ${secret} key it can read`);
     return { key: value };
   }
 
@@ -2472,7 +2474,7 @@ class HomeProcess implements Main {
         this.#poke();
       }
     }
-    if (verb === "ask-key") return this.#askKey();
+    if (verb === "ask-key") return this.#askKey(request.secret);
     if (verb === "subscriptions") {
       const name = request.choose;
       if (name === undefined) return { programs: this.#programs!.state() };

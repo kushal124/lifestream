@@ -1,5 +1,6 @@
 import { WORK_KINDS } from "./transport.js";
 import type { AddressSettings } from "./transports/address.js";
+import type { CloudflareModel } from "./transports/cloudflare.js";
 import type { FakeOptions } from "./transports/fake.js";
 
 export interface ModelSettings {
@@ -12,6 +13,7 @@ export interface TransportSettings {
   claude?: Narrowed;
   openrouter?: Narrowed;
   "openrouter-voice"?: Narrowed;
+  cloudflare?: Narrowed & { models?: CloudflareModel[] };
   address?: Narrowed & AddressSettings;
   fake?: Narrowed & Omit<FakeOptions, "reply"> & { reply?: string };
 }
@@ -25,6 +27,7 @@ const MEMBERS: Record<keyof TransportSettings, readonly string[]> = {
   claude: ["concurrency"],
   openrouter: ["concurrency"],
   "openrouter-voice": ["concurrency"],
+  cloudflare: ["concurrency", "models"],
   address: ["concurrency", "url", "model", "kinds", "secret"],
   fake: ["concurrency", "provider", "leaves", "reply", "delay_ms", "cost_usd", "cost", "fail", "status", "unavailable", "reason", "until_ms", "offers", "log"],
 };
@@ -49,6 +52,7 @@ export function readTransportSettings(value: unknown): TransportSettings {
     if (each.concurrency !== undefined && !(Number.isSafeInteger(each.concurrency) && positive(each.concurrency))) throw new TypeError(`${label}.concurrency is a positive whole number`);
     if (each.secret !== undefined && (typeof each.secret !== "string" || each.secret === "")) throw new TypeError(`${label}.secret names a secret`);
     if (name === "address") checkAddress(each, label);
+    if (name === "cloudflare" && each.models !== undefined) checkCloudflareModels(each.models, `${label}.models`);
   }
   return value as TransportSettings;
 }
@@ -64,6 +68,23 @@ function checkAddress(address: Record<string, unknown>, label: string): void {
     throw new TypeError(`${label}.kinds is a list of ${WORK_KINDS.join(", ")}`);
   }
   if (kinds.includes("audio")) throw new TypeError(`${label}.kinds: an address takes no audio`);
+}
+
+const CLOUDFLARE_MODEL = /^[a-z0-9][a-z0-9-]*\/[\x21-\x7e]+$/u;
+
+function checkCloudflareModels(models: unknown, label: string): void {
+  if (!Array.isArray(models) || models.length === 0) throw new TypeError(`${label} is a list of models`);
+  for (const [index, entry] of models.entries()) {
+    const each = object(entry, `${label}[${index}]`);
+    const unknown = Object.keys(each).find((member) => !["model", "name", "kinds"].includes(member));
+    if (unknown !== undefined) throw new TypeError(`${label}[${index}].${unknown}: a Cloudflare model takes no such member`);
+    if (typeof each.model !== "string" || !CLOUDFLARE_MODEL.test(each.model)) throw new TypeError(`${label}[${index}].model names a model as provider/model, such as openai/gpt-6-luna`);
+    if (each.name !== undefined && (typeof each.name !== "string" || each.name === "")) throw new TypeError(`${label}[${index}].name is a word`);
+    const kinds = each.kinds;
+    if (!Array.isArray(kinds) || kinds.length === 0 || kinds.some((kind) => kind !== "pictures" && kind !== "text")) {
+      throw new TypeError(`${label}[${index}].kinds is a list of pictures, text`);
+    }
+  }
 }
 
 function object(value: unknown, label: string): Record<string, unknown> {

@@ -2868,7 +2868,7 @@ describe("the cloud voice transport", () => {
     expect(transport.defaults).toEqual({ effort: "none", timeout_ms: 120_000, concurrency: 4 });
     expect(await transcriptionsTransport({ held: () => false, key: () => undefined }).available()).toMatchObject({ ok: false, reason: "no_key" });
     expect([transportSecret("openrouter-voice", {}), transportSecret("openrouter", {})]).toEqual(["openrouter", "openrouter"]);
-    expect(configured({})).toEqual(["runner", "codex", "claude", "openrouter", "openrouter-voice"]);
+    expect(configured({})).toEqual(["runner", "codex", "claude", "openrouter", "openrouter-voice", "cloudflare"]);
     expect(priced({})).toContain("openrouter-voice");
     expect(readModelSettings({ cap: 8, transports: { "openrouter-voice": { concurrency: 2 } } }).transports).toEqual({ "openrouter-voice": { concurrency: 2 } });
     const built = transportOf("openrouter-voice", {}, { held: (name) => name === "openrouter", secret: (name) => (name === "openrouter" ? "synthetic-key" : undefined) });

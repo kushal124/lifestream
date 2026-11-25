@@ -145,6 +145,7 @@ export const MODELS_BARE = {
     fileOf(NEMOTRON_FILE, { suggested: true }),
   ] }],
   openrouter: { connected: false },
+  cloudflare: { connected: false },
   address: null,
 };
 

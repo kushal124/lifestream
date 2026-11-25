@@ -10,7 +10,7 @@ import { rowOf } from './dialog.js';
 import { lacks } from '../../lib/reach.js';
 import { LACKS, NOT_HERE } from './changes.js';
 import { today } from '../../lib/home-clock.js';
-import { addressAct, addressPage, keyAct, MODEL_FIELDS, modelsParts } from './settings-models.js';
+import { addressAct, addressPage, cloudflareAct, cloudflarePage, keyAct, MODEL_FIELDS, modelsParts } from './settings-models.js';
 import { listPage, outboundPage, privacyParts, sentPage } from './settings-privacy.js';
 import { meaningParts } from './settings-search.js';
 import { storageModel, WORDS as STORAGE_WORDS } from './settings-storage.js';
@@ -134,13 +134,14 @@ function renamed(opened, report) {
 const nameTyped = (opened, mac) => typed(opened, TYPED.name) ?? mac.name;
 
 /**
- * @param {'openrouter' | 'address' | 'name'} form
+ * @param {'openrouter' | 'cloudflare' | 'address' | 'name'} form
  * @param {Opened} opened
  * @param {StreamsReport | null} [report]
  * @returns {HostAct | null}
  */
 export function savedAct(form, opened, report = null) {
   if (form === 'openrouter') return keyAct(opened);
+  if (form === 'cloudflare') return cloudflareAct(opened);
   if (form === 'address') return addressAct(opened);
   const mac = renamed(opened, report);
   const name = mac ? nameTyped(opened, mac).trim() : '';
@@ -304,6 +305,7 @@ export function settingsDetail({ report, models, failed = null, state, id, opene
     foot: null, confirm: null, reading: false, ticking: false, nav, note, at: at.row };
   const inside = opened.pages.at(-1);
   if (page.id === 'models' && inside === 'address' && reach.home) return { ...base, back: { label: name }, parts: [addressPage(opened)] };
+  if (page.id === 'models' && inside === 'cloudflare' && reach.home) return { ...base, back: { label: name }, parts: [cloudflarePage(opened)] };
   const mac = page.id === 'mac' && reach.home ? renamed(opened, report) : null;
   if (mac) return { ...base, back: { label: name }, parts: [renamePage(opened, mac, report, mac.unit === state?.unit)] };
   const inPrivacy = page.id === 'privacy' && inside ? privacyInside(inside, reach, privacy) : null;

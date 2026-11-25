@@ -1551,6 +1551,7 @@ describe("the streams report", () => {
           ],
         }],
         openrouter: { connected: true },
+        cloudflare: { connected: false },
         address: { url: "http://127.0.0.1:8080/v1", model: "local-model-1", words: "local-model-1 at http://127.0.0.1:8080/v1", takes: "Takes pictures and text" },
       });
       const typed = new Date(now - 10 * DAY_MS).toISOString().slice(0, 10);

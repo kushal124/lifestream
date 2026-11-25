@@ -185,14 +185,14 @@ export function settingsFrame(host, reports, changes, { draw, root, say }) {
       draw();
     },
     /**
-     * @param {'openrouter' | 'address' | 'name'} form
+     * @param {'openrouter' | 'cloudflare' | 'address' | 'name'} form
      * @param {Opened} opened
      * @param {StreamsReport | null} report
      * @returns {{ act: HostAct, forget: string } | null}
      */
     saved(form, opened, report) {
       const act = savedAct(form, opened, report);
-      return act && { act, forget: act.act === 'seal' ? TYPED.key : '' };
+      return act && { act, forget: act.act !== 'seal' ? '' : 'secret' in act && act.secret === 'cloudflare' ? TYPED.token : TYPED.key };
     },
   };
 }

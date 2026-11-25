@@ -519,6 +519,9 @@ import Shipping
         case .openRouterKey(let key):
             try await serially { try await self.needs.seal("openrouter", key) }
             return nil
+        case .cloudflareKey(let key):
+            try await serially { try await self.needs.seal("cloudflare", key) }
+            return nil
         case .models(let act):
             try await serially { try await self.home().models(act) }
             return nil

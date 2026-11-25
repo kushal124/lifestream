@@ -16,59 +16,69 @@ const HIDDEN = '[the OpenRouter key]';
 
 /**
  * @typedef {import('@earendil-works/pi-ai').CredentialStore} KeyStore
- * @param {{ machine: string, door: string, log: (line: Record<string, unknown>) => void }} options
+ * @param {{ machine: string, door: string, log: (line: Record<string, unknown>) => void, routes?: Record<string, string> }} options
  * @returns {KeyStore}
  */
-export function homeKey({ machine, door, log }) {
-  /** @type {{ key: string, at: number } | null} */
-  let kept = null;
-  /** @type {Promise<string | null> | null} */
-  let reading = null;
+export function homeKey({ machine, door, log, routes = { [OPENROUTER.provider]: KEY_ROUTE } }) {
+  /** @type {Map<string, { key: string, at: number }>} */
+  const kept = new Map();
+  /** @type {Map<string, Promise<string | null>>} */
+  const reading = new Map();
 
-  const fetchKey = async () => {
+  /** @param {string} provider @param {string} route */
+  const fetchKey = async (provider, route) => {
     let pass;
     try {
       pass = readFileSync(join(machine, 'ask', 'door-token'), 'utf8').trim();
     } catch {
-      log({ ask: 'openrouter key unread', why: 'no pass of Ask\'s yet: the home\'s start makes it' });
+      log({ ask: `${provider} key unread`, why: 'no pass of Ask\'s yet: the home\'s start makes it' });
       return null;
     }
     let answer;
     try {
-      answer = await openDoor({ url: door, authorization: `Bearer ${pass}`, log }).json(KEY_ROUTE);
+      answer = await openDoor({ url: door, authorization: `Bearer ${pass}`, log }).json(route);
     } catch (error) {
       if (error instanceof DoorRefusal) {
-        if (error.status !== 404) log({ ask: 'openrouter key unread', status: error.status, code: error.code });
+        if (error.status !== 404) log({ ask: `${provider} key unread`, status: error.status, code: error.code });
       } else {
-        log({ ask: 'openrouter key unread', why: 'the door did not answer' });
+        log({ ask: `${provider} key unread`, why: 'the door did not answer' });
       }
       return null;
     }
     const key = answer?.key;
     if (typeof key === 'string' && BEARER.test(key)) return key;
-    log({ ask: 'openrouter key unread', why: 'the home\'s key is not one word of printable ASCII, so it cannot be sent' });
+    log({ ask: `${provider} key unread`, why: 'the home\'s key is not one word of printable ASCII, so it cannot be sent' });
     return null;
   };
 
-  /** @returns {Promise<string | null>} */
-  const current = () => {
-    if (kept !== null && performance.now() - kept.at < KEPT_MS) return Promise.resolve(kept.key);
-    reading ??= fetchKey().then(key => {
-      kept = key === null ? null : { key, at: performance.now() };
-      return key;
-    }).finally(() => { reading = null; });
-    return reading;
+  /** @param {string} provider @returns {Promise<string | null>} */
+  const current = provider => {
+    const route = routes[provider];
+    if (route === undefined) return Promise.resolve(null);
+    const held = kept.get(provider);
+    if (held !== undefined && performance.now() - held.at < KEPT_MS) return Promise.resolve(held.key);
+    let read = reading.get(provider);
+    if (read === undefined) {
+      read = fetchKey(provider, route).then(key => {
+        if (key === null) kept.delete(provider);
+        else kept.set(provider, { key, at: performance.now() });
+        return key;
+      }).finally(() => { reading.delete(provider); });
+      reading.set(provider, read);
+    }
+    return read;
   };
 
   const refused = () => Promise.reject(new Error('The OpenRouter key is Lifestream\'s: it is sealed in its vault, on the Mac Lifestream runs on.'));
   return {
     async read(providerId) {
-      if (providerId !== OPENROUTER.provider) return undefined;
-      const key = await current();
+      if (!Object.hasOwn(routes, providerId)) return undefined;
+      const key = await current(providerId);
       return key === null ? undefined : { type: 'api_key', key };
     },
     async list() {
-      return (await current()) === null ? [] : [{ providerId: OPENROUTER.provider, type: 'api_key' }];
+      const held = await Promise.all(Object.keys(routes).map(async providerId => ((await current(providerId)) === null ? [] : [{ providerId, type: /** @type {const} */ ('api_key') }])));
+      return held.flat();
     },
     modify: refused,
     delete: refused,

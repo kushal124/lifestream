@@ -19,6 +19,7 @@ export interface ModelsRead {
   defaults: Record<WorkKind, { value: string | null; words: string; steps: Step[] }>;
   runners: { unit: string; name: string; line: string | null; paused: string | null; battery: { on: boolean; held: string | null } | null; files: ModelsFile[] }[];
   openrouter: { connected: boolean };
+  cloudflare: { connected: boolean };
   address: { url: string; model: string; words: string; takes: string } | null;
 }
 
@@ -104,6 +105,7 @@ export function modelsRead(stored: StoredModels, model: ModelSettings, defaults:
     defaults: { pictures: member("pictures"), audio: member("audio"), text: member("text") },
     runners: runnerRows(stored.runners, defaults, at),
     openrouter: stored.openrouter,
+    cloudflare: stored.cloudflare ?? { connected: false },
     address: address === undefined ? null
       : { url: address.url, model: address.model, words: `${address.model} at ${address.url}`, takes: TAKES[[...address.kinds].sort().join(",")] ?? "" },
   };
