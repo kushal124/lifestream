@@ -270,7 +270,7 @@ function signinCss(): string {
     `h1 { ${type("ios-title-2")}; overflow-wrap: anywhere; }`,
     `.from { ${type("ios-subhead")}; color: var(--text-secondary); overflow-wrap: anywhere; }`,
     `.gets { ${type("ios-body")}; }`,
-    `.number { ${type("ios-figure-xl", 2)}; text-align: center; padding: ${value(tokens.spacing, "space-4")} 0; }`,
+    `.number { ${type("ios-figure-xl", 1.5)}; white-space: nowrap; text-align: center; padding: ${value(tokens.spacing, "space-4")} 0; }`,
     `.how { ${type("ios-subhead")}; color: var(--text-secondary); text-align: center; }`,
     `.foot { ${type("ios-footnote")}; color: var(--text-tertiary); border-top: 1px solid var(--border); padding-top: ${value(tokens.spacing, "space-4")}; }`,
     `[hidden] { display: none !important; }`,

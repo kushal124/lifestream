@@ -1,9 +1,6 @@
 import Foundation
 import Security
 
-/// The key the dashboard asks of every /api/ request on 127.0.0.1, so that another program or account on this Mac can't
-/// read Lifestream through it. It is a file beside the dashboard's door token, readable by its owner alone; the dashboard
-/// makes it if it starts first, and the app makes it if it comes first.
 enum ViewerKey {
     static let file = "viewer-key"
     static let cookie = "lifestream_viewer"

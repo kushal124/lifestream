@@ -26,8 +26,6 @@ function readKey(path) {
 }
 
 /**
- * The key a page on this Mac shows to read through the dashboard. It lives beside the door token, readable by its owner
- * alone; the Mac app reads the same file, and whichever of the two comes first makes it.
  * @param {string} stateDir
  * @returns {string}
  */
@@ -70,10 +68,8 @@ function cookieOf(req) {
 }
 
 /**
- * Pages served on 127.0.0.1 answer any program on this Mac, and any account on it. The gate holds every /api/ route
- * shut until a request shows the key: as a header (the app's own relay), or as the cookie a launch address sets.
- * @param {string | null} key null leaves the dashboard open, which only tests and tools ask for
- * @returns {(req: IncomingMessage, res: ServerResponse) => boolean} true when the gate answered
+ * @param {string | null} key
+ * @returns {(req: IncomingMessage, res: ServerResponse) => boolean}
  */
 export function viewerKeyGate(key) {
   if (key === null) return () => false;

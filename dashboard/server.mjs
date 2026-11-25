@@ -208,8 +208,7 @@ const STATIC_FILES = async (pathname, search = '') => {
  * @typedef {object} ViewerOptions
  * @property {Door | null} [door]
  * @property {string | null} [bind]
- * @property {string | null} [key] the key a page on this Mac shows for /api/; null leaves it open (tests, tools); left
- *   out, the dashboard makes one nobody holds, so /api/ stays shut
+ * @property {string | null} [key]
  */
 
 /** @param {ViewerOptions} [options] */
