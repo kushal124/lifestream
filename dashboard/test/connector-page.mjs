@@ -175,7 +175,7 @@ before(async () => {
   dir = await mkdtemp(join(tmpdir(), 'dashboard-connector-page-'));
   home = await standInDoor();
   client = openDoor({ url: home.door.url, token: () => 'stub-token' });
-  const served = await createViewer({ door: client });
+  const served = await createViewer({ key: null, door: client });
   viewer = served;
   await new Promise(done => served.listen(0, '127.0.0.1', () => done(undefined)));
   const origin = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (served.address()).port}`;

@@ -141,7 +141,7 @@ async function dashboard(t, url, token = TOKEN) {
   const dir = await mkdtemp(join(tmpdir(), 'dashboard-door-wait-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
   const door = openDoor({ url, token: () => token, silenceMs: SILENCE_MS });
-  const server = await createViewer({ door });
+  const server = await createViewer({ key: null, door });
   await new Promise(done => server.listen(0, '127.0.0.1', () => done(undefined)));
   t.after(() => new Promise(done => { server.closeAllConnections(); server.close(() => done(undefined)); }));
   const at = `http://127.0.0.1:${server.address().port}`;

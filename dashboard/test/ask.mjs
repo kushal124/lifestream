@@ -55,7 +55,7 @@ async function standInDoor(t, respond) {
 async function dashboard(t, url) {
   const dir = await mkdtemp(join(tmpdir(), 'dashboard-ask-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
-  const server = await createViewer({ door: openDoor({ url, token: () => TOKEN }) });
+  const server = await createViewer({ key: null, door: openDoor({ url, token: () => TOKEN }) });
   await new Promise(done => server.listen(0, '127.0.0.1', () => done(undefined)));
   t.after(() => new Promise(done => { server.closeAllConnections(); server.close(() => done(undefined)); }));
   return `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (server.address()).port}`;

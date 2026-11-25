@@ -461,7 +461,7 @@ after(async () => {
 });
 
 test('K6: a reading root through the fixture\'s recovery: the wait line, then the lack, then one read again', async () => {
-  viewer = await createViewer();
+  viewer = await createViewer({ key: null });
   const served = viewer;
   await new Promise(done => served.listen(0, '127.0.0.1', () => done(undefined)));
   const address = /** @type {import('node:net').AddressInfo} */ (served.address());

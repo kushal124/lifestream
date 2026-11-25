@@ -108,7 +108,7 @@ before(async () => {
     });
   });
   dir = await mkdtemp(join(tmpdir(), 'dashboard-faces-'));
-  dashboard = await createViewer({ door: openDoor({ url: home.url, token: () => home.tokens.dashboard }) });
+  dashboard = await createViewer({ key: null, door: openDoor({ url: home.url, token: () => home.tokens.dashboard }) });
   await new Promise(done => dashboard.listen(0, '127.0.0.1', done));
   url = `http://127.0.0.1:${dashboard.address().port}`;
 });
@@ -405,7 +405,7 @@ async function wrapped({ serve = true } = {}) {
   };
   const life = lifeReader(door);
   const faces = facesReader(door, life);
-  const viewer = serve ? await createViewer({ door }) : null;
+  const viewer = serve ? await createViewer({ key: null, door }) : null;
   if (viewer) await new Promise(done => viewer.listen(0, '127.0.0.1', done));
   const at = viewer ? `http://127.0.0.1:${viewer.address().port}` : '';
   return {
@@ -477,7 +477,7 @@ test('F11: an answer lost on the way said other than OUTCOME_UNKNOWN, or sent ag
     const port = /** @type {import('node:net').AddressInfo} */ (free.address()).port;
     await new Promise(done => free.close(() => done(undefined)));
     const closed = openDoor({ url: `http://127.0.0.1:${port}`, token: () => home.tokens.dashboard });
-    const nowhere = await createViewer({ door: closed });
+    const nowhere = await createViewer({ key: null, door: closed });
     await new Promise(done => nowhere.listen(0, '127.0.0.1', done));
     try {
       const response = await fetch(`http://127.0.0.1:${nowhere.address().port}/api/owner/act`, { method: 'POST',
@@ -778,7 +778,7 @@ test('F30: the dashboard a hop: it sends the door its wait less 1 s, answers by 
   });
   await new Promise(done => door.listen(0, '127.0.0.1', () => done(undefined)));
   const opened = openDoor({ url: `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (door.address()).port}`, token: () => 'token' });
-  const viewer = await createViewer({ door: opened });
+  const viewer = await createViewer({ key: null, door: opened });
   await new Promise(done => viewer.listen(0, '127.0.0.1', done));
   /** @param {string | null} wait */
   const send = async wait => {

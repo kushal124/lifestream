@@ -42,6 +42,7 @@ import WebKit
     let container = NSView()
     private let defaults: UserDefaults
     private let dashboardHeld: @Sendable () -> Bool
+    private let viewerKey: () -> String?
     private var webView: PageWebView?
     private var observations: [NSKeyValueObservation] = []
     private var intendedURL: URL
@@ -53,16 +54,18 @@ import WebKit
     private let downloads = DashboardDownloads()
 
     init(address: DashboardAddress, defaults: UserDefaults = .standard, launch: Bool = false, release: URL? = BundledRelease.inApp()?.folder,
-         dashboardHeld: @escaping @Sendable () -> Bool = { HomeAgents.held(.dashboard) }) {
+         dashboardHeld: @escaping @Sendable () -> Bool = { HomeAgents.held(.dashboard) },
+         viewerKey: @escaping () -> String? = { ViewerKey.held() }) {
         self.address = address
         self.defaults = defaults
         self.dashboardHeld = dashboardHeld
+        self.viewerKey = viewerKey
         intendedURL = address.startURL(stored: defaults.string(forKey: Key.lastURL), launch: launch)
         super.init()
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .default()
         configuration.mediaTypesRequiringUserActionForPlayback = []
-        configuration.setURLSchemeHandler(BundledPage(release: release, dashboard: DashboardAddress(port: address.port).root),
+        configuration.setURLSchemeHandler(BundledPage(release: release, dashboard: DashboardAddress(port: address.port).root, viewerKey: viewerKey),
                                           forURLScheme: BundledPage.scheme)
         configuration.userContentController.addScriptMessageHandler(MessageRelay(self), contentWorld: .page, name: HostBridge.handler)
         let webView = PageWebView(frame: .zero, configuration: configuration)
@@ -206,7 +209,18 @@ import WebKit
 
     private func load(_ url: URL) {
         lastAttempt = Date()
-        webView?.load(URLRequest(url: url))
+        guard let webView else { return }
+        let request = URLRequest(url: url)
+        guard url.scheme?.lowercased() == "http", address.decide(url) == .load, let key = viewerKey() else {
+            webView.load(request)
+            return
+        }
+        let store = webView.configuration.websiteDataStore.httpCookieStore
+        let cookies = ViewerKey.cookies(key)
+        Task { @MainActor [weak webView] in
+            for cookie in cookies { await store.setCookie(cookie) }
+            webView?.load(request)
+        }
     }
 
 

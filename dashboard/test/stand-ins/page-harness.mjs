@@ -61,7 +61,7 @@ export function pageHarness({ file, seen, front: standIn, size, narrow, zone, ah
     const served = /** @type {F} */ (front);
     const tokens = /** @type {Home} */ (home).tokens;
     door = openDoor({ url: served.url, token: () => tokens[token] });
-    const dashboard = await createViewer({ door });
+    const dashboard = await createViewer({ key: null, door });
     viewer = dashboard;
     await new Promise(done => dashboard.listen(port, '127.0.0.1', () => done(undefined)));
     port = /** @type {import('node:net').AddressInfo} */ (dashboard.address()).port;

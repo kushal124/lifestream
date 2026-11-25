@@ -140,7 +140,7 @@ let chrome;
 
 before(async () => {
   dir = await mkdtemp(join(tmpdir(), 'dashboard-agents-'));
-  const served = await createViewer();
+  const served = await createViewer({ key: null });
   viewer = served;
   await new Promise(done => served.listen(0, '127.0.0.1', () => done(undefined)));
   const origin = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (served.address()).port}`;

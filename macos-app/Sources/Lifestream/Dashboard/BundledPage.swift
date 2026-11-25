@@ -25,12 +25,14 @@ final class BundledPage: NSObject, WKURLSchemeHandler {
 
     let release: URL
     let dashboard: URL
+    private let viewerKey: () -> String?
     private lazy var session = URLSession(configuration: .ephemeral, delegate: Relay(self), delegateQueue: .main)
     private var relayed: [ObjectIdentifier: (page: any WKURLSchemeTask, task: URLSessionDataTask)] = [:]
 
-    init(release: URL? = BundledRelease.inApp()?.folder, dashboard: URL) {
+    init(release: URL? = BundledRelease.inApp()?.folder, dashboard: URL, viewerKey: @escaping () -> String? = { ViewerKey.held() }) {
         self.release = Self.folder(release)
         self.dashboard = dashboard
+        self.viewerKey = viewerKey
     }
 
     nonisolated static func folder(_ release: URL? = BundledRelease.inApp()?.folder) -> URL {
@@ -87,9 +89,11 @@ final class BundledPage: NSObject, WKURLSchemeHandler {
         parts.percentEncodedQuery = URLComponents(url: url, resolvingAgainstBaseURL: false)?.percentEncodedQuery
         var request = URLRequest(url: parts.url!)
         request.httpMethod = page.request.httpMethod
-        for (field, value) in page.request.allHTTPHeaderFields ?? [:] where !["origin", "host", "referer"].contains(field.lowercased()) {
+        for (field, value) in page.request.allHTTPHeaderFields ?? [:]
+        where !["origin", "host", "referer", "cookie", ViewerKey.header.lowercased()].contains(field.lowercased()) {
             request.setValue(value, forHTTPHeaderField: field)
         }
+        if let key = viewerKey() { request.setValue(key, forHTTPHeaderField: ViewerKey.header) }
         request.httpBody = page.request.httpBody ?? page.request.httpBodyStream.map(Self.read)
         let task = session.dataTask(with: request)
         relayed[ObjectIdentifier(page)] = (page, task)

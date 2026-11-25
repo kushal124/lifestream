@@ -91,7 +91,7 @@ const home = await new Promise((done, fail) => {
   });
 });
 const scratch = await mkdtemp(join(tmpdir(), 'dashboard-speed-'));
-const viewer = await createViewer({ door: openDoor({ url: home.url, token: () => home.tokens.reader }) });
+const viewer = await createViewer({ key: null, door: openDoor({ url: home.url, token: () => home.tokens.reader }) });
 const passOn = /** @type {(req: any, res: any) => void} */ (viewer.listeners('request')[0]);
 await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
 const viewerHost = `127.0.0.1:${/** @type {any} */ (viewer.address()).port}`;
@@ -696,7 +696,7 @@ async function pressLive() {
   const folder = await mkdtemp(join(tmpdir(), 'dashboard-press-'));
   /** @param {import('../lib/door.mjs').Door | null} door */
   const serving = async door => {
-    const server = await createViewer({ door });
+    const server = await createViewer({ key: null, door });
     await new Promise(done => server.listen(0, '127.0.0.1', () => done(undefined)));
     return server;
   };

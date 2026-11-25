@@ -61,7 +61,7 @@ async function standIn(t) {
  */
 async function dashboard(t, url) {
   const door = openDoor({ url, token: () => TOKEN });
-  const server = await createViewer({ door });
+  const server = await createViewer({ key: null, door });
   await new Promise(done => server.listen(0, '127.0.0.1', () => done(undefined)));
   t.after(() => new Promise(done => { door.close(); server.closeAllConnections(); server.close(() => done(undefined)); }));
   return `http://127.0.0.1:${/** @type {any} */ (server.address()).port}`;
