@@ -147,7 +147,7 @@ test('F8: the dashboard relays a draft, a screenshot’s bytes and a send to the
     response.writeHead(status, { 'content-type': 'application/json' }).end(JSON.stringify(answer));
   });
   const doorUrl = await listening(door);
-  const origin = await listening(await createViewer({ door: openDoor({ url: doorUrl, token: () => 'stand-in-token' }) }));
+  const origin = await listening(await createViewer({ key: null, door: openDoor({ url: doorUrl, token: () => 'stand-in-token' }) }));
   const page = { 'X-Viewer-Request': '1', 'Content-Type': 'application/json' };
   const about = { kind: 'chat', chat: '1790000000000-abcdef', n: 2 };
   const drafted = await fetch(`${origin}/api/feedback/draft`, { method: 'POST', headers: page, body: JSON.stringify({ id: ID, about }) });

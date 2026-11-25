@@ -54,7 +54,7 @@ test('W1: the door\'s 503 NOT_NOW reaches the page with its Retry-After, its cod
   });
   await new Promise(done => door.listen(0, '127.0.0.1', () => done(undefined)));
   const reader = openDoor({ url: `http://127.0.0.1:${/** @type {any} */ (door.address()).port}`, token: () => TOKEN });
-  const viewer = await createViewer({ door: reader });
+  const viewer = await createViewer({ key: null, door: reader });
   await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   t.after(async () => {
     reader.close();
@@ -350,7 +350,7 @@ test('W6: a held home\'s words reach the page whole, its Check again left to the
   await new Promise(done => gone.close(() => done(undefined)));
   const held = openDoor({ url: `http://127.0.0.1:${/** @type {any} */ (door.address()).port}`, token: () => TOKEN });
   const away = openDoor({ url: `http://127.0.0.1:${goneAt}`, token: () => TOKEN });
-  const viewers = [await createViewer({ door: held }), await createViewer({ door: away })];
+  const viewers = [await createViewer({ key: null, door: held }), await createViewer({ key: null, door: away })];
   for (const viewer of viewers) await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   t.after(async () => {
     held.close();

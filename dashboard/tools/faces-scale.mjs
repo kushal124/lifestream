@@ -64,7 +64,7 @@ before(async () => {
   measured.home_built_ms = Math.round(performance.now() - building);
   dir = await mkdtemp(join(tmpdir(), 'dashboard-scale-'));
   started = performance.now();
-  dashboard = await createViewer({ door: openDoor({ url: home.url, token: () => home.tokens.dashboard }) });
+  dashboard = await createViewer({ key: null, door: openDoor({ url: home.url, token: () => home.tokens.dashboard }) });
   await new Promise(done => dashboard.listen(0, '127.0.0.1', done));
   url = `http://127.0.0.1:${dashboard.address().port}`;
 });

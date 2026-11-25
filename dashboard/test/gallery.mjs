@@ -15,7 +15,7 @@ let chrome;
 
 before(async () => {
   dir = await mkdtemp(join(tmpdir(), 'dashboard-gallery-'));
-  viewer = await createViewer();
+  viewer = await createViewer({ key: null });
   await new Promise(done => viewer.listen(0, '127.0.0.1', done));
   chrome = await openChrome({ profile: join(dir, 'chrome'), origin: `http://127.0.0.1:${viewer.address().port}` });
   await mkdir(OUT, { recursive: true });

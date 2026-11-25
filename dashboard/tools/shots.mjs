@@ -223,13 +223,13 @@ const dir = await mkdtemp(join(tmpdir(), 'dashboard-shots-'));
 const front = acting ? await actHome({ door: { url: home.url, token: home.tokens.reader }, importing: await audioSource(home) })
   : await placesHome({ door: { url: home.url }, now: demo ? DEMO_NOW : Date.now() });
 const door = openDoor({ url: front?.url ?? home.url, token: () => home.tokens.reader });
-const viewer = await createViewer({ door });
+const viewer = await createViewer({ key: null, door });
 await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
 const url = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (viewer.address()).port}`;
 const fuller = front && !acting ? await fullLife({ door: { url: front.url }, ...demo ? { people: demoPeople } : {} }) : null;
 const shown = fuller && demo ? await demoDoor({ door: fuller }) : null;
 const fullDoor = fuller ? openDoor({ url: (shown ?? fuller).url, token: () => home.tokens.reader }) : null;
-const fullViewer = fullDoor ? await createViewer({ door: fullDoor }) : null;
+const fullViewer = fullDoor ? await createViewer({ key: null, door: fullDoor }) : null;
 if (fullViewer) await new Promise(done => fullViewer.listen(0, '127.0.0.1', () => done(undefined)));
 const fullUrl = fullViewer ? `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (fullViewer.address()).port}` : '';
 
@@ -256,7 +256,7 @@ const talkOf = page => {
 if (all) {
   const onboarding = await onboardingHome({ door: { url: home.url, token: home.tokens.reader }, day: home.day });
   const onboardingDoor = openDoor({ url: onboarding.url, token: () => home.tokens.reader });
-  const onboardingViewer = await createViewer({ door: onboardingDoor });
+  const onboardingViewer = await createViewer({ key: null, door: onboardingDoor });
   const listen = (/** @type {import('node:http').Server} */ server) => new Promise(done => server.listen(0, '127.0.0.1', () =>
     done(`http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (server.address()).port}`)));
   const bases = { home: url, full: fullUrl, onboarding: await listen(onboardingViewer) };
@@ -489,7 +489,7 @@ async function shootPhone(life, token, answers) {
 
 async function shootKit() {
   const scratch = await mkdtemp(join(tmpdir(), 'dashboard-kit-shots-'));
-  const gallery = await createViewer();
+  const gallery = await createViewer({ key: null });
   await new Promise(done => gallery.listen(0, '127.0.0.1', () => done(undefined)));
   const address = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (gallery.address()).port}`;
   await mkdir(OUT, { recursive: true });
@@ -508,7 +508,7 @@ async function shootKit() {
 
 async function shootSettings() {
   const scratch = await mkdtemp(join(tmpdir(), 'dashboard-settings-shots-'));
-  const gallery = await createViewer();
+  const gallery = await createViewer({ key: null });
   await new Promise(done => gallery.listen(0, '127.0.0.1', () => done(undefined)));
   const address = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (gallery.address()).port}`;
   await mkdir(OUT, { recursive: true });

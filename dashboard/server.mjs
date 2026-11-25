@@ -3,6 +3,7 @@
 /** @import { Server } from 'node:http' */
 /** @import { Door } from './lib/door.mjs' */
 /** @import { StaticFile } from './lib/static.mjs' */
+import { randomBytes } from 'node:crypto';
 import { readdirSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { fileURLToPath } from 'node:url';
@@ -15,6 +16,7 @@ import { atlasReader } from './lib/atlas.mjs';
 import { setHomeAddress } from './lib/http.mjs';
 import { isLoopback, principalGate } from './lib/principals.mjs';
 import { staticFiles } from './lib/static.mjs';
+import { KEY_QUERY, viewerKey, viewerKeyGate } from './lib/viewer-key.mjs';
 import { router } from './lib/routes/router.mjs';
 import { connectorRoutes } from './lib/routes/connectors.mjs';
 import { feedRoutes } from './lib/routes/feed.mjs';
@@ -206,10 +208,12 @@ const STATIC_FILES = async (pathname, search = '') => {
  * @typedef {object} ViewerOptions
  * @property {Door | null} [door]
  * @property {string | null} [bind]
+ * @property {string | null} [key] the key a page on this Mac shows for /api/; null leaves it open (tests, tools); left
+ *   out, the dashboard makes one nobody holds, so /api/ stays shut
  */
 
 /** @param {ViewerOptions} [options] */
-export async function createViewer({ door = null, bind = null } = {}) {
+export async function createViewer({ door = null, bind = null, key } = {}) {
   const life = lifeReader(door);
   const faces = facesReader(door, life);
   const handle = router({
@@ -224,9 +228,12 @@ export async function createViewer({ door = null, bind = null } = {}) {
     throw new Error('no door');
   };
   const gate = bind && !isLoopback(bind) ? principalGate({ allows: door ? door.allows : noDoor }) : null;
+  const keyed = viewerKeyGate(key === undefined ? randomBytes(32).toString('hex') : key);
   /** @type {(req: import('node:http').IncomingMessage, res: import('node:http').ServerResponse) => Promise<void>} */
-  const answer = gate
-    ? async (req, res) => {
+  const answer = async (req, res) => {
+    if (isLoopback(req.socket?.localAddress)) {
+      if (keyed(req, res)) return;
+    } else if (gate) {
       try {
         if (await gate(req, res)) return;
       } catch {
@@ -234,9 +241,9 @@ export async function createViewer({ door = null, bind = null } = {}) {
         res.end(JSON.stringify({ error: 'Could not check who is asking.' }));
         return;
       }
-      await handle(req, res);
     }
-    : handle;
+    await handle(req, res);
+  };
   /** @type {Server} */
   const server = createServer(answer);
   server.on('close', () => door?.close());
@@ -254,7 +261,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   process.umask(0o077);
   const settings = doorSettings(state);
   const bind = process.env.VIEWER_BIND || null;
-  const server = await createViewer({ door: openDoor(settings), bind });
+  const key = viewerKey(state);
+  const server = await createViewer({ door: openDoor(settings), bind, key });
   if (process.env.VIEWER_ENDS_WITH_STDIN === '1') {
     process.stdin.on('end', () => process.exit(0));
     process.stdin.resume();
@@ -262,6 +270,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   server.listen(Number(process.env.PORT || 4317), '127.0.0.1', () => {
     const port = /** @type {AddressInfo} */ (server.address()).port;
     console.log(`Lifestream dashboard: http://127.0.0.1:${port}`);
+    if (process.stdout.isTTY) console.log(`Lifestream dashboard: open http://127.0.0.1:${port}/?${KEY_QUERY}=${key} in a browser on this Mac`);
     if (bind) console.log(`Lifestream dashboard: http://${bind}:${port} for a reader with a token`);
     if (settings.token() === null) console.log('Lifestream dashboard: no read token for the door yet; Ask, Days, People, Places and Connectors say so until one is there');
   });

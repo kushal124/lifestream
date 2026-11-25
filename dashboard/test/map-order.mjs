@@ -72,7 +72,7 @@ const DRAWN = 'document.querySelector("[data-map=order]").dataset.drawn';
 
 before(async () => {
   dir = await mkdtemp(join(tmpdir(), 'dashboard-map-order-'));
-  viewer = await createViewer();
+  viewer = await createViewer({ key: null });
   await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   const address = /** @type {import('node:net').AddressInfo} */ (viewer.address());
   chrome = await openChrome({ profile: join(dir, 'chrome'), origin: `http://127.0.0.1:${address.port}` });

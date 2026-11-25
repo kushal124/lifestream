@@ -121,7 +121,7 @@ before(async () => {
   servers.push(door);
   await new Promise(done => door.listen(0, '127.0.0.1', () => done(undefined)));
   const doorUrl = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (door.address()).port}`;
-  const viewer = await createViewer({ door: openDoor({ url: doorUrl, token: () => 'stand-in-token' }) });
+  const viewer = await createViewer({ key: null, door: openDoor({ url: doorUrl, token: () => 'stand-in-token' }) });
   servers.push(viewer);
   await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   const origin = `http://127.0.0.1:${/** @type {import('node:net').AddressInfo} */ (viewer.address()).port}`;

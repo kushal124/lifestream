@@ -465,8 +465,8 @@ test('N12: the server\'s press other than the door\'s act', async () => {
   const home = await actHome({ door: null, importing: 'audio:unit' });
   const dir = await mkdtemp(join(tmpdir(), 'dashboard-act-'));
   const door = openDoor({ url: home.url, token: () => 'stub-token' });
-  const viewer = await createViewer({ door });
-  const doorless = await createViewer();
+  const viewer = await createViewer({ key: null, door });
+  const doorless = await createViewer({ key: null });
   await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   await new Promise(done => doorless.listen(0, '127.0.0.1', () => done(undefined)));
   /**

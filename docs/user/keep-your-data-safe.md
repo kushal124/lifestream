@@ -14,7 +14,7 @@ Every new Lifestream is encrypted. A Lifestream set up by an older version may n
 |---|---|---|
 | Someone who takes your Mac while it is off, or the drive Lifestream is on | Nothing in Lifestream's folder, unless they have your Mac and know its login password, which opens [this Mac's key](#where-the-keys-are). If FileVault is off, [a few files on your Mac's own disk](#what-stays-readable). | Everything but the passwords in the vault, unless FileVault or an encrypted drive covers the folder. |
 | Someone with a copy of Lifestream's folder, such as a backup or a cloud drive | Nothing, without your recovery key or this Mac's key. | Everything but the passwords in the vault. |
-| Another account on your Mac | Nothing in Lifestream's folder. | Nothing: macOS lets only your account open the folder. If its disk ignores ownership, Lifestream says **Other accounts can read Lifestream**. |
+| Another account on your Mac | Nothing in Lifestream's folder, and nothing through the Lifestream window, which answers only with a key kept in that folder. | Nothing: macOS lets only your account open the folder. If its disk ignores ownership, Lifestream says **Other accounts can read Lifestream**. |
 | Someone on your Wi-Fi | Nothing, unless an agent reaches Lifestream over your Wi-Fi: [its **Key** and every answer it gets](#what-listens-on-your-network) travel unencrypted. Your devices talk to Lifestream over an encrypted connection. | The same. |
 | Someone on the internet | Nothing. While your agent address is on the internet, they reach only the page where an agent asks to sign in, and you approve each sign-in. | The same. |
 | A web page you open in your browser | Nothing. It cannot reach Lifestream on your Mac. | The same. |

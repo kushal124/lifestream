@@ -23,7 +23,7 @@ function raw(port, path, { method = 'GET', headers = {} } = {}) {
 async function serve(t) {
   const dir = await mkdtemp(join(tmpdir(), 'dashboard-http-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
-  const server = await createViewer();
+  const server = await createViewer({ key: null });
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   t.after(() => new Promise(resolve => server.close(resolve)));
   return server.address().port;

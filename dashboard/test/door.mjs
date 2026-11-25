@@ -125,7 +125,7 @@ before(async () => {
   dir = await mkdtemp(join(tmpdir(), 'dashboard-door-'));
   await mkdir(join(dir, 'state'));
   door = openDoor(doorSettings(join(dir, 'state'), { LIFESTREAM_DOOR: home.url }));
-  dashboard = await createViewer({ door });
+  dashboard = await createViewer({ key: null, door });
   await new Promise(done => dashboard.listen(0, '127.0.0.1', done));
   url = `http://127.0.0.1:${dashboard.address().port}`;
 });
@@ -475,7 +475,7 @@ test('K1: the dashboard outlives a door restarted with other day settings: the c
   await new Promise(done => standIn.listen(0, '127.0.0.1', () => done(undefined)));
   const port = /** @type {import('node:net').AddressInfo} */ (standIn.address()).port;
   const client = openDoor({ url: `http://127.0.0.1:${port}`, token: () => 'reader' });
-  const viewer = await createViewer({ door: client });
+  const viewer = await createViewer({ key: null, door: client });
   await new Promise(done => viewer.listen(0, '127.0.0.1', () => done(undefined)));
   const clockAt = async () => (await fetch(`http://127.0.0.1:${viewer.address().port}/api/clock`)).json();
   const early = Date.UTC(2026, 9, 14, 5);
@@ -568,7 +568,7 @@ test('F2: tile, screen and full other than the door\'s /v1/pictures answer: its 
   });
   await new Promise(done => stand.listen(0, '127.0.0.1', done));
   const standDoor = openDoor({ url: `http://127.0.0.1:${stand.address().port}`, token: () => home.tokens.reader });
-  const viewer = await createViewer({ door: standDoor });
+  const viewer = await createViewer({ key: null, door: standDoor });
   await new Promise(done => viewer.listen(0, '127.0.0.1', done));
   const at = `http://127.0.0.1:${viewer.address().port}`;
   const picture = (hash, size, headers = {}, recipe = String(RECIPE)) => fetch(`${at}/api/life/picture?${new URLSearchParams({
@@ -741,7 +741,7 @@ async function searchDoor(answers) {
   });
   await new Promise(done => stub.listen(0, '127.0.0.1', done));
   const stubDoor = openDoor({ url: `http://127.0.0.1:${stub.address().port}`, token: () => 'stub-token' });
-  const viewer = await createViewer({ door: stubDoor });
+  const viewer = await createViewer({ key: null, door: stubDoor });
   await new Promise(done => viewer.listen(0, '127.0.0.1', done));
   return {
     asked,
