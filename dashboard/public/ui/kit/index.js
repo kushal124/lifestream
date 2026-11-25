@@ -94,7 +94,7 @@ export { plain, status } from './status.js';
 export { arrivals, arrive } from './arrive.js';
 export { qrCode } from './pair-code.js';
 export { offer, offers } from './offer.js';
-export { agentCard, askBody, numberPick, pickSection, quoted } from './agent-card.js';
+export { agentCard, askBody, CODE_DIGITS, codeEntry, codeOf, numberPick, pickSection, quoted } from './agent-card.js';
 export { accessChatCard, accessNarrowed } from './access-card.js';
 export { accessCheck, accessFoot, checkedRow, differsFace, differsFold } from './access-control.js';
 export { stepField, steps } from './steps.js';

@@ -57,11 +57,11 @@ const RESOURCE = "https://macbook-pro-0001.tail0000.ts.net/mcp";
 
 interface Answer { status: number; body: JsonObject }
 
-const PAGE = 42;
+const PAGE = "482915";
 
 function pinned(answer: Answer): Answer {
   const list = answer.body as unknown as WaitingList;
-  return { status: answer.status, body: { ...list, position: "1:0", requests: list.requests.map((each) => ({ ...each, choices: [27, PAGE, 64] })) } as unknown as JsonObject };
+  return { status: answer.status, body: { ...list, position: "1:0", requests: list.requests } as unknown as JsonObject };
 }
 
 function seeded(): (bytes: number) => Buffer {
@@ -220,7 +220,7 @@ describe("the person's routes of access", () => {
     expect(pinned(none).body).toEqual({ position: "1:0", today: expect.any(String), requests: [], asks: [] });
     files.write("waiting-none", "GET /v1/agents/waiting", null, pinned(none));
     const request = await at.call("claude: request", "POST", "/v1/agents/request", at.token("mcp"), { name: "Claude", checked: true, host: "claude.ai" });
-    const signIn = request.body as { id: string; number: number };
+    const signIn = request.body as { id: string; code: string };
     files.name(signIn.id, "c2lnbi1pbi0wMDAwMDAwMQ");
     const waiting = await as.phone("waiting with a sign-in", "GET", "/v1/agents/waiting");
     const listed = waiting.body as unknown as WaitingList;
@@ -229,8 +229,8 @@ describe("the person's routes of access", () => {
       id: signIn.id, name: "Claude", checked: true, host: "claude.ai", access: defaultAccess(),
       sentence: "Claude reads everything but Health and Money. Details hidden, names shown.",
       head: "Claude wants to read your Lifestream", over: "This sign-in is over. Start it again in claude.ai.",
-      over_line: wordsOnly("From claude.ai"), app: "claude", notice: "Claude wants to read your Lifestream. Pick the number it shows.",
-      pick: "Pick the number Claude shows", pick_line: "The number is the yes. A wrong one turns Claude away.",
+      over_line: wordsOnly("From claude.ai"), app: "claude", notice: "Claude wants to read your Lifestream. Type the code it shows.",
+      pick: "Type the code Claude shows", pick_line: "The code is the yes. A wrong one turns Claude away.",
     })]);
     const unedited = await as.phone("the sign-in's access drawn, unedited", "POST", "/v1/agents/edit", { target: { request: signIn.id }, access: defaultAccess(), expect: null, edit: null });
     expect(listed.requests[0]!.view, "the card draws the view the editor opens on, with no second call").toEqual((unedited.body as unknown as AccessDraft).view);
@@ -248,14 +248,14 @@ describe("the person's routes of access", () => {
     expect(fromBrowser.status).toBe(200);
     files.write("edit-sign-in-browser", "POST /v1/agents/edit", { target: { request: signIn.id }, access: defaultAccess(), expect: null, edit: null }, fromBrowser);
     const chosen = (signInDraft.body as unknown as AccessDraft).access;
-    const fromBrowserAnswer = await as.reader("a browser answers", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.number });
+    const fromBrowserAnswer = await as.reader("a browser answers", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.code });
     expect([fromBrowserAnswer.status, fromBrowserAnswer.body.code]).toEqual([403, "PERSON_ONLY"]);
     files.write("answer-person-only", "POST /v1/agents/answer", { id: signIn.id, answer: PAGE }, fromBrowserAnswer);
-    expect((await as.chat("a turn answers", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.number })).body.code).toBe("PERSON_ONLY");
+    expect((await as.chat("a turn answers", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.code })).body.code).toBe("PERSON_ONLY");
     const stillWaiting = await as.mac("the Mac reads a sign-in still waiting", "GET", `/v1/agents/signins/${signIn.id}`);
     expect(stillWaiting.body).toEqual({ id: signIn.id, state: "waiting", outcome: null, reader: null, connected: null } satisfies SignInRead);
     files.write("signin-waiting", "GET /v1/agents/signins/<id>", null, stillWaiting);
-    const approved = await as.phone("the page's number, after Change", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.number, access: chosen });
+    const approved = await as.phone("the page's number, after Change", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.code, access: chosen });
     expect(approved.body, "a sign-in's answer: its state, no version, the home's words").toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null } as unknown as AnswerReply);
     files.write("answer-sign-in", "POST /v1/agents/answer", { id: signIn.id, answer: PAGE, access: chosen }, approved);
     const elsewhere = await as.mac("the Mac reads the sign-in its card held, answered on the iPhone", "GET", `/v1/agents/signins/${signIn.id}`);
@@ -264,23 +264,23 @@ describe("the person's routes of access", () => {
     const gone = await as.mac("a sign-in the home no longer holds", "GET", "/v1/agents/signins/AAAAAAAAAAAAAAAAAAAAAA");
     expect([gone.status, gone.body], "over, by the home's clock: gone, never a refusal").toEqual([200, { id: "AAAAAAAAAAAAAAAAAAAAAA", state: "gone", outcome: null, reader: null, connected: null }]);
     files.write("signin-over", "GET /v1/agents/signins/<id>", null, gone);
-    const answeredAgain = await as.phone("the sign-in answered again", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.number });
+    const answeredAgain = await as.phone("the sign-in answered again", "POST", "/v1/agents/answer", { id: signIn.id, answer: signIn.code });
     expect([answeredAgain.status, answeredAgain.body], "a retry after a lost reply writes nothing and answers the real state and outcome").toEqual([200, approved.body]);
     files.write("answer-sign-in-ended", "POST /v1/agents/answer", { id: signIn.id, answer: PAGE }, answeredAgain);
-    const denying = (await at.call("local: request", "POST", "/v1/agents/request", at.token("mcp"), { name: "Local", checked: false, host: null })).body as { id: string; number: number };
+    const denying = (await at.call("local: request", "POST", "/v1/agents/request", at.token("mcp"), { name: "Local", checked: false, host: null })).body as { id: string; code: string };
     files.name(denying.id, "c2lnbi1pbi0wMDAwMDAwMg");
     const denyAccess = await as.phone("Don't allow, with an access", "POST", "/v1/agents/answer", { id: denying.id, answer: "deny", access: defaultAccess() });
     expect([denyAccess.status, denyAccess.body.code]).toEqual([422, "BAD_REQUEST"]);
     const denied = await as.phone("Don't allow", "POST", "/v1/agents/answer", { id: denying.id, answer: "deny" });
     expect(denied.body, "a refusal says where and when, as an allow does").toEqual({ state: "denied", version: null, outcome: wordsAt("Not allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     files.write("answer-sign-in-deny", "POST /v1/agents/answer", { id: denying.id, answer: "deny" }, denied);
-    const mistaken = (await at.call("mistaken: request", "POST", "/v1/agents/request", at.token("mcp"), { name: "Mistaken", checked: false, host: null })).body as { id: string; number: number };
+    const mistaken = (await at.call("mistaken: request", "POST", "/v1/agents/request", at.token("mcp"), { name: "Mistaken", checked: false, host: null })).body as { id: string; code: string };
     files.name(mistaken.id, "c2lnbi1pbi0wMDAwMDAwMw");
-    const other = mistaken.number === 99 ? 10 : mistaken.number + 1;
-    const wrong = await as.mac("another number, on the Mac", "POST", "/v1/agents/answer", { id: mistaken.id, answer: other });
-    expect(wrong.body).toEqual({ state: "wrong", version: null, outcome: wordsOnly("Wrong number, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."), reader: null, connected: null });
-    const wrongAgain = await as.mac("the right number after a wrong one", "POST", "/v1/agents/answer", { id: mistaken.id, answer: mistaken.number });
-    expect([wrongAgain.status, wrongAgain.body], "a wrong number ends the sign-in: the right one after it changes nothing").toEqual([200, wrong.body]);
+    const other = mistaken.code === "000000" ? "000001" : "000000";
+    const wrong = await as.mac("another code, on the Mac", "POST", "/v1/agents/answer", { id: mistaken.id, answer: other });
+    expect(wrong.body).toEqual({ state: "wrong", version: null, outcome: wordsOnly("Wrong code, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."), reader: null, connected: null });
+    const wrongAgain = await as.mac("the right number after a wrong one", "POST", "/v1/agents/answer", { id: mistaken.id, answer: mistaken.code });
+    expect([wrongAgain.status, wrongAgain.body], "a wrong code ends the sign-in: the right one after it changes nothing").toEqual([200, wrong.body]);
     files.write("answer-sign-in-wrong", "POST /v1/agents/answer", { id: mistaken.id, answer: PAGE }, wrong);
     const granted = await at.call("claude: grant", "POST", "/v1/agents/grant", at.token("mcp"), { id: signIn.id, client_id: CLIENT, resource: RESOURCE });
     const claude = (granted.body as unknown as Granted).grant;
@@ -507,11 +507,11 @@ describe("the person's routes of access", () => {
     expect(rows.map((row) => row.id), "the home's own reader, lifestream agents call's, is never listed").not.toContain(own);
     expect(rows.map((row) => [row.name, row.has_ask])).toEqual([["Chat", false], ["Hermes", true], ["Instinct", true], ["ChatGPT", true], ["Claude", true], ["Editor", false]]);
     expect(rows[0], "the list's amount and place, the home's words").toMatchObject({ summary: "Hasn’t read yet", place: "Lifestream" });
-    const unknownAnswer = await as.phone("a request answered with a sign-in's number", "POST", "/v1/agents/answer", { id: open.id, answer: 42 });
-    expect([unknownAnswer.status, unknownAnswer.body.code], "a number answers a sign-in alone").toEqual([404, "AGENT_REQUEST_GONE"]);
+    const unknownAnswer = await as.phone("a request answered with a sign-in's code", "POST", "/v1/agents/answer", { id: open.id, answer: PAGE });
+    expect([unknownAnswer.status, unknownAnswer.body.code], "a code answers a sign-in alone").toEqual([404, "AGENT_REQUEST_GONE"]);
 
     const hermesNowRead = (await as.reader("hermes before the drafts", "GET", `/v1/agents/${hermes}`)).body as unknown as AgentRead;
-    const drafted = (await at.call("a sign-in to draft", "POST", "/v1/agents/request", at.token("mcp"), { name: "Drafted", checked: false, host: null })).body as { id: string; number: number };
+    const drafted = (await at.call("a sign-in to draft", "POST", "/v1/agents/request", at.token("mcp"), { name: "Drafted", checked: false, host: null })).body as { id: string; code: string };
     const targets = [
       ["reader", { target: { reader: hermes }, access: hermesNowRead.access, expect: hermesNowRead.version, edit: null }],
       ["sign-in", { target: { request: drafted.id }, access: defaultAccess(), expect: null, edit: { mode: "but" } }],

@@ -209,31 +209,31 @@ extension AppNavigation {
         case "month": open(.month(value), in: .days)
         case "thisphone": present(.stream(.thisPhone))
         case "agent-request":
-            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com", choices: [14, 82, 37])
+            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com")
         case "agent-request-long":
             Self.designSignIn(id: "agent-design", name: "Hermes Research Assistant for the Quarterly Planning Workspace", checked: false,
-                              host: "hermes.example.com", choices: [90, 12, 45])
+                              host: "hermes.example.com")
         case "agent-request-no":
-            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com", choices: [14, 82, 37]) { _ in
+            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com") { _ in
                 Self.cannedOutcome("answer-sign-in-wrong")
             }
         case "agent-request-over":
-            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com", choices: [14, 82, 37]) { $0.over }
+            Self.designSignIn(id: "agent-design", name: "ChatGPT", checked: true, host: "chatgpt.com") { $0.over }
         case "way-in":
             AppRuntime.shared.agents.standForDesign(asks: Self.cannedAsks, ended: [])
             present(.streams)
         case "agent-request-failed":
-            Self.designSignIn(id: "agent-design", name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 13], failed: AgentAsks.unsure)
+            Self.designSignIn(id: "agent-design", name: "Claude", checked: true, host: "claude.ai", failed: AgentAsks.unsure)
         case "agent-access":
-            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 13], editing: [])
+            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai", editing: [])
         case "agent-access-category":
-            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 13],
+            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai",
                               editing: [.category("mail")])
         case "agent-access-time":
-            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 13],
+            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai",
                               editing: [.time(.all)])
         case "agent-access-hiding":
-            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 13],
+            Self.designSignIn(id: "c2lnbi1pbi0wMDAwMDAwMQ", name: "Claude", checked: true, host: "claude.ai",
                               editing: [.hiding])
         case "agents":
             AppRuntime.shared.agents.standForDesign(asks: CannedHome.Agents.asks(now: Int64(AppClock.now.timeIntervalSince1970 * 1000))
@@ -302,7 +302,7 @@ extension AppNavigation {
             .map { Words.phrase($0) }
     }
 
-    private static func designSignIn(id: String, name: String, checked: Bool, host: String, choices: [Int], failed: String? = nil,
+    private static func designSignIn(id: String, name: String, checked: Bool, host: String, failed: String? = nil,
                                      editing: [AccessRoute]? = nil, outcome: ((HomeLink.SignIn) -> String?)? = nil) {
         guard var signIn = (CannedHome.Agents.decoded(HomeLink.AgentsWaiting.self, "waiting-sign-in"))?.requests.first else { return }
         let named = signIn.name
@@ -316,7 +316,6 @@ extension AppNavigation {
         signIn.name = name
         signIn.checked = checked
         signIn.host = host
-        signIn.choices = choices
         signIn.untilMs = Int64((AppClock.now.timeIntervalSince1970 + 600) * 1000)
         signIn.sentence = name + String(signIn.sentence.dropFirst(named.count))
         signIn.head = signIn.head.replacingOccurrences(of: named, with: name)

@@ -577,16 +577,11 @@
         "app" : null,
         "at_ms" : 1794646800000,
         "checked" : false,
-        "choices" : [
-          27,
-          42,
-          64
-        ],
         "head" : "Drafted wants to read your Lifestream",
         "host" : null,
         "id" : "c2lnbi1pbi0wMDAwMDAwNA",
         "name" : "Drafted",
-        "notice" : "Drafted wants to read your Lifestream. Pick the number it shows.",
+        "notice" : "Drafted wants to read your Lifestream. Type the code it shows.",
         "over" : "This sign-in is over. Start it again in Drafted.",
         "over_line" : [
           {
@@ -601,8 +596,8 @@
             }
           }
         ],
-        "pick" : "Pick the number Drafted shows",
-        "pick_line" : "The number is the yes. A wrong one turns Drafted away.",
+        "pick" : "Type the code Drafted shows",
+        "pick_line" : "The code is the yes. A wrong one turns Drafted away.",
         "sentence" : "Drafted reads everything but Health and Money. Details hidden, names shown.",
         "until_ms" : 1794647400000,
         "view" : {

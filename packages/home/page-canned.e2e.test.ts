@@ -396,14 +396,13 @@ const AGENTS_MAC = "macbook-pro-0001";
 const AGENT_CHAT = "whatsapp:15550000001";
 const AGENT_SOURCES = { [`${AGENT_CHAT}:${AGENTS_MAC}`]: "whatsapp-db", "gmail:person-a@example.com:cloud": "gmail" };
 const SIGN_INS = [
-  { name: "Claude", checked: true, host: "claude.ai", choices: [27, 64, 81] },
-  { name: "Hermes", checked: false, host: "hermes.example.com", choices: [90, 12, 45] },
-  { name: "Atlas", checked: false, host: null, choices: [16, 49, 73] },
+  { name: "Claude", checked: true, host: "claude.ai" },
+  { name: "Hermes", checked: false, host: "hermes.example.com" },
+  { name: "Atlas", checked: false, host: null },
 ] as const;
 
 function cannedWaiting(body: Body, ids: Map<string, string>): Body {
-  const choices = new Map<string, readonly number[]>(SIGN_INS.map((each) => [each.name, each.choices]));
-  const pinnedBody = { ...body, position: "1:0", requests: body.requests.map((each: Body) => ({ ...each, choices: [...choices.get(each.name)!] })) };
+  const pinnedBody = { ...body, position: "1:0" };
   let text = JSON.stringify(pinnedBody);
   for (const [id, as] of ids) text = text.split(id).join(as);
   const seen = new Map<string, string>();
@@ -472,22 +471,22 @@ describe("The canned home's waiting answers, which the phone's canned home serve
       return answer.body.badge.asks as number;
     };
 
-    const signIns: { id: string; number: number }[] = [];
+    const signIns: { id: string; code: string }[] = [];
     for (const each of SIGN_INS) {
       const made = await call("POST", "/v1/agents/request", server, { name: each.name, checked: each.checked, host: each.host });
       expect(made.status, each.name).toBe(200);
-      const signIn = made.body as { id: string; number: number };
+      const signIn = made.body as { id: string; code: string };
       ids.set(signIn.id, `agent-${each.name.toLowerCase()}`);
       signIns.push(signIn);
       now += 1_000;
     }
-    const [claudeIn, hermesIn] = signIns as [{ id: string; number: number }, { id: string; number: number }];
+    const [claudeIn, hermesIn] = signIns as [{ id: string; code: string }, { id: string; code: string }];
     const opening = await waiting("claude-hermes-atlas");
     expect(opening.requests.map((each: Body) => [each.name, each.host]), "the three sign-ins, oldest first, as the home lists them")
       .toEqual(SIGN_INS.map((each) => [each.name, each.host]));
     expect(opening.asks).toEqual([]);
 
-    const approved = await phone("POST", "/v1/agents/answer", { id: claudeIn.id, answer: claudeIn.number });
+    const approved = await phone("POST", "/v1/agents/answer", { id: claudeIn.id, answer: claudeIn.code });
     expect(approved.body.state).toBe("approved");
     expect((await waiting("hermes-atlas")).requests.map((each: Body) => each.name)).toEqual(["Hermes", "Atlas"]);
     const denied = await phone("POST", "/v1/agents/answer", { id: hermesIn.id, answer: "deny" });

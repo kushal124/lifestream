@@ -11,11 +11,6 @@
         "name": "Drafted",
         "checked": false,
         "host": null,
-        "choices": [
-          27,
-          42,
-          64
-        ],
         "at_ms": 1794646800000,
         "until_ms": 1794647400000,
         "head": "Drafted wants to read your Lifestream",
@@ -616,11 +611,11 @@
           "widening": null,
           "screen": "Screen shows almost everything you did."
         },
-        "pick": "Pick the number Drafted shows",
-        "pick_line": "The number is the yes. A wrong one turns Drafted away.",
+        "pick": "Type the code Drafted shows",
+        "pick_line": "The code is the yes. A wrong one turns Drafted away.",
         "over": "This sign-in is over. Start it again in Drafted.",
         "app": null,
-        "notice": "Drafted wants to read your Lifestream. Pick the number it shows."
+        "notice": "Drafted wants to read your Lifestream. Type the code it shows."
       }
     ],
     "asks": [

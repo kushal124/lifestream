@@ -11,7 +11,8 @@ import { SKILL_FILE, SKILL_ROUTE } from '../tools.mjs';
 export const PUBLIC_PORT = 4683;
 const OFF = "Lifestream's internet address is off on this Mac";
 const CODE_MS = 60_000;
-const TRANSACTION_MS = 20 * 60_000;
+const TRANSACTION_MS = 10 * 60_000;
+const CONFIRM = /^[0-9]{6}$/u;
 const RETRY_MS = 2_000;
 const RETRY_FOR_MS = 24 * 60 * 60_000;
 const MAX_BODY = 16_384;
@@ -31,7 +32,7 @@ const POLICY = [
 ].join('; ');
 
 /**
- * @typedef {{ id: string, key: string, client_id: string, redirect_uri: string, challenge: string, resource: string, state: string | null, name: string, line: string, number: number, at_ms: number, code: string | null }} Transaction
+ * @typedef {{ id: string, key: string, client_id: string, redirect_uri: string, challenge: string, resource: string, state: string | null, name: string, line: string, confirm: string, at_ms: number, code: string | null }} Transaction
  * @typedef {{ id: string, until_ms: number, state: 'unused' | 'exchanging' | 'granted' | 'refused', grant: string | null, replayed: boolean }} Code
  * @typedef {{ grant: string } | { request: string }} Revoke
  * @typedef {(request: import('node:http').IncomingMessage, response: import('node:http').ServerResponse, public_: { resource: string, challenge: (invalid: boolean) => string }) => void} ServeMcp
@@ -129,7 +130,7 @@ export function createPublicHandler({ door, machine, mcp, now = Date.now, client
     if ('error' in known) return page(response, 400, { error: known.error });
     const made = await home.request(known.card);
     if (made.status === 429) return page(response, 429, { error: CROWDED });
-    if (made.status !== 200 || typeof made.body.id !== 'string' || !REQUEST_ID.test(made.body.id) || !Number.isInteger(made.body.number)
+    if (made.status !== 200 || typeof made.body.id !== 'string' || !REQUEST_ID.test(made.body.id) || typeof made.body.code !== 'string' || !CONFIRM.test(made.body.code)
       || typeof made.body.name !== 'string' || made.body.name === '' || typeof made.body.line !== 'string' || made.body.line === '') {
       log({ signin: 'request refused', status: made.status, code: made.body?.code ?? null });
       return page(response, 503, { error: NOT_READY });
@@ -137,7 +138,7 @@ export function createPublicHandler({ door, machine, mcp, now = Date.now, client
     /** @type {Transaction} */
     const transaction = {
       id: made.body.id, key, client_id: clientId, redirect_uri: redirect, challenge, resource: ours, state,
-      name: made.body.name, line: made.body.line, number: made.body.number, at_ms: now(), code: null,
+      name: made.body.name, line: made.body.line, confirm: made.body.code, at_ms: now(), code: null,
     };
     transactions.set(transaction.id, transaction);
     asked.set(key, transaction.id);
@@ -350,7 +351,7 @@ export function createPublicHandler({ door, machine, mcp, now = Date.now, client
 
 /** @param {Transaction} transaction */
 function shown(transaction) {
-  return { name: transaction.name, line: transaction.line, number: transaction.number, wait: `/oauth/wait/${transaction.id}` };
+  return { name: transaction.name, line: transaction.line, confirm: transaction.confirm, wait: `/oauth/wait/${transaction.id}` };
 }
 
 /**

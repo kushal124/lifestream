@@ -100,7 +100,7 @@ describe("a home's accounts read only as labels", () => {
     const offered = offeredOf(rows, CONNECTORS, reading);
     const person = openPersonAccess({
       writer: { person: async <T>(asked: PersonWriting) => ("waiting" in asked ? [] : { access: undefined, own: undefined, open: undefined, tally: null, kinds: null, today: null, last: null }) as T },
-      signIns: { waiting: async () => ({ requests: [{ id: "sign-in-1", name: "Example agent", checked: true, host: null, choices: [], at_ms: NOW, until_ms: NOW + HOUR }] }), read: async () => ({ answered: null, granted: null }), answer: async () => ({ state: "denied", name: "Example agent", at_ms: NOW, device: null, granted: null }) },
+      signIns: { waiting: async () => ({ requests: [{ id: "sign-in-1", name: "Example agent", checked: true, host: null, at_ms: NOW, until_ms: NOW + HOUR }] }), read: async () => ({ answered: null, granted: null }), answer: async () => ({ state: "denied", name: "Example agent", at_ms: NOW, device: null, granted: null }) },
       offered: async () => offered,
       readers: () => [{ id: "p-0000aaaa", name: "Example agent", kind: "agent", how: "", via: "pass", from: null, app: null, anywhere: false, made_ms: 0, disconnected_ms: null, listed: true }],
       disconnect: async () => undefined, address: unasked, key: unasked,
@@ -138,10 +138,10 @@ const unasked = async (): Promise<never> => {
 
 describe("a waiting sign-in and its guide", () => {
   const SIGN_INS = [
-    { id: "sign-in-1", name: "ChatGPT", checked: true, host: "chatgpt.com", choices: [], at_ms: NOW, until_ms: NOW + HOUR },
-    { id: "sign-in-2", name: "Muse", checked: false, host: "muse.example.com", choices: [], at_ms: NOW, until_ms: NOW + HOUR },
-    { id: "sign-in-3", name: "Meta assistant", checked: false, host: "agent.meta.ai", choices: [], at_ms: NOW, until_ms: NOW + HOUR },
-    { id: "sign-in-4", name: "Local tool", checked: false, host: null, choices: [], at_ms: NOW, until_ms: NOW + HOUR },
+    { id: "sign-in-1", name: "ChatGPT", checked: true, host: "chatgpt.com", at_ms: NOW, until_ms: NOW + HOUR },
+    { id: "sign-in-2", name: "Muse", checked: false, host: "muse.example.com", at_ms: NOW, until_ms: NOW + HOUR },
+    { id: "sign-in-3", name: "Meta assistant", checked: false, host: "agent.meta.ai", at_ms: NOW, until_ms: NOW + HOUR },
+    { id: "sign-in-4", name: "Local tool", checked: false, host: null, at_ms: NOW, until_ms: NOW + HOUR },
   ];
   const person = openPersonAccess({
     writer: { person: async <T>(asked: PersonWriting) => ("waiting" in asked ? [] : { access: undefined, own: undefined, open: undefined, tally: null, kinds: null, today: null, last: null }) as T },
@@ -163,12 +163,12 @@ describe("a waiting sign-in and its guide", () => {
     const [chatgpt, , muse] = (await person.waiting(phone, { method: "GET" } as IncomingMessage)).requests;
     expect(chatgpt).toMatchObject({
       app: "chatgpt", name: "ChatGPT", head: "ChatGPT wants to read your Lifestream", over_line: [{ kind: "words", words: "From chatgpt.com" }],
-      pick: "Pick the number ChatGPT shows", pick_line: "The number is the yes. A wrong one turns ChatGPT away.",
-      notice: "ChatGPT wants to read your Lifestream. Pick the number it shows.",
+      pick: "Type the code ChatGPT shows", pick_line: "The code is the yes. A wrong one turns ChatGPT away.",
+      notice: "ChatGPT wants to read your Lifestream. Type the code it shows.",
     });
     expect(muse, "an unchecked name from Muse's host takes Muse's name and words").toMatchObject({
       app: "muse", name: "Muse", head: "Muse wants to read your Lifestream", over_line: [{ kind: "words", words: "From agent.meta.ai, where Muse runs" }],
-      notice: "Muse wants to read your Lifestream. Pick the number it shows.",
+      notice: "Muse wants to read your Lifestream. Type the code it shows.",
     });
   });
 
@@ -176,7 +176,7 @@ describe("a waiting sign-in and its guide", () => {
     const [, other, , local] = (await person.waiting(phone, { method: "GET" } as IncomingMessage)).requests;
     expect(other).toMatchObject({ app: null, name: "Muse", checked: false, host: "muse.example.com", over_line: wordsAt("Signing in from muse.example.com ·", NOW) });
     expect(phraseText(other!.over_line, NOW, "UTC")).not.toContain("where Muse runs");
-    expect(local).toMatchObject({ app: null, name: "Local tool", over_line: wordsAt("Signing in ·", NOW), notice: "Local tool wants to read your Lifestream. Pick the number it shows." });
+    expect(local).toMatchObject({ app: null, name: "Local tool", over_line: wordsAt("Signing in ·", NOW), notice: "Local tool wants to read your Lifestream. Type the code it shows." });
     expect([other, local].map((card) => signInSays(card!.name, card!.checked, card!.host)), "the sign-in page's line, the home's: it says what the app claims").toEqual([
       "says it is Muse, sending access to muse.example.com", "says it is Local tool, an app on the computer you are signing in from",
     ]);
@@ -972,7 +972,7 @@ describe("the person's routes told apart by what an id is", () => {
   const person = (asked: (writing: PersonWriting) => unknown, signIn: string, answered: (id: string) => SignInAnswer | null = () => null) => openPersonAccess({
     writer: { person: async <T>(writing: PersonWriting) => asked(writing) as T },
     signIns: {
-      waiting: async () => ({ requests: [{ id: signIn, name: "Example agent", checked: true, host: null, choices: [], at_ms: NOW, until_ms: NOW + HOUR }] }),
+      waiting: async () => ({ requests: [{ id: signIn, name: "Example agent", checked: true, host: null, at_ms: NOW, until_ms: NOW + HOUR }] }),
       read: async (id) => ({ answered: answered(id), granted: null }),
       answer: async () => ({ state: "denied", name: "Example agent", at_ms: NOW, device: null, granted: null }),
     },

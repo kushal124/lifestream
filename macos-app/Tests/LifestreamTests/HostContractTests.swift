@@ -513,9 +513,9 @@ final class HostContractTests: XCTestCase {
             ["act": "agent-answer", "id": "q-1", "answer": "once", "expect": 1.5],
             ["act": "agent-answer", "id": "q-1", "answer": "once", "expect": "1"],
             ["act": "agent-answer", "id": "q-1", "answer": "once", "expect": 1, "was": 1],
-            ["act": "agent-answer", "answer": 42], ["act": "agent-answer", "id": "", "answer": 42],
-            ["act": "agent-answer", "id": String(repeating: "q", count: 201), "answer": 42],
-            ["act": "agent-answer", "id": 7, "answer": 42],
+            ["act": "agent-answer", "answer": "482915"], ["act": "agent-answer", "id": "", "answer": "482915"],
+            ["act": "agent-answer", "id": String(repeating: "q", count: 201), "answer": "482915"],
+            ["act": "agent-answer", "id": 7, "answer": "482915"],
             ["act": "agent-access", "id": "p-87165c7c", "access": "names", "expect": 1],
             ["act": "agent-access", "id": "p-87165c7c", "access": [Any](), "expect": 1],
             ["act": "agent-access", "id": "p-87165c7c", "access": draft, "expect": -1],
@@ -524,7 +524,7 @@ final class HostContractTests: XCTestCase {
             ["act": "agent-access", "id": "p-87165c7c", "access": draft],
             ["act": "agent-access", "access": draft, "expect": 1],
             ["act": "agent-access", "id": "p-87165c7c", "access": draft, "expect": 1, "was": 0],
-        ] + ([42.5, "42", kCFBooleanTrue as Any, "allow", "Once", NSNull()] as [Any]).map { ["act": "agent-answer", "id": "-Rq7", "answer": $0] }
+        ] + ([42, 42.5, "42", "48291", "4829150", "48291a", kCFBooleanTrue as Any, "allow", "Once", NSNull()] as [Any]).map { ["act": "agent-answer", "id": "-Rq7", "answer": $0] }
         for body in bodies {
             XCTAssertEqual(act(body), .failure(badRequest), "\(body)")
         }
@@ -540,9 +540,9 @@ final class HostContractTests: XCTestCase {
         XCTAssertEqual(act(["act": "agent-access", "id": "p-1", "access": filled(limit - 30), "expect": 1]),
                        .success(.agentAccess(id: "p-1", access: try access(filled(limit - 30)), expect: 1)))
         XCTAssertEqual(act(["act": "agent-access", "id": "p-1", "access": filled(limit - 29), "expect": 1]), .failure(past))
-        XCTAssertEqual(act(["act": "agent-answer", "id": "s-1", "answer": 42, "access": filled(limit - 42)]),
-                       .success(.agentAnswer(.number("s-1", 42, access: try access(filled(limit - 42))))))
-        XCTAssertEqual(act(["act": "agent-answer", "id": "s-1", "answer": 42, "access": filled(limit - 41)]), .failure(past))
+        XCTAssertEqual(act(["act": "agent-answer", "id": "s-1", "answer": "482915", "access": filled(limit - 48)]),
+                       .success(.agentAnswer(.code("s-1", "482915", access: try access(filled(limit - 48))))))
+        XCTAssertEqual(act(["act": "agent-answer", "id": "s-1", "answer": "482915", "access": filled(limit - 47)]), .failure(past))
     }
 
     func testTheWindowLoadsOnlyTheDashboard() {

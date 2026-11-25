@@ -35,21 +35,22 @@ iPhone.
 8. Click **Install**, or **Continue to Lifestream** if ChatGPT shows it.
 
 ChatGPT opens Lifestream's sign-in page. It says "ChatGPT wants to read your Lifestream.", then
-"From chatgpt.com", and shows a number.
+"From chatgpt.com", and shows a 6-digit code.
 
 ## Say yes in Lifestream
 
 The guide's second step now says "ChatGPT wants to read your Lifestream". It shows what ChatGPT
-will see, and three numbers.
+will see, and a box for the code.
 
 1. To change what ChatGPT will see, click **Edit**, change it, and click **Done**.
-2. Click the number that ChatGPT's sign-in page shows. Picking the number is your yes.
+2. Type the code that ChatGPT's sign-in page shows, then click **Allow**. The code is your yes.
 
 The sign-in page says "Approved." and takes you back to ChatGPT. The guide says "ChatGPT is
 connected".
 
 If you closed the guide, your Mac shows a notification: "ChatGPT wants to read your Lifestream.
-Pick the number it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in
+Type
+the code it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in
 waits under **Needs you** on the **Agents** tab.
 
 ## Ask it a first question

@@ -39,17 +39,17 @@ const READS = { sentence: SIGNED.sentence, access: SIGNED.access, view: SIGNED.v
  */
 const linesOf = (name, over) => ({ head: `${name} wants to read your Lifestream`,
   over_line: [{ kind: 'words', words: `Signing in from ${over} ·` }, { kind: 'time', time: { kind: 'clock', at_ms: UNTIL - 300_000 } }],
-  pick: `Pick the number ${name} shows`, pick_line: `Picking it is the yes. The wrong number turns ${name} away.`,
+  pick: `Type the code ${name} shows`, pick_line: `The code is the yes. A wrong one turns ${name} away.`,
   over: `This sign-in is over. Start it again in ${over}.`, app: null,
-  notice: `${name} wants to read your Lifestream. Pick the number it shows.` });
+  notice: `${name} wants to read your Lifestream. Type the code it shows.` });
 /** @type {HostAgentRequest} */
-const CHECKED = { id: 'request-a', name: 'Claude', checked: true, host: 'claude.example.com', choices: [47, 12, 83],
+const CHECKED = { id: 'request-a', name: 'Claude', checked: true, host: 'claude.example.com',
   until_ms: UNTIL, ...linesOf('Claude', 'claude.example.com'), ...READS };
 /** @type {HostAgentRequest} */
-const NAMED = { id: 'request-b', name: 'Some <b>App</b>', checked: false, host: 'app.example.net', choices: [31, 64, 19],
+const NAMED = { id: 'request-b', name: 'Some <b>App</b>', checked: false, host: 'app.example.net',
   until_ms: UNTIL, ...linesOf('Some <b>App</b>', 'app.example.net'), ...READS };
 /** @type {HostAgentRequest} */
-const LOCAL = { id: 'request-c', name: 'Claude Code', checked: false, host: null, choices: [58, 26, 74], until_ms: UNTIL,
+const LOCAL = { id: 'request-c', name: 'Claude Code', checked: false, host: null, until_ms: UNTIL,
   ...linesOf('Claude Code', 'Claude Code'), ...READS };
 const APPROVED = HOST_APPROVED.reply;
 const DENIED = HOST_DENIED.reply;
@@ -62,15 +62,16 @@ const ASKS = /** @type {import('../public/types.js').AgentAsk[]} */ (WAITING.sta
 /** @param {string} markup */
 const words = markup => markup.replace(/<[^>]+>/gu, ' ').replace(/\s+/gu, ' ').trim();
 
-test('A1: the card in the home’s words, what it will see, its three numbers and Don’t allow, names and hosts as text', () => {
+test('A1: the card in the home’s words, what it will see, a field for the page’s code, Allow and Don’t allow, names and hosts as text', () => {
   const card = signInCard(NAMED, { view: NAMED.view, count: ASKED.asks(3), busy: null, refused: '' });
   assert.doesNotMatch(card, /<b>App/u, 'a name is text');
   assert.match(card, /Some &lt;b&gt;App&lt;\/b&gt; wants to read your Lifestream/u);
-  assert.match(card, /Pick the number Some &lt;b&gt;App&lt;\/b&gt; shows/u);
+  assert.match(card, /Type the code Some &lt;b&gt;App&lt;\/b&gt; shows/u);
   assert.ok(card.includes(phraseWords(NAMED.over_line)), 'the head’s line, the home’s');
-  assert.ok(card.includes(NAMED.pick_line.replace('<b>', '&lt;b&gt;').replace('</b>', '&lt;/b&gt;')), 'the line under the numbers, the home’s');
+  assert.ok(card.includes(NAMED.pick_line.replace('<b>', '&lt;b&gt;').replace('</b>', '&lt;/b&gt;')), 'the line under the field, the home’s');
   assert.deepEqual([...card.matchAll(/data-agent-pick="([^"]+)"/gu)].map(each => JSON.parse(each[1].replaceAll('&quot;', '"')).answer),
-    [31, 64, 19, 'deny']);
+    ['code', 'deny']);
+  assert.equal([...card.matchAll(/data-agent-code-field/gu)].length, 1, 'one field to type the code in, never a number to pick');
   assert.ok(words(card).includes(SIGNING.deny));
   assert.ok(words(card).includes(SIGNING.only));
   assert.ok(words(card).includes('1 of 3 asks'));
@@ -79,13 +80,14 @@ test('A1: the card in the home’s words, what it will see, its three numbers an
   assert.ok(signInCard(LOCAL, { view: LOCAL.view, count: '', busy: null, refused: '' }).includes(phraseWords(LOCAL.over_line)));
 });
 
-test('A2: a pick in flight holds every button of the card, the one pressed busy', () => {
-  const card = signInCard(CHECKED, { view: CHECKED.view, count: '', busy: 12, refused: '' });
+test('A2: a code in flight holds every button of the card, Allow busy', () => {
+  const card = signInCard(CHECKED, { view: CHECKED.view, count: '', busy: '120012', refused: '' });
   const buttons = [...card.matchAll(/<button[^>]*>/gu)].map(each => each[0]);
-  assert.equal(buttons.length, 5, 'Edit, the three numbers and Don’t allow');
+  assert.equal(buttons.length, 3, 'Edit, Allow and Don’t allow');
   assert.ok(buttons.every(button => /\sdisabled/u.test(button)), 'every button held');
   assert.equal(buttons.filter(button => /is-busy|aria-busy="true"/u.test(button)).length, 1, 'the one pressed busy');
-  assert.match(buttons.find(button => /is-busy|aria-busy="true"/u.test(button)) ?? '', /data-agent-pick="[^"]*12/u);
+  assert.match(buttons.find(button => /is-busy|aria-busy="true"/u.test(button)) ?? '', /data-agent-pick="[^"]*code/u);
+  assert.match(card, /<input[^>]*data-agent-code-field[^>]*disabled|<input[^>]*disabled[^>]*data-agent-code-field/u, 'the field held too');
 });
 
 test('A5, A6: the Agents page from the readers and the host: Needs you, Connected, In Lifestream, Disconnected; nothing connected, the home’s apps', () => {
@@ -187,9 +189,15 @@ test('A2–A8 in the window: the card over Streams, each pick sent, the card ove
   const LAYER_HIDDEN = `document.querySelector('#agent-layer')?.hidden === true`;
   /**
    * @param {string} id
-   * @param {number | 'deny'} answer
+   * @param {'code' | 'deny'} answer
    */
   const pick = (id, answer) => `#agent-layer [data-agent-pick='${JSON.stringify({ id, answer })}']`;
+  /**
+   * @param {string} id
+   * @param {string} code
+   */
+  const allow = (id, code) => page.evaluate(`(() => { const field = document.querySelector('#agent-layer [data-agent-code-field]');
+    if (!field) throw new Error('no code field'); field.value = ${JSON.stringify(code)}; })()`).then(() => click(pick(id, 'code')));
   const waiting = { ...HOST_STATE, agent_requests: [CHECKED, NAMED] };
   /**
    * @param {{ answer: { outcome: import('../public/types.js').Phrase | null } }} reply
@@ -214,15 +222,15 @@ test('A2–A8 in the window: the card over Streams, each pick sent, the card ove
   assert.equal(title, 'Claude wants to read your Lifestream');
   assert.match(line, /^Signing in from claude\.example\.com · (?:\d{1,2} [A-Z][a-z]{2} (?:\d{4} )?)?\d\d:\d\d$/u, 'the home’s words, its time worded by the app');
   assert.ok((await text('#agent-layer .ck-ssection__heading')).includes(CHECKED.pick), 'the pick’s title, the home’s');
-  assert.deepEqual(await text('#agent-layer .ck-picks__n'), ['47', '12', '83']);
+  assert.equal(await page.evaluate("document.querySelectorAll('#agent-layer [data-agent-code-field]').length"), 1, 'one field for the page’s code');
   assert.deepEqual(await text('#agent-layer .ck-agent__count'), [ASKED.asks(2)]);
   await shot('card-over-streams');
 
   await page.evaluate(`window.hostAnswers['agent-answer'] = ${JSON.stringify(APPROVED)}; window.hostHolds['agent-answer'] = true`);
-  await click(pick(CHECKED.id, 12));
+  await allow(CHECKED.id, '120012');
   await page.until(`[...document.querySelectorAll('#agent-layer button')].every(button => button.disabled)`);
-  await click(pick(CHECKED.id, 47)).catch(() => undefined);
-  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-a', answer: 12 }], 'one pick sent, the held one not');
+  await allow(CHECKED.id, '470047').catch(() => undefined);
+  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-a', answer: '120012' }], 'one code sent, the held one not');
   await page.evaluate(`window.hostHolds = {}; window.hostRelease()`);
   await page.until(`[...document.querySelectorAll('#agent-layer button')].every(button => !button.disabled)`);
 
@@ -232,9 +240,9 @@ test('A2–A8 in the window: the card over Streams, each pick sent, the card ove
   assert.equal(await page.evaluate(`document.querySelector('#agent-layer b')`), null);
   assert.deepEqual(await text('#agent-layer .ck-agent__count'), [], 'none more, no count');
   await page.evaluate(`window.hostReplies['agent-answer'] = 'Couldn’t reach Lifestream.'`);
-  await click(pick(NAMED.id, 64));
+  await allow(NAMED.id, '640064');
   await page.until(`${CARD}?.querySelector('.ck-afoot__said')?.textContent.includes('Couldn’t reach Lifestream')`);
-  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-b', answer: 64 }]);
+  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-b', answer: '640064' }]);
   await shot('card-refused');
   await page.evaluate(`window.hostReplies = {}; window.hostAnswers['agent-answer'] = ${JSON.stringify(DENIED)}`);
   await click(pick(NAMED.id, 'deny'));
@@ -245,11 +253,11 @@ test('A2–A8 in the window: the card over Streams, each pick sent, the card ove
   await setState({ ...waiting, agent_requests: [CHECKED] });
   await page.until(`${CARD}?.textContent.includes(${JSON.stringify(leadOf(CHECKED.over_line))})`);
   await page.evaluate(`window.hostAnswers['agent-answer'] = ${JSON.stringify(WRONG)}; window.hostHolds['agent-answer'] = true`);
-  await click(pick(CHECKED.id, 83));
+  await allow(CHECKED.id, '830083');
   await setState({ ...waiting, agent_requests: [] });
   await page.evaluate(`window.hostHolds = {}; window.hostRelease()`);
   await answered(WRONG, 'card-wrong-number');
-  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-a', answer: 83 }]);
+  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-a', answer: '830083' }]);
   await page.evaluate(`window.hostAnswers = {}`);
 
   const ELSEWHERE = { id: NAMED.id, state: 'approved', outcome: [{ kind: 'words', words: 'Allowed on iPhone,' }, { kind: 'time', time: { kind: 'clock', at_ms: UNTIL - 240_000 } }],
@@ -285,13 +293,13 @@ test('A2–A8 in the window: the card over Streams, each pick sent, the card ove
   await shot('agents-connect');
   await setState({ ...HOST_STATE, agent_requests: [LOCAL] });
   await page.until(`${CARD}?.textContent.includes(${JSON.stringify(leadOf(LOCAL.over_line))})`);
-  assert.ok(await page.evaluate(`(() => { const box = ${CARD}.querySelector('.ck-picks__n').getBoundingClientRect();
+  assert.ok(await page.evaluate(`(() => { const box = ${CARD}.querySelector('[data-agent-code-field]').getBoundingClientRect();
     return Boolean(document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2)?.closest('#agent-layer')); })()`),
   'the card on top, over the dialog');
   await shot('card-over-dialog');
   await page.evaluate(`window.hostAnswers['agent-answer'] = ${JSON.stringify(APPROVED)}`);
-  await click(pick(LOCAL.id, 58));
-  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-c', answer: 58 }]);
+  await allow(LOCAL.id, '580058');
+  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: 'request-c', answer: '580058' }]);
   await setState({ ...HOST_STATE, agent_requests: [] });
   await answered(APPROVED);
   assert.ok(await page.evaluate(`Boolean(document.querySelector('.ck-dialog'))`), 'the dialog under it stays');

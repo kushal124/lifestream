@@ -36,21 +36,21 @@ iPhone.
 7. Click **Add**, then **Connect**.
 
 Claude opens Lifestream's sign-in page. It says "Claude wants to read your Lifestream.", then
-"From claude.ai", and shows a number.
+"From claude.ai", and shows a 6-digit code.
 
 ## Say yes in Lifestream
 
 The guide's second step now says "Claude wants to read your Lifestream". It shows what Claude will
-see, and three numbers.
+see, and a box for the code.
 
 1. To change what Claude will see, click **Edit**, change it, and click **Done**.
-2. Click the number that Claude's sign-in page shows. Picking the number is your yes.
+2. Type the code that Claude's sign-in page shows, then click **Allow**. The code is your yes.
 
 The sign-in page says "Approved." and takes you back to Claude. The guide says "Claude is
 connected".
 
-If you closed the guide, your Mac shows a notification: "Claude wants to read your Lifestream. Pick
-the number it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in waits
+If you closed the guide, your Mac shows a notification: "Claude wants to read your Lifestream. Type
+the code it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in waits
 under **Needs you** on the **Agents** tab.
 
 ## Ask it a first question

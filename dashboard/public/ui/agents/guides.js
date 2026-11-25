@@ -8,7 +8,7 @@ import { signInAnswer } from '../../lib/agents.js';
 import { draftEditor } from '../../lib/editor.js';
 import { phraseWords } from '../../lib/words.js';
 import { panelOf, rowOf } from '../connectors/dialog.js';
-import { accessRows, agentDialog, backLabel, bare, CONNECT_ID, controlFoot, detailOf, NAME_FIELD, pageInside, plainly } from './detail.js';
+import { accessRows, agentDialog, backLabel, bare, codePart, CONNECT_ID, controlFoot, detailOf, NAME_FIELD, pageInside, plainly } from './detail.js';
 import { AGENT, GUIDE, HOST_SLOT, NAME_SLOT, PAGE } from './words.js';
 
 export const GUIDE_PAGE = 'guide:';
@@ -751,8 +751,7 @@ function signInDetail(guide, state, { shown, signin, other, seen, reads, back })
     two = { title: signin.head, line: outcome[0] ?? phraseWords(signin.over_line), mark: now.marks[1], open: null, parts: [
       bare({ label: step2.sees, panel: panelOf({ rows }),
         acts: live ? [{ label: GUIDE.edit, variant: 'plain', do: { page: 'access' } }] : [] }),
-      ...live ? [bare({ label: signin.pick, pick: { label: signin.pick, line: '',
-        choices: signin.choices.map(n => ({ n, do: { answer: signInAnswer(signin.id, n, access) } })) } })] : []] };
+      ...live ? [codePart(signin, seen.opened, reads.answering, code => signInAnswer(signin.id, code, access))] : []] };
   }
   const done = now.head === 'done';
   const shownSignin = phase === 'arrived' && signin;

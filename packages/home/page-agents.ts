@@ -4,7 +4,7 @@ import { guidesOf } from "./agent-guides.js";
 import type { AnswerOf, Body, PageHandler } from "./pages.js";
 
 export function waitingPage(list: WaitingList, position: string): PageHandler<AnswerOf<"agentsWaiting">> {
-  const body: Body<AnswerOf<"agentsWaiting">> = { requests: list.requests.map((each) => ({ ...each, choices: [...each.choices] })), asks: list.asks };
+  const body: Body<AnswerOf<"agentsWaiting">> = { requests: list.requests.map((each) => ({ ...each })), asks: list.asks };
   return {
     params: [],
     open: (_ask, use) => use({ position, inputs: [digest(body as unknown as Json)], counting: false, build: () => body }),

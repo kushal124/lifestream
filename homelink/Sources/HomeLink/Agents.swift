@@ -106,7 +106,6 @@ extension HomeLink {
         public var name: String
         public var checked: Bool
         @Nullable public var host: String?
-        public var choices: [Int]
         public var atMs: Int64
         public var untilMs: Int64
         public var head: String
@@ -121,7 +120,7 @@ extension HomeLink {
         public var notice: String
 
         enum CodingKeys: String, CodingKey {
-            case id, name, checked, host, choices, head, sentence, access, view, pick, over, app, notice
+            case id, name, checked, host, head, sentence, access, view, pick, over, app, notice
             case atMs = "at_ms"
             case untilMs = "until_ms"
             case overLine = "over_line"
@@ -739,7 +738,7 @@ extension HomeLink {
     }
 
     public enum AnswerRequest: Codable, Sendable, Equatable, Hashable {
-        case number(String, Int, access: Access? = nil)
+        case code(String, String, access: Access? = nil)
         case deny(String)
         case allow(String, Grant, expect: Version, access: DraftAccess? = nil)
         case no(String)
@@ -748,30 +747,32 @@ extension HomeLink {
 
         public var id: String {
             switch self {
-            case .number(let id, _, _), .deny(let id), .allow(let id, _, _, _), .no(let id): id
+            case .code(let id, _, _), .deny(let id), .allow(let id, _, _, _), .no(let id): id
             }
         }
 
         public var allows: Bool {
             switch self {
-            case .number, .allow: true
+            case .code, .allow: true
             case .deny, .no: false
             }
         }
 
         private enum Keys: String, CodingKey { case id, answer, expect, access }
 
+        public static func isCode(_ word: String) -> Bool {
+            word.utf8.count == 6 && word.utf8.allSatisfy { (0x30...0x39).contains($0) }
+        }
+
         public init(from decoder: Decoder) throws {
             let answer = try decoder.container(keyedBy: Keys.self)
             let id = try answer.decode(String.self, forKey: .id)
             let keys = Set(answer.allKeys)
             let access = keys.contains(.access) ? try answer.decode(Access.self, forKey: .access) : nil
-            if let number = try? answer.decode(Int.self, forKey: .answer), !keys.contains(.expect) {
-                self = .number(id, number, access: access)
-                return
-            }
             let word = try answer.decode(String.self, forKey: .answer)
-            if word == "deny", keys == [.id, .answer] {
+            if Self.isCode(word), !keys.contains(.expect) {
+                self = .code(id, word, access: access)
+            } else if word == "deny", keys == [.id, .answer] {
                 self = .deny(id)
             } else if word == "no", keys == [.id, .answer] {
                 self = .no(id)
@@ -786,8 +787,8 @@ extension HomeLink {
             var answer = encoder.container(keyedBy: Keys.self)
             try answer.encode(id, forKey: .id)
             switch self {
-            case .number(_, let number, let access):
-                try answer.encode(number, forKey: .answer)
+            case .code(_, let code, let access):
+                try answer.encode(code, forKey: .answer)
                 if let access { try answer.encode(access, forKey: .access) }
             case .deny: try answer.encode("deny", forKey: .answer)
             case .allow(_, let grant, let expect, let access):

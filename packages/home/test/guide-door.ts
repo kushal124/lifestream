@@ -90,7 +90,7 @@ export async function guideDoorReplies(): Promise<{ name: string; written: unkno
     ["signin-finishing", on, ORIGIN, as("mac"), "GET", `/v1/agents/signins/${SIGN_IN}`, null, { answered: ALLOWED, granted: null }],
     ["signin-connected", on, ORIGIN, as("mac"), "GET", `/v1/agents/signins/${SIGN_IN}`, null, CONNECTED],
     ["signin-gone", on, ORIGIN, as("phone"), "GET", `/v1/agents/signins/${SIGN_IN}`, null],
-    ["answer-connected", on, ORIGIN, as("phone"), "POST", "/v1/agents/answer", { id: SIGN_IN, answer: 42 }, CONNECTED],
+    ["answer-connected", on, ORIGIN, as("phone"), "POST", "/v1/agents/answer", { id: SIGN_IN, answer: "482915" }, CONNECTED],
     ["address-on-reader", on, ORIGIN, as("mac"), "POST", "/v1/agents/address", { on: true, reader: "p-0000bbbb" }],
     ["address-reader-phone", on, ORIGIN, as("phone"), "POST", "/v1/agents/address", { on: true, reader: "p-0000bbbb" }],
     ["address-reader-sign-in", on, ORIGIN, as("mac"), "POST", "/v1/agents/address", { on: true, reader: "p-0000aaaa" }],

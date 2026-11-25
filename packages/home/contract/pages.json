@@ -5538,13 +5538,6 @@
                     }
                   ]
                 },
-                "choices": {
-                  "type": "array",
-                  "items": {
-                    "type": "integer",
-                    "minimum": 0
-                  }
-                },
                 "at_ms": {
                   "type": "integer",
                   "minimum": 0
@@ -5718,7 +5711,6 @@
                 "name",
                 "checked",
                 "host",
-                "choices",
                 "at_ms",
                 "until_ms",
                 "head",

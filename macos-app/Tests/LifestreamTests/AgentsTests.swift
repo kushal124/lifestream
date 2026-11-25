@@ -90,7 +90,7 @@ import XCTest
             if request.method == "GET", path == "/v1/agents/waiting" {
                 let (data, reads) = try lock.withLock { () throws -> (Data, Hold) in
                     if _down { throw URLError(.cannotConnectToHost) }
-                    let listed: [String: Any] = ["position": "1:0", "today": "2026-11-14", "requests": _requests.map { $0.filter { $0.key != "number" } }, "asks": _asks]
+                    let listed: [String: Any] = ["position": "1:0", "today": "2026-11-14", "requests": _requests.map { $0.filter { $0.key != "code" } }, "asks": _asks]
                     return (try JSONSerialization.data(withJSONObject: listed), _reads)
                 }
                 await reads.pass()
@@ -120,7 +120,7 @@ import XCTest
             if let id, let index = _requests.firstIndex(where: { $0["id"] as? String == id }) {
                 let request = _requests.remove(at: index)
                 let file = body["answer"] as? String == "deny" ? "answer-sign-in-deny"
-                    : body["answer"] as? Int == request["number"] as? Int ? "answer-sign-in" : "answer-sign-in-wrong"
+                    : body["answer"] as? String == request["code"] as? String ? "answer-sign-in" : "answer-sign-in-wrong"
                 let reply = try Self.json(200, AgentsTests.contract(file)["answer"]!)
                 _replied[id] = reply
                 return reply
@@ -199,13 +199,13 @@ import XCTest
     }
 
     nonisolated(unsafe) static let claude: [String: Any] = ["id": "p-0000aa01", "name": "Claude"]
-    nonisolated(unsafe) static let first: [String: Any] = waitingSignIn.merging(["id": "-Rq7xQ2bAAAAAAAAAAAAAA", "choices": [42, 17, 88],
-                                                                                 "until_ms": end, "number": 42]) { $1 }
+    nonisolated(unsafe) static let first: [String: Any] = waitingSignIn.merging(["id": "-Rq7xQ2bAAAAAAAAAAAAAA",
+                                                                                 "until_ms": end, "code": "420042"]) { $1 }
     nonisolated(unsafe) static let second: [String: Any] = waitingSignIn.merging(["id": "Zx0y1W2vAAAAAAAAAAAAAA", "name": "Some App", "head": "Some App wants to read your Lifestream",
-                                                                                  "notice": "Some App wants to read your Lifestream. Pick the number it shows.",
-                                                                                  "app": NSNull(), "checked": false, "host": NSNull(), "choices": [23, 61, 35],
+                                                                                  "notice": "Some App wants to read your Lifestream. Type the code it shows.",
+                                                                                  "app": NSNull(), "checked": false, "host": NSNull(),
                                                                                   "at_ms": (waitingSignIn["at_ms"] as! NSNumber).int64Value + 1_000,
-                                                                                  "until_ms": end, "number": 61]) { $1 }
+                                                                                  "until_ms": end, "code": "610061"]) { $1 }
     nonisolated static let guidePage = "view=agents&dialog=agents:connect/guide:claude"
     nonisolated static var signInPage: String { "view=agents&dialog=signin:" + (second["id"] as! String) }
     nonisolated(unsafe) static let waitingSignIn = ((contract("waiting-sign-in")["answer"] as! [String: Any])["requests"] as! [[String: Any]])[0]
@@ -358,25 +358,25 @@ import XCTest
         XCTAssertEqual(drawn[0]["name"] as? String, "Claude")
         XCTAssertEqual(drawn[0]["checked"] as? Bool, true)
         XCTAssertEqual(drawn[0]["host"] as? String, "claude.ai")
-        XCTAssertEqual(drawn[0]["choices"] as? [Int], [42, 17, 88])
+        XCTAssertNil(drawn[0]["choices"], "a sign-in is answered with a typed code, never a number picked")
         XCTAssertEqual(drawn[0]["until_ms"] as? Int64, 4_102_444_800_000)
         XCTAssertTrue(drawn[1]["host"] is NSNull, "an app on this computer's host not written as null")
-        XCTAssertNil(drawn[0]["number"], "the page's number reached the Mac")
+        XCTAssertNil(drawn[0]["code"], "the page's code reached the Mac")
         XCTAssertEqual(drawn[0]["sentence"] as? String, Self.sentence)
         XCTAssertEqual(drawn[0]["access"] as? NSDictionary, Self.first["access"] as? NSDictionary, "the sign-in's access lost on the way")
         XCTAssertEqual(try page(host)["agent_asks"] as? NSArray, [], "requests drawn while none waits, or the list left out")
 
         let before = home.requests.count
-        let approved = try await host.perform(.agentAnswer(.number(Self.first["id"] as! String, 42)))
+        let approved = try await host.perform(.agentAnswer(.code(Self.first["id"] as! String, "420042")))
         XCTAssertNil(approved)
         XCTAssertEqual(door.answers.count, 1)
         XCTAssertEqual(door.answers[0]["id"] as? String, Self.first["id"] as? String)
-        XCTAssertEqual(door.answers[0]["answer"] as? Int, 42)
+        XCTAssertEqual(door.answers[0]["answer"] as? String, "420042")
         XCTAssertEqual(Set(door.answers[0].keys), ["id", "answer"])
         XCTAssertEqual(asked(home, from: before), [])
-        XCTAssertEqual(host.state.agentRequests.map(\.id), (Self.second["id"] as? String).map { [$0] }, "the card stood after its pick")
+        XCTAssertEqual(host.state.agentRequests.map(\.id), (Self.second["id"] as? String).map { [$0] }, "the card stood after its code")
 
-        let wrong = try await host.reply(.agentAnswer(.number(Self.second["id"] as! String, 23)))
+        let wrong = try await host.reply(.agentAnswer(.code(Self.second["id"] as! String, "230023")))
         XCTAssertEqual(wrong as NSDictionary, ["answer": Self.contract("answer-sign-in-wrong")["answer"]!] as NSDictionary,
                        "the reply is not the door's")
         XCTAssertEqual(host.state.agentRequests, [])
@@ -516,7 +516,7 @@ import XCTest
         reads.arm()
         let stale = Task { await waiting.look() }
         try await until("a read in flight") { reads.arrived == 1 }
-        let approved = try await host.perform(.agentAnswer(.number(Self.first["id"] as! String, 42)))
+        let approved = try await host.perform(.agentAnswer(.code(Self.first["id"] as! String, "420042")))
         XCTAssertNil(approved)
         XCTAssertEqual(waiting.waiting.map(\.id), [second])
         reads.open()
@@ -524,7 +524,7 @@ import XCTest
         XCTAssertEqual(waiting.waiting.map(\.id), [second], "a read older than the answer brought its card back")
         XCTAssertEqual(host.state.agentRequests.map(\.id), [second])
 
-        XCTAssertEqual(door.answers.map { $0["answer"] as? Int }, [42])
+        XCTAssertEqual(door.answers.map { $0["answer"] as? String }, ["420042"])
 
         door.requests = [Self.first, Self.second]
         await waiting.look()
@@ -782,10 +782,10 @@ import XCTest
         door.requests = [Self.first]
         door.asks = [Self.ask, Self.screenAsk, Self.ask.merging(["id": "q-0000aa07", "version": 4]) { $1 }]
         await waiting.look()
-        let approved = try await host.perform(.agentAnswer(.number(Self.first["id"] as! String, 42, access: Self.signInAccess)))
+        let approved = try await host.perform(.agentAnswer(.code(Self.first["id"] as! String, "420042", access: Self.signInAccess)))
         XCTAssertNil(approved)
         XCTAssertEqual(door.answers.last as NSDictionary?,
-                       ["id": Self.first["id"]!, "answer": 42, "access": Self.first["access"]!] as NSDictionary)
+                       ["id": Self.first["id"]!, "answer": "420042", "access": Self.first["access"]!] as NSDictionary)
         XCTAssertEqual(host.state.agentRequests, [])
 
         let ask = try XCTUnwrap(host.state.agentAsks.first)

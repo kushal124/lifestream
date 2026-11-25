@@ -4,44 +4,44 @@ import SwiftUI
 
 @MainActor let agentRequestSheet = Sheet("agent-request", hosted: true, platforms: [.ios, .mac]) {
     Specimen("A sign-in from its site, the default access") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 13], sentence: agentSentence, change: {}) { _ in }
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sentence: agentSentence, change: {}) { _ in }
     }
     Specimen("After Edit") {
-        AgentRequestCard(head: "Hermes wants to read your Lifestream", line: "Signing in from hermes.example.com · 10:52", pickTitle: "Pick the number Hermes shows", pickLine: "The number is the yes. A wrong one turns Hermes away.", choices: [41, 8, 95],
+        AgentRequestCard(head: "Hermes wants to read your Lifestream", line: "Signing in from hermes.example.com · 10:52", pickTitle: "Type the code Hermes shows", pickLine: "The code is the yes. A wrong one turns Hermes away.",
                          sentence: "Hermes will read Mail and Calendar from the past 30 days. Names visible, other details hidden.",
                          change: {}) { _ in }
     }
     Specimen("A name of two lines") {
-        AgentRequestCard(head: "Hermes from claude.ai wants to read your Lifestream", line: "Signing in from hermes.example.com · 10:52", pickTitle: "Pick the number Hermes from claude.ai shows", pickLine: "The number is the yes. A wrong one turns Hermes from claude.ai away.", choices: [90, 12, 45]) { _ in }
+        AgentRequestCard(head: "Hermes from claude.ai wants to read your Lifestream", line: "Signing in from hermes.example.com · 10:52", pickTitle: "Type the code Hermes from claude.ai shows", pickLine: "The code is the yes. A wrong one turns Hermes from claude.ai away.") { _ in }
     }
     Specimen("An app on the computer signing in") {
-        AgentRequestCard(head: "Claude Code wants to read your Lifestream", line: "Signing in · 10:52", pickTitle: "Pick the number Claude Code shows", pickLine: "The number is the yes. A wrong one turns Claude Code away.", choices: [33, 58, 71]) { _ in }
+        AgentRequestCard(head: "Claude Code wants to read your Lifestream", line: "Signing in · 10:52", pickTitle: "Type the code Claude Code shows", pickLine: "The code is the yes. A wrong one turns Claude Code away.") { _ in }
     }
     Specimen("A pick on its way") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81], sending: .number(64)) { _ in }
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sending: .code("482915")) { _ in }
     }
     Specimen("A pick that did not reach the home") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81],
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.",
                          failed: "This didn't reach Lifestream. Tap again.") { _ in }
     }
     Specimen("Allowed: the home's words, and Done") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81], sentence: agentSentence, change: {},
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sentence: agentSentence, change: {},
                          ended: .init("Claude wants to read your Lifestream", words: "Allowed on iPhone, 09:00")) { _ in }
     }
     Specimen("Don't allow: the home's words, and Done") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81], sentence: agentSentence, change: {},
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sentence: agentSentence, change: {},
                          ended: .init("Claude wants to read your Lifestream", words: "Not allowed on iPhone, 09:00")) { _ in }
     }
     Specimen("A number not the page's: the home's words, and Done") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81], sentence: agentSentence, change: {},
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sentence: agentSentence, change: {},
                          ended: .init("Claude wants to read your Lifestream", words: "Wrong number, so Claude wasn\u{2019}t let in. Start the sign-in again in Claude.")) { _ in }
     }
     Specimen("Ended before the tap: the home's words, and Done") {
-        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Pick the number Claude shows", pickLine: "The number is the yes. A wrong one turns Claude away.", choices: [27, 64, 81], sentence: agentSentence, change: {},
+        AgentRequestCard(head: "Claude wants to read your Lifestream", line: "From claude.ai", pickTitle: "Type the code Claude shows", pickLine: "The code is the yes. A wrong one turns Claude away.", sentence: agentSentence, change: {},
                          ended: .init("Claude wants to read your Lifestream", words: "This sign-in is over. Start it again in claude.ai.")) { _ in }
     }
     Specimen("At an accessibility size") {
-        AgentRequestCard(head: "ChatGPT wants to read your Lifestream", line: "Signing in from chatgpt.com · 10:52", pickTitle: "Pick the number ChatGPT shows", pickLine: "The number is the yes. A wrong one turns ChatGPT away.", choices: [19, 52, 86]) { _ in }
+        AgentRequestCard(head: "ChatGPT wants to read your Lifestream", line: "Signing in from chatgpt.com · 10:52", pickTitle: "Type the code ChatGPT shows", pickLine: "The code is the yes. A wrong one turns ChatGPT away.") { _ in }
             .environment(\.dynamicTypeSize, .accessibility3)
     }
 }

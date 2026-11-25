@@ -624,7 +624,7 @@ export function outcomeOf({ state, answered_ms, device, name, until_ms = null, b
   if (state === "open") return null;
   if (state === "replaced") return [wordsPart(by === "chat" ? `${name}’s access changed since. Ask Chat again.` : `${name} asked again.`)];
   if (state === "declined" || state === "denied") return answeredWords("Not allowed", answered_ms, device);
-  if (state === "wrong") return [wordsPart(`Wrong number, so ${name} wasn’t let in. Start the sign-in again in ${name}.`)];
+  if (state === "wrong") return [wordsPart(`Wrong code, so ${name} wasn’t let in. Start the sign-in again in ${name}.`)];
   if (state !== "allowed" && state !== "approved") return [wordsPart(REQUEST_OVER)];
   if (until_ms !== null) return [wordsPart(until_ms > now_ms ? "Allowed until" : "Allowed, ended"), clockAt(until_ms)];
   return answeredWords("Allowed", answered_ms, device);
@@ -641,7 +641,7 @@ export function signInHead(name: string): string {
 }
 
 export function signInNotice(name: string): string {
-  return `${signInHead(name)}. Pick the number it shows.`;
+  return `${signInHead(name)}. Type the code it shows.`;
 }
 
 export function signInOver(name: string | null): string {
@@ -661,11 +661,11 @@ export function signingInLine(from: string | null, at_ms: number, calm: string |
 }
 
 export function pickWords(name: string): string {
-  return `Pick the number ${name} shows`;
+  return `Type the code ${name} shows`;
 }
 
 export function pickLine(name: string): string {
-  return `The number is the yes. A wrong one turns ${name} away.`;
+  return `The code is the yes. A wrong one turns ${name} away.`;
 }
 
 export function connectedLine(access: DraftAccess | null, words: Words, at: SentenceAt = {}): string {

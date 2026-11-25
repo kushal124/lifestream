@@ -19,7 +19,7 @@ import {
   type AccessCallRead, type Address, type AgentReads, type AskAnswer, type AskWant, type Bolded, type CallShown, type ClockPhrase, type CameKind, type Disconnecting, type Fold, type FoldTally, type KeptRow, type ReadsFigure, type Repeated, type Unlisting, type ReadWant, type Words,
 } from "./access-words.js";
 import { appOfHost, KEY_APPS, keyWholeOn, markOf, nameOf as guideName, signInFrom, type GuideApp, type KeyApp, type Sees } from "./agent-guides.js";
-import { claudeCodeLine, MCP_URL, type MintedKey, type SignInAnswer, type SignInAnswered, type SignInGranted, type SignInHeld, type Waiting } from "./agents.js";
+import { claudeCodeLine, MCP_URL, SIGN_IN_CODE, type MintedKey, type SignInAnswer, type SignInAnswered, type SignInGranted, type SignInHeld, type Waiting } from "./agents.js";
 import type { PublicState } from "./funnel.js";
 import { catalogOf } from "./catalog.js";
 import { deviceOf as passDevice, type GrantApp, type Principal } from "./principals.js";
@@ -137,7 +137,7 @@ export interface PersonInputs {
   signIns: {
     waiting(http: IncomingMessage): Promise<{ requests: Waiting[] }>;
     read(id: string, http: IncomingMessage): Promise<SignInHeld>;
-    answer(answer: { id: string; answer: number | "deny"; access?: Access; device: string }, http: IncomingMessage): Promise<SignInAnswered>;
+    answer(answer: { id: string; answer: string | "deny"; access?: Access; device: string }, http: IncomingMessage): Promise<SignInAnswered>;
   };
   offered(): Promise<readonly EditorAccount[]>;
   readers(): readonly ReaderEntry[];
@@ -605,7 +605,7 @@ export function openPersonAccess(inputs: PersonInputs): PersonRoutes {
   const answer = async (asker: Asker, said: JsonObject, http: IncomingMessage): Promise<AnswerReply> => {
     personOnly(asker);
     const asked = answerOf(said);
-    if (asked.answer === "deny" || typeof asked.answer === "number") {
+    if (asked.sign_in) {
       const signedIn = await inputs.signIns.answer({ id: asked.id, answer: asked.answer, ...(asked.access === null ? {} : { access: asked.access as Access }), device: asker.pass.id }, http);
       return {
         state: signedIn.state, version: null,
@@ -813,9 +813,9 @@ function keyRows(app: KeyApp, made: MintedKey): KeyRow[] {
 }
 
 type AnswerAsked =
-  | { id: string; answer: number | "deny"; access: Access | null; expect: null }
-  | { id: string; answer: "once" | "always"; access: DraftAccess | null; expect: Version }
-  | { id: string; answer: "no"; access: null; expect: null };
+  | { sign_in: true; id: string; answer: string; access: Access | null; expect: null }
+  | { sign_in: false; id: string; answer: "once" | "always"; access: DraftAccess | null; expect: Version }
+  | { sign_in: false; id: string; answer: "no"; access: null; expect: null };
 
 function answerOf(said: JsonObject): AnswerAsked {
   exactly(said, ["id", "answer"], ["access", "expect"], "an answer");
@@ -826,16 +826,16 @@ function answerOf(said: JsonObject): AnswerAsked {
   if (answer === "deny" || answer === "no") {
     if (access !== null) refuse(422, "BAD_REQUEST", `an answer of ${answer} carries no access`);
     if (expect !== null) refuse(422, "BAD_REQUEST", `an answer of ${answer} names no version`);
-    return { id, answer, access: null, expect: null };
+    return answer === "deny" ? { sign_in: true, id, answer, access: null, expect: null } : { sign_in: false, id, answer, access: null, expect: null };
   }
-  if (Number.isInteger(answer) && (answer as number) >= 10 && (answer as number) <= 99) {
+  if (typeof answer === "string" && SIGN_IN_CODE.test(answer)) {
     if (expect !== null) refuse(422, "BAD_REQUEST", "a sign-in's answer names no version");
-    return { id, answer: answer as number, access: access === null ? null : accessOf(access), expect: null };
+    return { sign_in: true, id, answer, access: access === null ? null : accessOf(access), expect: null };
   }
   if (answer === "once" || answer === "always") {
-    return { id, answer, access: access === null ? null : sentDraft(access), expect: versionOf(expect, "expect") };
+    return { sign_in: false, id, answer, access: access === null ? null : sentDraft(access), expect: versionOf(expect, "expect") };
   }
-  return refuse(422, "BAD_REQUEST", "an answer is a sign-in's number from 10 to 99 or deny, or a request's once, always or no");
+  return refuse(422, "BAD_REQUEST", "an answer is a sign-in's 6-digit code or deny, or a request's once, always or no");
 }
 
 const MIN_FOR_MS = 5 * 60_000;

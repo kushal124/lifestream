@@ -851,7 +851,7 @@ test('X9: every file of the Mac host’s through host.js: its lists whole, each 
         assert.equal(request, each.state.agent_requests[at], name);
         const card = signInCard(request, { view: request.view, count: '', busy: null, refused: '' });
         assert.ok([request.head, phraseWords(request.over_line), request.pick, request.pick_line].every(words => card.includes(esc(words)))
-          && request.choices.every(number => card.includes(`>${number}<`)), `${name}: its card`);
+          && card.includes('data-agent-code-field'), `${name}: its card`);
       }
       for (const [at, ask] of (host?.state.agent_asks ?? []).entries()) {
         assert.equal(ask, each.state.agent_asks[at], name);
@@ -1255,6 +1255,9 @@ test('X17: a sign-in’s rows are the home’s view: its own before any draft, t
     'its rows from its own view while no draft is read');
   const live = draftDetail(`signin:${SIGN_IN.id}`, { ...NO_AGENT_READS, editor: shown(view) }, { state: { .../** @type {any} */ (HOST_FILES['waiting-sign-in'].state) },
     opened: OPENED, home: true, now: AT.now, when: AT.when });
-  assert.deepEqual(live.parts.find(part => part.pick)?.pick && { label: live.parts.find(part => part.pick)?.pick?.label,
-    line: live.parts.find(part => part.pick)?.pick?.line }, { label: SIGN_IN.pick, line: SIGN_IN.pick_line }, 'the pick’s title and line, the home’s');
+  const code = /** @type {any} */ (live.parts.find(part => part.label === SIGN_IN.pick));
+  const row = code?.panel?.rows?.[0]?.end;
+  assert.deepEqual([code?.label, row?.field?.key, row?.field?.kind, row?.acts?.[0]?.disabled], [SIGN_IN.pick, `signin.code:${SIGN_IN.id}`, 'text', true],
+    'the home’s title over a field for the page’s code; Allow held until six digits are typed');
+  assert.equal(live.parts.some(part => /** @type {any} */ (part).pick), false, 'never a number to pick');
 });

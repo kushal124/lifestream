@@ -1,7 +1,7 @@
 {
   "act" : {
     "act" : "agent-answer",
-    "answer" : 42,
+    "answer" : "482915",
     "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
     "type" : "act"
   },
@@ -13,7 +13,7 @@
     }
   },
   "sent" : {
-    "answer" : 42,
+    "answer" : "482915",
     "id" : "c2lnbi1pbi0wMDAwMDAwMQ"
   }
 }

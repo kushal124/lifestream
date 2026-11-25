@@ -74,18 +74,20 @@ claude.ai". If the line starts with "says it is", Lifestream could not check the
 sure the address after it is the app you meant.
 
 You say yes on your Mac or your iPhone. Lifestream shows "Claude wants to read your Lifestream",
-what Claude will see under **It will see**, and three numbers. Click the number the sign-in page
-shows: picking it is your yes. To change what the agent will see first, click **Edit**, as
+what Claude will see under **It will see**, and a box for a code. Type the 6-digit code the
+sign-in page shows, then click **Allow**: the code is your yes. Lifestream shows the code only on
+the sign-in page, so a sign-in you did not open can't be let in by a lucky guess. To change what the agent will see first, click **Edit**, as
 [Choose what an agent reads](./choose-what-an-agent-reads.md#choose-when-an-agent-connects) says.
 
 - **On your Mac,** the request shows in the guide's second step, and under **Needs you** on the
   Agents page. If the Lifestream window is not in front, a notification says "Claude wants to read
-  your Lifestream. Pick the number it shows." Click it.
+  your Lifestream. Type the code it shows." Click it.
 - **On your iPhone,** open Lifestream. The iPhone app shows requests only while it is open.
   Lifestream asks for Face ID or your passcode before it sends your yes.
 
-If you did not start the sign-in, click **Don't allow**. A wrong number also ends the sign-in, and
-the sign-in page says "Another number was tapped. Start connecting again." A request waits 10
+If you did not start the sign-in, click **Don't allow**. A wrong code also ends the sign-in, and
+the sign-in page says "Another code was typed. Start connecting again." At most 3 sign-ins wait at
+once. A request waits 10
 minutes. After that, the sign-in page says "This sign-in ended." Connect again from the app.
 
 ## Connect another agent

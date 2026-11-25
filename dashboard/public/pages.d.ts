@@ -1378,7 +1378,6 @@ export interface WaitingSignIn {
   name: string;
   checked: boolean;
   host: string | null;
-  choices: number[];
   at_ms: number;
   until_ms: number;
   head: string;

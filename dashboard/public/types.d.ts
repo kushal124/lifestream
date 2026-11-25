@@ -590,7 +590,6 @@ export interface SignIn {
   name: string;
   checked: boolean;
   host: string | null;
-  choices: number[];
   at_ms: number;
   until_ms: number;
   head: string;
@@ -948,7 +947,7 @@ export interface ThingsPage {
 }
 
 export type AnswerRequest =
-  | { id: string; answer: number; access?: Access }
+  | { id: string; answer: string; access?: Access }
   | { id: string; answer: 'deny' }
   | { id: string; answer: 'once' | 'always'; expect: Version; access?: DraftAccess }
   | { id: string; answer: 'no' };

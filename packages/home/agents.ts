@@ -17,7 +17,8 @@ import { refuse } from "./refusal.js";
 
 export const REQUEST_MS = 10 * 60_000;
 export const EXCHANGE_MS = 90_000;
-export const WAITING_MOST = 16;
+export const WAITING_MOST = 3;
+export const SIGN_IN_CODE = /^[0-9]{6}$/u;
 export const ACCESS_S = 3_600;
 export const NOTE_CATEGORIES = ["missing", "wrong", "confusing", "slow", "error", "other"] as const;
 export const NOTE_MOST = 2_000;
@@ -58,14 +59,13 @@ export interface SignInAnswered extends SignInAnswer {
 
 export interface SignInRequested {
   readonly id: string;
-  readonly number: number;
+  readonly code: string;
   readonly name: string;
   readonly line: string;
 }
 
 export interface Waiting extends Card {
   readonly id: string;
-  readonly choices: number[];
   readonly at_ms: number;
   readonly until_ms: number;
 }
@@ -113,8 +113,7 @@ export interface Note {
 
 interface Request extends Card {
   readonly id: string;
-  readonly number: number;
-  readonly choices: number[];
+  readonly code: string;
   readonly at_ms: number;
   answered: SignInAnswer | null;
   access: Access | null;
@@ -176,7 +175,7 @@ export class Agents {
     this.#prune();
     return {
       requests: [...this.#requests.values()].filter((request) => request.answered === null).sort((a, b) => a.at_ms - b.at_ms)
-        .map(({ id, name, checked, host, choices, at_ms }) => ({ id, name, checked, host, choices: [...choices], at_ms, until_ms: at_ms + REQUEST_MS })),
+        .map(({ id, name, checked, host, at_ms }) => ({ id, name, checked, host, at_ms, until_ms: at_ms + REQUEST_MS })),
     };
   }
 
@@ -188,8 +187,8 @@ export class Agents {
   }
 
   answer(id: unknown, pick: unknown, access?: unknown, device?: unknown): SignInAnswered {
-    if (typeof id !== "string" || id === "" || !(pick === "deny" || (Number.isInteger(pick) && (pick as number) >= 10 && (pick as number) <= 99))) {
-      refuse(422, "BAD_REQUEST", "an answer names the request's id and the number tapped, from 10 to 99, or deny");
+    if (typeof id !== "string" || id === "" || !(pick === "deny" || (typeof pick === "string" && SIGN_IN_CODE.test(pick)))) {
+      refuse(422, "BAD_REQUEST", "an answer names the request's id and the 6-digit code typed, or deny");
     }
     if (pick === "deny" && access !== undefined) refuse(422, "BAD_REQUEST", "a denied sign-in carries no access");
     if (device !== undefined && device !== null && (typeof device !== "string" || device === "")) refuse(422, "BAD_REQUEST", "an answer's device is the pass that answered it");
@@ -198,7 +197,7 @@ export class Agents {
     const request = this.#requests.get(id);
     if (request === undefined) refuse(404, "AGENT_REQUEST_GONE", signInOver(null));
     if (request.answered === null) {
-      const state = pick === "deny" ? "denied" : pick === request.number ? "approved" : "wrong";
+      const state = pick === "deny" ? "denied" : sameCode(pick as string, request.code) ? "approved" : "wrong";
       request.answered = { state, name: request.name, at_ms: this.options.now(), device: typeof device === "string" ? device : null };
       if (state === "approved") request.access = chosen;
     }
@@ -329,19 +328,11 @@ export class Agents {
     this.#prune();
     const waiting = [...this.#requests.values()].filter((request) => request.answered === null);
     if (waiting.length >= WAITING_MOST) refuse(429, "AGENTS_WAITING", "Too many sign-ins are waiting. Answer them, or wait ten minutes.");
-    const taken = new Set(waiting.map((request) => request.number));
-    const free = Array.from({ length: 90 }, (_, index) => index + 10).filter((number) => !taken.has(number));
-    const number = free[randomInt(free.length)]!;
-    const others = Array.from({ length: 90 }, (_, index) => index + 10).filter((each) => each !== number);
-    const choices = [number, ...[0, 1].map(() => others.splice(randomInt(others.length), 1)[0]!)];
-    for (let at = choices.length - 1; at > 0; at -= 1) {
-      const swap = randomInt(at + 1);
-      [choices[at], choices[swap]] = [choices[swap]!, choices[at]!];
-    }
+    const code = String(randomInt(1_000_000)).padStart(6, "0");
     let id: string;
     do id = this.#random(16).toString("base64url"); while (this.#requests.has(id));
-    this.#requests.set(id, { id, name, checked, host, number, choices, at_ms: this.options.now(), answered: null, access: null, granted: null, revoked: false });
-    return { id, number, name, line: app === null || host === null ? signInSays(name, checked, host) : signInFrom(app, host) };
+    this.#requests.set(id, { id, name, checked, host, code, at_ms: this.options.now(), answered: null, access: null, granted: null, revoked: false });
+    return { id, code, name, line: app === null || host === null ? signInSays(name, checked, host) : signInFrom(app, host) };
   }
 
   #state(id: unknown): { state: RequestState } {
@@ -511,4 +502,10 @@ function askedOf(asked: unknown): Asked {
   const { client_id, resource } = (typeof asked === "object" && asked !== null ? asked : {}) as Record<string, unknown>;
   if (typeof client_id !== "string" || client_id === "" || typeof resource !== "string" || resource === "") refuse(422, "BAD_REQUEST", "a grant names its client_id and resource");
   return { client_id, resource };
+}
+
+function sameCode(typed: string, code: string): boolean {
+  const a = Buffer.from(typed, "utf8");
+  const b = Buffer.from(code, "utf8");
+  return a.length === b.length && timingSafeEqual(a, b);
 }

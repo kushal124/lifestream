@@ -35,7 +35,7 @@ export async function agents(ctx: VerbContext, args: readonly string[]) {
     return list;
   }
   if (action === "answer" && words === 3) {
-    const pick = /^\d+$/u.test(second!) ? Number(second) : ["deny", "once", "always", "no"].includes(second!) ? second! : fail(`an answer is the number the sign-in page shows or deny, or once, always or no\nusage: ${CLI} ${USAGE}`);
+    const pick = /^\d{6}$/u.test(second!) ? second! : ["deny", "once", "always", "no"].includes(second!) ? second! : fail(`an answer is the 6-digit code the sign-in page shows or deny, or once, always or no\nusage: ${CLI} ${USAGE}`);
     const expect = pick === "once" || pick === "always" ? (await door(ctx)(`/v1/agents/asks/${encodeURIComponent(first!)}`) as unknown as AgentAsk).version : undefined;
     const answered = await door(ctx)(ANSWER_ROUTE, { id: first!, answer: pick, ...(values.access === undefined ? {} : { access: accessArg(values.access) }), ...(expect === undefined ? {} : { expect }) } as JsonObject) as unknown as AnswerReply;
     ctx.out(`${first}: ${answered.state}${answered.outcome === null ? "" : ` (${answered.outcome})`}`);

@@ -189,8 +189,7 @@ test('H1: a host believed that is not kind mac, version 6', () => {
   const request = SIGN_IN.state.agent_requests[0];
   const agents = readHost(/** @type {any} */ (fakeWindow({ kind: 'mac', version: 6, state: { ...STATE, agent_requests: [
     request, { ...request, checked: 'yes' },
-    { ...request, id: '' }, { ...request, name: '' }, { ...request, choices: [47, 12] }, { ...request, choices: [47, 12, 830] },
-    { ...request, choices: [47, 12, 83, 55] }, { ...request, choices: [47, 12, '83'] }, { ...request, sentence: 7 },
+    { ...request, id: '' }, { ...request, name: '' }, { ...request, sentence: 7 },
     { ...request, access: null }, 'request-d'] } })))?.state;
   assert.deepEqual(agents?.agent_requests, [request]);
   assert.equal(agents?.agent_requests[0], request, 'the same object, never reshaped');
@@ -235,15 +234,15 @@ test('H2: an act that resolves other than { notice?, added? } or rejects without
   await assert.rejects(host.act({ act: 'connect-answer', id: 'req-1', allow: true }), { message: 'Not sent', said: 'not-sent' });
   await assert.rejects(host.act({ act: 'faces', do: 'on' }), { message: 'Faces could not be turned on.', said: 'refused' });
   assert.deepEqual(await host.act({ act: 'home', do: 'probe' }), REACH.probe.reply);
-  assert.deepEqual(await host.act({ act: 'agent-answer', id: 'request-a', answer: 47 }), { answer: SIGN_IN_WRONG.reply.answer });
+  assert.deepEqual(await host.act({ act: 'agent-answer', id: 'request-a', answer: '470047' }), { answer: SIGN_IN_WRONG.reply.answer });
   assert.deepEqual(win.posted[0], { type: 'act', act: 'turn', sources: ['imessage:macbook-pro-0001'], on: false });
   const access = { allow: [{ reach: { all: true, but: ['health'] }, window: null, until_ms: null }], items: [], not: [], only: [],
     window: null, hide: /** @type {const} */ ('names'), shown: [] };
-  await host.act({ act: 'agent-answer', id: 'request-a', answer: 47, access });
+  await host.act({ act: 'agent-answer', id: 'request-a', answer: '470047', access });
   await host.act({ act: 'agent-answer', id: 'rq-0000000000000001', answer: 'once', expect: 1 });
   assert.deepEqual(await host.act({ act: 'agent-access', id: 'p-00000001', access, expect: 4 }), { answer: WIDENED.reply.answer });
-  assert.deepEqual(win.posted.slice(-4), [{ type: 'act', act: 'agent-answer', id: 'request-a', answer: 47 },
-    { type: 'act', act: 'agent-answer', id: 'request-a', answer: 47, access },
+  assert.deepEqual(win.posted.slice(-4), [{ type: 'act', act: 'agent-answer', id: 'request-a', answer: '470047' },
+    { type: 'act', act: 'agent-answer', id: 'request-a', answer: '470047', access },
     { type: 'act', act: 'agent-answer', id: 'rq-0000000000000001', answer: 'once', expect: 1 },
     { type: 'act', act: 'agent-access', id: 'p-00000001', access, expect: 4 }]);
   assert.equal(win.posted.length, 14);

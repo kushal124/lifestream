@@ -11,11 +11,6 @@
         "name": "Claude",
         "checked": true,
         "host": "claude.ai",
-        "choices": [
-          27,
-          42,
-          64
-        ],
         "at_ms": 1794646800000,
         "until_ms": 1794647400000,
         "head": "Claude wants to read your Lifestream",
@@ -609,11 +604,11 @@
           "widening": null,
           "screen": "Screen shows almost everything you did."
         },
-        "pick": "Pick the number Claude shows",
-        "pick_line": "The number is the yes. A wrong one turns Claude away.",
+        "pick": "Type the code Claude shows",
+        "pick_line": "The code is the yes. A wrong one turns Claude away.",
         "over": "This sign-in is over. Start it again in claude.ai.",
         "app": "claude",
-        "notice": "Claude wants to read your Lifestream. Pick the number it shows."
+        "notice": "Claude wants to read your Lifestream. Type the code it shows."
       }
     ],
     "asks": []

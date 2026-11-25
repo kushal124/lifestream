@@ -1059,12 +1059,12 @@ main.innerHTML = shown(drawn([
     specimen('In a browser: where it is done', callout({ kind: 'idle', title: 'Turned off', note: 'In the Lifestream app on your Mac.' })),
   ].join('') + '</div>'),
   group('AgentCard', () => '<div class="gallery__dialogs">' + [
-    specimen('A sign-in: what it will see, the number to pick, two more waiting', signInCard(SIGNIN, { view: SIGNIN.view,
+    specimen('A sign-in: what it will see, the code to type, two more waiting', signInCard(SIGNIN, { view: SIGNIN.view,
       count: ASKED.asks(3), busy: null, refused: '' })),
-    specimen('A pick in flight', signInCard(SIGNIN, { view: SIGNIN.view, count: '', busy: SIGNIN.choices[1] ?? 0, refused: '' })),
-    specimen('A pick refused, the request still standing', signInCard(SIGNIN, { view: SIGNIN.view, count: '', busy: null,
+    specimen('A code on its way', signInCard(SIGNIN, { view: SIGNIN.view, count: '', busy: '482915', refused: '' })),
+    specimen('A code refused, the request still standing', signInCard(SIGNIN, { view: SIGNIN.view, count: '', busy: null,
       refused: 'Couldn’t reach Lifestream. Try again.' })),
-    specimen('A number that was not the page’s', noticeCard('That wasn’t the number on the sign-in page, so Claude '
+    specimen('A code that was not the page’s', noticeCard('That wasn’t the code on the sign-in page, so Claude '
       + 'can’t read your Lifestream.')),
   ].join('') + '</div>'),
   group('DialogPage', () => '<div class="gallery__dialogs">' + [

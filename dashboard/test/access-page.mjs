@@ -229,7 +229,8 @@ test('P1–P6 in the window: an ask’s card, its answer once, a lost reply read
   const signInReads = signInView.reads;
   await page.until(`${CARD}?.textContent.includes(${JSON.stringify(signInReads)})
     && ${CARD}?.textContent.includes(${JSON.stringify(signInView.window.words)})`, 'the sign-in, its rows the home’s own view for it');
-  await click(pick(signIn.id, signIn.choices[1]));
+  await page.evaluate(`document.querySelector('#agent-layer [data-agent-code-field]').value = '482 915'`);
+  await click(pick(signIn.id, 'code'));
   await page.until('window.hostActs.length > 0', 'the sign-in’s answer sent');
   await page.evaluate(`window.setHostState(${JSON.stringify({ ...STATE, agent_requests: [], agent_asks: [] })})`);
   const outcome = approved.outcome?.find(part => part.kind === 'words')?.words ?? '';
@@ -239,7 +240,7 @@ test('P1–P6 in the window: an ask’s card, its answer once, a lost reply read
     await click('#agent-layer [data-agent-ok]');
   }
   await page.until(`document.querySelector('#agent-layer')?.hidden === true`, outcome ? 'no card' : 'no words of the page’s own');
-  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: signIn.id, answer: signIn.choices[1] }]);
+  assert.deepEqual(await acts(), [{ act: 'agent-answer', id: signIn.id, answer: '482915' }], 'the code as typed, its space left out');
   await page.evaluate(`window.hostAnswers = {}`);
 
   doorAsked();

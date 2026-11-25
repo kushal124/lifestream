@@ -102,7 +102,7 @@ async function running(prefix: string, steps: Record<string, unknown>, random?: 
   const request = async (step: string, card: { name: string; checked: boolean; host: string | null } = { name: "Claude", checked: true, host: "claude.ai" }) =>
     call(step, "POST", "/v1/agents/request", mcp, card);
   const waiting = async (step: string) => (await call(step, "GET", "/v1/agents/waiting", phone.authorization, undefined, phone.headers)).body.requests as Waiting[];
-  const answer = (step: string, id: string, pick: number | "deny") => call(step, "POST", "/v1/agents/answer", phone.authorization, { id, answer: pick }, phone.headers);
+  const answer = (step: string, id: string, pick: string | "deny") => call(step, "POST", "/v1/agents/answer", phone.authorization, { id, answer: pick }, phone.headers);
   const state = async (step: string, id: string) => (await call(step, "GET", `/v1/agents/request/${id}`, mcp)).body.state;
   const grant = (step: string, id: string, asked: { client_id: string; resource: string } = { client_id: CLIENT, resource: RESOURCE }) =>
     call(step, "POST", "/v1/agents/grant", mcp, { id, ...asked });
@@ -112,8 +112,8 @@ async function running(prefix: string, steps: Record<string, unknown>, random?: 
   const signIn = async (step: string, card?: { name: string; checked: boolean; host: string | null }) => {
     const made = await request(`${step}: request`, card);
     expect(made.status).toBe(200);
-    const { id, number } = made.body as { id: string; number: number };
-    expect((await answer(`${step}: the page's number`, id, number)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
+    const { id, code } = made.body as { id: string; code: string };
+    expect((await answer(`${step}: the page's code`, id, code)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     const granted = await grant(`${step}: grant`, id);
     expect(granted.status).toBe(200);
     return { id, grant: (granted.body as unknown as Granted).grant, tokens: granted.body as unknown as Tokens };
@@ -196,11 +196,11 @@ describe("agents", () => {
     report.answerers = steps;
     const at = await running("lifestream-agents-answerers-", steps);
     const made = await at.request("request");
-    const { id, number } = made.body as { id: string; number: number };
+    const { id, code } = made.body as { id: string; code: string };
     const copied = (await askHome(at.sock, "agents", ["add", "Hermes"]) as Added).pass;
     for (const [who, pass, headers, code] of [["reader", at.passes.reader, {}, "PERSON_ONLY"], ["agent", copied, {}, "PRINCIPAL_SCOPE"], ["extension", at.passes.extension, DEVICE.extension, "PRINCIPAL_SCOPE"]] as const) {
       const read = await at.call(`${who}: waiting`, "GET", "/v1/agents/waiting", pass, undefined, headers);
-      const answered = await at.call(`${who}: answer`, "POST", "/v1/agents/answer", pass, { id, answer: number }, headers);
+      const answered = await at.call(`${who}: answer`, "POST", "/v1/agents/answer", pass, { id, answer: code }, headers);
       expect([read.status, read.body.code, answered.status, answered.body.code], who).toEqual([403, code, 403, code]);
     }
     for (const [who, pass, headers] of [["reader", at.passes.reader, {}], ["phone", at.passes.phone, DEVICE.phone]] as const) {
@@ -213,34 +213,34 @@ describe("agents", () => {
     const mac = (await askHome(at.sock, "agents", ["waiting"]) as { requests: Waiting[] }).requests;
     expect(mac).toEqual([card]);
     expect(card).toMatchObject({ name: "Claude", checked: true, host: "claude.ai", until_ms: Date.UTC(2026, 9, 28, 9, 0) + REQUEST_MS });
-    expect(card.choices).toHaveLength(3);
-    expect(card.choices).toContain(number);
+    expect(card, "the one who answers never sees the code: only the page does").not.toHaveProperty("choices");
+    expect(JSON.stringify([card, mac])).not.toContain(`"${code}"`);
   });
 
-  it("a grant is made before the page's number is answered; a wrong number, Don't allow, ten minutes or a restart leaves a request standing", async () => {
+  it("a grant is made before the page's code is answered; a wrong code, Don't allow, ten minutes or a restart leaves a request standing", async () => {
     const steps: Record<string, unknown> = {};
     report.answers = steps;
     const at = await running("lifestream-agents-answers-", steps);
-    const ask = async (step: string) => (await at.request(step)).body as { id: string; number: number };
+    const ask = async (step: string) => (await at.request(step)).body as { id: string; code: string };
 
     const early = await ask("early: request");
     expect([(await at.grant("early: grant before any answer", early.id)).body.code, await at.state("early: state", early.id)]).toEqual(["AGENT_NOT_APPROVED", "waiting"]);
 
     const wrong = await ask("wrong: request");
-    const other = (await at.waiting("wrong: waiting")).find((each) => each.id === wrong.id)!.choices.find((choice) => choice !== wrong.number)!;
-    expect((await at.answer("wrong: another number", wrong.id, other)).body).toEqual({ state: "wrong", version: null, outcome: wordsOnly("Wrong number, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null });
+    const other = wrong.code === "000000" ? "000001" : "000000";
+    expect((await at.answer("wrong: another code", wrong.id, other)).body).toEqual({ state: "wrong", version: null, outcome: wordsOnly("Wrong code, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null });
     expect(await at.state("wrong: state", wrong.id)).toBe("wrong");
     expect((await at.grant("wrong: grant", wrong.id)).body.code).toBe("AGENT_NOT_APPROVED");
-    const again = await at.answer("wrong: answered again", wrong.id, wrong.number);
-    expect([again.status, again.body, await at.state("wrong: state again", wrong.id)]).toEqual([200, { state: "wrong", version: null, outcome: wordsOnly("Wrong number, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null }, "wrong"]);
+    const again = await at.answer("wrong: answered again", wrong.id, wrong.code);
+    expect([again.status, again.body, await at.state("wrong: state again", wrong.id)]).toEqual([200, { state: "wrong", version: null, outcome: wordsOnly("Wrong code, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null }, "wrong"]);
     const signIn = (step: string, id: string) => at.call(step, "GET", `/v1/agents/signins/${id}`, at.passes.phone, undefined, DEVICE.phone);
     expect((await signIn("wrong: read on the Mac after the iPhone answered", wrong.id)).body, "a sign-in answered elsewhere says what became of it")
-      .toEqual({ id: wrong.id, state: "wrong", outcome: wordsOnly("Wrong number, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null });
+      .toEqual({ id: wrong.id, state: "wrong", outcome: wordsOnly("Wrong code, so Claude wasn’t let in. Start the sign-in again in Claude."), reader: null, connected: null });
 
     const denied = await ask("deny: request");
     expect(await askHome(at.sock, "agents", ["answer", "--", denied.id, "deny"])).toEqual({ state: "denied", version: null, outcome: wordsAt("Not allowed on Mac,", expect.any(Number)), reader: null, connected: null });
     expect([await at.state("deny: state", denied.id), (await at.grant("deny: grant", denied.id)).body.code]).toEqual(["denied", "AGENT_NOT_APPROVED"]);
-    expect(await askHome(at.sock, "agents", ["answer", "--", denied.id, String(denied.number)])).toEqual({ state: "denied", version: null, outcome: wordsAt("Not allowed on Mac,", expect.any(Number)), reader: null, connected: null });
+    expect(await askHome(at.sock, "agents", ["answer", "--", denied.id, denied.code])).toEqual({ state: "denied", version: null, outcome: wordsAt("Not allowed on Mac,", expect.any(Number)), reader: null, connected: null });
 
     const late = await ask("late: request");
     expect((await signIn("late: still waiting", late.id)).body).toEqual({ id: late.id, state: "waiting", outcome: null, reader: null, connected: null });
@@ -248,12 +248,12 @@ describe("agents", () => {
     const over = await signIn("late: read once the home's clock passed its end", late.id);
     expect([over.status, over.body], "over by the home's clock, never the device's: gone").toEqual([200, { id: late.id, state: "gone", outcome: null, reader: null, connected: null }]);
     expect(await at.state("late: ten minutes on", late.id)).toBe("gone");
-    const tooLate = await at.answer("late: the page's number", late.id, late.number);
+    const tooLate = await at.answer("late: the page's code", late.id, late.code);
     expect([tooLate.status, tooLate.body.code, (await at.grant("late: grant", late.id)).body.code]).toEqual([404, "AGENT_REQUEST_GONE", "AGENT_NOT_APPROVED"]);
     expect(await at.waiting("late: waiting")).toEqual([]);
 
     const restarted = await ask("restart: request");
-    expect((await at.answer("restart: the page's number", restarted.id, restarted.number)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
+    expect((await at.answer("restart: the page's code", restarted.id, restarted.code)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     expect((await signIn("restart: read before the restart", restarted.id)).body).toEqual({ id: restarted.id, state: "approved", outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     await at.restart();
     expect([await at.state("restart: state", restarted.id), (await at.grant("restart: grant", restarted.id)).body.code]).toEqual(["gone", "AGENT_NOT_APPROVED"]);
@@ -278,10 +278,11 @@ describe("agents", () => {
     for (const [card, name, line] of pages) {
       const made = await at.request(`page: ${card.name} from ${card.host}`, card);
       expect([made.status, made.body.name, made.body.line], `${card.name} from ${card.host}`).toEqual([200, name, line]);
+      await at.answer(`page: ${card.name} from ${card.host}, turned away so the next one fits`, made.body.id as string, "deny");
     }
 
-    const made = (await at.request("connect: request")).body as { id: string; number: number };
-    expect((await at.answer("connect: the page's number", made.id, made.number)).body, "the yes alone holds no reader").toMatchObject({ state: "approved", reader: null, connected: null });
+    const made = (await at.request("connect: request")).body as { id: string; code: string };
+    expect((await at.answer("connect: the page's code", made.id, made.code)).body, "the yes alone holds no reader").toMatchObject({ state: "approved", reader: null, connected: null });
     expect((await read("connect: finishing", made.id)).body, "approved, the other app not yet holding its access: finishing").toMatchObject({ state: "approved", reader: null, connected: null });
     const granted = await at.grant("connect: the other app exchanges its code", made.id);
     const reader = (granted.body as unknown as Granted).grant;
@@ -289,10 +290,10 @@ describe("agents", () => {
     expect((await read("connect: connected", made.id)).body, "Connected, with the line of the access it was granted").toEqual({
       id: made.id, state: "approved", outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader, connected,
     });
-    expect((await at.answer("connect: answered again after the exchange", made.id, made.number)).body, "a lost reply's retry says Connected too").toMatchObject({ state: "approved", reader, connected });
+    expect((await at.answer("connect: answered again after the exchange", made.id, made.code)).body, "a lost reply's retry says Connected too").toMatchObject({ state: "approved", reader, connected });
 
-    const lapsed = (await at.request("lapse: request")).body as { id: string; number: number };
-    await at.answer("lapse: the page's number", lapsed.id, lapsed.number);
+    const lapsed = (await at.request("lapse: request")).body as { id: string; code: string };
+    await at.answer("lapse: the page's code", lapsed.id, lapsed.code);
     at.tick(EXCHANGE_MS - 1);
     expect((await read("lapse: finishing", lapsed.id)).body).toMatchObject({ state: "approved", reader: null });
     at.tick(1);
@@ -304,24 +305,20 @@ describe("agents", () => {
     expect((await read("connect: its reader disconnected", made.id)).body, "a revoked grant never reads Connected").toMatchObject({ state: "gone", reader: null, connected: null });
   });
 
-  it("two requests waiting share a number, a seventeenth waits, or an answered request keeps its place", async () => {
+  it("each waiting sign-in has a 6-digit code nobody who answers sees, a fourth waits, or an answered request keeps its place", async () => {
     const steps: Record<string, unknown> = {};
     report.places = steps;
     const at = await running("lifestream-agents-places-", steps);
-    const made: { id: string; number: number }[] = [];
-    for (let each = 0; each < WAITING_MOST; each += 1) made.push((await at.request(`request ${each + 1}`, { name: `Agent ${each + 1}`, checked: false, host: null })).body as { id: string; number: number });
-    expect(new Set(made.map((each) => each.number)).size).toBe(WAITING_MOST);
-    const cards = await at.waiting("sixteen waiting");
+    const made: { id: string; code: string }[] = [];
+    for (let each = 0; each < WAITING_MOST; each += 1) made.push((await at.request(`request ${each + 1}`, { name: `Agent ${each + 1}`, checked: false, host: null })).body as { id: string; code: string });
+    expect(made.every((each) => /^[0-9]{6}$/u.test(each.code))).toBe(true);
+    const cards = await at.waiting("all waiting");
     expect(cards.map((card) => card.id)).toEqual(made.map((each) => each.id));
-    for (const card of cards) {
-      expect(new Set(card.choices).size).toBe(3);
-      expect(card.choices).toContain(made.find((each) => each.id === card.id)!.number);
-      expect(card.choices.every((choice) => choice >= 10 && choice <= 99)).toBe(true);
-    }
-    const crowded = await at.request("a seventeenth");
+    for (const card of cards) expect(card).not.toHaveProperty("choices");
+    const crowded = await at.request("one more");
     expect([crowded.status, crowded.body.code]).toEqual([429, "AGENTS_WAITING"]);
     await at.answer("one answered", made[0]!.id, "deny");
-    expect((await at.request("a seventeenth, once one is answered")).status).toBe(200);
+    expect((await at.request("one more, once one is answered")).status).toBe(200);
   });
 
   it("a second grant leaves the first standing; an expired token reads; a refresh leaves the old token reading or renews another client's; an earlier refresh token renews, also after a restart", async () => {
@@ -527,8 +524,8 @@ describe("agents", () => {
     expect(at.revokedEvents(lost.grant), "one revoke by request, one event").toBe(1);
     expect((await at.me("another sign-in: reads", other.tokens.access_token)).status, "a revoke by request ends that request's grant alone").toBe(200);
     expect((await byRequest("revoke by an unknown request", "never-made-request-0001")).body).toEqual({});
-    const early = (await at.request("early: request")).body as { id: string; number: number };
-    await at.answer("early: the page's number", early.id, early.number);
+    const early = (await at.request("early: request")).body as { id: string; code: string };
+    await at.answer("early: the page's code", early.id, early.code);
     expect((await byRequest("early: revoke by the request", early.id)).status).toBe(200);
     const refused = await at.grant("early: grant", early.id);
     expect([refused.status, refused.body.code]).toEqual([409, "AGENT_NOT_APPROVED"]);
@@ -543,17 +540,17 @@ describe("agents", () => {
       return made;
     };
     const at = await running("lifestream-agents-dash-", steps, dashed);
-    const ask1 = (await at.request("phone: request")).body as { id: string; number: number };
+    const ask1 = (await at.request("phone: request")).body as { id: string; code: string };
     expect(ask1.id.startsWith("-")).toBe(true);
     expect((await at.waiting("phone: waiting")).map((each) => each.id)).toContain(ask1.id);
-    expect((await at.answer("phone: the page's number", ask1.id, ask1.number)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
+    expect((await at.answer("phone: the page's code", ask1.id, ask1.code)).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     expect(await at.state("phone: state", ask1.id)).toBe("approved");
 
-    const ask2 = (await at.request("socket: request")).body as { id: string; number: number };
+    const ask2 = (await at.request("socket: request")).body as { id: string; code: string };
     expect(await ask(at.sock, { verb: "agent", call: "answer", body: { id: ask2.id, answer: "deny" } })).toEqual({ state: "denied", at_ms: expect.any(Number), device: null, name: "Claude", granted: null });
 
-    const ask3 = (await at.request("mac: request")).body as { id: string; number: number };
-    expect(await askHome(at.sock, "agents", ["answer", "--", ask3.id, String(ask3.number)])).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on Mac,", expect.any(Number)), reader: null, connected: null });
+    const ask3 = (await at.request("mac: request")).body as { id: string; code: string };
+    expect(await askHome(at.sock, "agents", ["answer", "--", ask3.id, ask3.code])).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on Mac,", expect.any(Number)), reader: null, connected: null });
     const granted = await at.grant("mac: grant", ask3.id);
     expect(granted.status).toBe(200);
     expect((await at.me("mac: reads", (granted.body as unknown as Tokens).access_token)).status).toBe(200);

@@ -254,7 +254,7 @@ final class AgentAsks: ObservableObject {
     func pick(_ pick: AgentRequestCard.Pick) {
         guard case .signIn(let signIn) = shown, sending == nil, !checking, outcome == nil else { return }
         let answer: HomeLink.AnswerRequest = switch pick {
-        case .number(let number): .number(signIn.id, number, access: kept[signIn.id]?.access)
+        case .code(let code): .code(signIn.id, code, access: kept[signIn.id]?.access)
         case .deny: .deny(signIn.id)
         }
         send(.pick(pick), answer)
@@ -675,7 +675,7 @@ private struct AgentSheet: View {
     @ViewBuilder private var card: some View {
         switch waiting {
         case .signIn(let signIn):
-            AgentRequestCard(head: signIn.head, line: asks.worded(signIn.overLine), pickTitle: signIn.pick, pickLine: signIn.pickLine, choices: signIn.choices,
+            AgentRequestCard(head: signIn.head, line: asks.worded(signIn.overLine), pickTitle: signIn.pick, pickLine: signIn.pickLine,
                              sentence: asks.sentence(signIn), reads: asks.reads(signIn), change: { asks.change() },
                              sending: { if case .pick(let pick) = asks.sending { pick } else { nil } }(), failed: asks.failed,
                              ended: asks.outcome, done: { asks.close() }) {

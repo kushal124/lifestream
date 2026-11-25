@@ -50,9 +50,9 @@ Grok Bot, Instinct or another agent, shows the same under **It will see**, befor
 1. To read less or more, click **Edit**.
 2. Change what the agent reads, as [Change what an agent reads](#change-what-an-agent-reads) says.
 3. Click **Done**.
-4. Click the number the agent's sign-in page shows, or **Make the key**.
+4. Type the code the agent's sign-in page shows and click **Allow**, or click **Make the key**.
 
-The agent gets the access shown when you pick the number or make the key. To refuse a sign-in,
+The agent gets the access shown when you allow it or make the key. To refuse a sign-in,
 click **Don't allow**.
 
 To connect without sharing records, click **Edit**, select **Only these**, and clear every checked

@@ -212,11 +212,14 @@ test('every guide state fits the Mac’s 600 × 640 frame, but Edit, whose body 
   await page.until(shows(SIGN_IN.pick_line), 'back at the yes');
 
   await page.evaluate(`window.hostAnswers['agent-answer'] = ${JSON.stringify(HOST['answer-sign-in-wrong'].reply)}`);
-  await click(`[data-cn-do*='"answer":${SIGN_IN.choices[0]}']`);
+  await page.evaluate(`(() => { const input = document.querySelector('[data-cn-field="signin.code:${SIGN_IN.id}"]');
+    input.value = '000000'; input.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  await page.until(`document.querySelector(${JSON.stringify(`[data-cn-do*='"answer":"000000"']`)})?.disabled === false`, 'Allow, once the code is typed');
+  await click(`[data-cn-do*='"answer":"000000"']`);
   await page.evaluate(`window.setHostState(${JSON.stringify({ ...STATE, agent_requests: [] })})`);
   home.signin = { status: 200, answer: { id: SIGN_IN.id, state: 'wrong', outcome: null, reader: null, connected: null } };
   const yes = chatgpt.steps.find((/** @type {any} */ step) => step.kind === 'yes');
-  await page.until(`${shows(yes.wait)} && ${shows(yes.wrong)}`, 'a wrong number: the page’s line, waiting again');
+  await page.until(`${shows(yes.wait)} && ${shows(yes.wrong)}`, 'a wrong code: the page’s line, waiting again');
   await fits('chatgpt-wrong');
 
   const again = { ...SIGN_IN, id: 'c2lnbi1pbi0wMDAwMDAwMg', at_ms: SIGN_IN.at_ms + 1 };
@@ -225,7 +228,10 @@ test('every guide state fits the Mac’s 600 × 640 frame, but Edit, whose body 
   await fits('chatgpt-wrong-next');
   await page.evaluate(`window.hostAnswers['agent-answer'] = ${JSON.stringify(HOST['answer-sign-in'].reply)}`);
   home.signin = signInRead(again.id, 'signin-connected');
-  await click(`[data-cn-do*='"answer":${again.choices[1]}']`);
+  await page.evaluate(`(() => { const input = document.querySelector('[data-cn-field="signin.code:${again.id}"]');
+    input.value = '482915'; input.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  await page.until(`document.querySelector(${JSON.stringify(`[data-cn-do*='"answer":"482915"']`)})?.disabled === false`, 'Allow, once the code is typed');
+  await click(`[data-cn-do*='"answer":"482915"']`);
   await page.evaluate(`window.setHostState(${JSON.stringify({ ...STATE, agent_requests: [] })})`);
   await page.until(`${shows(chatgpt.done.title)} && ${shows(GUIDE_DOOR['signin-connected'].answer.connected.line)}`, 'Connected, in the reader’s line');
   await fits('chatgpt-connected');
