@@ -137,7 +137,7 @@ async function journey() {
   const signIn = async (name: string) => {
     const asked = await call(home.tokens.admit!, "POST", "/v1/agents/request", { name, checked: false, host: null });
     expect(asked.status, JSON.stringify(asked.body)).toBe(200);
-    return asked.body as { id: string; number: number };
+    return asked.body as { id: string; code: string };
   };
   const grant = async (id: string) => {
     const granted = await call(home.tokens.admit!, "POST", "/v1/agents/grant", { id, client_id: "https://claude.ai/oauth/mcp-oauth-client-metadata", resource: `${url}/mcp` });
@@ -214,14 +214,14 @@ describe("an agent reads only what its access allows, through the door", () => {
 
     const asAsked = await at.signIn("Claude");
     expect((await waiting()).requests).toEqual([expect.objectContaining({ id: asAsked.id, name: "Claude", access: defaultAccess() })]);
-    expect((await at.phone("POST", "/v1/agents/answer", { id: asAsked.id, answer: asAsked.number })).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
+    expect((await at.phone("POST", "/v1/agents/answer", { id: asAsked.id, answer: asAsked.code })).body).toEqual({ state: "approved", version: null, outcome: wordsAt("Allowed on iPhone,", expect.any(Number)), reader: null, connected: null });
     const claude = await at.grant(asAsked.id);
     expect(at.ledger.access.get(claude.grant), "allowed as asked: the default").toMatchObject({ version: 1, lines: defaultAccess() });
     expect(await at.search(claude.access_token)).toEqual({ hits: 2, outside: true });
 
     const changed = await at.signIn("Mistral");
     const workOnly: Access = { ...defaultAccess(), allow: [{ reach: { account: WORK, but: [] }, window: null, until_ms: null }] };
-    expect((await at.phone("POST", "/v1/agents/answer", { id: changed.id, answer: changed.number, access: workOnly })).body).toMatchObject({ state: "approved" });
+    expect((await at.phone("POST", "/v1/agents/answer", { id: changed.id, answer: changed.code, access: workOnly })).body).toMatchObject({ state: "approved" });
     const mistral = await at.grant(changed.id);
     expect(at.ledger.access.get(mistral.grant), "allowed after Change: the access the answer carried").toMatchObject({ version: 1, lines: workOnly });
     expect(await at.search(mistral.access_token)).toEqual({ hits: 1, outside: true });

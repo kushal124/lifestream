@@ -414,6 +414,11 @@
               "note": "Add the key for OpenRouter"
             },
             {
+              "value": "cloudflare:google-ai-studio/gemini-3.8-flash",
+              "words": "Gemini 3.8 Flash",
+              "note": "Add the key for Cloudflare"
+            },
+            {
               "value": "fake:fake-model",
               "words": "Fake model",
               "note": "Stays on this computer"
