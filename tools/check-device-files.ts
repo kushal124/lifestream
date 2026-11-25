@@ -70,6 +70,7 @@ export const ALLOWED: readonly Allowed[] = [
   allow("Spool/CaptureStore.swift", ["Darwin.open("], "opens the empty writer lock file that flock holds; it carries no byte"),
   allow("Lifestream/Commands/DiagnosticCommands.swift", ["temporaryDirectory"], "the default folder of a diagnostics report the person asks for"),
   allow("Lifestream/Dashboard/BundledPage.swift", ["Data(contentsOf:"], "reads the dashboard's pages from the app bundle's resources"),
+  allow("Lifestream/Dashboard/ViewerKey.swift", ["createFile", "String(contentsOf:"], "makes and reads the dashboard's viewer key, a 0600 file the Node dashboard reads too, so it stays plain beside its door token"),
   allow("Lifestream/Needs/RecoveryKeyFile.swift", [".write(to:"], "writes the recovery key to the file the person picked, outside the two folders"),
   allow("Lifestream/Setup/AppPlacement.swift", ["copyItem", "attributesOfItem", "replaceItemAt"], "copies the app bundle into Applications, puts it over the app already there and reads its size"),
   allow("Lifestream/Setup/BundledRelease.swift", ["temporaryDirectory", ".write(to:", "FileHandle(", "Data(contentsOf:"], "unpacks the release the app bundle carries, code and no record, into its output"),
