@@ -39,6 +39,27 @@ export const numberPick = ({ label, choices }) => `<div class="ck-picks" role="g
  */
 export const pickSection = ({ label, line, choices }) => settingsSection({ heading: label, body: numberPick({ label, choices }), note: line });
 
+export const CODE_DIGITS = 6;
+
+/** @param {string} typed */
+export const codeOf = typed => typed.replace(/[\s-]+/gu, '');
+
+/**
+ * @param {object} entry
+ * @param {string} entry.label
+ * @param {string} entry.line
+ * @param {string} entry.allow
+ * @param {boolean} entry.busy
+ * @param {Attributes} entry.attrs
+ */
+export const codeEntry = ({ label, line, allow, busy, attrs }) => settingsSection({ heading: label, note: line,
+  body: '<div class="ck-code" data-agent-code>'
+    + `<input${attributes({ class: 'ck-field mac-body ck-code__field', type: 'text', inputmode: 'numeric', pattern: '[0-9 ]*',
+      maxlength: String(CODE_DIGITS + 1), placeholder: '000 000', 'aria-label': label, autocomplete: 'off', spellcheck: 'false', autocapitalize: 'off',
+      disabled: busy, 'data-agent-code-field': '' })}>`
+    + button(allow, { variant: 'primary', size: 'sm', busy, disabled: busy, attrs })
+    + '</div>' });
+
 /**
  * @param {object} card
  * @param {string} card.id

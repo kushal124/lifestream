@@ -158,10 +158,8 @@ export const answerWord = word => 'answer' in word ? { words: phraseWords(word.a
  */
 export function signInOf(value) {
   if (!isRecord(value)) return null;
-  const { choices } = value;
   const fits = isText(value.id) && value.id !== '' && isText(value.name) && value.name !== '' && typeof value.checked === 'boolean'
-    && textOrNull(value.host) && Array.isArray(choices) && choices.length === 3
-    && choices.every(each => Number.isInteger(each) && each >= 10 && each <= 99)
+    && textOrNull(value.host)
     && isWhole(value.at_ms) && isWhole(value.until_ms) && isText(value.sentence) && isAccess(value.access) && isRecord(value.view)
     && isText(value.head) && value.head !== '' && isPhrase(value.over_line) && isText(value.pick) && value.pick !== ''
     && isText(value.pick_line) && isText(value.over) && value.over !== '' && textOrNull(value.app)
@@ -198,7 +196,7 @@ export function askAnswer(ask, answer, edited = null) {
 
 /**
  * @param {string} id
- * @param {number | 'deny'} answer
+ * @param {string} answer
  * @param {import('../types.js').Access | null} [kept]
  * @returns {AnswerRequest}
  */

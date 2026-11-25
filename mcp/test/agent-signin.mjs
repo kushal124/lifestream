@@ -177,7 +177,7 @@ async function onPhone() {
 
 /**
  * @param {string} id
- * @param {number | 'deny'} answer
+ * @param {string | 'deny'} answer
  */
 async function tap(id, answer) {
   const response = await fetch(`${home.url}/v1/agents/answer`, { method: 'POST', body: JSON.stringify({ id, answer }), headers: phoneHeaders() });
@@ -211,7 +211,7 @@ async function codeFor(clientId, redirect, rest) {
   const { verifier, params } = asking(clientId, redirect, rest);
   const page = await opened(params);
   assert.equal(page.status, 200, JSON.stringify(page.data));
-  assert.equal(await tap(idOf(page.data), page.data.number), 'approved');
+  assert.equal(await tap(idOf(page.data), page.data.confirm), 'approved');
   const { state, redirect: sent } = await waited(page.data);
   assert.equal(state, 'approved');
   const url = new URL(/** @type {string} */ (sent));
@@ -336,7 +336,7 @@ after(async () => {
 });
 
 
-test('1: the whole flow as a client makes it: the SDK discovers, registers, opens the page, the person taps its number on their phone, the code trades, its instructions name the new agent\'s access, the tools read, an hour later the token renews, and once the agent is removed initialize is 401', async () => {
+test('1: the whole flow as a client makes it: the SDK discovers, registers, opens the page, the person types its code on their phone, the code trades, its instructions name the new agent\'s access, the tools read, an hour later the token renews, and once the agent is removed initialize is 401', async () => {
   named('the whole flow');
   const agent = new Agent(LOOPBACK_REDIRECT);
   const kept = funnelOf(true);
@@ -349,14 +349,15 @@ test('1: the whole flow as a client makes it: the SDK discovers, registers, open
   const page = await kept(agent.opened.href);
   const html = await page.text();
   const data = JSON.parse(/** @type {string} */ (/<script type="application\/json" id="data">([\s\S]*?)<\/script>/u.exec(html)?.[1]));
-  note({ page: { name: data.name, line: data.line, number: 'the number' } });
+  note({ page: { name: data.name, line: data.line, confirm: 'the code' } });
   assert.deepEqual([page.status, data.name, data.line], [200, 'Synthetic Agent', 'says it is Synthetic Agent, an app on the computer you are signing in from']);
-  assert.match(String(data.number), /^[1-9]\d$/u);
+  assert.match(String(data.confirm), /^[0-9]{6}$/u);
   assert.match(html, /<p class="gets">You choose what it reads where you approve it\. It can't change your record\.<\/p>/u);
   const shown = (await onPhone()).find(each => each.id === idOf(data));
-  note({ phone: { name: shown.name, checked: shown.checked, host: shown.host, choices: shown.choices.length } });
-  assert.deepEqual([shown.name, shown.checked, shown.host, shown.choices.length, shown.choices.includes(data.number)], ['Synthetic Agent', false, null, 3, true]);
-  assert.equal(await tap(shown.id, data.number), 'approved');
+  note({ phone: { name: shown.name, checked: shown.checked, host: shown.host, holds_code: JSON.stringify(shown).includes(data.confirm) } });
+  assert.deepEqual([shown.name, shown.checked, shown.host, 'choices' in shown, JSON.stringify(shown).includes(`"${data.confirm}"`)], ['Synthetic Agent', false, null, false, false],
+    'the phone is never shown the code: only the page the person opened is');
+  assert.equal(await tap(shown.id, data.confirm), 'approved');
   const answer = await waited(data);
   const back = new URL(/** @type {string} */ (answer.redirect));
   note({ wait: answer.state, redirect: `${back.origin}${back.pathname}`, iss: back.searchParams.get('iss'), state: back.searchParams.get('state') });
@@ -474,7 +475,7 @@ test('4: a Host or X-Forwarded-Host header changes no URL in the documents, the 
   assert.equal(page.status, 200);
   assert.equal(page.body.includes('attacker'), false);
   const data = JSON.parse(/** @type {string} */ (/<script type="application\/json" id="data">([\s\S]*?)<\/script>/u.exec(page.body)?.[1]));
-  await tap(idOf(data), data.number);
+  await tap(idOf(data), data.confirm);
   const sent = JSON.parse((await rawGet(data.wait, forged)).body);
   assert.equal(new URL(sent.redirect).searchParams.get('iss'), ORIGIN);
   assert.equal(sent.redirect.includes('attacker'), false);
@@ -514,6 +515,23 @@ test('5, 16: a client named with a script is shown its name as text: the page ho
   assert.match(page.html, /<link rel="stylesheet" href="\/oauth\/signin.css">/u);
   assert.match(String(page.headers.get('content-security-policy')), /^default-src 'none'; style-src 'self'; script-src 'sha256-[A-Za-z0-9+/=]+'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'$/u);
   await tap(idOf(page.data), 'deny');
+});
+
+test('5b: a wrong code turns the sign-in away for good: the page is sent access_denied and no code, the right code after it changes nothing', async () => {
+  named('a wrong code');
+  const clientId = await registered('Synthetic Guesser', [LOOPBACK_REDIRECT]);
+  const page = await opened(asking(clientId, LOOPBACK_REDIRECT).params);
+  assert.equal(page.status, 200);
+  const right = String(page.data.confirm);
+  const wrong = right === '000000' ? '000001' : '000000';
+  assert.equal(await tap(idOf(page.data), wrong), 'wrong');
+  const answer = await waited(page.data);
+  const back = new URL(/** @type {string} */ (answer.redirect));
+  note({ wait: answer.state, error: back.searchParams.get('error'), code: back.searchParams.has('code') });
+  assert.deepEqual([answer.state, back.searchParams.get('error'), back.searchParams.has('code')], ['wrong', 'access_denied', false]);
+  assert.equal(await tap(idOf(page.data), right), 'wrong', 'one answer per sign-in: the right code after a wrong one is not a yes');
+  const again = /** @type {any} */ (await (await funnel(`${ORIGIN}${page.data.wait}`)).json());
+  assert.notEqual(again.state, 'approved');
 });
 
 test('6, 13, 15: registration: the answer the SDK parses, sealed, its id under 4 KB however much it states; a tampered id is no client; a redirect never stated gets the error page and no redirect; http off loopback is refused; loopback on another port is taken, the app named as only saying who it is', async () => {
@@ -604,7 +622,7 @@ test('7: a client\'s own description: one naming another client, without none, t
   assert.deepEqual([taken.status, taken.data.name, taken.data.line], [200, 'ChatGPT', 'from chatgpt.example']);
   const shown = (await onPhone()).find(each => each.id === idOf(taken.data));
   assert.deepEqual([shown.name, shown.checked, shown.host], ['ChatGPT', true, 'chatgpt.example']);
-  assert.equal(await tap(idOf(taken.data), taken.data.number), 'approved');
+  assert.equal(await tap(idOf(taken.data), taken.data.confirm), 'approved');
 });
 
 test('8: authorize: plain or no challenge refused; a resource with a trailing slash and no state taken; a reload shows the same request', async () => {
@@ -629,8 +647,8 @@ test('8: authorize: plain or no challenge refused; a resource with a trailing sl
   const same = asking(clientId, LOOPBACK_REDIRECT);
   const first = await opened(same.params);
   const reloaded = await opened(same.params);
-  note({ reload: idOf(first.data) === idOf(reloaded.data) && first.data.number === reloaded.data.number });
-  assert.deepEqual([idOf(reloaded.data), reloaded.data.number], [idOf(first.data), first.data.number]);
+  note({ reload: idOf(first.data) === idOf(reloaded.data) && first.data.confirm === reloaded.data.confirm });
+  assert.deepEqual([idOf(reloaded.data), reloaded.data.confirm], [idOf(first.data), first.data.confirm]);
   assert.equal((await onPhone()).filter(each => each.id === idOf(first.data)).length, 1);
   await tap(idOf(first.data), 'deny');
   const denied = await waited(first.data);
@@ -802,7 +820,7 @@ test('11: a tab reloaded once the code is minted: the page and its wait say the 
   const clientId = await registered('Synthetic Reloaded', [LOOPBACK_REDIRECT]);
   const { verifier, params } = asking(clientId, LOOPBACK_REDIRECT);
   const page = await opened(params);
-  assert.equal(await tap(idOf(page.data), page.data.number), 'approved');
+  assert.equal(await tap(idOf(page.data), page.data.confirm), 'approved');
   const sent = await waited(page.data);
   const code = /** @type {string} */ (new URL(/** @type {string} */ (sent.redirect)).searchParams.get('code'));
   const reloaded = await opened(params);

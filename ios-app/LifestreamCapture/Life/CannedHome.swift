@@ -1596,7 +1596,7 @@ enum CannedHome {
     @MainActor final class Agents: ObservableObject {
         static let shared = Agents()
 
-        private static let numbers = ["agent-claude": 64, "agent-hermes": 12, "agent-atlas": 49]
+        private static let codes = ["agent-claude": "640064", "agent-hermes": "120012", "agent-atlas": "490049"]
         private nonisolated static let signIns = "claude-hermes-atlas"
         private static let guideSignIn = "--ui-test-guide-sign-in"
         private static let guided = "agent-claude"
@@ -1824,19 +1824,19 @@ enum CannedHome {
             let id = said.id
             if let reply = recorded[id] { return reply }
             let carried: String = switch said {
-            case .number(_, _, .some), .allow(_, _, _, .some): " +access"
+            case .code(_, _, .some), .allow(_, _, _, .some): " +access"
             default: ""
             }
             switch said {
-            case .number, .deny:
+            case .code, .deny:
                 guard let index = requests.firstIndex(where: { $0["id"] as? String == id }) else { return Self.file("answer-unknown") }
                 let reply: (Int, Data)
                 let word: String
-                if case .number(_, let number, _) = said {
-                    let right = number == Self.numbers[id]
+                if case .code(_, let code, _) = said {
+                    let right = code == Self.codes[id]
                     if right { approved.insert(id) }
                     reply = Self.file(right ? "answer-sign-in" : "answer-sign-in-wrong")
-                    word = "\(number) " + (right ? "approved" : "wrong")
+                    word = "\(code) " + (right ? "approved" : "wrong")
                 } else {
                     reply = Self.file("answer-sign-in-deny")
                     word = "deny denied"

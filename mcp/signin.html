@@ -16,7 +16,7 @@
     <p id="from" class="from"></p>
     <p class="gets">You choose what it reads where you approve it. It can't change your record.</p>
     <p id="number" class="number"></p>
-    <p class="how">Approve on your Mac or iPhone. Tap this number there.</p>
+    <p class="how">Approve on your Mac or iPhone. Type this code there.</p>
   </section>
   <section id="said" hidden>
     <h1 id="said-head"></h1>
@@ -40,7 +40,7 @@
   if (data.ended === true) return ended();
   element('head').textContent = `${data.name} wants to read your Lifestream.`;
   element('from').textContent = data.line;
-  element('number').textContent = String(data.number);
+  element('number').textContent = `${data.confirm.slice(0, 3)} ${data.confirm.slice(3)}`;
   element('ask').hidden = false;
   const wait = async () => {
     let answer = null;
@@ -53,7 +53,7 @@
       return location.replace(answer.redirect);
     }
     if (answer?.state === 'denied' || answer?.state === 'wrong') {
-      say('Not allowed.', answer.state === 'wrong' ? 'Another number was tapped. Start connecting again.' : `${data.name} won't read your Lifestream.`);
+      say('Not allowed.', answer.state === 'wrong' ? 'Another code was typed. Start connecting again.' : `${data.name} won't read your Lifestream.`);
       return location.replace(answer.redirect);
     }
     if (answer?.state === 'gone') return ended();

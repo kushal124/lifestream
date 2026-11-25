@@ -284,11 +284,11 @@ export function accessGallery() {
       cardWindow('An answer on its way: its own button busy, the rest held', 'agents-ask-card-busy', askCard(WHATSAPP, { count: '',
         busy: WHATSAPP.default, offer: true, said: '', erased: false })),
       cardWindow('After: the home’s outcome', 'agents-ask-after', noticeCard(outcomeOf(ANSWERED.answer))),
-      cardWindow('A sign-in over Agents: the number is the yes', 'agents-signin-card', signInCard(SIGNIN, { view: SIGNIN.view, count: '',
+      cardWindow('A sign-in over Agents: the code is the yes', 'agents-signin-card', signInCard(SIGNIN, { view: SIGNIN.view, count: '',
         busy: null, refused: '' })),
     ].join('') + '</div>'),
     group('Agents · a sign-in and an ask', '<div class="gallery__windows">' + [
-      dialogWindow('A sign-in: what it will see, the number', 'agents-signin', draftDetail(`signin:${SIGNIN.id}`, draftReads(signInDraft),
+      dialogWindow('A sign-in: what it will see, the code', 'agents-signin', draftDetail(`signin:${SIGNIN.id}`, draftReads(signInDraft),
         seenOf({}, { ...ASKS_STATE, agent_requests: [SIGNIN] }))),
       dialogWindow('A sign-in’s access: Done', 'agents-signin-access', draftDetail(`signin:${SIGNIN.id}`, draftReads(signInDraft),
         seenOf({ pages: ['access'] }, { ...ASKS_STATE, agent_requests: [SIGNIN] }))),

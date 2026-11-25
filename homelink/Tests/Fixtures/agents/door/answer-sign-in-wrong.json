@@ -2,7 +2,7 @@
   "route": "POST /v1/agents/answer",
   "request": {
     "id": "c2lnbi1pbi0wMDAwMDAwMw",
-    "answer": 42
+    "answer": "482915"
   },
   "status": 200,
   "answer": {
@@ -11,7 +11,7 @@
     "outcome": [
       {
         "kind": "words",
-        "words": "Wrong number, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."
+        "words": "Wrong code, so Mistaken wasn’t let in. Start the sign-in again in Mistaken."
       }
     ],
     "reader": null,

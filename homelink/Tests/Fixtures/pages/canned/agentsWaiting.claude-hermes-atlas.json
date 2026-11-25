@@ -7,11 +7,6 @@
       "name": "Claude",
       "checked": true,
       "host": "claude.ai",
-      "choices": [
-        27,
-        64,
-        81
-      ],
       "at_ms": 1791968400000,
       "until_ms": 1791968400000,
       "head": "Claude wants to read your Lifestream",
@@ -323,22 +318,17 @@
         "widening": null,
         "screen": null
       },
-      "pick": "Pick the number Claude shows",
-      "pick_line": "The number is the yes. A wrong one turns Claude away.",
+      "pick": "Type the code Claude shows",
+      "pick_line": "The code is the yes. A wrong one turns Claude away.",
       "over": "This sign-in is over. Start it again in claude.ai.",
       "app": "claude",
-      "notice": "Claude wants to read your Lifestream. Pick the number it shows."
+      "notice": "Claude wants to read your Lifestream. Type the code it shows."
     },
     {
       "id": "agent-hermes",
       "name": "Hermes",
       "checked": false,
       "host": "hermes.example.com",
-      "choices": [
-        90,
-        12,
-        45
-      ],
       "at_ms": 1791968400000,
       "until_ms": 1791968400000,
       "head": "Hermes wants to read your Lifestream",
@@ -657,22 +647,17 @@
         "widening": null,
         "screen": null
       },
-      "pick": "Pick the number Hermes shows",
-      "pick_line": "The number is the yes. A wrong one turns Hermes away.",
+      "pick": "Type the code Hermes shows",
+      "pick_line": "The code is the yes. A wrong one turns Hermes away.",
       "over": "This sign-in is over. Start it again in hermes.example.com.",
       "app": null,
-      "notice": "Hermes wants to read your Lifestream. Pick the number it shows."
+      "notice": "Hermes wants to read your Lifestream. Type the code it shows."
     },
     {
       "id": "agent-atlas",
       "name": "Atlas",
       "checked": false,
       "host": null,
-      "choices": [
-        16,
-        49,
-        73
-      ],
       "at_ms": 1791968400000,
       "until_ms": 1791968400000,
       "head": "Atlas wants to read your Lifestream",
@@ -991,11 +976,11 @@
         "widening": null,
         "screen": null
       },
-      "pick": "Pick the number Atlas shows",
-      "pick_line": "The number is the yes. A wrong one turns Atlas away.",
+      "pick": "Type the code Atlas shows",
+      "pick_line": "The code is the yes. A wrong one turns Atlas away.",
       "over": "This sign-in is over. Start it again in Atlas.",
       "app": null,
-      "notice": "Atlas wants to read your Lifestream. Pick the number it shows."
+      "notice": "Atlas wants to read your Lifestream. Type the code it shows."
     }
   ],
   "asks": []

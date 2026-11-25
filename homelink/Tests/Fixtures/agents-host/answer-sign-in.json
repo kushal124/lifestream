@@ -32,7 +32,7 @@
       }
     },
     "act" : "agent-answer",
-    "answer" : 42,
+    "answer" : "482915",
     "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
     "type" : "act"
   },
@@ -90,7 +90,7 @@
         "past_ms" : 86400000
       }
     },
-    "answer" : 42,
+    "answer" : "482915",
     "id" : "c2lnbi1pbi0wMDAwMDAwMQ"
   }
 }

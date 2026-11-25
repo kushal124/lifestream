@@ -2,7 +2,7 @@
   "route": "POST /v1/agents/answer",
   "request": {
     "id": "c2lnbi1pbi0wMDAwMDAwMQ",
-    "answer": 42,
+    "answer": "482915",
     "access": {
       "allow": [
         {

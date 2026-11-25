@@ -98,9 +98,9 @@ const yes = (entry: SignInEntry, on: On): Step => {
   const { name } = entry;
   const click = entry.phone ? press(on) : "click";
   return {
-    kind: "yes", title: "Say yes here", line: `${name} opens Lifestream’s sign-in page. Its number comes here.`, wait: `Waiting for ${name}`, hint: entry.hint,
+    kind: "yes", title: "Say yes here", line: `${name} opens Lifestream’s sign-in page. Type the code it shows here.`, wait: `Waiting for ${name}`, hint: entry.hint,
     sees: SEES, other: `A sign-in from ${HOST_SLOT} is waiting`,
-    wrong: `That wasn’t the number ${name} showed. In ${name}, ${click} Connect to try again.`,
+    wrong: `That wasn’t the code ${name} showed. In ${name}, ${click} Connect to try again.`,
     finishing: `Finishing in ${name}…`,
     unfinished: `${name} did not finish. In ${name}, ${click} Connect again.`,
     out: `The request ended. In ${name}, ${click} Connect to ask again.`,

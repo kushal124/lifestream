@@ -21,20 +21,24 @@ final class AgentSignInUITests: XCTestCase {
         let claude = sheet.staticTexts["Claude wants to read your Lifestream"]
         claude.appears("Claude's head")
         XCTAssertTrue(sheet.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "From claude.ai")).firstMatch.exists, "where it signs in from, its host")
-        XCTAssertTrue(sheet.staticTexts["Pick the number Claude shows"].exists)
-        let numbers = sheet.buttons.allElementsBoundByIndex.map(\.label)
-        XCTAssertEqual(numbers, ["Edit", "27", "64", "81", Self.dontAllow], "its access's Edit, the numbers in the home's order, then Don't allow")
+        XCTAssertTrue(sheet.staticTexts["Type the code Claude shows"].exists)
+        let buttons = sheet.buttons.allElementsBoundByIndex.map(\.label)
+        XCTAssertEqual(buttons, ["Edit", "Allow", Self.dontAllow], "its access's Edit, Allow beside the code's field, then Don't allow")
+        XCTAssertFalse(sheet.buttons["agent.allow"].isEnabled, "Allow waits for the whole code")
+        let code = sheet.textFields["agent.code"]
+        code.tap()
+        code.typeText("640064")
         shot(1, "request")
 
-        sheet.buttons["64"].tap()
+        sheet.buttons["agent.allow"].tap()
         sheet.staticTexts["Face ID didn't pass, so nothing was sent."].appears("the declined Face ID's line")
         XCTAssertTrue(claude.exists, "Claude's sheet stays")
         shot(2, "face-id-declined")
 
-        sheet.buttons["64"].tap()
+        sheet.buttons["agent.allow"].tap()
         sheet.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", try opening("answer-sign-in"))).firstMatch
-            .appears("the home's words for the number it took")
-        XCTAssertFalse(sheet.buttons["64"].exists, "the numbers gone once the home answered")
+            .appears("the home's words for the code it took")
+        XCTAssertFalse(sheet.textFields["agent.code"].exists, "the code's field gone once the home answered")
         shot(3, "allowed")
         sheet.buttons["Close"].tap()
         claude.vanishes("Claude's sheet, closed by Close")
@@ -65,10 +69,10 @@ final class AgentSignInUITests: XCTestCase {
         shot(7, "closed")
 
         XCTAssertEqual(app.descendants(matching: .any)["ui-test.agents.answered"].firstMatch.label,
-                       "agent-claude 64 approved; agent-hermes deny denied",
-                       "the number once Face ID passed, Don't allow, and nothing for the request the home dropped")
+                       "agent-claude 640064 approved; agent-hermes deny denied",
+                       "the code once Face ID passed, Don't allow, and nothing for the request the home dropped")
         XCTAssertEqual(app.descendants(matching: .any)["ui-test.lock.proofs"].firstMatch.label, "declined; passed",
-                       "Face ID asked for each number tapped, and not for Don't allow")
+                       "Face ID asked for each yes, and not for Don't allow")
 
         let unlock = app.buttons["life.unlock"]
         unlock.appears("the app locked again by the trip")
@@ -113,7 +117,10 @@ final class AgentSignInUITests: XCTestCase {
         XCTAssertFalse(app.descendants(matching: .any)["agent.request"].firstMatch.exists, "no sign-in sheet over the guide")
         keep("the-sign-in-arrives")
 
-        signIn.buttons["64"].tap()
+        let guideCode = signIn.textFields["agent.code"]
+        guideCode.tap()
+        guideCode.typeText("640064")
+        signIn.buttons["agent.allow"].tap()
         let done = app.buttons["guide.done"].firstMatch
         done.appears("Connected, Done in the foot")
         XCTAssertTrue(app.buttons["guide.open"].firstMatch.exists, "the app's own link beside Done")

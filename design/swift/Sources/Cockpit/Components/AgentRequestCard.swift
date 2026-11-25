@@ -2,7 +2,7 @@ import SwiftUI
 
 public struct AgentRequestCard: View {
     public enum Pick: Equatable, Sendable {
-        case number(Int)
+        case code(String)
         case deny
     }
 
@@ -34,7 +34,6 @@ public struct AgentRequestCard: View {
     let line: String
     let pickTitle: String
     let pickLine: String?
-    let choices: [Int]
     let sentence: String?
     let reads: [Line]
     let change: (() -> Void)?
@@ -47,14 +46,13 @@ public struct AgentRequestCard: View {
     @State private var height: CGFloat?
     @State private var safeFoot: CGFloat = 0
 
-    public init(head: String, line: String, pickTitle: String, pickLine: String? = nil, choices: [Int], sentence: String? = nil,
+    public init(head: String, line: String, pickTitle: String, pickLine: String? = nil, sentence: String? = nil,
                 reads: [Line] = [], change: (() -> Void)? = nil, sending: Pick? = nil, failed: String? = nil, ended: Ended? = nil,
                 done: @escaping () -> Void = {}, pick: @escaping (Pick) -> Void) {
         self.head = head
         self.line = line
         self.pickTitle = pickTitle
         self.pickLine = pickLine
-        self.choices = choices
         self.sentence = sentence
         self.reads = reads
         self.change = change
@@ -197,7 +195,7 @@ public struct AgentRequestCard: View {
     }
 
     private var numbers: some View {
-        NumberPick(choices: choices, sending: sending, pick: pick)
+        CodeEntry(sending: sending, pick: pick)
     }
 
     private func over(_ ended: Ended) -> some View {
@@ -228,41 +226,6 @@ public struct AgentRequestCard: View {
             }
         }
         .disabled(sending != nil)
-    }
-}
-
-private struct NumberChoice: View {
-    static let height: CGFloat = 72
-    static let radius: CGFloat = 14
-    static let figure = Cockpit.TextStyle(size: 30, lineHeight: 36, weight: 700, design: .default, textStyle: .title, tracking: 0,
-                                          italic: false, tabular: true, uppercase: false)
-
-    let number: Int
-    let size: CockpitButtonStyle.Size
-    let busy: Bool
-    let action: () -> Void
-    @Environment(\.cockpitPlatform) private var platform
-    @Environment(\.cockpitSheetScale) private var scale
-
-    var body: some View {
-        if platform == .ios {
-            let tile = RoundedRectangle(cornerRadius: Self.radius, style: .continuous)
-            Button(action: action) {
-                Text(String(number))
-                    .cockpit(Self.figure)
-                    .foregroundStyle(Cockpit.Color.text)
-                    .opacity(busy ? 0 : 1)
-                    .overlay { if busy { ProgressView() } }
-                    .frame(maxWidth: .infinity, minHeight: Self.height / scale)
-                    .background(tile.fill(Cockpit.Color.well))
-                    .overlay(tile.strokeBorder(Cockpit.Color.phoneRule, lineWidth: Cockpit.Stroke.hairline))
-                    .contentShape(tile)
-            }
-            .buttonStyle(.plain)
-        } else {
-            Button(action: action) { Text(String(number)).cockpit(.figureL) }
-                .buttonStyle(.cockpit(.secondary, size: size, busy: busy, fullWidth: true))
-        }
     }
 }
 
@@ -332,26 +295,51 @@ public struct WillSee: View {
     }
 }
 
-public struct NumberPick: View {
-    let choices: [Int]
+public struct CodeEntry: View {
+    public static let digits = 6
     let sending: AgentRequestCard.Pick?
     let pick: (AgentRequestCard.Pick) -> Void
-    @Environment(\.dynamicTypeSize) private var typeSize
+    @State private var typed = ""
 
-    public init(choices: [Int], sending: AgentRequestCard.Pick? = nil, pick: @escaping (AgentRequestCard.Pick) -> Void) {
-        self.choices = choices
+    public init(sending: AgentRequestCard.Pick? = nil, pick: @escaping (AgentRequestCard.Pick) -> Void) {
         self.sending = sending
         self.pick = pick
     }
 
+    public static func code(_ typed: String) -> String? {
+        let digits = typed.filter { !$0.isWhitespace && $0 != "-" }
+        return digits.count == digits.utf8.count && digits.count == Self.digits && digits.allSatisfy(\.isASCII) && digits.allSatisfy(\.isNumber)
+            ? digits : nil
+    }
+
+    private var busy: Bool { if case .code = sending { true } else { false } }
+
     public var body: some View {
-        let size: CockpitButtonStyle.Size = .regular
-        let layout = typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing: Cockpit.Space.s2))
-            : AnyLayout(HStackLayout(spacing: Cockpit.Space.s2))
-        layout {
-            ForEach(choices, id: \.self) { number in
-                NumberChoice(number: number, size: size, busy: sending == .number(number)) { pick(.number(number)) }
-            }
+        let code = Self.code(typed)
+        HStack(spacing: Cockpit.Space.s2) {
+            field
+                .onSubmit { if let code, sending == nil { pick(.code(code)) } }
+            Button("Allow") { if let code { pick(.code(code)) } }
+                .buttonStyle(.cockpit(.primary, size: .regular, busy: busy))
+                .disabled(code == nil || sending != nil)
+                .accessibilityIdentifier("agent.allow")
         }
     }
+
+    private var field: some View {
+        let made = TextField("000 000", text: $typed)
+            .cockpit(.figureL)
+            .multilineTextAlignment(.center)
+            .monospacedDigit()
+            .autocorrectionDisabled()
+            .disabled(sending != nil)
+            .accessibilityLabel("Code")
+            .accessibilityIdentifier("agent.code")
+        #if os(iOS)
+        return made.keyboardType(.numberPad).textContentType(.oneTimeCode)
+        #else
+        return made
+        #endif
+    }
 }
+

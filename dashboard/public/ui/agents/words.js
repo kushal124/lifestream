@@ -67,6 +67,9 @@ export const SIGNING = {
   edit: 'Edit',
   only: 'Only you can let an agent in.',
   deny: 'Don’t allow',
+  allow: 'Allow',
+  code: 'Code',
+  typeCode: 'Type the 6-digit code the sign-in page shows.',
 };
 
 export const ACCESS = {

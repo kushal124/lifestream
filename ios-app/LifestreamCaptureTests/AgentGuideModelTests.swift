@@ -112,7 +112,7 @@ final class AgentGuideModelTests: XCTestCase {
         let signIn = try Self.claudeSignIn()
         model.heard([signIn])
         door.answer("POST /v1/agents/answer", "answer-sign-in")
-        model.pick(.number(64))
+        model.pick(.code("640064"))
         try await waitUntil("Finishing") { model.drawn.shows == [.oneLine, .finishing] }
 
         door.reply("GET /v1/agents/signins/\(signIn.id)", 200, try Self.answer("signin-gone"))

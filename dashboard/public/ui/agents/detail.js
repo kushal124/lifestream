@@ -10,6 +10,24 @@ import { panelOf, rowOf } from '../connectors/dialog.js';
 import { ACCESS, AGENT, ASKED, HIDES, PAGE, SIGNING } from './words.js';
 
 export const SINCE_FIELD = 'access.since';
+
+/** @param {string} id */
+export const codeField = id => `signin.code:${id}`;
+
+/**
+ * @param {SignIn} signin
+ * @param {Opened} opened
+ * @param {boolean} answering
+ * @param {(code: string) => AnswerRequest} answerOf
+ * @returns {DetailPart}
+ */
+export function codePart(signin, opened, answering, answerOf) {
+  const typed = opened.fields?.[codeField(signin.id)] ?? '';
+  const code = typed.replace(/[\s-]+/gu, '');
+  return bare({ label: signin.pick, panel: panelOf({ rows: [rowOf(SIGNING.code, { end: { field: { key: codeField(signin.id), label: signin.pick,
+    kind: 'text', value: typed, placeholder: '000 000', max: 7 }, acts: [{ label: SIGNING.allow, variant: 'primary',
+    disabled: answering || !/^[0-9]{6}$/u.test(code), do: { answer: answerOf(code) } }] } })] }) });
+}
 export const OPEN_FIELD = 'access.open';
 export const NAME_FIELD = 'agents.name';
 export const HISTORY_FOLDS = 'history.folds';
@@ -647,20 +665,20 @@ export const askOf = ask => ({ today: ask.today, says: ask.reason ? { title: ask
  * @param {string} id
  * @param {SignIn} signin
  * @param {AgentReads} reads
+ * @param {Opened} opened
  * @returns {Detail}
  */
-function signinDetail(id, signin, reads) {
+function signinDetail(id, signin, reads, opened) {
   const editor = reads.editor;
   const access = /** @type {import('../../types.js').Access | null} */ (editor?.access ?? null);
   const rows = accessRows(editor?.view ?? signin.view).map(row => rowOf(row.name, { lead: { icon: row.icon }, end: { words: row.value } }));
   const live = !reads.over && editor !== null;
-  /** @param {number | 'deny'} answer @returns {AnswerRequest} */
+  /** @param {string} answer @returns {AnswerRequest} */
   const answerOf = answer => signInAnswer(signin.id, answer, access);
   return detailOf(id, signin.head, 'ai-apps', { line: phraseWords(signin.over_line),
     parts: [bare({ label: SIGNING.sees, card: true, acts: live ? [{ label: SIGNING.edit, variant: 'plain', do: { page: 'access' } }] : [],
       panel: panelOf({ rows }) }),
-    ...live ? [bare({ label: signin.pick, pick: { label: signin.pick, line: signin.pick_line,
-      choices: signin.choices.map(n => ({ n, do: { answer: answerOf(n) } })) } })] : []],
+    ...live ? [codePart(signin, opened, reads.answering, answerOf)] : []],
     foot: { start: null, said: plainly(reads.said || (reads.over ? reads.editorFailed : SIGNING.only)), mark: '', busy: editor?.busy === true,
       end: live ? [{ label: SIGNING.deny, variant: 'plain', disabled: reads.answering, do: { answer: answerOf('deny') } }] : [] } });
 }
@@ -679,7 +697,7 @@ export function draftDetail(id, reads, seen) {
   const editor = reads.editor;
   const inside = seen.opened.pages.at(-1);
   if (!inside && ask) return askDetail(id, ask, reads, seen);
-  if (!inside && signin) return signinDetail(id, signin, reads);
+  if (!inside && signin) return signinDetail(id, signin, reads, seen.opened);
   if (!signin && !ask || !editor) {
     const failed = reads.editorFailed;
     return detailOf(id, name, 'ai-apps', failed ? { line: failed } : { line: null, reading: !reads.over });

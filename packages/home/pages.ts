@@ -222,7 +222,7 @@ export const WaitingAsk = named("WaitingAsk", object({
 export type WaitingAsk = Of<typeof WaitingAsk>;
 
 export const WaitingSignIn = named("WaitingSignIn", object({
-  id, name, checked: bool, host: nullable(label), choices: list(int()), at_ms: int(), until_ms: int(),
+  id, name, checked: bool, host: nullable(label), at_ms: int(), until_ms: int(),
   head: words, over_line: phrase, sentence: words, access: kept, view: kept, pick: words, pick_line: words, over: words, app: nullable(id), notice: words,
 }));
 export type WaitingSignIn = Of<typeof WaitingSignIn>;

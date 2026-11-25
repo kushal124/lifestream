@@ -263,7 +263,7 @@ final class AgentAsksTests: XCTestCase {
         door.answer("POST /v1/agents/answer", "answer-sign-in-wrong")
         await agents.list()
         guard case .signIn(let shown)? = agents.shown else { return XCTFail("the sign-in's sheet") }
-        agents.pick(.number(shown.choices[0]))
+        agents.pick(.code("482915"))
         let said = AgentRequestCard.Ended(shown.head, words: try outcome("answer-sign-in-wrong"))
         try await waitUntil("the home's line said") { agents.outcome == said }
         XCTAssertEqual(agents.shown?.id, shown.id, "the sheet keeps the home's line until Done")
@@ -288,7 +288,7 @@ final class AgentAsksTests: XCTestCase {
             door.answer("POST /v1/agents/answer", name)
             await agents.list()
             guard case .signIn(let shown)? = agents.shown else { return XCTFail("\(name): the sign-in's sheet") }
-            agents.pick(tap ? .number(shown.choices[0]) : .deny)
+            agents.pick(tap ? .code("482915") : .deny)
             let said = AgentRequestCard.Ended(shown.head, words: try outcome(name))
             try await waitUntil("\(name): the home's words said under its question") { agents.outcome == said }
             XCTAssertEqual(agents.shown?.id, "c2lnbi1pbi0wMDAwMDAwMQ", name)

@@ -6,7 +6,7 @@ import { fetchAsk, fetchSignIn } from '../../lib/api.js';
 import { answerWord, askAnswer, refusalWords, signInAnswer } from '../../lib/agents.js';
 import { parseRoute } from '../../lib/hash.js';
 import { phraseWords } from '../../lib/words.js';
-import { accessFoot, agentCard, askBody, pickSection, button, settingRow, settingsSection, settingTile, settingValue } from '../kit/index.js';
+import { accessFoot, agentCard, askBody, button, CODE_DIGITS, codeEntry, codeOf, settingRow, settingsSection, settingTile, settingValue } from '../kit/index.js';
 import { accessRows, answerKeys, answerOrder, askOf, CONNECT_ID, plainly } from './detail.js';
 import { GUIDE_PAGE } from './guides.js';
 import { drafts } from './drafts.js';
@@ -17,7 +17,7 @@ const pick = (id, answer) => ({ 'data-agent-pick': JSON.stringify({ id, answer }
 
 /**
  * @param {SignIn} request
- * @param {{ view: import('../../types.js').AccessView, count: string, busy: number | 'deny' | null, refused: string }} shown
+ * @param {{ view: import('../../types.js').AccessView, count: string, busy: string | null, refused: string }} shown
  */
 export function signInCard(request, { view, count, busy, refused }) {
   const held = busy !== null;
@@ -25,8 +25,8 @@ export function signInCard(request, { view, count, busy, refused }) {
     act: button(SIGNING.edit, { variant: 'plain', size: 'sm', disabled: held, attrs: { 'data-agent-change': `signin:${request.id}` } }),
     rows: accessRows(view).map(row => settingRow({ label: row.name, lead: settingTile(row.icon), end: settingValue(row.value) })) });
   return agentCard({ id: request.id, title: request.head, line: phraseWords(request.over_line), count,
-    body: sees + pickSection({ label: request.pick, line: request.pick_line,
-      choices: request.choices.map(n => ({ n, busy: busy === n, attrs: pick(request.id, n) })) }),
+    body: sees + codeEntry({ label: request.pick, line: request.pick_line, allow: SIGNING.allow, busy: held && busy !== 'deny',
+      attrs: pick(request.id, 'code') }),
     foot: accessFoot({ said: plainly(refused || SIGNING.only), acts: button(SIGNING.deny, { variant: 'plain', size: 'sm',
       busy: busy === 'deny', disabled: held, attrs: pick(request.id, 'deny') }) }) });
 }
@@ -122,7 +122,7 @@ export function installAgentCards(holder, host, shown, { read = fetchAsk, signIn
       : ask ? dialogShown() === `ask:${ask.id}` : false;
     const count = more ? ASKED.asks(more + 1) : '';
     const markup = holding ? notice ? noticeCard(notice) : '' : aside ? '' : request ? signInCard(request, { view: drafts.of(request.id)?.view ?? request.view, count,
-      busy: busy?.id === request.id ? /** @type {number | 'deny'} */ (busy.answer) : null, refused: said.get(request.id) ?? '' })
+      busy: busy?.id === request.id ? String(busy.answer) : null, refused: said.get(request.id) ?? '' })
       : ask ? askCard(ask, { count, busy: busy?.id === ask.id ? /** @type {AskAnswer} */ (busy.answer) : null,
         offer: !held.has(ask.id), said: said.get(ask.id) ?? '', erased: erased.has(ask.id) })
         : notice ? noticeCard(notice) : '';
@@ -164,11 +164,18 @@ export function installAgentCards(holder, host, shown, { read = fetchAsk, signIn
     }
     const pressed = /** @type {HTMLElement | null} */ (target.closest('[data-agent-pick]'));
     if (!pressed || busy) return;
-    const chosen = /** @type {{ id: string, answer: number | 'deny' | AskAnswer }} */ (JSON.parse(pressed.dataset.agentPick ?? '{}'));
-    const ask = state.agent_asks.find(each => each.id === chosen.id) ?? null;
+    const picked = /** @type {{ id: string, answer: 'code' | 'deny' | AskAnswer }} */ (JSON.parse(pressed.dataset.agentPick ?? '{}'));
+    const ask = state.agent_asks.find(each => each.id === picked.id) ?? null;
     if (ask && held.has(ask.id)) return;
+    const typed = picked.answer === 'code' ? codeOf(/** @type {HTMLInputElement | null} */ (pressed.closest('[data-agent-code]')
+      ?.querySelector('[data-agent-code-field]'))?.value ?? '') : '';
+    if (picked.answer === 'code' && !new RegExp(`^[0-9]{${CODE_DIGITS}}$`, 'u').test(typed)) {
+      said.set(picked.id, SIGNING.typeCode);
+      return draw();
+    }
+    const chosen = picked.answer === 'code' ? { id: picked.id, answer: typed } : picked;
     const answer = ask ? askAnswer(ask, /** @type {AskAnswer} */ (chosen.answer))
-      : signInAnswer(chosen.id, /** @type {number | 'deny'} */ (chosen.answer), drafts.of(chosen.id)?.access ?? null);
+      : signInAnswer(chosen.id, /** @type {string} */ (chosen.answer), drafts.of(chosen.id)?.access ?? null);
     busy = chosen;
     said.delete(chosen.id);
     draw();
@@ -194,6 +201,13 @@ export function installAgentCards(holder, host, shown, { read = fetchAsk, signIn
       busy = null;
       draw();
     });
+  });
+
+  holder.addEventListener('keydown', event => {
+    const field = event.target instanceof HTMLInputElement && event.target.closest('[data-agent-code]');
+    if (!field || event.key !== 'Enter' || event.isComposing) return;
+    event.preventDefault();
+    /** @type {HTMLElement | null} */ (field.querySelector('[data-agent-pick]'))?.click();
   });
 
   document.addEventListener('keydown', event => {

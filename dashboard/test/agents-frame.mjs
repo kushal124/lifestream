@@ -453,7 +453,7 @@ test('W3: an answer out shows busy on its own button: each answer its own hold, 
     answerKey({ id: OPEN.id, answer: 'no' })];
   assert.equal(new Set(keys).size, 3, 'each answer its own key');
   assert.equal(busyKey({ answer: { id: OPEN.id, answer: 'no' } }), keys[2], 'the button’s key is the hold’s');
-  assert.equal(busyKey({ answer: { id: SIGN_IN.id, answer: 42 } }), answerKey({ id: SIGN_IN.id, answer: 42 }), 'a number too');
+  assert.equal(busyKey({ answer: { id: SIGN_IN.id, answer: '482915' } }), answerKey({ id: SIGN_IN.id, answer: '482915' }), 'a code too');
   /** @type {string[]} */
   const held = [];
   /** @type {(value: unknown) => void} */

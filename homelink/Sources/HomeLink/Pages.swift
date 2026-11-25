@@ -5795,7 +5795,6 @@ extension HomeLink {
             public let name: String
             public let checked: Bool
             public let host: String?
-            public let choices: [Int]
             public let atMs: Int
             public let untilMs: Int
             public let head: String
@@ -5812,7 +5811,6 @@ extension HomeLink {
                 case name
                 case checked
                 case host
-                case choices
                 case atMs = "at_ms"
                 case untilMs = "until_ms"
                 case head
@@ -5831,7 +5829,6 @@ extension HomeLink {
                 self.name = try container.decode(String.self, forKey: .name)
                 self.checked = try container.decode(Bool.self, forKey: .checked)
                 self.host = try container.decodeNil(forKey: .host) ? nil : container.decode(String.self, forKey: .host)
-                self.choices = try container.decode([Int].self, forKey: .choices)
                 self.atMs = try container.decode(Int.self, forKey: .atMs)
                 self.untilMs = try container.decode(Int.self, forKey: .untilMs)
                 self.head = try container.decode(String.self, forKey: .head)

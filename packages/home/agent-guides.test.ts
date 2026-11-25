@@ -94,7 +94,7 @@ describe("the guides", () => {
         const click = app === "muse" && device === "phone" ? "tap" : "click";
         expect(yeses[app].steps[1], `${app} on the ${device}`).toMatchObject({
           kind: "yes", sees: "It will see", other: `A sign-in from ${HOST_SLOT} is waiting`,
-          wrong: `That wasn’t the number ${name} showed. In ${name}, ${click} Connect to try again.`,
+          wrong: `That wasn’t the code ${name} showed. In ${name}, ${click} Connect to try again.`,
           finishing: `Finishing in ${name}…`,
           unfinished: `${name} did not finish. In ${name}, ${click} Connect again.`,
           out: `The request ended. In ${name}, ${click} Connect to ask again.`,

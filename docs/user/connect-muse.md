@@ -34,21 +34,21 @@ If Muse asks to contact Lifestream, check that the request shows your address. C
 **Allow once** for a single request.
 
 Muse opens Lifestream's sign-in page. It says "Muse wants to read your Lifestream.", then
-"From agent.meta.ai, where Muse runs", and shows a number.
+"From agent.meta.ai, where Muse runs", and shows a 6-digit code.
 
 ## Say yes in Lifestream
 
 The guide's second step now says "Muse wants to read your Lifestream". It shows what Muse will see,
-and three numbers.
+and a box for the code.
 
 1. To change what Muse will see, click **Edit**, change it, and click **Done**.
-2. Click the number that Muse's sign-in page shows. Picking the number is your yes.
+2. Type the code that Muse's sign-in page shows, then click **Allow**. The code is your yes.
 
 The guide says "Muse is connected" once Muse finishes. If Muse stopped at the sign-in, go back to
 the side chat, and ask it to finish setting up the connector.
 
-If you closed the guide, your Mac shows a notification: "Muse wants to read your Lifestream. Pick
-the number it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in waits
+If you closed the guide, your Mac shows a notification: "Muse wants to read your Lifestream. Type
+the code it shows." Click it, and the guide opens at **Say yes here**. On your iPhone, the sign-in waits
 under **Needs you** on the **Agents** tab.
 
 ## Ask it a first question

@@ -38,16 +38,11 @@
         "app" : "claude",
         "at_ms" : 1794646800000,
         "checked" : true,
-        "choices" : [
-          27,
-          42,
-          64
-        ],
         "head" : "Claude wants to read your Lifestream",
         "host" : "claude.ai",
         "id" : "c2lnbi1pbi0wMDAwMDAwMQ",
         "name" : "Claude",
-        "notice" : "Claude wants to read your Lifestream. Pick the number it shows.",
+        "notice" : "Claude wants to read your Lifestream. Type the code it shows.",
         "over" : "This sign-in is over. Start it again in claude.ai.",
         "over_line" : [
           {
@@ -55,8 +50,8 @@
             "words" : "From claude.ai"
           }
         ],
-        "pick" : "Pick the number Claude shows",
-        "pick_line" : "The number is the yes. A wrong one turns Claude away.",
+        "pick" : "Type the code Claude shows",
+        "pick_line" : "The code is the yes. A wrong one turns Claude away.",
         "sentence" : "Claude reads everything but Health and Money. Details hidden, names shown.",
         "until_ms" : 1794647400000,
         "view" : {

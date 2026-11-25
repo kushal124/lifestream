@@ -466,7 +466,7 @@ test('a closed guide forgets the access edited for its sign-in: reopened, the ye
   await over.settle();
   const shown = JSON.stringify(over.detail(['guide:chatgpt'], state));
   const pick = JSON.parse(shown).parts.find((/** @type {any} */ part) => part.steps).steps[1].parts
-    .find((/** @type {any} */ part) => part.pick).pick.choices[0].do.answer;
+    .find((/** @type {any} */ part) => part.panel?.rows?.[0]?.end?.field?.key?.startsWith('signin.code:')).panel.rows[0].end.acts[0].do.answer;
   assert.deepEqual(pick.access ?? ask.access, ask.access, 'the yes carries the sign-in’s own access');
 });
 

@@ -484,7 +484,7 @@ final class AgentGuideModel: ObservableObject {
     func pick(_ pick: AgentRequestCard.Pick) {
         guard sending == nil, let signIn = shownSignIn else { return }
         let answer: HomeLink.AnswerRequest = switch pick {
-        case .number(let number): .number(signIn.id, number, access: kept[signIn.id]?.access)
+        case .code(let code): .code(signIn.id, code, access: kept[signIn.id]?.access)
         case .deny: .deny(signIn.id)
         }
         sending = pick
@@ -987,7 +987,7 @@ private struct GuideStepView: View {
                 WillSee(title: model.yes?.sees, reads: AgentAsks.lines(model.kept[signIn.id]?.view ?? signIn.view), change: { model.edit() })
                 VStack(alignment: .leading, spacing: Cockpit.Space.s3) {
                     Text(signIn.pick).cockpit(.footnote).fontWeight(.semibold).foregroundStyle(Cockpit.Color.textSecondary)
-                    NumberPick(choices: signIn.choices, sending: model.sending) { model.pick($0) }
+                    CodeEntry(sending: model.sending) { model.pick($0) }
                         .disabled(model.sending != nil)
                 }
                 if let failed = model.failed { InPlaceLine(failed) }

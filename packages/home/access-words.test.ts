@@ -164,7 +164,7 @@ describe("the words of an ask, a limit and the history", () => {
     expect([worded(outcomeOf({ state: "replaced", answered_ms: NOW, device: null, name: "Claude", by: "chat" }, NOW)), worded(outcomeOf({ state: "replaced", answered_ms: NOW, device: null, name: "Claude", by: "agent" }, NOW))], "a closed card says why")
       .toEqual(["Claude’s access changed since. Ask Chat again.", "Claude asked again."]);
     expect([outcome("approved", NOW - 40 * 60_000, "iPhone"), outcome("denied", NOW, "Mac"), outcome("wrong", NOW, "iPhone")], "a sign-in's answer reads as a request's, a refusal where and when as an allow")
-      .toEqual(["Allowed on iPhone, 11:20", "Not allowed on Mac, 12:00", "Wrong number, so Claude wasn’t let in. Start the sign-in again in Claude."]);
+      .toEqual(["Allowed on iPhone, 11:20", "Not allowed on Mac, 12:00", "Wrong code, so Claude wasn’t let in. Start the sign-in again in Claude."]);
   });
 
   it("read an ask for always with no duration, Always its default; Once grants its duration, 1 hour for one that asked always", () => {
@@ -448,8 +448,8 @@ describe("the words of an ask, a limit and the history", () => {
     expect(signingInLine("chatgpt.com", Date.UTC(2026, 10, 16, 10, 52))).toEqual([{ kind: "words", words: "Signing in from chatgpt.com ·" }, { kind: "time", time: { kind: "clock", at_ms: Date.UTC(2026, 10, 16, 10, 52) } }]);
     expect(phraseText(signingInLine("chatgpt.com", Date.UTC(2026, 10, 16, 10, 52)), now, "UTC")).toBe("Signing in from chatgpt.com · 10:52");
     expect(signingInLine("chatgpt.com", Date.UTC(2026, 10, 16, 10, 52), "From chatgpt.com"), "a guide's sign-in says where it comes from, calmly").toEqual([{ kind: "words", words: "From chatgpt.com" }]);
-    expect([pickWords("ChatGPT"), pickLine("ChatGPT")]).toEqual(["Pick the number ChatGPT shows", "The number is the yes. A wrong one turns ChatGPT away."]);
-    expect([signInHead("ChatGPT"), signInNotice("ChatGPT")]).toEqual(["ChatGPT wants to read your Lifestream", "ChatGPT wants to read your Lifestream. Pick the number it shows."]);
+    expect([pickWords("ChatGPT"), pickLine("ChatGPT")]).toEqual(["Type the code ChatGPT shows", "The code is the yes. A wrong one turns ChatGPT away."]);
+    expect([signInHead("ChatGPT"), signInNotice("ChatGPT")]).toEqual(["ChatGPT wants to read your Lifestream", "ChatGPT wants to read your Lifestream. Type the code it shows."]);
     expect(disconnectingOf("Orbit", { via: "pass", made_ms: Date.UTC(2026, 9, 28) }, "Health", 1204, "UTC")).toEqual({
       head: "Disconnect Orbit?",
       line: "Orbit stops reading at once. Nothing in Lifestream is deleted.",
